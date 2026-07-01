@@ -1,0 +1,124 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Benchmarking When the Answer Isn't a Number — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Benchmarking When the Answer Isn't a Number</h1><p class="subtitle">The LLM-as-judge pattern: how to score outputs that have no single right answer, and the honest limits of a model grading a model</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-teacher">Teacher</span> <span class="badge free">free</span> <span>May 16, 2026</span><span>·</span><span>5 min read</span><span>·</span><span>agentic-fleet</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> Some of the most important things a system does — did it recall the right memory, is this summary faithful, did it answer the actual question — have no numeric answer. Here's how to score them automatically with another model as the judge, where to still pin plain code, and how far you can trust a model grading a model.</div><div class="markdown-body"><blockquote>
+<p><strong>As of June 2026, beginner level.</strong> This is a <em>concept</em> tutorial — it teaches a
+pattern you can use anywhere, illustrated with what NAOMS's benchmark suite was
+doing this week. The exact bench file paths move; treat the idea, not the file
+names, as the thing to learn.</p>
+</blockquote>
+<p>Most benchmarks are easy to score because the answer is a number. <em>How long did
+a warm boot take? How many frames per second? How many bytes per second moving a
+3 GB file?</em> You run it, you read the number, you compare it to last time. The
+NAOMS performance suite landed exactly these this week: a warm-boot timing, an
+N-peer call bench (2026-05-16, which recorded <strong>300/300 frames at p50 = 6–10 ms</strong>
+on the GPU host), and a blob-throughput bench — each emitting a <strong>signed Bench
+Pack</strong> so the numbers can't be quietly edited later (an Ed25519 signature over
+canonical JSON; the benches were wired to emit those packs that same day).</p>
+<p>But some of the most important things a system does <strong>don't have a numeric
+answer.</strong> "Did the agent recall the right memory when asked?" "Is this summary
+faithful?" "Did the model answer the actual question?" You can't put a stopwatch
+on <em>correct</em>. This is where the <strong>LLM-as-judge</strong> pattern comes in — and this week
+NAOMS's benchmark transcripts were full of it (the 2026-05-16 logs are dominated
+by memory-recall judge prompts; see the honesty note at the end for what that does
+and doesn't prove).</p>
+<p>This tutorial teaches that pattern from scratch.</p>
+<h2 id="the-problem-concretely"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-problem-concretely"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The problem, concretely</h2>
+<p>Say you want to benchmark <strong>memory recall</strong>: you seed an agent with some facts,
+then later ask it a question, and you want to know whether it recalled the right
+thing. The agent's answer is free text — "Yes, you mentioned the meeting is on
+Thursday" — not a number. How do you score a thousand of those, automatically,
+without a human reading each one?</p>
+<p>Two bad options first, so you know why we don't take them:</p>
+<ul>
+<li><strong>Exact string match.</strong> Require the answer to equal "Thursday." Brittle: "Thu",
+"the 14th", "later this week" all fail even when the agent is right.</li>
+<li><strong>Keyword contains.</strong> Pass if the answer contains "Thursday." Leaky: "Not
+Thursday" passes, and so does an answer that mentions Thursday for the wrong
+reason.</li>
+</ul>
+<p>Natural-language answers need a <em>judge</em> that understands meaning. The cheapest
+judge that scales is another language model.</p>
+<h2 id="the-pattern-step-by-step"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-pattern-step-by-step"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The pattern, step by step</h2>
+<p><strong>Step 1 — Pin everything that CAN be deterministic.</strong> Before you reach for a
+model to grade things, score everything you can with plain code. Did the call
+connect? Did all 300 frames arrive? Did the response come back at all, or time
+out? Those are booleans and counts — measure them directly and cheaply. In the
+NAOMS suite, the call bench's <code>300/300 frames</code> is exactly this: a hard,
+non-negotiable count, no judgment involved. <strong>Only send the genuinely fuzzy part
+to the judge.</strong> A model is your most expensive, least reproducible scorer; spend
+it only where you must.</p>
+<p><strong>Step 2 — Write a judge prompt that asks for a verdict, not an essay.</strong> The
+judge prompt should give the model (a) the question, (b) the expected answer or
+rubric, (c) the actual answer, and (d) a <em>tight output contract</em> — usually a
+single token or a small JSON object. The tighter the contract, the easier the
+judge's own output is to parse deterministically. (You'll even see trivial
+liveness probes in the transcripts like <em>"Reply with exactly: PONG"</em> — that's the
+degenerate case of a tight contract, used just to confirm the judge model is
+answering at all before you trust its harder verdicts.)</p>
+<p>A judge prompt skeleton:</p>
+<pre><code>You are grading an answer for correctness.
+QUESTION: &lt;the question that was asked&gt;
+EXPECTED: &lt;the correct answer or a rubric&gt;
+ACTUAL: &lt;the agent's free-text answer&gt;
+Reply with exactly one word: PASS or FAIL.</code></pre><p><strong>Step 3 — Parse the verdict deterministically.</strong> Because you constrained the
+output to <code>PASS</code>/<code>FAIL</code> (or a small JSON), your harness reads it with a plain
+string check — no second model needed to interpret the first. If the judge
+returns anything outside the contract, that's a <em>harness</em> failure, and you should
+surface it loudly rather than guess.</p>
+<p><strong>Step 4 — Sign and store the result like any other datapoint.</strong> Here's the part
+people skip: a judge's verdict is data, and data you'll compare across runs must
+be tamper-evident. NAOMS wraps every bench result — numeric or judged — in a
+<strong>signed Bench Pack</strong> (Ed25519 over canonical JSON). That means a "PASS rate went
+up" claim next month is <a href="2026-05-18-building-next-to-tim-and-the-first-wins-with-aqua.html" rel="noopener noreferrer">backed by a signature, not by trust</a>. If
+you're building your own suite, at minimum write the judge's verdict, the prompt,
+and the model id into the stored record, so a later reader can audit <em>how</em> it was
+judged.</p>
+<p><strong>Step 5 — Calibrate the judge against humans, at least once.</strong> A model grading a
+model is not free of error. Before you trust a judge at scale, hand-grade a small
+sample yourself and check the judge agrees with you. If it doesn't, fix the rubric
+in the prompt — usually the EXPECTED needs to be sharper — and re-check. You're
+not aiming for perfection; you're aiming to <em>know the judge's error rate</em> so your
+PASS numbers come with an honest margin.</p>
+<h2 id="the-honest-limits"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-honest-limits"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The honest limits</h2>
+<p>The LLM-as-judge pattern is powerful and it is <strong>not</strong> a free lunch:</p>
+<ul>
+<li><strong>The judge can be wrong</strong>, and its errors are correlated (it'll
+systematically misjudge a certain phrasing). That's why Step 5 exists.</li>
+<li><strong>It's non-deterministic</strong> unless you pin temperature and seed — two runs of
+the same judge on the same answer can disagree. Pin what you can; record the
+model id and settings.</li>
+<li><strong>It costs.</strong> Every judged datapoint is a model call. That's exactly why Step 1
+insists you score the deterministic parts with code first.</li>
+</ul>
+<p>Use it for the genuinely fuzzy questions — recall, faithfulness, "did it answer
+the question." Don't use it for anything a counter or a stopwatch already
+answers.</p>
+<h2 id="honesty-note-on-this-weeks-evidence"><a class="anchor" aria-hidden="true" tabindex="-1" href="#honesty-note-on-this-weeks-evidence"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Honesty note on this week's evidence</h2>
+<p>The <em>numeric</em> benches above are verified work from 2026-05-16 (the warm-boot
+timing, the 300/300-frames-at-p50-6–10ms call datapoint, the signed Bench Pack
+builder). The <strong>LLM-as-judge</strong> material is grounded in this week's <em>transcripts</em> —
+the 2026-05-16 logs are dominated by memory-recall judge prompts and liveness
+probes ("PONG") that are part of the benchmark harness — rather than in a single
+tidy "memory-recall bench." We've taught the pattern those transcripts demonstrate,
+and pointed you at the real signed-bench machinery they ride on, without
+overstating that a finished memory-recall benchmark shipped this week. The suite
+was actively building.</p>
+<hr />
+<p>If you remember one rule from this: <strong>measure with code what code can measure;
+spend the model only on what code can't — and then sign the result so future-you
+can trust past-you.</strong></p>
+<p><em>Related: <a href="2026-05-29-green-isnt-done-the-test-critic-that-hunts-your-bugs.html" rel="noopener noreferrer">Green Isn't Done: the test-critic that hunts your own bugs</a> · <a href="2026-04-28-plan-with-the-big-model-work-with-the-local-one.html" rel="noopener noreferrer">Plan With the Big Model, Work With the Local One</a>.</em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

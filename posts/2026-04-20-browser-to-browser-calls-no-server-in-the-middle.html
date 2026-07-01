@@ -1,0 +1,139 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Browser-to-Browser Calls, No Server in the Middle — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Browser-to-Browser Calls, No Server in the Middle</h1><p class="subtitle">Voice and video that goes straight between two browsers — no media server in the middle that can see who you call</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>April 20, 2026</span><span>·</span><span>7 min read</span><span>·</span><span>messaging</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> We're building voice and video calls that go straight from your browser to theirs, with no media server in the middle that could see who you talk to and when. This piece lays out the design as we set it down; the pieces are landing, and we flag exactly what's shipped and what's still on the way.</div><div class="markdown-body"><p><em>A note on status: the in-browser calling described here is the design and the plan as we set it down. The pieces are landing — the screen above is real — but end-to-end browser-to-browser calling is still on its way to fully shipped. We'll update this piece when it lands.</em></p>
+<p><img src="assets/real-calling.png" alt="A NAOMS call being placed browser to browser: the contact's name, a &quot;Calling…&quot; status, and the two controls that matter — mute and hang up — with the conversation visible behind it." /></p>
+<p>Most video calling works like this: your browser sends audio to a server, the
+server forwards it to the other browser, and a company in the middle can see —
+or is at least <em>structurally able</em> to see — who you talk to and when. Even the
+"end-to-end encrypted" options usually route through a selective forwarding
+unit (an SFU): a media server that doesn't decrypt your audio but absolutely
+knows the shape of every call you make.</p>
+<p>On 2026-04-20 we opened the project to do it differently in NAOMS: calls that go
+<strong>browser to browser</strong>, over the same peer-to-peer transport the rest of the
+system already runs on, with no media server in the path at all. This post is
+the architecture as it was set down that day — the design, the constraints, and
+the five hard problems we knew we'd have to solve.</p>
+<p>A note on honesty up front, because the dates matter. April 20th is the day the
+calling <strong>work was scaffolded</strong> — the research inventory, the risk audit, and
+the integrated design — with a ten-question alignment pack still pending a human
+decision. The <em>implementation</em> — real mesh group calls, the single-encryption-
+group fix, per-source audio — landed later the same week (the mesh milestone
+shipped 2026-04-26). Where this piece describes something that shipped after the
+20th, it says so. What follows is the blueprint, drawn on the day we committed to
+building it.</p>
+<h2 id="the-decision-reuse-the-transport-dont-add-one"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-decision-reuse-the-transport-dont-add-one"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The decision: reuse the transport, don't add one</h2>
+<p>The scaffolding work consolidated something like fourteen prior threads of work
+into one effort — voice, video, agent listening, and recording — and it made one
+foundational call that shapes everything else: calls do not get a new network
+stack. They ride <a href="2026-03-27-one-endpoint-to-rule-them-all.html" rel="noopener noreferrer"><strong>Iroh</strong>, the QUIC-based
+peer-to-peer transport</a> NAOMS already uses to sync chains between devices.</p>
+<p>This is the same instinct that runs through the whole project. When we built
+public web pages, we didn't add a web server — we added one branch policy to the
+chain machinery we already had. When we built calling, we didn't add a media
+server — we added a media <em>path</em> to the peer connections we already maintain.</p>
+<p>Concretely, that means a NAOMS call is a set of direct QUIC streams between the
+participants' nodes. Iroh handles the hard parts of getting two browsers to talk
+directly: NAT traversal, hole-punching, and — only when a direct path genuinely
+can't be established — a relay that forwards <em>encrypted</em> packets without ever
+holding the keys. There's no rendezvous server that sees your call graph,
+because the rendezvous is the same content-addressed discovery the rest of the
+system uses.</p>
+<p>The day-one addendum spent its effort reconciling the new work against several
+streams of work that already existed — including the already-shipped pieces of
+them. That reconciliation <em>is</em> the architecture working: a new feature's first
+job was to figure out how little new substrate it needed, not how much.</p>
+<h2 id="the-five-blockers-we-named-on-day-one"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-five-blockers-we-named-on-day-one"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The five blockers we named on day one</h2>
+<p>A design that only describes the happy path is a brochure, not a design. The
+scaffolding scaffolding is honest in the other direction: it surfaced <strong>five
+release-blocking problems</strong> before a line of call code was written:</p>
+<ol>
+<li><strong>Google STUN.</strong> The default ICE configuration leaned on a Google-hosted STUN
+server for NAT discovery. That's a third party in the connection-setup path,
+and a sovereign-by-design system can't ship depending on one. (This one got
+chased down across the week — by 2026-04-21 the Google STUN dependency had
+been retired from the voice overlay and the connection-setup machinery.)</li>
+<li><strong>Static NodeId.</strong> A fixed network identity is a tracking handle. Calls
+needed an identity story that didn't pin you to one observable address
+forever.</li>
+<li><strong>Delegation fallback.</strong> What happens when the being who should authorize a
+call action isn't reachable to authorize it? A naive fallback is a
+consent-bypass waiting to happen.</li>
+<li><strong>Consent-gate bypass.</strong> Audio is intimate. The design flagged, on day one,
+that the consent gate around capturing and transmitting it had to be
+un-bypassable — not a checkbox, a real gate.</li>
+<li><strong>PCM-in-memory.</strong> Raw audio samples sitting in process memory are a privacy
+surface. The blocker was a reminder that even the bytes you're <em>about</em> to
+encrypt have a lifetime that has to be bounded.</li>
+</ol>
+<p>Naming five blockers on the first day, in the same breath that scaffolds the
+feature, is the part we'd point a reviewer at. The architecture didn't pretend
+calling was easy. It wrote down exactly where it was dangerous.</p>
+<h2 id="how-a-call-stays-encrypted-with-nobody-in-the-middle"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-a-call-stays-encrypted-with-nobody-in-the-middle"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How a call stays encrypted with nobody in the middle</h2>
+<p>Here's the question that decides whether "no server in the middle" is real or
+marketing: if there's no media server, <strong>who holds the encryption keys?</strong></p>
+<p>The answer NAOMS reached for is <a href="2026-04-21-honoring-mls-group-security-that-scales.html" rel="noopener noreferrer"><strong>MLS</strong> — Messaging Layer Security, the IETF
+group-key protocol</a> — running over the Iroh streams. On 2026-04-21, one of the
+first implementation steps switched the native MLS engine on by default: the
+production path would use the real, native MLS implementation rather than a
+simulated stand-in. That switch matters because it's
+the difference between <em>claiming</em> end-to-end encryption and <em>running</em> it.</p>
+<p>The shape, as designed: every participant in a call shares a group encryption
+state, established by the MLS handshake, and audio frames are encrypted under
+that group's keys before they ever hit a QUIC stream. The relay, if one is even
+used, forwards ciphertext. The other participants decrypt. Nobody in between —
+no server, no SFU, no NAOMS infrastructure — ever holds a key that opens the
+audio.</p>
+<p>A note on what's claimed here: we're describing the <em>intended</em> end-to-end property
+as designed, grounded in the native-MLS-by-default change and the mesh
+single-group milestone that shipped 2026-04-26. The full formal verification
+that no frame is ever decryptable by a relay across every code path is the kind
+of claim we won't assert from a design doc — the mechanism (MLS group keys over
+Iroh, native MLS on by default) is real and shipped; an exhaustive "no path
+leaks" proof is not something this post independently re-derived.</p>
+<p>The genuinely hard sub-problem — how you avoid <em>N different MLS groups</em> when
+three or more people are on a mesh call, and why exactly one being gets to
+create the group — is <a href="2026-04-21-why-one-mls-group-per-call.html" rel="noopener noreferrer">its own story</a>. We landed that fix on 2026-04-26,
+and it gets its own piece tomorrow. Here it's enough to say the
+day-20 design already knew that group-membership had to have a single honest
+owner, the same way every other piece of shared state in NAOMS does.</p>
+<h2 id="why-this-is-the-right-shape"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-this-is-the-right-shape"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why this is the right shape</h2>
+<p>Step back and the calling architecture is, like the best parts of this project,
+<em>unexceptional</em> in the best way. A NAOMS call is not a new subsystem bolted on
+the side. It is:</p>
+<ul>
+<li><strong>Transport</strong> — the Iroh QUIC mesh you already use to sync chains, now also
+carrying media streams, with direct peer connections and an encrypt-only
+relay as a last resort.</li>
+<li><strong>Encryption</strong> — the MLS group-key machinery, on its real native path by
+default, so audio is end-to-end encrypted under keys no server holds.</li>
+<li><strong>Consent</strong> — the existing gate, hardened (blocker #4) so capturing and
+sending audio can't slip past it.</li>
+<li><strong>Identity</strong> — the chain identity you already have, with the static-NodeId
+tracking surface (blocker #2) named as a thing to fix rather than ignored.</li>
+</ul>
+<p>The point of "no server in the middle" was never to be clever about plumbing.
+It's that a call is one of the most private things two people do, and a system
+whose first axiom is Wholeness — complete in itself, no external dependency for
+its core function — can't outsource the most private part to a server you have
+to trust. So it didn't.</p>
+<p>What's next, from where the design stood on the 20th, is everything between a
+blueprint and a ringing phone: making the mesh group converge with one owner,
+stamping each audio frame with its source so a listener knows who's talking,
+wiring the channel Call button, and closing the five blockers one at a time. Most
+of that landed across the same week. The architecture, though — the decision that
+a call rides your own transport and your own encryption with nobody in the middle
+— was set down on day one, blockers and all.</p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

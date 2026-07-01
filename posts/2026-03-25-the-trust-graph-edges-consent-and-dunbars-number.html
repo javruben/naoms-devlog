@@ -1,0 +1,197 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Trust Lives on the Edge, Not the Person: Building a Graph That Can't Be Gamed — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Trust Lives on the Edge, Not the Person: Building a Graph That Can't Be Gamed</h1><p class="subtitle">How directional, two-signature relationship edges replace the per-person reputation score</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge paid">paid · premium preview</span> <span>March 25, 2026</span><span>·</span><span>8 min read</span><span>·</span><span>trust</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> Nobody can claim you trust them without your signature, and no single number can be farmed to fake your reputation. Here's how we model trust as directional, two-signed relationships between people instead of a score — the edge shape, the consent rule, the friend-count cap, and the early work that lets two separate instances draw their first edge between strangers.</div><div class="markdown-body"><p>Most trust systems answer one question — "how trustworthy is this person?" —
+with one number. NAOMS won't answer that question, because the project decided
+the question is malformed. Trust here is not a property of a person. It is a
+property of a <em>relationship</em>, and a relationship has a direction, two consenting
+endpoints, a kind, and a weight. That decision — trust lives on the edge, not
+the node — is the foundation of the trust-graph model, and everything in the
+data model falls out of it.</p>
+<p>Think of it like vouching for someone at the door. You can walk a friend in and
+say "they're with me" — and you can stop saying it tomorrow. It's a thing <em>you do</em>
+and can take back, pointed at one specific person, never a permanent grade
+stamped on their forehead for everyone else to read. Nobody can claim you vouched
+for them unless you actually did, and you can drop the vouch whenever you like.
+That doorway — one person extending trust to one other, revocably — is the single
+shape this whole model is built from.</p>
+<p>This is the engineering walk: the actual shape of an edge, why both endpoints
+have to sign, why there's a hard cap on how many edges you can draw, and how
+cross-instance trust lets two <em>separate</em> NAOMS instances reach across a network
+and agree to share an edge at all. The status, up front and honest: the
+relational model shipped and was signed off this week; the cross-instance
+handshake landed only its <strong>Phase 1</strong> on 2026-03-25 and, as of this writing, that
+work is still in progress — started, not finished. We'll be precise about which is
+which.</p>
+<h2 id="the-edge-is-the-unit"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-edge-is-the-unit"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The edge is the unit</h2>
+<p>A trust edge is a directed link from one DID — decentralized identifier, a
+self-owned cryptographic name — to another. Its fields are small and
+deliberate:</p>
+<ul>
+<li>a <strong>source DID</strong> and a <strong>target DID</strong> — who trusts whom, <em>in that order</em></li>
+<li>a <strong>trust type</strong>: <code>vouch</code>, <code>attest</code>, <code>delegate</code>, or <code>endorse</code></li>
+<li>a <strong>weight</strong> in <code>[0, 1]</code></li>
+<li>a <strong>propagation</strong> flag: <code>transitive</code> or <code>terminal</code></li>
+<li>a <strong>consent proof from both endpoints</strong></li>
+</ul>
+<p>The first thing the schema enforces is direction. The uniqueness constraint is
+on the combination of source, target, and trust type, and the design states the
+consequence plainly: <strong>A→B is independent of B→A</strong>. Alice can <code>vouch</code> hard for
+Bob while Bob has drawn no edge toward Alice at all. There is no row that
+represents "the trust between Alice and Bob" as a symmetric quantity, because no
+such quantity exists. There are only edges, each owned by the being who drew it.</p>
+<p>This is what makes <a href="2026-03-25-the-temperature-is-not-the-patient.html" rel="noopener noreferrer">the per-person score incoherent</a> rather than merely
+unfashionable. A single number can't hold "Alice trusts Bob 0.9" and "Bob barely
+knows Alice" simultaneously without averaging them into a lie. Two directed
+edges hold both truths without contradiction.</p>
+<h2 id="types-carry-meaning-weights-carry-force"><a class="anchor" aria-hidden="true" tabindex="-1" href="#types-carry-meaning-weights-carry-force"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Types carry meaning; weights carry force</h2>
+<p>The weight says <em>how much</em>. The type says <em>what kind</em>. NAOMS ships four trust
+types, each with a default weight encoding its structural force:</p>
+<table>
+<thead>
+<tr>
+<th>Type</th>
+<th>Default weight</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>vouch</code></td>
+<td>0.90</td>
+<td>"I know this being." Personal identity vouching — the strongest.</td>
+</tr>
+<tr>
+<td><code>attest</code></td>
+<td>0.85</td>
+<td>"I confirm they hold this skill or credential."</td>
+</tr>
+<tr>
+<td><code>delegate</code></td>
+<td>0.80</td>
+<td>"I grant this being authority to act."</td>
+</tr>
+<tr>
+<td><code>endorse</code></td>
+<td>0.75</td>
+<td>"I recommend them." A general, lighter signal.</td>
+</tr>
+</tbody></table>
+<p>On top of the structural type sits a softer, open-ended <strong>signal kind</strong> — <em>why</em>
+the edge exists: <code>relationship</code>, <code>completion</code>, <code>appreciation</code>, <code>feedback</code>,
+<code>attestation</code>, and so on. "We shipped the sync engine together" is a <code>vouch</code> of
+kind <code>completion</code>; "thank you for the mentorship" is a <code>vouch</code> of kind
+<code>appreciation</code>. The structural type drives the math. The semantic kind preserves
+the human story so the edge can be <em>explained</em>, not just scored.</p>
+<h2 id="consent-is-bilateral-revocation-is-unilateral"><a class="anchor" aria-hidden="true" tabindex="-1" href="#consent-is-bilateral-revocation-is-unilateral"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Consent is bilateral; revocation is unilateral</h2>
+<p>Here is the constraint that separates NAOMS trust from a follower graph: <strong>you
+cannot unilaterally declare that someone trusts you.</strong> Creating an edge requires
+Ed25519 signatures from <em>both</em> the source and the target over a canonical
+payload, and the engine verifies both signatures before the edge is ever
+recorded.</p>
+<p>The asymmetry between creating and tearing down is intentional and, we think,
+morally correct: <strong>granting requires two, walking away requires one.</strong> Either
+endpoint can later revoke its side of the edge alone — you can always stop
+vouching. You need the other being's consent to <em>form</em> a trust relationship; you
+need no one's permission to <em>leave</em> one. A trust graph that let you exit only with
+counterparty approval would be a trap, not a graph.</p>
+<h2 id="dunbars-number-enforced-in-the-schema"><a class="anchor" aria-hidden="true" tabindex="-1" href="#dunbars-number-enforced-in-the-schema"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Dunbar's number, enforced in the schema</h2>
+<p>Trust is finite, so the data model refuses to pretend otherwise. There is a
+<strong>Dunbar cap</strong> on outbound edges, configurable per being-type:
+150 for humans, 50 for agents, 1500 for collectives. You cannot meaningfully
+vouch for ten thousand beings, so the system will not let you record that you
+did.</p>
+<p>This is a small constraint with a large philosophical payload. A reputation
+score has no natural ceiling — you can accumulate unbounded endorsements, which
+is exactly why scores get farmed. A vouching budget is scarce by construction.
+Each person you walk through the door is one you can't vouch for elsewhere without
+first dropping someone. Scarcity is what makes the signal mean something.</p>
+<hr />
+<p><em>The walk so far is the free preview. Below the line: traversal mechanics, the
+bounded search horizon, and the full cross-instance handshake that lets
+two strangers on two separate NAOMS instances draw their first edge — including
+the ECDH friendship-key exchange from cross-instance trust's first phase.</em></p>
+<hr />
+
+
+
+<h2 id="edges-to-a-network-bounded-traversal"><a class="anchor" aria-hidden="true" tabindex="-1" href="#edges-to-a-network-bounded-traversal"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Edges to a network: bounded traversal</h2>
+<p>Direct edges are half the story. The transitive question is the interesting one:
+if Alice trusts Bob and Bob trusts Carol, what — if anything — does Alice's graph
+say about Carol?</p>
+<p>The traversal primitive is a breadth-first hop-distance search that follows
+outbound <strong>transitive</strong> edges and stops dead at
+<strong>terminal</strong> ones. The <code>transitive</code>/<code>terminal</code> flag on each
+edge is the control knob: a transitive edge says "trust may flow <em>through</em> me to
+the beings I trust"; a terminal edge says "trust me, but do not follow my trust
+onward." That flag is how you vouch for someone without silently importing their
+entire trust network into your own.</p>
+<p>The horizon is capped low on purpose: a query fans out only a few hops before it
+stops, not across the whole graph. The cap isn't a performance
+hack — it's a privacy and honesty requirement. Trust computed over a partial,
+local view of the graph means you never have to download the whole network to
+reason about your neighbors, and a tight horizon doesn't pretend to a precision
+that thin social data can't support. (The heavier propagation math — TrustRank,
+max-flow, EigenTrust-style schemes — was surveyed and deliberately <em>deferred</em>;
+the shipped v1 stays simple. That's a separate piece.)</p>
+<h2 id="drawing-the-first-edge-between-strangers"><a class="anchor" aria-hidden="true" tabindex="-1" href="#drawing-the-first-edge-between-strangers"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Drawing the first edge between strangers</h2>
+<p>Everything above assumes both DIDs already live in the same graph. But two
+beings running two <em>separate</em> NAOMS instances start as strangers to each other's
+systems entirely. There is no shared database to insert a row into. So how does
+the very first edge between two instances come to exist?</p>
+<p>That is cross-instance trust establishment. Its <strong>Phase 1</strong> — the trust handshake
+protocol plus ECDH friendship keys — landed on 2026-03-25.</p>
+<p>The shape of Phase 1 is a handshake that establishes a shared, authenticated
+context between two instances before either one writes a trust edge. The
+"friendship keys" are derived via ECDH — Elliptic-Curve Diffie–Hellman — so the
+two instances compute a shared secret from each other's public keys without ever
+transmitting a private key or trusting an intermediary. Once that authenticated
+channel exists, the bilateral-consent edge ceremony from the trust-graph model
+runs across it: both endpoints sign the canonical payload, and each instance
+records its own view of the now-mutually-consented edge.</p>
+<p>A note on status, stated plainly because it matters: as of this writing,
+cross-instance trust is still in progress, not signed off. Phase 1 (the handshake
+plus ECDH friendship keys) is the piece that landed on 2026-03-25; the full
+cross-instance trust establishment — every later phase, the complete
+revocation-across-instances story, the production hardening — is <strong>not finished</strong>.
+Treat it as <em>started this week, foundation in place, not yet complete</em>. We're
+flagging this rather than describing a finished
+cross-instance handshake, because the difference between "the protocol's first
+phase landed" and "cross-instance trust works end-to-end in production" is
+exactly the kind of gap it would be convenient and dishonest to paper over.</p>
+<h2 id="why-its-built-this-way"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-its-built-this-way"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why it's built this way</h2>
+<p>Trace every property back to the first decision and the design coheres:</p>
+<ul>
+<li><strong>Asymmetry</strong> (A→B ≠ B→A) is only expressible because trust lives on directed
+edges. A per-person score structurally cannot hold two opposing truths.</li>
+<li><strong>Bilateral consent, unilateral exit</strong> is clean because an edge has two named,
+signing endpoints — two signatures to create, one to revoke.</li>
+<li><strong>The Dunbar cap</strong> makes the signal scarce, which is what stops it from being
+farmed the way an uncapped score is.</li>
+<li><strong>Bounded traversal</strong> keeps trust computable on a partial, local view —
+privacy-preserving by construction, not by policy.</li>
+<li><strong>Cross-instance edges</strong> (Phase 1) extend all of the above across a
+network without a central registry, by bootstrapping a shared secret two
+strangers can both compute and neither can forge.</li>
+</ul>
+<p><em>Related: <a href="2026-03-23-trust-is-directional.html" rel="noopener noreferrer">Trust Is Directional: The Relational Trust Graph</a>.</em></p>
+<p>The reframing — from "how trustworthy is this person" to "how much does <em>this
+being</em> trust <em>that being</em>, in what way, and with whose consent" — reads like
+philosophy. It is load-bearing engineering. It's the difference between a number
+that can be gamed and a graph of consenting, directional, explainable, finite
+relationships that mirrors how trust actually works between real beings. The
+cross-instance work is how that graph stops being a single-machine artifact and
+becomes something two sovereign instances can extend toward each other — one
+honest, consented edge at a time.</p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

@@ -1,0 +1,111 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Finding a Time Without a Shared Calendar Server — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Finding a Time Without a Shared Calendar Server</h1><p class="subtitle">Agree on a meeting by passing proposals straight between you — revealing only as much of your week as you trust the other side with</p><div class="meta"><span class="badge str-product">Product</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>May 22, 2026</span><span>·</span><span>6 min read</span><span>·</span><span>clients</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> Today's tools make you expose your calendar to a server in the middle just to pick a time. Here two people converge on a meeting by passing signed proposals straight between their devices — and each side reveals only as much of their week as the relationship warrants. No server ever learns who's meeting whom.</div><div class="markdown-body"><p>Picking a time to meet is one of the most ordinary things two people do, and one
+of the most quietly invasive. Look at how the common tools manage it. A booking
+page hands a stranger a live view of your open slots. A shared work calendar lets
+a server see, in principle, every meeting on your schedule. A scheduling poll
+posts everyone's choices to a third party that now knows who is trying to meet
+whom and when. In every case the same thing happens: to agree on a time, somebody
+has to expose their availability to a server that sits in the middle.</p>
+<p><img src="img/9-01-month-view.png" alt="The month view, where proposed and confirmed meetings appear as the negotiation unfolds." /></p>
+<p>We did not want a server in the middle. So we built scheduling as a conversation
+between the two people involved, carried directly between their devices, where the
+<em>only</em> facts that ever come into existence are the ones both sides chose to sign.</p>
+<h2 id="a-negotiation-not-a-lookup"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-negotiation-not-a-lookup"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A negotiation, not a lookup</h2>
+<p>The mental model to drop is "find a free slot on a shared calendar." There is no
+shared calendar. Instead there is a back-and-forth that looks a lot like how two
+humans actually settle a time over text.</p>
+<p>One person <strong>proposes</strong>. The proposal carries a few candidate time slots — and
+here is a nice touch, each slot carries a <em>weight</em>, a number saying how strongly
+this time is preferred. Not a flat list of "I'm free then," but "I'd love
+Tuesday morning, Thursday works, Friday afternoon if we must." Gradient
+preference, not binary free-or-busy.</p>
+<p>The other person can <strong>accept</strong> one of the slots, <strong>decline</strong> the whole thing, or
+<strong>counter</strong> with their own set of times. A counter starts another round, and the
+two sides iterate — propose, counter, counter again — until somebody accepts, or
+until a deadline the proposer set arrives. There is a hard cap on how many rounds
+this can go, so the negotiation can never spiral forever; if it has not converged
+by the cap, it stops.</p>
+<p>Every one of these steps — the proposal, each counter, the final acceptance — is a
+signed record passed directly between the two people, appended to the shared
+history of their relationship. No central scheduler ever sees it. The exchange
+travels peer-to-peer, which has a concrete consequence worth stating plainly: two
+laptops on the same local network, both off the wider internet, can still settle a
+meeting time between them. There is no server whose absence breaks the feature,
+because there is no server.</p>
+<h2 id="availability-scaled-to-trust"><a class="anchor" aria-hidden="true" tabindex="-1" href="#availability-scaled-to-trust"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Availability scaled to trust</h2>
+<p>This is the part I find genuinely elegant, and it is the answer to the booking-page
+problem. How much of your calendar the other side gets to see is not fixed. It
+scales to <a href="2026-05-23-an-address-book-where-every-entry-signs-back.html" rel="noopener noreferrer">how much you actually trust them</a> — and it always uses the <em>lower</em> of the
+two sides' trust, so neither party can unilaterally pry more detail out of the
+other.</p>
+<p>At the most distant tier — someone you do not really know — they get only a way to
+book a time, with no visibility into the rest of your schedule. One step closer,
+and the exchange works in terms of free/busy blocks: they learn <em>that</em> you are busy
+at certain times, never <em>why</em>. Closer still, between people who genuinely trust
+each other, the proposals can carry real calendar detail, titles and all, because
+at that point the privacy you are protecting is privacy you have chosen to share.</p>
+<p>The system, in other words, refuses to leak more than the relationship warrants.
+A stranger trying to book time with you cannot map your week. A close collaborator
+can see enough to find a slot quickly. The same negotiation protocol serves both,
+because the amount of disclosure is a dial set by the trust between the two
+specific people — not a global setting, and not the most-revealing side's choice.</p>
+<h2 id="what-happens-when-you-do-not-have-a-deal"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-happens-when-you-do-not-have-a-deal"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What happens when you do not have a deal</h2>
+<p>A negotiation that can run forever is not a feature, it is a trap. So every
+proposal names a deadline and a rule for what happens when that deadline arrives.
+The proposer picks the rule up front. The meeting can simply expire if no one has
+agreed. Or the organiser can be handed the decision — at the deadline, they pick
+the best slot from what is on the table. Or the deadline can roll forward a
+bounded number of times to give a slow-moving thread more room, but only so many
+times before it, too, resolves.</p>
+<p>A background timer watches these deadlines and fires the chosen rule when the
+moment comes. This is what keeps the whole thing from accumulating a graveyard of
+half-negotiated meetings that no one ever closed out.</p>
+<p>When agreement <em>is</em> reached, the negotiation graduates into an actual meeting: a
+fresh shared record opens for it, a video link gets provisioned automatically from
+whichever conferencing provider you use, and a short briefing is assembled from
+context the system already holds — past meetings with the same people, open
+to-do items between you, documents you have referenced together. The briefing
+itself respects trust tiers: people close enough see the prepared notes, others
+see only the agenda.</p>
+<h2 id="reaching-people-who-do-not-run-any-of-this"><a class="anchor" aria-hidden="true" tabindex="-1" href="#reaching-people-who-do-not-run-any-of-this"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Reaching people who do not run any of this</h2>
+<p>The honest objection to all of the above is: this is lovely between two people who
+both use the system, but most of the people I schedule with do not. What then?</p>
+<p>For an invitee who is not on NAOMS, the negotiation falls back to the oldest
+open standard for the job — the calendar invitation that arrives in your email
+inbox, the kind every mainstream calendar app already understands. The same
+exchange, expressed in that ordinary email-invite language, <a href="2026-05-20-one-inbox-for-every-conversation-youve-ever-had.html" rel="noopener noreferrer">rides out over a
+messaging bridge</a>. A request becomes an invite they can accept from whatever
+calendar they use; their reply, their counter-proposal, or their cancellation flows
+back into the negotiation on your side. They never installed anything. They never
+knew they were talking to a peer-to-peer protocol. They just got a calendar invite
+and replied to it.</p>
+<h2 id="the-honest-edges"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-honest-edges"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The honest edges</h2>
+<p>A few things are worth naming so this does not read as finished when it is not.</p>
+<p>Meetings between exactly two people are the well-worn path. Larger group
+scheduling — five people, partial agreement where some accept and some have not yet
+— works for the straightforward case but still has rough corners around the harder
+shapes. The full life of a negotiation, propose to counter to counter to accept to
+briefing, is exercised one hop at a time rather than as a single end-to-end run.
+And when graph context is thin, the auto-generated briefing quietly degrades to
+just the agenda, without yet explaining to you <em>why</em> it came up sparse.</p>
+<p>What is solid is the shape of the thing, and the shape is the point. Two people
+agree on a time by passing signed proposals directly between them. How much each
+side reveals is set by how much they trust the other, and capped at the more
+cautious side. The people who do not use any of this still get a plain calendar
+invite. And at no point does a server in the middle learn who is meeting whom —
+because there is no server in the middle.</p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-product.html">← more in Product</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

@@ -1,0 +1,146 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>One Source of Truth, No Second Database to Drift From — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>One Source of Truth, No Second Database to Drift From</h1><p class="subtitle">Killing 879 raw SQL calls and Neo4j by making the signed chain its own graph</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge paid">paid · premium preview</span> <span>March 28, 2026</span><span>·</span><span>6 min read</span><span>·</span><span>storage-sync</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> Your data now lives in exactly one place that can't quietly disagree with itself. We deleted two separate databases' worth of habits — Neo4j and 879 scattered raw queries — and made the one signed record of truth answer every query directly, with guardrails so the old habits can't creep back.</div><div class="markdown-body"><p>A system's data layer is a confession of what its authors believed when they
+wrote it. NAOMS, by this week, had accumulated two beliefs it no longer held: a
+Neo4j graph database off to one side, and raw SQL queries scattered through the
+application code. This week it deleted both — and the more interesting story is
+what it did <em>instead</em>.</p>
+<pre class="mermaid">flowchart LR
+  E[signed event] --> R[reducer] --> N[graph node] --> Q[your query]</pre>
+<p>The headline numbers are real and we'll hold ourselves to them. Neo4j removal deleted
+<strong>3,225 lines</strong> and shipped on 2026-03-28. The raw-SQL removal sized its own
+target precisely: <strong>879 calls across 97 files</strong> (2026-03-28). By the 28th the
+migration was well underway — the API-routes file alone went from 83 raw SQL
+calls to zero, replaced by 78 graph-API calls — and the final death condition,
+zero raw SQL in application code, lands the next day. We'll be careful about that
+boundary later; the architecture is what we want to build first.</p>
+<h2 id="two-databases-one-too-many"><a class="anchor" aria-hidden="true" tabindex="-1" href="#two-databases-one-too-many"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Two databases, one too many</h2>
+<p>Start with the shape of the problem. NAOMS stored graph-ish data — trust edges,
+relationships, materialized memory nodes — and it had reached for the obvious
+tool: Neo4j, a real graph database, with Cypher as its query language. Alongside
+it, plain SQL for everything tabular. Two storage engines, two query languages,
+two operational dependencies.</p>
+<p>The trouble isn't that either tool is bad. Neo4j is excellent at what it does.
+The trouble is what <em>two</em> of them cost an architecture that has a third thing —
+the chain — which is the actual source of truth. Every fact in NAOMS originates
+as <a href="2026-03-18-one-idea-under-everything-the-signed-event-chain.html" rel="noopener noreferrer">a signed event appended to a chain</a>. Neo4j and SQL were both, fundamentally,
+<em>caches</em> of that truth, shaped for querying. And maintaining two query-shaped
+caches of a single signed source means two places to keep in sync, two
+consistency stories, two things that can silently diverge from the chain that's
+supposed to be authoritative.</p>
+<p>The replacement names itself directly: a graph-native database — a unified chain
+primitive with a graph API — and it shipped on 2026-03-28 with 72 tests and
+production migrated. The bet is that you don't need a separate graph database if
+your chain primitive can <em>be</em> the graph.</p>
+<h2 id="the-replacement-a-chain-primitive-with-a-graph-api-on-top"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-replacement-a-chain-primitive-with-a-graph-api-on-top"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The replacement: a chain primitive with a graph API on top</h2>
+<p>Here's the architecture the week converged on. Instead of "chain → Neo4j +
+SQL → queries," the stack became "chain → graph nodes → graph API → queries,"
+with no second engine.</p>
+<p>The flow is:</p>
+<ol>
+<li>A signed event is appended to a chain (the only way anything becomes true).</li>
+<li>A <strong>reducer</strong> for that event type materializes it into <strong>graph nodes</strong> — <a href="2026-03-22-write-to-the-log-read-from-the-projection.html" rel="noopener noreferrer">the
+queryable projection of the event</a>.</li>
+<li>Application code reads through a <strong>graph API</strong> (<code>graphQuery</code> / <code>graphPut</code>),
+never through raw SQL.</li>
+</ol>
+<p>This is why the migration was a <em>graph</em> migration and not just a "swap one SQL
+dialect for another." The calls weren't rewritten to different SQL — they were
+rewritten to <code>graphQuery</code> and <code>graphPut</code> against materialized graph nodes. The
+api-routes rewrite captures the pattern exactly: 83 raw SQL calls became 78
+graph-API calls (2026-03-28). Reads and writes now go through a single typed
+surface that sits on top of the chain, not beside it.</p>
+<p>The materialization itself got its own home this week: the <strong>Materializer
+Registry</strong>, whose guiding question is the whole idea in one line — <em>"How can
+chain event types declare their own graph materialization without editing
+reducer source code?"</em> Each event type registers how it projects into graph
+nodes; the registry grew to 78 materializers (from an intermediate 66). That
+registry is what makes graph-native sustainable: adding a new queryable thing
+means registering a materializer, not hand-writing SQL in 97 files again.</p>
+<p>A caveat on status: the materializer registry was still <strong>in progress</strong> — <em>not</em>
+closed out — at this point. So we're describing it as the in-progress machinery
+this migration leaned on, landing alongside the SQL kill, not as a finished item.
+The raw-SQL kill, the graph-native database, and the Neo4j removal all reached
+their closeout; the registry that backs their long-term sustainability was still
+being finished. That's the honest state.</p>
+<hr />
+
+
+
+<h2 id="structural-enforcement-making-the-old-habit-impossible-not-just-absent"><a class="anchor" aria-hidden="true" tabindex="-1" href="#structural-enforcement-making-the-old-habit-impossible-not-just-absent"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Structural enforcement: making the old habit impossible, not just absent</h2>
+<p>Deleting 879 SQL calls is a migration. Keeping them deleted is an architecture
+problem, and this is the part we find most instructive.</p>
+<p>A one-time migration decays. Someone, three weeks later, reaches for a raw query
+because it's faster in the moment, and the count creeps from zero back up. The
+honest way to prevent that isn't a code-review reminder — it's to make the wrong
+thing <em>structurally</em> unavailable. The raw-SQL kill did this in three composing
+moves:</p>
+<ul>
+<li><p><strong>A guarded query primitive.</strong> A single safe graph-query call to use, and a
+pre-commit hook — a static check that bans raw SQL — that fails the commit if
+raw SQL reappears in application code. The guard runs <em>before</em> the bad code can
+land, not after.</p>
+</li>
+<li><p><strong>Writes restricted to reducers.</strong> Application code can read the graph, but
+only a reducer — the thing that materializes a signed event — may <em>write</em> a
+graph node. This is the load-bearing constraint: it means a graph node can't
+exist unless a signed chain event caused it. The cache can't lie about the
+chain because the cache can only be written by replaying the chain.</p>
+</li>
+<li><p><strong>Writes restricted to chain append at the MCP boundary.</strong> Agents reaching in
+through the tool surface get exactly one write verb: append a signed event.
+They cannot poke the graph directly at all.</p>
+</li>
+</ul>
+<p>Stack those three and the result is a closed loop with no side doors. The only
+way to create truth is to append a signed event; the only thing that writes graph
+nodes is a reducer replaying those events; raw SQL can't even be committed. The
+"no raw SQL" property stops being a thing you maintain and becomes a thing the
+system <em>is</em>. That's the same move NAOMS makes everywhere worth trusting:
+authentication that's structural rather than remembered, public-read that's a
+branch policy rather than a special case, and here, graph-native storage that's
+enforced by what's <em>possible</em> rather than by discipline.</p>
+<h2 id="the-honest-boundary-879-to-zero-spanned-two-days"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-honest-boundary-879-to-zero-spanned-two-days"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The honest boundary: 879 to zero spanned two days</h2>
+<p>We promised to be careful about the timeline, so here it is straight.</p>
+<p>On 2026-03-28 — this article's date — the migration was substantially done but
+<em>not</em> complete. The plan was written, Neo4j was gone, the graph-native database
+had shipped, the api-routes file was at zero, and the pre-commit guard was in
+place. But the application-wide death condition — <em>zero</em> raw SQL — was met the
+next day, when the codebase formally hit zero raw SQL in application code
+(2026-03-29). And there's an honest scar in between: the day before the finish,
+an audit deliberately published <a href="2026-03-28-the-honest-audit.html" rel="noopener noreferrer"><em>"31% death conditions pass, gaps documented"</em></a>
+(2026-03-28) — the team shipped the unflattering true number mid-flight rather
+than waiting for green.</p>
+<p>So if you take one factual claim from this piece, take the careful one: <strong>as of
+2026-03-28, raw-SQL removal was in-progress and near-complete; the zero-SQL
+death condition formally landed on 2026-03-29.</strong> Neo4j removal, the graph-native
+database, and the raw-SQL kill are all closed out; the materializer registry that
+sustains them was still in progress.</p>
+<h2 id="why-its-built-this-way"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-its-built-this-way"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why it's built this way</h2>
+<p>The deepest reason to delete two databases isn't simplicity for its own sake.
+It's that NAOMS has exactly one source of truth — the signed chain — and every
+additional query engine is another thing that can quietly drift from it. A graph
+that can only be written by a reducer replaying signed events can <em>never</em>
+disagree with the chain, because it has no independent existence. Two databases
+were two opportunities for the cache to lie. One graph API, fed only by reducers,
+fed only by signed events, has none.</p>
+<p>The hard part of this migration was never the find-and-replace. It was building
+the walls — the pre-commit hook, the reducer-only writes, the chain-append-only
+MCP boundary — so that "zero raw SQL" is a property the system enforces on itself
+rather than a number that decays the moment attention moves on. What's next is
+finishing the materializer registry so that every new queryable concept arrives
+by registration, not by reopening the door this week worked so hard to weld shut.</p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'neutral',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

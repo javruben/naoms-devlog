@@ -1,0 +1,83 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>The Day a Frozen Object Broke Every Dynamic Feature — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>The Day a Frozen Object Broke Every Dynamic Feature</h1><p class="subtitle">How one 'obviously harmless' hardening line quietly took down every tab in the app</p><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-confession">Confession</span> <span class="badge free">free</span> <span>April 10, 2026</span><span>·</span><span>4 min read</span><span>·</span><span>clients</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> A confession: the change we were surest was safe — locking down a list so nothing could tamper with it — quietly knocked out consent, vault, contacts, hives, and every other tab. Here's how the safe-looking bug is the dangerous one.</div><div class="markdown-body"><p>The most dangerous change you can ship is the one that looks safe.</p>
+<p>Not the gnarly refactor — you're careful with those. Not the thing you half
+understand — you test that twice. The dangerous one is the tidy little hardening
+that any reviewer would wave through, because it is <em>obviously correct</em> and
+<em>obviously harmless</em>, and so nobody looks hard enough to notice it is neither.</p>
+<p>On 2026-04-10 we shipped one of those.</p>
+<h2 id="the-harmless-line"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-harmless-line"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The "harmless" line</h2>
+<p>The feature registry in the NAOMS browser client is a plain object that the app
+hangs onto in the page. Dynamic feature modules register themselves into it as
+they load: consent, vault, contacts, hives, and a couple dozen others. It is the
+table that says "here are the tabs this client knows how to render."</p>
+<p>As part of a hardening sweep we did the thing that every security instinct
+applauds: we froze it. <code>Object.freeze</code> on the registry. The reasoning was airtight
+and we can still feel how reasonable it sounded — <em>nothing should be able to
+tamper with the feature registry after it's set up, so freeze it and make
+tampering impossible.</em> One line. A lock on the door. Ship it.</p>
+<h2 id="what-actually-happened"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-actually-happened"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What actually happened</h2>
+<p>The registry was frozen <em>before the dynamic feature modules could register
+themselves into it</em>.</p>
+<p>Freezing an object in JavaScript doesn't just prevent overwriting existing keys —
+it prevents <em>adding new ones</em>, silently, in non-strict code. So every feature
+module that loaded after the freeze tried to register, found the door locked, and
+failed without a sound. No exception bubbled to anywhere we were looking. The tabs
+just... weren't there.</p>
+<p>The revert records the body count plainly: the object was frozen before the
+dynamic feature modules could register, and the result was that consent, vault,
+contacts, hives, and <em>all</em> other package UI tabs silently failed to load. Not one
+feature. Not a category of features. <em>All</em> of them. The only things that worked
+were the six features preloaded before the freeze ran — out of more than thirty.</p>
+<h2 id="how-it-was-caught"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-it-was-caught"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How it was caught</h2>
+<p>This is the part we want to be honest about, because it is the part that should
+have happened <em>before</em> the freeze shipped, not after.</p>
+<p>The diagnosis came from opening the browser dev tools and asking the object
+directly. Was it frozen? Yes. The registry had six entries where it should have
+had thirty-plus. There was no stack trace pointing at the freeze, no error in the
+console screaming "you can't add a key to a frozen object" — because in the
+non-strict path the addition just no-ops and returns. The failure was <em>silent</em>,
+which is the worst adjective a failure can wear. A loud failure is a free bug
+report. A silent one is a treasure hunt where the treasure is your own mistake —
+the same lie we went hunting for in <a href="2026-04-04-note-the-errors-we-were-swallowing.html" rel="noopener noreferrer">the errors we were swallowing</a>.</p>
+<p>We had to go look at the live object in a running browser to see that the lock we'd
+installed for safety had locked out the entire feature set.</p>
+<h2 id="the-fix-and-the-thing-wed-actually-wanted"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-fix-and-the-thing-wed-actually-wanted"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The fix, and the thing we'd actually wanted</h2>
+<p>The fix took one line off and put a better one on. Remove the freeze. Keep the
+per-key guard that prevents <em>overwriting</em> an existing feature — which, it turns
+out, was the real security need all along.</p>
+<p>That is the whole lesson. We never actually needed to prevent <em>additions</em> to the
+registry — adding features is the registry's entire job. We needed to prevent
+<em>overwrites</em>, so that a malicious or buggy module couldn't replace the consent
+feature with something pretending to be it. Those are different threats, and a
+blanket freeze is the wrong tool because it answers a question we weren't asking. It
+locks both the additions we needed and the overwrites we feared, and the collateral
+damage was every dynamic tab in the product.</p>
+<h2 id="the-confession"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-confession"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The confession</h2>
+<p>The bug is not that we reached for a hardening primitive. The bug is that we
+reached for the <em>broadest</em> one available and never asked what it actually
+restricted. "Freeze it" felt like the maximally-safe choice precisely because it
+is maximal — and maximal restriction, applied to a thing whose job is to grow,
+is just breakage wearing a security badge.</p>
+<p>We think about this one whenever we're about to add a lock. The honest question is
+never "is this more locked-down?" It is "what specifically are we trying to prevent,
+and what is the narrowest mechanism that prevents exactly that and nothing else?"
+A per-key overwrite guard was that narrow mechanism, sitting right there the whole
+time. The blanket freeze was the lazy maximum, and the lazy maximum took down
+consent, vault, contacts, and hives for the cost of feeling responsible.</p>
+<p>Safe-looking is not safe. The tidy one-liner is the one to read twice.</p>
+<p><em>Related: <a href="2026-04-11-the-day-the-critics-found-everything.html" rel="noopener noreferrer">The Day the Critics Found Everything</a>.</em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-process.html">← more in Process</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

@@ -1,0 +1,196 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Money Is Control Flow: Who Decides Who Can Participate — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Money Is Control Flow: Who Decides Who Can Participate</h1><p class="subtitle">The structural case for economic tools that no outside party can switch off</p><div class="meta"><span class="badge str-vision">Vision</span> <span class="badge b-philosopher">Philosopher</span> <span class="badge free">free</span> <span>April 8, 2026</span><span>·</span><span>10 min read</span><span>·</span><span>payments</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> Money quietly decides which choices in your life are open and which are closed — and a handful of gatekeepers control that switch. Here's why we're building tools for tracking who owes whom that no one can shut off from the outside.</div><div class="markdown-body"><p>Programmers have a name for the part of a program that decides what happens next.
+They call it <em>control flow</em> — the branches, the gates, the conditions that decide
+which lines of code are reachable and which are skipped. A program is not just
+its instructions; it is the structure that decides which instructions ever get to
+run.</p>
+<p>Here is a claim worth sitting with: <strong>money is control flow for a society.</strong> It is
+the mechanism that decides which actions are reachable — who can buy a home, hire
+a lawyer, fund a cause, leave a job, start a business, cross a border — and which
+actions are quietly unreachable for the people who cannot transact. We are used
+to thinking of money as a <em>thing</em>: coins, a balance, a number that goes up and
+down. But a balance is only the visible surface. The deeper truth is that the
+system around the balance decides, at every moment, which paths through your life
+are open and which are closed.</p>
+<p>Once you see money this way, a question stops being abstract and becomes urgent:
+<em>who writes the control flow?</em> Who decides which branches are reachable, and for
+whom? This essay is about that question — and about why the honest answer, traced
+carefully, is the reason we are building economic primitives that no outside party
+can switch off.</p>
+<h2 id="three-chokepoints"><a class="anchor" aria-hidden="true" tabindex="-1" href="#three-chokepoints"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Three chokepoints</h2>
+<p>If money is the control flow of an economy, then power over money is power over
+participation. And that power is not diffuse. It concentrates at three specific
+points — three places where, if you stand there, you can decide who gets to act.</p>
+<p><strong>One: who creates the money.</strong> In the modern system, money is mostly created
+when banks extend credit. To create money is to decide, at the source, who can
+participate in the economy at all. If your access to credit is the gate to
+economic activity, then whoever controls credit controls the gate. Those granted
+credit can build; those denied it are not breaking any law — they are simply
+left outside the part of the economy that requires money to enter.</p>
+<p><strong>Two: who runs the rails.</strong> Even money you already hold has to <em>move</em> to do
+anything. And it moves over rails owned by a small number of intermediaries —
+the card networks, the interbank messaging systems, the correspondent banks. If
+all transactions flow through a handful of processors, then those processors hold
+a quiet veto over economic life. They can decline a payment, freeze an account,
+or remove a participant — and they can do it without a judge, without a charge,
+without a hearing. The rail does not need to convict you. It only needs to stop
+carrying you.</p>
+<p><strong>Three: who sets the rules.</strong> This is the newest and sharpest one, and it
+arrives with digitization. Physical cash is <em>dumb</em> in the best possible sense:
+once it is in your hand, no one can program it. It does not know what you are
+buying, where you are standing, or what day it is. Digital money is <em>smart</em> — and
+smart money can carry rules. It can be made to refuse certain categories of
+purchase, to work only in certain places, to expire on a certain date, to require
+a certain identity. Whoever sets those rules writes conditions directly into your
+ability to spend.</p>
+<p>Each of these is a chokepoint: a single place where a branch in everyone else's
+control flow can be flipped. And here is the structural fact that matters most —
+<strong>the more digital and centralized money becomes, the more powerful these
+chokepoints get.</strong> Digitization does not create the chokepoints. It sharpens
+them, automates them, and removes the friction that used to make them slow and
+visible.</p>
+<h2 id="this-is-not-a-conspiracy-it-is-a-gradient"><a class="anchor" aria-hidden="true" tabindex="-1" href="#this-is-not-a-conspiracy-it-is-a-gradient"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>This is not a conspiracy. It is a gradient.</h2>
+<p>We want to be careful and honest here, because this is exactly the kind of claim
+that curdles into paranoia if you let it. The drift toward control is <strong>not a
+plot.</strong> No one needs to be twirling a moustache. The dynamic is structural, and
+structural is in some ways worse, because structural needs no villain and stops
+for no good intention.</p>
+<p>The gradient runs like this: centralization increases efficiency. Efficiency
+creates advantage. Advantage compounds into power. And power, once it exists,
+tends to act to preserve itself. Every step of that chain can be taken by
+reasonable people pursuing reasonable goals — convenience, fraud reduction,
+compliance, speed — and the sum of all those reasonable steps is a system in
+which a very small number of points can decide who participates. The road to a
+control chokepoint is paved, mostly, with features.</p>
+<p>That is why "they would never do that" is not a reassurance. The relevant
+question is never whether a particular operator is benevolent today. It is whether
+the <em>architecture</em> makes exclusion possible without due process. If the capability
+is built into the rails, then its use is a policy decision — and policy changes,
+operators change, and pressures change. The capability is the risk. The intention
+is just weather.</p>
+<h2 id="what-it-looks-like-when-the-branch-flips"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-it-looks-like-when-the-branch-flips"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What it looks like when the branch flips</h2>
+<p>The structural argument would be easy to wave away if the branches never actually
+flipped. They flip.</p>
+<p>The pattern has a name when it happens to a person: <strong>debanking.</strong> You have not
+been charged with anything. There is no court order. One day the account is
+simply closed, the payment simply declined, the donation simply blocked — for
+"reputational risk," or under quiet informal pressure, or because a category you
+belong to has been deemed inconvenient. It has happened to disfavored-but-legal
+industries pressured out of the banking system without a single law being broken.
+It has happened to organizations whose donations were blocked by payment companies
+acting in concert, with no charge ever filed. It has happened to ordinary people
+whose accounts were frozen during a political dispute for giving small,
+legitimate sums. And it happens, persistently and quietly, to people in legal
+professions that banks would simply rather not be associated with.</p>
+<p>In none of these cases did the system need to prove anything. That is the whole
+point. The chokepoint does not require a verdict. It requires only the ability to
+stop carrying you — and in a fully digital economy, being un-carried by the rails
+approaches being erased from the economy. Without an account you cannot easily
+receive wages, pay rent, or buy most things. The exclusion is not a punishment
+handed down. It is a branch silently marked unreachable.</p>
+<h2 id="the-frontier-money-that-enforces-its-own-rules"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-frontier-money-that-enforces-its-own-rules"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The frontier: money that enforces its own rules</h2>
+<p>The third chokepoint — who sets the rules — is where the next decade gets
+decided, and it deserves a clear-eyed look rather than either hype or panic.</p>
+<p>The technology in question is programmable money issued directly by a monetary
+authority — money that can carry conditions in its own code. Most of the world's
+economies are now exploring some form of it. The capabilities are not
+science-fiction; they are the natural features of the thing. Programmable money
+<em>can</em> be restricted by category, so it buys some things and refuses others. It
+<em>can</em> be restricted by place, so it works here and not there. It <em>can</em> be made to
+expire, so it must be spent by a date rather than saved. And because every
+transaction is legible to the issuer, it <em>can</em> be watched in full, and combined
+with identity into a complete account of a person's economic life.</p>
+<p>We are stating capabilities, not predicting their use, and that distinction is the
+honest one. But notice what becomes possible when the rules travel <em>inside</em> the
+money: the account freeze that once required emergency legislation becomes a
+setting. The exclusion that once needed a pretext becomes a default. The due
+process that was already thin gets thinner, because there is no longer even an
+intermediary to petition — the refusal is in the currency itself.</p>
+<p>This is the logical endpoint of the gradient. Cash was control flow you held in
+your hand, and no one could rewrite it. Programmable money is control flow held by
+the issuer, and it can be rewritten remotely. The shift is not subtle once you
+name it: from money that obeys whoever holds it, to money that obeys whoever
+issued it.</p>
+<h2 id="the-case-for-primitives-that-cannot-be-switched-off"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-case-for-primitives-that-cannot-be-switched-off"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The case for primitives that cannot be switched off</h2>
+<p>So here is where the analysis lands, and where the building begins. If money is
+control flow, and if the control flow concentrates at chokepoints, and if those
+chokepoints can exclude without due process — then preserving the ability to
+participate requires economic primitives that <em>have no chokepoint to capture.</em></p>
+<p>Not a better operator. Not a kinder bank. Not a promise. An <em>architecture</em> in
+which the three powers — to create, to carry, to rule — cannot be seized, because
+they were never centralized in the first place.</p>
+<p>That is the design stance underneath the mutual credit we are building, and it is a
+stance about structure, not sentiment. What we build is deliberately not money — it
+is a record of obligation between people, an IOU. Mutual-credit balances are created
+<em>between two people at the moment of a transaction</em> — there is no central issuer
+holding the power to grant or deny the gate, because the credit is minted by the
+relationship itself. The records live on the participants' own devices and sync directly
+between them — there is no rail in the middle to decline a payment, because there
+is no middle. And there is no global programmable layer that an outside authority
+could use to write rules into your ability to spend, because there is no global
+ledger at all; value is defined inside a relationship or a community, not on an
+order book someone else controls.</p>
+<p>None of this is magic, and we will not pretend it is costless or finished — a
+later piece in this series is honest about the genuine tradeoffs of <a href="2026-04-15-why-there-is-no-global-ledger.html" rel="noopener noreferrer">giving up a
+global ledger</a>, and about the narrow cases where global agreement really is the
+right tool. The point here is narrower and harder: <em>the capability to exclude is
+the risk.</em> The only durable answer to a capability is to not build the capability
+into the architecture. You cannot capture a chokepoint that does not exist.</p>
+<h2 id="standing-on-others-shoulders"><a class="anchor" aria-hidden="true" tabindex="-1" href="#standing-on-others-shoulders"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Standing on others' shoulders</h2>
+<p>We are very far from the first to see this, and it would be dishonest to imply
+otherwise. The people who built the alternatives saw the chokepoints long before
+we did, and they deserve the credit.</p>
+<ul>
+<li><strong>The mutual-credit and time-bank traditions</strong> worked out, in practice, how
+money can be created at the moment of exchange and need no central issuer — the
+oldest answer to the first chokepoint, recovered and re-run for decades by people
+who never used the words "control flow."</li>
+<li><strong><a href="2026-06-02-fellow-travelers-circles-and-money-that-starts-from-trust.html" rel="noopener noreferrer">Circles</a></strong> is the closest large-scale demonstration that a currency can take
+its value from a web of trust rather than a central backing, and its years of
+real-world record — including failure and redesign — taught more than any
+whiteboard could.</li>
+<li><strong><a href="2026-06-01-fellow-travelers-gnu-taler-cash-that-tells-the-truth.html" rel="noopener noreferrer">GNU Taler</a></strong> is the sharpest existence proof that you can build serious,
+privacy-respecting digital payments that are <em>legible to the regulated world at
+the right boundary</em> without a speculative token or a global ledger — a model we
+admire and echo: private for the payer, transparent where it must be.</li>
+<li><strong>Sacred Economics and the commons-governance tradition</strong> supply the <em>why</em>
+beneath the <em>what</em>: money as a token of relationship rather than a claim on
+scarcity, and shared things stewarded rather than enclosed.</li>
+</ul>
+<p>What we add to that long conversation is mostly a matter of context: we are
+local-first and offline-capable with no global consensus, and we bind the whole
+system to a small set of axioms that make "no silent exclusion, no silent
+mutation of value" a hard architectural rule rather than a hope. That is a
+contribution to the work these projects started, not a critique of it.</p>
+<h2 id="the-honest-limit"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-honest-limit"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The honest limit</h2>
+<p>Let us close where we are obligated to. This is a structural argument and a design
+philosophy, not a prophecy. We have described <em>capabilities</em> and <em>tendencies</em>; we
+have not claimed to know how any particular authority will choose to use them.
+The chokepoints are real and the documented exclusions are real, but the future
+is not yet written, and reasonable people will weigh the convenience of digital
+money against its control potential differently than we do.</p>
+<p>What we are confident of is narrower and, we think, sturdy: money decides who gets
+to participate, that decision concentrates at a few points as money digitizes,
+and a point that <em>can</em> exclude eventually <em>will</em> be asked to. The most honest
+response to that is not to trust the people at the chokepoint. It is to build the
+parts of economic life that matter most so they have no chokepoint to trust — to
+make participation a property of the architecture, not a permission granted from
+above.</p>
+<p>That is what it means to take the control-flow metaphor seriously. The question
+was never just <em>what is money.</em> The question was always <em>who gets to decide who
+can run.</em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-vision.html">← more in Vision</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

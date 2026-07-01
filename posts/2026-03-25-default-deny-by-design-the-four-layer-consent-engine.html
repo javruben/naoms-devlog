@@ -1,0 +1,127 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>No by Default: How Four Independent Gates Decide Who Sees Your Data — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>No by Default: How Four Independent Gates Decide Who Sees Your Data</h1><p class="subtitle">Nothing is shared until a signed, logged grant says yes — and any one of four gates can say no</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>March 25, 2026</span><span>·</span><span>5 min read</span><span>·</span><span>consent</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> In NAOMS, nothing is shared unless a signed, audit-logged grant says yes. Your data starts out reachable by no one. To see anything, someone has to clear four independent checks — and any one of them can say no, and any one can be pulled back later. Every yes and no is written to a tamper-evident log. Here's how &quot;no by default&quot; stops being a slogan and becomes a data structure.</div><div class="markdown-body"><p>Most systems are permissive by default and add restrictions later. You create a
+resource, and unless you remember to lock it down, it's reachable. The security
+model is a list of exceptions to "yes." This is how data leaks: not through
+dramatic breaches, but through the one share someone forgot to scope.</p>
+<p>NAOMS inverts it. The base state is <strong>no</strong>. Nothing is readable, shareable, or
+reachable by another being unless a specific, signed, logged grant says
+otherwise. The Unified Consent Engine and the Consent Audit Trail are how that
+inversion is implemented, and both shipped and were signed off this week. The
+interesting part isn't the slogan "deny by default." It's that the engine makes
+access pass through <strong>four independent layers</strong>, each able to refuse on its own,
+and writes every decision to an append-only trail you can audit afterward.</p>
+<h2 id="why-default-deny-is-a-structure-not-a-policy"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-default-deny-is-a-structure-not-a-policy"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why default-deny is a structure, not a policy</h2>
+<p>"Deny by default" is easy to <em>say</em> and hard to <em>mean</em>. The cheap version is a
+config flag that flips the default and trusts everyone to opt into restriction
+correctly. The honest version makes "yes" something you have to actively
+construct out of cryptographic facts, so that the <em>absence</em> of those facts is
+itself the denial.</p>
+<p>That's the design choice in the consent engine: there is no ambient permission
+anywhere in the system. A being's data is sealed by default (the encryption layer guarantees
+even a compromised database reveals nothing), and reaching it requires assembling
+a positive case for access that the engine can verify. No case, no access — not
+because a rule blocked it, but because nothing granted it.</p>
+<h2 id="the-four-layers"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-four-layers"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The four layers</h2>
+<p>The consent engine evaluates access through four independent gates.
+The word <em>independent</em> is load-bearing: any single layer can deny, and a denial
+at any layer ends the evaluation. Access requires all four to say yes; denial
+requires only one to say no.</p>
+<pre class="mermaid">flowchart LR
+  A[request] --> B[identity] --> C[trust edge] --> D[consent rule] --> E[capability token] --> F[access granted]
+  B -->|no| X[denied]
+  C -->|no| X
+  D -->|no| X
+  E -->|no| X</pre>
+<p><strong>1. Identity.</strong> Who is asking? The requester must present a DID — a self-owned
+cryptographic identifier — and prove control of it by signing the request. An
+unauthenticated request never reaches the later layers. This is the "are you who
+you claim to be" gate, and it's answered by signature verification, not by a
+session cookie someone could steal.</p>
+<p><strong>2. Trust edge.</strong> Does a relationship exist that could justify this access? The
+engine consults <a href="2026-03-23-trust-is-directional.html" rel="noopener noreferrer">the trust graph for a directed, consented edge</a> from
+the data owner toward the requester of the appropriate kind and sufficient
+weight. No edge, no standing. This is where the relational trust model earns its
+keep: access is scoped to <em>relationships you actually formed</em>, not to anyone who
+happens to hold a credential.</p>
+<p><strong>3. Consent rule.</strong> Has the owner expressed a rule that permits <em>this</em> access to
+<em>this</em> data? A trust edge means "I have a relationship with you"; it does not by
+itself mean "you may read my health journal." The consent-rule layer is where the
+owner's explicit grant lives — scoped to specific memories, domains, or
+operations. The default here, again, is deny: in the absence of a matching rule,
+this layer refuses.</p>
+<p><strong>4. Capability token.</strong> Finally, the request must carry a valid <a href="2026-04-26-ucan-biscuit-and-authority-that-flows-from-you.html" rel="noopener noreferrer"><strong>Biscuit</strong>
+capability token</a> authorizing the specific operation. Biscuit tokens are
+attenuable — a broad capability can be narrowed, never widened, as it's passed
+along — which means a grant can be delegated downstream only in <em>more</em>
+restricted form. The engine is <strong>Biscuit-first</strong>: the token is the
+portable, verifiable proof of authority that travels with the request, and it's
+checked last because it's the most specific.</p>
+<p>Stack them and the shape is clear:</p>
+<pre><code>request
+  → identity      (signed DID? prove it)
+  → trust edge    (is there a consented relationship?)
+  → consent rule  (did the owner permit THIS access?)
+  → capability    (valid Biscuit for THIS operation?)
+  → GRANT
+any layer says no → DENY (and the request stops there)</code></pre><p>Four gates, four different <em>kinds</em> of "no." You can have a relationship without a
+rule. A rule without a token. A token whose authority was narrowed below what
+this operation needs. Each failure mode is distinct, and each is independently
+revocable: tear down the trust edge, delete the consent rule, or revoke the
+token, and access ends — without touching the other three layers or re-encrypting
+a byte of data.</p>
+<h2 id="every-decision-is-written-down-the-audit-trail"><a class="anchor" aria-hidden="true" tabindex="-1" href="#every-decision-is-written-down-the-audit-trail"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Every decision is written down: the audit trail</h2>
+<p>A consent engine you can't audit is a consent engine you have to take on faith.
+The Consent Audit Trail removes the faith. Every access decision the
+engine makes is appended to a log, and the log is <strong>hash-chained with BLAKE3</strong>:
+each entry includes the hash of the previous entry, so the chain is
+tamper-evident. You cannot quietly delete or rewrite a past decision without
+breaking every hash that came after it.</p>
+<p>The trail is <strong>append-only</strong>. Grants, denials, revocations — they accrete; they
+are never edited in place. This is the Honesty axiom expressed as a data
+structure: the system cannot silently change the record of what it decided. If
+you were granted access on Tuesday and revoked on Thursday, both facts are in the
+chain, in order, provably unaltered. "Who could read this, and when, and on whose
+authority?" is a query against an immutable log, not a reconstruction from
+memory.</p>
+<p>The pairing of the engine and the trail is the whole point. The engine <em>makes</em> the decisions;
+the trail makes them <em>accountable</em>. A grant you can't audit is a liability. A
+grant that's cryptographically logged the moment it's made is a fact you can
+stand behind.</p>
+<h2 id="why-its-built-this-way"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-its-built-this-way"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why it's built this way</h2>
+<p>Deny-by-default with four independent layers and a hash-chained audit trail is more
+machinery than a permissive model with an exception list. The extra machinery
+buys properties the cheap model can't have:</p>
+<ul>
+<li><strong>No accidental exposure.</strong> There is no "forgot to lock it down" failure mode,
+because nothing is reachable until a positive grant is constructed. The
+dangerous default — open — does not exist.</li>
+<li><strong>Independent revocation.</strong> Four layers means four independent off-switches.
+You can revoke a relationship, a rule, or a token without disturbing the
+others, and access ends at the first "no."</li>
+<li><strong>Least privilege by construction.</strong> Biscuit attenuation means delegated
+authority can only shrink as it travels, never grow.</li>
+<li><strong>Accountability.</strong> The hash-chained trail makes every decision provable after
+the fact, which is what turns "we have a consent model" into "here is the
+log of every grant we ever made, and you can verify it wasn't tampered with."</li>
+</ul>
+<p><em>Related: <a href="2026-04-08-proof-you-said-yes.html" rel="noopener noreferrer">Proof You Said Yes: Consent as a Signed Receipt</a>.</em></p>
+<p>The reason it's default-deny isn't paranoia. It's that in a system whose entire
+premise is that you own your data, "open unless restricted" is the wrong default
+to ever ship — it makes the safe outcome depend on the owner remembering to be
+careful. NAOMS makes the safe outcome the <em>default</em> outcome: nothing leaves
+until you, provably and revocably, decide it should.</p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'neutral',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

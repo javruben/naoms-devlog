@@ -1,0 +1,122 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Honoring Deno: The Runtime That Says No by Default — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Honoring Deno: The Runtime That Says No by Default</h1><p class="subtitle">The foundation that gives our software the right to refuse code it doesn't trust</p><div class="meta"><span class="badge str-vision">Vision</span> <span class="badge b-appreciation">Fellow Travelers</span> <span class="badge free">free</span> <span>March 30, 2026</span><span>·</span><span>6 min read</span><span>·</span><span>meta</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> Most programs can read your files and secrets the moment they launch. We build on Deno, which flips that: code gets nothing until it asks. Here's the tribute to the runtime that lets our software refuse by default — and where we pushed protection even further.</div><div class="markdown-body"><p><em>The Deno homepage — "Uncomplicate JavaScript." The open-source, secure-by-default JavaScript/TypeScript runtime our daemon runs on.</em></p>
+<p><img src="assets/site-deno.png" alt="Deno — deno.com" /></p>
+<p>Most programs you run can, the moment they start, read any file you own, open
+any network connection, and read every secret in your environment — and you just
+trust that they won't. Deno looked at that default and refused it. A program
+gets nothing until you say so. Our software runs on Deno, and this piece is
+written in its honor.</p>
+<h2 id="what-they-do-well"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-they-do-well"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What they do well</h2>
+<p>Deno is a runtime for JavaScript and TypeScript, built in Rust on top of the V8
+engine, created by Ryan Dahl — the same person who created Node.js — explicitly
+as a corrective to the security mistakes he felt Node made. By its 2.x releases
+it is production-stable and has full compatibility with the npm package
+ecosystem, so the libraries people already depend on simply work.</p>
+<p>The defining idea is <strong>secure by default</strong>. A Deno program has no access to the
+file system, the network, or environment variables unless you explicitly grant
+it — and the grants are <em>scoped</em>, not all-or-nothing. You can permit network
+access to one specific host and port, read access to one directory, write access
+to another, and environment access to a single named variable. There is no
+"allow everything" by default. A piece of code must <em>declare</em> what it needs, and
+you get to see that declaration and decide.</p>
+<p>The second gift is <strong>isolated workers</strong>. Deno's Web Workers run in separate V8
+isolates with their own permissions — a worker cannot reach into its parent's
+memory, its permissions can be tightened relative to the parent but never
+loosened, communication happens by message-passing with no shared memory, and a
+worker can be terminated on a timeout. That is a real sandbox, provided at the
+runtime level, for free.</p>
+<p>The third is the <strong>architecture it invites</strong>: a Rust core for the heavy,
+sensitive work — cryptography, local database access, anything that must be
+memory-safe and free of garbage-collection pauses — paired with the Deno runtime
+for the higher layers, and a foreign-function bridge that lets the runtime call
+into Rust directly without the overhead of talking to a separate process. Add
+native TypeScript with no separate build step, and the ability to compile a whole
+program into a single distributable binary, and you have a genuinely modern
+foundation. It is careful, opinionated, generous engineering.</p>
+<h2 id="where-to-find-it"><a class="anchor" aria-hidden="true" tabindex="-1" href="#where-to-find-it"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Where to find it</h2>
+<ul>
+<li>Deno: <a href="https://deno.com" rel="noopener noreferrer">deno.com</a> · <a href="https://docs.deno.com/runtime/fundamentals/security/" rel="noopener noreferrer">docs.deno.com/runtime/fundamentals/security</a></li>
+<li>Worth reading: the <a href="https://docs.deno.com/runtime/reference/web_platform_apis/" rel="noopener noreferrer">Web Workers</a> and <a href="https://docs.deno.com/runtime/reference/ffi_api/" rel="noopener noreferrer">foreign-function interface</a> references</li>
+</ul>
+<p>If you want to feel what "the program asks permission before it acts" does to
+your sense of trust in your own machine, install Deno and try to make a script
+phone home. It can't, until you let it.</p>
+<h2 id="what-we-took"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-we-took"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What we took</h2>
+<p>We took Deno's central conviction wholesale: <strong>a program should declare what it
+needs, and get nothing more.</strong></p>
+<p>Our own design needs to <a href="2026-06-12-installing-code-you-didnt-write-safely.html" rel="noopener noreferrer">run code that we did not write</a> — extensions and
+add-ons that extend what your system can do. The dangerous version of that is
+the normal one: you install something, and it can quietly read your files and
+your secrets. The safe version is the one Deno already built. Each piece of
+third-party code can run in an isolated worker with permissions scoped to exactly
+what it declared — network access only to the hosts it named, file access only
+to the directories it needs — and nothing else. We did not have to invent
+operating-system-level network filtering and process isolation from first
+principles. Deno provides that boundary at the runtime, and we build on it. That
+is an enormous amount of dangerous, easy-to-get-wrong infrastructure that we got
+to <em>not</em> build, and instead got <em>right</em> by standing on Deno's work.</p>
+<p>We also took the <strong>Rust-core-plus-runtime shape</strong>. The most sensitive operations
+in our system — deriving keys, encrypting and decrypting, signing — live in a
+memory-safe Rust core, called directly across the foreign-function bridge so the
+hot paths stay fast and pause-free. The orchestration, the higher-level logic,
+and the extension execution live in the runtime above. That split — heavy and
+sensitive below, flexible and sandboxed above — is the pattern Deno's
+architecture invites, and we adopted it deliberately.</p>
+<h2 id="what-we-did-differently-and-why"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-we-did-differently-and-why"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What we did differently (and why)</h2>
+<p>Here we want to be precise and generous, because where we diverge from a pure
+Deno design is not a criticism of Deno — it is a consequence of our own
+constraints, ones Deno was never trying to solve for us.</p>
+<p><strong>We keep a Rust core as a peer, not a guest inside the runtime.</strong> There is an
+appealing vision where everything — the TypeScript and the Rust both — lives
+embedded inside one runtime process. We looked hard at that and chose, for now,
+the more conservative shape: the runtime and the native core compose across a
+clean foreign-function boundary rather than the native pieces being fully
+embedded inside the runtime's own machinery. The reason is risk. The fully-
+embedded path's hardest dependency is keeping npm and Node compatibility working
+inside an embedding whose surface shifts release to release — a real cost that
+gets you most of the benefit only if you accept significant instability. We
+preferred to take the large majority of the architectural benefit at a small
+fraction of the risk, and to defer the deeper embedding until both our own code
+and that embedding story have matured. That is not a verdict on Deno; it is
+caution about a frontier Deno itself is still settling.</p>
+<p><strong>Our sovereignty constraints push the secret-holding work <em>out</em> of the
+scriptable layer entirely.</strong> Deno's permission model is excellent at saying "this
+worker may not touch the network." But our deepest requirement is that the keys
+which represent <em>you</em> never sit in the same trust zone as the code that merely
+<em>acts on your behalf</em>. So our most sensitive material lives behind the native
+boundary, in a part of the system that the scriptable, extensible layer can ask
+to perform an operation but can never read out of. Deno's sandbox is one
+essential ring of that defense; it is not, by itself, the whole of it, and it was
+never meant to be.</p>
+<p><strong>We run locally first, not as hosted isolates.</strong> Deno offers a path where
+untrusted code runs in isolated cloud instances with per-request limits — a fine
+fit for hosted services. Our model is local-first: your software, your machine,
+working offline. So we use the parts of Deno that serve a sovereign local process
+and leave the hosted-isolate path aside, not because it is bad, but because it
+answers a question we are deliberately not asking.</p>
+<p>The honest summary: Deno gave us a default we now consider non-negotiable — code
+gets nothing until it asks — and an architecture that pairs a fast, safe native
+core with a flexible, sandboxed runtime. We took both gladly. Where we went our
+own way, it was to push secret-holding even further from the scriptable layer
+than a runtime sandbox alone reaches, and to stay cautious about a deeper
+embedding that is still maturing. Every one of those choices was made easier, and
+made safer, by the foundation Deno laid first.</p>
+<p><em>Related: <a href="2026-04-22-the-kernel-is-the-brain-the-plugins-are-the-senses.html" rel="noopener noreferrer">The Kernel Is the Brain, the Plugins Are the Senses</a>.</em></p>
+<p>To Ryan Dahl and the Deno team: thank you for looking at "allow everything by
+default" and saying no. Our daemon runs on your runtime, and the day it starts,
+it asks permission. That is your idea, and we are grateful for it.</p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-vision.html">← more in Vision</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

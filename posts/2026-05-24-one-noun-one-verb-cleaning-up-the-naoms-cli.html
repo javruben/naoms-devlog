@@ -1,0 +1,116 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>One Noun, One Verb: Cleaning Up the naoms CLI — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>One Noun, One Verb: Cleaning Up the naoms CLI</h1><p class="subtitle">Turn ~75 commands you have to look up into a handful of nouns whose verbs you can guess — a pattern for your own CLI</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-teacher">Teacher</span> <span class="badge free">free</span> <span>May 24, 2026</span><span>·</span><span>5 min read</span><span>·</span><span>clients</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> When a CLI grows to ~75 flat commands, every one you can't predict is one you have to look up. Here's how we collapsed ours into 44 noun-verb families — so you learn a handful of nouns and guess the verbs — kept every old command working, and proved it with a 508-entry sweep. The three moves transfer to any tool you maintain.</div><div class="markdown-body"><blockquote>
+<p><strong>Freshness note (please read).</strong> This tutorial describes the command line as
+it was reorganized on 2026-05-23, and we've re-checked the key commands against
+the code as of June 2026 — <code>naoms onboard founder</code> and the noun-verb structure
+below still exist. Command surfaces move, though. If you're reading this much
+later, treat the <em>shape</em> of the idea as durable and verify the exact verbs with
+<code>naoms --help</code> before copying them.</p>
+</blockquote>
+<p>If you've ever used a command-line tool that grew organically, you know the
+feeling. There are forty commands at the top level, half of them are variations
+on the same noun (<code>device-revoke</code>, <code>add-device</code>, <code>devices</code>), and you can never
+remember whether it's <code>naoms-key-rotation</code> or <code>naoms-rotate-key</code>. The tool isn't
+broken. It's just <em>cluttered</em> — and clutter is a real cost, because every command
+you can't predict is a command you have to look up.</p>
+<p>On 2026-05-23, NAOMS cleaned this up. This is a teaching walk-through of <em>what</em>
+they did and, more usefully for your own projects, <em>why the pattern works.</em></p>
+<h2 id="the-before-75-flat-commands"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-before-75-flat-commands"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The before: ~75 flat commands</h2>
+<p>Here's the honest starting state, straight from the commit that fixed it:</p>
+<blockquote>
+<p>"Collapse the ~75 flat top-level <code>naoms</code> commands into 44 by nesting command
+FAMILIES under single nouns; keep only genuinely distinct domains top-level."</p>
+</blockquote>
+<p>Seventy-five commands, all at the top level, all siblings. The problem isn't the
+number of <em>things you can do</em> — a rich tool does a lot. The problem is that
+device management, key management, and package management were each smeared
+across several unrelated top-level names instead of living under one roof.</p>
+<h2 id="the-idea-nouns-are-folders-verbs-are-actions"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-idea-nouns-are-folders-verbs-are-actions"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The idea: nouns are folders, verbs are actions</h2>
+<p>The fix is a single, learnable rule: <strong>organize the CLI as <code>&lt;noun&gt; &lt;verb&gt;</code>.</strong></p>
+<p>Think of each noun as a folder and each verb as an action inside it. You don't
+need to memorize 75 flat names; you need to learn a handful of nouns, and then
+the verbs underneath each one are guessable because they're just <em>what you'd do
+to that noun.</em></p>
+<p>Concretely, here's how the families collapsed (these groupings are quoted from
+the real commit):</p>
+<ul>
+<li><strong><code>device</code></strong> — instead of <code>device-revoke</code>, <code>add-device</code>, and <code>devices</code>
+floating separately, there's now one <code>device &lt;verb&gt;</code>. List your devices, pair a
+new one, revoke an old one — all under the same noun.</li>
+<li><strong><code>key</code></strong> (alias <code>keys</code>) — <code>keys generate</code>, <code>keys show</code>, <code>keys export</code>, and the
+old <code>key-rotation</code> became <code>key rotate</code>. One noun, the obvious verbs.</li>
+<li><strong><code>package</code></strong> (alias <code>pkg</code>) — the big one. <a href="2026-06-12-installing-code-you-didnt-write-safely.html" rel="noopener noreferrer">Install</a>, uninstall, update, info,
+publish, and a long tail of package operations all nest under <code>package &lt;verb&gt;</code>
+instead of cluttering the top level.</li>
+<li><strong><code>merge</code></strong> — <code>merge gate</code>, <code>merge queue</code>, <code>merge request</code>. The fleet's
+merge-pipeline commands, grouped where you'd look for them.</li>
+</ul>
+<p>So a newcomer learns "there's a <code>device</code> noun" and can then <em>guess</em> <code>device list</code>, <code>device pair</code>, <code>device revoke</code> without reading docs for each. That's the
+whole payoff: <strong>predictability replaces memorization.</strong></p>
+<h2 id="two-design-choices-worth-stealing"><a class="anchor" aria-hidden="true" tabindex="-1" href="#two-design-choices-worth-stealing"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Two design choices worth stealing</h2>
+<p>The cleanup made two decisions that are smarter than they look, and both are
+worth copying.</p>
+<p><strong>1. Nothing became unreachable.</strong> The single scariest thing about reorganizing a
+CLI is breaking someone's muscle memory or, worse, their scripts. The commit is
+explicit about how it avoided that:</p>
+<blockquote>
+<p>"Nothing becomes unreachable — every old token resolves via a new umbrella path
+or an intentional alias (82/82 mapped)."</p>
+</blockquote>
+<p>Every one of the 82 old command tokens still resolves — either through its new
+noun-verb home or through an intentionally kept alias (that's why <code>pkg</code> still
+works for <code>package</code>, and <code>mr</code> still works for <code>merge request</code>). Eighty-two out of
+eighty-two. If you ever restructure a CLI, this is the discipline to copy:
+<strong>map every old path forward; break nothing silently.</strong></p>
+<p><strong>2. One command was deliberately left at the top level.</strong> Good rules need
+honest exceptions. The <a href="2026-04-14-what-naoms-check-actually-checks.html" rel="noopener noreferrer"><code>check</code> command — the fleet-wide health checker</a> — stays
+<em>both</em> under <code>package check</code> <em>and</em> as top-level <code>naoms check</code>, because (in the
+commit's words) it's "invoked as <code>naoms check</code> by the pre-commit hook,
+pre-merge-regression, and the watchdog classifier — removing it would break every
+session's commit gate." Both paths share one implementation. The lesson: a clean
+taxonomy serves humans, but don't let purity break a load-bearing automation
+path. Keep the alias, share the code.</p>
+<h2 id="how-they-knew-it-actually-worked"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-they-knew-it-actually-worked"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How they knew it actually worked</h2>
+<p>This is the part we most want a newcomer to absorb, because it's the difference
+between "I reorganized the menu" and "I reorganized the menu and <em>proved</em> nothing
+fell off it." The same work ran a full end-to-end sweep over the entire command
+index:</p>
+<blockquote>
+<p>"scale CLI-E2E sweep to full cli-index (508 entries: 76 read dispatched, 431
+help-resolved, 1 hidden, 0 hand-written-skip)."</p>
+</blockquote>
+<p>Every entry in the command surface — 508 of them — gets exercised by a test, not
+eyeballed. "Zero hand-written-skip" means no command was quietly excused from the
+check. That's how you make a big refactor safe: not by being careful, but by
+making the machine confirm every command still resolves.</p>
+<h2 id="try-it-yourself"><a class="anchor" aria-hidden="true" tabindex="-1" href="#try-it-yourself"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Try it yourself</h2>
+<p>The single best command to feel the new shape is the genesis-account onboarding —
+creating the very first identity on a fresh NAOMS install:</p>
+<pre><code>naoms onboard founder</code></pre><p>(<code>founder</code> here is the NAOMS term for the <em>genesis account</em> — the first identity
+on a brand-new install — not a person's role.) Run <code>naoms --help</code> and you'll see
+the top-level nouns; pick one, run <code>naoms &lt;noun&gt; --help</code>, and watch the verbs
+appear underneath. The whole point of the redesign is that this exploration <em>just
+works</em> — you can discover the tool by walking its nouns, instead of memorizing a
+flat list of seventy-five names.</p>
+<h2 id="the-takeaway"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-takeaway"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The takeaway</h2>
+<p>A CLI is a teaching surface. Every name you choose either helps a newcomer
+<em>predict</em> the next name or forces them to <em>look it up.</em> "One noun, one verb"
+maximizes prediction: learn the nouns, guess the verbs. NAOMS went from ~75 flat
+commands to 44 noun-verb families, kept every old path working, and proved it
+with a 508-entry sweep. You can apply the exact same three moves — group by noun,
+alias the old paths, test every leaf — to any tool you maintain.</p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

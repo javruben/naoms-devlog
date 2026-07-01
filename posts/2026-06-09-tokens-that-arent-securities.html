@@ -1,0 +1,175 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Not Money, Not a Security: What Our Tokens Actually Are — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Not Money, Not a Security: What Our Tokens Actually Are</h1><p class="subtitle">The reasoned design stance behind tokens that are records of mutual obligation — IOUs and community credit, not investments. A position, not legal advice.</p><div class="meta"><span class="badge str-vision">Vision</span> <span class="badge b-philosopher">Philosopher</span> <span class="badge free">free</span> <span>June 9, 2026</span><span>·</span><span>9 min read</span><span>·</span><span>payments</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> The tokens you hold here are deliberately not money and not a security — by design, not by accident. They're records of mutual obligation: IOUs between people who trust each other, contribution credits, community credit. This is the reasoned position behind that — what these tokens actually are, why their shape keeps them outside the investment frame, and the honest line where the regulated world begins. A design stance, not legal advice.</div><div class="markdown-body"><p>Let us start with the disclaimer, because it is load-bearing and we mean it: we are
+not lawyers, this is not legal advice, and nothing here is a regulatory ruling.
+What follows is a <em>position</em> — a reasoned design stance about what the tokens in
+this system are and is not. Jurisdictions differ, the real world gets the final
+word, and we will say so plainly every time the question gets close to a line.</p>
+<p><img src="assets/2026-06-09-token-detail.png" alt="A token detail screen: time-credits held across fifty people, shown as
+separate promises rather than one pot — each person's balance, each marked Final
+or Pending, with the honest note &quot;Held across 50 people — separate promises, not
+one pot.&quot;" /></p>
+<p>With that said, here is the claim, stated cleanly: the tokens we are building are
+<strong>not money and not securities</strong> — and that is a deliberate property of
+their shape, not a hopeful label stuck on afterward. They are records of mutual
+obligation: <em>"I owe you"</em> entries, time-minted contribution credits, and
+community-issued governance credits — accounting of who-owes-whom within a
+relationship. They are designed to sit <em>outside</em> both the "money / currency" frame
+and the "security" frame on purpose.</p>
+<p>This article is the argument for why that shape holds.</p>
+<p>Think of it as an IOU written on a shared notepad, not a pile of cash. When you
+help me, I write down that I owe you; when I help you back, we cross it out. The
+notepad has no resale value and no price — it is just a running record of
+who-owes-whom, and across everyone's pages it always sums to zero. Nobody sells
+you a page, and there is no market in pages. Hold that picture; everything below
+is a careful description of that notepad and the one place its edge touches the
+world of real money.</p>
+<p>That screenshot is the whole thesis in one picture. Look at what it refuses to
+be. There is no price. There is no market. There is no single tradeable number
+you could speculate on. There is a balance with <em>one specific person</em> — a line on
+the notepad between you and them — and the interface goes out of its way to say
+"separate promises, not one pot." That is not a UI flourish. It is the legal and
+economic posture, made visible.</p>
+<h2 id="three-kinds-of-obligation-record-none-of-them-an-investment"><a class="anchor" aria-hidden="true" tabindex="-1" href="#three-kinds-of-obligation-record-none-of-them-an-investment"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Three kinds of obligation record, none of them an investment</h2>
+<p>There are three kinds of token in this system, and it is worth being precise
+about each, because the argument depends on what they actually are rather than on
+what the word "token" makes you imagine.</p>
+<p><strong>Mutual credit — the IOU.</strong> The line on the shared notepad, and the oldest form
+of obligation record there is: I do something for you, and now you owe me. The
+balance is a record of obligation between two people who trust each other. It is
+written at the moment of a transaction, not
+issued by anyone in advance, and it always sums to zero — every credit on one
+side is a debit on the other. A transfer is a two-party fact: it does not exist
+until the person receiving it also signs. There is no pool to buy into and no
+issuer selling anything.</p>
+<p><strong>Time-minted contribution credits.</strong> A per-person credit that accrues with time
+and participation — closer to a basic-income or dignity-floor idea than to an
+asset. Everyone mints at the same rate; there is no pre-mine, no founder
+allocation, no sale. Its value, where it has any, comes from a web of people
+choosing to honor each other's credits, not from a market setting a price. You
+cannot front-run it because there is nothing to front-run.</p>
+<p><strong>Community-issued governance credits.</strong> A group issues these only when a
+genuine, approved, single-use governance decision authorizes it — a recorded
+collective choice, not a continuous issuance you could trade against. Think
+points a community grants for stewardship, not shares it floats.</p>
+<p>Notice the through-line: in none of these three is there a central party issuing
+an instrument and selling it to people who expect to profit from that party's
+future efforts. That absence is not incidental. It is the entire point.</p>
+<h2 id="why-the-shape-matters--the-plain-language-test"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-the-shape-matters--the-plain-language-test"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why the shape matters — the plain-language test</h2>
+<p>When people ask whether something is a security, the rough intuition behind most
+frameworks runs something like this: <em>is there an investment of money, in a
+common enterprise, with an expectation of profit, derived from the efforts of
+others?</em> We are compressing decades of careful law into one plain sentence, and a
+real determination is fact-specific and jurisdiction-specific — but the intuition
+is enough to see why these instruments are built the way they are.</p>
+<p>Walk it through against the three kinds above.</p>
+<ul>
+<li><strong>No central issuer selling an investment.</strong> Mutual credit is minted between
+two peers at the moment of a transaction. Time-credits accrue per person at a
+flat rate. Governance credits come from a recorded community vote. In none of
+these does an issuer take your money in exchange for an instrument.</li>
+<li><strong>No expectation of profit from someone else's efforts.</strong> The value of an IOU
+is the promise of the specific person who owes it — your relationship, not a
+team's roadmap. Time-credits derive their worth from a community honoring them,
+not from anyone's labor increasing their price. There is no "others" whose work
+you are betting on.</li>
+<li><strong>No common enterprise, no market.</strong> And this is the structural one: <strong>there is
+no global tradeable ledger.</strong> Value is defined <em>within a relationship or a
+community</em>, not on an order book. There is no single fungible pot, no exchange,
+no price discovery. The interface in that screenshot literally splits your
+balance into fifty separate promises so you are never tempted to treat it as one
+speculative number.</li>
+</ul>
+<p>Put plainly: you cannot have an investment contract when there is nothing being
+sold, no profit expected from another's efforts, and no market for the thing to
+trade on. We did not bolt those properties on to dodge a category. We started
+from "what is an honest record of obligation between people who trust each other?"
+and the category fell out the other side.</p>
+<p>There is a deeper architectural fact under this. The whole system was designed
+<strong>non-crypto-first</strong> — the default token is plaintext to its members, with no
+blockchain, no global consensus, and no order book anywhere in the design. A
+person who has never touched crypto is the intended user, and the language
+reflects it: "credits," "points," "Pending / Final," "how it's created." The
+absence of a tradeable global ledger is not a limitation we are apologizing for.
+It is the feature that keeps this on the right side of the line.</p>
+<h2 id="the-edge-crossings--where-we-are-honest-about-the-real-world"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-edge-crossings--where-we-are-honest-about-the-real-world"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The edge crossings — where we are honest about the real world</h2>
+<p>Here is where the position earns its keep, and where we have to be most careful.</p>
+<p>A closed circle of mutual credit can hum along on its own terms forever, never
+touching the regulated, taxable world. But sometimes value <em>does</em> cross that
+boundary — someone redeems a community credit for real money, or an outside payment
+funds an internal balance. We do not pretend that boundary doesn't exist, and we
+do not let value slip across it in silence.</p>
+<p>Crossings like that are a <strong>first-class, explicitly recorded thing</strong> in the
+design. Where regulated or taxable value enters or exits the member circle, the
+crossing is marked as exactly that, with a reference to the external event, and
+it is written down verbatim and honestly. The Honesty axiom this whole project is
+built on forbids silent mutations: you cannot quietly clamp a balance, drop an
+entry, or launder real-world value in through a side door without it being on the
+record. There is even a doctrine for member-export notices and a regulatory
+threshold above which a crossing gets flagged.</p>
+<p>This is the honest core of the position. <em>Inside</em> the circle, this is mutual
+credit between people — not a security, not a market. <em>At the edge</em>, where it
+touches money the law cares about, we record the crossing truthfully and let the
+real world apply its rules. We are not claiming the regulated world stops
+existing. We are claiming we have drawn the boundary in the open instead of
+pretending there isn't one.</p>
+<h2 id="standing-on-the-shoulders-of-people-who-did-this-first"><a class="anchor" aria-hidden="true" tabindex="-1" href="#standing-on-the-shoulders-of-people-who-did-this-first"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Standing on the shoulders of people who did this first</h2>
+<p>None of this is a new idea, and it would be dishonest to imply we invented it. We
+are walking a path that some genuinely excellent projects and thinkers cut before
+us, and they deserve the credit.</p>
+<ul>
+<li><strong>Mutual-credit systems — LETS, Sardex, the time banks.</strong> The whole notion that
+<a href="2026-06-12-credit-you-mint-by-trusting-each-other.html" rel="noopener noreferrer">money can be created at the moment of a transaction, sum to zero, and need no
+central issuer</a> comes from decades of real-world practice. The hardest lesson
+they teach is humbling: the systems that <em>survive</em> do so because of active human
+stewardship — managing credit limits, matching people — not because the protocol
+was clever. Software copies the ledger; it does not copy the broker. We took the
+ledger and try never to forget the broker.</li>
+<li><strong><a href="2026-06-02-fellow-travelers-circles-and-money-that-starts-from-trust.html" rel="noopener noreferrer">Circles.</a></strong> The closest production-scale instance of per-person, time-minted
+currency given value by a trust graph rather than central backing. Eight years
+of empirical record — including a failure and a redesign — taught us more about
+what to avoid than any whiteboard could. We honor it directly; the time-credit
+model owes it a debt.</li>
+<li><strong><a href="2026-06-01-fellow-travelers-gnu-taler-cash-that-tells-the-truth.html" rel="noopener noreferrer">GNU Taler.</a></strong> A payment system that is emphatically <em>not</em> a cryptocurrency, with
+a design principle we admire and echo: buyers private, merchants transparent to
+tax authorities. Taler proved you can build serious digital money without a
+speculative token or a blockchain, and that being legible to the regulated world
+at the right boundary is a feature, not a compromise.</li>
+<li><strong>Sacred Economics, Graeber's <em>Debt</em>, Ostrom's commons work.</strong> The philosophical
+spine. Money as a token of reciprocity in a web of relationship rather than a
+claim on scarcity; debt as social obligation before it was ever a tradeable
+instrument; commons that are stewarded rather than enclosed. These are the
+<em>why</em> beneath the <em>what</em>.</li>
+</ul>
+<p>What we did differently is mostly a matter of context, not of correction: we are
+local-first and offline-capable with no global consensus, and we bind the whole
+thing to a small set of axioms — wholeness, honesty, mystery — that make "no
+silent value movement" a hard rule rather than an aspiration. That is our
+contribution to a conversation these projects started, not a critique of them.</p>
+<h2 id="the-honest-limit"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-honest-limit"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The honest limit</h2>
+<p>So let us close where we're obligated to: at the edge of what we actually know.</p>
+<p>This is a design philosophy and a reasoned position. It is <em>not</em> a regulatory
+ruling, and it is not a legal opinion. The implementation honors the stance —
+mutual-credit and time-minted kinds, no global order book, edge crossings
+recorded verbatim — and we can point you at the screen where you can see it. But
+whether a given instrument, in a given jurisdiction, on a given day, is or isn't
+a "security" is a question the real world answers, not us. Different countries
+draw the line differently. A determination is fact-specific. We built these
+obligation records to sit, by their shape, well clear of that line — and then we
+made the system tell the truth at every point where it might get close.</p>
+<p>That is the most honest thing a record of obligation can do: be what it says it
+is, and say so where it isn't sure.</p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-vision.html">← more in Vision</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

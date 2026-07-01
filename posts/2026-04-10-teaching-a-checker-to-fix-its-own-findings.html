@@ -1,0 +1,178 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Teaching a Checker to Fix Its Own Findings — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Teaching a Checker to Fix Its Own Findings</h1><p class="subtitle">A three-tier autofix engine — mechanical edits, a local model, and a gate that contains any bad fix</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge paid">paid · premium preview</span> <span>April 10, 2026</span><span>·</span><span>9 min read</span><span>·</span><span>test-discipline</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> Our checker stopped just pointing at problems and started fixing the boring ones itself — so the tooling does the work twice over instead of you. Here's how it draws the line between a fix a machine should make and one only a person should.</div><div class="markdown-body"><p>A linter that only reports problems is doing half a job. It hands you a list of
+line numbers and a stern message, and then leaves you to make the same edit forty
+times by hand. For a small codebase that is fine. For a repo where a single
+rename refactor can break a hundred and thirty import sites in an afternoon, the
+"go fix these yourself" model is the bottleneck.</p>
+<p>NAOMS has its own <a href="2026-04-14-what-naoms-check-actually-checks.html" rel="noopener noreferrer">static analyzer — a built-in checker with a growing catalogue
+of rules</a> that encode the project's hard constraints: no quiet direct writes to
+the ledger, no forge-host names in tracked files, no floating promises, no doc
+comment that accidentally terminates itself. By early April the catalogue had
+real teeth and a real problem: the big rename sweeps of the week were generating
+violations faster than anyone could hand-fix them. The checker was right about
+everything and useless about all of it.</p>
+<p>On 2026-04-10 we shipped the answer: a checker that fixes what it finds. Not all
+of it — that would be a lie, and the lie is the interesting part — but a
+deliberately tiered slice of it, with a validation gate that treats every
+machine-made edit as guilty until proven innocent.</p>
+<p>To understand why this had to be tiered rather than a single "autofix
+everything" flag, it helps to look at the shape of the findings themselves. Run
+the checker against a tree mid-refactor and you get three qualitatively
+different kinds of violation. The first kind has exactly one correct fix and a
+machine can compute it from the finding alone. The second kind has a small,
+bounded set of plausible fixes and choosing between them takes a sentence of
+judgment — the sort of judgment a model is good at and a regex is not. The third
+kind requires understanding the program's intent and belongs to a human. A single
+autofix flag treats all three the same and is therefore wrong about two of them.
+The tiers exist because the findings are not homogeneous, and pretending they are
+is how autofixers earn their bad reputation.</p>
+<h2 id="the-honest-framing-first"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-honest-framing-first"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The honest framing first</h2>
+<p>Before the architecture, the boundary. An autofixer that silently rewrites your
+source and trusts itself is a footgun pointed at the main branch. The design
+question is not "can a machine fix this finding" — for many findings it obviously
+can — but "what happens when the machine is wrong, and how small can we make the
+blast radius." Everything below is in service of that second question.</p>
+<h2 id="tier-1--mechanical"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tier-1--mechanical"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Tier 1 — mechanical</h2>
+<p>The first tier is pure text transformation: deterministic, reversible, no model
+in the loop. Stale file-header comments, a missing error check appended to a
+query result, an import that needs to switch to a renamed alias. These are
+findings where the fix is a function of the finding — given the violation, the
+correct edit is computable. The commit that landed the per-commit hook wired
+this directly into the commit path: opt in with an environment flag, and the
+boring violations never reach a human.</p>
+<p>The clearest demonstration came the next day, when one mechanical pass rewrote
+stale headers across <strong>228 package files</strong> in a single commit. No model, no
+ambiguity, no review fatigue — exactly the work a human should never have to do
+by hand.</p>
+<p>The property that makes the mechanical tier safe is that every transformation is
+a pure function: the same finding on the same source always produces the same
+edit, and the inverse is computable, so a mechanical fix is always reversible.
+That determinism is what lets it run inside the pre-commit hook without a review
+step. You are not trusting a machine's judgment; you are trusting that string
+replacement does what string replacement does. The interesting design work here
+is restraint — keeping rules <em>out</em> of this tier the moment their fix stops being
+a pure function of the finding. The day a "mechanical" rule needs to look at a
+second file to decide its edit, it is no longer mechanical, and quietly leaving
+it there is how a deterministic autofixer starts making non-deterministic
+mistakes.</p>
+<h2 id="tier-2--model-assisted-locally"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tier-2--model-assisted-locally"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Tier 2 — model-assisted, locally</h2>
+<p>Some findings are not mechanical. They need a small amount of judgment: which of
+three call sites is the real one, how to phrase a replacement that reads
+naturally, where to thread a new argument through an existing signature. For
+these, the second tier reaches for a <strong>local</strong> model.</p>
+<p>That word — local — is the whole point. NAOMS runs its <a href="2026-04-28-plan-with-the-big-model-work-with-the-local-one.html" rel="noopener noreferrer">sub-agent work on
+on-device models</a>, not a hosted API, and the autofix engine is no exception. The
+model never leaves the machine; the prompt templates are checked into the repo;
+the thirteen rules that opt into model assistance are explicit. There is no
+scenario where fixing a lint finding ships your source tree to someone else's
+datacenter.</p>
+<p>Choosing <em>which</em> local model was not a guess. The work was preceded by a careful
+evaluation: seven candidate models, thirteen representative findings, two hundred
+and seventy-three runs to see which model produced edits that survived the gate.
+The model choice is an empirical result, not a vibe.</p>
+<hr />
+
+
+
+<h2 id="tier-3-and-the-gate-that-makes-the-whole-thing-safe"><a class="anchor" aria-hidden="true" tabindex="-1" href="#tier-3-and-the-gate-that-makes-the-whole-thing-safe"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Tier 3 and the gate that makes the whole thing safe</h2>
+<p>Here is the part that turns a clever idea into something you can point at the
+main branch.</p>
+<p>A naive autofixer runs all its edits, then validates once at the end. If
+anything is broken, you revert the batch and you have lost every good fix along
+with the one bad one — and worse, you have no idea which fix was the culprit.
+That is the failure mode that keeps autofix out of most codebases. People try it,
+one model edit corrupts a file, the whole run rolls back, and they conclude
+machines can't be trusted with source.</p>
+<p>The fix is to make the unit of trust the <em>file</em>, not the <em>run</em>. Each proposed
+edit is applied to a single file, the file is re-validated in isolation, and only
+if it still parses and still passes does the edit stick. A bad model suggestion
+reverts <em>that file</em> and nothing else. The good fixes in the same run are
+untouched. The blast radius of a wrong machine edit is one file, caught
+immediately, with the finding left open for a human — which is exactly the right
+outcome.</p>
+<p>This is the structural answer to the safety question from the top. The tiers
+decide <em>how</em> a fix is generated — mechanically, with a local model, or not at
+all. The per-file gate decides whether any individual fix is <em>allowed to
+survive</em>. The two are orthogonal, and keeping them orthogonal is what lets you
+turn the model tier on without holding your breath.</p>
+<p>It is worth being precise about what "re-validated in isolation" buys you,
+because the naive objection is that a per-file gate can't catch breakage that
+spans files. That is true, and it is exactly why the gate is paired with the
+existing whole-tree check that runs afterward anyway. The per-file gate's job is
+narrower and more valuable: it catches the <em>local</em> catastrophes — the edit that
+made a file stop parsing, the replacement that dropped a brace, the model output
+that hallucinated a token — at the moment they happen, before they can
+contaminate the rest of the run or the rest of the diff. Cross-file regressions
+are still the whole-tree checker's responsibility on the next pass. The two gates
+compose: fast, local, per-edit rejection in the inner loop; slow, global
+verification in the outer one. Neither alone is sufficient, and conflating them
+is the mistake that makes people validate once at the end and lose everything
+when one edit goes bad.</p>
+<p>There is a quieter benefit, too. Because each surviving fix has individually
+passed re-validation, the report the engine emits is <em>trustworthy at the line
+level</em>: it does not merely say "I changed forty files," it says "here are the
+thirty-seven findings I fixed and the three I could not, with the reason." A
+report you can trust file-by-file is a report a human can skim instead of audit,
+and that difference — skim versus audit — is the entire return on the per-file
+gate's complexity.</p>
+<p>That same day the engine grew a machine-readable report and an agent-callable
+interface, so the autofixer is itself addressable by other agents: a sub-agent
+can ask the checker to fix what it can and report precisely what it could not,
+machine to machine, with the human only in the loop for the genuinely hard
+residue.</p>
+<h2 id="why-the-rules-are-the-schema"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-the-rules-are-the-schema"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why the rules are the schema</h2>
+<p>One more piece of the design deserves attention, because it is what keeps the
+whole thing from rotting. Each rule is a self-contained unit: it knows how to
+<em>detect</em> its violation, and it declares which tier — if any — knows how to <em>fix</em>
+it. A rule is not a global switch in some autofix module that has to be kept in
+sync with the detector; the detector and its fix strategy live together. When a
+later polish pass added a new doc-comment rule — born directly out of the
+"a stray comment terminator breaks the build" class of bug — it shipped its
+detection and its tier assignment in the same commit. Adding a rule does not mean
+editing the autofixer; the autofixer reads the rule's declared capability and
+acts on it.</p>
+<p>This is what makes the system extensible without becoming dangerous. A new rule
+author decides, at authoring time and in one place, whether their finding is
+mechanically fixable, model-fixable, or human-only. If they are unsure, the safe
+default is human-only — the finding gets reported and nothing is auto-edited.
+You opt a rule <em>into</em> automation deliberately; you never opt it in by accident.
+For a checker that runs in the pre-commit path of a repo with a hundred-plus
+concurrent agents, "you never automate by accident" is not a nicety. It is the
+property that lets you sleep.</p>
+<p>It also explains the relationship to the broader zero-violations push. That push
+is not "run the autofixer once and declare victory." It is the slow,
+rule-by-rule campaign of driving each violation category to zero — and for each
+category, the question is the same: can this be mechanically fixed, model-fixed,
+or does it need a human. The autofixer is the lever; the campaign is the work of
+pulling it, category by category, and that work was still <strong>in progress</strong> as this
+shipped.</p>
+<h2 id="what-this-is-not"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-this-is-not"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What this is not</h2>
+<p>It is not magic, and the design is careful to never pretend otherwise. The model
+tier covers thirteen rules, not all of them. The mechanical tier covers the
+boring deterministic ones. Everything outside those two sets still lands on a
+human's desk — and that is the honest line. The zero-violations push was, as of
+this writing, still <strong>in progress</strong>, not finished; the autofixer is the tool that
+makes that push tractable, not a button that completes it. A companion polish
+commit added a rule — <em>more</em> findings to fix — on the same day, because a checker
+that fixes its own findings is only worth building if you keep teaching it new
+things to find.</p>
+<p>The lesson generalizes past this repo. If you maintain a checker, the highest-
+leverage feature you can add is not another rule — it is the ability to fix the
+rules you already have, tiered by how much judgment the fix requires, gated so
+that being wrong about one file never costs you the others. Report-only is half a
+job. Fix-and-prove-it is the other half.</p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

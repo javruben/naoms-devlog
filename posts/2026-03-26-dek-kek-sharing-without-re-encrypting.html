@@ -1,0 +1,154 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Share a Memory by Wrapping a Key — Not Re-Encrypting a Single Byte — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Share a Memory by Wrapping a Key — Not Re-Encrypting a Single Byte</h1><p class="subtitle">The two-key (DEK/KEK) pattern that makes sharing instant and a stolen database useless</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge paid">paid · premium preview</span> <span>March 26, 2026</span><span>·</span><span>8 min read</span><span>·</span><span>encryption</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> When you share a private memory, sharing is instant and your data never gets copied or re-encrypted — we wrap one tiny key for the person you're letting in. The payoff: even a fully stolen database reveals nothing, because the keys that open it were never stored there.</div><div class="markdown-body"><p>Picture a memory as a locked box, with one key that opens it. To let a friend
+read that box, you don't unlock it and copy the contents out into the open. You
+take a <em>spare copy of the box's key</em>, seal it inside a tiny envelope only your
+friend can open, and hand them the envelope. The box never moves and is never
+opened in public; your friend just ends up holding a key that fits it. To take
+the access back, you destroy that little envelope. That is the whole trick of
+this article.</p>
+<p>Here is the problem it solves, which sounds simple until you try to build it: you
+have an encrypted memory, and you want to let one specific other person read it.
+Not everyone. Not a copy in the clear. Just them, just this one memory, and you'd
+like to be able to take that access back later.</p>
+<p>The naive answer is to unlock the box, copy out the contents, and re-lock a fresh
+copy under a key the recipient holds. It works. It's also a trap. Memories can be large, you'd be
+moving plaintext through memory on every share, and revocation would mean doing
+the whole dance again in reverse. Worse, you'd now have the same content
+encrypted two different ways, which is two different things to keep in sync.</p>
+<p>NAOMS doesn't do any of that. When you share a memory, <strong>not a single byte of
+content is re-encrypted</strong>. We wrap a key. This is the DEK/KEK pattern, and once
+it clicks, a lot of the system's behavior — instant sharing, cheap revocation,
+the self-access guarantee — falls out of it for free. Let's build the intuition,
+then look at the real code.</p>
+<h2 id="two-keys-two-jobs"><a class="anchor" aria-hidden="true" tabindex="-1" href="#two-keys-two-jobs"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Two keys, two jobs</h2>
+<p>The core move is to stop using one key for two jobs.</p>
+<p>The first key is the <strong>DEK — the Data Encryption Key</strong>. It's a random 256-bit
+key, generated once per memory, and it's the only key that ever touches content.
+The memory's content is sealed with the DEK using AES-256-GCM: authenticated
+encryption, so any tampering with the ciphertext, the IV, or the auth tag is
+detected on the way out. The DEK is the key to the box itself.</p>
+<p>The second key is the <strong>KEK — the Key Encryption Key</strong>. Its only job is to lock
+the little envelope around a copy of the DEK. It never sees content. Each being
+has their own KEK material, derived from their own key tree, so no shared secret
+exists anywhere outside the specific wrapping relationship between an owner and a
+recipient.</p>
+<p>So the layers stack like this:</p>
+<pre><code>content  --sealed by--&gt;  DEK  --wrapped by--&gt;  KEK (per recipient)</code></pre><p>The content is encrypted exactly once, under one DEK, for its entire life. What
+changes when you share is the outer layer: a small sealed envelope holding a copy
+of the box-key, one per person who's allowed in.</p>
+<p>That's the whole idea. Sharing a memory is sealing an envelope around its DEK for
+someone new. Revoking is destroying that envelope. The box never moves.</p>
+<h2 id="why-wrap-a-key-beats-re-encrypt-the-data"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-wrap-a-key-beats-re-encrypt-the-data"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why "wrap a key" beats "re-encrypt the data"</h2>
+<p>Think about the sizes involved. A DEK is 256 bits — 32 bytes. A memory can be a
+sentence or a long transcript or a document. The design says it plainly:
+re-wrapping a 256-bit key is trivially fast compared to re-encrypting potentially
+large content. You're paying a fixed, tiny cost per recipient instead of a
+content-sized cost per share.</p>
+<p>There's a structural payoff too. Because the content has exactly one
+representation — one ciphertext under one DEK — there's nothing to keep in sync.
+Three people with access don't mean three encryptions of the memory; they mean
+one encryption and three small wrapped DEKs sitting next to it. Add a fourth
+person, add a fourth wrap. Remove one, remove one wrap. The data plane is
+untouched.</p>
+<h2 id="how-a-wrap-actually-happens"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-a-wrap-actually-happens"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How a wrap actually happens</h2>
+<p>This isn't hand-waving — it's what the vault's key-wrapping routine actually
+does. To wrap a data key for a recipient, NAOMS needs a shared secret that only the
+owner (doing the wrapping) and the recipient (doing the unwrapping) can compute.
+That's an Elliptic-Curve Diffie–Hellman agreement over X25519.</p>
+<p>The implementation does something worth calling out: it generates a <strong>fresh
+ephemeral X25519 keypair for every single wrapping operation</strong>. Here's the
+sequence:</p>
+<ol>
+<li>Generate an ephemeral X25519 keypair, properly clamped for the curve.</li>
+<li>Run ECDH between the ephemeral private key and the <strong>recipient's public key</strong>
+to get a shared secret.</li>
+<li>Run that shared secret through HKDF-SHA256 (with the domain string
+<code>naoms-dek-wrap</code>) to derive the actual wrapping key.</li>
+<li>Encrypt the DEK under that wrapping key with a fresh random 12-byte nonce.</li>
+<li>Pack the result as <code>ephemeral_pubkey (32) || nonce (12) || ciphertext (DEK + 16-byte auth tag)</code> and store it.</li>
+</ol>
+<p>The ephemeral public key travels <em>with</em> the wrapped DEK precisely so the
+recipient can reconstruct the same shared secret from their own private key.
+Using an ephemeral keypair per wrap means two wraps of the same DEK for the same
+recipient don't produce the same bytes, and the owner's long-term key never has
+to participate in the agreement.</p>
+<p>Crucially, the recipient's <strong>private</strong> key is required to unwrap. That's the
+asymmetry that makes the whole thing safe: anyone can be wrapped <em>for</em> (you only
+need their public key), but only the holder of the matching private key can ever
+unwrap. Wrap for Being B and B can decrypt; Being C, with no wrapped DEK and no
+key, cannot — that's the exact test the design holds itself to.</p>
+<p>The wrapped DEKs are stored in a table keyed by memory and recipient, so "list
+every memory I can read" is just "list the wrapped DEKs addressed to me." Access
+becomes a query, not a guess.</p>
+<h2 id="the-self-access-guarantee-falling-out-for-free"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-self-access-guarantee-falling-out-for-free"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The self-access guarantee, falling out for free</h2>
+<p>There's a quieter benefit hiding in this design, and it's one of the parts of
+NAOMS we care most about.</p>
+<p>Because KEK material is derived from a being's own HD key tree, and because <a href="2026-03-24-memory-that-only-you-can-read.html" rel="noopener noreferrer">each
+encrypted memory's envelope carries the full derivation path it needs</a>, a being
+who holds their BIP-39 mnemonic can decrypt <strong>all of their own memories with no
+running service at all</strong>:</p>
+<pre><code>mnemonic -&gt; seed -&gt; HD key tree -&gt; derive key -&gt; unwrap DEK -&gt; decrypt content</code></pre><p>No vault process, no network, no NAOMS instance. The seed phrase is sufficient.
+The design calls this the Self-Access Guarantee, and it's a direct consequence of
+deriving keys deterministically rather than handing them out from a server. Even a fully compromised database is opaque: it holds ciphertext and
+wrapped keys, and nothing in it can decrypt anything. The seal only opens with
+keys that were never stored there.</p>
+<h2 id="revocation-changing-the-locks-honestly"><a class="anchor" aria-hidden="true" tabindex="-1" href="#revocation-changing-the-locks-honestly"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Revocation: changing the locks, honestly</h2>
+<p>Now the hard part, and the part where we want to be precise rather than
+flattering, because the honest story is more useful than a tidy one.</p>
+<p>The wrapping model gives you an obvious lever for revocation: stop honoring a
+wrapped DEK. In the shipped code, revocation does exactly this as a soft delete —
+it stamps the row as revoked, and the unwrap path refuses any wrapped DEK that's
+been marked that way. From that moment, that wrapped copy is dead to the system.</p>
+<p>But there's a subtlety worth stating plainly. Soft-revoking a wrap means the
+<em>system</em> won't unwrap it anymore. The DEK itself, and the content under it,
+haven't changed. The stronger guarantee — the one where the old key is made
+useless <em>forever</em>, the way changing the locks makes an old physical key useless
+— requires rotating the DEK: generate a new DEK, re-encrypt the content under
+it, re-wrap the new DEK for everyone who still has access, and destroy the old
+DEK and all its wrapped copies. That's the design behind the planned revocable-
+access work.</p>
+<p>As of this writing, the full cryptographic key-rotation-on-revoke ceremony is
+<strong>not shipped</strong> — that piece of work was cancelled. The wrapping-and-soft-revoke
+machinery is implemented and shipped; the rotate-and-re-encrypt revocation was
+designed but deliberately not built.</p>
+<p>We're telling you this because the difference matters and pretending otherwise
+would be a lie of the convenient kind. That design's own values section already
+names the limit you can never escape: a party who has already decrypted and
+cached content cannot be made to un-see it. Cryptographic revocation protects
+<em>future</em> access to the source of truth — it does not reach into someone else's
+memory and erase what they've already read. That's not a NAOMS shortcoming;
+it's physics. Any honest access-control system lives with the same boundary.</p>
+<h2 id="why-its-built-this-way"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-its-built-this-way"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why it's built this way</h2>
+<p>Step back and the shape of the decision is clear. By separating the key that
+touches data (DEK) from the keys that grant access (KEKs), NAOMS turns three
+expensive data operations into cheap key operations:</p>
+<ul>
+<li><strong>Sharing</strong> is wrapping a 32-byte key, not copying or re-encrypting content.</li>
+<li><strong>Listing access</strong> is a query over the wrapped keys, not a scan.</li>
+<li><strong>Revoking</strong> is, at minimum, killing a wrapped key — and, once full rotation
+lands, a bounded key-rotation rather than an unbounded data migration.</li>
+</ul>
+<p>And the property that anchors all of it: the database can be fully compromised
+and still reveal nothing, because the keys that open the seals are derived from
+seeds that were never stored in it. Sovereignty isn't a policy here. It's a
+consequence of where the keys live.</p>
+<p>What's next is closing the gap between the wrapping model that ships today and
+the full rotate-on-revoke ceremony the design describes — so that <a href="2026-03-26-the-window-that-closes.html" rel="noopener noreferrer">"I take it
+back"</a> is as cryptographically final as <a href="2026-06-11-recrypt-quietly-when-it-just-builds-is-the-feature.html" rel="noopener noreferrer">"changing the locks"</a> promises. The hard part
+was never the crypto. It's making sure every wrapped copy of the old key is
+found and destroyed. We'll get there honestly, or not at all.</p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

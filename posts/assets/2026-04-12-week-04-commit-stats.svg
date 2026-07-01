@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420" font-family="-apple-system, Helvetica, Arial, sans-serif">
+  <rect width="760" height="420" fill="#0d1117"/>
+  <text x="40" y="44" fill="#e6edf3" font-size="22" font-weight="600">NAOMS · Week 4 commits per day</text>
+  <text x="40" y="68" fill="#8b949e" font-size="14">2026-04-06 → 2026-04-12 · ~3,900 commits in window · 1 canonical committer identity</text>
+
+  <!-- y gridlines -->
+  <g stroke="#21262d" stroke-width="1">
+    <line x1="80" y1="110" x2="720" y2="110"/>
+    <line x1="80" y1="170" x2="720" y2="170"/>
+    <line x1="80" y1="230" x2="720" y2="230"/>
+    <line x1="80" y1="290" x2="720" y2="290"/>
+    <line x1="80" y1="350" x2="720" y2="350"/>
+  </g>
+  <g fill="#8b949e" font-size="11" text-anchor="end">
+    <text x="72" y="114">800</text>
+    <text x="72" y="174">600</text>
+    <text x="72" y="234">400</text>
+    <text x="72" y="294">200</text>
+    <text x="72" y="354">0</text>
+  </g>
+
+  <!-- bars: scale = (count/800)*240px above baseline y=350 -->
+  <!-- Mon 633 -> h=189.9 -->
+  <rect x="96"  y="160.1" width="60" height="189.9" fill="#388bfd"/>
+  <text x="126" y="150" fill="#e6edf3" font-size="12" text-anchor="middle">633</text>
+  <text x="126" y="372" fill="#8b949e" font-size="12" text-anchor="middle">Mon 06</text>
+
+  <!-- Tue 622 -> h=186.6 -->
+  <rect x="184" y="163.4" width="60" height="186.6" fill="#388bfd"/>
+  <text x="214" y="153" fill="#e6edf3" font-size="12" text-anchor="middle">622</text>
+  <text x="214" y="372" fill="#8b949e" font-size="12" text-anchor="middle">Tue 07</text>
+
+  <!-- Wed 487 -> h=146.1 -->
+  <rect x="272" y="203.9" width="60" height="146.1" fill="#388bfd"/>
+  <text x="302" y="194" fill="#e6edf3" font-size="12" text-anchor="middle">487</text>
+  <text x="302" y="372" fill="#8b949e" font-size="12" text-anchor="middle">Wed 08</text>
+
+  <!-- Thu 750 busiest -> h=225 -->
+  <rect x="360" y="125" width="60" height="225" fill="#3fb950"/>
+  <text x="390" y="115" fill="#3fb950" font-size="12" font-weight="600" text-anchor="middle">750 ●</text>
+  <text x="390" y="372" fill="#8b949e" font-size="12" text-anchor="middle">Thu 09</text>
+
+  <!-- Fri 598 -> h=179.4 -->
+  <rect x="448" y="170.6" width="60" height="179.4" fill="#388bfd"/>
+  <text x="478" y="161" fill="#e6edf3" font-size="12" text-anchor="middle">598</text>
+  <text x="478" y="372" fill="#8b949e" font-size="12" text-anchor="middle">Fri 10</text>
+
+  <!-- Sat 130 quietest -> h=39 -->
+  <rect x="536" y="311" width="60" height="39" fill="#d29922"/>
+  <text x="566" y="301" fill="#d29922" font-size="12" font-weight="600" text-anchor="middle">130 ○</text>
+  <text x="566" y="372" fill="#8b949e" font-size="12" text-anchor="middle">Sat 11</text>
+
+  <!-- Sun 691 -> h=207.3 -->
+  <rect x="624" y="142.7" width="60" height="207.3" fill="#388bfd"/>
+  <text x="654" y="133" fill="#e6edf3" font-size="12" text-anchor="middle">691</text>
+  <text x="654" y="372" fill="#8b949e" font-size="12" text-anchor="middle">Sun 12</text>
+
+  <!-- baseline -->
+  <line x1="80" y1="350" x2="720" y2="350" stroke="#484f58" stroke-width="1.5"/>
+
+  <text x="40" y="404" fill="#6e7681" font-size="11">Generated figure from verified `git log` per-day counts (materials week-04 §1). ● busiest  ○ quietest. Not a UI screenshot.</text>
+</svg>

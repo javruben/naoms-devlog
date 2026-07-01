@@ -1,0 +1,156 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Sync, Don't Replace: Reading NextGraph — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Sync, Don't Replace: Reading NextGraph</h1><p class="subtitle">A day spent studying an encrypted graph-sync engine — what we took, and the one fork where we went the other way</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge paid">paid · premium preview</span> <span>March 18, 2026</span><span>·</span><span>7 min read</span><span>·</span><span>storage-sync</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> Curious how we decide what to borrow from other projects? Here we spend a day reading NextGraph — an encrypted, decentralized sync engine — very closely, and land on a four-word rule: sync, don't replace. You'll see what we kept, and the one place we chose differently.</div><div class="markdown-body"><p>Some days a project ships a feature. Other days it ships a sentence. On
+2026-03-18, NAOMS shipped a sentence. The commit subject reads, in full:</p>
+<blockquote>
+<p><em>"NextGraph research: 3-layer architecture confirmed, sync not replace"</em>
+— commit subject, 2026-03-18</p>
+</blockquote>
+<p>That four-word thesis — <strong>sync not replace</strong> — is the whole reason this post
+exists. It was the day's headline among 233 commits, and it came paired with a
+second commit, <em>"Research: deep NextGraph evaluation for NAO storage and sync
+layer."</em> Two commits, one day, one project read end to end.
+This is what that reading found, and why a system that has its own storage layer
+spent a day studying someone else's.</p>
+<blockquote>
+<p><strong>A reconstruction.</strong> No journal survives from this week. Any intent,
+excitement, or reasoning attributed below to "us" or "the project" on
+2026-03-18 is reconstructed from the two commit subjects and the project's
+surviving inspiration study of NextGraph, not from a recalled conversation. The
+technical claims about NextGraph are drawn from that study, and flagged where
+they are the study's assertion rather than something independently re-derived.</p>
+</blockquote>
+<h2 id="what-nextgraph-is"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-nextgraph-is"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What NextGraph is</h2>
+<p><a href="https://nextgraph.org" rel="noopener noreferrer">NextGraph</a> is a decentralized, local-first platform
+built on peer-to-peer networking and Semantic Web standards. Its core unit is a
+<strong>Repo</strong> — a cryptographically secured container that is also an end-to-end
+encryption group, structured as a DAG of commits. If "a DAG of commits, but for
+your data instead of your code" makes you sit up, you are reading it correctly:
+this is a git-shaped model for structured, encrypted, syncable state.</p>
+<p>What makes the design unusually complete is the layer cake on top of that DAG
+(this is the "3-layer architecture confirmed" the commit refers to — though the
+mapping of that phrase to the broker tiers below is our reading, since the commit
+note itself is terse):</p>
+<ul>
+<li><strong>Three bundled CRDTs.</strong> A Graph CRDT (an RDF observed-remove set), <a href="2026-04-02-honoring-automerge-and-yjs.html" rel="noopener noreferrer">Automerge
+for JSON, and Yjs for rich text</a> — with an embedded OxiGraph triplestore
+answering SPARQL 1.1 queries over the result. NextGraph didn't pick one
+conflict-free type and force everything through it; it carries three and lets
+the data shape choose.</li>
+<li><strong>A DID method, <code>did:ng</code>,</strong> with three stores — public, protected, private —
+so an identity's surfaces are separated by intended audience at the identity
+layer, not bolted on later.</li>
+<li><strong>A two-tier broker model</strong> — Core (public), Edge (self-hosted), and Local
+(a client daemon) — with pub/sub sync, causal ordering over topic-based
+encrypted channels, and a Noise-Protocol-over-WebSocket transport.</li>
+</ul>
+<p>And the line that matters most for what comes next: NextGraph's permissions are
+<strong>cryptographic OCAP</strong> — <em>read is a decryption key, write is a topic private
+key.</em> Capability is not a row in an access-control table you have to trust a
+server to honor. Capability <em>is</em> the key. That is a design value NAOMS shares
+all the way down, and finding it stated this cleanly in someone else's system is
+exactly why you read other people's systems.</p>
+<h2 id="sync-not-replace--what-the-thesis-actually-means"><a class="anchor" aria-hidden="true" tabindex="-1" href="#sync-not-replace--what-the-thesis-actually-means"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>"Sync, not replace" — what the thesis actually means</h2>
+<p>Here is the trap a memory system like NAOMS could easily fall into. You see a
+beautiful, funded, end-to-end-encrypted sync engine with graph CRDTs and a
+SPARQL endpoint, and the lazy conclusion is: <em>adopt it wholesale, make it the
+storage layer, delete our own.</em> "Replace."</p>
+<p>The commit subject is a deliberate refusal of that. <strong>Sync, not replace.</strong> The
+reading concluded that NextGraph's <em>sync</em> model — the DAG-of-commits, the
+causal-ordered pub/sub, the encrypted topic channels — was the part worth
+learning from, and that NAOMS's own storage and identity substrate was the part
+worth keeping. You take the synchronization ideas; you do not surrender the
+foundation. The whole day's research resolves to which side of that line each
+NextGraph idea falls on.</p>
+<p>That distinction is not a hedge. It is the difference between <em>inspiration</em> and
+<em>dependency</em>, and for a project whose first axiom is <strong>Wholeness</strong> — complete in
+itself, no external dependency for core function — the difference is
+load-bearing. A storage layer you import is a storage layer someone else can
+deprecate. The point of reading NextGraph closely was to absorb its best ideas
+<em>without</em> taking on its runtime as a hard dependency of your core.</p>
+
+
+<h2 id="what-we-took"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-we-took"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What we took</h2>
+<p>Read generously and the takings are specific:</p>
+<ul>
+<li><strong>The DAG-of-commits-for-data mental model.</strong> NAOMS already treats its history
+as append-only and cryptographically chained; NextGraph's Repo model is an
+independent confirmation that "git-shaped, but for encrypted state" is a sound
+spine for a sync layer, not a curiosity. Seeing a funded EU-backed project
+land on the same shape is corroboration you don't get from your own codebase.</li>
+<li><strong>Capability-as-key.</strong> "Read = decryption key, write = topic private key" is a
+one-line statement of a principle NAOMS holds: access is enforced by
+cryptography, not by a trusted server's goodwill. NextGraph states it
+beautifully, and a good statement of your own value, found in someone else's
+house, is worth taking home.</li>
+<li><strong>CRDT pluralism as a permission, not a sin.</strong> The instinct in a tidy system
+is to mandate one conflict-resolution strategy. NextGraph bundles three —
+graph, JSON, rich text — because real data has more than one shape. That's a
+license to stop apologizing for heterogeneity in a sync layer.</li>
+</ul>
+<h2 id="what-we-did-differently-and-why"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-we-did-differently-and-why"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What we did differently (and why)</h2>
+<p>The honest fork in the road is cryptographic, and it is the most interesting
+finding of the read.</p>
+<p>NextGraph's analysis is explicit: <strong>no proxy re-encryption (PRE). Direct key
+sharing only.</strong> Editors hold the topic private key; readers hold decryption
+keys; there is no transform or proxy mechanism in the middle. Sharing with a new
+reader means handing over keys directly.</p>
+<p>NAOMS went the other way. The project's own cryptographic study of <strong>recrypt
+(identikey)</strong> — proxy re-encryption — sits right next to the NextGraph study in
+the same inspiration corpus, and PRE is the direction NAOMS pursued for
+<a href="2026-03-26-dek-kek-sharing-without-re-encrypting.html" rel="noopener noreferrer">re-sharing encrypted data without re-encrypting it from scratch</a>. To be precise:
+actually <em>adopting</em> <a href="2026-06-11-recrypt-quietly-when-it-just-builds-is-the-feature.html" rel="noopener noreferrer">recrypt into the running core</a> was a later-2026 development,
+not a 2026-03-18 fact. What 2026-03-18 records is the two studies sitting side by
+side — NextGraph's "no PRE" finding and the recrypt analysis — i.e. the moment
+the fork in the road became <em>visible</em>, not the moment it was resolved in code.</p>
+<p>Why diverge here at all? Because the two systems optimize different sharing
+stories. NextGraph's direct-key model is simpler and avoids the considerable
+complexity and cryptographic surface of proxy re-encryption — a legitimate,
+defensible choice, and one that keeps their stack smaller. NAOMS weighted the
+ability to <em>grant a reader access to existing ciphertext without re-encrypting
+it, and without the data owner being online</em> more heavily, which is the problem
+PRE exists to solve. Neither is "right." They are different answers to "how does
+a third party come to be able to read something that was already encrypted for
+someone else," and the answer you pick ripples through your whole sharing model.</p>
+<p>The other quiet divergence is reach. NextGraph's ORM SDK is, by its own
+documentation, <strong>browser-only</strong> — it depends on <code>@ng-org/web</code> and does not run in
+Node.js. NAOMS's core has to run as a long-lived daemon on a machine, not only in
+a browser tab, so a browser-pinned SDK was never going to be the substrate even
+if everything else had aligned. This isn't a criticism of NextGraph — a
+browser-first ORM is a perfectly coherent target for a collaborative-document
+suite, which (with the EU's ELFA consortium funding) is much of where NextGraph
+is heading. It's simply a different center of gravity from a sovereign
+memory daemon's.</p>
+<h2 id="why-this-kind-of-day-matters"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-this-kind-of-day-matters"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why this kind of day matters</h2>
+<p>A project that only reads its own code drifts into believing its choices are the
+only choices. The discipline NAOMS tries to keep — honor the people doing
+adjacent work, take what's good, be precise about what you didn't take and why —
+is partly a humility practice and partly a correctness practice. You find out
+your "capability-as-key" instinct is sound because a funded research project
+independently reached it. You find out your PRE bet is a real bet, with a real
+alternative, because a serious system declined to make it.</p>
+<p>NextGraph is genuinely excellent work, and the right response to excellent
+adjacent work is to study it closely and steal its clarity, not its runtime. The
+commit said it in four words. It took this whole post to unpack them, but the
+thesis holds: <strong>sync, don't replace.</strong> Read everyone. Depend on no one. Keep
+your foundation whole.</p>
+<blockquote>
+<p><strong>On the image.</strong> No screenshots or diagrams were captured during this week —
+the March-2026 product surface was a terminal dashboard with no saved images.
+The illustration here is a commit-stats stand-in, not a recreated UI, so
+nothing fabricated stands in for a March screenshot.</p>
+</blockquote>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

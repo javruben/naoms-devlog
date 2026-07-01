@@ -1,0 +1,177 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>A Mac That Trusts the App Before It Opens — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>A Mac That Trusts the App Before It Opens</h1><p class="subtitle">Two ceremonies people constantly conflate — a Developer-ID signature that makes a build tamper-evident, and Apple notarization that staples a verdict macOS checks at open — and the inside-out signing the rest of the toolchain fights you on</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>June 24, 2026</span><span>·</span><span>9 min read</span><span>·</span><span>distribution</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> Signing and notarizing a Mac app sound like one chore. They are two different things, and conflating them is why so many builds ship broken. One is a cryptographic seal that makes the build tamper-evident — change a byte, break the signature. The other is Apple scanning your build and stapling a verdict the OS checks at open. We wired both behind one command, and along the way hit the un-fun truth that `codesign --deep` silently refuses to sign the binaries that matter most, and that &quot;it boots fine&quot; can mean nothing more than &quot;this machine happened to have Homebrew installed.&quot;</div><div class="markdown-body"><p>You can build a beautiful application and still ship a terrible first impression.
+On macOS, a build that the operating system does not recognize gets met with a
+blunt alarm — <em>"cannot be opened because it is from an unidentified developer,"</em>
+or, on a build that was merely copied between machines, the worse and more
+confusing <em>"this app is damaged and can't be opened."</em> For a project whose entire
+premise is <em>trust you can verify</em>, opening with a trust alarm is precisely the
+wrong note.</p>
+<p>So once the <a href="2026-06-23-naoms-is-now-an-app-you-double-click.html" rel="noopener noreferrer">Mac app existed</a>,
+we did the invisible second half of shipping it: we taught macOS to vouch for the
+app before it ever opens. The interesting part is not that we did it. The
+interesting part is that "sign and notarize a Mac app" is two completely
+different operations that almost everyone — including us, at first — treats as
+one, and that the standard tool for the job lies to you about having done it.</p>
+<h2 id="two-ceremonies-not-one"><a class="anchor" aria-hidden="true" tabindex="-1" href="#two-ceremonies-not-one"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Two ceremonies, not one</h2>
+<p>Here is the distinction the whole effort turns on, because getting it wrong is
+the difference between an app that opens and one that doesn't.</p>
+<p><strong>Code signing with a Developer ID is a cryptographic seal.</strong> It hashes the
+contents of the bundle and signs that hash with a private key only we hold. The
+claim it makes is narrow and absolute: <em>this build came from us, and not a single
+byte has changed since we sealed it.</em> If anything is altered in transit — a
+corrupted download, a tampered binary, a well-meaning tool that rewrites a file —
+the hash no longer matches and the signature is void. This is not branding. It is
+tamper-evidence, the same property the cryptography enforces everywhere else in
+the system: you do not take our word for it, you check the math. A changed byte
+breaks the seal, and a broken seal is supposed to stop the app cold.</p>
+<p><strong>Notarization is a verdict, not a seal.</strong> Signing proves <em>who made it</em>;
+notarization is Apple <em>scanning what we made.</em> We upload the signed build to
+Apple's notary service, it runs the bundle through automated malware checks, and
+if it passes, Apple issues a ticket. That ticket gets <em>stapled</em> onto the bundle,
+and when a user double-clicks, macOS reads the staple and opens the app cleanly —
+no warning, no right-click-to-override dance.</p>
+<p>They are independent. A build can be signed and not notarized (the app proves its
+origin, but a fresh Mac still distrusts it on first contact). It can be neither
+(the <em>"unidentified developer"</em> wall). What a stranger's Mac wants, to open your
+app on sight with no ceremony, is <strong>both</strong> — a valid Developer-ID signature <em>and</em>
+a stapled notarization ticket. We wired both into one command,
+<code>naoms dist mac --notarize</code>, with plain ad-hoc signing left as the default for
+local builds that never leave the machine.</p>
+<pre class="mermaid">flowchart TD
+    A[Assembled .app bundle] --> B{Sign every nested<br/>Mach-O, inside-out}
+    B -->|Developer ID + hardened runtime<br/>+ secure timestamp| C[Tamper-evident bundle<br/>changed byte -> seal voids]
+    C --> D[Zip via ditto -> submit to<br/>Apple notary -> wait for verdict]
+    D -->|rejected| E[Build fails loudly<br/>nothing ships]
+    D -->|approved| F[Staple ticket INTO bundle]
+    F --> G[Wrap in .dmg -> sign + notarize<br/>+ staple the image too]
+    G --> H[Stranger's Mac opens it on sight<br/>online OR offline]</pre>
+<h2 id="the-lie-inside-codesign---deep"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-lie-inside-codesign---deep"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The lie inside <code>codesign --deep</code></h2>
+<p>The naïve way to sign a Mac app is <code>codesign --deep</code>, which promises to walk the
+bundle and sign everything inside it. It does not. Apple's own tooling treats
+anything living under <code>Contents/Resources/</code> as a <em>resource</em> — data to be hashed,
+not code to be signed. And our entire runtime payload lives under
+<code>Contents/Resources/</code>: the Deno binary, the FROST signer, the Rust core dylib,
+the Node native addons. <code>--deep</code> walked right past every one of them and reported
+success, leaving the executables that actually run unsigned. The notary service
+is not fooled; it rejects the bundle with errors like <em>"the executable does not
+have the hardened runtime enabled,"</em> and you are left debugging a green-looking
+build that Apple quietly refuses.</p>
+<p>So we sign <strong>inside-out, by hand</strong>: collect every nested Mach-O binary, sign each
+one explicitly with a hardened runtime and a secure timestamp, and only then sign
+the outer app. The catch is finding them. Native addons ship with no helpful file
+extension — <code>esbuild</code>, <code>naoms-signer</code>, and friends are just executables with no
+suffix — so we cannot detect them by name. We detect them the way the operating
+system does: by reading the <strong>first four bytes</strong> of every file and matching the
+Mach-O magic numbers (<code>0xFEEDFACE</code> and <code>0xFEEDFACF</code> for 32- and 64-bit,
+<code>0xCAFEBABE</code> for a universal binary, plus their byte-swapped twins).</p>
+<p>That last magic number is a small trap worth naming, because it is the kind of
+detail that costs an afternoon. <code>0xCAFEBABE</code> is the magic for a macOS universal
+binary — and it is <em>also</em> the magic for a Java <code>.class</code> file. A bundle that
+happens to carry any compiled Java would have those files mis-detected as
+executables and fed to <code>codesign</code>, which fails on them. So the collector skips
+<code>.class</code> files (and symlinks) explicitly. The honest version of "detect binaries
+by content, not by name" has to know that two unrelated formats picked the same
+four bytes decades apart.</p>
+<h2 id="why-a-jit-runtime-makes-signing-harder"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-a-jit-runtime-makes-signing-harder"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why a JIT runtime makes signing harder</h2>
+<p>Apple's hardened runtime is mandatory for notarization, and it exists to lock
+down exactly the things a malicious program abuses: writing then executing
+memory, loading unsigned libraries, inheriting environment variables that
+redirect dynamic linking. The problem is that those are also the things a <em>legit</em>
+JavaScript engine does on purpose. Deno's JIT compiles code to memory and then
+runs it — which is precisely "write memory, execute memory," the behavior the
+hardened runtime blocks by default.</p>
+<p>So a Developer-ID-signed, hardened-runtime daemon, with no further care, would
+sign cleanly and then crash on its first line of real work. The fix is a narrow
+set of entitlements granted only to the bundled runtime — allow-jit,
+allow-unsigned-executable-memory, the dyld environment-variable allowance, and
+disable-library-validation — each one a small, deliberate hole punched in the
+hardened runtime for a known-good reason. Signing was never the hard part. Making
+a signed, sandboxed runtime still able to <em>run</em> was.</p>
+<p>There is a second-order version of the same fight. The daemon, on boot, likes to
+write a small hash sidecar next to its dylib and reconcile its <code>node_modules</code>
+folder. Both are writes <em>into the bundle</em> — and the bundle is now a read-only,
+cryptographically sealed object. The first write would break the signature; the
+second fails outright with a permission error because a notarized bundle is not
+writable. So the launcher boots the daemon with the sidecar write disabled and
+the module directory pinned to a fixed manual layout. Sealing the app means every
+"just write a little file next to myself" habit the code had now has to be found
+and switched off, or the seal you worked for dissolves on first launch.</p>
+<h2 id="it-boots-fine-can-be-a-lie-the-build-box-tells-you"><a class="anchor" aria-hidden="true" tabindex="-1" href="#it-boots-fine-can-be-a-lie-the-build-box-tells-you"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>"It boots fine" can be a lie the build box tells you</h2>
+<p>The first notarized build installed and launched on a clean M1 — and then the
+daemon died on boot. The Rust core dylib links against OpenMP (<code>libomp</code>, pulled
+in by the on-device speech feature), and it linked it by <strong>absolute Homebrew
+path</strong>: <code>/opt/homebrew/opt/libomp/lib/libomp.dylib</code>. On the build machine that
+path exists, so the dynamic loader finds the library and everything works. On a
+clean Mac that never installed Homebrew, that path is empty. The load fails, the
+cryptography self-test fails behind it, and the daemon exits with a fatal error
+before it can serve a single page.</p>
+<p>The line in the commit log is the one worth keeping: <em>"the earlier 'boots fine'
+was on a build box that happened to have libomp."</em> A successful launch told us
+nothing, because the build host was quietly lending the app a dependency the app
+did not actually carry. This is a <a href="2026-05-19-when-the-axioms-got-teeth-wholeness-as-a-checker-gate.html" rel="noopener noreferrer">Wholeness</a>
+failure in the precise project sense — a thing that is not complete in itself,
+leaning on its environment without admitting it.</p>
+<p>The fix is to make the bundle genuinely self-contained. At build time we run
+<code>otool -L</code> on the staged dylib to read its actual dependency list, copy every
+non-system library it names into the bundle, and rewrite the link with
+<code>install_name_tool</code> to point at <code>@loader_path</code> — a relative reference that means
+<em>"next to me,"</em> wherever "me" ends up. Repathing invalidates the signature, so
+this has to happen <em>before</em> the codesign pass, not after. The same class of fix
+covers the cryptography WebAssembly module, which was being assumed-present
+rather than built and bundled.</p>
+<p>And then the part that matters most for a project that takes honesty as an axiom:
+we do not merely fix it, we make it <strong>impossible to ship un-fixed</strong>. A
+fail-closed check re-parses the staged dylib and throws if <em>any</em> absolute
+non-system path survives — the kind of dependency that would crash on a clean
+Mac. A build that is not self-contained does not produce a warning. It does not
+produce a build. The proof is mechanical, not a promise: the re-signed dylib was
+loaded on a machine with no Homebrew at all and reported back a clean load, and
+the whole bundle was launched over SSH on a stranger's clean M1, where the daemon
+booted and served the onboarding screen.</p>
+<h2 id="stapling-for-a-mac-that-is-offline"><a class="anchor" aria-hidden="true" tabindex="-1" href="#stapling-for-a-mac-that-is-offline"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Stapling for a Mac that is offline</h2>
+<p>There is one more subtlety in <em>where</em> the notarization verdict lives. By default,
+macOS can check a notarization verdict by phoning Apple at open time. But the
+whole point of this app is that it works without depending on someone else's
+server, including on first launch with no network. An online-only check would
+quietly re-introduce the <em>"is damaged"</em> failure for an offline user — the very
+thing we set out to kill.</p>
+<p>So we <em>staple</em>: the notary ticket is fetched at build time and written into the
+bundle itself, so macOS can validate it locally, offline, forever. The mechanics
+are fiddly — the notary service only accepts a single archive, so the bundle is
+zipped to submit, the verdict is awaited (a rejection exits non-zero and fails
+the build loudly, rather than shipping an un-notarized image), then the ticket is
+stapled onto the live bundle and re-validated. We staple <strong>both</strong> the app and the
+disk image that carries it, because Gatekeeper assesses the <code>.dmg</code> when it is
+opened and the <code>.app</code> when it is launched. Two different moments, two different
+things to vouch for.</p>
+<h2 id="honestly-scoped"><a class="anchor" aria-hidden="true" tabindex="-1" href="#honestly-scoped"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Honestly scoped</h2>
+<p>This is the macOS path, and only the macOS path: Developer-ID signed, inside-out
+across every nested binary, Apple-notarized, stapled for offline launch,
+self-contained against a clean machine, behind one command. The default build is
+still ad-hoc — real notarization is opt-in behind <code>--notarize</code>, because it
+requires Apple credentials and a few minutes of round-trip we do not impose on a
+local-only build. We make no equivalent claim yet for Windows or Linux; those
+platforms have their own trust ceremonies, and they are ahead of us, not behind.</p>
+<p>What we did prove is the principle on the platform we drove first. The seal is
+tamper-evident: change a byte and it voids, which is the honesty axiom applied to
+the very first moment of contact, before the app has rendered a single pixel. The
+verdict is real: Apple scanned it, and a stranger's Mac can confirm that locally
+without trusting us or a network. And the bundle is whole: it carries what it
+needs and refuses to ship if it doesn't. The trust starts before the app opens —
+which, for a system whose entire argument is <em>you should not have to take our word
+for it</em>, is exactly where it belongs.</p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'neutral',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

@@ -1,0 +1,142 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>The Pack Arrives: Moving Real Code Between Two Machines That Trust No Wire — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>The Pack Arrives: Moving Real Code Between Two Machines That Trust No Wire</h1><p class="subtitle">The first peer-to-peer git push where the bytes prove themselves and the right to read is a signed fact</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge paid">paid · premium preview</span> <span>April 5, 2026</span><span>·</span><span>6 min read</span><span>·</span><span>storage-sync</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> Code can travel directly between two machines with no server in the middle, arrive provably unaltered, and still be refused to anyone without the right to read it. Here's the first time we pushed a git repo peer-to-peer that way — and why a refused read counted as success.</div><div class="markdown-body"><p>On <strong>2026-04-05</strong> something small and load-bearing happened: a git pack — 607
+bytes of it — left one NAOMS daemon, crossed the network to a second daemon, and
+arrived with its hash intact. Not "arrived and looked fine." Arrived <em>provably
+identical</em>, byte for byte, to what was sent. And when a second peer asked for the
+same code without the role to read it, the chain said no, and that refusal was as
+much the result as the delivery.</p>
+<p>The landing was unglamorous and exact: the git-over-Iroh end-to-end run passed
+<strong>33 of 35 checks across 10 phases</strong>, late on the evening of 2026-04-05.</p>
+<p>The celebration card for the work records the literal shape of
+what the end-to-end test proved: <strong>607 bytes, four blobs, two branches, one tag,
+33/35 checks across ten phases, two daemons, zero trust assumptions.</strong> This piece
+is about why those numbers matter and how the pieces fit — and why "zero trust
+assumptions" is an architecture, not a slogan.</p>
+<h2 id="the-naive-version-and-why-its-wrong"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-naive-version-and-why-its-wrong"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The naive version, and why it's wrong</h2>
+<p>The naive way to move a git repository between two machines is the way you
+already know: one machine runs a server at a hostname, the other clones from it.
+The transport (HTTPS, SSH) authenticates the <em>channel</em> — you trust the server
+because of a certificate or a key — and then you trust whatever bytes come down
+that channel.</p>
+<p>This couples three things that should be independent:</p>
+<ul>
+<li><strong>Identity</strong> ("who am I talking to") is bound to a hostname and a TLS cert.</li>
+<li><strong>Integrity</strong> ("are these the right bytes") is delegated to the transport.</li>
+<li><strong>Authorization</strong> ("am I allowed this repo") is whatever the server decides,
+opaquely, on its side.</li>
+</ul>
+<p>Move the server and every clone URL breaks. Compromise the channel and the
+integrity guarantee evaporates with it. And the authorization decision lives
+entirely inside someone else's process, unauditable from yours. NAOMS pulls these
+three apart and answers each one separately — and the order matters.</p>
+<h2 id="for-builders"><a class="anchor" aria-hidden="true" tabindex="-1" href="#for-builders"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>For builders</h2>
+<h3 id="layer-1--the-wire-is-a-dumb-pipe-iroh--quic"><a class="anchor" aria-hidden="true" tabindex="-1" href="#layer-1--the-wire-is-a-dumb-pipe-iroh--quic"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Layer 1 — The wire is a dumb pipe (Iroh + QUIC)</h3>
+<p>NAOMS moves the pack over <a href="2026-03-27-one-endpoint-to-rule-them-all.html" rel="noopener noreferrer"><strong>Iroh</strong>, a QUIC-based peer-to-peer transport</a>. Iroh's
+job here is deliberately narrow: get bytes from peer A to peer B, NAT-traversed,
+encrypted in flight, addressed by node identity rather than by hostname. That is
+<em>all</em> it is trusted to do. It is a dumb pipe — and a dumb pipe is exactly what you
+want, because the moment the transport is responsible for correctness you have
+coupled your data integrity to your network stack.</p>
+<blockquote>
+<p><strong>Fellow travelers — iroh.</strong> We did not build our own QUIC P2P layer; we stood
+on <strong>iroh</strong>, which does NAT traversal, relay fallback, and node-addressed
+connections genuinely well, and exposes blobs as BLAKE3-addressed content. What
+we took: the content-addressed blob model and the node-identity addressing.
+What we did differently, and why: in NAOMS the <em>authorization</em> decision does not
+live in the transport at all — it lives in a signed chain one layer up (below),
+because our Three Axioms put consent and honesty above convenience. That is a
+context difference, not a criticism: iroh is a transport doing transport's job
+well, and we wanted it to stay that narrow.</p>
+</blockquote>
+<h2 id="layer-2--the-bytes-are-named-by-their-content-blake3-blobs"><a class="anchor" aria-hidden="true" tabindex="-1" href="#layer-2--the-bytes-are-named-by-their-content-blake3-blobs"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Layer 2 — The bytes are named by their content (BLAKE3 blobs)</h2>
+<p>When the git pack lands, it is stored as a blob whose address is its <strong>BLAKE3</strong>
+hash. The test put four blobs across the wire, each with a unique hash, all
+retrievable after multiple pushes — that is content-addressed deduplication
+working: push the same bytes twice, get one blob.</p>
+<p>This is where "zero trust assumptions" stops being a slogan. The receiving daemon
+does not trust that Iroh delivered the right bytes. It <a href="2026-04-04-teaching-a-daemon-to-download-a-model-it-can-trust.html" rel="noopener noreferrer">re-hashes what arrived</a>. If
+the hash matches the address it asked for, the bytes are correct — and no
+adversary in the middle, no buggy relay, no truncated stream can fake a BLAKE3
+preimage. The integrity guarantee is <em>independent of the transport that carried
+it</em>. You could deliver the blob by carrier pigeon and the guarantee would hold.</p>
+<p>The celebration card says it better than we can:</p>
+<blockquote>
+<p><em>the pack arrived … not because we trusted the wire but because we trusted the
+math.</em></p>
+</blockquote>
+<p>That sentence is the whole architecture compressed to fourteen words.</p>
+<blockquote>
+<p><strong>Fellow travelers — automerge, yjs, loro.</strong> The content-addressed,
+hash-as-identity discipline here is the same instinct the CRDT community
+refined for collaborative state: name a thing by what it is so that two parties
+who never coordinated can still agree on identity. We honor <strong>automerge</strong>,
+<strong>yjs</strong>, and <strong>loro</strong> for making that idea rigorous and ergonomic. What we did
+differently: git's pack/ref model — not a CRDT — is our unit of code sync here,
+with a signed chain tracking ref updates, because for <em>code</em> we want an explicit,
+auditable history of who moved which ref, not silent convergence. Different tool
+for a different job, same underlying respect for content-addressing.</p>
+</blockquote>
+
+
+<h2 id="layer-3--the-chain-decides-who-may-read-and-a-refusal-that-was-correct"><a class="anchor" aria-hidden="true" tabindex="-1" href="#layer-3--the-chain-decides-who-may-read-and-a-refusal-that-was-correct"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Layer 3 — The chain decides who may read (and a refusal that was correct)</h2>
+<p>Here is the part that makes this NAOMS and not just "git over a P2P pipe." When
+the second peer — call it Bob — asked the first daemon for the repository, it did
+<em>not</em> get the code. The chain enforced role-based access and answered, in the
+test's own words, that this identity <strong>had no role in the repository.</strong> Bob could not read it, and
+that was the test passing, not failing.</p>
+<p>This inverts the usual model. In the hostname-and-cert world, authorization is a
+gate the <em>server</em> keeps, and you take its word. In NAOMS, authorization is a
+property of a <strong>signed chain</strong> that both parties can inspect: the repository's
+chain records which identities hold which roles, every entry is signed, and "may Bob
+read this?" is answered by evidence anyone can verify, not by a server's private
+say-so. When git asked "who are you?", the daemon answered <em>with a signature, not
+a password</em> (celebration card). Identity is a key you hold; authorization is a signed
+fact on a chain; integrity is a hash. Three separate answers to three separate
+questions — none of them delegated to the wire.</p>
+<p>The card draws the moral, and we will let it stand:</p>
+<blockquote>
+<p><em>sovereignty is not keeping others out — it is knowing who you let in, and why.</em></p>
+</blockquote>
+<p>A refused read is not a failure of the system. It is the system telling the
+truth about a boundary. The 33/35 checks include that refusal as a <em>pass</em>.</p>
+<h2 id="honest-accounting-the-3335"><a class="anchor" aria-hidden="true" tabindex="-1" href="#honest-accounting-the-3335"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Honest accounting: the 33/35</h2>
+<p>Two of the thirty-five checks did not pass, and we are not going to round them away.
+The landing commit says <strong>33/35</strong>, not 35/35. 🟡 The materials for this week do
+not enumerate which two checks were outstanding, and we will not invent a
+reconstruction of them — what is verified is the count: thirty-three green, two
+not, in a ten-phase end-to-end run spanning daemon startup, hive creation, git
+init, push, Iroh blob store, cross-daemon auth, pull, multi-ref, release tag, and
+pack persistence. The honest headline is "the pipeline works end-to-end with two
+known gaps," not "flawless." The card itself calls this <em>"the longest session in
+NAOMS history — not the most lines of code, the most things that had to work
+together,"</em> and when that many moving parts converge, 33/35 on the first
+end-to-end pass is the real, un-rounded result.</p>
+<h2 id="why-this-shape-summarized"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-this-shape-summarized"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why this shape, summarized</h2>
+<p>Pull the three layers apart and the design rationale is clean:</p>
+<ul>
+<li><strong>Transport (Iroh/QUIC):</strong> trusted only to move bytes. Replaceable.</li>
+<li><strong>Storage (BLAKE3 blobs):</strong> integrity is the hash; verified on arrival;
+independent of transport. Deduplicating.</li>
+<li><strong>Authorization (signed chain):</strong> a property both parties can inspect, not a
+server's private decision. Auditable; a correct refusal is a feature.</li>
+</ul>
+<p>The first git push across the space between two daemons mattered not because git
+is hard — it is decades old — but because doing it <em>this way</em> proves you can move
+real code between sovereign machines where the wire is untrusted, the bytes prove
+themselves, and the right to read is a signed fact rather than a server's mood.</p>
+<p>The pack arrived because the math was right.</p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

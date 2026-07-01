@@ -1,0 +1,166 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Trust Is Directional: The Relational Trust Graph — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Trust Is Directional: The Relational Trust Graph</h1><p class="subtitle">Trust isn't a score stamped on a person — it's a property of a relationship, and that one choice changes everything downstream</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>March 23, 2026</span><span>·</span><span>7 min read</span><span>·</span><span>trust</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> Most apps reduce trust to one number stamped on a person. NAOMS doesn't — here, how much you trust Alice is your relationship with Alice, which has nothing to do with how much she trusts you. See why that single choice changes how trust spreads, how it's queried, and why it fades if you don't tend it.</div><div class="markdown-body"><p>Ask most software "how much do you trust Alice?" and it will answer with a
+number. One number, attached to Alice, the same no matter who's asking. It's a
+reputation score, and it's how the vast majority of trust and reputation systems
+work.</p>
+<p>NAOMS refuses to answer that question, because we think it's the wrong question.</p>
+<pre class="mermaid">flowchart LR
+  A[Alice] -->|trusts a lot| B[Bob]
+  B -->|trusts a little| A</pre>
+<p>The reframing came out of an architectural analysis early in the project, and
+it's worth quoting because it's the hinge the whole design turns on: <em>trust is a
+property of relationships, not individuals.</em> "Alice's trust value is 7.3" is
+meaningless. "Alice's trust in Bob is 7.3" is meaningful. Trust isn't
+a score you carry around like a credit rating. It's something that exists
+<em>between</em> two beings, and it points in a direction.</p>
+<p>That single decision — trust lives on the edge, not the node — is the most
+consequential one in the entire trust subsystem. Let's follow it through.</p>
+<h2 id="trust-lives-on-the-edge"><a class="anchor" aria-hidden="true" tabindex="-1" href="#trust-lives-on-the-edge"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Trust lives on the edge</h2>
+<p>In NAOMS, trust is stored as a <strong>trust edge</strong>: a directed link from one DID
+(decentralized identifier) to another. The shape of that edge is small and
+deliberate:</p>
+<ul>
+<li>a <strong>source DID</strong> and a <strong>target DID</strong> — who trusts whom, in that order</li>
+<li>a <strong>trust type</strong>: <code>vouch</code>, <code>attest</code>, <code>delegate</code>, or <code>endorse</code></li>
+<li>a <strong>weight</strong> between 0 and 1</li>
+<li>a <strong>propagation</strong> flag: <code>transitive</code> or <code>terminal</code></li>
+<li>and — this is important — a <strong>consent proof from <em>both</em> endpoints</strong></li>
+</ul>
+<p>The first thing to notice is the direction. An edge from Alice to Bob is a
+completely separate thing from an edge from Bob to Alice. The schema enforces a
+uniqueness constraint on the source, target, and trust type together, and the
+design states it outright: <strong>A→B is independent of B→A.</strong> Alice can vouch
+hard for Bob while Bob barely knows Alice. The graph holds both truths without
+contradiction, because they're two different edges.</p>
+<p>This is what "trust is directional" means concretely. There is no global "Bob
+score." There's only the set of edges pointing at Bob, each one belonging to the
+specific being who drew it.</p>
+<h2 id="the-trust-types-carry-meaning"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-trust-types-carry-meaning"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The trust <em>types</em> carry meaning</h2>
+<p>The weight tells you <em>how much</em>. The type tells you <em>what kind</em>. NAOMS ships four
+trust types, each with a default weight that encodes how much structural force it
+carries:</p>
+<ul>
+<li><strong>vouch</strong> (0.90) — "I know this person." Personal identity vouching, the
+strongest signal.</li>
+<li><strong>attest</strong> (0.85) — "I confirm they have this skill or credential."</li>
+<li><strong>delegate</strong> (0.80) — "I grant this being authority to act."</li>
+<li><strong>endorse</strong> (0.75) — "I recommend them." A general, lighter endorsement.</li>
+</ul>
+<p>Layered on top is a softer, open-ended <strong>signal kind</strong> — <em>why</em> the edge exists:
+<code>relationship</code>, <code>completion</code>, <code>appreciation</code>, <code>feedback</code>, <code>attestation</code>, and so
+on. "We shipped the sync engine together" is a <code>vouch</code> of kind <code>completion</code>;
+"thank you for mentoring me" is a <code>vouch</code> of kind <code>appreciation</code>. The structural
+type drives the math; the semantic kind preserves the human story behind it.</p>
+<p>And every edge is <strong>consent-bounded</strong>. You cannot unilaterally declare that
+someone trusts you. Creating an edge requires Ed25519 signatures from <em>both</em> the
+source and the target over a canonical JSON payload, and the system verifies
+both before the edge is ever recorded. Trust in NAOMS is a
+mutual act, cryptographically. Either party can later revoke their side
+unilaterally — granting requires two, walking away requires one.</p>
+<p>There's also a cap on how many edges you can draw — a <a href="2026-03-25-the-trust-graph-edges-consent-and-dunbars-number.html" rel="noopener noreferrer"><strong>Dunbar cap</strong></a>,
+configurable per being-type: 150 for humans, 50 for agents, 1500 for
+collectives. Trust is finite. You can't meaningfully vouch for
+ten thousand people, so the system won't pretend you can.</p>
+<h2 id="from-edges-to-a-network-propagation"><a class="anchor" aria-hidden="true" tabindex="-1" href="#from-edges-to-a-network-propagation"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>From edges to a network: propagation</h2>
+<p>Direct edges are only half the story. The interesting question is the transitive
+one: <em>if Alice trusts Bob, and Bob trusts Carol, how much does Alice trust
+Carol?</em></p>
+<p>The framing the team settled on is lovely, and we keep coming back to it: a trust
+chain is a <strong>knowledge channel</strong>. The Alice→Bob→Carol path isn't an abstraction
+— it's an actual pathway through which knowledge can flow, attenuated a little at
+each hop. Trust that propagates is trust you can route information
+through.</p>
+<p>This is also where NAOMS quietly made a <em>less is more</em> call that we think is the
+right one. The research surveyed the heavyweight options — BrightID's energy
+propagation, Circles' max-flow pathfinder, EigenTrust, TrustRank, and more, eight
+algorithms analyzed in the propagation research. The shipped
+decision for v1 was <strong>simple transitive decay</strong>, with a TrustRank-style upgrade
+path reserved for v2.</p>
+<p>Why pick the simple one? Because it's understandable, it runs on a <em>partial</em> view
+of the graph — you don't need to download the whole network to compute trust to
+your neighbors, which is a hard privacy requirement — and it doesn't pretend to
+a precision the social data can't support. The mechanics underneath are plain
+graph traversal: a breadth-first hop-distance search that
+follows outbound <strong>transitive</strong> edges and stops at <strong>terminal</strong> ones. A query
+fans out only a few hops before it stops, not across the whole graph. The propagation
+engine ships three tools on top of that — propagate, horizon, and explain — the
+last of which matters more than it sounds:
+trust you can't explain is trust you can't audit.</p>
+<p>The <code>transitive</code> vs <code>terminal</code> flag on each edge is the control knob. A
+transitive edge says "trust can flow <em>through</em> me to the people I trust." A
+terminal edge says "trust me, but don't follow my trust onward." It lets you
+vouch for someone without automatically importing their entire trust network into
+your own.</p>
+<h2 id="trust-that-doesnt-fade-is-a-bug-not-a-feature"><a class="anchor" aria-hidden="true" tabindex="-1" href="#trust-that-doesnt-fade-is-a-bug-not-a-feature"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Trust that doesn't fade is a bug, not a feature</h2>
+<p>There's one more piece, and it's the one we want to be most careful about,
+because the honest status is "designed, <em>not</em> shipped — and deliberately so."</p>
+<p>The premise is this: <strong>trust decay is relationship decay.</strong> A
+friendship that lapses cannot carry the same depth of knowledge transfer as one
+that's actively maintained. So trust edges should lose weight over time unless
+the relationship is kept alive — what the economic literature calls <a href="2026-03-27-what-we-didnt-build.html" rel="noopener noreferrer"><em>demurrage</em></a>,
+a continuous holding cost. Circles, one of the inspiration projects, applies
+roughly 7% per year; the open question is whether that's too aggressive for
+personal relationships, and what exactly counts as "maintenance" that resets the
+clock.</p>
+<p><strong>Status (verified):</strong> the decay/demurrage work is <strong>not shipped, and was
+deliberately cancelled</strong> as a research item — explored and <em>deliberately not
+built</em> in this era. Time-based decay
+exists only as a design intent and a research note — not as a production
+mechanism, and not on the current roadmap as a committed feature. The relational
+model and the propagation engine <strong>are</strong> the parts that landed.</p>
+<p>We're flagging that gap deliberately. It would be easy to describe NAOMS as having
+a complete, living trust graph that breathes and forgets on its own. It doesn't,
+and right now it isn't planning to. What it has is the right <em>foundation</em>
+for that — because decay only makes sense on directional, relational edges in the
+first place. You can't sensibly "decay a person's global score"; that number was
+never real. You <em>can</em> decay the specific relationship between Alice and Bob, reset
+by their specific interactions. The relational model is what makes honest decay
+even <em>expressible</em> — whether or not we ever choose to switch it on.</p>
+<h2 id="why-its-built-this-way"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-its-built-this-way"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why it's built this way</h2>
+<p>Every downstream property of NAOMS trust traces back to the first decision:</p>
+<ul>
+<li><strong>Asymmetry</strong> — Alice→Bob ≠ Bob→Alice — is only coherent because trust lives
+on edges. A single per-person score can't hold two opposing truths at once.</li>
+<li><strong>Propagation as knowledge channels</strong> works because edges have direction and a
+transitive/terminal flag; you can route along them.</li>
+<li><strong>Consent and revocation</strong> are clean because an edge has two named, signing
+endpoints — two to create, one to tear down.</li>
+<li><strong>Honest decay</strong> (if it were ever built) is expressible <em>only</em> on a
+relationship, never on an abstract score.</li>
+</ul>
+<p>The reframing — from "how trustworthy is this person" to "how much does <em>this
+being</em> trust <em>that being</em>, and why" — sounds like philosophy. But it's load-
+bearing engineering. It's the difference between a reputation number that can be
+gamed and farmed, and a graph of consenting, directional, explainable
+relationships that mirrors how trust actually works between real beings.</p>
+<p><em>Related: <a href="2026-03-25-the-temperature-is-not-the-patient.html" rel="noopener noreferrer">The Temperature Is Not the Patient</a>.</em></p>
+<hr />
+<h3 id="fellow-travelers"><a class="anchor" aria-hidden="true" tabindex="-1" href="#fellow-travelers"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Fellow travelers</h3>
+<p>We didn't invent directional trust, and we leaned on people who got there first.
+<strong>BrightID</strong>, <strong>EigenTrust</strong>, and <strong>TrustRank</strong> all model trust as something that
+flows across a graph rather than a flat per-account score — we studied their
+propagation math (eight algorithms in our research) and chose the <em>simplest</em>
+honest option for v1, not because theirs are wrong but because a partial-view,
+explainable traversal fit our privacy constraints better. <strong>Circles UBI</strong>'s
+demurrage — value that slowly melts unless it keeps moving — is where our
+trust-decay thinking came from; we admired it enough to design around it,
+then chose <em>not</em> to ship time-decay in this era. That's not a knock on Circles.
+It's a different context: their demurrage is load-bearing for an economy; ours
+would have been a maintenance burden on personal relationships we weren't ready
+to impose. Honoring an idea sometimes means learning from it and saying "not
+yet."</p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'neutral',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

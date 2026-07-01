@@ -1,0 +1,161 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>The Temperature Is Not the Patient: Why We Refused to Store a Trust Score — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>The Temperature Is Not the Patient: Why We Refused to Store a Trust Score</h1><p class="subtitle">The moral argument for computing trust fresh each time and keeping no number</p><div class="meta"><span class="badge str-vision">Vision</span> <span class="badge b-philosopher">Philosopher</span> <span class="badge free">free</span> <span>March 25, 2026</span><span>·</span><span>9 min read</span><span>·</span><span>trust</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> Your past mistakes won't be frozen into a permanent score that follows you around. We store no trust number anywhere — the system works out an answer fresh each time it matters, then lets it go, so you're free to be someone different tomorrow.</div><div class="markdown-body"><p>There is a sentence we kept coming back to while we were building this system,
+and it became a kind of law: <em>the temperature is not the patient.</em></p>
+<p>A thermometer reads 38.5. That number is real, it is useful, and a good doctor
+acts on it. But nobody confuses the reading with the person. The temperature is
+a measurement taken at a moment, under conditions, about one aspect of a living
+body that is far larger than any single figure can hold. Write the number down
+and pin it to the patient's chest as if it were their name, and you have made a
+category error with consequences. The patient is not 38.5. The patient has a
+fever right now, which is a different and far more honest thing to say.</p>
+<p>We decided trust works the same way. And so, somewhere in the early life of this
+project, we did something that on its face looks like throwing away a feature:
+we removed every stored trust-score column from the data model, end to end.
+There is no field anywhere that holds "how much this person is trusted." There
+is no integer between zero and a hundred sitting next to your name. When the
+system needs to decide whether you can see a file or whether an agent can draft
+a message, it computes an answer from signed evidence, in the moment, for that
+one decision — and then it lets the answer go. Nothing crystallises. Nothing is
+kept.</p>
+<p>This article is the argument for why we store nothing. It is a moral argument
+before it is a technical one.</p>
+<h2 id="a-number-you-keep-is-a-number-people-game"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-number-you-keep-is-a-number-people-game"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A number you keep is a number people game</h2>
+<p>The first reason is almost embarrassingly practical, and anyone who has watched
+a rating system in the wild already knows it in their bones.</p>
+<p>The instant you store a scalar that represents how trustworthy a person is, you
+have created a target. Not a measurement — a target. People do not relate to a
+stored score the way they relate to a thermometer reading. They relate to it the
+way they relate to a credit limit, a follower count, a seller rating: as a thing
+to be raised, defended, optimised, and protected. The score stops describing
+behaviour and starts <em>driving</em> it. Reviews get gamed. Vouches get traded. Fresh
+accounts swarm to inflate a stranger. The number, which was supposed to be a
+mirror, becomes a lever — and the people best at pulling levers are rarely the
+people the number was meant to protect you from.</p>
+<p>This is not a flaw in any particular implementation. It is what happens to any
+persisted measure of a person the moment it becomes consequential. Goodhart's
+old observation — that a measure which becomes a target stops being a good
+measure — is not a warning we can engineer around. It is a property of the
+thing. The only way to keep a measure honest is to keep it from becoming a
+standing target, and the only reliable way to do <em>that</em> is to not store it.</p>
+<p>So our trust signals live as <a href="2026-03-23-trust-is-directional.html" rel="noopener noreferrer">signed edges</a> — concrete, dated facts: <em>these three
+people vouched for her, this client signed off on this specific job, this panel
+attested she is a unique human.</em> When some decision needs a verdict, the system
+gathers the relevant edges, weighs them with their decay and their distance and
+their independence, and produces an answer for that decision. The answer is not
+written back. There is no high score to chase, because there is no high score to
+keep.</p>
+<h2 id="a-frozen-verdict-becomes-an-identity"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-frozen-verdict-becomes-an-identity"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A frozen verdict becomes an identity</h2>
+<p>The second reason is deeper, and it is where the moral weight sits.</p>
+<p>A stored score does not just invite gaming. It <em>freezes a verdict into a person.</em>
+Suppose the system once computed, fairly and correctly, that you were not very
+trustworthy — you were new, you had no vouches, you had made a mistake that left
+a mark. If that verdict is computed fresh each time, it fades the moment the
+inputs change: you build relationships, the bad edge decays, last month's vouch
+outweighs last year's stumble, and the next reading reflects who you are now.
+But if that verdict is <em>stored</em>, it stops being a reading about a moment and
+becomes a fact about you. It sits in a column. It is queried, joined, cached,
+exported. It outlives its own evidence. The mistake you made when you were new
+becomes load-bearing in decisions made years later, long after everyone who was
+there has moved on.</p>
+<p>This is how a rating becomes an identity. We have all watched it happen on the
+platforms — the early review that haunts a business, the strike that follows an
+account forever, the "trust level" that calcifies into caste. A stored number is
+not a description of a person; given enough time and enough downstream
+dependencies, it <em>becomes</em> the person, as far as the system is concerned. And a
+system that mistakes its frozen reading for the living being it was reading has
+committed exactly the doctor's error: it has pinned the temperature to the
+patient's chest and started treating the chart instead of the human.</p>
+<p>Our foundational commitment to <em>mystery</em> — to the idea that <a href="2026-06-04-forgetting-is-a-feature.html" rel="noopener noreferrer">forgetting is a
+feature</a> and that no system has the right to a total, permanent model of a person
+— is what forbids this. It is not sentimental. It is structural. A reading you
+do not keep cannot harden into a sentence you cannot serve out. Trust, in this
+system, is allowed to be wrong about you yesterday and right about you today,
+because it never wrote yesterday's verdict down as your name.</p>
+<h2 id="levinas-and-the-face-you-cannot-reduce-to-a-rating"><a class="anchor" aria-hidden="true" tabindex="-1" href="#levinas-and-the-face-you-cannot-reduce-to-a-rating"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Levinas, and the face you cannot reduce to a rating</h2>
+<p>There is a thinker who, decades before any of this, gave the clearest account of
+why a person cannot be summed into a number — and we leaned on him.</p>
+<p>Emmanuel Levinas built his ethics around what he called <em>the face</em>: the
+irreducible, infinite presence of another person standing in front of you, who
+exceeds every category you could file them under. The face, for Levinas, is
+precisely what <em>resists totalisation</em> — the moral fact that the other cannot be
+fully captured, classified, and closed. To meet someone face to face is to
+encounter something you cannot finish describing. The instant you believe you
+have them figured out, reduced to a profile, summed into a verdict, you have
+stopped meeting them and started managing a representation. And the ethical
+relation, Levinas insists, lives only in the meeting — never in the
+representation.</p>
+<p>A stored trust score is the totalising move in its purest software form. It is
+the claim that a being can be closed into a scalar, that the infinite particular
+of <em>this person, in this relationship, at this moment</em> can be flattened into one
+number that travels everywhere and means the same thing to everyone. It cannot.
+The carpenter your friend recommends is not "4.6 stars." She is a specific human
+who three people you know have vouched for, who did good work for a client who
+signed off on it, who holds an attestation that she is a real and single person.
+Those are facts about a relationship. A star rating is a fiction about an
+essence.</p>
+<p>Levinas gives us one more thing, and it is the part the platforms always hide:
+power asymmetry should be <em>named, not buried.</em> When a rating sits between two
+people, it pretends to be neutral — just a number, just the data — while in fact
+it encodes who has power over whom: the platform that issued it, the crowd that
+moved it, the asymmetry between the rated and the rater. We would rather the
+asymmetry be visible. So instead of a single authoritative score handed down
+from above, our trust is <em>bilateral by construction</em>: a relationship edge does
+not exist until both people sign it. "I trust you" alone produces nothing. The
+mutual fact requires two signatures, two faces, two beings who have actually met
+and said so. There is no neutral central rating because there is no central
+rater pretending to be neutral.</p>
+<h2 id="trust-is-contextual-or-it-is-a-lie"><a class="anchor" aria-hidden="true" tabindex="-1" href="#trust-is-contextual-or-it-is-a-lie"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Trust is contextual, or it is a lie</h2>
+<p>If you accept that trust is a reading and not a stored property, one more thing
+follows immediately, and it is the part most rating systems get catastrophically
+wrong: trust does not generalise.</p>
+<p>The fact that you vouch for someone as a gardener tells you nothing about whether
+they should approve financial decisions in your consulting cooperative. These
+are different domains, different faces of the same relationship, and collapsing
+them into one number is not a convenience — it is a falsehood. A single
+trust scalar is forced to answer every question with the same value, which means
+it is wrong about most of them. So in our model trust is gated per domain by
+default. Your sharing setting for "calendar" is a different thing from your
+setting for "financial records," and neither silently flows into a domain you
+never approved. A capability granted inside one group does not leak into another
+group; it starts at zero on the other side of every boundary and has to be
+earned or explicitly delegated across.</p>
+<p>This is only possible because we re-derive. A stored score has to be context-free
+to be storable — one number, one column, one meaning. A computed reading can ask
+<em>trust for what?</em> every single time, and give a different, honest answer to each.
+The contextual truth and the no-storage rule are the same design seen from two
+sides.</p>
+<h2 id="what-we-gave-up-and-what-we-kept"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-we-gave-up-and-what-we-kept"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What we gave up, and what we kept</h2>
+<p>We will not pretend this is free. Computing trust on demand is more work than
+reading an integer out of a column. We forgo the easy leaderboard, the tidy
+"reputation level," the one-glance badge that users have been trained to want. A
+stored number is <em>legible</em> in a way a fresh derivation is not, and legibility is
+seductive — it is exactly why the platforms reach for it.</p>
+<p>But the legibility is the trap. The number is easy to read precisely because it
+has thrown away everything that made it true: the relationship, the context, the
+moment, the face. It is the temperature written on the chart, divorced from the
+patient who has long since recovered or worsened or changed entirely.</p>
+<p>So we kept the harder thing. We kept the signed edges and the verifiable
+credentials and the per-domain ceilings, and we kept the discipline of computing
+the answer fresh and then letting it go. Trust, in this system, is not a property
+you carry like a brand. It is something that happens <em>between two specific
+beings</em>, about a specific thing, at a specific time — and then, having served its
+one decision, it dissolves back into the evidence it came from, leaving you free
+to be someone different the next time the question is asked.</p>
+<p>The temperature is not the patient. We refused to store the number because we
+refused to mistake the reading for the human. That is the whole argument, and we
+think it is the only honest place to stand.</p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-vision.html">← more in Vision</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

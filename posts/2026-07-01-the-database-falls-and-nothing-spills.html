@@ -1,0 +1,162 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>The Database Falls, and Nothing Spills — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">29</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">70</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">56</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">78</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">24</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>The Database Falls, and Nothing Spills</h1><p class="subtitle">For most of this project's life, at-rest encryption was all-or-nothing: one passphrase locked the entire database, and once it was open, everything inside was legible. This week we shipped the opposite — every kind of data sealed in its own cryptographic compartment, so a fully copied database, or even a compromised process holding the master vault open, reveals nothing it was never granted.</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>July 1, 2026</span><span>·</span><span>8 min read</span><span>·</span><span>storage-security</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> NAOMS keeps everything a being entrusts to it — memories, credentials, governance records — in one local database. Until this week that database was encrypted as a single block: one passphrase, all-or-nothing. Open it and every byte inside was readable; and any code running inside the unlocked process could read all of it, whether it had any business with that data or not. This week we shipped compartmentalized at-rest encryption: each kind of data is sealed under its own key, in its own compartment, with the sensitive fields encrypted individually while the structural fields stay in the clear so the system can still index and query. A stolen database file reveals nothing. A caller without a grant for a compartment gets a typed &quot;encrypted, no key&quot; marker — never the ciphertext, never a fabricated value, never a crash.</div><div class="markdown-body"><p>The unit of secrecy matters as much as the strength of the lock.</p>
+<p>For most of this project's life, NAOMS encrypted its local store the obvious
+way: the whole database, as one block. A passphrase derived a key, the key
+unlocked the file, and from that moment everything inside was legible. It's the
+standard move, and it has a standard weakness. The unit of secrecy is <em>the entire
+database</em>. Open it for one purpose and you've opened it for all of them. A piece
+of code that needed to read a calendar reminder could, in principle, read a saved
+password sitting in the same file — not because anyone granted it that, but
+because there was only ever one lock, and it was already open.</p>
+<p>That's fine right up until it isn't. If an attacker copies the database file at
+rest, they get one thing to crack. If a bug or a hostile dependency runs inside
+the process while the vault is unlocked, it inherits the whole thing. The blast
+radius of any single compromise is <em>everything</em>.</p>
+<p>This week (item 1688, celebrated June 30th) we changed the unit. Not the
+strength of the lock — the granularity of it.</p>
+<h2 id="compartments-not-one-big-room"><a class="anchor" aria-hidden="true" tabindex="-1" href="#compartments-not-one-big-room"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Compartments, not one big room</h2>
+<p>The new model gives each kind of data its own cryptographic compartment. A
+<strong>partition</strong> names a compartment, and they form a small escalate-only lattice
+(<code>classify-partition.ts</code>):</p>
+<pre><code>general (0, plaintext)  &lt;  personal (1)  &lt;  secret (2)</code></pre><ul>
+<li><code>general</code> is today's behaviour, byte-for-byte: no field encryption. Timestamps,
+type tags, structural metadata — the boring stuff that has to stay legible for
+the database to be a database — lives here.</li>
+<li><code>personal</code> is an at-rest compartment for sensitive being data: the contents of
+memories, notes, the things you'd mind a stranger reading.</li>
+<li><code>secret</code> is maximum sensitivity: passwords, cards, credentials, recovery
+material.</li>
+</ul>
+<p>The classification is <em>declared</em>, per data kind, in the feature manifest — a kind
+says "encrypt these fields, under at least this partition." The resolver
+(<code>classifyPartition</code>) then returns the <strong>higher</strong> of the declared floor and
+whatever a writer requested at runtime. It never returns lower. A writer can
+escalate a record into a stronger compartment; it can never quietly downgrade one
+out of the compartment its kind demands. Undeclared kinds fall to <code>general</code>, so
+nothing changes for data that was never sensitive to begin with.</p>
+<p>The crucial design choice is that this is <strong>field-level</strong>, not
+whole-payload. Inside a single memory, the <code>content</code> field gets sealed while the
+<code>type</code>, the ids, and the timestamps stay in plaintext. That's not a compromise —
+it's what lets the graph keep indexing and querying structurally while the
+sensitive bytes stay dark. You can find and order your memories without any code
+being able to read what's <em>in</em> them.</p>
+<pre class="mermaid">flowchart TD
+  A[Write a classified record] --> B[classifyPartition · pick the compartment]
+  B --> C[Fresh per-record DEK · ChaCha20-Poly1305 seals only the declared fields]
+  C --> D[Wrap the DEK for the partition domain via PRE · envelope magic 0x04]
+  D --> E[Embed key-blind __enc envelope · sign the ciphertext we store]
+  E --> F[(At-rest DB · sealed fields dark · structural fields legible)]
+  F --> G[Read at the outbound projection boundary]
+  G --> H{Caller holds a grant for this domain?}
+  H -- yes --> I[Recover DEK via live PRE path · decrypt in place]
+  H -- no --> J[Typed encrypted_no_key placeholder · never ciphertext]</pre>
+<h2 id="the-write-seam-seal-it-or-refuse--never-plaintext"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-write-seam-seal-it-or-refuse--never-plaintext"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The write seam: seal it, or refuse — never plaintext</h2>
+<p>Every classified write funnels through one chokepoint (<code>encrypt-on-append.ts</code>).
+For each record, it mints a <strong>fresh per-record data-encryption key</strong>, seals only
+the declared fields with ChaCha20-Poly1305, and then wraps that DEK <em>for the
+partition's domain</em> using the proxy-re-encryption key stack that already runs in
+the system. The wrapped key and the list of sealed fields ride along as a
+key-blind <code>__enc</code> envelope embedded in the record — "key-blind" because the
+component that carries it onto the graph node never holds a DEK and never
+decrypts anything. It just copies the envelope through.</p>
+<p>One invariant governs the whole seam, and it's the honest one: <strong>we sign the
+bytes we store.</strong> The signature covers the ciphertext, not the cleartext that
+briefly existed before it. There's no window in which what's signed and what's on
+disk disagree.</p>
+<p>The part worth dwelling on is what happens when the seam <em>can't</em> seal. If the
+vault is locked, the partition key can't be wrapped — so the write is <strong>refused</strong>,
+loudly, with a <code>PartitionLockedError</code>. It does not fall back to writing your
+password in plaintext because encryption was momentarily inconvenient. There's a
+second, sharper refusal for the compartments that require a two-device unlock: if
+that quorum hasn't happened, the write raises <code>CompartmentLockedError</code> rather than
+silently sealing the record in a weaker, single-device-readable way. And a third
+guards a subtle incompatibility — a classified record emitted in a format that
+would relocate its fields to a place the read seam can't find them is rejected up
+front, because a write that succeeds and can never be read back is just silent
+data loss wearing a success message.</p>
+<p>Fail-closed, every time. The Honesty axiom in this system is not a slogan on a
+wall; it's a set of exceptions that would rather stop your write than lie about
+what they did with your data.</p>
+<h2 id="the-read-seam-no-key-is-an-answer-not-an-error"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-read-seam-no-key-is-an-answer-not-an-error"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The read seam: "no key" is an answer, not an error</h2>
+<p>Reading is where compartmentalization earns its keep. The decrypt path
+(<code>decrypt-node-fields.ts</code>) runs at exactly one place — the <strong>outbound projection
+boundary</strong>, where data leaves for a client — and deliberately <em>not</em> on the
+internal query hot path that reducers and enrichers use. Those internal readers
+work fine against the structural plaintext fields and simply tolerate ciphertext
+in the sealed ones, because the two field sets are disjoint by construction.</p>
+<p>At that outbound boundary, for each sealed record, the seam asks one question:
+does this caller hold an active grant for the record's domain? If yes, it recovers
+the data-encryption key through the <em>live</em> re-encryption path — the same
+mechanism the rest of the system's payload decryption uses, verified by the
+envelope's magic bytes, not a bespoke shortcut — and decrypts the fields in place.</p>
+<p>If <strong>no</strong>, it does something more interesting than throwing an error. It replaces
+each sealed field with a <em>typed placeholder</em>: <code>{ __encrypted: true, reason: "encrypted_no_key" }</code>. Not the ciphertext. Not a fabricated blank. An explicit,
+honest marker that says "there is something here, and you don't have the key for
+it." There's even a distinct second marker, <code>quorum_unmet</code>, so a client can tell
+apart "you lack the grant entirely" from "this compartment needs a two-device
+unlock you haven't done" — two different situations that deserve two different
+answers, and two different remedies.</p>
+<p>Three hard rules bind this path, and they're the whole point: it <strong>never</strong> returns
+ciphertext as if it were content, it <strong>never</strong> leaks plaintext to a caller without
+a grant, and it <strong>never</strong> throws — any failure degrades to the placeholder. A
+decrypt path that crashes is a decrypt path that can be used to probe what exists.
+A decrypt path that returns raw ciphertext is one that leaks under the wrong
+client. This one does neither.</p>
+<h2 id="the-catch-an-audit-caught"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-catch-an-audit-caught"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The catch an audit caught</h2>
+<p>The most instructive part of this build was a leak that the design's first cut
+didn't close, and a security pass did. The naive version redacts the fields it
+sees in the outbound projection. But the projection is, in the threat model,
+<em>attacker-writable</em> — and an attacker who could omit a sensitive field from the
+projection could get its ciphertext served through a different, unredacted path.
+Redacting what you see isn't enough when what you see is controlled by the
+adversary.</p>
+<p>The fix (M7, closing the audit's CRITICAL-1 / HIGH-1 / MED-1c) is to take the set
+of sealed fields <strong>from the FROST-signed source commit</strong>, never from the
+projection. The signed commit is the ground truth an attacker can't forge. So the
+seam redacts <em>every</em> field the verified envelope names — even ones the projection
+tried to leave out — and the omit-a-field trick simply stops working. It's a small
+change with a large moral: the redaction list has to come from the thing that's
+signed, not the thing that's convenient.</p>
+<h2 id="what-is-live-and-what-is-honestly-not"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-is-live-and-what-is-honestly-not"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What is live, and what is honestly not</h2>
+<p>The core star is live on the main line and end-to-end proven: memories,
+credentials, and governance records can each be sealed in their own compartment;
+a stolen database reveals nothing it was never granted; a caller without a grant
+gets the typed marker; and the vault's own secrets now flow through this same seam
+rather than a bespoke crypto path of their own. Twelve real-crypto tests carry it
+— genuine reconstruct, real wrap-to-recipient, anti-downgrade read threading,
+fail-closed negatives armed by the actual production code — and they were held to
+a first-hand bar. When an early attempt to celebrate rode on a relayed "12 of 12"
+that ground truth showed was really 1 of 12, it was reverted; the celebrate stands
+only on a genuine, first-hand-verified pass. We'd rather tell you that than let it
+pass quietly.</p>
+<p>And two things are explicitly <strong>not</strong> finished, because saying so is part of the
+contract. The two-operating-system-process cross-device compartment-key unlock —
+the flow where a <em>second physical device</em> participates in opening a
+maximum-sensitivity compartment — is named follow-on work (tracked under item
+1681), not something live today; in the current build that cross-device hop is
+modelled within a single process, and the sign-off says so plainly rather than
+implying the multi-device story is done. Separately, folding the compartment
+identifier into the signed commit tuple for full tamper-evidence is a fleet-wide
+cutover being staged on its own, under direct watch, precisely because it touches
+every existing record.</p>
+<p>The shape of the win is easy to state and was hard to earn. The database used to
+be one room with one lock. Now it's a building of sealed compartments, each with
+its own key, and the walls are the ciphertext itself. Copy the whole building and
+you hold a stack of locked doors. Stand inside one unlocked room and you still
+can't see into the others. The database can fall — and nothing it was never
+granted spills out.</p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'neutral',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 205 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>
