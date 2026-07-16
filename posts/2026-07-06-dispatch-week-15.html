@@ -1,0 +1,173 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Dispatch · Week 15: The Intelligence Moved On-Device — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">33</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">81</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">58</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">91</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">16</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Dispatch · Week 15: The Intelligence Moved On-Device</h1><p class="subtitle">The week a vision model started indexing your photos on your own machine, speech transcription and group-call encryption ran locally, value learned to move without a middleman, and the whole daemon shipped self-contained on Mac, Linux, and Android. It's the release that closes v0.6 — and the honest part is how carefully we marked what's finished versus what's still being built.</p><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>July 6, 2026</span><span>·</span><span>8 min read</span><span>·</span><span>meta</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> Week 14 moved NAOMS out of the terminal and into apps you open. Week 15 moved the hard part — the intelligence and the keys — onto your own device. A vision model now indexes your photos locally so you can find one by what's in it; speech transcription and group-call encryption run on your machine, not a server; value moves between two people and refuses to half-finish; and the whole self-contained daemon now builds for Mac, Linux, and Android from one pipeline. It's the release that closes v0.6. What makes it a release and not a demo is the discipline underneath: every claim marked for exactly how far it goes, one headline retracted and re-earned before we kept it, and the parts that aren't done named plainly rather than implied finished.</div><div class="markdown-body"><p>Last week the story was doorways: NAOMS became a thing you open — a window, a
+phone, a voice. The obvious next question is the one that actually earns a
+version number. Behind those doorways, where does the <em>work</em> happen — the
+understanding, the encryption, the keys? For a lot of software the honest answer
+is "a server we run." This week, across a run of separate landings that all point
+the same way, the answer became: <strong>your own device.</strong></p>
+<p><img src="assets/week-15-commits.svg" alt="Commits per day — Week 15" /></p>
+<p>A vision model that indexes your photos runs on your machine. Speech
+transcription runs on your machine. The cryptography that protects a group call
+runs on your machine. The keys that move value are co-signed between two
+people's devices with nothing in the middle. And the whole self-contained daemon
+that hosts all of it now builds for three operating systems from one pipeline.
+That is the spine of v0.6: not new doorways, but the intelligence and the secrets
+moving off the server and onto the hardware in your hands.</p>
+<pre class="mermaid">flowchart TB
+  subgraph device["Your device (Mac · Linux · Android)"]
+    vis["Vision model<br/>indexes your photos"]
+    asr["Speech model<br/>live transcription"]
+    crypto["Group-call encryption<br/>+ value co-signing"]
+    daemon["The self-contained daemon<br/>your keys · your memory"]
+    vis --> daemon
+    asr --> daemon
+    crypto --> daemon
+  end
+  daemon -. "no path opened out" .-x server(["A server that does the thinking<br/>or holds the keys"])
+  classDef forbidden stroke-dasharray:5 5,color:#888;
+  class server forbidden;</pre>
+<p>The models run here. The keys live here. Nothing opened a path out.</p>
+<h2 id="by-the-numbers"><a class="anchor" aria-hidden="true" tabindex="-1" href="#by-the-numbers"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>By the numbers</h2>
+<ul>
+<li><strong>~1,186 commits</strong> in the seven-day window 06-29 → 07-05 (<strong>414 merge</strong>,
+~772 non-merge). The standing caution: this era runs on the order of a hundred
+concurrent agent worktrees each landing through its own merge commit, so the
+merge count is <em>fleet shape</em>, not feature count.</li>
+<li><strong>Busiest days: 06-29 (267) and 07-03 (260).</strong> Distribution, on-device model
+wiring, and crypto are low-churn, high-consequence work; the graph measures
+churn, not how far the system moved onto your hardware.</li>
+<li><strong>The number that matters is a subtraction.</strong> One flagship claim — that value
+can move safely between two people — was made once in June, <em>retracted</em> when
+its proof didn't survive a first-hand look, and remade this week on a proof that
+did. The most important thing that happened isn't a line added. It's a claim
+taken back until it was true.</li>
+<li><strong>Net LOC: not quoted.</strong> At this volume, with packaged native libraries in the
+mix, a line count measures bundled dependencies, not reach.</li>
+</ul>
+<h2 id="your-device-got-smart-about-your-photos"><a class="anchor" aria-hidden="true" tabindex="-1" href="#your-device-got-smart-about-your-photos"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Your device got smart about your photos</h2>
+<p>The flagship. Your photo library is now indexed by a real vision transformer —
+<a href="2026-07-04-your-phone-finds-the-photo-by-whats-in-it.html" rel="noopener noreferrer">running on your own device, so you can find a photo by what's actually in
+it</a>, not by its
+filename or date. Every photo becomes a point in a 1024-dimension space of visual
+meaning; "find photos like this one" is a genuine nearest-neighbor search in that
+space, fused with text pulled out of the image by on-device OCR. The model never
+sends your pictures anywhere — the understanding happens on your hardware. The
+honest edge, stated in the piece: today it's <em>image-to-image</em> (show it a photo,
+it finds similar ones); typing a description for the vision model to match —
+text-to-image — is the next step, not this one.</p>
+<h2 id="two-more-models-running-locally"><a class="anchor" aria-hidden="true" tabindex="-1" href="#two-more-models-running-locally"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Two more models, running locally</h2>
+<p>The same "on your device, not a server" instinct carried two harder pieces.</p>
+<p>We're building <a href="2026-07-03-live-captions-from-a-model-that-cant-stream.html" rel="noopener noreferrer">live speech transcription out of a model that has no streaming
+mode at all</a>. The
+on-device speech engine only decodes a fixed window and forgets everything
+between calls — so we own a sliding-window buffer on the host side and stitch
+overlapping decodes into a live caption stream, with a hard rule that the raw
+audio is gone the instant it's used. It's an in-progress path, not a finished
+feature, and we say so — but the mechanism is real and the reason to do it the
+hard way is exactly that a cloud transcription service can't promise your audio
+never lingers.</p>
+<p>And group calls are being encrypted with <a href="2026-07-05-consent-you-cannot-forge.html" rel="noopener noreferrer">real modern group cryptography, with
+consent bound into the packets themselves</a>.
+Every media frame carries the encryption epoch and a consent-state version folded
+into its signature, so a peer can't silently swap your consent stamp or replay an
+old key mid-stream without breaking the signature. The crypto is wired and
+verified; full multi-party calling is still an open rung, and the piece is plain
+about that line.</p>
+<h2 id="value-that-cant-half-finish"><a class="anchor" aria-hidden="true" tabindex="-1" href="#value-that-cant-half-finish"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Value that can't half-finish</h2>
+<p><a href="2026-07-03-send-someone-value-and-it-cannot-half-finish.html" rel="noopener noreferrer">You can now send value to another person</a>
+and it lands in their balance on their device — no bank, no central ledger, no
+global blockchain. It isn't money and it isn't a currency; it's a shared record
+of mutual obligation, a two-person IOU kept honestly on both sides. Every transfer
+needs <em>both</em> devices to co-sign, so it can't be recorded as sent on one side
+without being received on the other; and if the other device can't be reached,
+the transfer is refused rather than left half-done. This is the claim that was
+retracted in June and re-earned in July — the whole story is in the article,
+because a claim about value has to be earned, not asserted.</p>
+<h2 id="one-memory-system-three-platforms"><a class="anchor" aria-hidden="true" tabindex="-1" href="#one-memory-system-three-platforms"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>One memory system, three platforms</h2>
+<p>All of that on-device work needs to actually <em>install</em> on real machines. This week
+<a href="2026-07-05-one-command-three-platforms.html" rel="noopener noreferrer">one build pipeline produces Mac, Linux, and Android builds</a>,
+each running its own self-contained daemon off the same core — and the genuinely
+interesting engineering is that the same native code has to be packaged
+differently on each operating system (statically folded in on Mac, its whole
+shared-library closure staged and re-verified on Linux, aligned to new 16-kilobyte
+memory pages on Android). The honest scope matters here: only the Mac build is
+celebrated, and only for macOS; Linux ships a self-contained daemon <em>tarball</em>, not
+yet a double-click desktop app; Android runs on-device but is under active
+hardening. "One pipeline, three platforms" is true; "the same polished app on all
+three" is not, and we don't pretend otherwise.</p>
+<h2 id="a-first-run-that-earns-your-trust"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-first-run-that-earns-your-trust"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A first run that earns your trust</h2>
+<p>The way in got rethought, too. The redesigned onboarding flow is now live on the
+main line: invitation-first, designed around how each step should <em>feel</em>, with the
+24-word recovery phrase made something you can defer instead of a wall you're
+trapped behind, and your recommended local model downloading quietly in the
+background while you finish setting up. It's live-on-main but still an in-progress
+effort, not a celebrated milestone.</p>
+<h2 id="and-for-the-developers"><a class="anchor" aria-hidden="true" tabindex="-1" href="#and-for-the-developers"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>And for the developers</h2>
+<p>One more, for the people who want to build on this. <a href="2026-07-04-build-on-naoms-without-a-copy-of-naoms.html" rel="noopener noreferrer">An outside developer can now
+build a NAOMS package with none of our source on their
+machine</a> — scaffold, sign,
+publish, and promote into a shared space through the installed command-line tool,
+with a real countersignature at the trust boundary. We found the five walls the
+honest way, by walking a clean machine into each of them. Two quieter reliability
+landings round out the week: <a href="2026-07-05-your-imports-really-reach-your-data-and-we-prove-it.html" rel="noopener noreferrer">imports from Google Drive and Gmail that re-prove
+they reach your data every run</a>,
+and <a href="2026-07-05-revoke-access-and-it-stops-handing-out-keys.html" rel="noopener noreferrer">a revocation leak sealed</a>
+so a just-revoked app stops being handed fresh keys.</p>
+<h2 id="the-honest-ledger"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-honest-ledger"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The honest ledger</h2>
+<p>Told straight, by status:</p>
+<ul>
+<li><strong>Shipped and celebrated (close-gate signed):</strong> peer-to-peer value movement;
+the SDK proven usable by an outside developer; the on-device photo search
+experience; the notarized macOS desktop app.</li>
+<li><strong>Live on main, honestly in-progress:</strong> the photo vision-embedding foundation;
+on-device speech transcription; group-media encryption; the Linux self-contained
+daemon build; the Android on-device app; the redesigned onboarding flow;
+real-account imports; the revocation-leak fix.</li>
+<li><strong>Named, not claimed:</strong> text-to-image photo search; full multi-party group
+calling; a Linux double-click desktop app; the unified connect-friends-and-
+devices redesign (still on its own branch, not merged); value that circulates
+beyond two people.</li>
+</ul>
+<p>We mark these on purpose. <strong>Celebrate what's real; never imply the partial is
+finished.</strong></p>
+<h2 id="v06"><a class="anchor" aria-hidden="true" tabindex="-1" href="#v06"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>v0.6</h2>
+<p>This is the release that closes here. v0.6 isn't "the week we added the most." It
+is the week the thinking and the keys moved onto your device — a model that
+understands your photos, speech and call encryption that run locally, value co-
+signed between two people, and a self-contained daemon that installs on three
+platforms — each shipped with its limits written next to it, and one headline
+re-earned only after we were willing to un-ship it. The measure of v0.6 isn't how
+much we claimed. It's how much of it runs on your own machine, and how honestly we
+drew the line around the parts that don't yet.</p>
+<aside class="fieldnote"><div class="fn-eyebrow">From the workshop</div><h4 class="fn-title">The Server You Didn't Have to Trust</h4><div class="fn-body markdown-body"><p>Count how many of this week's landings quietly refuse the same shortcut. The photo
+model could have run in a cloud and returned tags; it runs on your device. Speech
+could have been a hosted transcription API; it's local, and the audio is shredded
+as it's used. Value could have settled through a ledger everyone defers to; it's
+co-signed between two people with nothing in the middle. Every one of those was
+the <em>harder</em> path, chosen because the moment the intelligence or the keys live on
+someone else's computer, "your memory, your device" has a hole in it no interface
+can cover. v0.6 is the release where we kept paying that cost on purpose.</p>
+</div></aside>
+<aside class="fieldnote"><div class="fn-eyebrow">From the workshop</div><h4 class="fn-title">The Claim You're Willing to Retract</h4><div class="fn-body markdown-body"><p>The most important engineering event of the week wasn't a commit — it was a
+retraction, a value claim pulled in June because its proof didn't hold, and not
+allowed back until it did. A system whose whole premise is honesty doesn't get to
+be shy about the one mechanism that keeps the honesty real: the willingness to
+take a claim back. That's why this dispatch spends as much ink on what <em>isn't</em>
+finished — text-to-image search, full group calling, a Linux desktop app — as on
+what is. A version number should mean <em>this was proven</em>, not <em>this was promised.</em></p>
+</div></aside>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-process.html">← more in Process</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'neutral',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 222 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

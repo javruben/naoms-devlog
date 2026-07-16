@@ -1,0 +1,156 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Your Phone Finds the Photo — On-Device, by What's Actually In It — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">33</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">81</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">58</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">91</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">16</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Your Phone Finds the Photo — On-Device, by What's Actually In It</h1><p class="subtitle">Every photo you import is turned, on your own device, into a 1024-number fingerprint by a real vision transformer — so 'find photos like this one' becomes genuine nearest-neighbor search in that vector space, blended with the words and things found inside the pictures. Nothing is uploaded, and the model runs on your Neural Engine.</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>July 4, 2026</span><span>·</span><span>7 min read</span><span>·</span><span>photos-ml</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> Pick a photo in your library and ask for more like it. On your own device — no cloud, nothing uploaded — a real vision model reads the picture and turns it into a fingerprint of 1024 numbers. &quot;Find photos like this one&quot; then becomes a true nearest-neighbor search in that space: the system finds the pictures whose fingerprints sit closest to your chosen one, blended with the words and things found inside the images themselves. Be clear about what works today: this is image-to-image. Show it a photo and it finds visually similar photos. You cannot yet type &quot;beach&quot; and have the vision model go find beach pictures — a typed word reaches your photos only through the text read out of them (captions, the letters inside the image, detected concepts, places). Typing a description and having the vision model match it is the honest next step, and it is not shipped. The model itself stays dormant until you install it through a signing ceremony; until then, search quietly falls back to text and tells you which results came from where.</div><div class="markdown-body"><p>Ask your photo library for "more like this one," and something has to decide
+what <em>this one</em> is like.</p>
+<p>The lazy answer is metadata: same day, same folder, same camera, the filename
+has "sunset" in it. That finds photos taken <em>near</em> the one you picked. It does
+not find photos that <em>look</em> like it. For that, the system has to have some
+representation of what is actually in the picture — and, if it's going to
+respect you, it has to build that representation on your own machine, without
+mailing your photos to anyone.</p>
+<p>That is what shipped. Every photo you import is read, on-device, by a real
+vision transformer, and turned into a fingerprint: a list of 1024 numbers. "Find
+photos like this" is then a genuine nearest-neighbor search over those
+fingerprints. No cloud, no upload, no filename tricks.</p>
+<h2 id="what-the-fingerprint-is"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-the-fingerprint-is"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What the fingerprint is</h2>
+<p>The model is a CLIP-style vision transformer — the vision half of the
+architecture that taught machines to relate images and language. You hand it a
+picture; it hands back a point in a 1024-dimensional space. Two photos that a
+human would call similar — the same kind of scene, the same subject, the same
+mood — land close together in that space. Two unrelated photos land far apart.
+"Close" and "far" are literal here: the system measures the cosine of the angle
+between two fingerprints. Small angle, similar picture.</p>
+<p>Getting a faithful fingerprint is fussier than it sounds, and the fussiness is
+where correctness lives. Before the model sees a photo, the image is resized so
+its short side is 224 pixels, center-cropped to a square, and normalized against
+the exact per-channel means and standard deviations the model was trained on.
+Those steps are byte-matched to the reference pipeline the model's authors
+published. Get the crop or the normalization subtly wrong and the model still
+returns 1024 confident numbers — they're just the wrong numbers, quietly. A
+fingerprint that's plausible but off is worse than an error, because nothing
+tells you it happened. So the preprocessing is treated as part of the model, not
+a detail around it.</p>
+<p>The model runs locally through a Rust binding to a portable inference engine,
+and on Apple hardware it offloads to the Neural Engine — the dedicated silicon
+built for exactly this. Wiring that path had a real, unglamorous cost: for a
+while the desktop build didn't link the framework that exposes the Neural
+Engine, so the accelerator was present but unreachable. That link was fixed and
+landed this week. It's the difference between the model idling on the CPU and the
+model running where the hardware wants it.</p>
+<h2 id="where-the-fingerprints-live-and-how-like-this-gets-answered"><a class="anchor" aria-hidden="true" tabindex="-1" href="#where-the-fingerprints-live-and-how-like-this-gets-answered"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Where the fingerprints live, and how "like this" gets answered</h2>
+<p>Storing a fingerprint is easy. Searching a whole library for the nearest ones,
+fast, is the part that needs a real substrate. The vectors go into an on-device
+vector index — a virtual table that understands 1024-number vectors natively and
+answers "give me the <em>k</em> closest to this one, by cosine distance" directly. That
+nearest-neighbor query is the mechanical heart of "find photos like this." You
+give it a fingerprint; it walks the index and returns the closest neighbors,
+ranked by how small the angle is.</p>
+<p>We proved the lane does something keyword search cannot. In one test, a query
+photo is matched against a target that shares <em>zero words</em> with it — no common
+filename, caption, or tag — and the vision lane still surfaces the target,
+because the two pictures <em>look</em> related even though nothing textual connects
+them. Keyword search has no path to that answer. The vector lane finds it because
+it's reasoning about pixels, not strings.</p>
+<p>But photos aren't only pixels. There are words <em>inside</em> many of them — a street
+sign, a menu, a screenshot — and there are things you can name: a place, a
+detected concept, a face. So the search that ships doesn't run on the vision lane
+alone. It fuses lanes: the vision-vector lane ("looks like this") plus text lanes
+("contains these words or things"). Each lane ranks the library independently,
+and the rankings are blended with Reciprocal Rank Fusion — a method that combines
+ranked lists by how <em>high up</em> each item appears in each list, rather than trying
+to compare a cosine distance against a text score on some invented common scale.
+A photo that's a strong visual match and also contains the right text rises to
+the top of the fused list. One that's only a visual match still ranks — just
+lower.</p>
+<p>One honesty gate is worth naming. The model isn't chosen blindly. At selection
+time, the code <em>refuses</em> a model whose license forbids commercial use, or whose
+output dimension doesn't match the index. A wrong-dimension model would silently
+poison every fingerprint; a non-commercial model would be a license landmine
+waiting under the whole product. Both are rejected up front rather than
+discovered later.</p>
+<pre class="mermaid">flowchart TD
+  A[You import a photo] --> B[Preprocess: resize 224 short side, center-crop, CLIP normalize]
+  B --> C[On-device vision transformer, Neural Engine]
+  C --> D[1024-number fingerprint, a point in CLIP space]
+  D --> E[(On-device vector index, cosine distance)]
+  F[You pick a photo: find more like this] --> G[Its fingerprint]
+  G --> H[Nearest-neighbor search: closest fingerprints by angle]
+  E --> H
+  H --> I[Vision lane ranking: looks like this]
+  J[Text lanes: words inside the image, concepts, place, faces] --> K[Text ranking]
+  I --> L[Reciprocal Rank Fusion]
+  K --> L
+  L --> M[Blended results: looks-like fused with contains]</pre>
+<h2 id="the-honest-limit--read-this-part-twice"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-honest-limit--read-this-part-twice"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The honest limit — read this part twice</h2>
+<p>Here is the boundary, stated plainly, because overclaiming it would be a lie:
+<strong>this is image-to-image only.</strong></p>
+<p>The vision transformer we shipped is the <em>vision</em> half of CLIP. The <em>text</em> half —
+the encoder that turns the sentence "a dog on a beach" into a point in the same
+space — is not wired. Which means: show the system a photo and it will find
+visually similar photos. That works, and it's the capability worth having for
+dedup, for "more of this moment," for finding the near-duplicate you meant to
+delete.</p>
+<p>But you cannot yet <em>type</em> "beach" and have the vision model go find beach photos.
+When you type words, they reach your photos only through the text lanes — the
+letters read out of the image, the detected concepts, the place, the caption.
+The pure-vision lane, asked a text question it has no text encoder to answer,
+returns <em>nothing</em> rather than pretending. It doesn't fabricate a match to look
+capable. Text-to-image — type a description, and the vision model itself finds
+the pictures that match it — is the natural next step, and it is honestly not
+shipped.</p>
+<p>Four more limits, none of them buried:</p>
+<ul>
+<li><strong>The model is dormant until you install it.</strong> The bytes are wired, but the
+model file arrives through the owner's signing ceremony. Until it's present,
+the system logs an honest warning and degrades to text search — and it <em>tags</em>
+each result as served by the vector lane or by the text lane, so you're never
+silently downgraded without knowing.</li>
+<li><strong>The photos "full-text" lane is modest by design.</strong> On the photos surface it's
+an in-memory scan over the captions and the text pulled out of images — fine
+for a personal library, not a heavyweight search engine. We won't call it more
+than it is.</li>
+<li><strong>Desktop and mobile fingerprints don't mix.</strong> The desktop model and the
+smaller image-only model used on phones both emit 1024 numbers, but into
+<em>different, unrelated</em> spaces. A fingerprint from one is meaningless to the
+other, so cross-device nearest-neighbor isn't safe until the index learns to
+keep each model's vectors in their own partition.</li>
+<li><strong>Faces group only when you ask.</strong> There's no automatic face detection sweeping
+your library on import; grouping happens on an explicit action.</li>
+</ul>
+<h2 id="why-on-device-is-the-whole-point"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-on-device-is-the-whole-point"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why on-device is the whole point</h2>
+<p>Every claim above has a hidden clause: <em>and none of it leaves your device.</em> The
+model reads your photos where they already are. The fingerprints are stored
+locally. The search runs locally. There is no server that sees your pictures to
+index them, because the indexing is the model on your own Neural Engine.</p>
+<p>That's not a performance footnote; it's the design. The usual way to get "search
+your photos by what's in them" is to upload the photos to someone who runs the
+model for you and keeps the fingerprints. You get the feature and they get your
+library. Doing the inference on-device is what lets the feature exist without
+that trade. It's the same commitment behind
+<a href="2026-04-16-search-that-never-phones-home.md" rel="noopener noreferrer">search that never phones home</a>, and
+it's why <a href="2026-06-20-the-runtime-matters-as-much-as-the-model.md" rel="noopener noreferrer">the runtime matters as much as the model</a>:
+a model you can only reach through someone else's cloud is a different product
+than the same model running on the metal in your pocket.</p>
+<p>And the honesty is load-bearing, not decorative. The pure-vision lane returning
+nothing for a text query, the served-by-vector-versus-text tag, the refusal to
+mix two incompatible vector spaces — each is a place we could have faked
+capability and chose not to, in the same spirit as the rule that
+<a href="2026-04-17-any-test-that-passes-over-a-gap-is-a-lie.md" rel="noopener noreferrer">any test that passes over a gap is a lie</a>.
+The system would rather tell you it found nothing than invent a match. Find a
+photo by what's actually in it — on your device, privately — and know exactly how
+it was found.</p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'neutral',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 222 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

@@ -1,0 +1,147 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>One Command, Three Platforms — and the Native-Library Gymnastics Underneath — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">33</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">81</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">58</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">91</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">25</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">16</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>One Command, Three Platforms — and the Native-Library Gymnastics Underneath</h1><p class="subtitle">The same shared Rust core — local database, cryptography, signing engine, on-device speech, and optionally a local language model — builds into a self-contained, on-device daemon on Mac, Linux, and Android from one command family. The twist is that the same library links its math and ML stack differently on each operating system, so packaging it self-contained takes a different trick per OS. And the three forms differ by maturity: a notarized double-click app on Mac, a self-contained daemon tarball on Linux, an on-device app under active hardening on Android.</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>July 5, 2026</span><span>·</span><span>7 min read</span><span>·</span><span>distribution</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> NAOMS is one memory system — your local database, your cryptography, the signing engine, on-device speech, and optionally a language model that runs on your own hardware. From one command family we build it for Mac, Linux, or Android (or all of them at once), and on each platform the output is a self-contained, on-device daemon: no server in the middle, nothing phoning home to run. The genuinely interesting engineering is that the same shared Rust library links its native math and ML stack differently on every operating system, so packaging it self-contained needs a different trick per OS — a static-link on Mac, a full shared-library closure staged and re-verified on Linux, a cross-compile plus a bundled C++ runtime and 16 KB page alignment on Android. One pipeline, three platforms, three real daemons — but the FORM differs by maturity. Only the Mac build is a notarized, celebrated double-click app. Linux ships a self-contained daemon tarball today, not a polished desktop app. Android is shipped and running, but under an active hardening effort. We say which is which, plainly.</div><div class="markdown-body"><p>The promise is small to state and large to keep: your whole memory system,
+installable and self-contained, on the three computers you actually use — and on
+each of them it runs entirely on your own device, with no server in the middle.</p>
+<p>Under the hood there is one shared core, written in Rust. It holds the local
+database, the cryptography, the signing engine that authorizes every sensitive
+action, the on-device speech that turns your voice into text, and — optionally —
+a language model that runs on your own hardware rather than someone else's cloud.
+That core compiles into a single native shared library. One command family takes
+that library and produces, for Mac, Linux, or Android (or all three at once), a
+self-contained daemon: the background process that <em>is</em> NAOMS on that machine.</p>
+<p>If that were the whole story it would be a footnote. The interesting part is
+that the same shared library links its native math and machine-learning stack —
+the numerical kernels underneath the speech and language models, a family of
+libraries commonly called ggml — <em>differently</em> on each operating system. Which
+means the one hard problem of shipping self-contained software — making sure
+every native dependency the program needs is present and findable on a machine
+that has never seen your toolchain — has a different shape on each of the three.
+Here is how each one goes.</p>
+<pre class="mermaid">flowchart TD
+  CORE["Shared Rust core<br/>local DB · cryptography · signing engine<br/>on-device speech · optional language model"]
+  CORE --> LIB["One native shared library<br/>(links the ggml math/ML stack)"]
+  LIB --> PIPE{"One dist command family<br/>mac · linux · android · all"}
+
+  PIPE --> MAC["macOS output"]
+  PIPE --> LNX["Linux output"]
+  PIPE --> AND["Android output"]
+
+  MAC --> MACN["ggml is STATICALLY LINKED<br/>into the one library — almost<br/>nothing extra to bundle"]
+  MACN --> MACD["Notarized, stapled double-click app<br/>+ signing binary + first-run<br/>quarantine helper<br/><b>self-contained on-device daemon</b>"]
+
+  LNX --> LNXN["ggml stays as separate shared libs<br/>with NO embedded search path —<br/>walk the dependency closure,<br/>stage it all, RE-VERIFY or fail"]
+  LNXN --> LNXD["Self-contained tarball:<br/>runtime + library + signing engine<br/>+ installer + launcher entry<br/><b>self-contained on-device daemon</b>"]
+
+  AND --> ANDN["Cross-compile for 64-bit ARM,<br/>bundle the matching C++ runtime lib;<br/>align to 16 KB pages, store uncompressed"]
+  ANDN --> ANDD["Signed APK embedding the daemon<br/><b>self-contained on-device daemon</b>"]</pre>
+<h2 id="mac-let-the-linker-fold-it-all-inward"><a class="anchor" aria-hidden="true" tabindex="-1" href="#mac-let-the-linker-fold-it-all-inward"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Mac: let the linker fold it all inward</h2>
+<p>On macOS the toolchain does the hard part for us. When the shared library is
+built, the entire ggml math stack is <em>statically linked</em> into it — folded inward,
+so the numerical kernels become part of the one library file rather than a
+constellation of sibling libraries that have to travel alongside it and find each
+other at load time. That single choice erases most of the packaging problem
+before it starts: there is almost nothing extra to bundle, because the thing that
+would need bundling is already inside.</p>
+<p>What is left is trust, not linkage. macOS will not run a downloaded app unless it
+can prove where the app came from, so the Mac build is a Developer-ID-signed,
+notarized, stapled double-click app — a real <code>.dmg</code> that installs a real <code>.app</code>,
+optionally wrapped in a lightweight desktop shell that supervises the bundled
+daemon and gives it a window. It ships the signing binary the daemon needs to
+authorize actions, and a first-run helper that clears the Gatekeeper quarantine
+flag so the app opens cleanly the first time instead of being held at the door.
+We wrote about that trust handshake in
+<a href="2026-06-24-a-mac-that-trusts-the-app-before-it-opens.md" rel="noopener noreferrer">a Mac that trusts the app before it opens</a>,
+and about the double-click app itself in
+<a href="2026-06-23-naoms-is-now-an-app-you-double-click.md" rel="noopener noreferrer">NAOMS is now an app you double-click</a>.</p>
+<h2 id="linux-walk-the-whole-closure-then-prove-it-resolves"><a class="anchor" aria-hidden="true" tabindex="-1" href="#linux-walk-the-whole-closure-then-prove-it-resolves"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Linux: walk the whole closure, then prove it resolves</h2>
+<p>Linux is where the same library refuses the same trick. The Linux linker does not
+allow the static-dedupe fold that macOS uses for this stack, so ggml stays as it
+is born: a family of <em>separate</em> shared libraries. The language-model library
+depends on a ggml core library, which depends in turn on the CPU kernels and the
+base ggml library — a small tree of dependencies. And here is the sharp edge:
+those shared libraries carry <strong>no embedded search path</strong>. There is no RUNPATH
+baked into them telling the loader where their siblings live. Drop them next to
+each other and, at load time, they still cannot find one another. A naive bundle
+that copies "the library" copies only the top of the tree and crashes the moment
+a deeper one is needed.</p>
+<p>So the Linux build does the honest, exhaustive thing. It reads the library's
+<em>declared</em> dependencies and walks them breadth-first — the language-model library
+to its ggml core, the core to the CPU and base ggml libraries — staging the
+<strong>whole shared-library closure</strong> into the bundle's binary directory. Then it does
+the part we are proudest of: it <strong>re-verifies</strong>. It re-runs the loader against the
+staged bundle, with that directory on the library search path, and asks whether
+every dependency now resolves. If anything is still unresolved — one library the
+walk missed, one sibling left behind — the build <strong>fails</strong>. It does not ship a
+tarball that will crash on a stranger's machine and call that success. This is the
+Wholeness axiom made mechanical: a thing that claims to be self-contained has to
+<em>prove</em> it, or it does not ship.</p>
+<p>The output is a self-contained tarball: the runtime, the native library and its
+whole closure, the signing engine, an install script, and a desktop launcher
+entry. Unpack it, run the installer, and you have the daemon running locally.</p>
+<p>We want to be precise about what that <em>is</em>, because it is easy to oversell.
+<strong>Linux ships a self-contained daemon tarball — not a double-click desktop app.</strong>
+The desktop shell that would give Linux the same windowed, supervised experience
+Mac has lives on an unmerged branch; it is not in the shipped build. So the Linux
+story today is: a real, self-contained, on-device daemon you install and run —
+and not, yet, the notarized-app polish Mac has.</p>
+<p>There is a coda worth telling, because it is exactly the kind of bug this whole
+discipline exists to catch. Even after the closure was staged correctly for the
+<em>app</em>, the production daemon was dying at startup — exiting immediately. The cause
+was the same no-embedded-search-path property, one level over: one ggml library
+was not being inherited by the daemon's child process the way the others were, and
+with no search path baked in, the loader simply could not find it. The fix is a
+small thing with a load-bearing reason. We seed the library search path into the
+<em>child process's environment at the moment we spawn it</em> — not in the running
+process afterward — because the operating system's loader captures that path once,
+at process start. Set it a moment too late and the loader has already looked, and
+already given up.</p>
+<h2 id="android-bring-the-runtime-and-mind-the-page-size"><a class="anchor" aria-hidden="true" tabindex="-1" href="#android-bring-the-runtime-and-mind-the-page-size"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Android: bring the runtime, and mind the page size</h2>
+<p>Android is a different machine again. The native core is <em>cross-compiled</em> for
+64-bit ARM, and — because the build tool will not do this for you — the build
+bundles the matching C++ runtime shared library from the very same toolchain that
+compiled the core. Leave it out and the app crashes at startup, because the code
+is there but the runtime it was compiled against is not. The result is a signed
+app package with the on-device daemon embedded inside it; your whole memory
+system, running on your phone, which we celebrated in
+<a href="2026-06-25-your-whole-memory-system-in-your-pocket.md" rel="noopener noreferrer">your whole memory system in your pocket</a>.</p>
+<p>The newest wrinkle is physical. Modern Android hardware — newer devices, some
+Pixels, GrapheneOS — has begun moving from 4 KB memory pages to 16 KB pages, and a
+16 KB-page device flatly <strong>refuses to load</strong> a native library whose loadable
+segments are aligned to the old 4 KB boundary. So the build now aligns the native
+libraries to 16 KB, and stores them in the app package <em>uncompressed and
+page-aligned</em> so the system can map them directly. That work landed this
+window — the app runs on 16 KB-page devices where before it would not have loaded
+at all.</p>
+<p>Which is the honest frame for Android: it is shipped and running, and it is under
+an active hardening effort — a live bug epic, not a celebrated 1.0. The 16 KB
+work is one of the things that epic exists to do.</p>
+<h2 id="one-pipeline-three-platforms-three-real-daemons--and-one-honest-caveat"><a class="anchor" aria-hidden="true" tabindex="-1" href="#one-pipeline-three-platforms-three-real-daemons--and-one-honest-caveat"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>One pipeline, three platforms, three real daemons — and one honest caveat</h2>
+<p>The true claim is this: one command family, one shared core, and on Mac, Linux,
+and Android a self-contained daemon that runs entirely on your own device. That is
+real on all three today.</p>
+<p>The claim we will <em>not</em> make is that it is the same polished app on all three.
+Only the Mac build is celebrated, and its sign-off narrows the celebration to
+macOS on purpose — it is the furthest along, the only one with notarized
+double-click polish. Linux ships a self-contained daemon tarball, and its desktop
+shell is still on a branch. Android is shipped and running, and still being
+hardened. The <em>form</em> differs by maturity, even though the <em>core</em> is the same
+library underneath. Saying so is not a hedge. It is the same discipline that makes
+the Linux build refuse to ship until every dependency resolves: we would rather
+tell you exactly what each platform is than let a tidier sentence imply a polish
+that only one of the three has earned.</p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'neutral',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 222 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>
