@@ -1,0 +1,148 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Dispatch · Week 18: A Promise Kept, and the Machine That Ships the Machine — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">36</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">85</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">63</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">98</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">19</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Dispatch · Week 18: A Promise Kept, and the Machine That Ships the Machine</h1><p class="subtitle">The surface kept maturing — hive members went pseudonymous by default, and the hive settings panel was rebuilt around what you actually control — but the real work of the stretch went underneath: rebuilding the merge gate that decides whether any change is allowed to ship, and having the discipline to say a clear 'no' to a speed-up that measured well but would have helped no one.</p><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>August 1, 2026</span><span>·</span><span>7 min read</span><span>·</span><span>meta</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> Week 18 has two stories that only look unrelated. On the surface, a real privacy promise got kept: hive members are now pseudonymous by default, so belonging to a group no longer means handing everyone your name. Underneath, the team turned to the least glamorous thing in the whole project — the merge gate, the machine that decides whether a change is good enough to ship — and started rebuilding it after the July cutover exposed how brittle it was. The quietest event of the week was a refusal: a bundling speed-up that measured beautifully in a lab was un-shipped, because the lab it measured in has no counterpart in how the product actually runs.</div><div class="markdown-body"><p>Two things happened this week that look like they belong in different projects,
+and don't.</p>
+<p><img src="assets/week-18-commits.svg" alt="Commits per day — Week 18" /></p>
+<p>The first you can see: if you're in a shared hive, the people in it no longer
+learn your name just because you're both there. The second you can't: the
+machine that lets <em>any</em> of this ship — the gate every change has to pass before
+it's allowed onto the main line — got taken apart and started being rebuilt,
+because the release at the start of July showed us how much of it was held
+together with tape. One is a promise to you. The other is a promise to
+ourselves, that we can keep making the first kind. This dispatch is honest about
+both, and about the third thing that happened: we said no to a speed-up that
+was real in a lab and useless in reality.</p>
+<h2 id="by-the-numbers"><a class="anchor" aria-hidden="true" tabindex="-1" href="#by-the-numbers"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>By the numbers</h2>
+<ul>
+<li><strong>~2,502 commits</strong> in the window 07-26 → 08-01 (<strong>468 merge</strong>, ~2,000
+non-merge). The standing caution, unchanged: this era runs on the order of a
+hundred concurrent agent worktrees, each landing through its own merge commit,
+so a merge count is <em>fleet shape</em>, not feature count.</li>
+<li><strong>Busiest day: 07-31 (459 commits), with 07-27 (435) close behind.</strong> Both were
+infrastructure days — the merge gate, not a feature — which is exactly the kind
+of churn that measures loud and shows quiet.</li>
+<li><strong>The number that matters is a subtraction, again.</strong> The most consequential
+engineering decision of the week added <em>no</em> feature: a bundling optimization,
+concluded a "yes" the week before, was measured properly, refuted, and closed
+"no — do not build." A version of the product that's a few hundred milliseconds
+slower and honest beat one that was faster on paper.</li>
+</ul>
+<h2 id="pseudonymous-by-default-belonging-without-being-named"><a class="anchor" aria-hidden="true" tabindex="-1" href="#pseudonymous-by-default-belonging-without-being-named"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Pseudonymous by default: belonging without being named</h2>
+<p>The headline you can feel. Hives — the shared spaces where a group keeps a common
+canvas and conversation — used to form their member graph the obvious way: keyed
+on names. Two people who both knew the same friend produced a node with that
+friend's name on it, and auto-sharing a non-member into a hive could ship their
+name, email, phone, even their root identity, in the clear.</p>
+<p>That's now closed. A hive's member graph forms from <strong>name-less, per-hive
+contact commitments</strong> — a per-hive-salted token, not a name — so two members who
+know the same person converge on one node that carries no name at all.
+Auto-sharing is hard-clamped to that pseudonymous level, on both the shared rows
+and the consent receipt. Your name is revealed only when <em>you</em> deliberately
+disclose it, per hive, through a real selective-disclosure credential — modern
+BBS+ signatures over a pairing-friendly curve, so you can prove a claim about
+yourself without handing over the whole document. And when your own device
+already knows who a pseudonymous node is, it labels it for you locally, with no
+network call — strangers stay strangers, friends look like friends, and nobody
+else learns the difference. This one landed celebrated (close-gate signed,
+2026-07-27). It is the clearest expression this stretch of a rule we keep
+returning to: belonging to a group should not cost you your name.</p>
+<h2 id="the-settings-that-finally-match-what-you-control"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-settings-that-finally-match-what-you-control"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The settings that finally match what you control</h2>
+<p>Alongside it, the hive's own configuration surface got rebuilt around a simpler
+question: what does a person actually govern here? The old panel mixed roles,
+permissions, and credentials into one dense screen. The redesign splits them into
+what they really are — Credentials, Trusted hives, Tokens — lets self-registered
+plugins surface their own panes, and drops the "curators and roles" framing that
+implied a hierarchy the system doesn't impose. It's live-on-main and still being
+refined, not a celebrated milestone, and we'll say so until it is.</p>
+<h2 id="the-machine-that-ships-the-machine"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-machine-that-ships-the-machine"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The machine that ships the machine</h2>
+<p>Now the part that took the most hours and will get the least attention.</p>
+<p>Every change in this project — a hundred agents' worth a day — has to pass a
+<strong>merge gate</strong> before it's allowed onto the main line: build it, run the right
+tests, judge the result, and only then land it. When we cut that gate over to a
+new design at the start of July, it worked in the demo and then kept finding new
+ways to be wrong under real load. This week was the beginning of rebuilding it,
+and the fixes are a catalogue of a single, uncomfortable lesson: <strong>a machine that
+decides what's good has to be even more honest than the things it judges.</strong></p>
+<p>A few, in plain terms:</p>
+<ul>
+<li>The gate was throwing away the difference between "your change is broken" and
+"the machine we tested it on is broken." An overloaded or unreachable build
+host was being scored as if <em>your code</em> had failed. That conflation is now
+named and refused — an infrastructure fault is not a verdict on the candidate.</li>
+<li>It was checking whether a test machine could actually run tests <em>after</em> handing
+it the work, i.e. after the damage. The check moved to before.</li>
+<li>When a stage timed out, it killed the one process it could see and left the
+whole tree of child processes alive, silently holding every slot the next job
+needed. It now kills the entire descendant tree.</li>
+<li>Orphaned stage processes — reparented to the system, invisible — were quietly
+occupying concurrency the queue thought was free. They now get reaped.</li>
+</ul>
+<p>None of that is a feature. All of it is the reason features can ship at all. We're
+being unglamorous on purpose: the honest measure of a factory is not how fast it
+runs on a good day, but whether it tells the truth on a bad one.</p>
+<h2 id="the-daemon-started-talking-to-the-real-intelligence"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-daemon-started-talking-to-the-real-intelligence"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The daemon started talking to the real intelligence</h2>
+<p>One quieter builder landing points at where the product is going. The retrieval
+layer — the part that decides <em>which</em> of your memories is relevant to a question —
+got tethered to a real language model running in production, with the routing to
+call it wired into boot. It's the seam between "search that finds text" and "a
+system that reasons over what it found," and it's now a live path rather than a
+diagram. Early, not finished; worth watching.</p>
+<h2 id="the-honest-no"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-honest-no"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The honest "no"</h2>
+<p>The most important thing we did this week, we un-did.</p>
+<p>The week before, a piece of work asked a reasonable question: could bundling the
+whole frontend and backend into one or a few files make boot and load
+<em>dramatically</em> faster? The first answer was yes — specifically for users far from
+the server, on high-latency links. Measured carefully, it held up. Then the owner
+asked the question that dissolved it: <em>what far users?</em> The entire frontend loads
+from local disk. The desktop shell loads from its own bundled daemon on
+localhost. The phone loads its assets in-process. The daemon refuses to bind to
+the open network at all without an explicit override. <strong>There is no far user.</strong>
+The 7.6-second load that made bundling look like a win was latency the measurer
+had injected into the test themselves; the numbers were sound and the world they
+described doesn't exist.</p>
+<p>So it closed: no, do not bundle, anywhere, and nothing was built. We're telling
+you about a feature that isn't there because the discipline that kills it is the
+same one that makes the rest of this trustworthy. A speed-up you can't feel isn't
+a speed-up. A benchmark whose conditions never occur is a story, not a
+measurement. The willingness to run the numbers and then throw them out is not a
+side-quest here — it's the product.</p>
+<h2 id="the-honest-ledger"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-honest-ledger"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The honest ledger</h2>
+<p>Told straight, by status:</p>
+<ul>
+<li><strong>Shipped and celebrated (close-gate signed):</strong> hive members pseudonymous by
+default, with per-hive selective disclosure and local-only disambiguation; the
+build-host fixture guard that had been silently refusing a proven regression
+venue.</li>
+<li><strong>Live on main, honestly in-progress:</strong> the hive configuration-panel redesign;
+the merge-gate rebuild (many fixes landed, the work is ongoing); the retrieval
+layer's tether to a production model; the chat-protocol parity groundwork for
+bridged conversations; a run of vault-unlock boot fixes.</li>
+<li><strong>Deliberately not built:</strong> frontend/backend bundling for faster boot —
+measured, refuted, closed "no."</li>
+</ul>
+<p>We mark these on purpose. <strong>Celebrate what's real; never imply the partial is
+finished; and say plainly when the honest answer was to build nothing.</strong></p>
+<aside class="fieldnote"><div class="fn-eyebrow">From the workshop</div><h4 class="fn-title">The Refusal Is the Feature</h4><div class="fn-body markdown-body"><p>It would have been easy to keep the bundling win. It measured well, the code
+worked, and nobody outside would ever have known the lab conditions were
+invented. Killing it cost a week's conclusion and bought nothing you can put on a
+changelog. That's exactly why it matters: a project whose whole premise is
+honesty doesn't get to be honest only when it's cheap. The same instinct that
+un-shipped a fake speed-up is the one that makes the merge gate refuse to blame
+your code for a broken test machine. Both are the system declining to tell a
+convenient story. That's the through-line of Week 18 — under a real privacy
+promise and a rebuilt factory, the same refusal to lie.</p>
+</div></aside>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-process.html">← more in Process</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 234 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>
