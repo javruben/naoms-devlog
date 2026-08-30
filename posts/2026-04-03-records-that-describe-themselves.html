@@ -1,0 +1,210 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Ship a New Kind of Record Without Writing Code to Store It — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">84</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">49</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">111</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">19</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">19</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Ship a New Kind of Record Without Writing Code to Store It</h1><p class="subtitle">Every entry now carries a description of what it is, so one general engine can file all of them — and twenty-two hand-written filing rules were deleted</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>April 3, 2026</span><span>·</span><span>11 min read</span><span>·</span><span>storage-sync</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> You used to have to write code teaching the database how to store each new kind of entry. Now the entry describes itself, one general engine files all of them, and the code that knew about every kind of thing is gone.</div><div class="markdown-body"><h2 id="how-a-new-kind-of-record-gets-filed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-a-new-kind-of-record-gets-filed"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How a new kind of record gets filed</h2>
+<p>Almost everything that happens in NAOMS is written down twice.</p>
+<p>The first place is the log: an append-only sequence of small entries — each one
+signed by whoever wrote it, each one pointing at the entry before it, and never
+edited after the fact. That is the record of what happened, and it is the thing
+that has to be right. The second place is an ordinary local database holding a
+graph of things and the links between them, so the system can answer a question
+instantly instead of re-reading its own history. That database is a
+<strong>projection</strong>: a re-arrangement of the log that can be deleted at any time and
+rebuilt by replaying the log from the beginning. We have
+<a href="2026-03-22-write-to-the-log-read-from-the-projection.html" rel="noopener noreferrer">written about that split before</a>;
+this is about the machinery in the middle of it. What that machinery writes
+<em>into</em> did not change: the same graph, the same shape of table.</p>
+<p>Because something has to do the re-arranging. An entry arrives saying a task was
+created, and something has to decide that this means a row of kind <em>task</em>, with
+these fields as properties and that field as a link to a person. For most of the
+project's life, that something was a hand-written function per kind of entry: add
+a feature, write its filing rule. Two dozen files of them had accumulated, and
+every one was a place where the log and the projection could quietly disagree.</p>
+<p>The reason it took a function per kind is worth sitting with, because it is not
+laziness. A plain data payload has no self-description. If an entry says its
+identifier is <em>abc</em> and its status is <em>open</em>, a general-purpose filing engine
+cannot tell whether <em>abc</em> is the thing's name or a pointer to something else,
+whether <em>status</em> is a property or a relationship, or what kind of thing the entry
+is about at all. The meaning lived in the reader, not in the data — so every new
+kind of data needed a new reader.</p>
+<h3 id="facts-in-three-parts"><a class="anchor" aria-hidden="true" tabindex="-1" href="#facts-in-three-parts"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Facts in three parts</h3>
+<p>What landed instead is a change to the shape of what gets written. Entries now
+carry their content as <strong>triples</strong>: facts split into exactly three parts — a
+<strong>subject</strong> (what the fact is about), a <strong>predicate</strong> (which property or
+relationship), and an <strong>object</strong> (the value, or another subject). "This task has
+the title <em>Ship the thing</em>." "This task was created by that person." It is the
+data model behind <strong>RDF</strong>, the Resource Description Framework — a long-standing
+web standard for describing things in a way that other people's software can read
+without a private agreement with yours. We write triples using <strong>JSON-LD</strong>, which
+is ordinary JSON with a small header explaining how its short names expand into
+full, globally unique identifiers.</p>
+<p>The reason this matters for filing is one specific triple. Among the facts an
+entry carries is a type fact — <em>this subject is a task</em> — expressed with a
+standard predicate any RDF reader already understands. The kind is no longer
+something the reading code has to know. It is in the data.</p>
+<p>So the filing engine becomes one algorithm, short enough to state in full:</p>
+<ol>
+<li>Parse the payload into triples.</li>
+<li>Group them by subject — each subject becomes one row.</li>
+<li>The type fact gives the row its kind.</li>
+<li>Plain values — a piece of text, a number, a date — become properties of the
+row.</li>
+<li>Values that are identifiers pointing at other subjects become links.</li>
+<li>Merge the result into the existing row if one is already there, so a later
+entry can update a few fields without restating everything.</li>
+<li>Stamp where it came from, and write.</li>
+</ol>
+<pre class="mermaid">flowchart TD
+  A["A feature writes an entry"] --> B{"Is this entry eligible<br/>to be wrapped as triples?"}
+  B -- "no" --> C["Written to the log as plain data.<br/>No row is projected."]
+  B -- "yes" --> D["Wrapped as self-describing triples"]
+  D --> E["Signed, appended to the log"]
+  E --> F["Validating handlers,<br/>which may refuse the write"]
+  F -- "refused" --> G["No row. The refusal is the point."]
+  F -- "allowed" --> H["One general engine:<br/>group by subject, type to kind,<br/>values to properties, identifiers to links"]
+  H --> I["Row written to the local graph<br/>(authoritative)"]
+  I --> J["Handlers for what a generic rule<br/>cannot infer: links, cascades,<br/>computed fields"]
+  I --> K["Optional query index<br/>(off in a default build,<br/>best-effort, read-only)"]</pre>
+<p>That is the engine. It does not know what a task is, or a shared group, or a
+credential. It is also forbidden to create a short list of reserved kinds — the
+rows recording who is a member of what, or what authority has been granted — and
+when it meets one it refuses, logs the refusal, and steps aside so that the
+handler with authority over that kind can claim the entry instead.</p>
+<p>A feature that wants a new kind of record writes triples under a <strong>name-space</strong>
+of its own — a prefix that makes its property names globally unique, declared
+once in the small file where a feature states what it is — and the rows appear.
+No filing code. The name-spacing does quiet work there: two features can both
+have a <em>title</em> without arguing about it, because each one's <em>title</em> is a
+different full identifier underneath.</p>
+<h3 id="what-the-data-is-not-allowed-to-say-about-itself"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-the-data-is-not-allowed-to-say-about-itself"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What the data is not allowed to say about itself</h3>
+<p>Self-describing is not the same as self-attesting, and the engine draws that line
+hard. After it has read the triples, it stamps three things the payload does not
+get a vote on: which log the entry came from, which entry it was, and who signed
+it. That third one is <em>resolved</em> rather than copied — some kinds of row are
+classed as private and record a pseudonym or nothing at all, and a sensitive kind
+that nobody declared resolves to nothing rather than to a name. If a payload
+arrives carrying its own origin tag claiming to be one of the system's own
+internal sources, the claim is thrown away and the rejection is logged. So is
+anything oversized: an entry may carry at most five hundred triples and a
+megabyte of payload, and constructs the parser does not implement are rejected
+rather than half-interpreted.</p>
+<p>This is the part worth stealing if you take nothing else. The moment you let data
+describe itself, you have to be explicit about which parts of the description are
+the writer's business and which are the host's. Content: the writer's.
+Provenance — where a record came from: never, and the answer the system gives is
+a pointer rather than an attribution, for a reason the next paragraph gets to.</p>
+<p>The merge in step 6 decides the other half of that: what a <em>later</em> entry can do
+to an <em>earlier</em> one. Later values overlay earlier ones on the same subject. A
+small set of creation facts is held back from that — which log the row belongs
+to, when it was created, who created it — and stays as first written. The rest of
+the stamp does not: on a row several entries have contributed to, the pointer to
+the entry that wrote it and the signer that entry resolved to both track the
+<em>newest</em> write, not the oldest. Which settles what the stamp actually means: not
+who is responsible for this row, but which entry last wrote it. A different
+sentence, and worth knowing before you read anything off it. Empty values are
+skipped, which is what makes a partial update non-destructive, and equally means
+clearing a field is not something the generic path expresses; a row that needs a
+value removed is written by a handler with authority over that kind. What decides which entries may
+overlay your rows at all is a question about replication and trust, and not one
+this piece takes on.</p>
+<h3 id="the-default-and-the-fallback"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-default-and-the-fallback"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The default, and the fallback</h3>
+<p><strong>The default on the write path is automatic, but conditional, and the conditions
+are ordered.</strong> Several cases are decided before anything else — an unparseable
+payload, an already-wrapped one, a sealed envelope whose encryption must stay
+outermost, an entry its feature declared as deliberately not projected. Each
+passes straight through unwrapped, whatever the caller asked for. After that, a
+caller may pass the format explicitly and that wins; otherwise the wrapping
+happens only if the entry's kind has a name-space registered. Anything that falls
+through is still signed and still in the log. It simply produces no row.</p>
+<p>That last case is the failure mode worth naming, because it is silent by
+construction: the feature works, the entry lands, and the screen that reads the
+graph shows nothing. It is logged on both sides — once where the wrapping was
+skipped, and once where an unwrapped entry reached the engine with a name-space
+that <em>was</em> registered, which means somebody clearly wanted a row. Both say so
+once per kind of entry per start. Deliberately a warning rather than a refusal,
+because unprojected entries are a legitimate thing to write and blocking them
+would break real callers.</p>
+<p><strong>The fallback on the read path is that the fancy layer is optional and nothing
+depends on it.</strong> Because entries are now triples, they can also be fed to a
+triple store answering <strong>SPARQL</strong> queries — SPARQL being to triples roughly what
+SQL is to tables, and worth wanting for questions that cut across features rather
+than sitting inside one. That index is behind an opt-in build flag, so a standard
+build does not contain it at all. Where it is present, the feed is best-effort at
+every step: if it fails to start, if an insert throws, the failure is logged and
+the write goes on. The local graph database remains the authoritative store and
+the triple index is a read-only overlay holding no truth of its own.</p>
+<h3 id="where-the-exceptions-went"><a class="anchor" aria-hidden="true" tabindex="-1" href="#where-the-exceptions-went"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Where the exceptions went</h3>
+<p>A general rule always meets cases it cannot express, and pretending otherwise is
+how general rules die. Here the escape hatch is a small pipeline of handlers
+around the write. The first phase runs before the row is written and may refuse
+the write outright — that is where a validation says no. The second runs after
+and does what a generic rule cannot infer: drawing a link only a domain rule
+knows about, cascading a change, computing a field.</p>
+<p>Handlers that ship with the system run in the same process. A handler that
+arrived as an installed plugin runs in a separate worker and reaches the graph
+through a gateway the system owns rather than the plugin. That placement is
+the point, and it is the same
+<a href="2026-03-30-honoring-deno-secure-by-default.html" rel="noopener noreferrer">secure-by-default instinct</a> the
+runtime gives us, applied one level in: whatever policy governs what an extension
+may touch has to live on the system's side of that boundary, because the
+extension's side of it is not ours to trust.</p>
+<h3 id="the-accounting"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-accounting"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The accounting</h3>
+<p>Twenty-two filing files, a little under three and a half thousand lines, deleted
+in the landing change. The engine that replaced them is around seven hundred and
+seventy lines.</p>
+<p>Those two numbers do not belong in the same sentence as a net saving. The parser,
+the name-space registry, the wrapping path, the handler pipeline and the query
+feed are all new, all load-bearing, and none is counted in that seven hundred and
+seventy. Add them up and the machinery comes out larger than what it replaced, by
+a margin that has only grown as edge cases landed. This was never a line-count
+win, and the honest headline number is not a number.</p>
+<p>Nor is the interoperability payoff banked. The reason to prefer a standard is
+that other people's software can read our entries without a private agreement —
+but a standard nobody has yet read our data through is a bet, not a result, and
+the one concrete thing RDF buys, cross-feature queries, sits behind that opt-in
+flag. Which leaves an obvious question: why not a plain typed
+envelope — a kind marker, an identifier, some properties, some references, with
+reverse-domain names to keep them from colliding? That is close to what we have,
+it is far smaller, and it needs no JSON-LD parser. The difference is the bet, and
+it is worth stating as a bet rather than as an argument won.</p>
+<p>What is not a bet is where meaning lives. It used to live in code: each kind of
+record had a reader that knew what it was, and the two could drift apart without
+anything noticing. Now it lives in the record. The projection cannot disagree
+with the log about what a thing <em>is</em>, because it is not making that judgement any
+more — it is reading it. And the projection stays genuinely disposable:
+rebuilding one replays the log's entries through the same step, in a fixed,
+deterministic order — all of them but the ones it has been asked to forget,
+which are deliberately never re-folded back into the projection, because a system
+whose forgetting undoes itself on the next rebuild has not forgotten anything. A
+rebuild is therefore a function of what the log still holds, not of everything it
+ever held, and that is the intended reading rather than a lapse in it.
+That guarantee covers the engine's own output; the
+second-phase handlers hanging off it are side effects, and side effects are never
+what a replay guarantee covers — which is a good reason to keep as much as
+possible in the part that is replayable. There is no migration story to go with
+that, deliberately: while the system is pre-release, a stale projection is fixed
+by rebuilding it rather than by shipping migration code.</p>
+<p>The price is the part this piece has tried not to bury: you must decide, up
+front, which parts of the self-description the data is not allowed to make, and
+you must make the silent skip visible. Self-describing data is not a way of
+having fewer rules — it is a way of having the rules in one place, where they can
+be read. Which is the same
+<a href="2026-03-18-one-idea-under-everything-the-signed-event-chain.html" rel="noopener noreferrer">one-idea-under-everything</a>
+move the signed log itself is, and the precondition for a
+<a href="2026-04-01-schema-discovery-across-hives.html" rel="noopener noreferrer">schema travelling between groups</a>,
+which is the next thing we want it for.</p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'neutral',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 233 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

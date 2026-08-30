@@ -28,6 +28,7 @@ a.clearf{color:var(--accent);cursor:pointer}
 .chip .x:hover{color:#fff;background:var(--accent)}
 .chips .clearall{color:var(--accent);cursor:pointer;font-size:13px}
 .fcard.hidden{display:none}
+.badge.b-tag{background:#fdecec;color:#a33a3a;border:1px solid #f3d2d2}
 .fnone{color:var(--muted);padding:26px 2px;display:none}
 .weekhead{font-size:13px;color:var(--muted);font-weight:700;margin:20px 0 2px;letter-spacing:.02em}
 @media(max-width:840px){.sidebar{display:none}.layout{display:block}.content{max-width:880px;margin:0 auto}}

@@ -1,0 +1,243 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Changing Your Key Without Invalidating Your Past — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">84</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">49</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">111</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">19</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">15</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">19</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Changing Your Key Without Invalidating Your Past</h1><p class="subtitle">Rotation writes a boundary marker onto the record itself — the exact point in your history where the old key stopped being allowed — so entries signed before it stay valid and entries signed after it do not.</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>June 13, 2026</span><span>·</span><span>13 min read</span><span>·</span><span>identity</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> Replacing the key that signs your history should not cast doubt on everything you already signed with it. This is how the boundary marker that keeps your past valid works, what happens when that marker is filled in with a placeholder instead of a fact, and the tempting repair we wrote up and then declined to ship because it was unsound.</div><div class="markdown-body"><h2 id="how-replacing-a-signing-key-is-supposed-to-work"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-replacing-a-signing-key-is-supposed-to-work"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How replacing a signing key is supposed to work</h2>
+<p>Your data here lives in <strong>chains</strong> — append-only sequences of small entries,
+each one signed, each one naming the fingerprint of the entry before it. A
+fingerprint is just a hash of that entry's contents, so naming the previous one
+makes the sequence checkable: you cannot quietly change something in the middle,
+because every entry after it names a fingerprint that no longer matches. Each thing you care about keeping — a friendship, a shared
+album, your own identity — gets its own chain, and each chain has <strong>branches</strong>,
+the way a document has drafts, so different kinds of entry can advance
+independently. Every chain has its own signing key rather than one master key
+signing everything you own. (We wrote about the chain itself in
+<a href="2026-03-18-one-idea-under-everything-the-signed-event-chain.html" rel="noopener noreferrer">one idea under everything</a>.)</p>
+<p>Chains are checked by <strong>peers</strong> — other people's copies of the system, and your
+own other devices, each verifying your entries independently rather than
+trusting a server to have done it.</p>
+<p>Sooner or later the signing key has to change. You add a second device and the
+right to write is now shared between two machines. You retire a laptop. A key is
+suspected. Replacing a key is called <strong>rotation</strong>, and any system that signs a
+long-lived history has to do it eventually — a key you can never replace is a
+key you can never recover from.</p>
+<p>Rotation is easy to describe and hard to get right, because a chain is a
+<em>history</em>. The moment you retire a key, every entry ever signed with it becomes
+ambiguous. It could be something you legitimately wrote <strong>before</strong> the change,
+which must stay valid forever, or something written <strong>after</strong> it by someone who
+still holds the retired key, which must be rejected. Otherwise rotating a key
+either erases your past or accomplishes nothing.</p>
+<p>The signature cannot tell those apart. Both verify perfectly against the same
+old public key. The cryptography is working exactly as designed and is, on its
+own, useless for this question. What tells them apart is a number: each branch
+counts its rotations, and every entry records which of those numbered stretches
+— which <strong>era</strong> — it was signed under.</p>
+<pre class="mermaid">flowchart TD
+  A["Entry arrives, signed<br/>under era N"] --> B{"Compare N to this<br/>branch's current era"}
+  B -->|"N is current"| OK1["Verify against the<br/>keys registered for era N"]
+  B -->|"N is newer"| X1["Refuse — no such<br/>era has begun"]
+  B -->|"N is older"| C{"Is there a rotation record<br/>leaving era N?"}
+  C -->|No| X2["Refuse — nothing<br/>legitimises the old key"]
+  C -->|Yes| D["Walk back from the record's<br/>boundary fingerprint"]
+  D --> E{"Is this entry<br/>in the walk?"}
+  E -->|Yes| OK2["Accept — written<br/>before the rotation"]
+  E -->|No| X3["Refuse — written after,<br/>with a retired key"]</pre>
+<h3 id="the-boundary-is-written-onto-the-record"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-boundary-is-written-onto-the-record"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The boundary is written onto the record</h3>
+<p>What separates the two cases is position in the chain. So the rotation is not a
+note in a config file; it is written onto the chain as an entry of its own,
+called an <strong>anchor</strong> because it pins one moment down. The anchor names the era
+being left, the era being entered, the set of keys valid in the new era — a set,
+because the right to sign can be shared across several devices, which is
+<a href="2026-04-16-no-single-key-threshold-signing-with-frost.html" rel="noopener noreferrer">its own piece of cryptography</a> —
+and the fingerprint of the entry that was the tip of that branch at the instant
+of the change. The field's word for one of those numbered stretches is an
+<strong>epoch</strong>.</p>
+<p>The era label is not merely descriptive: it is the lookup key for <em>which</em>
+public key the signature is checked against, and every era's key is minted
+fresh when the rotation happens rather than carried over. Relabelling an entry
+to another era therefore selects a key it was never signed with, and the check
+fails. But notice the limit of what a passing check buys you: a valid signature
+proves <em>who</em>, never <em>when</em>. Nothing about the signature itself says which side
+of the boundary the entry was written on. That is the walk's job, and it is why
+the walk exists.</p>
+<p>For an entry whose era is older than the branch's current one, the check is that
+walk: find the anchor leaving that era, take the boundary fingerprint it
+recorded, and follow parent links backwards. If the entry turns up, it existed
+before the boundary, and it is accepted under the old era's keys — which are
+kept on file rather than deleted, precisely so that your past stays readable. If
+the walk completes without finding it, the entry was made with a retired key
+after the boundary. Refuse. The walk is bounded — a hundred thousand steps and a
+guard against loops — so a hostile entry cannot turn a verification into an
+endless traversal. And if the walk runs into a gap, an ancestor this peer simply
+does not hold, the question is undecidable rather than answered no, and the
+entry is refused — but with a reason that keeps it for another look rather than
+dropping it.</p>
+<p>Two properties do the load-bearing work here.</p>
+<p><strong>An anchor cannot make new keys trusted by itself.</strong> The anchor is necessarily
+signed under the <em>old</em> authority, since the new authority does not exist until
+this entry lands — which would otherwise be an alarming amount of power for a
+key you are in the middle of retiring. So a key appearing for the first time in
+an anchor is not installed on the strength of the anchor. Each newly-named key
+requires separate on-chain evidence that the device holding it was actually
+paired; absent that, the key is not trusted but held pending the evidence. The
+evidence is another entry on the same
+chain under the same authority, so it is corroboration and an audit trail — a
+second thing an attacker must forge, and a permanent record that they did — not
+an independent second factor.</p>
+<p><strong>Anchors are immutable.</strong> The first anchor recorded for a given branch and the
+era it enters wins; a later one for that era is ignored rather than overwriting
+it, because the whole procedure depends on the boundary not moving underneath
+it. That rule is local, though. It guarantees the boundary never shifts on a
+given peer; it is not a claim that two peers shown conflicting anchors end up
+agreeing, and the discard is quiet rather than raised as an alarm.</p>
+<h3 id="the-default-and-what-happens-when-things-are-missing"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-default-and-what-happens-when-things-are-missing"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The default, and what happens when things are missing</h3>
+<p><strong>The default configuration is that none of the older-era machinery runs.</strong> A chain starts with a
+single writer: one device, era zero, no rotation has ever happened, so every
+arriving entry takes the ordinary path. For someone who never adds a second
+device, this describes a mechanism they never touch. The first rotation happens
+when a chain is promoted from one writer to several — which is what adding a
+device does, and which is
+<a href="2026-05-30-two-devices-one-identity-and-the-pubkey-race.html" rel="noopener noreferrer">not the trivial operation it sounds like</a>.
+An era-zero record is also written when a chain is first set up — for a
+two-person chain it is the proof that its signer was installed at all, and the
+chain refuses to accept ordinary entries until it exists. Those records point at
+themselves, since there is nothing behind them to point at, and carry an all-zero
+placeholder where a boundary fingerprint would go. They mark no real boundary, so
+the walk filters them out before looking for one.</p>
+<p><strong>The fallback, when something is missing, is to fail closed.</strong> Every branch of
+that decision tree that cannot reach an affirmative answer refuses: no anchor
+for the old era, no key record for the era and branch claimed, an era that has
+not begun. "I cannot tell" is never treated as "probably fine".</p>
+<p>There is one designed exception, and it is worth describing precisely because
+of what it does not yet do. A peer handed a chain's current state rather than
+its history has nothing to walk, so the verifier carries a recognition rule for
+a witnessed provenance class: a key record installed with a pointer to a
+verified vouching statement — from someone who belongs to a group both parties
+are in, who is not the key's owner, and whose signature over that statement was
+checked when the record was installed — is cleared without the walk, and the
+signature check still runs afterwards. A record missing any part of that
+witness is not recognised and falls through to refusal. But the ceremony that
+produces such a record has no emitter in the shipped code; only the receiving
+half exists. So the recognition rule is real and the records it would recognise
+are not yet produced, which means that particular exception cannot fire today.</p>
+<p>One other path does accept without a walk, and it is worth naming rather than
+leaving a reader to find it: the boundary record itself. By construction it is
+signed under the old key and cannot be its own ancestor, so walking for it would
+be incoherent — and it is recognised only when the chain's own stored anchor
+already names that very entry as its source. The chain has to have written down
+which entry marks its boundary before that entry is allowed to skip the walk,
+which is a narrower thing than an escape hatch.</p>
+<p>Refusing is not always terminal, either. Four of the refusal reasons hold the
+entry for re-judgement rather than dropping it — two already did so when these repairs landed, and
+two more, covering a gap in locally held history and a missing anchor, were
+added in July 2026. When the missing state arrives the entry is judged again,
+and a genuine forgery is refused just as hard on the second look. What holds is
+bounded, per chain and overall, and evicted when it fails verification on the
+retry, so a hostile peer cannot grow it without limit.</p>
+<p>That grading matters, because fail-closed has a real cost: a refused entry
+strands everything that named it as a parent. The honest limit of the design is
+on the other side, though. A peer that has not yet received an anchor still
+believes the old era is current, so on that peer a retired key keeps working on
+the ordinary path — no refusal, no reason code. Nothing here bounds how long
+that lasts. Revocation is as fast as delivery, and delivery is not guaranteed.</p>
+<h2 id="what-was-wrong"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-was-wrong"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What was wrong</h2>
+<p>The boundary fingerprint — the single field the entire older-era decision rests
+on — was not being written.</p>
+<p>It failed in two places at once, which is why it survived. On the writing side,
+the promotion from one writer to several treated the boundary fingerprint as an
+optional argument and did not pass it; both call sites omitted it. On the
+reading side, the step that turns the recorded anchor into the state the
+decision consults found the field absent and <strong>filled it in</strong> with the all-zero
+placeholder — the value that is legitimate on a back-filled record and
+meaningless anywhere else. It was not nonsense but a legal value borrowed from a
+neighbouring case, which is exactly the kind of value a reviewer's eye slides
+over.</p>
+<p>The result was an anchor that looked entirely healthy. Right shape, right place,
+and a boundary field that passed its format check. It just pointed at an entry
+that has never existed in any chain. Walking backwards from an entry that does
+not exist finds nothing, and at the time a gap in the walk was not yet
+distinguished from a walk that had completed — so every genuine pre-rotation
+entry failed to appear and was judged the forgery case: signed with a retired key after the
+boundary. Legitimate history, produced by the rightful owner, refused by their
+own peers after they added a device — and everything downstream of each refused
+entry stranded behind it.</p>
+<p>Who it affected: it surfaced in our own multi-peer test runs and was diagnosed
+from those logs rather than reported by anyone relying on it. Two details keep
+that from being luck. The contract already said callers of this kind must supply
+a real boundary hash — written down, simply not enforced. And the sibling
+handler for the closely-related rotation event already skipped and warned rather
+than inventing a value. The correct behaviour was one file over.</p>
+<h2 id="how-it-was-fixed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-it-was-fixed"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How it was fixed</h2>
+<p>Two changes, deliberately separate, because they fail differently.</p>
+<p><strong>The reader stopped inventing the value.</strong> An anchor that is not a back-filled
+record and does not carry a real boundary fingerprint is now dropped with a loud
+warning naming the consequence it prevents, rather than completed with a
+placeholder. Demonstrated the way a guard should be: with the guard switched
+off, the test asserting the refusal fails and the anchor is stored with its zero
+fingerprint; with it on, all three pass, including the one confirming a
+back-filled record still gets its placeholder.</p>
+<p>That also repairs the reason code, which is the part worth noticing. A malformed
+anchor used to surface as an accusation of forgery; it now surfaces as the
+honest "no rotation record here" — the same refusal, no longer blaming the wrong
+party. Distinct reason codes are only worth having if the wrong one cannot be
+manufactured by a missing field.</p>
+<p><strong>The writer started supplying it.</strong> Rather than patching the two callers that
+had forgotten the argument, the value is resolved at the single point where the
+record is emitted, from the tip of the branch being promoted — the boundary the
+anchor exists to mark. That covers both existing callers and any future one,
+which is the difference between fixing an instance and closing a class. The
+resolution has a middle path worth knowing about: on a branch with no tip yet
+it substitutes the chain's metadata branch head, quietly, and only when neither
+exists does the promotion fail loudly rather than write an anchor that means
+nothing. That substitution is worth assessing, not merely disclosing: it fires
+only when the branch being promoted has no head in the promoting device's own
+store — so, locally at least, no pre-rotation history for a boundary to
+adjudicate — and unlike the placeholder it names a real entry in the same
+chain, so a walk starting from it terminates honestly instead of pointing
+nowhere. That is the narrow and benign form of the same move this article is
+about. It is still a substitution rather than a measurement, and it is still
+quiet.</p>
+<p>The ordering between those two changes is a trap worth pointing at, and the code
+comment records it. The reader-side refusal alone would have converted a
+wrong-answer bug into a <em>silent</em> one: the anchor dropped, the promotion simply
+not taking effect, and nothing saying so. <strong>A guard that refuses bad input is
+only half a repair until something produces good input.</strong></p>
+<p><strong>What we did not ship, on purpose.</strong> A third change was available, written up
+with a threat model and then declined. For peers holding a chain without its
+history the backward walk can never succeed, and the tempting remedy is to
+accept their older-era entries on the strength of the old key alone — no
+ancestry, no witness. Writing out the threat model killed it. A holder of a
+retired key could sign a fabricated rotation naming keys they control; that
+record verifies against the retired public key, which peers still hold; and on
+a peer with no history, nothing else contradicts it. The pairing evidence
+described earlier raises the cost — the attacker must forge that too, and
+leaves an audit trail doing it — but it rides the same authority, so it is not
+the backstop. Ancestry is. The carve-out accepts anything signed by the old key
+regardless of ancestry, which is strictly more than the walk accepts, and
+ancestry is the only thing separating a legitimate old entry from a forged one.
+It was also found not to be needed: the work it was meant to unblock finished
+without it. Contrast the witnessed route described earlier: it is designed to
+rest on something other than the old key vouching for itself — and it is, in
+any case, not yet reachable.</p>
+<p>The thing to carry away is smaller than the mechanism. A history that survives
+its own keys is not really a cryptographic property; it is a bookkeeping one.
+The signatures were never in doubt. What decided whether your past survived
+changing your key was whether one fingerprint had been written down truthfully
+or filled in with something that looked like one — because <strong>filling a missing
+security-relevant value with a plausible default converts "I do not know" into a
+confident wrong answer</strong>, and every check downstream then runs correctly on a
+fabricated input.</p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'neutral',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 233 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>
