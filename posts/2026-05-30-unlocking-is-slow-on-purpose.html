@@ -1,0 +1,196 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>What your vault password becomes — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">52</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">91</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">50</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">117</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">15</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">20</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">17</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">27</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>What your vault password becomes</h1><p class="subtitle">Type it and the key that unwraps your vault is rebuilt from what you typed, by a calculation deliberately made to cost sixty-four megabytes of memory. Here is what that buys, what it does not, and who polices the numbers.</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>May 30, 2026</span><span>·</span><span>10 min read</span><span>·</span><span>encryption</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> You type a password and your vault opens. That pause is not slowness — it is a deliberately expensive calculation, and the same expense is what a machine guessing your password has to pay again for every guess it gets to check.</div><div class="markdown-body"><h2 id="what-the-vault-is-and-what-its-key-opens"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-the-vault-is-and-what-its-key-opens"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What the vault is, and what its key opens</h2>
+<p>A password you can remember is a bad key.</p>
+<p>Start with what is being opened. Your vault is the locked drawer of the system,
+and it holds two different kinds of thing. The first is key records: small
+wrapped copies of other keys, kept so they can be recovered later. The second is
+content you put there on purpose — website passwords, card details, backup codes
+for two-factor logins, keys for outside services, and freeform private notes.
+Those five kinds are the ones it accepts, and the project's own developer
+documentation calls that half of it an on-device password manager.</p>
+<p>Your content in the vault is encrypted under a <strong>data encryption key</strong> — the
+DEK — and that key is not left lying around: it is stored as a wrapped copy,
+encrypted under a second key whose job is to encrypt keys rather than content,
+a <strong>key encryption key</strong> or KEK. That split is the DEK/KEK pattern, and the
+sections that follow build on it. One thing it buys is that granting someone
+access does not mean re-encrypting the content; what changes is that small
+wrapped copy of the key. We have <a href="2026-03-26-dek-kek-sharing-without-re-encrypting.html" rel="noopener noreferrer">written about that split
+before</a>, and about <a href="2026-03-24-memory-that-only-you-can-read.html" rel="noopener noreferrer">how
+each memory carries its own
+lock</a>.</p>
+<p>What the vault's data key does not reach is the local database where your notes
+and messages live. That store is opened with a different key, made by a
+different calculation from a passphrase the system is given when it starts. It
+may well be the same password you type to unlock your vault — your vault
+password is one of the places the system looks for it — but what it becomes
+there is a different key, from a different calculation, for a different store.</p>
+<p>The vault holds a key, and it holds content, and it is not the only place a
+password of yours turns into a key.</p>
+<p>There are three ways to hand the vault a credential, in order of precedence: a
+key released by a biometric unlock, a password you type, or the identity key
+that your
+<a href="2026-03-24-what-a-mnemonic-really-buys-you.html" rel="noopener noreferrer">recovery phrase</a>
+reconstructs. Supply none of them and the vault refuses and names all three;
+ask it to open a vault whose stored record is missing and it refuses
+outright. Biometric takes precedence, and on that path
+there is no typed password to stretch — the key arrives already released. It
+is not a full replacement, though. The biometric path needs the key material
+behind your recovery phrase to have been sealed away for it already, and a
+vault that has not yet been opened with its password — or that predates the
+feature — has not had that done yet. Such a vault still opens; what it cannot
+do is start up the part that signs on your behalf, so the app asks for the
+password once to finish that job.</p>
+<p>This piece is about the middle credential, because it is the one where what you
+supply is something a human invented.</p>
+<p>Which is a genuine problem. A key has to be a run of essentially unguessable
+material — here, thirty-two bytes of it. A password you can remember is nothing
+like that: it is short, drawn from a small alphabet, and — the part that
+actually matters — reused. You cannot take the letters someone typed and call
+them a key.</p>
+<p>Here is the ceremony for opening a locked vault, before we take it apart.</p>
+<pre class="mermaid">flowchart TD
+  A["You type your vault password<br/>to open a locked vault"] --> T{"Still waiting out<br/>a previous failed attempt?"}
+  T -- "yes" --> R["Refused, before this derivation runs"]
+  T -- "no" --> B["A version label is glued to the front"]
+  B --> C["Argon2id, with this vault's salt:<br/>sixty-four megabytes of memory,<br/>three passes over it, four lanes"]
+  C --> D["A thirty-two-byte key"]
+  D --> E{"Does it open the stored,<br/>wrapped copy of the data key?"}
+  E -- "no" --> F["The attempt is counted, and the next one<br/>is made to wait — one second, then two,<br/>then four, up to a minute"]
+  F --> H
+  E -- "yes" --> G["The data key is recovered"]
+  G --> G2{"Does the part that signs on<br/>your behalf still need arming?"}
+  G2 -- "yes" --> G3["A second run, at whatever cost that<br/>record names, unwraps the recovery<br/>phrase from its own record"]
+  G2 -- "no" --> H
+  G3 --> H["The derived key material and the working<br/>buffers are overwritten with zeroes"]</pre>
+<h3 id="stretching-and-why-it-has-to-hurt"><a class="anchor" aria-hidden="true" tabindex="-1" href="#stretching-and-why-it-has-to-hurt"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Stretching, and why it has to hurt</h3>
+<p>The standard answer to that gap between what a password is and what a key has to
+be is a <strong>key derivation function</strong>: a
+calculation that takes a low-quality secret and produces a proper key from it.
+The interesting property is that a good one is <em>deliberately expensive</em>. If
+turning a password into a key costs a fraction of a second, you will barely
+notice; a machine grinding through millions of common passwords notices
+enormously. The cost is not a side effect of the design. It <strong>is</strong> the design.</p>
+<p>For the vault password we use <strong>Argon2id</strong>. Older derivation functions were
+expensive in time above all, and time is the resource an attacker buys most
+cheaply — a graphics card runs thousands of guesses side by side. The whole Argon2 family is instead
+<strong>memory-hard</strong>: each attempt must physically fill a large block of RAM and walk
+over it, so running a thousand guesses at once means paying for a thousand
+blocks of memory rather than just more clock cycles. That does not make parallel
+attack impossible; it makes it cost silicon area as well as time, which is the
+axis purpose-built cracking hardware is actually optimised along.</p>
+<p>The <em>id</em> on the end is not what makes it memory-hard — it names which variant
+of the family this is. Argon2 offers two ways of deciding which memory to read
+next: one that ignores the secret, which is safe against an attacker who can
+watch the machine's memory access pattern but weaker against one who can trade
+extra computation for less memory, and one that depends on the secret, which
+is the other way round. Argon2id runs the first for part of the work and the
+second for the rest, so it holds up reasonably against both instead of
+excellently against one. Section 4 of RFC 9106, the standard that specifies
+Argon2, tells an implementer who does not know the difference between the
+variants, or who treats side-channel attacks as a viable threat, to choose
+exactly that hybrid.</p>
+<p>What this buys is a multiplier, and it is worth being blunt that a multiplier
+is all it is. Stretching raises the price of each guess; it does not reduce
+how many guesses a bad password takes. It is what makes a decent password
+expensive to attack, and it cannot rescue a poor one.</p>
+<p>Three numbers set that cost. Where a vault password is first turned into a key,
+they are written into the code as literals — though not everywhere in the vault,
+and the places that read them from somewhere else are what this piece comes back
+to at the end:</p>
+<ul>
+<li><strong>Sixty-four megabytes of memory</strong> per attempt.</li>
+<li><strong>Three passes</strong> over that memory.</li>
+<li><strong>Four lanes</strong> — the number of strips the memory is divided into inside a
+single attempt.</li>
+</ul>
+<p>That cost is paid when a locked vault is opened with a password, and again for
+each wrong
+guess that gets far enough to be checked. It can be paid more than once per
+unlock: opening the vault and arming the part that signs on your behalf are
+two separate unwrappings of two separate records. The second is skipped when
+there is nothing to arm, or when that part is already armed or being armed,
+among other reasons.</p>
+<p>Those particular three numbers are not invented here: they are the second of the
+two configurations recommended in section 4 of RFC 9106 — the one intended for
+systems that cannot spare two gigabytes of RAM per login. How long they take in
+practice depends on the machine, and this piece does not put a number on it; no
+timing was taken for it. On this path the derived key is thirty-two bytes.</p>
+<p>Two more inputs go in beside the password. A <strong>salt</strong>: a random value generated
+per vault and stored next to the wrapped key. It is not trying to be secret —
+its job is to make sure two people who chose the same password get different
+keys, so that a table of pre-computed keys is worth one vault instead of all of
+them. And on this path, a short <strong>version label</strong> glued to the front of the
+password bytes: a fixed string that names and numbers this derivation scheme, so
+the key comes from your password <em>under this scheme</em> rather than from the
+password alone. Give a later scheme a different label and the same password
+produces a different key under it.</p>
+<p>Three smaller disciplines finish the picture.</p>
+<p>Attempts are counted, and a failed one makes the next attempt wait — one
+second, then two, then four, doubling up to a minute. That count is kept per
+device in device-local storage rather than only in memory, so a restart
+normally carries it over instead of handing back a fresh budget. The unlock
+path this piece describes runs that check before the derivation described
+here.</p>
+<p>The working buffers are wiped. Whether or not the wrapped key opens, the
+derived key, the combined input bytes and the salt are all overwritten with
+zeroes rather than left for whatever reads that memory next. That covers the
+raw byte buffers, which is worth being precise about: the password itself
+arrives as an ordinary immutable string in this runtime, and a string cannot
+be overwritten in place at all.</p>
+<p>And when you set that password it is refused outright above a few thousand
+characters — for the unglamorous reason that someone who can hand you an
+unbounded string in front of a sixty-four-megabyte calculation can hurt you
+without ever guessing anything.</p>
+<h3 id="when-the-cost-is-data"><a class="anchor" aria-hidden="true" tabindex="-1" href="#when-the-cost-is-data"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>When the cost is data</h3>
+<p>Several callers do not hardcode the three numbers. Some read them back out of
+the record they are opening; others take them straight off the wire from
+whoever is asking.</p>
+<p>The clearest case sits inside the ordinary password unlock above. That second
+unwrapping reads its memory, iteration and lane counts out of the stored record
+holding your recovery phrase, where they were written when the record was made
+— so that a device which never chose those numbers can still re-derive the same
+key from the same password. On that path the cost of the calculation arrives as
+<strong>data</strong>.</p>
+<p>That is a different shape of problem from anything above, and careful calling
+code is the wrong place to solve it, because a stored record is exactly the
+thing a careful caller cannot vouch for. So the answer to that problem lives below
+the callers, in the compiled cryptography core that the desktop service and the
+phone runtime both derive through: a memory cost below one megabyte or above a
+ceiling that ships at two hundred and fifty-six megabytes is refused outright,
+as are absurd iteration and lane counts. The core's own note is blunt about
+what it is bounding — a caller who gets to choose the memory cost can exhaust
+the machine's memory in a single call. The browser build carries its own copy
+of those bounds — the same values today — rather than calling that core, which
+is its own small lesson about how far down a limit has to sit before it is
+really underneath everything.</p>
+<p>How that refusal is reported decides whether the guard is usable, so the core's
+memory-cost refusals carry fixed tags rather than free-form prose, and the tag
+for a cost above the ceiling is declared part of the core's public interface.
+The layer above turns those refusals into a distinct error type that callers can
+branch on — from a sentinel return code on desktop, and on the phone runtime by
+matching those tags. That declaration sits beside the constant that carries the
+tag, so anyone changing that string sees the promise attached to it.</p>
+<p>Choosing a deliberately expensive calculation is the easy half of the decision.
+The hard half is that the expense is real and lands somewhere, and every layer
+that touches it inherits a share of the choice: the code that picks the numbers,
+the store that remembers them for later, and the core that has to honour
+whatever it is handed. Get the first one right and you have a good password
+check. Forget the other two and you have built a machine that will spend
+whatever it is told to, on behalf of whoever gets to do the telling.</p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'neutral',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 243 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>
