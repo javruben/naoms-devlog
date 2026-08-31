@@ -1,0 +1,173 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Where a merge gate reads its own rules — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">52</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">90</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">50</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">116</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">15</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">20</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">17</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">27</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Where a merge gate reads its own rules</h1><p class="subtitle">An automated merge gate has one question that decides everything: where does it read its list of checks from? It must be the branch being merged into, with no fallback — and ours was reading it out of the clone of the branch under review.</p><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>August 4, 2026</span><span>·</span><span>9 min read</span><span>·</span><span>meta</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> An automated gate decides whether a change is allowed to land. The rule that makes it worth anything is that its list of checks comes from the branch being merged into — never from the change under review — with no fallback, so that a candidate cannot supply the statute it is judged by. Ours was reading that list out of its copy of the candidate: a branch could have removed the review step and been told it passed. This is what the gate is meant to do, what went wrong, and exactly where the boundary still sits today.</div><div class="markdown-body"><h2 id="how-an-automated-merge-gate-is-supposed-to-work"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-an-automated-merge-gate-is-supposed-to-work"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How an automated merge gate is supposed to work</h2>
+<p>Every change that lands in this project goes through an automated gate. The gate
+is a program, not a person: it takes a proposed change — the <strong>candidate</strong> — makes
+its own copy of it, runs a list of checks against that copy, and then either
+merges the change into the main line or refuses it. Build, tests, a critic, a code
+review. No human stands behind any individual run; the authorisation for the run
+is synthesised by the system itself, which is the ordinary arrangement for
+continuous integration and is what makes it able to work while everyone sleeps.</p>
+<p>The interesting question in such a system is not <em>what</em> the checks are. It is
+<strong>where the gate gets its instructions from</strong>, and that question has a right
+answer that is easy to state and easy to get wrong.</p>
+<p>The gate's instructions live in a <strong>rulebook</strong>: a file listing the stages to run,
+in order, and the command each stage invokes. That file is version-controlled
+like everything else, which means there are always at least two copies of it in
+play — the one on the branch being merged <em>into</em> (the <strong>target</strong>, in practice the
+main line), and the one on the candidate. They are usually identical. They are
+not necessarily identical, and the whole security of the arrangement turns on
+which of the two the gate opens.</p>
+<p><strong>The rulebook must come from the target.</strong> The main line is the thing already
+trusted; the candidate is, by definition, the thing not yet trusted. A gate that
+reads its list of checks from the candidate is asking the defendant to supply the
+statute. So the gate reads the rulebook from the merge target every time, straight
+from the stored version-control reference rather than from any working copy, and
+the target's name comes from the gate's own environment rather than from anything
+the candidate can influence.</p>
+<p><strong>And there is deliberately no fallback.</strong> If the target's rulebook cannot be
+read, the gate has no sanctioned instructions at all, and it refuses the run.
+That is the uncomfortable choice and it is the correct one, for a reason worth
+generalising: a "try the trusted source, else use the untrusted one" fallback
+re-opens the hole on exactly the runs that trip it, and does so quietly. The
+failure it is protecting against and the condition that triggers the fallback are
+the same condition. An announced fallback would be better than a silent one; no
+fallback is better still.</p>
+<p>That settles <strong>which checks run and what command each invokes</strong>. It does not
+settle the <em>contents</em> of the scripts those commands name, and here the honest
+position is a boundary rather than a guarantee. Stages execute inside the
+candidate's own working copy, against relative paths — so a branch that rewrites
+the body of a check script is running its own version of that script. This is a
+deliberate position rather than an oversight, and the reason is a genuine
+tension: a fix to the gate has to be validated by the run carrying it. Overlaying
+the whole script directory from the trusted side would silently discard the work
+of every branch whose entire purpose is to improve those scripts, and would mean
+every gate improvement ships untested — which is its own way of ending up with a
+broken gate.</p>
+<p>Exactly one file is overlaid from the trusted copy today, and it earned that
+exception by causing an outage. A stale copy of the candidate was missing the
+script that decides whether another run's workspace has been abandoned, fell back
+to a time-based rule, concluded a live workspace was abandoned, and deleted it.
+The repair could not travel through branches, because the branches that needed it
+had been cut before it existed — the overwhelming majority of open changes at the
+time. So it is applied from outside the branch, on every run, and a run where the
+overlay fails to apply announces that on the permanent record rather than
+proceeding quietly.</p>
+<p>There is a second thing the gate must get right, and it is about how it reads its
+own analysis tools. The gate has a <strong>classifier</strong>: a component that inspects a
+change to the rulebook and reports which sensitive things it touches. The rule
+for using one is to <strong>trust its positives and refuse to trust its negatives.</strong> A
+classifier reports on the fields it knows about; everything else produces no
+finding at all — not "unknown", which would fail closed, but silence, which reads
+exactly like "nothing to see". So the fields it structurally cannot see are
+written down as a constant, the tests assert against that constant so teaching
+the classifier a new field forces the list to be updated, and a refusal message
+says the quiet part in the operator's face: the classifier flagging nothing is
+not evidence of safety. <strong>A check that cannot fail is not evidence, and a check
+whose blind spots are undocumented is a check that manufactures clean verdicts.</strong></p>
+<h2 id="what-was-wrong"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-was-wrong"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What was wrong</h2>
+<p>The list of stages the gate ran was read out of the clone.</p>
+<p>That sentence is the whole defect. The gate copied the branch it was about to
+judge, then opened <em>that copy</em> to find out what judging was supposed to involve.</p>
+<p>Two versions of what that permits, both trivial. <strong>Delete the review stage from
+your own branch's copy of the list</strong>: the gate reads your list, sees no review
+stage, runs whatever you left, reports a clean pass. <strong>Or leave the list alone and
+rewrite the script one of the stages calls</strong>, so the test run becomes an immediate
+success — same outcome, and this second version leaves the list untouched, which
+matters greatly by the end of this piece. Nothing exotic is required. No exploit,
+no race, no clever encoding.</p>
+<p>What makes this a good bug to sit with is that a guard against it already
+existed. A classifier that inspects changes to the gate's rulebook and flags the
+dangerous ones had been written, tested, and shipped. It simply was never called
+from here — its only caller was a different entry point entirely. The defence was
+not weak. It was <strong>architecturally bypassed</strong>, which is a distinct and much
+quieter category, because everything you can point at looks present and correct.</p>
+<p>The same wrong reading produced a second problem nobody had connected to the
+first. A branch cut before a gate improvement could never receive it, because the
+gate took its instructions from the branch. One measured case ran exactly one
+stage and handed a merge conflict straight back to the submitter, because the
+stage that would have resolved the conflict did not exist in the stale branch's
+copy of the rulebook. A privilege escalation and a stale-branch bug from one
+cause is a fair sign it was a wrong reading rather than a missing feature.</p>
+<h2 id="how-it-was-fixed-and-where-the-line-still-sits"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-it-was-fixed-and-where-the-line-still-sits"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How it was fixed, and where the line still sits</h2>
+<p>The first repair, on the fourth of August, was a split rather than a switch,
+precisely because of the tension named above: take the candidate's rulebook away
+entirely and every gate improvement ships untested. The day before it landed, two
+separate repairs to the test-running script were confirmed working exactly
+because the branch's own copy executed.</p>
+<pre class="mermaid">flowchart TD
+  A["A change asks to merge"] --> B{"Does it touch any file<br/>that defines the gate?"}
+  B -- "no (the ordinary case)" --> BASE["Rulebook read from the branch<br/>being merged into.<br/>No marker. No cost."]
+  B -- "yes" --> D{"Does a commit message<br/>declare the gate change?"}
+  D -- "no" --> R1["Refused: undeclared"]
+  D -- "yes" --> C{"Does the diff touch<br/>the rulebook file itself?"}
+  C -- "yes, with no attestation line" --> R2["Refused: unattested"]
+  C -- "otherwise" --> CAND["The branch's own gate runs —<br/>announced on the record"]</pre>
+<p>The default was the left branch and it cost nothing: a change touching no part of
+the gate needed no marker, no attestation and no extra step. But the fallback
+went the other way — if the rulebook could not be read from the target, the gate
+fell back to the branch's own copy, announcing that it had done so on the
+permanent record. An announced fallback is far better than a silent one. It is
+still a fallback into the exact state the whole change exists to prevent, and the
+honest reading of that version is that the property held except on the runs where
+reading the target failed.</p>
+<p>The part of that work worth copying is not the mechanism. It is that the module
+carries a section headed <strong>"honest limit — read this before trusting it"</strong>, and
+the list underneath is a list of ways to get around it:</p>
+<ul>
+<li>The declaration that opts a branch into running its own gate is a line in a
+commit message, written by the same commit it describes. Nothing prevents an
+author from writing it.</li>
+<li>The attestation reference is accepted as a string. Nothing checks that the
+attestation exists, and the command that mints one will self-mint a signature
+of one, by itself, when no quorum proof is supplied.</li>
+<li>The base tier asserts that no gate file <em>changed</em>. It does not check out clean
+copies of the scripts. A helper living outside the known set can still be
+rewritten.</li>
+<li>Anyone who can push directly to the main line bypasses all of it, because the
+main line is the thing being trusted.</li>
+</ul>
+<p>The module's own summary: <em>treat it as a tripwire, not a lock.</em> We would rather
+publish that sentence than the sentence it replaces, because a tripwire sold as a
+lock is worse than having neither — it converts an unknown risk into a
+believed-absent one.</p>
+<p>Being straight about the current state matters more than a tidy ending, so: that
+two-tier design has since been superseded, and the split above no longer runs.
+Under a week later the rule became unconditional — landing, being reverted the
+same day, and re-landing the day after that, which is its own small lesson about
+changing the machine that judges changes. The from-the-target, no-fallback rule
+described in the first section is what runs now, and it closed the stale-branch
+bug as a side effect.</p>
+<p>One consequence we should state rather than let a reader discover: the
+declaration requirement — the commit-message line a branch had to write before
+running its own gate — has <strong>no caller in production today</strong>. The module and its
+tests are in the tree; nothing invokes them. The stricter rule removed the need
+for the tier split, and the tier split's machinery was left behind rather than
+deleted. So if you take one enforcement claim from this piece, take the
+unconditional one: the list of checks comes from the target. Not the tripwire.</p>
+<p>And the second version of the attack, the one that left the list untouched, is
+not closed. It is bounded. The unconditional rule governs which checks run and
+what command each one invokes; the bodies of the scripts those commands name are
+still the candidate's own, with the single overlaid exception described above.
+That is the honest shape of it: <strong>the question of which checks run is settled;
+the question of what each check does is bounded by one overlaid file and
+otherwise still supplied by the change under review.</strong> A reader who walks away
+believing the whole class is closed would have been misled by us, so we would
+rather draw the line where it is.</p>
+<p><em>Related: <a href="2026-05-31-trust-the-agent-verify-at-the-gate.html" rel="noopener noreferrer">Trust the Agent, Verify at the Gate</a> · A CI System Built From the Chain Itself · The Day Our CI Took Down the Fleet.</em></p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-process.html">← more in Process</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'neutral',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 242 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

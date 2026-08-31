@@ -1,0 +1,202 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>A pipeline with no approval step — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">52</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">90</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">50</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">116</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">15</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">20</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">17</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">27</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>A pipeline with no approval step</h1><p class="subtitle">Changes reach the product through a 28-stage pipeline with no approval step in it — a reviewer can refuse a change, but nothing and nobody can pass one. The hand-driven merge lane stopped on 23 August, and a cutover is the day you switch the old thing off and find out what it had been quietly absorbing.</p><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>August 30, 2026</span><span>·</span><span>10 min read</span><span>·</span><span>how-we-build</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> If you use this project, the changes that reach you now go through a 28-stage pipeline with no approval step in it — a reviewer can refuse a change, but nothing and nobody can pass one. Here is how that path works, and what turned out to be broken once the old hand-driven lane switched off and it had to carry the load alone.</div><div class="markdown-body"><h2 id="how-a-change-gets-into-the-product"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-a-change-gets-into-the-product"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How a change gets into the product</h2>
+<p>A change reaches the product through a <strong>pipeline</strong>: a fixed sequence of steps a
+proposed change must pass, in order, before it becomes part of the product. The
+sequence is written down in a single file — just under 3,000 lines, describing 21
+pipelines, of which the one guarding the <strong>main line</strong> (the single shared version
+of the project that releases are cut from) runs <strong>28 stages</strong>.</p>
+<p>A <strong>stage</strong> is one step in that sequence. Some of them judge the change — three
+reviewers read it, the types are checked, the whole test suite runs. Others do
+work: pulling in the latest main line, resolving conflicts, building a working
+copy, merging, publishing documentation and downloads. Both kinds count toward
+the 28, and it is worth being exact about that, because "28 checks" would be the
+wrong denominator; the judging set is roughly half.</p>
+<pre class="mermaid">flowchart TD
+    A[change submitted] --> B{does this change<br/>anything at all?}
+    B -->|no| X[rejected, cheaply]
+    B -->|yes| C[three reviewers read the difference<br/>design · tests · code]
+    C --> D[pull in the latest main line]
+    D --> E{conflicts?}
+    E -->|yes| F[a reviewer resolves them]
+    F --> D
+    E -->|no| G[build a working copy]
+    G --> H[style · licences · types<br/>the full test suite]
+    H --> I{is the test machine<br/>actually healthy?}
+    I -->|no| Y[the machine broke,<br/>not your change]
+    I -->|yes| J[merge it in]
+    J --> Z[publish documentation and downloads]
+    APV["a human approves"]:::skipped -.->|skipped, and it says so| J
+    classDef skipped stroke-dasharray: 5 5,color:#888</pre>
+<p>That dashed box is the argument. A conventional pipeline has an approval step
+there — a named person or team who signs off, after which the change is cleared
+to land. This one does not. The instruction, in the plain-language equivalent of
+the words used, is: <em>no change request must be approved by any human or machine,
+and the pipeline description must say specifically that no approval step is
+necessary, because the pipeline itself is the approval step.</em></p>
+<p>Two things about that are easy to misread.</p>
+<p><strong>Judging is not approving.</strong> Three of those 28 stages judge the change, and they
+are not mechanical checks at all — they are language models reading the actual difference a change makes,
+one looking at design, one at tests, one at code. Any of them can reject it. What
+none of them can do is <em>pass</em> it. There is no verdict any reviewer can render
+that means "cleared to land"; they can only fail to find a reason to stop it.
+Rejection and approval point in opposite directions, and only one of them is
+delegated here. (A previous verdict is never a floor, either: a reviewer running
+again renders a fresh judgement and is free to reject what was let through
+before.)</p>
+<p><strong>A refusal cannot be re-rolled.</strong> Three of the reviewers are language models, so
+the obvious worry is that a rejected change could simply be resubmitted until the
+dice land green. It cannot: submitting the same branch at the same commit is
+treated as the same request and starts no new run. A fresh verdict requires a
+fresh commit — which is to say, actually changing the code. Nothing in the path
+lets a human overrule a refusal either.</p>
+<p><strong>The default is the opposite of this, and the fallback is loud.</strong> The software
+running this pipeline ships with the human approval gate <strong>on</strong> — a pipeline
+description that says nothing about approval gets one, which is the secure
+default and the right one for most people. This project turns it off
+deliberately, on one line. And if an approval stage is present anyway, the runner
+steps over it and <em>announces that it did</em>, emitting a recorded event, rather than
+either forging a signature or parking the change forever on one nobody is coming
+to give. Anyone running the same software with no configuration of their own gets
+an approval step, not this.</p>
+<p>The older, hand-driven route now refuses on sight, naming what happened to the last people who used it: more
+than twenty submissions had been enqueued into a queue nothing was draining, and
+they simply sat there. Past that refusal there is a single documented escape, and
+it will not run unless you type a written reason that then gets recorded. How
+often it has been used, we do not know — the commit history is the wrong place to
+look for it, and we have not looked in the right one. Worth saying anyway,
+because a bypass you do not mention is just a default you have hidden.</p>
+<p>The final stages are the ones that put documentation and downloads in front of
+people, over
+<a href="2026-08-05-releasing-over-a-network-that-needs-no-server.md" rel="noopener noreferrer">a network that needs no server</a>.</p>
+<h2 id="what-was-wrong"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-was-wrong"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What was wrong</h2>
+<p>A cutover looks finished long before it works. The demonstration goes fine. Then
+the new thing carries real traffic for the first time and reports, for hours,
+that it has completed zero of its stages — while the small server it is quietly
+hammering reboots twice under the load.</p>
+<p>That happened here on 26 August, three days after the old route was switched off.</p>
+<h3 id="what-actually-changed-and-when"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-actually-changed-and-when"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What actually changed, and when</h3>
+<p>The interesting thing about this cutover is that the pipeline was not new. It had
+been running for weeks: its own merges appear in the main line on 22 of the 25
+days from 5 to 29 August. Three days are missing, and two of them are 22 and 23
+August — the pipeline goes quiet on exactly the days the handover happens.</p>
+<p>What ended on 23 August was the <em>other</em> lane — one automated lander that a person
+started, watched, and restarted whenever it wedged. Measured rather than assumed,
+that lander puts changes in every day through 22 August, 169 of them on the 18th
+and 174 on the 20th. On 23 August it lands 5. It never lands anything again.</p>
+<p>So this was not the day the new thing switched on. It was the day the old thing
+switched off, and the pipeline had to carry the load alone. What follows is what
+that exposed.</p>
+<h3 id="the-part-nobody-puts-in-the-diagram"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-part-nobody-puts-in-the-diagram"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The part nobody puts in the diagram</h3>
+<p><strong>It was copying the whole project and throwing the copy away.</strong> Before its first
+stage, every run made a full copy of the repository across the network from a
+small machine — 2 cores, under 4 GB of memory, no swap, holding an 18 GB object
+store — and did this up to 10 times at once. Measured during the outage: load
+24.9, 80 MB of memory left, 7 packing processes each holding 420–485 MB. Every run
+reported the same thing for hours: <strong>zero stages executed</strong>. The machine rebooted
+twice. And the copy had been pointless since 6 August, when a later stage started
+building the working copy properly and replacing the copy with a link to it — so
+for twenty days the pipeline paid 2.4 GB of network transfer per run for something
+it discarded on arrival.</p>
+<p><strong>A disk check measuring the wrong disk.</strong> The test machine's scratch area was a
+31 GB in-memory filesystem, completely full, holding 29,073 abandoned temporary
+directories — the same class of self-inflicted mess as in
+<a href="2026-08-07-evicting-our-own-evidence.md" rel="noopener noreferrer">evicting our own evidence</a>. Everything
+sent there died within seconds. The health probe called the machine ready the
+whole time, because it was measuring the disk the <em>project</em> lived on, which was
+32% used and perfectly fine. A true answer to the wrong question. Two real changes
+sat 49 hours with no verdict. The same fix caught a subtler sibling: the "is this
+disk full" test required a machine to be both above 97% <em>and</em> below 10 GB free,
+which let a small disk at 90% with 2 GB left sail straight through.</p>
+<p><strong>A connection that could never come back.</strong> A listing command had been running 7
+hours at 0% processor. Its connection was still marked established; on the far end
+there was no connection and no process at all. That machine had rebooted 3 minutes
+and 37 seconds after the command started — and a reboot sends nothing, no close, no
+reset. The waiting side sits there forever. Keepalives — the periodic "are you
+still there?" probe that would have noticed — were off by default, and no
+connection timeout was set, so nothing was ever going to rescue it. This ran every
+5 minutes, which means an outage on the far side stranded a fresh immortal pair
+every five minutes until somebody noticed.</p>
+<p><strong>A watchdog killing workers that were still working.</strong> Of the last 10 processes it
+killed for being idle, all 10 had been producing real output and died over a single
+gap between two pieces of it. One had produced 167 pieces of output first. The
+count of work already done was collected, displayed — and never once consulted by
+the rule that decided to kill. The fix was not a longer timeout but a different
+question: allow a gap up to three times the largest gap this particular run has
+already survived. A slower machine or a harder problem moves that window itself,
+with nobody retuning anything. (Measuring processor time instead was weighed and
+rejected: a process waiting on a model's response is idle by construction.)</p>
+<p><strong>Two scheduled jobs that had never once succeeded</strong> — not lately, ever — and,
+more to the point, the silence that let that stay true. A third could never have
+run at all.</p>
+<p>And running through all of it, one defect wearing many faces: <strong>infrastructure
+failures were being recorded as verdicts on the change</strong>. A machine running out of
+space is not evidence that your work is wrong. Neither is a network fault, a
+snapshot failure, or a batch killed by a signal — a killed batch is a run that
+never got judged, which is a different thing from a run that was judged and
+failed. Each one had to be taught to say "the machine broke" instead of "you broke
+it."</p>
+<h2 id="two-paragraphs-we-had-to-take-back"><a class="anchor" aria-hidden="true" tabindex="-1" href="#two-paragraphs-we-had-to-take-back"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Two paragraphs we had to take back</h2>
+<p>Two claims made during that fortnight were withdrawn, both on the same day, both
+against the project's own findings. The first had asserted that a whole class of
+scheduled work had never run. The reason recorded for the error:</p>
+<blockquote>
+<p><em>"I relayed the broad version without a source because it was convenient to the
+conclusion I was already arguing."</em></p>
+</blockquote>
+<p>The second withdrew a measurement taken from a command that had already failed —
+the number it printed looked like an answer, and nobody checked whether the
+command had exited cleanly. That retraction then went after its own shape:</p>
+<blockquote>
+<p><em>"I named the right failure mode when retracting, then re-committed it under
+that name, so the caveat read as diligence."</em></p>
+</blockquote>
+<p>Naming a bias is not escaping it. A caveat written well enough gets read as care
+by everyone, including the person who wrote it. It is the same trap as
+<a href="2026-08-23-the-bug-report-was-wrong-and-that-was-the-finding.md" rel="noopener noreferrer">the bug report that was wrong, which was the finding</a>
+— and this article walked into it three times while being written. A draft said
+the old lander was the <em>only</em> thing landing changes across eight days; two other
+identities appear in that window. A draft said <em>everything</em> now goes through the
+pipeline; the record shows the team also landing by hand that same week. A draft
+said the pipeline's merges appear <em>every single day</em> from 5 August; they appear on
+22 of 25 days. Every one of those counts was correct. Every universal built on top
+of one was wrong — which is exactly the shape of the first retraction above, and
+the reason it is quoted rather than paraphrased.</p>
+<h2 id="where-this-honestly-stands"><a class="anchor" aria-hidden="true" tabindex="-1" href="#where-this-honestly-stands"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Where this honestly stands</h2>
+<p><strong>Working.</strong> The hand-driven lane is gone and refuses new submissions. The
+pipeline is genuinely carrying work, and has been for most of the month. Every
+defect in the repair list above is fixed and landed.</p>
+<p>It is only fair to give the new lane's numbers, having given the old one's. Daily
+arrivals on the main line since the handover run 9, 8, 2, 12 and 9 — against 169
+and 174 on the old lane's busiest days. Some of that is the backlog draining and
+some is 28 stages being slower than one merge, and these counts do not separate
+what the pipeline landed from what was landed by hand. A like-for-like throughput
+figure is not something we can honestly produce yet.</p>
+<p><strong>Not established.</strong> That everything goes through it. During this same week the
+team was also landing changes by hand, on a branch named for exactly that, while
+the pipeline was repaired underneath them. That is what a cutover week actually
+looks like, and it would be easy and dishonest to leave out.</p>
+<p><strong>Not finished.</strong> The item behind all of this has reached its final phase and its
+status still reads in-progress. There is more to do, and the repair list above is
+what has actually been closed.</p>
+<p>What has been bought is narrower than "we automated our process." A change that
+goes through the gate meets the same 28 stages, in the same order, whether it
+arrives at 09:00 on a Monday or 15:00 on a Sunday. Nobody has the authority to wave one
+through — which also means nobody carries the quiet weight of being the person who
+could have.</p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-process.html">← more in Process</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'neutral',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 242 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

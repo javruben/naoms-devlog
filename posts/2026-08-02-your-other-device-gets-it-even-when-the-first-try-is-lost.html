@@ -1,0 +1,154 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Two devices, no server in between — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">52</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">90</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">50</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">116</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">15</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">20</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">17</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">27</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Two devices, no server in between</h1><p class="subtitle">Two devices you own should stay in step without a server in the middle. That takes a live send plus two recovery lanes — a bounded re-offer and a catch-up when the two devices next meet. Shared-space content was riding the live send alone; now it rides all three.</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>August 2, 2026</span><span>·</span><span>8 min read</span><span>·</span><span>sovereignty</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> Write something in a shared space on your laptop and it should appear on your phone, with no server in between. That works by sending once on the private stream your paired devices share, and backing that send with two recovery lanes: a small, spaced, capped re-offer, and a catch-up pull the moment the two devices meet. Shared-space content had been getting the single send only. It now rides the recovery lanes too, and the re-offer is bounded so a retry can never become a storm.</div><div class="markdown-body"><h2 id="how-your-two-devices-are-supposed-to-stay-in-step"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-your-two-devices-are-supposed-to-stay-in-step"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How your two devices are supposed to stay in step</h2>
+<p>You own more than one device, and NAOMS treats that as ordinary rather than
+exceptional. Write something on the laptop; it should be on the phone. Both
+machines are yours, both hold your keys, and neither is a server that the other
+is a client of — they are peers that recognise each other and share a private
+lane no one else can read. The word for the far end, throughout this piece, is
+your <strong>co-device</strong>: another machine belonging to the same owner, paired to this
+one.</p>
+<p>Records travel between them over <strong>gossip</strong>: a family of peer-to-peer techniques
+where a node hands a new fact to the peers it can currently see, and those peers
+hand it on, until the fact has spread. There is no central relay deciding who
+gets what. Each send is a small, self-contained packet — a <strong>datagram</strong>, fired
+once with no built-in guarantee it arrives — addressed to a <strong>topic</strong>, which is
+just a named stream that interested peers subscribe to. Your paired devices share
+a private topic of their own, and only a device holding your keys can read it.
+That is the live path: you write something, and it goes out once on that private
+topic.</p>
+<p>One send is a perfectly reasonable <em>first</em> attempt. It is not a delivery
+mechanism, because the moment you most need it is exactly the moment it is least
+likely to work: the seconds after you hit enter, while your two machines are
+still discovering each other on the local network. So underneath the live path
+sit two <strong>recovery lanes</strong>, and the design intent is that everything meant for
+your other device rides both of them:</p>
+<ul>
+<li><strong>A periodic re-offer.</strong> A sweep runs on a timer and re-offers your recent
+records, on the theory that a send lost during mesh formation can be repeated
+a moment later when the mesh exists.</li>
+<li><strong>A catch-up on meeting.</strong> The instant your two devices notice each other, the
+arriving side asks for whatever it missed while they were apart. This lane is
+driven by an actual event rather than by a clock.</li>
+</ul>
+<p>The two are not two versions of the same idea, and the distinction is the most
+useful thing in this article. <strong>A timed re-offer is a bounded gamble; a
+catch-up on reconnection is a fact-driven repair.</strong> The gamble buys you coverage
+during the window where nothing is connected yet. The repair is what makes the
+system eventually correct, because it fires on evidence — the peer is here — and
+not on a guess about how long things take. A system that keeps its own history
+needs the second one to be the load-bearing part.</p>
+<h3 id="what-this-costs-you-by-default"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-this-costs-you-by-default"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What this costs you by default</h3>
+<p>Because the default matters more than the mechanism, here it is precisely, for
+someone who changes no settings:</p>
+<ul>
+<li>It applies <strong>only between devices you own</strong>. The lane's delivery step targets a
+second device of the same owner on the private stream your paired devices
+share, and only a paired device holds the key to it. Other people in the same
+shared space were never on this lane and still aren't — they receive the same
+content over the ordinary peer path, which is separate and untouched.</li>
+<li>The sweep <strong>does not run at all unless a second device of yours is actually
+present</strong> on that stream. With one device, there is nothing to re-offer and the
+sweep returns immediately; when a sibling shows up later it triggers the
+catch-up instead. So this costs a single-device user nothing, which is the
+overwhelmingly common case.</li>
+<li>When it does run, it runs every <strong>12 seconds</strong>, looks back over the last <strong>120
+seconds</strong> of your records, and takes at most the <strong>10 most recent</strong> — and it
+drops the rest of that pass rather than carrying them forward. Write more than
+ten things in a burst and the eleventh is not queued for the next tick; it is
+simply not in this tick's set.</li>
+<li>Any single record is re-offered at most <strong>3 times</strong>, spaced at least <strong>8
+seconds</strong> apart. Then it stops.</li>
+</ul>
+<p>That last bound is the uncomfortable one, and it is worth being straight about
+why it looks the way it does. There is <strong>no acknowledgement</strong> in this subsystem —
+no signal coming back from your other device saying <em>received, you can stop</em>. So
+there is nothing to stop on, and the bound is deliberately blind: three pushes,
+spaced at least eight seconds apart, then silence, whether or not anything ever
+arrived. Do the arithmetic and the trade is visible rather than hidden. Three
+pushes at eight-second spacing covers roughly the first <strong>24 seconds</strong> of a
+120-second window. It is sized to span the stretch in which two of your devices
+typically find each other — and it is, precisely, a guess about how long that
+takes, dressed as a constant. It buys a hard ceiling on background noise and pays
+for it by giving up on the records whose delivery window runs long. What catches
+those is the catch-up lane, which does not depend on the guess.</p>
+<h2 id="what-was-wrong"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-was-wrong"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What was wrong</h2>
+<p>Ordinary messages had both recovery lanes. Content you wrote into a <strong>shared
+space</strong> — a group workspace whose members hold its records in common — did not.</p>
+<p>The live path had been widened to cover it: the code that decides <em>this belongs
+on your other device too</em> included shared-space content, correctly. The recovery
+path had not been widened with it. So that content had exactly one attempt. Send
+it once, hope it lands, and if it was lost while your machines were still finding
+each other, nothing ever tried again. Not late — <em>never arriving</em>.</p>
+<pre class="mermaid">flowchart TD
+  W["You write into a shared space"] --> S["One broadcast on your private device stream"]
+  S -- "lands" --> OK["Your other device has it"]
+  S -- "lost: the two devices<br/>hadn't met yet" --> B{"Is this record<br/>in a recovery lane?"}
+  B -- "ordinary message: yes" --> R["Re-offered by the sweep,<br/>or pulled on next meeting"]
+  B -- "shared-space content: no<br/>(the gap this week closed)" --> DEAD["Nothing ever tries again"]
+  R --> OK</pre>
+<p>Everything about it was working as written. Nothing crashed. Nothing was dropped
+by mistake. The delivery simply had one attempt, and one attempt is not a
+delivery.</p>
+<p>Two pieces of one mechanism had drifted apart, and the drift was invisible for
+exactly the reason drift usually is: the widened half was the half that fires
+when everything is working. The failure mode this produces is the worst-shaped
+one available — intermittent, indistinguishable from a flake, and dependent on
+something nobody can see, namely whether the mesh between your two devices
+happened to be up at the instant you hit enter. Run the test once and it passes.
+Run it again and it doesn't.</p>
+<p>The second defect was the mirror image, and it landed the same day. Before the
+per-record bound described above existed, the sweep had no memory of what it had
+already sent. Every record inside the 120-second window was re-offered on every
+tick, for the whole window, for as long as your other device was present.
+Measured: roughly <strong>2,060 copies of a single record</strong> arriving at the other
+device. Nothing was broken, in the sense that everything worked. The record
+arrived. It arrived two thousand times.</p>
+<h2 id="how-it-was-fixed-and-what-we-are-not-claiming"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-it-was-fixed-and-what-we-are-not-claiming"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How it was fixed, and what we are not claiming</h2>
+<p>The recovery lanes were widened to cover the same kinds of shared space the live
+path already covered, on the same two branches of the record — the content and
+the description of it. Nothing else was added to the lane; the fix was to make
+one half of an existing mechanism match the other half. The storm was closed by
+the three-pushes-spaced-eight-seconds bound, which is why that bound is stated
+above as part of how the thing now works rather than as a footnote here.</p>
+<p>The more durable half of the fix is the anti-drift work stapled to it. There had
+been no assertion anywhere saying <em>these two sets must be the same set</em>, because
+until the day they diverged, they trivially were. Now the condition used at send
+time and the query used by the sweep are written against one shared list of what
+counts, and the tests assert that the list and the query agree. It doesn't make
+the code faster or the delivery more reliable. It makes the <em>next</em> widening of
+the fast path impossible to do silently.</p>
+<p>There is a general form of this worth carrying: <strong>whenever you have a happy path
+and a recovery path, the pair of them is a single mechanism with two spellings,
+and nothing will tell you when the spellings drift.</strong> Every check you run
+exercises the happy path — that is what a passing test is. The recovery path is
+only exercised by the failure you are not currently having.</p>
+<p>And what we are not claiming. The commit that landed this fix declines, in its
+own words, to call the underlying reliability gap closed. It states that the
+end-to-end proof across two live devices was still pending, and it refuses to
+claim the win until that evidence exists. Nothing on the main line since then
+records that closure. What the merge record does carry is repeated green runs of
+the covering test — five out of five under a load gate, eleven out of eleven under
+normal load — which is real evidence and is not the same thing as the end-to-end
+proof the author was holding out for.</p>
+<p>So: the gap in the recovery path is closed and readable in the code. The retry is
+bounded and the bound is measured. The end-to-end demonstration that a lost first
+attempt is now always recovered on real hardware is the part we have not
+finished, and we would rather say that than let a green test stand in for it.</p>
+<p><em>Related: <a href="2026-05-22-adding-a-second-device-without-copying-the-key.html" rel="noopener noreferrer">Adding a Second Device Without Copying the Key</a> · <a href="2026-04-27-why-gossip-must-never-move-your-big-files.html" rel="noopener noreferrer">Why Gossip Must Never Move Your Big Files</a> · <a href="2026-04-26-three-kinds-of-sync-one-engine-underneath.html" rel="noopener noreferrer">Three Kinds of Sync, One Engine Underneath</a>.</em></p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'neutral',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 242 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

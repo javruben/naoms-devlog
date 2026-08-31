@@ -1,0 +1,149 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Where your identity keys actually live — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">52</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">90</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">50</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">116</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">15</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">20</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">17</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">27</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Where your identity keys actually live</h1><p class="subtitle">The key material that proves you are you belongs inside the encrypted store your recovery words already cover. It is written there after every successful start, read back and compared field by field before it is believed, and put back only when the loose file beside it is gone.</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>August 24, 2026</span><span>·</span><span>7 min read</span><span>·</span><span>data-integrity</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> Your database, your recovery words and your password should be all you need to get your identity back. A sealed copy of the key material now lives in the database itself, and if the loose file beside it ever goes missing, the copy is restored before anything tries to use it. The original file is still written and is still the authority — nothing has been deleted, on purpose.</div><div class="markdown-body"><h2 id="how-recovering-your-identity-is-supposed-to-work"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-recovering-your-identity-is-supposed-to-work"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How recovering your identity is supposed to work</h2>
+<p>Your identity in this system is not a password. It is <strong>key material</strong> — the
+private cryptographic values that let your machine sign things as you. There is
+no reset link for them, because a reset link is just somebody else holding the
+real key. That is the trade the system makes on purpose, and it puts a
+correspondingly heavy weight on recovery.</p>
+<p>The standing promise is roughly this: <em>if you have your database, your recovery
+words and your password, you can get back to your data.</em> The recovery words are
+a phrase you wrote down once, from which some of your keys can be derived again;
+the password unlocks the encrypted store — the <strong>vault</strong> — that everything else
+lives inside.</p>
+<p>For that promise to hold, every piece of key material has to be inside the set of
+things the promise names. So the key material is kept as a sealed object in the
+database itself, and the flow around it is deliberately narrow.</p>
+<pre class="mermaid">flowchart TD
+  U["You unlock"] --> C{"Is the key file<br/>on disk?"}
+  C -- yes --> SP["start normally —<br/>the file is untouched"]
+  C -- no --> R["restore it from the sealed<br/>copy in the database"]
+  R --> SP
+  SP --> OK{"Did the start<br/>succeed?"}
+  OK -- yes --> M["MIRROR the file into the database:<br/>seal, read back independently,<br/>compare field by field"]
+  OK -- no --> X["no mirror — never copy<br/>something that did not work"]
+  M --> V{"Did the comparison<br/>PROVE anything?"}
+  V -- "control failed as required<br/>and the diff is empty" --> DONE["copy accepted"]
+  V -- "control did NOT fail" --> UNV["report UNVERIFIED —<br/>never 'the data is fine'"]</pre>
+<p>Read it as two directions that never run at the same time. On the way up, if the
+working file of key material is absent, it is restored from the sealed copy
+before anything tries to use it. If the file is already there, the restore
+refuses outright — it will never overwrite a live file with a copy. That is a
+one-way valve, and it is the difference between a safety net and a second thing
+that can destroy your keys. On the way down, once a start has actually succeeded,
+the file is <strong>mirrored</strong>: copied into the database, sealed, read back, and
+checked.</p>
+<p>This runs for everybody. It is not behind a setting or a switch, and its failure
+path is asymmetric on purpose: if the mirror fails, the message is logged and the
+start continues, because in this phase the file on disk is still a complete store
+and a copying problem must not take down a working machine. Logged, never
+swallowed.</p>
+<p>The copy is sealed twice, and the reason is worth a sentence. The inner layer is
+the <em>unchanged</em> envelope the key-holding process writes for itself — same
+encryption, same binding, same code — so every guarantee that already applied to
+the file applies unmodified to the copy. The outer layer is the vault's own seal,
+which is what makes this a vault object rather than a blob parked in a table.
+Nothing about the existing format was touched, which is precisely why this could
+be done without changing the native code that owns those bytes.</p>
+<h3 id="the-three-rules-it-is-built-under"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-three-rules-it-is-built-under"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The three rules it is built under</h3>
+<p><strong>Never destroy the original before an independent read of the new home says the
+new home is good.</strong> Retiring the file is a separate, later step, gated on a
+stored receipt of that verification and on a release window. Shipping the writer
+and the deletion together is exactly the mistake that has already been made once
+nearby.</p>
+<p><strong>Compare fields, never bytes and never size.</strong> This one is specific and it is
+earned. A size comparison would have passed a corruption this project actually
+recorded in its own root-cause notes, where a file went from 9,781 bytes to 9,781
+bytes with entirely different contents — same length, hollowed out. And a byte
+comparison fails on perfectly healthy data the moment the file is re-sealed,
+because the encryption mixes in a fresh random value each time, so identical
+contents produce different bytes. So the check decrypts both copies and compares
+the actual contents, slot by slot.</p>
+<p><strong>Never regenerate.</strong> There is no code path in this module that can create key
+material. Some of it is one-time random state that cannot be derived from your
+recovery words; other parts can be. A "recovery" that quietly regenerated the
+derivable half would come back looking completely healthy while having destroyed
+every key that had been authorised against the recorded history. So the module
+only ever moves bytes that already exist.</p>
+<h3 id="the-check-that-checks-the-checker"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-check-that-checks-the-checker"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The check that checks the checker</h3>
+<p>The verification step has a property that is easy to miss and is the best idea in
+the design.</p>
+<p>An empty list of differences between two copies is a good result. But an empty
+list of differences from a comparison tool that has stopped working is
+<em>byte-for-byte the same output.</em> Both say "nothing differs". One means the data
+is safe and the other means you have measured nothing at all.</p>
+<p>So the same call also compares a deliberately corrupted copy — a <strong>positive
+control</strong>, a case the instrument is required to catch — and demands that
+comparison fail. If the corruption does not produce an error, the whole
+verification returns a negative verdict no matter what the real comparison said,
+carrying the reason: the comparator is not discriminating, so an empty difference
+proves nothing.</p>
+<p>That is the general form of an idea worth stealing: <em>"there is no measurement"
+must never be reported as "the data is fine."</em></p>
+<h2 id="what-was-wrong"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-was-wrong"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What was wrong</h2>
+<p>Before this, one piece of that key material was not in the database at all.</p>
+<p>It lived in a file sitting <em>beside</em> the database — a file a backup could easily
+miss, that a copy between machines could easily leave behind, and that nothing in
+the database knew about. Have the database and the words and the password, lose
+that one file, and you had lost the ability to sign.</p>
+<p>The failure looked like nothing at all. A machine was restarted — an ordinary
+restart, no incident. It came back up. It answered. It reported itself healthy.
+And every attempt to write anything into its own history failed, with an error
+saying there was no key available for the job. The key had been living only in
+the memory of the program that had just been stopped, and the boot-time replay
+meant to reconstitute it scanned for a kind of record that did not exist in that
+database, found zero, installed zero, and reported that as a normal boot.</p>
+<p>The sentence in the record that makes this worth writing about is the last one:
+<strong>any restart reproduces this.</strong> Nobody did anything wrong. Somebody merely
+happened to be the one who restarted.</p>
+<h2 id="how-it-was-fixed-and-what-is-still-not-fixed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-it-was-fixed-and-what-is-still-not-fixed"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How it was fixed, and what is still not fixed</h2>
+<p>The fix is the mirror-and-restore flow described above: the sealed copy inside
+the database, written after a successful start, read back out only when the file
+is gone. The file still exists, is still written, and is still the authority.
+That is not an oversight — it is the first of the three rules, and it is the one
+most likely to be discarded by someone tidying up later.</p>
+<p>Four things are not finished, and none of them are comfortable.</p>
+<p><strong>This is a first phase, not a finished migration.</strong> The file remains the
+authority and remains on disk. The promise about the database being sufficient
+holds from the point a mirror has successfully run, not retroactively.</p>
+<p><strong>The comparison does not cover everything the design asks for.</strong> It checks that
+both copies decrypt and that their content slots match. It does not yet expose
+the identifiers of the one-time keys or the group's public key. For this phase
+that gap closes by construction, because the bytes are copied verbatim and are
+identical by definition. It does <em>not</em> close for the later path where the
+contents are re-sealed rather than copied, and the module's own comment says the
+retirement step must not be unlocked on this verifier alone.</p>
+<p><strong>It landed without a test run, on purpose, and that is stated in the record
+rather than discovered afterwards.</strong> 134 files. Around eighteen thousand added
+lines. No verdict from the automated checks — because the thing that writes those
+verdicts is the same system that could not write anything until this change
+landed. The circularity is the whole reason for the direct merge. What <em>was</em>
+confirmed first is that the new native code compiles on the build machine. That
+is a compile, not a proof, and calling it anything more would be the exact
+species of overclaim this project keeps a written rule against.</p>
+<p><strong>And this is not a celebrated piece of work.</strong> There is no sign-off, no closing
+gate, no completed lifecycle in our own tracker — the item's folder does not even
+carry the file that would hold a status. It is code on the main line that we
+read, and that is all we are claiming for it.</p>
+<p>Which is, in the end, the same discipline as the positive control. There is a
+verdict, there is no verdict, and there is a verdict-shaped thing produced by a
+process that never ran. The last one looks the most like success.</p>
+<p>Related: <a href="2026-08-25-refusing-to-overwrite-what-you-cannot-open.html" rel="noopener noreferrer">refusing to overwrite what you cannot open</a>,
+<a href="2026-04-16-no-single-key-threshold-signing-with-frost.html" rel="noopener noreferrer">no single key — threshold signing</a>,
+and <a href="2026-08-21-the-door-you-hope-never-to-use.html" rel="noopener noreferrer">the door you hope never to use</a>.</p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'neutral',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 242 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>
