@@ -1,0 +1,215 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Proof your message arrived, at network speed — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">49</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">87</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">49</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">111</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">19</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">17</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">20</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Proof your message arrived, at network speed</h1><p class="subtitle">The receipt a device sends back answers one narrow question — the message reached the far side — and it is sent before the work, not after</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>July 8, 2026</span><span>·</span><span>11 min read</span><span>·</span><span>messaging</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> When your device needs proof that another person's device received something, it waits for a short receipt before deciding the message was lost. That receipt answers at network speed rather than at the speed of the work — and the cost, stated plainly, is that it tells you nothing about whether that work succeeded.</div><div class="markdown-body"><h2 id="what-the-receipt-is-for"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-the-receipt-is-for"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What the receipt is for</h2>
+<p>In NAOMS nothing in the middle tells a sender its message arrived. Two devices
+talk over a connection between the two of them; a relay can help them find a
+path to each other when a direct one is not available, but on the live path
+nothing in between holds the message for later delivery or vouches for it. The
+evidence has to come from the recipient or it does not exist.</p>
+<p>Most messages do without that evidence, and that is a deliberate choice: they
+are sent, and the sending side moves on. One exchange asks for more. When two
+devices meet for the first time and establish who each other is, the reply that
+carries the introduction back is sent on a path that waits for proof of arrival.
+It holds the connection open and waits for a short reply — an
+<strong>acknowledgement</strong>, or receipt: a few bytes carrying back the identifier the
+sender attached to its own message, so it knows which of its outstanding waits
+to close. The time between sending and getting that receipt is the <strong>round
+trip</strong>, and it is the sender's evidence that anything landed.</p>
+<p>Two boundaries on that. The message that <em>opens</em> an introduction does not use
+this path at all: it is sent without a receipt, and reports its delivery through
+a separate signal. And on our mobile runtime, where reading a reply back off the
+connection is not available at all, the same waiting send degrades to reporting
+success once the bytes are away.</p>
+<p>The waiting is bounded, because a device that waits forever is a device that has
+hung. <strong>The hold is ten seconds for the introduction-class messages this piece
+is about</strong>; five for everything else, though nothing else asks for one today. If
+the window closes with nothing in it, the sender treats the message as lost and
+tries again: <strong>up to three attempts, waiting nothing, then about two seconds,
+then about five</strong>, with up to a fifth of a second of randomness added on top so
+that two devices which fall out of step do not settle into retrying in lockstep
+forever.</p>
+<p>A retry is a fresh copy of a message that may well have arrived, so the
+receiving side keeps a small table of what it has already seen, keyed by who
+sent it, which message it was, and <strong>which attempt it is</strong>. That last part of
+the key decides exactly what the table protects against: a copy of the <em>same</em>
+attempt arriving twice is answered but not acted on twice. A genuine re-send is
+a <em>new</em> attempt, carries a new number, and is therefore not a repeat at all — it
+is handled again. The table holds the most recent thousand-odd entries and
+forgets past that. On the sending side there is a matching bound: at most 256
+outstanding waits at a time, and when that is full a new send is refused with a
+named error rather than quietly evicting somebody else's pending wait. A refusal
+the caller can see is worth more than a stranding it cannot.</p>
+<p>None of that is unusual. The interesting design question is narrower, and it is
+the whole subject of this piece:</p>
+<blockquote>
+<p><strong>What question does the receipt answer?</strong></p>
+</blockquote>
+<p>There are two honest candidates. The receipt can mean <em>your message arrived here
+and passed the checks made before anything acts on it</em>. Or it can mean <em>your
+message arrived and everything it caused has finished</em>. Both are defensible.
+They are not the same promise, and a system has to pick one on purpose, because
+the sender's retry behaviour is built on whichever one it gets.</p>
+<p><strong>Ours means the first</strong>, deliberately. It is a statement about the transport —
+the layer that moves bytes between two machines — and its answer is available
+almost immediately, because the gate it stands behind is cheap. For an ordinary
+encrypted message that gate is authentication: it has to be cryptographically
+bound to the identity it claims to come from, and if it is not, it is dropped
+there and gets no receipt. The sender sees a closed window and retries, which is
+the correct outcome for a message that should never have been accepted.</p>
+<p>The messages that establish trust in the first place — including the
+introduction reply this piece is about — are exempt from that gate, by
+necessity: the binding it tests for is the very thing they exist to create, so
+it cannot be a precondition for accepting them. For those messages the receipt
+means the bytes arrived and parsed, and no more than that. The sender-identity
+and trust-record checks are not deferred for them, they are skipped — that is
+what exempt means. What is left at that layer is a rate limit shared by everyone
+sending that kind of message, not attributed to the identity the message
+claims, because that claim is precisely what has not been established
+yet. The checking these messages need is the handler's own, and it happens after
+the receipt has gone: it looks for a pending introduction of our own with
+that sender, and when the reply carries a signed identity document it verifies
+that signature and checks the document echoes the one-time number we sent with
+the invitation. That is the trade the exemption forces — the
+gate cannot run before the message, so it runs inside the handler instead. The
+<a href="2026-05-09-five-checks-before-a-gossiped-message-is-believed.html" rel="noopener noreferrer">checks a message passes before it is believed</a>
+are the same idea one layer up.</p>
+<p>The second candidate is a statement about the application: it would wait for the
+<strong>handler</strong> — the code that actually does what the message asked for — to
+finish. Its answer is available only when that work is done, and how long that
+takes depends entirely on what was asked. Choosing the first meaning is what
+keeps the receipt's latency bounded by the network rather than by the slowest
+thing the receiver might have to do. The rest of this is about what that choice
+costs.</p>
+<pre class="mermaid">sequenceDiagram
+  participant S as Sender's device
+  participant R as Recipient's device
+  S->>R: message (carries an id to answer, and which attempt this is)
+  R->>R: parse; run the transport's own pre-handler gate
+  Note over R: an ordinary message that fails the gate is dropped here,<br/>with no receipt — introduction messages are exempt by design
+  R->>R: record it in the already-seen table
+  R-->>S: receipt — it got this far
+  Note over S: sender stops waiting, stops retrying
+  R->>R: run the handler: append to the log,<br/>rebuild the local index, tell the neighbours
+  Note over R: a failure here is logged on the receiving side,<br/>not carried in the receipt the sender already has</pre>
+<h2 id="what-was-wrong"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-was-wrong"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What was wrong</h2>
+<p>The receipt used to be written after the handler had finished — the second
+meaning, inherited from the obvious implementation order rather than chosen.</p>
+<p>For most messages that would be invisible, because most handlers are quick. For
+an introduction between two devices it is not. Accepting one means appending
+entries to the signed log that is the real record of what happened, rebuilding
+the local index that the interface reads from — the
+<a href="2026-03-22-write-to-the-log-read-from-the-projection.html" rel="noopener noreferrer">write-to-the-log, read-from-the-projection</a>
+split — and then telling the neighbouring devices about it. That is real work,
+and it does not reliably fit inside a ten-second window on a first contact.</p>
+<p>When it did not fit, the sender saw a closed window with nothing in it. From the
+outside that is indistinguishable from a message that never arrived, so the
+sender did the correct thing for the wrong situation: it sent the message again.</p>
+<p>There is a second half to this, and it is the more interesting one. Because each
+retry carries its own attempt number, the receiving side did not recognise it as
+a copy of something it was already acting on. It was a new key, so it was new
+work: the introduction handler started again while the first one was still
+running. The retries did not merely cost time. They multiplied the work on a
+receiver that was, by construction, already too busy to answer in time. That is
+the shape of a metastable failure — a system whose response to being overloaded
+is to generate more load — and what keeps it from running away here is the retry
+ceiling: the sender gives up after three attempts, so the retries stop rather
+than compounding. The ordering test's own failure message and the code comment
+beside the fix both attribute a cross-host arrival of roughly six minutes to
+this coupling, tracing it to a diagnosis made in May; we did not re-measure that
+figure and we are not asserting it here.</p>
+<p>What we did measure is the mechanism. With a stand-in handler that deliberately
+sleeps for twenty seconds in place of the introduction response, on the old
+ordering the sender got no receipt at all, timing out twice — at around ten
+seconds each on one machine, and again at around ten seconds each between two
+machines over a private network. One message type, one instrumented handler, two
+venues, a single run per cell: enough to characterise the coupling, not a claim
+about how long anything takes on an ordinary day.</p>
+<p>The general shape is worth carrying away even if you never write a peer-to-peer
+transport. <strong>A receipt whose latency is tied to the work converts slowness into
+apparent loss</strong> — and the standard remedy for loss is retry, which adds load to
+a system that was already slow. That failure mode compounds rather than
+degrading gracefully, it is invisible in any test where the handler is fast, and
+a duplicate-suppression table will not save you from it unless the thing it
+suppresses is the thing your sender actually sends.</p>
+<h2 id="what-changed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-changed"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What changed</h2>
+<p>The repair is an ordering, not an algorithm. Inside the step that receives a
+message, the receipt is now sent immediately after the already-seen key is
+recorded and before the handler runs. Recording first is what keeps the
+duplicate-copy contract intact: a second copy of one attempt is still answered,
+and still not acted on twice.</p>
+<p>On the same instrumented setup, after the change the sender was acknowledged on
+its first attempt — 60 ms on one machine, 281 ms between two machines over the
+private network. On the same-host leg, where both timestamps come off one clock,
+the slow handler's completion was observed strictly after the sender already had
+its receipt. That last detail is the one that matters. Two fast numbers would
+only show that nothing was slow that day; the ordering of those two events is
+what shows the receipt is no longer waiting on the work.</p>
+<p>There was a second place a receipt could be written, and it is now gone. When a
+message arrives from someone whose introduction is still in flight — the record
+establishing who they are has not landed yet — the receiver holds it in a small
+queue and retries the handler rather than rejecting it. That queue used to send
+its own late receipt or refusal when it finally succeeded or gave up. After the
+change that reply is a dead send: the sender's wait was resolved at arrival time
+and nothing is listening. So it was removed, along with the helper that wrote
+it, on the reasoning that a dormant function for the old behaviour is an
+invitation to quietly rebuild it.</p>
+<h2 id="what-it-costs"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-it-costs"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What it costs</h2>
+<p>Removing that second reply takes something away. When that queue gives up
+because the introduction was abandoned or the message sat past its ceiling, the
+sender is not told on the wire. That give-up is counted, and an audit event is
+emitted through the same <em>unreachable</em> path used when
+<a href="2026-06-30-no-message-lands-until-its-history-does.html" rel="noopener noreferrer">a record cannot be applied because its history is missing</a>.
+Honest limit: that emission is best-effort — it is fired without being awaited,
+and a failure to write it is logged as a warning rather than retried.</p>
+<p>That is the shape of the whole trade. <strong>The receipt is now a narrower promise,
+and the sender has to get the rest of its answer somewhere else.</strong> It says the
+message reached the far side and was recorded. It says nothing about whether the
+handler succeeded. For ordinary traffic it says nothing about the authorization
+checks either — those run inside the dispatch step, after the receipt has gone
+out. For the introduction messages it actually carries today, the
+sender-identity and trust-record checks were never going to run at all. If the
+handler throws, the receiving side logs it, and the consequence reaches the
+sender through whatever the far side does next rather than through the receipt
+it already holds. Code that needs to know a thing was <em>done</em> has to look for the
+consequence rather than the acknowledgement. And a closed window has several
+causes — among them a message that never arrived, one refused before anything
+acted on it, and a receipt that failed on its way back — which the sender cannot
+tell apart. After the third attempt it stops asking, records the timeout on its
+own side, and moves on.</p>
+<p><strong>The success flag the reply still carries is now always true.</strong> It no longer
+distinguishes anything — it is true whenever a receipt is sent at all — so it
+carries exactly what the receipt carries: arrival, and nothing about the work.</p>
+<p>And a smaller one, which closes the loop with the first half of this piece: a
+receipt that fails to send is logged on the receiving side, but from the
+sender's seat it is indistinguishable from silence. So the sender retries — and
+that retry is new work, for the same reason every other retry is.</p>
+<p>Two guards hold the ordering in place. The first reads the production file as
+text and fails if the receipt call ever moves after the handler call, if the
+already-seen record moves after the receipt, or if a call to the removed helper
+reappears by name in the deferred queue. It is cheap and runs anywhere, but it
+checks the order of statements in a source file, not behaviour — and it pins one
+name. The second is the behavioural one — two real processes, a real connection,
+that slow stand-in handler — and it fails if the receipt starts waiting on the
+work again, because the sender would need a second attempt. Its cross-machine
+legs are run by hand.</p>
+<p>If there is one line to take from this: <strong>decide what your receipt is promising,
+write it down next to the code that sends it, and make sure the promise is one
+you can keep in a bounded time.</strong> An acknowledgement that quietly means "and
+everything worked" is a promise whose delivery time is whatever your slowest
+handler is having, and every layer above it will read that delay as loss.</p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'neutral',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 235 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>

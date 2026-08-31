@@ -1,0 +1,225 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<title>Declare what a record's origin stamp reveals — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:#b5651d"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:#2f7d49"></span>Product<span class="n">49</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:#2c4f86"></span>Technology<span class="n">87</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:#6a4caa"></span>Process<span class="n">49</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">111</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">14</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">19</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">17</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">20</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 12</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Declare what a record's origin stamp reveals</h1><p class="subtitle">A feature declares what the origin stamp on its rows may say — and when a row kind declares nothing, a known-dangerous marker makes the filing engine withhold the signer anyway</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>June 19, 2026</span><span>·</span><span>12 min read</span><span>·</span><span>identity</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> You can now declare what a record's origin stamp may reveal, instead of hoping the code that writes it remembers. Declare a record kind private and the engine that files it writes no signer onto it; declare nothing, and the same engine still withholds the signer from a record carrying one of three known-dangerous markers.</div><div class="markdown-body"><h2 id="the-stamp-that-says-where-a-row-came-from"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-stamp-that-says-where-a-row-came-from"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The stamp that says where a row came from</h2>
+<p>When this system files a record, it writes down a few facts the record never
+said about itself: which log it came from, which entry it was, and who signed
+that entry. Call that third one the <strong>origin stamp</strong>.</p>
+<p>It is not decoration, and it is not private. Downstream code reads the origin
+stamp to decide whether a caller may read a row that arrived from someone else,
+whether a peer sending an update is the one who owns it, and what goes into a
+data export — and anyone holding a copy of that database, or of an export file
+taken from it, reads it too. That is the audience to keep in mind for
+everything below: not a network attacker, but whoever can see a row. For the
+several hundred kinds of row the system already had, the signer of an entry
+genuinely is the row's owner, and stamping it is the right answer.</p>
+<p>There is a category of row where it is the wrong answer, and the reason is
+structural rather than accidental.</p>
+<p>(The filing engine sits between an append-only log of signed entries and an
+ordinary local database rebuilt from it — we have
+<a href="2026-03-22-write-to-the-log-read-from-the-projection.html" rel="noopener noreferrer">written about that split before</a>,
+and about how
+<a href="2026-04-03-records-that-describe-themselves.html" rel="noopener noreferrer">the engine files a kind of record nobody taught it</a>.)</p>
+<h2 id="where-the-signer-is-the-wrong-answer"><a class="anchor" aria-hidden="true" tabindex="-1" href="#where-the-signer-is-the-wrong-answer"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Where the signer is the wrong answer</h2>
+<p>A being in NAOMS — a person or an agent with an identity of its own — has a
+<strong>decentralised identifier</strong>, a name that
+<a href="2026-03-24-an-identity-that-resolves-to-nobodys-server.html" rel="noopener noreferrer">resolves without any company's server standing behind it</a>,
+because the name is derived from a key its holder controls. Call the primary
+one the <em>master identifier</em>. It is the thing that, once someone has it, joins
+everything you do under one heading.</p>
+<p>Which is why a system that expects you to appear in several contexts needs
+<strong>pseudonyms</strong>: additional identifiers, each derived for one particular context —
+a shared group you belong to, say — that other people in that context can
+address you by. You in one shared group, you in another, so that joining the
+two up is work an outsider has to do rather than a lookup the system hands
+them.</p>
+<p>For a pseudonym to be usable locally you must be able to find your own again,
+so the system keeps a small mapping record pairing the pseudonym, in the clear,
+with a hashed form of the master identifier that the owner's own device can
+recompute and match. That record is the whole point of the exercise.</p>
+<p>And it is written to your own log, and creating it takes the master
+identifier's authority — so the entry that creates it is signed by the master
+identifier. A general rule that stamps the signer onto every row rebuilt from
+the log would therefore file that record with your master identifier written
+out in plain text, one column away from the pseudonym it exists to keep apart
+from you — no guessing required. The reason has nothing to do with the feature
+and everything to do with the generality of the engine.</p>
+<p>A general engine cannot infer this. It does not know what a pseudonym is, and
+it should not have to. The information has to come from somewhere else.</p>
+<h2 id="declare-it-do-not-remember-it"><a class="anchor" aria-hidden="true" tabindex="-1" href="#declare-it-do-not-remember-it"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Declare it, do not remember it</h2>
+<p>A feature in NAOMS ships a small declaration of what it is: the kinds of entry
+it emits, the kinds of row those project to, which of them are spoken for by a
+specific handler. As of this week that declaration carries one more field — the
+row kind's <strong>provenance class</strong>, provenance being where a row came from, one of
+three values:</p>
+<ul>
+<li><strong>public</strong> — stamp the signer. That is also what an undeclared kind gets,
+unless it trips the default's tripwire described in the next section;
+declaring it is still not the same as leaving it off, because an explicit
+declaration is taken at its word and skips that tripwire entirely.</li>
+<li><strong>private</strong> — write no origin stamp at all. The field is removed rather than
+set to an empty value, so a reader sees an absent field instead of a blank one
+it has to interpret. Removing it takes an answer away rather than granting
+one: an absent stamp is nothing for a check to match against.</li>
+<li><strong>pseudonymous</strong> — stamp a derived, per-context identifier instead of the
+signer. This one has a condition attached, and it gets its own section below.</li>
+</ul>
+<p>The class is decided in one place — a single function the engine calls as it
+writes the stamp — rather than a special case per row kind scattered through
+the filing code. Deciding it in one place is the whole design: a privacy rule
+that lives in one place can be read in one place, and a rule you have to
+remember is a rule that eventually is not remembered. The declarations
+themselves are collected as features load at startup.</p>
+<pre class="mermaid">flowchart TD
+  A["A row is about to be filed"] --> B{"Did the feature declare a<br/>provenance class for this row kind?"}
+  B -- "public" --> C["Stamp the signer's identifier"]
+  B -- "private" --> D["Write no origin stamp at all"]
+  B -- "pseudonymous" --> E{"Is this the being's own<br/>local identity log?"}
+  E -- "yes" --> F["Stamp a derived, per-context identifier"]
+  E -- "no — a shared log" --> G["Refuse, loudly.<br/>A derived value here is checkable<br/>by anyone who can guess the input."]
+  B -- "nothing declared" --> H{"Do this row's fields include a hashed<br/>master identifier, the identifier of<br/>whoever holds what the row is about,<br/>or a signing-key id marked as<br/>the master's main key?"}
+  H -- "yes" --> D
+  H -- "no" --> C</pre>
+<p>Two details in how this is wired are worth borrowing. The first is what happens
+when two features disagree about the same row kind: the first declaration
+recorded stands, with one exception in the safe direction — a declaration that
+restricts the stamp displaces an earlier one that did not.</p>
+<p>The second is that the stamp is resolved a second time, after the engine merges
+a new write into a row that already exists, because that merge re-overlays the
+row's existing properties and could otherwise carry an older stamp back in. A
+rule applied only on first write is not a rule about the row; it is a rule
+about the first write. That is also what it means for the database to be a
+projection rather than the record itself: a row can be filed again under the
+current rule rather than frozen with the answer it got the first time.</p>
+<p>All of this is a rule about the rebuilt database, not about the log it is
+rebuilt from: the entry is still signed, and the signature still names the
+signer, to whoever holds a copy of that log.</p>
+<h2 id="the-default-is-the-part-that-ships"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-default-is-the-part-that-ships"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The default is the part that ships</h2>
+<p>A declaration only helps the kinds that carry one, and the kind of a row is
+derived from the entry's own payload — so it can be new, or misspelled, or
+written by a feature that never thought about any of this. What happens then is
+the part of this design that actually runs most of the time, and it is worth
+stating precisely rather than generously.</p>
+<p>An undeclared row kind keeps today's behaviour and gets the signer stamped —
+<strong>unless</strong> the row's own fields carry one of three markers: a hashed master
+identifier (the same field the mapping record carries), the identifier of
+whoever holds the thing the row is about (holding something is itself a
+linkable fact), or a signing key id marked as the master's own key. Any of
+those, with nothing declared, and the engine withholds the signer. That is the
+<em>fail-closed</em> part: on those three shapes it withholds rather than reveals.</p>
+<p>And it is worth being exact about how narrow that is. It is a fixed list of two
+field names plus one suffix test — not an analysis of whether a row is
+sensitive. A new kind of record that is genuinely private but whose fields
+happen not to look like any of those three will be stamped with the signer,
+because nothing told the engine otherwise. The protection you get by default is
+a tripwire on the shapes that were known to be dangerous. The protection you
+get by declaring is the real one.</p>
+<p>There is a matching check in the build. A feature's declaration file that names
+one of the known sensitive row kinds and marks it public — or leaves the class
+off — fails the build rather than shipping. The check knows those kinds by
+name, from a list maintained by hand, and its own documentation explains why it
+cannot do better: a declaration names a row kind, not the row's fields, so a
+static check has no way to infer sensitivity. It is a backstop against
+explicitly writing down the wrong answer, not a detector of privacy problems.</p>
+<p>And the honest scale, today: exactly one row kind in the whole system declares
+a provenance class, the pseudonym mapping record, and it declares itself
+private. The vocabulary now exists for any feature that needs it, and one
+feature needs it so far.</p>
+<h2 id="why-the-pseudonymous-class-refuses-on-a-shared-log"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-the-pseudonymous-class-refuses-on-a-shared-log"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why the pseudonymous class refuses on a shared log</h2>
+<p>The third class is the interesting one, because it ships with a refusal
+attached. Nothing declares it yet, so what follows is a rule waiting for its
+first user rather than a description of something firing today.</p>
+<p>The per-context identifier is computed by hashing the master identifier
+together with the identifiers of the context. The hash is BLAKE3, and it is
+unkeyed: a general-purpose hash built for speed, with no secret in the
+computation — and speed is exactly what makes grading a long list of guesses
+cheap.</p>
+<p>Which means the derived identifier is only as unguessable as its inputs. Give
+an outsider the context identifier, which on a shared log they have by
+definition, and the derived value, which is now sitting in a row, and they can
+test a candidate master identifier by recomputing the hash and comparing. That
+is a
+<strong>confirmation oracle</strong>: it does not hand out the answer, it grades guesses. And
+identifiers are a bad thing to hope are unguessable, since a plausible
+candidate list is often short and often public.</p>
+<p>So the class refuses. The test is deliberately crude: the being's own local
+identity log counts as safe, and everything else — a shared group's log, a
+channel's, anything with more than one writer — counts as shared. Asked to
+stamp a pseudonymous value into the origin stamp on a shared log, the engine
+throws an error naming the reason rather than writing the value. The hash is no
+harder to grade on a local log — none of the arithmetic changes. What changes
+is who can read the value: a shared log puts it in front of exactly the people
+it would identify you to. Local does not mean unreadable — the readers are
+whoever can read your own database: your own devices, and whatever runs with
+access to it.</p>
+<p>This is the shape of a claim worth making. Not <em>this identifier cannot be
+linked</em> — it can, by anyone willing to guess and check. The claim is about
+where the value is allowed to exist, and about the cost of the attack in the
+place it is allowed to exist. A hash is not a secret when the thing hashed is
+guessable, and pretending otherwise is how a system ends up with a privacy
+feature that grades an attacker's homework. Making the failure loud is the
+other half: throwing an error means a future feature that reaches for the class
+in the wrong place finds out immediately, rather than shipping a row that
+quietly answers questions.</p>
+<h2 id="the-same-question-at-the-side-doors"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-same-question-at-the-side-doors"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The same question at the side doors</h2>
+<p>The engine's stamp is a chokepoint — one place where the decision gets made for
+the rows that go through it, instead of one per caller. A chokepoint only
+decides what passes through it, and in a real system of any age not every write
+does. Three of the places that write that same origin stamp outside the filing
+engine now consult the same decision: a discovery query that inserts rows
+directly, the receiver that lands rows arriving from another device, and the
+exporter that builds a data-export bundle.</p>
+<p>The rule those three share is deliberately weaker than the engine's, and for a
+good reason: none of them has the log context needed to derive a per-context
+identifier, so their only honest options are to write the signer or to write
+nothing. They ask one question — would the chokepoint refuse to expose the
+signer for this row kind? — and if the answer is yes, they write nothing.</p>
+<p>The receiver is the one to look at twice, because its input is not ours. A row
+arriving from another device carries an origin stamp that peer chose. If the
+row is of a privacy-class kind, that value is dropped and the drop is logged,
+rather than being inserted because a peer said so. Its own comment is candid
+that no privacy-class kind is currently in the set of rows it accepts from a
+peer at all — so today that guard is a precaution for the moment one is added,
+rather than something firing in the field.</p>
+<p>The export bundle is worth the extra call because a bundle is assembled from
+what the database holds and then handed to the owner, who may send it on. So
+the same question is asked of the row's origin column as the bundle is built,
+at the cost of one function call.</p>
+<h2 id="what-this-is-and-is-not"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-this-is-and-is-not"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What this is and is not</h2>
+<p>What landed is a vocabulary and a place to enforce it: a row kind can now say
+what its origin stamp is allowed to reveal, the answer is resolved where the
+stamp is written, the three direct write paths that were updated ask the same
+question, and a kind that declared nothing while carrying a known-dangerous
+field is treated as private rather than assumed to be public.</p>
+<p>What did not land is the ability to reason about a row's privacy without being
+told. The default is a tripwire on three known shapes; the build check knows a
+hand-written list of names; the class is per row kind rather than per field, so
+a kind that wants half its columns attributed and half not is not something
+this expresses. Those are the boundaries of a declaration-based design, and
+they are the price of the thing that makes it worth having: the rule is written
+down where a person can read it, in the feature that owns the data, instead of
+living in the memory of whoever last touched the filing code.</p>
+<p>That is the same move as
+<a href="2026-04-03-records-that-describe-themselves.html" rel="noopener noreferrer">making a record describe its own shape</a>
+rather than teaching the database about it, applied to a harder question than
+shape. What a record <em>is</em> can be read off the record. What a record is allowed
+to <em>say about you</em> cannot — someone has to decide, and the only useful place to
+put that decision is next to the data, in public, where the next person will
+find it. <a href="2026-06-14-forgetting-is-a-human-right.html" rel="noopener noreferrer">Forgetting</a> asks the same
+thing of a system: a link you can drop is a link something declared, in the
+open, before it was ever written.</p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'neutral',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 235 posts (2026-03-16 → 2026-06-12) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+</body></html>
