@@ -1,5 +1,5 @@
 
-:root{--ink:#1a1a1a;--muted:#6b6b6b;--line:#e7e7e4;--bg:#fbfbf9;--card:#fff;--accent:#3a5a8c}
+:root{--ink:#1a1a1a;--muted:#6b6b6b;--line:#e7e7e4;--bg:#fbfbf9;--card:#fff;--dcimgbg:#f2f3f5;--accent:#3a5a8c}
 *{box-sizing:border-box}
 body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
@@ -82,6 +82,20 @@ footer.site{border-top:1px solid var(--line);color:var(--muted);font-size:13px;t
 .cl-new{background:#e7f6ee;color:#1f7a4d}.cl-improved{background:#e8f0fb;color:#2c4f86}.cl-fixed{background:#fbf0e6;color:#9a5a18}
 .str-vision{background:#fbf2e9;color:#b5651d}.str-product{background:#eaf6ee;color:#2f7d49}.str-technology{background:#eaf0fb;color:#2c4f86}.str-process{background:#f1ecfb;color:#6a4caa}
 .sdot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;vertical-align:middle}
+/* ── Dispatch cards: the home page. Photo on top, lede below. ──────────── */
+.dcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;margin:24px 0 8px}
+.dcard{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card);color:inherit}
+.dcard:hover{text-decoration:none;box-shadow:0 6px 22px rgba(0,0,0,.10);transform:translateY(-2px)}
+.dcard .dcimg{aspect-ratio:12/5;overflow:hidden;background:var(--dcimgbg);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center}
+.dcard .dcimg img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
+/* A chart is information, not a photo: show it whole rather than cropping it. */
+.dcard .dcimg img[src$="-commits.svg"]{object-fit:contain;padding:6px 8px;background:var(--dcimgbg)}
+.dcard .dcnoimg{aspect-ratio:12/5}
+.dcard .dcbody{padding:16px 18px 20px}
+.dcard .dcdate{color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-variant-numeric:tabular-nums}
+.dcard h3{margin:.3em 0 .4em;font-size:20px;line-height:1.25;text-wrap:balance}
+.dcard p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.55}
+@media(prefers-reduced-motion:reduce){.dcard:hover{transform:none}}
 .doors{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
 @media(max-width:680px){.doors{grid-template-columns:1fr}}
 .door{display:block;border:1px solid var(--line);border-top:5px solid var(--dc);border-radius:12px;padding:20px 22px;background:var(--card)}
