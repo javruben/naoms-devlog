@@ -1,5 +1,27 @@
 
-:root{--ink:#1a1a1a;--muted:#6b6b6b;--line:#e7e7e4;--bg:#fbfbf9;--card:#fff;--dcimgbg:#f2f3f5;--accent:#3a5a8c;--panel:#f6f7f4;--pos:#2f6b45;--neg:#8a5a1c}
+/* ── NAOMS design tokens ────────────────────────────────────────────────
+   Lifted verbatim from the shipping product (src/packages/chat/ui/chat-
+   tab-v2.js on origin/main) — this is the app's own dark system, not a
+   borrowed light theme. Legacy names (--ink/--muted/--line/--bg/--card/
+   --panel/--pos/--neg/--dcimgbg) are aliased onto it below so every
+   existing selector repaints without being individually rewritten. Colour
+   is semantic, not decorative: --ok = landed/good, --err = wrong
+   direction, --accent-warm = needs a human's attention, --ink-3 = quiet /
+   no activity, --accent/--accent-3 = category. ─────────────────────────── */
+:root{
+  --bg-0:#0b0c10;--bg-1:#101319;--bg-2:#1b2230;--bg-3:#26303f;--bg-hov:#161b24;
+  --ink-0:#f5f6f8;--ink-1:#d5dae3;--ink-2:#9aa3b2;--ink-3:#5b6373;
+  --line:#36404f;--line-soft:#262d39;
+  --accent:#7ab8ff;--accent-warm:#ffd166;--accent-3:#b69cff;--accent-ink:#06223f;
+  --ok:#6bd49d;--err:#ff7a7a;
+  --ink:var(--ink-0);--muted:var(--ink-2);--bg:var(--bg-0);--card:var(--bg-1);
+  --dcimgbg:var(--bg-2);--panel:var(--bg-2);--pos:var(--ok);--neg:var(--err);
+}
+/* Section eyebrow + heading — the same pairing used above every named
+   section: a small caps accent label, then a bold heading below it. */
+.eyebrow{color:var(--accent);font-weight:800;letter-spacing:.12em;text-transform:uppercase;font-size:12px}
+.sec-h{font-size:clamp(20px,3vw,28px);font-weight:800;letter-spacing:-.01em;margin:6px 0 6px;color:var(--ink-0)}
+.sec-sub{color:var(--ink-2);max-width:780px;font-size:15px;margin:0 0 4px}
 *{box-sizing:border-box}
 body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
@@ -25,10 +47,12 @@ a.clearf{color:var(--accent);cursor:pointer}
 .chip{display:inline-flex;align-items:center;gap:7px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:4px 6px 4px 12px;font-size:12.5px;color:var(--ink)}
 .chip .ck{font-size:10px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
 .chip .x{cursor:pointer;color:var(--muted);font-weight:700;line-height:1;padding:1px 6px;border-radius:50%}
-.chip .x:hover{color:#fff;background:var(--accent)}
+.chip .x:hover{color:var(--accent-ink);background:var(--accent)}
 .chips .clearall{color:var(--accent);cursor:pointer;font-size:13px}
 .fcard.hidden{display:none}
-.badge.b-tag{background:#fdecec;color:#a33a3a;border:1px solid #f3d2d2}
+/* A tag is a resolved/landed marker (currently just "Bug fixed"), so it takes
+   the good/landed hue rather than the neutral voice-badge treatment. */
+.badge.b-tag{background:rgba(107,212,157,.12);color:var(--ok);border:1px solid rgba(107,212,157,.4)}
 .fnone{color:var(--muted);padding:26px 2px;display:none}
 .weekhead{font-size:13px;color:var(--muted);font-weight:700;margin:20px 0 2px;letter-spacing:.02em}
 @media(max-width:840px){.sidebar{display:none}.layout{display:block}.content{max-width:880px;margin:0 auto}}
@@ -39,53 +63,58 @@ header.site p{margin:4px 0 0;color:var(--muted);font-size:14px}
 nav{margin-top:14px;display:flex;flex-wrap:wrap;gap:9px 18px;font-size:14px;font-weight:600}
 nav a{color:var(--ink)}
 main{padding:30px 0 70px}
-h2.section{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:34px 0 6px;border-bottom:1px solid var(--line);padding-bottom:8px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:14px 0}
+h2.section{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:34px 0 6px;border-bottom:1px solid var(--line);padding-bottom:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:14px 0;box-shadow:0 10px 30px rgba(0,0,0,.18)}
 .card h3{margin:.1em 0 .3em;font-size:20px;line-height:1.25}
-.card .sum{color:#444;font-size:15px;margin:.4em 0 0}
+.card .sum{color:var(--ink-2);font-size:15px;margin:.4em 0 0}
 .meta{font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:10px;align-items:center}
-.badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.02em;padding:2px 8px;border-radius:999px;text-transform:uppercase}
-.b-architect{background:#e8f0fb;color:#2c4f86}.b-confession{background:#fceef0;color:#a23b54}
-.b-journal{background:#fbf2e2;color:#9a6a18}.b-teacher{background:#e8f6ec;color:#2f7d49}
-.b-dispatch{background:#eef1f4;color:#4a5a6a}.b-appreciation{background:#f1ecfb;color:#6a4caa}
-.b-philosopher{background:#f3ebe6;color:#7a4f2e}
-.paid{background:#fff5d6;color:#8a6d12;border:1px solid #ecdca0}.free{background:#eef7ef;color:#3a7d4d}
-.fieldnote{position:relative;margin:30px 0;padding:18px 22px 8px;background:linear-gradient(180deg,#f4f7f6,#eef3f1);border:1px solid #cfe0db;border-left:5px solid #2f7d6b;border-radius:10px;box-shadow:0 2px 12px rgba(47,125,107,.09)}
-.fieldnote .fn-eyebrow{font:700 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.15em;text-transform:uppercase;color:#2f7d6b;margin-bottom:7px}
+/* Voice (architect/confession/journal/…) is a facet, not a status — one
+   neutral outline chip for all seven, so colour stays reserved for things
+   that actually mean something (stream category, landed/quiet/attention). */
+.badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.02em;padding:2px 9px;border-radius:999px;text-transform:uppercase;background:var(--bg-2);color:var(--ink-2);border:1px solid var(--line)}
+.paid{background:rgba(255,209,102,.12);color:var(--accent-warm);border:1px solid rgba(255,209,102,.4)}
+.free{background:rgba(107,212,157,.12);color:var(--ok);border:1px solid rgba(107,212,157,.4)}
+.fieldnote{position:relative;margin:30px 0;padding:18px 22px 8px;background:var(--bg-2);border:1px solid var(--line);border-left:5px solid var(--accent-3);border-radius:10px;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.fieldnote .fn-eyebrow{font:700 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.15em;text-transform:uppercase;color:var(--accent-3);margin-bottom:7px}
 .fieldnote .fn-eyebrow:before{content:"✎ "}
-.fieldnote .fn-title{margin:.1em 0 .55em;font-size:18px;line-height:1.3;color:#234a42}
-.fieldnote .fn-body{font-size:15.5px;color:#33433f}
+.fieldnote .fn-title{margin:.1em 0 .55em;font-size:18px;line-height:1.3;color:var(--ink-0)}
+.fieldnote .fn-body{font-size:15.5px;color:var(--ink-1)}
 .fieldnote .fn-body>:first-child{margin-top:0}.fieldnote .fn-body>:last-child{margin-bottom:0}
 article.post{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:30px 34px;margin-top:18px}
 article.post h1{font-size:30px;line-height:1.2;letter-spacing:-.015em;margin:.2em 0 .3em}
 article.post .meta{margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid var(--line)}
 .markdown-body{font-size:17.5px;line-height:1.72}
 .markdown-body h2{margin-top:1.7em;font-size:22px}.markdown-body h3{margin-top:1.4em;font-size:18px}
-.markdown-body pre{background:#f5f5f2;padding:14px;border-radius:8px;overflow:auto;font-size:14px}
-.markdown-body code{background:#f0f0ec;padding:.1em .35em;border-radius:4px;font-size:.9em}
+.markdown-body pre{background:var(--bg-2);padding:14px;border-radius:8px;overflow:auto;font-size:14px;border:1px solid var(--line)}
+.markdown-body code{background:var(--bg-2);color:var(--ink-1);padding:.1em .35em;border-radius:4px;font-size:.9em}
 .markdown-body pre code{background:none;padding:0}
-.markdown-body blockquote{border-left:3px solid var(--line);margin:1em 0;padding:.2em 1em;color:#555}
+.markdown-body blockquote{border-left:3px solid var(--line);margin:1em 0;padding:.2em 1em;color:var(--ink-2)}
 .markdown-body img{max-width:100%;border-radius:8px;border:1px solid var(--line);margin:.6em 0}
 .markdown-body .figcap{color:var(--muted);font-size:14px;font-style:italic}
-hr.paywall{border:none;border-top:2px dashed #d9c97a;margin:30px 0;position:relative}
-hr.paywall:after{content:"⎯ paid subscribers ⎯";position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--bg);padding:0 10px;font-size:11px;color:#9a7d22;letter-spacing:.06em;text-transform:uppercase}
+/* Needs a human's action (payment) before it continues — the attention hue. */
+hr.paywall{border:none;border-top:2px dashed var(--accent-warm);margin:30px 0;position:relative}
+hr.paywall:after{content:"⎯ paid subscribers ⎯";position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:var(--bg);padding:0 10px;font-size:11px;color:var(--accent-warm);letter-spacing:.06em;text-transform:uppercase}
 .backlink{display:inline-block;margin:26px 0 0;font-size:14px}
 footer.site{border-top:1px solid var(--line);color:var(--muted);font-size:13px;text-align:center;padding:26px}
-.lead{font-size:16px;color:#444;margin:.4em 0 1.4em}
+.lead{font-size:16px;color:var(--ink-2);margin:.4em 0 1.4em}
 .count{color:var(--muted);font-weight:400;font-size:13px}
-.subtitle{font-size:20px;line-height:1.35;color:#555;font-weight:400;margin:-.1em 0 .7em}
-.tldr{background:#f3f7fb;border:1px solid #d4e2f0;border-left:4px solid var(--accent);border-radius:8px;padding:13px 16px;margin:0 0 24px;font-size:16px;line-height:1.55;color:#33414f}
+.subtitle{font-size:20px;line-height:1.35;color:var(--ink-1);font-weight:400;margin:-.1em 0 .7em}
+.tldr{background:var(--bg-2);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:8px;padding:13px 16px;margin:0 0 24px;font-size:16px;line-height:1.55;color:var(--ink-1)}
 .tldr .tldr-k{font:700 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;color:var(--accent);margin-right:8px;text-transform:uppercase}
-.tier-everyone{background:#e7f6ee;color:#1f7a4d}.tier-builders{background:#eceef5;color:#4a5273}
+/* everyone = welcoming/open (ok green); builders = neutral/specialised. */
+.tier-everyone{background:rgba(107,212,157,.12);color:var(--ok);border:1px solid rgba(107,212,157,.4)}
+.tier-builders{background:var(--bg-2);color:var(--ink-2);border:1px solid var(--line)}
 .markdown-body pre.mermaid{background:transparent;border:1px solid var(--line);padding:16px;text-align:center;overflow:auto}
-.cl-new,.cl-improved,.cl-fixed{display:inline-block;font:700 11px/1.4 ui-monospace,Menlo,monospace;letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:5px;margin-right:6px}
-.cl-new{background:#e7f6ee;color:#1f7a4d}.cl-improved{background:#e8f0fb;color:#2c4f86}.cl-fixed{background:#fbf0e6;color:#9a5a18}
-.str-vision{background:#fbf2e9;color:#b5651d}.str-product{background:#eaf6ee;color:#2f7d49}.str-technology{background:#eaf0fb;color:#2c4f86}.str-process{background:#f1ecfb;color:#6a4caa}
+.cl-new,.cl-improved,.cl-fixed{display:inline-block;font:700 11px/1.4 ui-monospace,Menlo,monospace;letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:5px;margin-right:6px;border:1px solid var(--line)}
+.cl-new{background:rgba(182,156,255,.12);color:var(--accent-3)}
+.cl-improved{background:rgba(122,184,255,.12);color:var(--accent)}
+.cl-fixed{background:rgba(107,212,157,.12);color:var(--ok)}
+.str-vision{background:rgba(255,209,102,.12);color:#ffd166}.str-product{background:rgba(107,212,157,.12);color:#6bd49d}.str-technology{background:rgba(122,184,255,.12);color:#7ab8ff}.str-process{background:rgba(182,156,255,.12);color:#b69cff}
 .sdot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:7px;vertical-align:middle}
 /* ── Dispatch cards: the home page. Photo on top, lede below. ──────────── */
 .dcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:20px;margin:24px 0 8px}
 .dcard{display:flex;flex-direction:column;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:var(--card);color:inherit}
-.dcard:hover{text-decoration:none;box-shadow:0 6px 22px rgba(0,0,0,.10);transform:translateY(-2px)}
+.dcard:hover{text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.4);border-color:var(--accent);transform:translateY(-2px)}
 .dcard .dcimg{aspect-ratio:12/5;overflow:hidden;background:var(--dcimgbg);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center}
 .dcard .dcimg img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
 /* A chart is information, not a photo: show it whole rather than cropping it. */
@@ -99,16 +128,19 @@ footer.site{border-top:1px solid var(--line);color:var(--muted);font-size:13px;t
 .doors{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
 @media(max-width:680px){.doors{grid-template-columns:1fr}}
 .door{display:block;border:1px solid var(--line);border-top:5px solid var(--dc);border-radius:12px;padding:20px 22px;background:var(--card)}
-.door:hover{text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.07);transform:translateY(-1px)}
-.door .dn{color:var(--muted);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.door:hover{text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.4);transform:translateY(-1px)}
+.door .dn{color:var(--muted);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.05em;display:flex;gap:8px;align-items:center}
 .door h3{margin:.15em 0 .35em;font-size:23px;color:var(--dc)}
-.door p{margin:0;color:#444;font-size:15px;line-height:1.5}
+.door p{margin:0;color:var(--ink-2);font-size:15px;line-height:1.5}
 .streamhead{border-left:5px solid var(--dc);background:var(--dbg);border-radius:0 10px 10px 0;padding:16px 20px;margin:4px 0 20px}
 .streamhead h2{margin:0;font-size:25px;color:var(--dc)}
-.streamhead p{margin:.4em 0 0;color:#444;font-size:15px}
-.streamhead .streamgoal{font-size:13.5px;color:#666;margin-top:9px}
-.seqchip{display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:#f6f7f4;border:1px solid var(--line);border-radius:8px;padding:9px 13px;margin:0 0 22px;font-size:13.5px;color:#555}
-.seqchip b{color:#333;font-weight:700;text-transform:uppercase;font-size:10.5px;letter-spacing:.05em;margin-right:4px}
+.streamhead p{margin:.4em 0 0;color:var(--ink-1);font-size:15px}
+.streamhead .streamgoal{font-size:13.5px;color:var(--ink-2);margin-top:9px}
+.seqchip{display:flex;gap:10px;align-items:center;flex-wrap:wrap;background:var(--bg-2);border:1px solid var(--line);border-radius:8px;padding:9px 13px;margin:0 0 22px;font-size:13.5px;color:var(--ink-2)}
+.seqchip b{color:var(--ink-0);font-weight:700;text-transform:uppercase;font-size:10.5px;letter-spacing:.05em;margin-right:4px}
+/* Stalled-work marker — a stream with no post in 3+ weeks. Muted, not
+   alarming: quiet is a state, not a failure. */
+.badge.b-quiet{background:rgba(91,99,115,.18);color:var(--ink-3);border:1px solid var(--line)}
 /* ── WEEKLY DISPATCH — report furniture ───────────────────────────────────
    Emitted by dressDispatch(). Every selector here is scoped to markup that
    only a dispatch produces, so an older dispatch that matches no detector
@@ -120,7 +152,7 @@ footer.site{border-top:1px solid var(--line);color:var(--muted);font-size:13px;t
    the h2 keeps its id, so #deep-links still resolve. */
 .markdown-body.dispatch h2 .anchor{display:none}
 .markdown-body.dispatch h2:before{content:"";display:block;width:26px;height:0;border-top:2px solid var(--accent);margin-bottom:13px}
-.markdown-body.dispatch p.dintro{color:#4a4a4a;font-size:16.5px;line-height:1.65}
+.markdown-body.dispatch p.dintro{color:var(--ink-1);font-size:16.5px;line-height:1.65}
 .markdown-body.dispatch p.dsub{margin-top:1.5em}
 .markdown-body.dispatch p.dsub>strong:first-child:before{content:"";display:inline-block;width:13px;height:0;border-top:2px solid var(--accent);vertical-align:.3em;margin-right:9px}
 /* Wide content scrolls inside its own box; the page body never does. */
@@ -169,5 +201,5 @@ footer.site{border-top:1px solid var(--line);color:var(--muted);font-size:13px;t
 .da-c{font-weight:700;font-size:15.5px;color:var(--accent);font-variant-numeric:tabular-nums}
 .da-c.zero{color:var(--muted);font-weight:600}
 .da-s{color:var(--muted);font-weight:600;font-size:12.5px;margin-left:5px}
-.da-d{color:#444;font-size:15.5px;line-height:1.55}
+.da-d{color:var(--ink-1);font-size:15.5px;line-height:1.55}
 @media(max-width:660px){.darea{grid-template-columns:1fr;gap:4px}}
