@@ -137,7 +137,7 @@ h2.section{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacin
 .fieldnote .fn-title{margin:.1em 0 .55em;font-size:18px;line-height:1.3;color:var(--ink-0)}
 .fieldnote .fn-body{font-size:15.5px;color:var(--ink-1)}
 .fieldnote .fn-body>:first-child{margin-top:0}.fieldnote .fn-body>:last-child{margin-bottom:0}
-article.post{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:30px 34px;margin-top:18px}
+article.post{background:transparent;border:0;border-radius:0;padding:0;margin-top:18px}
 article.post h1{font-size:30px;line-height:1.2;letter-spacing:-.015em;margin:.2em 0 .3em}
 article.post .meta{margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid var(--line)}
 .markdown-body{font-size:17.5px;line-height:1.72}
@@ -207,11 +207,9 @@ footer.site{border-top:1px solid var(--line);color:var(--muted);font-size:13px;t
 .markdown-body.dispatch h2{border-top:1px solid var(--line);margin-top:2.2em;padding-top:1.15em;font-size:23px;letter-spacing:-.012em}
 /* The unstyled gfm anchor octicon reads as clutter beside a dressed heading;
    the h2 keeps its id, so #deep-links still resolve. */
-.markdown-body.dispatch h2 .anchor{display:none}
-.markdown-body.dispatch h2:before{content:"";display:block;width:26px;height:0;border-top:2px solid var(--accent);margin-bottom:13px}
+.markdown-body .anchor{display:none}
 .markdown-body.dispatch p.dintro{color:var(--ink-1);font-size:16.5px;line-height:1.65}
 .markdown-body.dispatch p.dsub{margin-top:1.5em}
-.markdown-body.dispatch p.dsub>strong:first-child:before{content:"";display:inline-block;width:13px;height:0;border-top:2px solid var(--accent);vertical-align:.3em;margin-right:9px}
 /* Wide content scrolls inside its own box; the page body never does. */
 .markdown-body.dispatch table{display:block;width:max-content;max-width:100%;overflow-x:auto;border-collapse:collapse;font-size:15px;font-variant-numeric:tabular-nums}
 .markdown-body.dispatch th,.markdown-body.dispatch td{border:1px solid var(--line);padding:7px 11px;text-align:left;vertical-align:top}
