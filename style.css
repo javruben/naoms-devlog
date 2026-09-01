@@ -141,6 +141,23 @@ article.post{background:transparent;border:0;border-radius:0;padding:0;margin-to
 article.post h1{font-size:30px;line-height:1.2;letter-spacing:-.015em;margin:.2em 0 .3em}
 article.post .meta{margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid var(--line)}
 .markdown-body{font-size:17.5px;line-height:1.72}
+/* Four things: a 2x2 board. The week readable without reading. */
+.fourgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:20px 0 6px}
+.fcard{position:relative;background:var(--bg-2);border:1px solid var(--line);border-radius:14px;padding:18px 18px 4px}
+.fcard-n{font:800 11px/1 ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--accent);letter-spacing:.1em;margin-bottom:8px}
+.fcard-t{margin:0 0 6px!important;font-size:16.5px!important;line-height:1.32;letter-spacing:-.01em;color:var(--ink-0)}
+.fcard-b>p{font-size:15px;line-height:1.6;color:var(--ink-1)}
+.fcard-b>p:first-child{margin-top:0}
+/* Every area, as a card with its count. The shape of the week at a glance. */
+.areagrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin:16px 0}
+.acard{background:var(--bg-2);border:1px solid var(--line);border-radius:12px;padding:13px 14px 3px;display:flex;flex-direction:column}
+.acard-h{display:flex;align-items:baseline;justify-content:space-between;gap:10px;margin-bottom:6px;padding-bottom:6px;border-bottom:1px solid var(--line-soft)}
+.acard-name{font-weight:700;font-size:14px;color:var(--ink-0);letter-spacing:-.005em}
+.acard-n{font:800 17px/1 var(--font-body,inherit);color:var(--accent);font-variant-numeric:tabular-nums;flex:0 0 auto}
+.acard-sum{font-size:13.8px;line-height:1.55;color:var(--ink-0);font-weight:600;margin:0 0 8px}
+.acard-d{font-size:13px;line-height:1.6;color:var(--ink-2);margin:0 0 11px}
+.acard-b>p{font-size:13.6px;line-height:1.55;color:var(--ink-2);margin:0 0 10px}
+@media(max-width:720px){.fourgrid{grid-template-columns:1fr}.areagrid{grid-template-columns:1fr}}
 .markdown-body h2{margin-top:1.7em;font-size:22px}.markdown-body h3{margin-top:1.4em;font-size:18px}
 .markdown-body pre{background:var(--bg-2);padding:14px;border-radius:8px;overflow:auto;font-size:14px;border:1px solid var(--line)}
 .markdown-body code{background:var(--bg-2);color:var(--ink-1);padding:.1em .35em;border-radius:4px;font-size:.9em}
@@ -270,7 +287,7 @@ footer.site{border-top:1px solid var(--line);color:var(--muted);font-size:13px;t
    negated) so the hero reads as a coloured ground the card sits ON, not an
    inset panel floating inside the card's whitespace. */
 .dhero{background:linear-gradient(155deg,var(--hero-a) 0%,var(--hero-b) 55%,var(--hero-c) 100%);
-  border-radius:14px 14px 0 0;padding:40px 40px 34px;margin:-30px -34px 26px;position:relative;overflow:hidden}
+  border-radius:14px;padding:40px 40px 34px;margin:0 0 26px;position:relative;overflow:hidden}
 .dhero:before{content:"";position:absolute;inset:0;pointer-events:none;
   background:radial-gradient(circle at 82% 12%,rgba(122,184,255,.20),transparent 46%),
              radial-gradient(circle at 8% 96%,rgba(182,156,255,.16),transparent 42%)}
