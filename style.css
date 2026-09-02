@@ -141,6 +141,14 @@ article.post{background:transparent;border:0;border-radius:0;padding:0;margin-to
 article.post h1{font-size:30px;line-height:1.2;letter-spacing:-.015em;margin:.2em 0 .3em}
 article.post .meta{margin-bottom:22px;padding-bottom:16px;border-bottom:1px solid var(--line)}
 .markdown-body{font-size:17.5px;line-height:1.72}
+/* The closing card: a coda, set smaller than the body it follows. */
+.closer{display:block;margin:2.4em 0 1.2em;padding:20px 22px 6px;background:var(--bg-2);border:1px solid var(--line);border-radius:14px}
+.closer-t{margin:0 0 4px!important;padding-top:0!important;border-top:0!important;font-size:16px!important;font-weight:750;letter-spacing:.005em;color:var(--ink-1)}
+.closer-b>p{font-size:13.4px;line-height:1.6;color:var(--ink-2);margin:0 0 11px}
+.closer-b>ul{margin:10px 0 12px;padding-left:19px}
+.closer-b>ul>li{font-size:13.4px;line-height:1.6;color:var(--ink-2);margin:0 0 9px}
+.closer-b strong{color:var(--ink-1)}
+.closer-b>p:last-child,.closer-b>ul:last-child{margin-bottom:12px}
 /* Four things: a 2x2 board. The week readable without reading. */
 .fourgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin:20px 0 6px}
 .fcard{position:relative;background:var(--bg-2);border:1px solid var(--line);border-radius:14px;padding:18px 18px 4px}
