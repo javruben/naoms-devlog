@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
 <script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-<title>Week 5 · Un-shipping a feature that wasn't done — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<title>Week 5 — NAOMS Engineering Update — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
 <header class="site"><div class="wrap">
 <h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
 <p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
@@ -11,48 +11,239 @@
 <div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">119</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">19</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
 <div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">28</span></a></div>
 <div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 2</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
-<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update · Week 5</div><h1 class="dhero-dek">Signed, verifiable daemon tooling shipped — and we un-shipped a feature on purpose when it wasn't really done.</h1><p class="dhero-lede">Here's the honest accounting for a quieter week: signed daemon code-signing tooling shipped, an identity event now creates the memory it's meant to, and the browser redesign got captured across 35 surfaces while still in progress. Plus the story of a feature we un-shipped on purpose when our own checks found it wasn't really done. ~880 commits landed.</p></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>April 19, 2026</span><span>·</span><span>6 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><p><img src="assets/week-05-commits.svg" alt="Commits per day — Week 5" /></p>
-<p>The unglamorous week. No marquee feature demo this time — the real work was paying down test debt and refusing to let green tests hide gaps. The two stories that define it: a <strong>603-file test relocation</strong> that got rolled back to a clean base and re-landed under three rounds of adversarial critic review, and a feature we <strong>un-shipped on purpose</strong> when our own celebrate-critics found drift behind the green. Here's the honest accounting.</p>
-<h2 id="by-the-numbers"><a class="anchor" aria-hidden="true" tabindex="-1" href="#by-the-numbers"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>By the numbers</h2>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update · Week 5</div><h1 class="dhero-dek">We un-shipped a feature on purpose when our own checks found it was not done</h1><p class="dhero-lede">Two things worth your time this quieter week: a feature that had been marked finished had that marker taken back a day later, and a naming trap that had bitten the project repeatedly finally got a deterministic fix. Everything else that moved is listed at the end, including what shipped broken and said so.</p><div class="dstats dstats-hero"><div class="dstat"><div class="dstat-k">Commits landed</div><div class="dstat-n">877</div><div class="dstat-q">on the main line (~880)</div></div><div class="dstat"><div class="dstat-k">Commits authored</div><div class="dstat-n">~6,400</div><div class="dstat-q">across the parallel work that later merged</div></div><div class="dstat"><div class="dstat-k">Busiest day</div><div class="dstat-n">1,347</div><div class="dstat-q">(Saturday 2026-04-18)</div></div><div class="dstat"><div class="dstat-k">Lightest day</div><div class="dstat-n">502</div><div class="dstat-q">(Wednesday 2026-04-15)</div></div><div class="dstat"><div class="dstat-k">Surfaces captured</div><div class="dstat-n">35,</div><div class="dstat-q">dated 2026-04-19</div></div></div></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>April 19, 2026</span><span>·</span><span>13 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><p><img src="assets/week-05-commits.svg" alt="Commits per day — Week 5" /></p>
+
+<h2 id="four-things-changed-this-week"><a class="anchor" aria-hidden="true" tabindex="-1" href="#four-things-changed-this-week"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Four things changed this week</h2>
+<p class="dintro">One per major area. There is no marquee demo this time — the week's real work
+was paying down test debt and refusing to let green tests stand in for
+finished ones.</p>
+<div class="fourgrid"><div class="fcard"><div class="fcard-n">1</div><h3 class="fcard-t">You can sign and verify the daemon you are running</h3><div class="fcard-b"><p>Code-signing tooling shipped, and it shipped alongside an honest finding, filed
+in the same change, that the first tier of it is broken.</p></div></div><div class="fcard"><div class="fcard-n">2</div><h3 class="fcard-t">Recording an identity fact now creates the memory</h3><div class="fcard-b"><p>The event creates the node it is supposed to create, so a fact you record about
+who someone is becomes something you can actually find later.</p></div></div><div class="fcard"><div class="fcard-n">3</div><h3 class="fcard-t">A feature was un-shipped on purpose</h3><div class="fcard-b"><p>The terminal cockpit was marked finished on the 18th and had that marker taken
+back on the 19th, when the final review stage found drift behind the green
+tests.</p></div></div><div class="fcard"><div class="fcard-n">4</div><h3 class="fcard-t">The browser redesign was captured mid-flight</h3><div class="fcard-b"><p>Thirty-five surfaces of the redesigned browser were captured on 2026-04-19. The
+redesign is in progress, and the capture is honestly a picture of work under
+way.</p></div></div></div><h2 id="taking-back-a-done"><a class="anchor" aria-hidden="true" tabindex="-1" href="#taking-back-a-done"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Taking back a "done"</h2>
+<p class="dsub"><strong>The feature:</strong> the terminal cockpit — the surface for driving NAOMS from a
+terminal — reaching the state where it could be called finished.</p>
+<p>A completion marker in this project is not a mood. It is granted at the end of a
+defined sequence, and the last stage of that sequence is a review that is
+allowed to refuse.</p>
+<p class="dsub"><strong>Before:</strong> it was marked finished on the 18th, cleanly, with nothing
+outstanding. <strong>Now:</strong> it is not. The final review stage found drift, the
+finished marker was downgraded, and then removed entirely.</p>
+<p>A cockpit is the surface you drive a system from. Marking one finished is a
+statement that somebody could sit down and run the product through it without
+hitting a wall, which is a heavier claim than it sounds.</p>
+<p class="dsub"><strong>A "done" you can take back is worth more than a "done" you cannot.</strong> The
+value of a completion marker is entirely in whether it is ever refused. One
+that is only ever granted is a formality with a status field attached.</p>
+<p>There is a version of this week where none of it is published. The tests were
+green, the marker had been granted, and nobody outside would have known the
+difference for months.</p>
+<p class="dsub"><strong>What happened.</strong> Two separate reversals, a day apart. The first downgraded
+the finished state to conditional. The second removed it, citing fourteen
+pieces of follow-on work still open. Four regression rules were added the same
+day to catch the same drift again.</p>
+<p>The second reversal is the one that took nerve, because the first had already
+absorbed the embarrassment. Downgrading to conditional would have been a
+defensible place to stop, and stopping there is how a conditional pass quietly
+becomes a pass.</p>
+<p>Drift is the word for a gap that opens between what a thing claims and what it
+does, without either side changing dramatically. It is the failure mode that
+green tests are worst at catching, because nothing broke.</p>
+<h3 id="why-the-follow-on-count-is-the-whole-argument"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-the-follow-on-count-is-the-whole-argument"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why the follow-on count is the whole argument</h3>
+<p>Fourteen open pieces of follow-on work is not a rounding error against a
+finished feature. It is the difference between a thing that works and a thing
+that is being described as working.</p>
+<p>The awkward part is that the tests were green. Nothing in the automated record
+objected, which is exactly the condition under which a finished marker gets
+granted and nobody looks again.</p>
+<p>Conditional is a comfortable resting place precisely because it is defensible in
+both directions. It admits a problem and keeps the claim, and almost nothing
+ever leaves it.</p>
+<p>A review stage that can only agree is decoration. The cost of one that can
+disagree is weeks like this one, where a public claim gets withdrawn and the
+withdrawal is the news.</p>
+<p>The four regression rules added the same day are the part that makes the
+episode useful rather than merely honest. A lesson recorded in prose is
+forgotten; a lesson recorded as a rule that fails a run is not.</p>
+<p><em><a href="2026-04-18-i-un-shipped-my-own-feature.html" rel="noopener noreferrer">I un-shipped my own feature</a> is
+the first-person account.</em></p>
+<h2 id="the-name-you-assumed-was-canonical"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-name-you-assumed-was-canonical"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The name you assumed was canonical</h2>
+<p class="dsub"><strong>The feature:</strong> the reliability of every read that looks something up by its
+type — which is most of them.</p>
+<p class="dsub"><strong>Before:</strong> a recorded event of one type could arrive in the queryable graph
+labelled as something else, and nothing said so. <strong>Now:</strong> the mapping is being
+made deterministic, with rules that fail a run when it is not.</p>
+<p class="dsub"><strong>A test written against the name you expected proves your expectation.</strong> It
+does not prove the system produces that name. When those two differ, the test
+passes and production quietly reads the wrong thing.</p>
+<p>The queryable graph is a view built from the record of signed events. Building
+it means turning each event into a node, and turning a thing into another thing
+is where names get chosen.</p>
+<p class="dsub"><strong>What the trap looks like.</strong> A signed event of type <code>device.approved</code> is
+turned into a node in the graph. The node's type is not guaranteed to be
+<code>device.approved</code> — a generic conversion step can label it <code>operator_event</code>, or
+another alias entirely.</p>
+<p>Everything downstream that looks for the original name finds nothing, and finds
+nothing silently. There is no error, because from the system's point of view
+nothing went wrong: a node exists, it simply has a different label than the one
+being asked for.</p>
+<p>The generic step is doing something reasonable. It converts events of many
+types through one path, and a single path needs a single naming policy, so it
+picks one. The bug is not in the choice; it is in the choice being invisible to
+everything that later asks by name.</p>
+<h3 id="why-it-kept-happening"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-it-kept-happening"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why it kept happening</h3>
+<p>This had bitten the project so many times that it earned a dedicated review of
+the literature this week, rather than a fix and a shrug.</p>
+<p>The reason it recurs is that every individual instance looks like a typo. Each
+one is found, corrected, and closed, and the general shape — a generic
+conversion step choosing a name — survives to produce the next one.</p>
+<p>The response this week was deterministic conversion plus new checker rules, so
+a mismatch between the recorded name and the graph name fails a run rather than
+waiting for a person to notice. Making the mapping deterministic is the fix;
+gating it is what makes the fix stay fixed.</p>
+<p>What is not finished is the sweep. Deterministic conversion and the rules that
+enforce it are the mechanism; every existing read that assumed a name has not
+been re-checked against it, and that is where the remaining instances live.</p>
+<p><em><a href="2026-04-17-this-has-been-happening-so-many-times-the-kind-alias-trap.html" rel="noopener noreferrer">This has been happening so many times</a>
+is the full write-up.</em></p>
+<h2 id="what-this-means-in-plain-terms"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-this-means-in-plain-terms"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What this means, in plain terms</h2>
+<p class="dintro">Most of what lands in a week belongs to the thing it landed in. A few things
+generalise past it. These five are the ones this week actually paid for — and
+this week they were paid for expensively.</p>
+<h3 id="a-completion-marker-that-is-never-refused-is-not-a-marker"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-completion-marker-that-is-never-refused-is-not-a-marker"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A completion marker that is never refused is not a marker</h3>
+<p>The terminal cockpit was marked finished on the 18th and un-marked on the 19th,
+when the final review stage found drift behind green tests and named fourteen
+open follow-ons. The withdrawal is what gives every other completion marker its
+meaning. <strong>A status that can only be granted is a label, not a check.</strong></p>
+<h3 id="a-name-you-assume-is-canonical-may-be-an-alias"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-name-you-assume-is-canonical-may-be-an-alias"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A name you assume is canonical may be an alias</h3>
+<p>An event recorded as one type can arrive in the queryable graph under a
+different label, so tests written against the expected name pass while
+production silently reads the wrong thing. <strong>Make the mapping deterministic and
+gate it, because a green test cannot see a name it was never told to doubt.</strong></p>
+<h3 id="when-a-large-mechanical-change-goes-wrong-restart-it"><a class="anchor" aria-hidden="true" tabindex="-1" href="#when-a-large-mechanical-change-goes-wrong-restart-it"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>When a large mechanical change goes wrong, restart it</h3>
+<p>The 603-file move was rolled back to a known-good base, the automated rewrite's
+exclusion rules were corrected, and the whole move was re-landed under review
+rather than patched forward. Patching forward would have left the original
+mistake buried under its own corrections. <strong>A bad bulk edit is cheaper to redo
+than to repair.</strong></p>
+<h3 id="a-metric-you-optimise-directly-stops-measuring"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-metric-you-optimise-directly-stops-measuring"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A metric you optimise directly stops measuring</h3>
+<p>Wednesday was the lightest day of the week and it was a consolidation day: an
+onboarding loop wired up as a test, the first slice of a docs-first search,
+two-device scaffolding, one more guard. None of it photographs well and all of
+it is load-bearing. <strong>A count is a pulse, not a score — pad it and you are
+lying to yourself with your own instrument.</strong></p>
+<h3 id="the-two-directions-a-plan-can-drift-are-not-equal"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-two-directions-a-plan-can-drift-are-not-equal"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The two directions a plan can drift are not equal</h3>
+<p>A plan can say finished when the code is not, or say not-started when the work
+is already running and tested. The first misleads everyone relying on you; the
+second costs bookkeeping. <strong>Prefer the cheap drift, and fix it by deriving
+status from reality rather than maintaining it beside reality.</strong></p>
+<h2 id="how-much-healthier-is-it-than-a-week-ago"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-much-healthier-is-it-than-a-week-ago"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How much healthier is it than a week ago?</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+<th>What it counts</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Commits landed</td>
+<td>877 (~880)</td>
+<td>Commits on the main line's first-parent path for the window</td>
+</tr>
+<tr>
+<td>Commits authored</td>
+<td>~6,400</td>
+<td>Every commit authored across the parallel work that later merged — micro-commits included</td>
+</tr>
+<tr>
+<td>Busiest day</td>
+<td>1,347</td>
+<td>Commits dated Saturday 2026-04-18, merges and parallel churn included</td>
+</tr>
+<tr>
+<td>Lightest day</td>
+<td>502</td>
+<td>Commits dated Wednesday 2026-04-15, on the same rule</td>
+</tr>
+<tr>
+<td>Surfaces captured</td>
+<td>35</td>
+<td>Redesigned browser surfaces captured on 2026-04-19</td>
+</tr>
+</tbody></table>
+<p class="dsub"><strong>The counting rule changed this week, and the change is stated rather than
+absorbed.</strong> Previous windows quoted a single commit total. This window
+separates what landed on the main line from what was authored across the
+parallel work, because the gap between 877 and 6,400 is large enough that one
+number alone would mislead in either direction.</p>
+<p>Neither figure is comparable to the previous window's single total, and
+pretending otherwise would produce a change figure with no meaning. The
+comparison resumes from here on this window's rule.</p>
+<p>Read 6,400 as every micro-commit and 877 as what actually landed. The per-day
+figures follow the wider rule and include merges, so they describe the shape of
+the week — heavy Friday and Saturday, quiet midweek — rather than a rate of
+production.</p>
+<p class="dsub"><strong>Net lines are not quoted, deliberately.</strong> This window's diff is dominated by
+a 603-file test relocation, which is a move rather than new code, plus a
+fixture-encryption change and coverage artefacts. A net-lines figure here would
+be a dishonest headline, and the honest lead statistic is that roughly 880
+commits landed.</p>
+<p>Moving 603 test files is the largest single thing in this window's diff and
+produces no new behaviour at all. Counting it as output would make a
+housekeeping week look like a landmark one.</p>
+<div class="doneline"><div class="dol-k">In one line</div><p>signing and verifying the running daemon became possible and
+its first tier was reported broken in the same breath, recording an identity
+fact now creates the memory it promises, a feature that had been marked
+finished had that marker taken back a day later, and the week's texture was a
+steady stream of guards added after being bitten.</p></div>
+<p>The week's texture was a steady stream of new guard rules, and the pattern
+behind each one was identical: something bit us, so add a gate that refuses it
+next time. That is a healthier reflex than resolving to be more careful.</p>
+<p class="dsub"><strong>Three honest notes.</strong></p>
+<p>The code-signing tooling shipped with a broken tier, reported by us, in the
+same change that shipped it. Reporting the limitation alongside the capability
+is the only version of that announcement worth making.</p>
+<p>A performance regression was reopened rather than closed. It is honestly
+reopened, unfinished, and sitting in the backlog rather than quietly marked
+resolved.</p>
+<p>Work in one area destabilised another. A fixture-encryption change unsettled a
+different effort's onboarding tests, and a database passphrase derived from a
+mnemonic was reverted. Both are recorded as cross-effort collateral rather than
+folded into somebody's success.</p>
+<h2 id="what-changed-area-by-area"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-changed-area-by-area"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What changed, area by area</h2>
+<p class="dintro">Everything that moved this week, in rough order of how much of it moved.
+Per-area file counts are not available for this window, so each area is named
+without one rather than with a figure that cannot be reproduced.</p>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">Daemon signing.</span></div><p class="acard-sum">Tooling to sign and verify the daemon you are running shipped, with a finding that its first tier is broken filed in the same change.</p><p class="acard-d">The capability exists and its limit is published beside it.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Identity and memory.</span></div><p class="acard-sum">Recording an identity fact now creates the node it is meant to create, so the fact becomes a memory that can be found rather than an event that vanished into the record.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Test structure.</span></div><p class="acard-sum">603 test files moved into a tidier layout.</p><p class="acard-d">The move was rolled back to a known-good base when it went wrong, the automated rewrite's exclusion rules were corrected, and it was re-landed under review rather than patched forward. The rewrite touched thousands of internal links, and one of them would have quietly mislabelled the project's own history — caught by an internal review tool and fixed rather than left to drift.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Guard rules.</span></div><p class="acard-sum">A batch of new checker rules landed in advisory mode: they exist, they report, and they do not yet block.</p><p class="acard-d">Four more were added the same day the cockpit's finished marker was withdrawn, aimed at the drift that caused it. The week's literal pattern was we keep getting bitten; add a gate so it cannot recur.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Type consistency.</span></div><p class="acard-sum">The mismatch between a recorded event's type and the label it receives in the queryable graph got a dedicated review, a push toward deterministic conversion, and rules so a green test can no longer hide the mismatch.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Cross-effort collateral.</span></div><p class="acard-sum">A database passphrase derived from a mnemonic was reverted, and a fixture-encryption change destabilised a different effort's onboarding tests, fixed as a follow-on across the two.</p><p class="acard-d">Work in one place breaking tests in another is normal at this pace and is named here rather than absorbed into somebody's success.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Hardening.</span></div><p class="acard-sum">A vault baseline, an audit of suppressions, and a round of type-drift fixes.</p><p class="acard-d">Real work, and the effort it belongs to is not finished.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The browser redesign.</span></div><p class="acard-sum">Thirty-five surfaces of the redesigned browser were captured on 2026-04-19, inside this window.</p><p class="acard-d">The redesign was still in progress that week, so the capture shows the redesign under way rather than a shipped product.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The terminal client.</span></div><p class="acard-sum">How the terminal client connects and authenticates to the daemon came back into focus this week.</p><p class="acard-d">The design position underneath it — small readable files, a history you can replay, documentation that has not drifted from the code — is aimed at whoever opens the code six weeks later, including whoever wrote it. ( Auth between a Rust terminal client and a Deno daemon .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Docs-first search.</span></div><p class="acard-sum">The first slice of a search that reads the documentation before anything else landed on the quiet Wednesday, alongside scaffolding for two-device work and an onboarding loop wired up as a test.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Planning hygiene.</span></div><p class="acard-sum">Identifiers that had collided were renumbered, and a sketch was written of a build-and-test system growing out of the project's own signed record rather than a separate server.</p><p class="acard-d">A sketch, not a product, and it points at where this is heading.</p></div></div>
+<p><img src="img/2-pane-00-default-landing.png" alt="Week 5's one real in-window capture: the redesigned browser's default landing pane, from the sweep dated 2026-04-19 — one of 35 surfaces captured that day. The redesign was still in progress this week, so this is honestly the redesign in progress rather than a shipped product shot." /></p>
+<p>Thirty-five surfaces captured in one day is a lot of surface for a redesign
+still in progress, and that is the honest reading of it: coverage of work under
+way, not a portfolio of finished screens.</p>
+<p>Unlike most windows in this series, that image is a genuine in-week capture.
+The sweep is dated inside this dispatch's own window and shows real redesigned
+surfaces. It is captioned as work in progress, which is what it is.</p>
+<aside class="closer"><h2 class="closer-t">What would prove this week's honesty claims wrong</h2><div class="closer-b">
+<p class="dintro">Five things this report claims are only half-proven. Each is stated as a
+commitment, and each names the evidence that would settle it.</p>
 <ul>
-<li><strong>~880 commits landed on main</strong> (877 on the first-parent line); <strong>~6,400 author-dated</strong> across all worktree-agent branches that later merged. The whole fleet commits under one identity, bylined Mujo / source developer — read 6,400 as "every micro-commit," 877 as "what landed."</li>
-<li><strong>Busiest day: Saturday 2026-04-18 (1,347 commits).</strong> Lightest: <strong>Wednesday 04-15 (502).</strong> These per-day counts include the parallel agent fleet's churn — read them for <em>shape</em> (a heavy Fri/Sat, a quiet midweek), not as a productivity score.</li>
-<li><strong>Net LOC: not quoted, on purpose.</strong> This week's diff is dominated by a 603-file test <em>relocation</em> (a move, not new code) plus a fixture-encryption flip and coverage artifacts. A net-lines number here would be a dishonest headline. The honest lead stat is: ~880 commits landed; the churn was mostly moved-and-encrypted, not new product surface.</li>
-<li><strong>The week's texture: regression guards.</strong> A steady stream of new checker-rule commits — the literal pattern of the week was <em>"we keep getting bitten; add a gate so it can't recur."</em></li>
+<li><strong>The withdrawn completion marker has not been re-earned.</strong> Fourteen pieces of
+follow-on work were open when it was taken back. Re-granting it before those
+close would make the withdrawal a gesture rather than a check.</li>
+<li><strong>The new guard rules are advisory, and advisory is not a gate.</strong> They report
+and they do not block. Until they block, they measure the problem rather than
+prevent it.</li>
+<li><strong>The first tier of daemon signing is broken and known to be.</strong> Publishing the
+finding alongside the capability is the right disclosure and is not a fix.</li>
+<li><strong>A reopened performance regression is still open.</strong> It was reopened honestly
+rather than closed quietly, which improves the record and not the software.</li>
+<li><strong>The relocated test files re-landed under review, not under proof.</strong> A move
+that was rolled back once and corrected is a move that deserves a run proving
+nothing was lost, and that run is not reported here.</li>
 </ul>
-<h2 id="shipped-labeled-honestly"><a class="anchor" aria-hidden="true" tabindex="-1" href="#shipped-labeled-honestly"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Shipped (labeled honestly)</h2>
-<ul>
-<li><strong>New — Sign and verify the daemon you're running.</strong> Code-signing tooling shipped, alongside an honest "Tier-1 is broken" finding filed in the same commit. <em>[shipped]</em></li>
-<li><strong>Fixed — When you record an identity fact, it now becomes a memory you can find</strong> — the event creates the node it's supposed to. <em>[shipped]</em></li>
-<li><strong>Improved — More guardrails to catch mistakes early.</strong> A batch of checker rules landed in advisory mode — the gates exist, not yet blocking. <em>[partial — epic open]</em></li>
-<li><strong>Improved — A round of hardening</strong> — a vault baseline, a suppression audit, type-drift fixes. <em>[partial — epic not yet celebrated]</em></li>
-<li><strong>New — A redesigned browser experience, captured in progress</strong> — 35 surfaces of the new browser, dated exactly 04-19 (the screenshot below). <em>[partial — still in progress]</em></li>
-</ul>
-<h2 id="broke--fixed-honest"><a class="anchor" aria-hidden="true" tabindex="-1" href="#broke--fixed-honest"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Broke &amp; fixed (honest)</h2>
-<ul>
-<li><strong>A feature was <a href="2026-04-18-i-un-shipped-my-own-feature.html" rel="noopener noreferrer">un-shipped</a>.</strong> The terminal-client cockpit was lifted CLEAN on the 18th, then <strong>de-celebrated</strong> on the 19th when the final-stage critics found new drift — one revert downgraded it to CONDITIONAL, another un-lifted it entirely with "14 follow-on milestones still OPEN." Four regression-guard rules were added the same day. A "done" we took back, on purpose.</li>
-<li><strong>The 603-file move was reverted to a clean base.</strong> The relocation was rolled back to a known-good state, the codemod's exclusion rules fixed, and the whole move re-landed under critic review rather than patched forward.</li>
-<li><strong>A hook-performance regression was REOPENED</strong> — honestly reopened, not finished; it's still backlog.</li>
-<li><strong>Cross-item collateral, named:</strong> a mnemonic-derived database passphrase was reverted, and the fixture-encryption flip destabilised another item's onboarding test surface (fixed as a cross-item follow-on).</li>
-</ul>
-<h2 id="concept-of-the-week--the-kind-alias-trap"><a class="anchor" aria-hidden="true" tabindex="-1" href="#concept-of-the-week--the-kind-alias-trap"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Concept of the week — <a href="2026-04-17-this-has-been-happening-so-many-times-the-kind-alias-trap.html" rel="noopener noreferrer">the kind-alias trap</a></h2>
-<p class="dintro">When a chain commit of type <code>device.approved</code> is materialized into a graph node, the node's <code>type</code> is <strong>not</strong> guaranteed to be <code>device.approved</code> — a generic materializer can label it <code>operator_event</code> or some other alias. Tests written against the expected name pass; production reads the wrong type and silently misbehaves. This had bitten the project "so many times" that this week it got a dedicated literature review and a deterministic auto-materialization push, plus new checker rules so a green test can no longer hide the mismatch. The general lesson: <strong>a name you assume is canonical may be an alias, and the only safe fix is to make the mapping deterministic and gate it.</strong></p>
-<h2 id="under-the-hood"><a class="anchor" aria-hidden="true" tabindex="-1" href="#under-the-hood"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Under the hood</h2>
-<p class="dintro">A few things this week you'll never see as a user, but that keep the rest honest. When we moved 603 test files into a tidier layout, the move rewrote thousands of internal links — and one of our own review tools caught a single rewrite that would have quietly mislabelled the project's own history. We stopped and fixed it rather than let the record drift. We also renumbered a pile of plan items whose IDs had collided. And we let ourselves daydream on paper about a build-and-test system that grows out of the project's own signed record instead of a separate server — a sketch, not a product, but one that tells us where we're heading.</p>
-<aside class="closer"><h2 class="closer-t">What's next</h2><div class="closer-b">
-<ul>
-<li>Re-land the test-file move cleanly and ratchet the advisory test-tier rules from advisory to blocking.</li>
-<li>Resolve the terminal-client cockpit's conditional drift and re-celebrate it honestly — for real this time.</li>
-<li>Push the onboarding model-install work toward its publish-and-seed milestones.</li>
-</ul>
-<p><img src="img/2-pane-00-default-landing.png" alt="Week 5's one real in-week capture: the redesigned browser's default landing pane, from the UI sweep dated exactly 2026-04-19 — one of 35 surfaces captured that day. The redesign was still in progress this week, so this is honestly &quot;the redesign in progress,&quot; not a shipped product shot." /></p>
-<p><em>Screenshot note (Honesty axiom): unlike most weeks, this dispatch's image is a <strong>genuine in-week capture</strong> — the sweep is dated 2026-04-19, inside this dispatch's own window, and shows real redesigned surfaces (35 images captured that day). It is honestly captioned as work still in progress, not as a finished feature; no image was fabricated and none was borrowed from outside the week.</em></p>
-<aside class="fieldnote"><div class="fn-eyebrow">From the workshop</div><h4 class="fn-title">The Quiet Day</h4><div class="fn-body markdown-body"><p>Wednesday the 15th was the lightest day of the week — roughly half the commits of its neighbours. The instinct, ours included, is to read a low number as something gone wrong. But quiet isn't empty: that day was consolidation — a full onboarding loop wired up as a test, the first slice of a docs-first search, two-device scaffolding, one more guardrail. None of it screenshots well; all of it is load-bearing. The count is a <em>pulse</em>, not a <em>score</em> — the moment you optimise the pulse directly (pad the commits, rush a half-built feature) you start lying to yourself with your own metrics. A quiet day, honestly logged, is more trustworthy than a busy day manufactured to look productive. Every week has a Wednesday.</p>
-</div></aside>
-<aside class="fieldnote"><div class="fn-eyebrow">From the workshop</div><h4 class="fn-title">Building for a system nobody can hold in their head</h4><div class="fn-body markdown-body"><p>Mid-week the terminal client came back into focus, and with it the question of how it <a href="2026-04-16-auth-between-a-rust-tui-and-a-deno-daemon.html" rel="noopener noreferrer">connects and authenticates</a>. An ambitious system outgrows what any one person can keep in mind, and the honest move is to build for that rather than against it. Small readable files, a history you can replay, docs that haven't drifted from the code — those aren't only for users who don't trust us. They're for whoever opens the code six weeks later, including whoever wrote it. A memory system, needing the thing it exists to provide.</p>
-</div></aside>
-<aside class="fieldnote"><div class="fn-eyebrow">From the workshop</div><h4 class="fn-title">When the Roadmap Isn't Reality</h4><div class="fn-body markdown-body"><p>Wiring up onboarding work, we went looking for unstarted items and found a quieter truth: much of the plan said <em>backlog, never started</em> for things already built, running, passing tests. The plan had simply lagged the code — in our own note from the week, <em>things are implemented but the roadmap isn't updated.</em> There are two ways a plan and reality drift, and they aren't equal. <em>Plan says done, code says not</em> is the dangerous one — it lies to the people who rely on you. <em>Plan says not-started, code says built</em> costs only bookkeeping. We'll take the second, but it's still a lie pointed the other way: a map you can't trust eventually walks you in circles. The real fix is a status that derives itself from reality instead of being kept by hand beside it.</p>
-</div></aside>
 <hr />
 <p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
 </div></aside></div></div></article>

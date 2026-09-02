@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
 <script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-<title>Week 8 · A week of stability, not features — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<title>Week 8 — NAOMS Engineering Update — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
 <header class="site"><div class="wrap">
 <h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
 <p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
@@ -11,14 +11,109 @@
 <div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">119</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">19</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
 <div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">28</span></a></div>
 <div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 2</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
-<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update · Week 8</div><h1 class="dhero-dek">Stray test processes can no longer pile up and strangle your machine.</h1><p class="dhero-lede">Here's the honest week: the wins are stability, not features. Runaway test processes can no longer pile up and choke your machine — small, hard, and real.</p></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>May 10, 2026</span><span>·</span><span>1 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><p>Some weeks you ship features. This week we shipped stability — small, hard, and real.</p>
-<p><img src="assets/week-08-commits.svg" alt="Commits per day — Week 8" /></p>
-<h2 id="shipped"><a class="anchor" aria-hidden="true" tabindex="-1" href="#shipped"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Shipped</h2>
-<ul>
-<li><strong>Fixed — Stray test processes can no longer pile up and strangle your machine.</strong> Three causes closed in one landing: a classifier that silently ignored orphaned test processes because they looked like the real one, a watchdog with no supervisor to restart it after it died, and a test process that could hijack the production socket by defaulting to the real data directory. <em>Shipped — closed.</em></li>
-</ul>
-<aside class="closer"><h2 class="closer-t">One screenshot</h2><div class="closer-b">
-<p class="dintro">A real in-window snapshot of the NAOMS Cockpit, captured 2026-05-05. This is an ASCII terminal render, not a PNG — the Cockpit is a TUI.</p>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update · Week 8</div><h1 class="dhero-dek">Runaway test processes can no longer pile up and strangle the machine you are working on</h1><p class="dhero-lede">One change worth your time this week, and it is not a feature: test processes that used to accumulate until they choked your machine are now recognised, supervised and kept away from your real data. Three separate causes had to close together for that to be true.</p><div class="dhero-scope">📅 May 4 – May 10 · Process</div></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>May 10, 2026</span><span>·</span><span>7 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><h2 id="four-things-changed-this-week"><a class="anchor" aria-hidden="true" tabindex="-1" href="#four-things-changed-this-week"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Four things changed this week</h2>
+<p class="dintro"><img src="assets/week-08-commits.svg" alt="Commits per day — Week 8" /></p>
+<p>Three causes of one failure, closed in a single landing — and a week with no
+feature in it.</p>
+<div class="fourgrid"><div class="fcard"><div class="fcard-n">1</div><h3 class="fcard-t">Orphaned test processes are now recognised as orphans</h3><div class="fcard-b"><p>A stray test process used to look exactly like the real one to the cleanup
+that should have removed it, so it was passed over in silence and left
+running. The two are now told apart.</p></div></div><div class="fcard"><div class="fcard-n">2</div><h3 class="fcard-t">The watchdog has something watching the watchdog</h3><div class="fcard-b"><p>The process that clears away runaway work had no supervisor. When it died,
+nothing restarted it and the protection simply stopped, without saying so. It
+is now restarted after a failure.</p></div></div><div class="fcard"><div class="fcard-n">3</div><h3 class="fcard-t">A test can no longer take over the live connection</h3><div class="fcard-b"><p>A test process that fell back to the real data directory could claim the
+production socket and serve traffic meant for the real thing. That fallback is
+closed.</p></div></div><div class="fcard"><div class="fcard-n">4</div><h3 class="fcard-t">No feature shipped, and that is the honest headline</h3><div class="fcard-b"><p>Some weeks you ship features. This week the whole of the work went into
+stability — small, hard, and real — and nothing else is claimed here.</p></div></div></div><h2 id="when-cleanup-cannot-tell-a-stray-from-the-real-thing"><a class="anchor" aria-hidden="true" tabindex="-1" href="#when-cleanup-cannot-tell-a-stray-from-the-real-thing"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>When cleanup cannot tell a stray from the real thing</h2>
+<p class="dsub"><strong>The feature:</strong> running NAOMS's own tests on your machine without them slowly
+taking it over.</p>
+<p class="dsub"><strong>Before:</strong> test processes accumulated. The cleanup that should have removed
+them classified them as the live process — they looked the same from the
+outside — and passed over them in silence. <strong>Now:</strong> an orphan is identified as
+an orphan and cleared.</p>
+<p class="dsub"><strong>A cleaner that cannot tell its target from its owner does nothing, safely.</strong>
+That is the worst shape a safety mechanism can take, because it fails in the
+direction that raises no alarm. Nothing crashed and no error was recorded; the
+count of processes just went up until the machine slowed to a stop.</p>
+<p>The second half of the same problem ran in the opposite direction. A test
+process that could not find its own data directory fell back to the real one,
+and from there could claim the production socket — the connection the live
+system answers on. A test that reaches the real data directory is no longer a test.</p>
+<p>Both faults come from the same missing distinction. Nothing in the system
+carried a reliable answer to "is this the real one?", so every component that
+needed one guessed. The two guessed in ways that happened to be exactly wrong: the cleanup treated
+a stray as real, and a stray treated the real data as its own.</p>
+<h2 id="a-guard-that-dies-quietly-leaves-nothing-behind-it"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-guard-that-dies-quietly-leaves-nothing-behind-it"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A guard that dies quietly leaves nothing behind it</h2>
+<p class="dsub"><strong>The feature:</strong> a watchdog that clears away work which has run away from its
+owner, so a stalled job does not sit on your machine forever.</p>
+<p class="dsub"><strong>Before:</strong> the watchdog had no supervisor. If it died, it stayed dead, and
+everything it was protecting against resumed unnoticed. <strong>Now:</strong> it is
+restarted when it fails.</p>
+<p class="dsub"><strong>Protection that ends silently is worse than no protection</strong>, because the
+system around it goes on being designed as though the guard were still there.
+Nobody adds a second defence next to a mechanism they believe is running. The
+absence is invisible precisely to the people who would fix it.</p>
+<p>This is why the three causes had to close together rather than one at a time.
+Fixing the classifier alone leaves a cleanup that can be turned off by its own
+crash; fixing the supervisor alone leaves it faithfully restarting a process
+that cannot recognise what it is meant to remove.</p>
+<p>Each fix is worth having only when the others are present.</p>
+<h2 id="what-this-means-in-plain-terms"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-this-means-in-plain-terms"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What this means, in plain terms</h2>
+<p class="dintro">Five general lessons this week paid for, each of them learned by getting the
+same failure wrong from a different direction.</p>
+<h3 id="a-cleaner-that-cannot-identify-its-target-does-nothing-safely"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-cleaner-that-cannot-identify-its-target-does-nothing-safely"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A cleaner that cannot identify its target does nothing, safely</h3>
+<p>Stray test processes were classified as the live process, because from the
+outside they looked identical, so the cleanup passed over them. Nothing went
+red; the machine simply filled up. <strong>A safety mechanism that cannot tell its
+target from what it is protecting will always fail in the quiet direction, and
+quiet failure is the expensive kind.</strong></p>
+<h3 id="every-guard-needs-a-guard"><a class="anchor" aria-hidden="true" tabindex="-1" href="#every-guard-needs-a-guard"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Every guard needs a guard</h3>
+<p>The watchdog that removed runaway processes had nothing to restart it. Once it
+died, the protection ended and the system carried on as though it had not.
+<strong>A defence with no supervision has an availability, not a guarantee — and the
+difference only shows up on the day you needed the guarantee.</strong></p>
+<h3 id="a-fallback-that-points-at-production-converts-a-test-into-an-outage"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-fallback-that-points-at-production-converts-a-test-into-an-outage"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A fallback that points at production converts a test into an outage</h3>
+<p>A test process that could not locate its own data directory fell back to the
+real one, and could then claim the connection the live system answers on.
+<strong>Make the unsafe fallback an error. A default that reaches for real data is a
+convenience exactly until the moment it is a disaster.</strong></p>
+<h3 id="one-failure-three-causes-one-landing"><a class="anchor" aria-hidden="true" tabindex="-1" href="#one-failure-three-causes-one-landing"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>One failure, three causes, one landing</h3>
+<p>The pile-up had three independent causes: a misidentifying classifier, an
+unsupervised watchdog, and a fallback into the real data directory. Any one
+left open reopens the whole symptom. <strong>Count the causes before you claim the
+fix — a partially closed failure behaves exactly like an open one.</strong></p>
+<h3 id="stability-is-a-weeks-work-with-nothing-to-show-at-the-end-of-it"><a class="anchor" aria-hidden="true" tabindex="-1" href="#stability-is-a-weeks-work-with-nothing-to-show-at-the-end-of-it"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Stability is a week's work with nothing to show at the end of it</h3>
+<p>Nothing shipped this week that anyone can point at on a screen. What changed
+is that a machine running NAOMS's own tests no longer gets slowly strangled by
+them. <strong>Work that removes a failure leaves no artefact, so it has to be
+reported deliberately or it reads as a week where nothing happened.</strong></p>
+<h2 id="how-much-healthier-is-it-than-a-week-ago"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-much-healthier-is-it-than-a-week-ago"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How much healthier is it than a week ago?</h2>
+<p class="dintro">This week is counted in causes closed, not in volume. Three causes of one
+failure were closed together in a single landing, and no feature reached
+people.</p>
+<p>No line-count or commit figure appears here, because none was recorded for this
+window under a rule that could be restated and re-run. A figure that cannot be
+reproduced is not worth printing.</p>
+<section class="dnotes"><h4 class="dn-t">Two honest notes</h4><ol class="dn-l">
+<li><p class="dsub"><strong>The evidence for this fix is an absence.</strong> The symptom was processes
+accumulating until a machine slowed to a stop. What we can show is that they
+no longer accumulate — which is real, and is weaker evidence than a feature
+you can open and use.</p>
+</li>
+<li><p class="dsub"><strong>Nothing user-facing shipped.</strong> The one landing this week protects the
+machine you work on. That is the whole list, and it is stated as the whole
+list rather than padded.</p>
+</li>
+</ol></section>
+<div class="doneline"><div class="dol-k">In one line</div><p>stray test processes are now recognised, the watchdog that
+removes them is itself supervised, a test can no longer reach the real data
+directory or the live connection, and no feature shipped.</p></div>
+<h2 id="what-changed-area-by-area"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-changed-area-by-area"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What changed, area by area</h2>
+<p class="dintro">Every area that moved this week. Per-area file counts are not available for
+this window, so the areas are listed by what landed rather than ranked by
+traffic.</p>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">Process isolation and cleanup.</span></div><p class="acard-sum">Runaway test processes can no longer pile up and strangle your machine.</p><p class="acard-d">Three causes closed in one landing: a classifier that silently ignored orphaned test processes because they looked like the real one, a watchdog with no supervisor to restart it after it died, and a test process that could hijack the production socket by defaulting to the real data directory.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The Cockpit.</span></div><p class="acard-sum">The terminal interface was captured in a real running state on 5 May, showing the attention queue, work in flight, work ready to start and work scheduled ahead.</p><p class="acard-d">It is reproduced below exactly as rendered — it is a text interface, so the capture is text, not a picture of text.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Everything else.</span></div><p class="acard-sum">No other area landed a change this window.</p><p class="acard-d">That is stated rather than left to be inferred from a short list.</p></div></div>
+<p>A real in-window snapshot of the NAOMS Cockpit, captured 2026-05-05. This is
+an ASCII terminal render, not a PNG — the Cockpit is a text interface, and a
+screenshot of it would only be a picture of the same characters.</p>
 <pre><code>NAOMS Cockpit  actor: Owner (you) [owner]  v0.21.0  Connected  MCP ⚠ SLOW  Session: "New Chat"  [anthropic* ollama×]
 ┌▶ Attention Queue (1)──────────────────────┐┌In-Flight (0)──────────────────────────────┐
 │▇ · #0 Approval requested                  ││(no items)                                 │
@@ -30,6 +125,29 @@
 │                                            ││▇ ⏳ #0  unknown · ?                        │
 │                                            ││▇ ⏳ #0  unknown · ?  …                     │
 └────────────────────────────────────────────┘└────────────────────────────────────────────┘</code></pre><p><em>The NAOMS Cockpit, captured 2026-05-05.</em></p>
+<aside class="closer"><h2 class="closer-t">What would prove this week's stability claim wrong</h2><div class="closer-b">
+<p class="dintro">Three things this report has only half-proven, each stated as a commitment
+rather than as a task.</p>
+<ul>
+<li><p class="dsub"><strong>A fix proven by absence is the weakest kind of proof.</strong> Processes no longer
+pile up on the machines we ran. Nothing here shows the classifier against a
+process shape we have not already met.</p>
+</li>
+<li><p class="dsub"><strong>The supervisor has not been shown surviving its own bad day.</strong> It restarts
+the watchdog after a failure. What is not yet demonstrated is what happens
+when the supervisor is the thing that fails.</p>
+</li>
+<li><p class="dsub"><strong>A week of stability leaves nothing a reader can open.</strong> The single landing
+here is invisible by design. Until the next window puts something on a screen,
+the honest description of this one is that it removed a way to lose your
+afternoon.</p>
+</li>
+</ul>
+<p><em>Window: 2026-05-04 → 2026-05-10. This week is reported in causes closed, not
+in volume: no commit or line-count figure appears, because none was recorded
+for this window under a rule that could be restated and re-run. The Cockpit
+capture is dated 2026-05-05 and is reproduced as rendered.</em></p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
 <hr />
 <p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
 </div></aside></div></div></article>

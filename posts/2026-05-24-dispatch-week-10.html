@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
 <script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-<title>Week 10 · Heavy work that no longer freezes the screen — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<title>Week 10 — NAOMS Engineering Update — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
 <header class="site"><div class="wrap">
 <h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
 <p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
@@ -11,36 +11,152 @@
 <div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">119</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">19</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
 <div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">28</span></a></div>
 <div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 2</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
-<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update · Week 10</div><h1 class="dhero-dek">The daemon no longer blocks on its own thread — your interface stays responsive even during heavy work.</h1><p class="dhero-lede">Here's what shipped for you this week: the daemon no longer freezes on its own thread, so big imports and replays don't lock up your screen; pairing across devices is now caught by automatic tests; and you can target an agent run by capability tier or by naming the exact model. Plus a cleaner command line you can finally explore.</p></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>May 24, 2026</span><span>·</span><span>2 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><p>The week's biggest win for you: the daemon stopped blocking on its own thread, so heavy work — bulk imports, replays — no longer freezes the screen while it runs.</p>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update · Week 10</div><h1 class="dhero-dek">Heavy work stopped freezing the screen, and 75 flat commands became 44 families</h1><p class="dhero-lede">Two changes worth your time this week: the daemon stopped blocking on its own thread, so a bulk import or a replay no longer locks up the screen while it runs, and the command line was redesigned from about 75 flat commands into 44 noun-verb families. Everything else that moved is listed at the end.</p><div class="dhero-scope">📅 May 18 – May 24 · Process</div><div class="dstats dstats-hero"><div class="dstat"><div class="dstat-k">Commits</div><div class="dstat-n">4,107</div></div><div class="dstat"><div class="dstat-k">Of those, merges</div><div class="dstat-n">1,073</div></div><div class="dstat"><div class="dstat-k">Busiest day</div><div class="dstat-n">1,303</div></div><div class="dstat"><div class="dstat-k">Quietest day</div><div class="dstat-n">100</div></div><div class="dstat"><div class="dstat-k">Commands</div><div class="dstat-n">44</div><div class="dstat-f">from 75</div></div></div></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>May 24, 2026</span><span>·</span><span>9 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch">
 <p><img src="assets/week-10-commits.svg" alt="Commits per day — Week 10" /></p>
-<h2 id="by-the-numbers"><a class="anchor" aria-hidden="true" tabindex="-1" href="#by-the-numbers"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>By the numbers</h2>
+<h2 id="four-things-changed-this-week"><a class="anchor" aria-hidden="true" tabindex="-1" href="#four-things-changed-this-week"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Four things changed this week</h2>
+<p class="dintro">One per major area, and a week with an unusual shape: 1,303 commits on the
+Monday, 100 on the Wednesday, 1,028 on the Saturday.</p>
+<div class="fourgrid"><div class="fcard"><div class="fcard-n">1</div><h3 class="fcard-t">Your interface stays responsive while heavy work runs</h3><div class="fcard-b"><p>The daemon no longer blocks on its own thread. It is bounded by your system's
+resources instead, and it has a clean restart path when it does need to come
+back.</p></div></div><div class="fcard"><div class="fcard-n">2</div><h3 class="fcard-t">Bulk seed, import and replay stopped freezing the screen</h3><div class="fcard-b"><p>The native side now hands its work over in batches rather than stalling the
+main thread until the whole job is finished.</p></div></div><div class="fcard"><div class="fcard-n">3</div><h3 class="fcard-t">Pairing across your devices is caught by tests before it reaches you</h3><div class="fcard-b"><p>Cross-device pairing runs on a shared helper that stands up two peers, so a
+regression in it is caught automatically rather than found by a person.</p></div></div><div class="fcard"><div class="fcard-n">4</div><h3 class="fcard-t">You can target an agent run by capability tier or by exact model</h3><div class="fcard-b"><p>Two ways to ask for the same thing: name the class of machine you want, or
+name the specific model you mean.</p></div></div></div><h2 id="a-daemon-that-never-blocks-itself"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-daemon-that-never-blocks-itself"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A daemon that never blocks itself</h2>
+<p class="dsub"><strong>The feature:</strong> the background service that does the work — importing,
+replaying, seeding — while you carry on using the interface in front of you.</p>
+<p class="dsub"><strong>Before:</strong> it blocked on its own thread, so heavy work and the screen shared
+one queue, and the screen lost. <strong>Now:</strong> it is bounded by your system's
+resources rather than by a single lane, and it has a clean restart path for the
+times it does have to come back.
+(<a href="2026-05-21-a-daemon-that-never-blocks-itself.html" rel="noopener noreferrer">A daemon that never blocks itself</a>)</p>
+<p class="dsub"><strong>A single shared thread is a queue, and everything behind it is waiting.</strong> The
+symptom people report is "the app froze", but nothing was frozen — one long
+piece of work was holding the only lane, and every quick thing behind it
+inherited the long thing's duration.</p>
+<p class="dsub"><strong>What was built.</strong> The second half of the same problem was on the native side,
+where bulk work — seeding, importing, replaying — was carried out in one
+uninterrupted stretch. It is now appended in batches, so the main thread
+regains control between them and the screen keeps drawing.</p>
+<p>Batching is the unglamorous fix and it is the right one. Making the long
+operation faster buys a smaller freeze rather than no freeze, and the freeze
+returns the first time someone imports twice as much. Handing the work over in pieces changes the shape of the problem instead of its
+size.</p>
+<p>The clean restart path is the other half, and it is easy to undervalue. A
+service that never blocks can still need to come back, and a restart that
+loses its place is its own kind of freeze — the interface returns, and the work
+you were waiting on has to begin again from nothing.</p>
+<p class="dsub"><strong>What is still missing.</strong> No latency figure is quoted here. What changed is
+structural — one lane became many — and this report does not claim a measured
+improvement it did not measure.</p>
+<h2 id="one-noun-one-verb-75-commands-became-44-families"><a class="anchor" aria-hidden="true" tabindex="-1" href="#one-noun-one-verb-75-commands-became-44-families"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>One noun, one verb: 75 commands became 44 families</h2>
+<p class="dsub"><strong>The feature:</strong> the command line — the way you ask NAOMS to do something
+without a screen in front of you.</p>
+<p class="dsub"><strong>Before:</strong> roughly 75 flat top-level commands, each named on its own terms, so
+finding the right one meant already knowing it existed. <strong>Now:</strong> 44 noun-verb
+families, where you name the thing and then what you want done to it.
+(<a href="2026-05-24-one-noun-one-verb-cleaning-up-the-naoms-cli.html" rel="noopener noreferrer">One noun, one verb: cleaning up the NAOMS CLI</a>)</p>
+<p class="dsub"><strong>A flat command list is a vocabulary test.</strong> Every flat name is a word you
+either know or do not, and there is no way to reason from one to the next. A
+noun-verb surface lets you guess: if you know the noun, you can try the verb
+you would expect, and be right more often than not.</p>
+<p>The count matters less than the shape. Going from 75 to 44 is a regrouping
+rather than a cut: commands that were siblings by accident became siblings by
+subject. The ones with no subject at all had to acquire one before they could be placed
+anywhere.</p>
+<p>Separating the design from the shipping is deliberate rather than a delay. A
+command surface is the part of a product people memorise, so changing it twice
+costs far more than changing it once — and the only way to change it once is to
+settle the whole shape before any of it moves.</p>
+<p class="dsub"><strong>What was built, and what was not.</strong> The design landed this week; shipping it
+is the next step. Until it does, the surface people actually type is still the
+flat one, and this report does not describe the new one as available.</p>
+<h2 id="what-this-means-in-plain-terms"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-this-means-in-plain-terms"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What this means, in plain terms</h2>
+<p class="dintro">Five general lessons this week's work paid for, each learned by getting
+something wrong somewhere first.</p>
+<h3 id="a-single-lane-is-a-queue-whatever-you-call-it"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-single-lane-is-a-queue-whatever-you-call-it"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A single lane is a queue, whatever you call it</h3>
+<p>The daemon blocked on its own thread, so a long import and a screen redraw
+competed for one lane and the redraw waited. Users describe that as a freeze;
+the code describes it as correct sequencing. <strong>Any resource with one lane
+converts every long operation into a delay for everything unrelated behind it.</strong></p>
+<h3 id="hand-bulk-work-over-in-pieces-not-in-one-stretch"><a class="anchor" aria-hidden="true" tabindex="-1" href="#hand-bulk-work-over-in-pieces-not-in-one-stretch"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Hand bulk work over in pieces, not in one stretch</h3>
+<p>Seeding, importing and replaying used to run as one uninterrupted block. They
+are now appended in batches, so control returns between them. Making the block
+faster would only have shortened the freeze. <strong>Changing the shape of a long
+operation beats shortening it, because the shape survives the data getting
+bigger.</strong></p>
+<h3 id="give-the-same-control-a-coarse-form-and-an-exact-one"><a class="anchor" aria-hidden="true" tabindex="-1" href="#give-the-same-control-a-coarse-form-and-an-exact-one"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Give the same control a coarse form and an exact one</h3>
+<p>An agent run can now be targeted by capability tier — the class of machine you
+want — or by naming the exact model. Neither replaces the other: one is for
+when you care about the outcome, the other for when you are comparing.
+<strong>A control that offers only precision is unusable, and one that offers only
+convenience is untestable.</strong></p>
+<h3 id="a-behaviour-between-devices-can-only-be-tested-between-devices"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-behaviour-between-devices-can-only-be-tested-between-devices"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A behaviour between devices can only be tested between devices</h3>
+<p>Cross-device pairing now runs on a shared helper that stands up two peers, so
+regressions in it are caught automatically. Before that, the failure mode had
+no test that could see it, because it does not exist inside one peer.
+<strong>Some defects are properties of the gap between two things, and only an
+instrument that spans the gap can find them.</strong></p>
+<h3 id="do-not-publish-a-number-you-would-have-to-defend-with-an-excuse"><a class="anchor" aria-hidden="true" tabindex="-1" href="#do-not-publish-a-number-you-would-have-to-defend-with-an-excuse"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Do not publish a number you would have to defend with an excuse</h3>
+<p>No net line-count figure appears in this report. At roughly four thousand
+commits a week the diff is dominated by fixtures and generated catalogues, so a
+net figure would describe machine-written bytes and be read as human effort.
+<strong>A metric that needs a caveat longer than itself is not a metric; it is a
+claim with a disclaimer attached.</strong></p>
+<h2 id="how-much-healthier-is-it-than-a-week-ago"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-much-healthier-is-it-than-a-week-ago"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How much healthier is it than a week ago?</h2>
+<div class="dmetrics"><div class="dmetric"><div class="dm-l"><span class="dm-name">Commits</span><span class="dm-gloss">Every commit landing on the main line of the shared codebase inside the window</span></div><div class="dm-v"><span class="dm-b">4,107</span></div><div class="dm-d flat"></div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Of those, non-merge</span><span class="dm-gloss">Commits carrying an actual change rather than joining two lines of history</span></div><div class="dm-v"><span class="dm-b">3,034</span></div><div class="dm-d flat"></div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Of those, merges</span><span class="dm-gloss">Commits that joined two lines of history</span></div><div class="dm-v"><span class="dm-b">1,073</span></div><div class="dm-d flat"></div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Busiest day</span><span class="dm-gloss">Monday 2026-05-18, the week's peak</span></div><div class="dm-v"><span class="dm-b">1,303</span></div><div class="dm-d flat"></div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Quietest day</span><span class="dm-gloss">Wednesday 2026-05-20, the week's trough</span></div><div class="dm-v"><span class="dm-b">100</span></div><div class="dm-d flat"></div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Top-level commands</span><span class="dm-gloss">Command families in the redesigned surface, against the flat commands they replace</span></div><div class="dm-v"><span class="dm-a">75</span><span class="dm-arr">→</span><span class="dm-b">44</span></div><div class="dm-d neg">▼ −31</div></div></div>
+<p>All counts were re-derived on 2026-06-12 from the window's commit history. No net line-count figure is quoted: at this volume the diff is dominated by
+fixtures and generated catalogues, and any net figure would describe those
+rather than the work. The honest size signal is commit shape and what landed.</p>
+<section class="dnotes"><h4 class="dn-t">Three honest notes</h4><ol class="dn-l">
+<li><p class="dsub"><strong>The week's shape is the finding.</strong> 1,303 commits on Monday 18 May, 100 on
+Wednesday 20 May, then 1,028 again on Saturday 23 May. A single weekly total
+hides a swing of that size entirely.</p>
+</li>
+<li><p class="dsub"><strong>The new command surface is designed, not shipped.</strong> 44 noun-verb families
+replace about 75 flat commands on paper. What you type today is still the
+flat set.</p>
+</li>
+<li><p class="dsub"><strong>Responsiveness is claimed structurally, not measured.</strong> The daemon no
+longer shares one lane between heavy work and the screen. No latency figure
+is offered, because none was taken.</p>
+</li>
+</ol></section>
+<div class="doneline"><div class="dol-k">In one line</div><p>heavy work stopped holding the only lane, bulk imports and
+replays stopped freezing the screen, cross-device pairing gained tests that can
+see it, an agent run can be aimed by tier or by exact model, and the command
+line was redesigned from 75 flat commands into 44 families.</p></div>
+<h2 id="what-changed-area-by-area"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-changed-area-by-area"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What changed, area by area</h2>
+<p class="dintro">Every area that moved this week. Per-area file counts are not available for
+this window, so the areas are listed by what landed rather than ranked by
+traffic.</p>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">The daemon.</span></div><p class="acard-sum">It no longer blocks on its own thread, so the interface stays responsive while heavy work runs.</p><p class="acard-d">Its ceiling is your system's resources, and it has a clean restart path when it needs to come back.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Bulk import and replay.</span></div><p class="acard-sum">Seeding, importing and replaying no longer freeze the screen.</p><p class="acard-d">The native side appends the work in batches instead of stalling the main thread until the entire job has finished.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Device pairing.</span></div><p class="acard-sum">Cross-device pairing is now covered by automatic tests that stand up two peers on a shared helper.</p><p class="acard-d">A regression there is caught before it reaches you rather than reported by you.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Agent runs.</span></div><p class="acard-sum">A run can be targeted by capability tier or by naming the exact model.</p><p class="acard-d">The coarse form is for getting work done; the exact form is for comparing one model against another.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Rules and procedures.</span></div><p class="acard-sum">The rules that run NAOMS became a queryable engine, moved out of a wall of prose into a consolidated policy-and-procedure layer.</p><p class="acard-d">They are asked rather than read.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The command line.</span></div><p class="acard-sum">The top-level surface was consolidated on paper from about 75 flat commands into 44 noun-verb families.</p><p class="acard-d">The design landed this week; shipping it is the next step, and nothing about the flat surface has changed yet.</p></div></div>
+<aside class="closer"><h2 class="closer-t">What would prove this week's responsiveness claim wrong</h2><div class="closer-b">
+<p class="dintro">Four things this report has only half-proven, each stated as a commitment
+rather than as a task.</p>
 <ul>
-<li><strong>4,107 commits landed on the main line</strong> — 3,034 non-merge + 1,073 merge.
-(Re-counted on 2026-06-12 from the week's commit history.)</li>
-<li><strong>Busiest day:</strong> Mon 05-18 — <strong>1,303 commits.</strong> A Monday absorb-storm.</li>
-<li><strong>Quietest day:</strong> Wed 05-20 — <strong>100 commits.</strong></li>
-<li><strong>Then a surge:</strong> Sat 05-23 — <strong>1,028 commits.</strong></li>
-<li><strong>Net LOC:</strong> deliberately <strong>not quoted.</strong> At ~4,000 commits/week the line count
-is dominated by fixtures and generated catalogues; any net figure would
-mislead. We quote commit <em>shape</em> and item landings instead — those are honest.</li>
+<li><p class="dsub"><strong>No latency figure stands behind "responsive".</strong> The change is structural:
+heavy work and the screen no longer share one lane. Until a measurement is
+published, the claim rests on the shape of the fix.</p>
+</li>
+<li><p class="dsub"><strong>The command surface people type has not changed.</strong> 44 families exist as a
+design. Anyone using NAOMS this week still faces about 75 flat commands, and
+a redesign that does not ship is a document.</p>
+</li>
+<li><p class="dsub"><strong>Pairing tests exist; their coverage is unstated.</strong> Two peers on a shared
+helper is enough to see the class of defect that lives between devices. This
+report does not say how much of pairing those tests actually exercise.</p>
+</li>
+<li><p class="dsub"><strong>A weekly total is a poor description of this week.</strong> Monday ran 1,303
+commits and Wednesday ran 100. Any conclusion drawn from the 4,107 figure
+alone is drawn from an average that never happened.</p>
+</li>
 </ul>
-<h2 id="shipped"><a class="anchor" aria-hidden="true" tabindex="-1" href="#shipped"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Shipped</h2>
-<ul>
-<li><strong>Improved — Your interface stays responsive even during heavy work</strong> — the daemon no longer blocks on its own thread; it's bounded by your system's resources instead, with a clean restart path. (<a href="2026-05-21-a-daemon-that-never-blocks-itself.html" rel="noopener noreferrer">A daemon that never blocks itself</a>.)</li>
-<li><strong>Improved — The rules that run NAOMS are now a queryable engine,</strong> moved out of a wall of prose into a consolidated policy-and-procedure layer.</li>
-<li><strong>Improved — Bulk seed, import, and replay no longer freeze your screen</strong> — the native side now batches the work instead of stalling the main thread.</li>
-<li><strong>Improved — Pairing across your devices is now caught automatically</strong> — cross-device pairing runs on a shared test helper that spins up two peers, so regressions get caught before you hit them.</li>
-<li><strong>New — Target an agent run by capability tier or by naming the exact model.</strong></li>
-</ul>
-<aside class="closer"><h2 class="closer-t">What's next</h2><div class="closer-b">
-<ul>
-<li><strong>Roll out the clean CLI.</strong> This week the
-<a href="2026-05-24-one-noun-one-verb-cleaning-up-the-naoms-cli.html" rel="noopener noreferrer">top-level command surface was consolidated from ~75 flat commands into 44
-noun-verb families</a> — the design landed; shipping it
-is the next step.</li>
-</ul>
-<p>The honest figure for this week isn't a screenshot — it's the shape of the
-commit chart: Mon 1,303 → Wed 100 → Sat 1,028.</p>
+<p><em>Window: 2026-05-18 → 2026-05-24, with all counts re-derived on 2026-06-12 from
+the window's commit history. Commits are counted on the main line of the shared
+codebase and split into merge and non-merge. No net line-count figure is quoted:
+at roughly four thousand commits a week the diff is dominated by fixtures and
+generated catalogues. Work that landed after the window is not counted here.</em></p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
 <hr />
 <p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
 </div></aside></div></div></article>

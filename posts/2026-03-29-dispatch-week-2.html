@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
 <script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-<title>Week 2 · Encrypted memories, and nothing shared without a yes — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<title>Week 2 — NAOMS Engineering Update — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
 <header class="site"><div class="wrap">
 <h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
 <p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
@@ -11,33 +11,221 @@
 <div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">119</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">19</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
 <div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">28</span></a></div>
 <div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 2</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
-<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update · Week 2</div><h1 class="dhero-dek">Your memories are now encrypted on disk so only you can read them.</h1><p class="dhero-lede">Here's what shipped for you this week: your memories are now encrypted on disk and only you hold the keys, nothing gets shared unless you explicitly say yes (and every yes is logged where no one can tamper with it), and group spaces reached the open internet. The busiest week of the backfill — 1,727 commits — with two ideas honestly cancelled.</p></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>March 29, 2026</span><span>·</span><span>3 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><p><img src="assets/week-02-commits.svg" alt="Commits per day — Week 2" /></p>
-<p>The trust / consent / encryption era, fully arrived. Week 1 laid the identity foundation; this week the social and relational layer landed all at once — and the database was rebuilt under everyone's feet while it happened. It's the busiest single week of the whole backfill so far.</p>
-<h2 id="by-the-numbers"><a class="anchor" aria-hidden="true" tabindex="-1" href="#by-the-numbers"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>By the numbers</h2>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update · Week 2</div><h1 class="dhero-dek">Your memories are encrypted on disk, and nothing is shared until you say yes</h1><p class="dhero-lede">Two changes worth your time this week: your memories are now encrypted on disk with a guarantee you can still read them, and sharing is denied by default until a signed grant allows it. Everything else that moved is listed at the end, including the two efforts that were cancelled on purpose.</p><div class="dstats dstats-hero"><div class="dstat"><div class="dstat-k">Commits</div><div class="dstat-n">1,727</div><div class="dstat-d pos">▲ +713</div><div class="dstat-f">from 1,014</div></div><div class="dstat"><div class="dstat-k">Busiest day</div><div class="dstat-n">388</div><div class="dstat-q">(Thursday 2026-03-26)</div><div class="dstat-f">from 301</div></div><div class="dstat"><div class="dstat-k">Efforts finished</div><div class="dstat-n">~22</div></div><div class="dstat"><div class="dstat-k">Efforts cancelled</div><div class="dstat-n">2</div><div class="dstat-q">on purpose, and named</div></div><div class="dstat"><div class="dstat-k">Raw SQL in application code</div><div class="dstat-n">0</div><div class="dstat-q">(879 query calls migrated)</div></div></div></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>March 29, 2026</span><span>·</span><span>14 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><p><img src="assets/week-02-commits.svg" alt="Commits per day — Week 2" /></p>
+
+<h2 id="four-things-changed-this-week"><a class="anchor" aria-hidden="true" tabindex="-1" href="#four-things-changed-this-week"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Four things changed this week</h2>
+<p class="dintro">One per major area. Together they are the trust, consent and encryption layer
+arriving at once — and the database underneath everything was rebuilt while it
+happened.</p>
+<div class="fourgrid"><div class="fcard"><div class="fcard-n">1</div><h3 class="fcard-t">Your memories are encrypted on disk</h3><div class="fcard-b"><p>Encryption is applied field by field, so only you can read what is stored, with
+a standing guarantee that you can always reach your own data.</p></div></div><div class="fcard"><div class="fcard-n">2</div><h3 class="fcard-t">Nothing is shared unless you say yes</h3><div class="fcard-b"><p>Reads and shares are denied until a signed grant allows them, and every grant
+lands in an append-only trail that cannot be quietly edited afterwards.</p></div></div><div class="fcard"><div class="fcard-n">3</div><h3 class="fcard-t">You decide exactly who you trust, and for what</h3><div class="fcard-b"><p>Relationships became explicit, typed connections you can reason about rather
+than an ambient membership list — and they are capped at a human number of
+close ties.</p></div></div><div class="fcard"><div class="fcard-n">4</div><h3 class="fcard-t">Group spaces reached the open internet</h3><div class="fcard-b"><p>Hives moved off the local network. Gossip, lazy sync, backup and compaction
+carried them from a three-machine proof to the wider world.</p></div></div></div><h2 id="memories-that-only-you-can-read"><a class="anchor" aria-hidden="true" tabindex="-1" href="#memories-that-only-you-can-read"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Memories that only you can read</h2>
+<p class="dsub"><strong>The feature:</strong> the memories NAOMS stores for you are encrypted where they sit
+on disk, so the file on your machine is not readable by anything that finds it.</p>
+<p class="dsub"><strong>Before:</strong> stored memories were readable to whatever could open the store.
+<strong>Now:</strong> they are encrypted with per-field AES-256-GCM, and the key situation is
+arranged so that you can always reach your own data.</p>
+<p>Encryption at rest answers one specific question: what someone learns by
+getting hold of the file. It says nothing about what a running program with the
+keys can see, and nothing about what you choose to share. Those are the next
+two sections' problem, and the three only work as a set.</p>
+<p class="dsub"><strong>Encrypting per field rather than per file is a deliberate trade, and it costs
+something.</strong> A single encrypted blob is simpler and hides more. It also has to
+be decrypted wholesale before anything can be looked up inside it, which is
+fatal for a system whose entire job is searching what it remembers.</p>
+<p class="dsub"><strong>What was built.</strong> Each field is encrypted on its own, so the parts of a
+memory that need to be queryable can be handled separately from the parts that
+only ever need to be read back. The unit of protection matches the unit of use.</p>
+<p>One property is easy to miss. Encryption here is a property of the store, not
+of a mode you switch on for sensitive items — there is no second, unprotected
+tier for ordinary memories.</p>
+<p>The mode matters as much as the cipher. AES-256-GCM is authenticated
+encryption, which means a field that has been altered fails to decrypt rather
+than decrypting into something plausible and wrong. Silent corruption is the
+failure a memory system can least afford, because nothing downstream would know
+to doubt the result.</p>
+<p>What this does not do is hide the shape of the store. Encrypting field by field
+protects the contents of each field; it does not conceal how many memories
+exist or how they are laid out. That is the price of keeping the store usable
+while encrypted, and it is a price rather than an oversight.</p>
+<h3 id="the-guarantee-that-matters-more-than-the-cipher"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-guarantee-that-matters-more-than-the-cipher"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The guarantee that matters more than the cipher</h3>
+<p>An encryption scheme has two failure modes and only one of them gets attention.
+The famous one is somebody else reading your data. The quiet one is you being
+unable to.</p>
+<p>Locked-out is the failure nobody demonstrates, because it looks like nothing
+happening.</p>
+<p>The second is far more common and far more damaging in a personal system,
+because there is no support desk holding a spare copy. A memory you cannot
+decrypt is not protected; it is destroyed, with extra steps.</p>
+<p>This week's work carries an explicit guarantee that your own access survives —
+that the owner of the data can always reach it. Naming the guarantee alongside
+the algorithm is the difference between a security feature and a data-loss bug
+in a security feature's clothing.</p>
+<p>There is a second thing the guarantee buys, less obvious than recovery. It
+makes the encryption safe to turn on by default, because a scheme that can
+strand its owner has to be optional, and an optional protection protects
+roughly nobody.</p>
+<p><em><a href="2026-03-24-memory-that-only-you-can-read.html" rel="noopener noreferrer">Memory that only you can read</a>
+covers the field-level scheme.</em></p>
+<h2 id="four-layers-each-of-which-can-be-pulled"><a class="anchor" aria-hidden="true" tabindex="-1" href="#four-layers-each-of-which-can-be-pulled"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Four layers, each of which can be pulled</h2>
+<p class="dsub"><strong>The feature:</strong> deciding who can see what, and having every one of those
+decisions be explicit, revocable, and recorded.</p>
+<p class="dsub"><strong>Before:</strong> access was ambient — being on a list was the permission. <strong>Now:</strong>
+access is denied by default and granted by four independent layers, any one of
+which can be removed to stop it.</p>
+<p>Ambient permission is the normal way software does this, and it fails in a
+predictable direction. Names accumulate on lists, lists outlive the reason they
+were made, and nobody is ever asked to reconfirm. The failure is not that the
+wrong person was added; it is that the right person was never removed.</p>
+<p class="dsub"><strong>Default-deny is a sentence anyone can say and a property very few systems
+have.</strong> The test is not whether a request without permission is refused. The
+test is what happens to a request nobody thought about, and the only structure
+that answers it well is one where absence of a rule means no.</p>
+<p class="dsub"><strong>What was built.</strong> Four layers, each independently revocable: a verified
+identity, an explicit trust edge to that identity, a signed consent rule
+granting a specific scope, and a scoped capability token carrying that grant to
+whatever does the work. Pull any one and access stops.</p>
+<p>The fourth layer is the one that does the unglamorous work. A capability token
+is scoped to a specific grant and travels with the request to whatever performs
+it, so the component doing the reading is carrying its own permission rather
+than asking a central authority whether it is allowed. Permission moves with
+the work instead of being looked up beside it.</p>
+<p>Default-deny has a cost and it lands on the person, not the machine. Every
+share becomes an act rather than an assumption, which is more friction than a
+list-based system. The trade is that nothing is ever shared because somebody
+forgot to remove a name.</p>
+<p>Four layers also means four places to look when access is refused. That is a
+real cost in confusion, paid to remove a larger cost in surprise.</p>
+<p>Trust here is a graph of explicit edges rather than a default you have to
+remember to remove. A connection is typed — it says what it is for — and the
+number of close ties is capped at a human figure rather than growing without
+limit.</p>
+<p>The cap is not a technical constraint dressed as a virtue. A trust list that
+grows past what a person can hold in mind stops being a decision and becomes an
+accumulation, and an accumulated list is exactly the ambient permission the
+whole design is trying to replace.</p>
+<h3 id="why-every-grant-is-written-where-it-cannot-be-changed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-every-grant-is-written-where-it-cannot-be-changed"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why every grant is written where it cannot be changed</h3>
+<p>Every grant and every revocation is written to a hash-chained audit trail, so
+the history of who could see what, and when, is itself tamper-evident.</p>
+<p>Append-only is the first half; hash-chained is the second. One says entries are
+never removed, the other says earlier entries cannot be changed.</p>
+<p>That is a stronger property than logging. A log answers what happened according
+to whoever kept the log. A hash chain answers what happened according to
+mathematics, because altering an earlier entry breaks every entry after it.</p>
+<p>The reason to want the stronger property is uncomfortable and worth stating.
+The party most able to quietly rewrite an access record is the party running
+the system, which in this design is you — and a record you could edit is a
+record nobody else has reason to accept.</p>
+<p>What the trail does not yet do is present itself. The history is recorded and
+tamper-evident; nothing this week puts it in front of a person as an ordinary
+thing to read. A record nobody looks at is still worth keeping, but it is not
+yet doing the job its properties promise.</p>
+<p><em><a href="2026-03-25-default-deny-by-design-the-four-layer-consent-engine.html" rel="noopener noreferrer">The default-deny consent engine</a>
+walks the four layers in order.</em></p>
+<h2 id="what-this-means-in-plain-terms"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-this-means-in-plain-terms"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What this means, in plain terms</h2>
+<p class="dintro">Most of what lands in a week belongs to the thing it landed in. A few things
+generalise past it. These five are the ones this week actually paid for.</p>
+<h3 id="a-lock-you-can-be-locked-out-of-is-a-data-loss-bug-in-a-costume"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-lock-you-can-be-locked-out-of-is-a-data-loss-bug-in-a-costume"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A lock you can be locked out of is a data-loss bug in a costume</h3>
+<p>Memories are now encrypted field by field, and the work ships with an explicit
+guarantee that the owner can always reach their own data. Without that clause
+the same cipher would be a way to permanently destroy a personal archive by
+accident. <strong>Ship the recovery property in the same change as the lock.</strong></p>
+<h3 id="independently-revocable-layers-or-you-only-have-one-layer"><a class="anchor" aria-hidden="true" tabindex="-1" href="#independently-revocable-layers-or-you-only-have-one-layer"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Independently revocable layers, or you only have one layer</h3>
+<p>Access needs identity, a trust edge, a signed consent rule, and a scoped token —
+and pulling any single one stops it. Layers that can only be removed together
+are one layer with extra names. <strong>A defence you cannot partially withdraw is a
+defence you will never withdraw.</strong></p>
+<h3 id="a-record-its-own-keeper-can-edit-is-not-evidence"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-record-its-own-keeper-can-edit-is-not-evidence"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A record its own keeper can edit is not evidence</h3>
+<p>Every grant and revocation lands in a hash-chained trail, so changing an old
+entry breaks the ones after it. The point is not distrust of the operator; it
+is that a record only persuades when its keeper could not have altered it.
+<strong>Tamper-evidence is what turns a log into evidence.</strong></p>
+<h3 id="a-migration-finishes-when-the-second-path-is-deleted"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-migration-finishes-when-the-second-path-is-deleted"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A migration finishes when the second path is deleted</h3>
+<p>Moving the data layer meant converting 879 query call sites and stripping raw
+SQL to zero across the codebase, not merely adding a nicer interface beside the
+old one. A migration that leaves both paths standing has doubled the
+maintenance and settled nothing. <strong>Removing the old road is the migration.</strong></p>
+<h3 id="cancelling-out-loud-costs-less-than-a-half-built-feature"><a class="anchor" aria-hidden="true" tabindex="-1" href="#cancelling-out-loud-costs-less-than-a-half-built-feature"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Cancelling out loud costs less than a half-built feature</h3>
+<p>Two efforts were cancelled this week — trust decay with demurrage, and
+standalone revocable access — and the cancellation was recorded rather than
+left as a stalled item. Silence would have read as work in progress for months.
+<strong>Say when something stops, or the plan quietly becomes fiction.</strong></p>
+<h2 id="how-much-healthier-is-it-than-a-week-ago"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-much-healthier-is-it-than-a-week-ago"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How much healthier is it than a week ago?</h2>
+<div class="dmetrics"><div class="dmetric"><div class="dm-l"><span class="dm-name">Commits</span><span class="dm-gloss">Every commit in the window's log, counted by line</span></div><div class="dm-v"><span class="dm-a">1,014</span><span class="dm-arr">→</span><span class="dm-b">1,727</span></div><div class="dm-d pos">▲ +713</div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Busiest day</span><span class="dm-gloss">Commits on the heaviest single day; Thursday 2026-03-26 here</span></div><div class="dm-v"><span class="dm-a">301</span><span class="dm-arr">→</span><span class="dm-b">388</span></div><div class="dm-d pos">▲ +87</div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Efforts finished</span><span class="dm-gloss">Distinct pieces of work that reached their finished state in the window</span></div><div class="dm-v"><span class="dm-b">~22</span></div><div class="dm-d flat"></div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Efforts cancelled</span><span class="dm-gloss">Work explicitly stopped, with the decision recorded</span></div><div class="dm-v"><span class="dm-b">2</span></div><div class="dm-d flat"></div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Raw SQL in application code</span><span class="dm-gloss">Query call sites written as raw SQL, across the whole codebase</span></div><div class="dm-v"><span class="dm-a">879</span><span class="dm-arr">→</span><span class="dm-b">0</span></div><div class="dm-d neg">▼ −879</div></div></div>
+<p>Group spaces going from a local network to the open internet is the change with
+the widest reach and the least visible surface. Gossip spreads what a member
+knows to the members it can reach, lazy sync fetches the rest on demand rather
+than up front, and backup and compaction keep the accumulated history from
+growing without bound. Together they are what turns a three-machine
+demonstration into something that works between strangers' machines.</p>
+<p>The counting rule for commits is the same as last week's: a count of the
+window's own log. Both figures are reproducible from the record, which is why
+they lead here even though a commit count says nothing about difficulty.</p>
+<p>The busiest day moved from 301 to 388, on the same counting rule, so the two
+weeks can be compared directly.</p>
+<p class="dsub"><strong>Net lines are not quoted, and the reason is specific.</strong> This was a refactor
+week, and its diff is dominated by deletions: 13,955 lines removed in a single
+plugin-wiring change, 3,225 more removed with the old graph database. A net
+figure would report the week as small when it was the busiest of the series so
+far.</p>
+<p>Two efforts stopping in the same week as twenty-two finishing is the healthier
+signal of the two. A plan where nothing is ever cancelled is a plan nobody is
+reading.</p>
+<div class="doneline"><div class="dol-k">In one line</div><p>memories became encrypted on disk with an explicit guarantee
+you can still read them, sharing became default-deny across four independently
+revocable layers written to a tamper-evident trail, group spaces reached the
+open internet, and the data layer finished its migration with zero raw SQL
+left standing.</p></div>
+<p class="dsub"><strong>Three honest notes.</strong></p>
+<p>Two efforts were cancelled and both are named. Trust decay with demurrage and
+standalone revocable access did not ship and are not quietly pending; the
+decision to stop was deliberate and is recorded here rather than left to be
+inferred from silence.</p>
+<p>The finished-effort count is approximate and marked as such. About twenty-two
+pieces of work reached their finished state, and the figure is quoted with a
+tilde because the boundary of what counts as one effort is a judgement rather
+than a measurement. A number that depends on a judgement should carry the mark.</p>
+<p>The deletion figures are precise and the net figure is an estimate. Where a
+number is exact it is quoted exactly, and where it is not, it is not quoted at
+all — the two should not be mixed in the same sentence.</p>
+<p>Group spaces reached the open internet, and reach is not the same as scale.
+Nothing here measures how the gossip and sync layer behaves at a size larger
+than the proof it grew out of.</p>
+<p>Nothing in this window has a contemporaneous picture. The image below is a
+later capture of the same surface, captioned as a stand-in, because no image of
+the March build exists to show instead.</p>
+<h2 id="what-changed-area-by-area"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-changed-area-by-area"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What changed, area by area</h2>
+<p class="dintro">Everything that moved this week, in rough order of how much of it moved.
+Per-area file counts are not available for this window, so each area is named
+without one rather than with a figure that cannot be reproduced.</p>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">Memory encryption.</span></div><p class="acard-sum">Stored memories are encrypted field by field with AES-256-GCM, with an explicit guarantee that the owner can always reach their own data.</p><p class="acard-d">The per-field granularity is what keeps a memory searchable while encrypted.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Consent.</span></div><p class="acard-sum">Reads and shares are denied by default until a signed grant allows them, across four independently revocable layers, and every grant and revocation is written to a BLAKE3 hash-chained trail that makes later editing detectable.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Trust.</span></div><p class="acard-sum">Relationships became explicit typed edges in a graph rather than membership in an ambient list, capped at a human number of close ties.</p><p class="acard-d">( Trust is directional .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Group spaces.</span></div><p class="acard-sum">Hives moved from a three-machine local-network proof to working over the open internet, carried by gossip, lazy sync, backup and compaction.</p><p class="acard-d">The umbrella effort covering this and the trust work is the Sovereign Foundation.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The data layer.</span></div><p class="acard-sum">Every query in the application now goes through one interface, and the database went fully graph-native and the migration finished rather than stalling: 879 query call sites converted, the old graph database removed along with 3,225 lines, and zero raw SQL left in application code.</p><p class="acard-d">Zero is the load-bearing part of that sentence: a migration that ends at &quot;almost none&quot; leaves every future reader wondering which calls are the exceptions. ( Killing raw SQL .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Plugin wiring.</span></div><p class="acard-sum">A single plugin-wiring change removed 13,955 lines, the largest deletion of the week.</p><p class="acard-d">The unified plugin system it belongs to reached 80 of 80 on its pipeline in a Friday push and closed the day with nine work items still open, so it is progress rather than a finish.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Cross-instance trust.</span></div><p class="acard-sum">The first-phase handshake protocol and the friendship keys behind it were started this week using ECDH.</p><p class="acard-d">The work did not reach a finish line and is still in progress — started, not finished.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Mobile.</span></div><p class="acard-sum">Research for a local daemon on mobile is complete; the first Android milestone is the next step and has not been taken.</p><p class="acard-d">Nothing runs on a phone yet.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The Sovereign Foundation.</span></div><p class="acard-sum">The umbrella effort covering this week's identity, trust and consent work reached its finished state, which is what makes the four items above a layer rather than four separate features.</p><p class="acard-d">It is the connective work: the reason a trust edge, a consent rule and a capability token refer to the same identity.</p></div></div>
+<h3 id="the-two-efforts-that-stopped"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-two-efforts-that-stopped"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The two efforts that stopped</h3>
+<p>Both stopped deliberately, and both are recorded as stopped. Neither is sitting
+in a backlog reading as work that might still happen, which is the state a
+quietly abandoned feature normally occupies for a year or more.</p>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">Trust decay and demurrage — cancelled.</span></div><p class="acard-sum">The idea that trust should erode on its own over time was examined and dropped deliberately.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Standalone revocable access — cancelled.</span></div><p class="acard-sum">Revocation survives as a property of the four consent layers rather than as a feature of its own.</p></div></div>
+<p><img src="img/1-bulk-revoke-confirm-03-roster-rendered.png" alt="The access and roster surface this week's trust and consent work seeded — a later capture, from May 2026, shown as an honest stand-in. No native screenshots exist for the March 2026 era; this is the same surface, grown up." /></p>
+<aside class="closer"><h2 class="closer-t">What would prove this week's consent claims wrong</h2><div class="closer-b">
+<p class="dintro">Four things this report claims are only half-proven. Each is stated as a
+commitment rather than a caveat, and each names the evidence that would settle
+it one way or the other.</p>
 <ul>
-<li><strong>1,727 commits</strong> (verified line count of the full week's log) — busiest day <strong>Thursday 2026-03-26 at 388</strong>.</li>
-<li><strong>~22 items shipped</strong>, including the Sovereign Foundation umbrella, the trust graph, the consent engine, the consent audit trail, hives going from local network to the open internet, and the removal of the old graph database.</li>
-<li><strong>2 items confirmed cancelled</strong> — trust decay &amp; demurrage, and standalone revocable access. On purpose.</li>
-<li><strong>Net code: a major refactor week, not a headline number</strong> (an estimate, not a precise figure). The cleanups dominate the diff: <strong>13,955 lines deleted</strong> in one plugin-wiring change, <strong>3,225 deleted</strong> for the graph-database removal, and all raw SQL stripped to <strong>zero</strong> across the codebase. The honest lead stat is the commit count, not net lines of code.</li>
+<li><strong>Default-deny has been built, not yet stress-tested.</strong> The four layers exist
+and each can be pulled. Nothing here shows what happens to a request that
+nobody anticipated, which is the case the design exists for.</li>
+<li><strong>The tamper-evident trail is only as good as who reads it.</strong> A hash chain
+makes editing detectable by someone checking. No part of this week makes
+anyone check.</li>
+<li><strong>Cross-instance trust is started and unfinished.</strong> The handshake's first
+phase and its key exchange landed. Two machines that have never met still
+cannot complete the ceremony end to end.</li>
+<li><strong>The plugin system closed the week with nine open items.</strong> A pipeline reading
+80 of 80 is not the same statement as the work being done, and the difference
+is exactly those nine.</li>
 </ul>
-<h2 id="shipped"><a class="anchor" aria-hidden="true" tabindex="-1" href="#shipped"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Shipped</h2>
-<ul>
-<li><strong>New — Your memories are encrypted on disk, and only you can read them.</strong> Encryption is applied field by field, with a guarantee that you can always reach your own data. (<a href="2026-03-24-memory-that-only-you-can-read.html" rel="noopener noreferrer">Memory that only you can read</a>; under the hood: per-field AES-256-GCM.)</li>
-<li><strong>New — Decide exactly who you trust, and for what.</strong> Relationships become explicit, typed connections you can reason about — not an ambient "you're on the list" — capped at a human number of close ties. (<a href="2026-03-23-trust-is-directional.html" rel="noopener noreferrer">Trust is directional</a>; a Dunbar-capped trust graph.)</li>
-<li><strong>New — Nothing is shared unless you say yes, and every yes is recorded where no one can tamper with it.</strong> Reads and shares are denied by default until a signed grant allows them, and every grant lands in an append-only trail you can audit. (<a href="2026-03-25-default-deny-by-design-the-four-layer-consent-engine.html" rel="noopener noreferrer">The default-deny consent engine</a>; BLAKE3 hash-chained.)</li>
-<li><strong>Improved — Your group spaces now work over the open internet,</strong> not just on a local network — with gossip, lazy sync, backup, and compaction carrying them from a three-machine proof to the wider world.</li>
-<li><strong>Improved — A faster, cleaner data layer underneath everything.</strong> The database went fully graph-native, closing out a migration of 879 query calls with zero raw SQL left in application code. (<a href="2026-03-28-killing-raw-sql.html" rel="noopener noreferrer">Killing raw SQL</a>.)</li>
-</ul>
-<h2 id="concept-of-the-week--default-deny-consent"><a class="anchor" aria-hidden="true" tabindex="-1" href="#concept-of-the-week--default-deny-consent"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Concept of the week — default-deny consent</h2>
-<p class="dintro">The week's spine is one idea: <strong>nothing is shared unless something explicitly says it can be.</strong> Access in NAOMS isn't an ambient "you have permission because you're on a list." It's four layers, each independently revocable: a verified <strong>identity</strong>, an explicit <strong>trust edge</strong> to that identity, a signed <strong>consent rule</strong> that grants a specific scope, and a scoped <strong>capability token</strong> that carries that grant to the thing doing the work. Pull any layer and access stops. Every grant and every revocation is written to a hash-chained audit trail, so the history of who could see what, and when, is itself tamper-evident. Trust here is a <em>graph of explicit edges</em>, not a default you have to remember to remove.</p>
-<aside class="closer"><h2 class="closer-t">What's next</h2><div class="closer-b">
-<ul>
-<li><strong>Cross-instance trust handshake</strong> — <em>partial.</em> The first-phase handshake protocol and ECDH friendship keys started this week, but the work never reached the finish line; it's still in progress. Started, not finished.</li>
-<li><strong>Unified plugin system</strong> — <em>in-progress.</em> A huge Friday push landed the pipeline at 80/80, but the day closed with an explicit note: 9 work items still open. Not done.</li>
-<li><strong>Mobile local daemon</strong> — <em>research done</em>, first Android milestone next.</li>
-</ul>
-<p><img src="img/1-bulk-revoke-confirm-03-roster-rendered.png" alt="The access and roster surface this week's trust and consent work seeded — a later (May 2026) capture from the operator-roles work, shown here as an honest stand-in. No native screenshots exist for the March 2026 era; this is the same surface, grown up." /></p>
-<p><em>Screenshot note (Honesty axiom): the image above is <strong>not</strong> a March 2026 capture — none exist for this era. It's a later picture of the access/roster surface that grew directly out of this week's trust-graph and consent work, included so you can see where these foundations led. It is captioned as a stand-in, not passed off as contemporaneous.</em></p>
 <hr />
 <p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
 </div></aside></div></div></article>

@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
 <script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-<title>Week 11 · Sharing only the slice of history you grant — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<title>Week 11 — NAOMS Engineering Update — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
 <header class="site"><div class="wrap">
 <h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
 <p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
@@ -11,36 +11,157 @@
 <div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">119</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">19</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
 <div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">28</span></a></div>
 <div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 2</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
-<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update · Week 11</div><h1 class="dhero-dek">Share just the slice of your history you choose — a peer reads only what you grant, nothing more.</h1><p class="dhero-lede">Here's what shipped for you this week: you can now share just the slice of your history you grant — a peer reads exactly that and nothing else, denied by default. Plus the postmortem where the numbers proved our first diagnosis wrong.</p></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>May 31, 2026</span><span>·</span><span>2 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><p><img src="assets/week-11-commits.svg" alt="Commits per day — Week 11" /></p>
-<p>A quieter week on the surface, with one postmortem where the numbers proved our first diagnosis wrong. Here's the honest accounting.</p>
-<h2 id="by-the-numbers"><a class="anchor" aria-hidden="true" tabindex="-1" href="#by-the-numbers"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>By the numbers</h2>
-<ul>
-<li><strong>1,350 commits landed on <code>main</code></strong> over the window — the truer "what actually merged" figure. Gross branch activity was higher (~<strong>5,031</strong> across all branches, an estimate skewed by a single calling-feature sub-fleet and by timestamps pulling in some out-of-window commits) — read the 1,350.</li>
-<li><strong>Busiest day: 2026-05-30 with 584 commits.</strong> The day before was 92; the day after, 6.</li>
-<li><strong>Net lines: not quoted as a headline.</strong> The raw diff (+2.2M / −0.5M) is overwhelmingly generated bytes (dataset packs, fixture regeneration), not hand-written code. Quoting it would mislead, so we don't.</li>
-<li><strong>~16 active work items</strong> in the window. <strong>One shipped; one celebrated.</strong></li>
-</ul>
-<h2 id="shipped--landed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#shipped--landed"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Shipped / landed</h2>
-<ul>
-<li><strong>Improved — The rules that govern NAOMS now load straight into every agent</strong> <em>(shipped)</em>.</li>
-<li><strong>New — Share just the slice of your history you choose</strong> <em>(celebrated)</em>. A peer can read exactly the part of a chain you've granted and nothing else, enforced down to the byte on both the data and file planes, denied by default — proven with a two-device read-gate test. (<a href="2026-05-29-reading-the-chain-youre-allowed-to-see.html" rel="noopener noreferrer">Reading the chain you're allowed to see</a>.)</li>
-<li><strong>Improved — A second device can recover cleanly from a stale-key race</strong> <em>(partial — protocol shipped, end-to-end not yet)</em>. The resend-request loop that closes the race landed on 05-30. <em>Honest label:</em> the protocol shipped; the two-device install is still blocked on a deeper cross-device replication wall. Shipped a layer, named the wall.</li>
-<li><strong>Improved — Personal information is now scanned the moment data leaves for export, not on the way in</strong> <em>(partial)</em>, with a <code>naoms dataset pii-scan</code> command; public-by-design identifiers were dropped from the scan and the phone matcher tightened. The work is still building packs — a clean privacy decision inside an in-progress effort.</li>
-</ul>
-<h2 id="broke--fixed-honest"><a class="anchor" aria-hidden="true" tabindex="-1" href="#broke--fixed-honest"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Broke &amp; fixed (honest)</h2>
-<ul>
-<li><strong><a href="2026-05-27-i-was-wrong-about-the-signer.html" rel="noopener noreferrer">We were wrong about the signer</a>.</strong> An invite took ~37s to complete, past the 30s deadline. We blamed the signing pipeline; the real cause was a blocking disk write on the main thread. An honest reversal, settled by evidence.</li>
-</ul>
-<h2 id="concept-of-the-week--why-green-isnt-done"><a class="anchor" aria-hidden="true" tabindex="-1" href="#concept-of-the-week--why-green-isnt-done"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Concept of the week — <a href="2026-05-29-green-isnt-done-the-test-critic-that-hunts-your-bugs.html" rel="noopener noreferrer">why "green" isn't "done"</a></h2>
-<p class="dintro">A passing test certifies what it <em>asserts</em>, not what you <em>meant</em>. A suite can be fully green and still leave a design intent completely unbuilt — it simply never asked. So the rule we hold: <strong>a test that passes over code with a design gap is itself a bug.</strong> Closing work isn't "the bar went green"; it's "every design intent has a test that proves it, and the intents with no test are the bugs the green badge was hiding." (Our test-critic instruction, 2026-05-25.)</p>
-<aside class="closer"><h2 class="closer-t">What's next</h2><div class="closer-b">
-<ul>
-<li><strong>Push the plan-tree terminal cockpit toward release</strong> — it reached heavy keypress-level polish this week (cursor, filter, the enter-storm debounce).</li>
-</ul>
-<p>The plan-tree terminal cockpit, which reached heavy keypress-level polish this week (cursor, filter, enter-storm debounce).</p>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update · Week 11</div><h1 class="dhero-dek">A peer can now read the slice of your history you granted, and nothing else</h1><p class="dhero-lede">Two things worth your time this week: sharing became a grant of one slice of a chain, refused by default and enforced down to the byte, and a postmortem where our own measurements refuted the diagnosis we had already committed to. Everything else that moved is listed at the end.</p><div class="dhero-scope">📅 May 25 – May 31 · Process</div><div class="dstats dstats-hero"><div class="dstat"><div class="dstat-k">Commits</div><div class="dstat-n">1,350</div></div><div class="dstat"><div class="dstat-k">Busiest day</div><div class="dstat-n">584</div></div><div class="dstat"><div class="dstat-k">Two days later</div><div class="dstat-n">6</div></div><div class="dstat"><div class="dstat-k">Active work items</div><div class="dstat-n">~16</div></div><div class="dstat"><div class="dstat-k">Invite completed in</div><div class="dstat-n text">37s</div></div></div></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>May 31, 2026</span><span>·</span><span>9 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><p><img src="assets/week-11-commits.svg" alt="Commits per day — Week 11" /></p>
+
+<h2 id="four-things-changed-this-week"><a class="anchor" aria-hidden="true" tabindex="-1" href="#four-things-changed-this-week"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Four things changed this week</h2>
+<p class="dintro">A quieter week on the surface, with one landing, one reversal, and two things
+honestly labelled partial.</p>
+<div class="fourgrid"><div class="fcard"><div class="fcard-n">1</div><h3 class="fcard-t">A peer reads the slice of your history you granted, and no more</h3><div class="fcard-b"><p>A grant covers exactly the part of a chain you chose. Everything else is
+refused by default, enforced down to the byte on both the data and the file
+side.</p></div></div><div class="fcard"><div class="fcard-n">2</div><h3 class="fcard-t">The rules that govern NAOMS now load straight into every agent</h3><div class="fcard-b"><p>Every agent starts holding the current rules rather than fetching or
+approximating them, so there is one answer to what is allowed instead of one
+per agent.</p></div></div><div class="fcard"><div class="fcard-n">3</div><h3 class="fcard-t">Personal information is scanned when data leaves, not when it arrives</h3><div class="fcard-b"><p>The check moved to the export boundary, with a command you can run yourself.
+Identifiers that are public by design were dropped from the scan and the phone
+matcher was tightened.</p></div></div><div class="fcard"><div class="fcard-n">4</div><h3 class="fcard-t">A second device can recover from a stale-key race</h3><div class="fcard-b"><p>The resend request that closes the race landed on 30 May. The protocol is in;
+the two-device install behind it is not, and this report labels that plainly.</p></div></div></div><h2 id="reading-only-the-chain-you-are-allowed-to-see"><a class="anchor" aria-hidden="true" tabindex="-1" href="#reading-only-the-chain-you-are-allowed-to-see"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Reading only the chain you are allowed to see</h2>
+<p class="dsub"><strong>The feature:</strong> letting another person's device read part of your history —
+one slice of a chain, not the chain.</p>
+<p class="dsub"><strong>Before:</strong> access to a chain was a decision about the chain. <strong>Now:</strong> it is a
+decision about a range within it. A peer reads exactly what you granted, and
+everything outside that range is refused by default rather than allowed by
+oversight.
+(<a href="2026-05-29-reading-the-chain-youre-allowed-to-see.html" rel="noopener noreferrer">Reading the chain you're allowed to see</a>)</p>
+<p class="dsub"><strong>Denied by default is the only default that survives a system growing.</strong> Every
+permissive default is a bet that nobody will add a new kind of data later. That
+bet loses quietly: the new thing inherits the old permission, and nobody
+notices until it has already been read.</p>
+<p class="dsub"><strong>What was built.</strong> The rule is enforced on both planes — the structured data
+and the files — and at byte granularity rather than at the level of whole
+records. A boundary enforced in one place and honoured in the other by
+convention is not a boundary; it is a habit that holds until the second path
+gets a new caller.</p>
+<p class="dsub"><strong>What it cost to prove.</strong> The proof is a two-device read gate: one device
+grants a slice, the other tries to read past it and is refused. A test on one
+device can only show that the code intends to refuse. Two devices show that the
+refusal happens where it matters, on the far side of the link.</p>
+<h2 id="the-measurement-that-refuted-our-own-diagnosis"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-measurement-that-refuted-our-own-diagnosis"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The measurement that refuted our own diagnosis</h2>
+<p class="dsub"><strong>The feature:</strong> accepting an invitation, which has to complete inside a
+30-second deadline.</p>
+<p class="dsub"><strong>Before:</strong> it was taking about 37 seconds, and we had already named the cause:
+the signing pipeline. <strong>Now:</strong> the number says otherwise. The delay was a
+blocking disk write on the main thread, and the signing pipeline was carrying
+the blame for it.
+(<a href="2026-05-27-i-was-wrong-about-the-signer.html" rel="noopener noreferrer">We were wrong about the signer</a>)</p>
+<p class="dsub"><strong>A diagnosis that matches what you already believe is the one to measure
+first.</strong> Signing is cryptographic, it is the newest part of the path, and it is
+the part everyone finds interesting. All three make it a magnet for blame, and
+none of them is evidence.</p>
+<p>The disk write was invisible for the opposite set of reasons. It is old, it is
+boring, and it belongs to a layer nobody was looking at that week. A blocking
+write on the main thread produces exactly the symptom we saw — a fixed delay
+added to something unrelated — and it produces it without appearing anywhere in
+the story we had already constructed.</p>
+<p>Publishing the reversal costs something and is worth it. A team that only
+publishes the diagnoses that turned out right teaches its readers that
+diagnoses are usually right, which is the least useful thing they could learn
+from us.</p>
+<h2 id="what-this-means-in-plain-terms"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-this-means-in-plain-terms"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What this means, in plain terms</h2>
+<p class="dintro">Five general lessons this week's work paid for, each learned by getting
+something wrong first.</p>
+<h3 id="denied-by-default-or-the-boundary-drifts"><a class="anchor" aria-hidden="true" tabindex="-1" href="#denied-by-default-or-the-boundary-drifts"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Denied by default, or the boundary drifts</h3>
+<p>A grant now covers one slice of a chain and refuses everything else, on both
+the data and the file side, at byte granularity. A permissive default would
+have quietly extended itself to every kind of data added afterwards.
+<strong>A default that has to be revisited every time the system grows will not be
+revisited.</strong></p>
+<h3 id="measure-the-boring-explanation-first"><a class="anchor" aria-hidden="true" tabindex="-1" href="#measure-the-boring-explanation-first"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Measure the boring explanation first</h3>
+<p>An invitation was taking 37 seconds against a 30-second deadline, and the
+signing pipeline was blamed because it was the newest and most interesting part
+of the path. The cause was a blocking disk write on the main thread.
+<strong>Suspicion follows novelty and interest, neither of which is correlated with
+being the cause.</strong></p>
+<h3 id="a-passing-test-certifies-what-it-asserts-not-what-you-meant"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-passing-test-certifies-what-it-asserts-not-what-you-meant"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A passing test certifies what it asserts, not what you meant</h3>
+<p>A suite can be entirely green while a design intent sits unbuilt, because
+nothing ever asked for it. Closing work is not "the bar went green" but "every
+intent has a test that proves it".
+<strong>A test that passes over code with a design gap is itself a bug.</strong>
+(<a href="2026-05-29-green-isnt-done-the-test-critic-that-hunts-your-bugs.html" rel="noopener noreferrer">Green isn't done</a>)</p>
+<h3 id="check-data-at-the-boundary-it-actually-crosses"><a class="anchor" aria-hidden="true" tabindex="-1" href="#check-data-at-the-boundary-it-actually-crosses"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Check data at the boundary it actually crosses</h3>
+<p>Personal-information scanning moved from the moment data arrives to the moment
+it leaves for export, with public-by-design identifiers dropped and the phone
+matcher tightened. Data that never leaves needs no scan; data that leaves needs
+one at the door. <strong>Put the check where the risk is realised, not where the
+pipeline was easiest to instrument.</strong></p>
+<h3 id="publish-the-number-that-answers-the-question"><a class="anchor" aria-hidden="true" tabindex="-1" href="#publish-the-number-that-answers-the-question"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Publish the number that answers the question</h3>
+<p>Gross activity across every line of work came to roughly 5,031, skewed by one
+feature's own sub-fleet and by timestamps pulling in work from outside the
+window.
+What actually merged was 1,350. <strong>When two counts disagree, publish the one you
+can define in a sentence, and say why the larger one was not it.</strong></p>
+<p>The plan-tree terminal cockpit, which reached heavy keypress-level polish this week — cursor, filter, and the enter-storm debounce.</p>
 
 
-
+<h2 id="how-much-healthier-is-it-than-a-week-ago"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-much-healthier-is-it-than-a-week-ago"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How much healthier is it than a week ago?</h2>
+<div class="dmetrics"><div class="dmetric"><div class="dm-l"><span class="dm-name">Commits merged</span><span class="dm-gloss">Work that actually reached the main line of the shared codebase inside the window</span></div><div class="dm-v"><span class="dm-b">1,350</span></div><div class="dm-d flat"></div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Gross activity, all streams</span><span class="dm-gloss">An estimate across every line of work, skewed high by one feature's own sub-fleet and by timestamps pulling in out-of-window commits</span></div><div class="dm-v"><span class="dm-b">~5,031</span></div><div class="dm-d flat"></div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Busiest day</span><span class="dm-gloss">2026-05-30. The day before ran 92; the day after, 6</span></div><div class="dm-v"><span class="dm-b">584</span></div><div class="dm-d flat"></div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Active work items</span><span class="dm-gloss">Items with activity in the window; one shipped and one finished outright</span></div><div class="dm-v"><span class="dm-b">~16</span></div><div class="dm-d flat"></div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Invite completion</span><span class="dm-gloss">Time to accept an invitation, against a 30-second deadline. Cause identified this week, not yet closed</span></div><div class="dm-v"><span class="dm-a">37s</span><span class="dm-arr">→</span><span class="dm-b">37s</span></div><div class="dm-d flat"></div></div></div>
+<p>Read the 1,350. The larger figure is included because it exists and would
+otherwise be quoted at us, not because it is the better answer. No net
+line-count headline appears either: the raw diff for the window is +2.2M and
+−0.5M lines, and it is overwhelmingly generated bytes — dataset packs and
+regenerated fixtures — rather than written code.</p>
+<section class="dnotes"><h4 class="dn-t">Three honest notes</h4><ol class="dn-l">
+<li><p class="dsub"><strong>Two of this week's four items are partial.</strong> The stale-key protocol
+shipped without the two-device install behind it, which is blocked on a
+deeper cross-device replication problem. The export scanning is a clean
+privacy decision inside an effort that is still building packs.</p>
+</li>
+<li><p class="dsub"><strong>The invitation is diagnosed, not fixed.</strong> We know the 37 seconds came from
+a blocking disk write on the main thread rather than from signing. Knowing
+is not the same as being inside the deadline.</p>
+</li>
+<li><p class="dsub"><strong>The generated-bytes problem is getting worse, not better.</strong> A diff of
++2.2M / −0.5M cannot be read as effort at all. Every week that this stays
+true, a whole class of ordinary progress metric is unavailable to us.</p>
+</li>
+</ol></section>
+<div class="doneline"><div class="dol-k">In one line</div><p>a peer can now read exactly the slice of a chain you granted
+and nothing beyond it, every agent loads the same governing rules, personal
+information is scanned as data leaves rather than as it arrives, and a
+37-second invitation turned out to be a disk write rather than the signer we
+had already blamed.</p></div>
+<h2 id="what-changed-area-by-area"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-changed-area-by-area"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What changed, area by area</h2>
+<p class="dintro">Every area that moved this week. Per-area file counts are not available for
+this window, so the areas are listed by what landed rather than ranked by
+traffic.</p>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">History sharing.</span></div><p class="acard-sum">A peer can read exactly the part of a chain you granted and nothing else.</p><p class="acard-d">The rule is enforced down to the byte on both the data and the file plane, refused by default, and proven with a two-device read-gate test rather than a single-device assertion.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Policies.</span></div><p class="acard-sum">The rules that govern NAOMS now load straight into every agent.</p><p class="acard-d">One set of rules is in force everywhere instead of each agent holding its own approximation of them.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Export privacy.</span></div><p class="acard-sum">Personal information is scanned at the moment data leaves for export rather than on the way in, with a naoms dataset pii-scan command you can run yourself.</p><p class="acard-d">Identifiers that are public by design were dropped from the scan, and the phone matcher was tightened. The wider effort is still building packs.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Device recovery.</span></div><p class="acard-sum">A second device can recover cleanly from a stale-key race, with the resend-request loop that closes it landing on 30 May.</p><p class="acard-d">The protocol shipped; the end-to-end two-device install did not, and is blocked on a deeper cross-device replication wall.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Invitations.</span></div><p class="acard-sum">An invitation was completing in about 37 seconds against a 30-second deadline.</p><p class="acard-d">The signing pipeline was blamed and then exonerated by measurement: the delay is a blocking disk write on the main thread.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The terminal cockpit.</span></div><p class="acard-sum">The plan-tree cockpit reached heavy keypress-level polish — cursor movement, filtering, and a debounce for a storm of rapid enter presses.</p><p class="acard-d">It is being pushed toward release and is not released.</p></div></div>
+<aside class="closer"><h2 class="closer-t">What would prove this week's sharing claim wrong</h2><div class="closer-b">
+<p class="dintro">Four things this report has only half-proven, each stated as a commitment
+rather than as a task.</p>
+<ul>
+<li><p class="dsub"><strong>The read gate has been proven between two devices, not against an
+adversary.</strong> A grant refuses the range outside it. Nothing here shows what
+happens against a peer that is trying rather than merely asking.</p>
+</li>
+<li><p class="dsub"><strong>A named wall is still a wall.</strong> The two-device install stops at a
+cross-device replication problem this report can name but has not solved.
+Shipping a layer and naming the obstacle is honest, and it is not delivery.</p>
+</li>
+<li><p class="dsub"><strong>The invitation still misses its deadline.</strong> 37 seconds against 30, with the
+cause now known. Until a measurement comes back inside the deadline, the
+finding is a better story rather than a better result.</p>
+</li>
+<li><p class="dsub"><strong>Export scanning has no published false-negative rate.</strong> Dropping
+public-by-design identifiers and tightening the phone matcher both narrow the
+scan. Narrowing is right and it is also the direction in which a miss becomes
+possible.</p>
+</li>
+</ul>
+<p><em>Window: 2026-05-25 → 2026-05-31. Commits are counted as work that actually
+merged onto the main line of the shared codebase inside the window; the gross
+all-streams estimate is quoted beside it and is not the figure to read. No net
+line-count headline is given, because the window's raw diff is overwhelmingly
+generated bytes — dataset packs and regenerated fixtures. Work that landed
+after the window is not counted here.</em></p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
 <hr />
 <p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
 </div></aside></div></div></article>

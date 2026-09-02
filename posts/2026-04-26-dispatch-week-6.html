@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
 <script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-<title>Week 6 · Voice and video, no server in the middle — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<title>Week 6 — NAOMS Engineering Update — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
 <header class="site"><div class="wrap">
 <h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
 <p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
@@ -11,41 +11,277 @@
 <div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">119</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">19</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
 <div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">28</span></a></div>
 <div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 2</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
-<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update · Week 6</div><h1 class="dhero-dek">Call a friend browser-to-browser, with no server in the middle — and record the call only with consent you can revoke.</h1><p class="dhero-lede">Here's what shipped for you this week: you can now make real voice and video calls browser-to-browser with no server in the middle, record a one-to-one call only with consent you can take back, and groups can issue credentials to their members. Plus the honest scar — one change silently broke every call for a few hours.</p></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>April 26, 2026</span><span>·</span><span>4 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><p><img src="assets/week-06-commits.svg" alt="Commits per day — Week 6" /></p>
-<p>The calling week. Voice and video over the network became real this week — browser to browser, no server in the middle — while a second front shipped distributed CI/CD on a chain-queue and a brand-new hive-credential effort went from a Friday conversation to fully shipped overnight. It was also a week with a genuine scar: a feature change silently broke every call for a few hours. Here's the honest accounting.</p>
-<h2 id="by-the-numbers"><a class="anchor" aria-hidden="true" tabindex="-1" href="#by-the-numbers"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>By the numbers</h2>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update · Week 6</div><h1 class="dhero-dek">Voice and video calls now run browser to browser, with no server in the middle</h1><p class="dhero-lede">Two changes worth your time this week: voice and video calls that run directly between browsers with nothing relaying them, and call recording gated on consent you can withdraw while it runs. Everything else that moved is listed at the end, including the change that silently broke every call for a few hours.</p><div class="dstats dstats-hero"><div class="dstat"><div class="dstat-k">Commits</div><div class="dstat-n">3,262</div><div class="dstat-q">(2,234 non-merge, 1,027 merges)</div></div><div class="dstat"><div class="dstat-k">Busiest day</div><div class="dstat-n">841</div><div class="dstat-q">(Monday 2026-04-20)</div></div><div class="dstat"><div class="dstat-k">Mid-week trough</div><div class="dstat-n text">~80/day (04-23 and 04-24)</div></div><div class="dstat"><div class="dstat-k">Weekend recovery</div><div class="dstat-n">354</div><div class="dstat-q">(04-25), 411 (04-26)</div></div><div class="dstat"><div class="dstat-k">Efforts finished</div><div class="dstat-n">6,</div><div class="dstat-q">all signed off</div></div></div></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>April 26, 2026</span><span>·</span><span>15 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><p><img src="assets/week-06-commits.svg" alt="Commits per day — Week 6" /></p>
+
+<h2 id="four-things-changed-this-week"><a class="anchor" aria-hidden="true" tabindex="-1" href="#four-things-changed-this-week"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Four things changed this week</h2>
+<p class="dintro">One per major area. Calling is the headline, and three other threads landed
+beside it — one of them going from a Friday conversation to finished overnight.</p>
+<div class="fourgrid"><div class="fcard"><div class="fcard-n">1</div><h3 class="fcard-t">You can call a friend, voice and video, with no server in the middle</h3><div class="fcard-b"><p>Calls run browser to browser. Group calls are orchestrated between the
+participants themselves, and a Call button now sits in the channel where the
+conversation already is.</p></div></div><div class="fcard"><div class="fcard-n">2</div><h3 class="fcard-t">A call can be recorded only with consent you can take back</h3><div class="fcard-b"><p>The recording lifecycle for a one-to-one call is gated on real consent, and
+that consent is revocable rather than a single up-front click.</p></div></div><div class="fcard"><div class="fcard-n">3</div><h3 class="fcard-t">Groups can issue credentials to their members</h3><div class="fcard-b"><p>A group can now hand its members a credential it stands behind, with per-group
+trust roots, a configuration of what it supports, and a gate that verifies what
+comes back.</p></div></div><div class="fcard"><div class="fcard-n">4</div><h3 class="fcard-t">The build pipeline runs on a group's own record</h3><div class="fcard-b"><p>The old runner path was retired and the pipeline now works from an append-only
+record, proven by a real end-to-end run rather than by assertion.</p></div></div></div><h2 id="calls-with-nobody-in-the-middle"><a class="anchor" aria-hidden="true" tabindex="-1" href="#calls-with-nobody-in-the-middle"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Calls with nobody in the middle</h2>
+<p class="dsub"><strong>The feature:</strong> voice and video between people, running directly between their
+browsers, started from the channel they are already talking in.</p>
+<p class="dsub"><strong>Before:</strong> a call meant a server in the middle relaying it. <strong>Now:</strong> the media
+goes browser to browser, group calls are orchestrated between the participants,
+and a Call button sits in the channel.</p>
+<p>Calling is the hardest thing a peer-to-peer system is normally asked to do,
+because it has no tolerance for the delays that everything else can absorb. A
+message that arrives a second late is fine; audio that arrives a second late is
+a broken call.</p>
+<p class="dsub"><strong>Removing the middle removes a listener, not just a hop.</strong> A relay server is a
+place where a call exists in the clear unless something prevents it. The
+strongest version of preventing it is not having the place.</p>
+<p>No server in the middle is also a claim about who can be compelled. There is no
+operator holding a copy of the call to hand over, because there is no operator
+in the path at all.</p>
+<p class="dsub"><strong>What was built.</strong> Direct peer-to-peer calling for voice and video, group
+calls orchestrated between participants rather than by a coordinator, a single
+shared encryption group per call, and a Call button in the channel so starting
+one is not a separate destination.</p>
+<p>Group calls being orchestrated between the participants, rather than by a
+coordinator, is the part that makes the claim hold at more than two people. A
+coordinator would have been simpler and would have put the middle back.</p>
+<p>Putting the button in the channel is a smaller decision that carries a lot. A
+call is a thing you have with people you were already talking to, and moving to
+a different surface to start one breaks the thread it belongs to.</p>
+<p>Direct connections cost something in exchange. A relay always knows how to
+reach everyone; two browsers have to find each other, and networks are full of
+arrangements designed to make that difficult.</p>
+<h3 id="one-owner-for-the-encryption-group"><a class="anchor" aria-hidden="true" tabindex="-1" href="#one-owner-for-the-encryption-group"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>One owner for the encryption group</h3>
+<p>Encryption state here is the shared secret material that lets a group of
+participants talk without anyone outside being able to listen. Somebody has to
+create it, and everybody has to end up with the same one.</p>
+<p>A group call needs shared encryption state, and every participant could
+plausibly create it. If several do, the call ends up with several conflicting
+groups and no agreement about who is really in it.</p>
+<p>The rule is one sentence: only the call's creator creates the encryption group,
+and only the creator sends out the invitations. Everybody else joins.</p>
+<p>That produces exactly one source of truth for who is in the call. Audio stays
+end-to-end encrypted between pairs, and the question "who is on this call" has
+a single answer rather than as many answers as there are participants.</p>
+<p>The rule also decides something that would otherwise need negotiating. Whoever
+starts the call is unambiguous — there is exactly one of them, and everyone
+else can tell who it was — so the ownership question answers itself without a
+protocol.</p>
+<p>It is the same instinct that runs through the rest of the system: pick one
+honest owner for a piece of shared state, rather than hoping concurrent writers
+happen to agree. Concurrent agreement is not a plan; it is a coincidence you
+are relying on.</p>
+<p><em><a href="2026-04-21-why-one-mls-group-per-call.html" rel="noopener noreferrer">Why one encryption group per call</a>
+sets out the reasoning.</em></p>
+<p>One encryption group per call is the arrangement; per-pair end-to-end encryption
+of the audio is what travels inside it. The first settles membership, the second
+settles who can hear.</p>
+<h3 id="the-gap-that-shipped-with-it"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-gap-that-shipped-with-it"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The gap that shipped with it</h3>
+<p>One asymmetry in inbound audio over the mesh was found and filed as follow-on
+work inside the same week it shipped. The calls work; that specific case does
+not, and it is named rather than left for someone to discover.</p>
+<p>Shipping a feature with a named gap and shipping one with an unnamed gap are
+the same software and a completely different promise. The first can be planned
+around by a person; the second cannot.</p>
+<h2 id="recording-that-you-can-stop-consenting-to"><a class="anchor" aria-hidden="true" tabindex="-1" href="#recording-that-you-can-stop-consenting-to"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Recording that you can stop consenting to</h2>
+<p class="dsub"><strong>The feature:</strong> recording a one-to-one call, with the other person's consent,
+and letting them withdraw it.</p>
+<p class="dsub"><strong>Before:</strong> recording was not part of the product. <strong>Now:</strong> the whole recording
+lifecycle is gated on real consent, end to end, and that consent can be taken
+back rather than being spent once at the start.</p>
+<p>Recording changes what a conversation is. A call that might be recorded is a
+different conversation from one that will not be, and the person who does not
+control the recording is the one who feels the difference.</p>
+<p class="dsub"><strong>Consent that cannot be withdrawn is a signature, not consent.</strong> A single
+up-front agreement covers a moment. A recording continues after that moment, so
+the permission has to continue with it and has to be revocable while it does.</p>
+<p class="dsub"><strong>What was built.</strong> Consent is checked across the lifecycle rather than at the
+door: starting, continuing, and stopping a recording all depend on the
+permission still standing. Revocation is a first-class action, not an appeal.</p>
+<p>Gating the lifecycle means the check happens at every stage that matters:
+starting a recording, continuing it, and ending it. A permission that is only
+read once is a permission that stops being true without anything noticing.</p>
+<p>Making it revocable is what makes it real. If withdrawing agreement is
+impossible, or possible only by ending the call, then the initial yes was
+extracted rather than given, and everybody in the conversation knows it.</p>
+<p>Revocation being first-class is also what makes granting it reasonable. Someone
+who knows they can stop a recording can agree to one without having to predict
+the whole conversation in advance.</p>
+<h3 id="why-the-lifecycle-is-where-consent-goes-wrong"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-the-lifecycle-is-where-consent-goes-wrong"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why the lifecycle is where consent goes wrong</h3>
+<p>The one-to-one scope is deliberate and stated. Two people is the case where
+consent has an unambiguous shape, and starting there is more honest than
+shipping something vaguer that covers more.</p>
+<p>Most consent failures are not a missing prompt. They are a prompt at the start
+followed by a process that never asks again, and never checks whether the
+answer still holds.</p>
+<p>That pattern is easy to build and hard to notice, because the screenshot of the
+prompt is genuine. The record shows a person agreeing. What it cannot show is
+whether they still agree, three minutes later, about something they can no
+longer stop.</p>
+<p>Gating the whole lifecycle means the recording depends on a live permission
+rather than on a historical one. The distinction is invisible when nobody
+changes their mind, which is precisely why it has to be built before anybody
+does.</p>
+<p>This one shipped complete for one-to-one calls. Group recording is a different
+problem with a different consent shape, and nothing here claims to have solved
+it.</p>
+<p>What remains unproven is behaviour under disagreement. Everything here works
+when one person withdraws and the other accepts it; what a recording does when
+the two sides disagree about whether it should continue is not described.</p>
+<p><em><a href="2026-04-26-recording-a-call-with-consent-you-can-revoke.html" rel="noopener noreferrer">Recording a call with consent you can revoke</a>
+covers the lifecycle.</em></p>
+<h2 id="what-this-means-in-plain-terms"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-this-means-in-plain-terms"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What this means, in plain terms</h2>
+<p class="dintro">Most of what lands in a week belongs to the thing it landed in. A few things
+generalise past it. These five are the ones this week actually paid for.</p>
+<h3 id="pick-one-honest-owner-for-shared-state"><a class="anchor" aria-hidden="true" tabindex="-1" href="#pick-one-honest-owner-for-shared-state"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Pick one honest owner for shared state</h3>
+<p>In a group call, any participant could create the shared encryption state, and
+several doing so produces conflicting groups with no agreement on membership.
+The rule adopted is that only the creator creates it and fans out invitations.
+<strong>Concurrent writers agreeing is a coincidence, not a design.</strong></p>
+<h3 id="consent-that-cannot-be-withdrawn-is-a-signature"><a class="anchor" aria-hidden="true" tabindex="-1" href="#consent-that-cannot-be-withdrawn-is-a-signature"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Consent that cannot be withdrawn is a signature</h3>
+<p>Call recording is gated on permission across the whole lifecycle rather than at
+the start, and the permission is revocable while the recording runs. An
+up-front-only prompt records agreement to a moment and then outlives it. <strong>A
+permission that covers a process must be checkable throughout it.</strong></p>
+<h3 id="a-fix-should-name-the-change-that-broke-it"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-fix-should-name-the-change-that-broke-it"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A fix should name the change that broke it</h3>
+<p>A dropped call-start request was introduced by one change and restored hours
+later by another, which named the change that had caused it. Naming costs
+nothing and turns two unrelated-looking commits into one legible episode.
+<strong>Write the cause into the cure, or the next person reconstructs it from
+scratch.</strong></p>
+<h3 id="a-build-that-says-done-and-a-check-that-says-no"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-build-that-says-done-and-a-check-that-says-no"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A build that says done and a check that says no</h3>
+<p>One effort this week failed its own verification pass — the build reported
+finished, the verification reported not shipped, and two regressions were filed
+and fixed. That disagreement is the verification doing the only job it has.
+<strong>A check that never contradicts the thing it checks is not a check.</strong></p>
+<h3 id="a-clean-stopping-point-is-not-a-finish"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-clean-stopping-point-is-not-a-finish"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A clean stopping point is not a finish</h3>
+<p>The mid-week trough was long-running work grinding on stubborn problems, and
+the instruction that carried it was to distil what had been learned, drop the
+weight that was not needed, and keep going. Reaching a tidy place to stop is
+not the same as being done. <strong>Carry the honest summary forward instead of
+handing back at the first clean seam.</strong></p>
+<h2 id="how-much-healthier-is-it-than-a-week-ago"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-much-healthier-is-it-than-a-week-ago"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How much healthier is it than a week ago?</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+<th>What it counts</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Commits</td>
+<td>3,262</td>
+<td>Every commit in the window: 2,234 non-merge plus 1,027 merges</td>
+</tr>
+<tr>
+<td>Busiest day</td>
+<td>841</td>
+<td>Commits dated Monday 2026-04-20, merges included</td>
+</tr>
+<tr>
+<td>Mid-week trough</td>
+<td>~80/day</td>
+<td>Commits on 04-23 and 04-24, on the same rule</td>
+</tr>
+<tr>
+<td>Weekend recovery</td>
+<td>354, then 411</td>
+<td>Commits on 04-25 and 04-26</td>
+</tr>
+<tr>
+<td>Efforts finished</td>
+<td>6</td>
+<td>Distinct efforts that reached their finished state and were signed off</td>
+</tr>
+</tbody></table>
+<p class="dsub"><strong>The counting rule returns to the window total this week, and the change is
+stated rather than absorbed.</strong> The previous window split its figures into what
+landed and what was authored across parallel work. This one counts every commit
+in the window, merges included, which is the rule used before that — so this
+week's 3,262 is not directly comparable to last week's 877.</p>
+<p>Six efforts reached their finished state and were signed off, which is the
+figure that says the most about the week. Commits describe activity; a signed-off
+effort describes something that survived its own review.</p>
+<p>Per-day counts include merges throughout, so they describe the shape of the
+week rather than a rate of production. The shape here is a heavy Monday, a
+trough that drops to roughly a tenth of it, and a weekend climbing back as new
+work spun up.</p>
+<p>Merges are a large share of this window — 1,027 of 3,262 — which is why the
+non-merge figure is quoted beside the total rather than instead of it.</p>
+<p class="dsub"><strong>Net lines are not quoted.</strong> At roughly three thousand commits a week the diff
+is dominated by fixtures and generated files, so a net-lines figure would
+report the wrong thing confidently. The honest lead statistics are the commit
+count and the six finished efforts.</p>
+<p>Going from a Friday design conversation to a signed-off credential system
+overnight is the outlier of the week. It is recorded because it happened, not
+because it is a pace anything should be planned around.</p>
+<div class="doneline"><div class="dol-k">In one line</div><p>voice and video calls now run browser to browser with one
+encryption group per call and a Call button in the channel, recording a
+one-to-one call is gated on consent that can be withdrawn while it runs, groups
+can issue credentials to their members, the build pipeline moved onto an
+append-only record — and one change silently broke every call for a few hours.</p></div>
+<p>The trough is the part of the shape worth explaining. Two days at roughly a
+tenth of Monday's volume were long-running work grinding on stubborn problems
+rather than a pause, and the days either side of it are why the week still
+closed at 3,262.</p>
+<p>Monday was both the week's start and its peak, at 841. The shape that follows —
+a steep drop to roughly eighty a day, then a weekend climbing back through 354
+to 411 — is one week's texture and should not be read as a trend.</p>
+<p class="dsub"><strong>Three honest notes.</strong></p>
+<p>Every call was broken for a few hours. A call-start request was dropped by a
+change to the mesh roster and restored hours later, on the same day, by the
+change that added the Call button — which named the change that had broken it.</p>
+<p>The calling work shipped with a named gap. One inbound-audio asymmetry over the
+mesh was filed as follow-on work in the same week, so the feature is honestly
+complete-with-an-exception rather than complete.</p>
+<p>An automated tool edited work it did not own. Close-out entries were appended
+to efforts outside its scope and were surgically reverted within the week. The
+reversal was clean; the fact that it could happen at all is the finding.</p>
+<h2 id="what-changed-area-by-area"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-changed-area-by-area"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What changed, area by area</h2>
+<p class="dintro">Five areas moved this week and three things broke in them. Both lists are
+below, in the same section, because separating them would be a choice about
+presentation rather than about accuracy.</p>
+<p>Everything that moved this week, in rough order of how much of it moved.
+Per-area file counts are not available for this window, so each area is named
+without one rather than with a figure that cannot be reproduced.</p>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">Calling.</span></div><p class="acard-sum">Voice and video now run browser to browser with no server in the middle, group calls orchestrated between participants, one shared encryption group per call, per-pair end-to-end encrypted audio, and a Call button in the channel.</p><p class="acard-d">One mesh inbound-audio asymmetry was filed as follow-on work in the same week.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Call recording.</span></div><p class="acard-sum">The full recording lifecycle for a one-to-one call shipped end to end, gated on real consent that can be revoked while the recording is running rather than agreed once at the start.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Group credentials.</span></div><p class="acard-sum">A group can now issue credentials to its members.</p><p class="acard-d">The work went from a Friday design conversation to a full sign-off overnight, and carries a configuration of supported packages, per-identity trust roots, and a gate that verifies what comes back. ( Designing hives that issue credentials .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The build pipeline.</span></div><p class="acard-sum">Builds now run against a group's own append-only record, with the old runner path retired and the replacement proven by a real end-to-end run.</p><p class="acard-d">Retiring the old path is the part that makes it a migration rather than an addition.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Test infrastructure for multiple peers.</span></div><p class="acard-sum">Real multi-peer testing arrived with the membership work, which is what allows a claim about several machines agreeing to be checked rather than assumed.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Membership and broadcast.</span></div><p class="acard-sum">Reliable membership and broadcast checks across peers reached their finished state after a multi-day hunt for drift in membership links.</p><p class="acard-d">This was the week's quiet grind and it is the reason the calling work has anything dependable underneath it.</p></div></div>
+<p>Three things went wrong this week and all three were caught and corrected
+inside it. Each is recorded here at the same weight as the features, because a
+report that only lists the wins is an advertisement.</p>
+<h3 id="what-broke-and-what-it-cost"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-broke-and-what-it-cost"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What broke, and what it cost</h3>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">Every call, for a few hours.</span></div><p class="acard-sum">A call-start request was dropped by a change to the mesh roster and restored the same day inside the change that added the Call button — which named the change that had broken it.</p><p class="acard-d">Hours apart, on one day.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">An effort failed its own verification.</span></div><p class="acard-sum">The build reported finished and the verification reported not shipped.</p><p class="acard-d">Two regressions were filed and fixed. A marked-done caught not being done, in plain language.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">A tool edited work it did not own.</span></div><p class="acard-sum">An orchestrator appended close-out entries to efforts outside its scope; the additions were surgically reverted within the same week.</p></div></div>
+<p><img src="img/5-m14w-1-locked-prompt-pass.png" alt="A real capture from the docs-viewer work: the locked-state prompt shown when the database is held. Included as an honest stand-in, not as a picture of the calling or pipeline features." /></p>
+<p>Fabricating a picture of a feature that has none would violate the honesty the
+rest of this report is built on, so none is fabricated.</p>
+<p>This week's headline items — the calls, the pipeline, the credential work —
+have no captures, so none is shown for them. The image above is a real capture
+from work active in the same week, committed about a week after this window
+closed, and is captioned as a stand-in rather than presented as a picture of
+the headline features.</p>
+<aside class="closer"><h2 class="closer-t">What would prove this week's calling claims wrong</h2><div class="closer-b">
+<p class="dintro">Calling shipped this week and the calling effort did not finish this week.
+Those two sentences are both true, and the gap between them is what this last
+section is for.</p>
+<p>Five things this report claims are only half-proven. Each is stated as a
+commitment, and each names the evidence that would settle it.</p>
 <ul>
-<li><strong>3,262 commits</strong> (2,234 non-merge + 1,027 merges) — the whole fleet commits under one identity, bylined Mujo / source developer, so this is "the fleet," not one pair of hands.</li>
-<li><strong>Busiest day: Monday 2026-04-20 at 841 commits.</strong> Then a sharp <strong>mid-week trough</strong> — roughly <strong>80/day on 04-23 and 04-24</strong> — and a <strong>weekend surge</strong> back to 354 (04-25) and 411 (04-26) as the new work spun up. (Note: these per-day counts include merge commits, so read them for <em>shape</em> — the trough-then-surge is real — not as a productivity score.)</li>
-<li><strong>Six efforts reached their finish line this week</strong> — all fully signed off.</li>
-<li><strong>Net lines of code: not quoted.</strong> At roughly 3,000 commits a week the diff is dominated by fixtures and generated files; a net-lines number here would mislead. The honest lead stat is commits plus landings.</li>
+<li><strong>Inbound audio over the mesh is asymmetric in one case.</strong> It is filed, named,
+and open. Calls that meet that case do not work, and the feature is honest
+rather than finished until it closes.</li>
+<li><strong>Revocable consent is proven for one-to-one calls only.</strong> Group recording has
+a different consent shape and is not covered. Nothing here should be read as a
+claim about it.</li>
+<li><strong>The calling effort has not been signed off as a whole.</strong> Individual pieces
+reached green this week. The effort behind them was still in progress well
+into mid-2026, and per-milestone green is not a finished feature.</li>
+<li><strong>Group credentials can be issued and not yet managed.</strong> The issuing side
+shipped overnight; the surface for setting permissions around it exists only
+as the design that produced it.</li>
+<li><strong>A tool proved able to edit work outside its scope.</strong> The specific edits were
+reverted. Nothing described here stops the next one, and a clean revert is a
+cure rather than a bound.</li>
 </ul>
-<h2 id="shipped"><a class="anchor" aria-hidden="true" tabindex="-1" href="#shipped"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Shipped</h2>
-<ul>
-<li><strong>New — Call a friend, voice and video, browser to browser with no server in the middle.</strong> Group calls are orchestrated peer-to-peer, encrypted in one shared group per call, with a <strong>Call</strong> button right in the channel. <em>Partial, labeled:</em> one mesh inbound-audio asymmetry was filed as a follow-on in-week — shipped the calls, named the gap.</li>
-<li><strong>New — Record a one-to-one call, only with consent you can take back.</strong> The full recording lifecycle is gated on real consent and revocable, shipped end-to-end. (<a href="2026-04-26-recording-a-call-with-consent-you-can-revoke.html" rel="noopener noreferrer">Recording a call with consent you can revoke</a>.)</li>
-<li><strong>Improved — Our build pipeline now runs on a group's own append-only record,</strong> with the old runner path retired and proven by a real end-to-end test. (Distributed CI/CD on a chain-queue, fully shipped.)</li>
-<li><strong>New — Groups can now issue credentials to their members.</strong> This started as a Friday design conversation and ran through the night to a full sign-off: supported-packages config, per-identity trust roots, and a verifier gate. (<a href="2026-04-25-designing-hives-that-issue-credentials.html" rel="noopener noreferrer">Hives that issue credentials</a>.)</li>
-<li><strong>Improved — Reliable membership and broadcast checks across peers,</strong> the week's quiet multi-day grind — a stubborn membership-link drift hunt plus real multi-peer test infrastructure — reached its finish line. (Generic chain membership / broadcast-auth, fully shipped.)</li>
-</ul>
-<h2 id="broke--fixed-honest"><a class="anchor" aria-hidden="true" tabindex="-1" href="#broke--fixed-honest"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Broke &amp; fixed (honest)</h2>
-<ul>
-<li>A dropped call-start request entered in a mesh-roster feature and was restored hours later inside the channel-Call-button change — which honestly named the change that broke it. Same day; a few hours apart.</li>
-<li><strong>A milestone failed its own verify pass.</strong> <em>Verify: NOT SHIPPED</em> — the build said done, the verify said no, two regressions were filed and fixed. "Marked done" caught not being done, in plain language.</li>
-<li><strong>An out-of-scope orchestrator overreached.</strong> It appended close-out milestones to efforts it didn't own, and the additions were surgically reverted the same week.</li>
-</ul>
-<h2 id="concept-of-the-week--one-encryption-group-per-call"><a class="anchor" aria-hidden="true" tabindex="-1" href="#concept-of-the-week--one-encryption-group-per-call"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Concept of the week — <a href="2026-04-21-why-one-mls-group-per-call.html" rel="noopener noreferrer">one encryption group per call</a></h2>
-<p class="dintro">In a group call over a mesh, every participant could naively try to create the call's shared encryption state — and you'd get several conflicting groups for one call, with no agreement on who's really in it. The fix is one rule: <strong>only the call's creator creates the encryption group, and only the creator fans out the invite; everyone else joins.</strong> Audio stays end-to-end encrypted, per-pair, and there is exactly one source of truth for who's in the call. It's the same instinct that runs through all of NAOMS — pick one honest owner for a piece of shared state instead of hoping concurrent writers happen to agree.</p>
-<aside class="closer"><h2 class="closer-t">What's next</h2><div class="closer-b">
-<ul>
-<li><strong>Close the mesh inbound-audio asymmetry</strong> (the follow-on filed this week).</li>
-<li><strong>Push the calling and AI-tool-server efforts</strong> from per-milestone green toward a full sign-off — both are still in progress as of mid-2026; this week shipped real <em>features</em>, not finished efforts.</li>
-<li><strong>Build out the hive credential permissions UI</strong> from the design that was born this week.</li>
-</ul>
-<p><img src="img/5-m14w-1-locked-prompt-pass.png" alt="A real capture from the docs-viewer work: the locked-state prompt the docs viewer shows when the database is held — included here as an honest stand-in, not as a picture of the calling or CI features." /></p>
-<p><em>Screenshot note (Honesty axiom): this week's marquee items — the calls, the CI/CD pipeline, the credential work — have <strong>no native screenshots</strong> captured, so none is shown for them; fabricating one would violate the Honesty axiom. The image above is a <strong>real</strong> capture from the docs-viewer work that was active the same week; it was committed about a week after this dispatch's window, so it is captioned as a contemporaneous stand-in, not passed off as a picture of the headline features.</em></p>
-<aside class="fieldnote"><div class="fn-eyebrow">From the workshop</div><h4 class="fn-title">&quot;We Do Not Stop. We Only Compact and Continue.&quot;</h4><div class="fn-body markdown-body"><p>A mid-week trough — a day with a fraction of the usual commits, Mujo away, a few long-running agents grinding on stubborn problems. The instruction left behind, typed fast and repeated like a mantra: <em>we do not stop; we only compact and continue.</em> An autonomous worker never gets tired, but it does get <em>done</em> — it reaches a clean stopping point and wants to hand back. "Compact and continue" refuses the hand-back: distil what you've learned, drop the weight you don't need, keep going. It's the same instinct that runs through all of NAOMS — don't throw away state you'll need; carry the honest summary forward. A session isn't a unit of work. It's a river.</p>
-</div></aside>
 <hr />
 <p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
 </div></aside></div></div></article>

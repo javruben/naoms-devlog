@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
 <script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-<title>Week 13 · Your shared data gets real encryption — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<title>Week 13 — NAOMS Engineering Update — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
 <header class="site"><div class="wrap">
 <h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
 <p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
@@ -11,87 +11,191 @@
 <div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">119</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">19</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
 <div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">28</span></a></div>
 <div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 2</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
-<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update · Week 13</div><h1 class="dhero-dek">Real re-encryption replaced a months-long placeholder and became the default — your shared data is protected by genuine crypto now.</h1><p class="dhero-lede">Here's what shipped for you this week: the re-encryption that protects your shared data went from a placeholder to the real thing and became the default, and every package now ships a real-world-shaped sample dataset you can pour in to see every surface light up like production. Told straight — shipped vs partial vs in-progress, each with a source.</p></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>June 12, 2026</span><span>·</span><span>4 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><p><img src="assets/week-13-commits.svg" alt="Commits per day — Week 13" /></p>
-<p>A big week — and an honest one. The re-encryption backend that had been a
-placeholder for months became real and shipped as the default; a long-running
-mystery — why our local model "never called the tool" — finally broke open; a
-seedable dataset system landed that lets every surface light up like production;
-and the Finder and photos surfaces were rebuilt against their locked designs.
-We tell it straight, every line labeled shipped, partial, or in-progress with a
-source. <strong>Celebrate the partial wins; never imply they're finished.</strong></p>
-<h2 id="by-the-numbers"><a class="anchor" aria-hidden="true" tabindex="-1" href="#by-the-numbers"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>By the numbers</h2>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update · Week 13</div><h1 class="dhero-dek">Real encryption replaced a months-old placeholder, and a test instrument was caught reporting a lie</h1><p class="dhero-lede">The re-encryption that protects your shared data stopped being a placeholder and became the default. Underneath it sits a second story: a measurement that had read zero for weeks turned out to be our own instrument's fault, not the model's. Everything else that moved is listed at the end.</p><div class="dstats dstats-hero"><div class="dstat"><div class="dstat-k">Commits in the window</div><div class="dstat-n">5,586</div><div class="dstat-q">(3,667 non-merge, 1,919 merges)</div></div><div class="dstat"><div class="dstat-k">Active days</div><div class="dstat-n">4</div></div><div class="dstat"><div class="dstat-k">Busiest day</div><div class="dstat-n long">2026-06-09</div><div class="dstat-q">1,845</div></div><div class="dstat"><div class="dstat-k">Following days</div><div class="dstat-n text">06-10: 1,407 · 06-11: 784</div></div><div class="dstat"><div class="dstat-k">Net lines of code</div><div class="dstat-n text">not quoted</div><div class="dstat-q">the counting rule is below</div></div></div></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>June 12, 2026</span><span>·</span><span>11 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><p><img src="assets/week-13-commits.svg" alt="Commits per day — Week 13" /></p>
+
+<h2 id="four-things-changed-this-week"><a class="anchor" aria-hidden="true" tabindex="-1" href="#four-things-changed-this-week"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Four things changed this week</h2>
+<p class="dintro">One per area, none of them touching the same code. Two are features, one is a
+measurement we had been reading wrong for weeks, and one is a pair of security
+gates that had been standing open.</p>
+<div class="fourgrid"><div class="fcard"><div class="fcard-n">1</div><h3 class="fcard-t">Your shared data got real encryption</h3><div class="fcard-b"><p>The re-encryption that protects anything you share is now genuine cryptography
+rather than a stand-in, and it became the default everywhere on 06-08. It is
+built on a post-quantum lattice library, and it has not been externally audited.</p></div></div><div class="fcard"><div class="fcard-n">2</div><h3 class="fcard-t">Any package can be filled with production-shaped data</h3><div class="fcard-b"><p>One command pours a real-world-shaped sample dataset into a package, loaded at
+the lowest layer, so every surface above it fills up the way it would in daily
+use instead of sitting empty and looking finished.</p></div></div><div class="fcard"><div class="fcard-n">3</div><h3 class="fcard-t">The local model was driving the workflow all along</h3><div class="fcard-b"><p>For weeks the tests said the local model never called a tool, run after run. The
+dispatch was happening the whole time and our own harness was failing to see it.
+The rate now reads about 80%, up from about 38%.</p></div></div><div class="fcard"><div class="fcard-n">4</div><h3 class="fcard-t">Two gates that had been standing open got shut</h3><div class="fcard-b"><p>A permission check on shared files was defaulting to <em>allow</em> where it should
+have defaulted to <em>deny</em>, and a live authorization bypass in group invitations
+was found and closed, caught by a new automated source check rather than by
+someone noticing.</p></div></div></div><h2 id="the-encryption-that-built-cleanly-for-months-without-encrypting"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-encryption-that-built-cleanly-for-months-without-encrypting"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The encryption that built cleanly for months without encrypting</h2>
+<p class="dsub"><strong>The feature:</strong> re-encryption — handing someone access to something already
+encrypted, without anything in the middle having to decrypt it first.</p>
+<p class="dsub"><strong>Before:</strong> the path existed, ran, and passed its tests, but the transformation
+underneath it was a placeholder that performed no real cryptography.</p>
+<p class="dsub"><strong>Now:</strong> a genuine proxy re-encryption backend, built on a post-quantum lattice
+library, sits under that path and is the default everywhere.</p>
+<p>The real backend first landed on 2026-06-06 and became the default two days
+later, on 06-08 — replacing a placeholder that had been in the tree since April.
+The placeholder was never a secret, but it was also never a visible defect from
+outside.</p>
+<p class="dsub"><strong>A component that compiles proves nothing about what it computes.</strong> The
+placeholder had the right shape: the right function names, the right arguments,
+the right return type, and a passing build. Every signal a build system emits
+was green, because none of those signals asks whether the bytes coming out are
+actually protected.</p>
+<p>That is the ordinary way a stand-in survives for months. Nobody decides to keep
+it. It simply stops being visible, because the thing that would have made it
+visible — a test asserting what the cryptography does, rather than that it ran —
+was never written.</p>
+<h3 id="the-caveat-we-are-not-going-to-bury"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-caveat-we-are-not-going-to-bury"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The caveat we are not going to bury</h3>
+<p>The new backend has not been through an external audit. Cryptography that has
+not been reviewed by people outside the project is cryptography that has not
+been reviewed, however modern the lattice library underneath it and however
+carefully the people who wrote the integration read their own work.</p>
+<p>We are shipping it as the default anyway, because the honest comparison is not
+against an audited backend. It is against a placeholder that protected nothing
+at all. That comparison is easy; it does not make the audit optional.</p>
+<h2 id="the-zero-was-our-own-instrument-not-the-model"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-zero-was-our-own-instrument-not-the-model"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The zero was our own instrument, not the model</h2>
+<p class="dsub"><strong>The feature:</strong> the local language model calling a real tool to drive a
+workflow, rather than describing in prose what it would do.</p>
+<p class="dsub"><strong>Before:</strong> every test run reported the model had called a tool zero times, run
+after run, for weeks.</p>
+<p class="dsub"><strong>Now:</strong> the rate reads about 80%, up from about 38%, after the zero turned out
+to be a reporting fault rather than a model failure.</p>
+<p>The zero was persuasive because it was consistent. A rate that wobbles invites
+questions; a flat zero reads as a settled fact about the model, and the
+conclusion it suggests — the model cannot do this — is comfortable, because it
+puts the problem outside our own code.</p>
+<p>It was our code. The daemon was dispatching the call end to end, and writing a
+real commit for it, while the harness watching the run reported nothing had
+happened. Two fixes followed: the prompt we had been quietly garbling was
+repaired, and the model's thinking mode became the default for the model family
+we run.</p>
+<h3 id="what-is-still-open"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-is-still-open"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What is still open</h3>
+<p>The rate moved from about 38% to about 80%. That is not solved, and the wider
+work of seeing what the model is doing while it runs — the thing whose absence
+let a false zero stand for weeks — is still open.</p>
+<p>We are naming the number rather than the improvement because a percentage that
+has stopped at 80 tells you something a phrase like "much better" does not: one
+run in five still does not do the thing.</p>
+<h2 id="what-this-means-in-plain-terms"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-this-means-in-plain-terms"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What this means, in plain terms</h2>
+<p class="dintro">Most of what lands in a week belongs only to the thing it landed in, and is not
+worth a general reader's time. A few things transfer. These five were paid for
+by getting them wrong first, somewhere in this codebase, this week.</p>
+<h3 id="a-gates-default-has-to-be-the-safe-direction"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-gates-default-has-to-be-the-safe-direction"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A gate's default has to be the safe direction</h3>
+<p>The permission check on shared files shipped defaulting to <em>allow</em>. It was
+supposed to deny by default and permit on proof, and in every ordinary test —
+where proof was present — the two behave identically. The difference only
+appears when something is missing. <strong>Design the failure case, because that is
+the only case the default is ever consulted for.</strong></p>
+<h3 id="prove-your-instrument-can-see-a-success-before-you-believe-a-zero"><a class="anchor" aria-hidden="true" tabindex="-1" href="#prove-your-instrument-can-see-a-success-before-you-believe-a-zero"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Prove your instrument can see a success before you believe a zero</h3>
+<p>The tool-call rate read zero for weeks. It was not the model refusing; it was
+our harness failing to observe a dispatch that was demonstrably happening. A
+consistent zero looks like a strong result and is the reading an instrument
+gives when it is broken. <strong>A measurement that has never once produced a positive
+result is a claim about your instrument.</strong></p>
+<h3 id="a-green-build-says-nothing-about-what-the-code-computes"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-green-build-says-nothing-about-what-the-code-computes"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A green build says nothing about what the code computes</h3>
+<p>The re-encryption placeholder had correct names, correct types, and a clean
+build for months. Everything automated around it was satisfied, because none of
+those checks asks what came out the other end. <strong>When a component's whole value
+is in the output, test the output — a passing build only proves the shape.</strong></p>
+<h3 id="a-surface-that-shows-the-right-things-and-does-none-of-them-is-not-the-feature"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-surface-that-shows-the-right-things-and-does-none-of-them-is-not-the-feature"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A surface that shows the right things and does none of them is not the feature</h3>
+<p>The first file browser looked right and was rejected outright as fake: the
+controls were there, the behaviours behind them were not. The rebuild put real
+interactions in — inline rename, previews that navigate, a selection total, a
+folder created in place. <strong>A screenshot is evidence of a layout, never of a
+feature.</strong></p>
+<h3 id="real-shaped-data-finds-what-an-empty-screen-hides"><a class="anchor" aria-hidden="true" tabindex="-1" href="#real-shaped-data-finds-what-an-empty-screen-hides"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Real-shaped data finds what an empty screen hides</h3>
+<p>Every package can now be loaded with a sample dataset shaped like actual use.
+Empty surfaces conceal the things volume breaks: ordering, truncation,
+pagination, what a long name does to a column. <strong>Test at the shape and size of
+real use, because most failures are properties of the data, not the code.</strong></p>
+<h2 id="how-much-healthier-is-it-than-a-week-ago"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-much-healthier-is-it-than-a-week-ago"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How much healthier is it than a week ago?</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>This window</th>
+<th>What it counts</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Commits</td>
+<td>5,586</td>
+<td>Every commit in the window, 06-08 → 06-12</td>
+</tr>
+<tr>
+<td>Of those, merges</td>
+<td>1,919</td>
+<td>Merge commits</td>
+</tr>
+<tr>
+<td>Of those, non-merge</td>
+<td>3,667</td>
+<td>Everything else</td>
+</tr>
+<tr>
+<td>Active days</td>
+<td>4</td>
+<td>Days in the window carrying commits</td>
+</tr>
+<tr>
+<td>Busiest day</td>
+<td>1,845 (2026-06-09)</td>
+<td>Peak day; 06-10 fell to 1,407 and 06-11 to 784</td>
+</tr>
+</tbody></table>
+<p>Treat the commit figure as activity, not as features. It counts motion in the
+repository; four separate efforts running in parallel produce a number like this
+without four features arriving.</p>
+<p class="dsub"><strong>Net lines of code are deliberately not quoted.</strong> At this volume the count is
+dominated by fixtures, generated files and dataset packs, which would make the
+number report the size of our test data rather than the amount of work. We
+report landings instead.</p>
+<div class="doneline"><div class="dol-k">In one line</div><p>the encryption under your shared data became real and became
+the default, a measurement we had trusted for weeks turned out to be broken, and
+two access gates that had been standing open were shut.</p></div>
+<section class="dnotes"><h4 class="dn-t">Three honest notes</h4><ol class="dn-l">
+<li><p class="dsub"><strong>The new encryption backend is unaudited.</strong> It is real cryptography and it
+is the default, and it has not been reviewed by anyone outside the project.</p>
+</li>
+<li><p class="dsub"><strong>The tool-call rate is 80%, not 100%.</strong> One run in five still fails to
+dispatch, and the work of observing what the model does mid-run is open.</p>
+</li>
+<li><p class="dsub"><strong>Value cannot yet move between two devices.</strong> Defining, minting and paying
+are real on a single device. The transfer that makes any of it useful is not
+built.</p>
+</li>
+</ol></section>
+<h2 id="what-changed-area-by-area"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-changed-area-by-area"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What changed, area by area</h2>
+<p class="dintro">Every area that moved this window. Per-area file counts are not available for
+this window under a rule we can reproduce, so these are named without a numeral
+rather than given an invented one.</p>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">Shared-data encryption.</span></div><p class="acard-sum">A genuine proxy re-encryption backend became the default on 06-08, replacing an April placeholder that performed no real cryptography.</p><p class="acard-d">It is built on a post-quantum lattice library and first landed on 06-06. It has not been externally audited. ( Recrypt — when it just builds is the feature .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Sample datasets.</span></div><p class="acard-sum">One command now pours a real-world-shaped dataset into any package, loaded at the lowest layer so every surface above it fills the way it would in production.</p><p class="acard-d">The command landed on 06-08; a second data pack and a verification receipt for the first followed on 06-11, and the agent-memory corpus was republished into the pack layout. ( The new mock system — dataset packs .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The local model.</span></div><p class="acard-sum">The tool-call rate moved from about 38% to about 80% after a harness that was reporting zero calls was proven wrong.</p><p class="acard-d">The daemon had been dispatching the call end to end and writing a real commit for it throughout; the prompt was repaired and the model's thinking mode became the default for the model family we run. Wider observability work stays open.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Files.</span></div><p class="acard-sum">The file browser was rebuilt against its locked design after the first version was rejected as fake.</p><p class="acard-d">Inline rename, a preview that maximizes and navigates, an inspector reporting the total of a multi-selection, shift-range selection that follows visual order rather than storage order, and a new folder created in place instead of behind a pop-up. The interactions are real; the surface is not finished. ( What a Finder is, and isn't .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Photos.</span></div><p class="acard-sum">The redesigned photo surfaces — River, Threads, Stories, Memories and Shared-with-me — were wired and tested failing-first, with Memories and Shared-with-me landing on 06-11.</p><p class="acard-d">The work is in verification, not finished. ( Photos, redesigned .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Token and wallet.</span></div><p class="acard-sum">Defining, minting and paying now write real entries to the chain on a single device, and the pay path passes an integration test on one host.</p><p class="acard-d">The wallet interface is styled to its design. Transfer between two devices is not built. ( A promise two keys must sign .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Access gates.</span></div><p class="acard-sum">A permission check on shared files had shipped defaulting to allow where it should default to deny ; the fix landed this window.</p><p class="acard-d">Separately, a live authorization bypass in group invitations was found and closed, caught by a new automated source check.</p></div></div>
+<h3 id="named-not-claimed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#named-not-claimed"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Named, not claimed</h3>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">Value moving between two devices</span></div><p class="acard-sum">NOT CLAIMED — single-device operations only.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">An external audit of the encryption backend</span></div><p class="acard-sum">NOT CLAIMED — real cryptography, unreviewed from outside.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">A finished file browser or photo surface</span></div><p class="acard-sum">NOT CLAIMED — both are real interactions still in verification.</p></div></div>
+<p><img src="img/15-group3-fullpage-v7.png" alt="The redesigned photo surface, full-page River view. The redesign was in verification at the close of this window, not finished." /></p>
+<aside class="closer"><h2 class="closer-t">Four claims here that are only half-proven, and what would settle them</h2><div class="closer-b">
+<p class="dintro">Each of these is something this report has shown only partly, and each would
+read as more finished than it is if you saw only the headline. Each names the
+gap that remains rather than the task that would close it.</p>
 <ul>
-<li><strong>5,586 commits</strong> in the window (<strong>3,667</strong> non-merge, <strong>1,919</strong> merge) across
-four active days. (Treat that cautiously — this is activity, not 5,586
-features.)</li>
-<li><strong>Busiest day: 2026-06-09 — 1,845 commits</strong> — a mid-week peak with the photos
-redesign, Finder QA, the wallet rebuild, and the LLM-emission audit all running
-hot in parallel, then a taper (06-10: 1,407; 06-11: 784). 06-12 is today and
-partial.</li>
-<li><strong>Net LOC: deliberately not quoted</strong> — at this volume a line count is dominated
-by fixtures, generated files, and dataset packs; it would mislead. We report
-landings, not lines.</li>
+<li><strong>The encryption is real and unreviewed.</strong> Nobody outside the project has
+examined it. Until someone has, "genuine cryptography" is a statement about
+the library we chose, not about the way we used it.</li>
+<li><strong>We do not know what else our instruments are not seeing.</strong> One harness
+reported a flat zero through weeks of a working mechanism. The fault is fixed;
+the question of how it went unquestioned for weeks is not.</li>
+<li><strong>Value cannot move between two devices.</strong> Every token operation that works
+today works in one place. A transfer that needs two devices to agree is the
+part that has to be proven, and it has not been.</li>
+<li><strong>Neither the file browser nor the photo surfaces are finished.</strong> Both have
+real behaviour behind real controls now. Neither has been walked end to end by
+someone who did not build it.</li>
 </ul>
-<h2 id="shipped-genuinely"><a class="anchor" aria-hidden="true" tabindex="-1" href="#shipped-genuinely"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Shipped (genuinely)</h2>
-<ul>
-<li><p class="dsub"><strong>New — Pour a real-world-shaped sample dataset into any package and watch every surface light up like production.</strong> Every package now ships a <em>seedable</em> dataset you load at the lowest layer; this week the <strong><code>naoms dataset seed &lt;profile&gt;</code> command shipped</strong> (06-08) and <strong>a second data pack plus a verification receipt for the first</strong> landed (06-11). The agent-memory corpus was published <em>into</em> the pack-store layout. <strong>[SHIPPED.]</strong> (<a href="2026-06-09-seedable-datasets-pour-production-into-every-package.html" rel="noopener noreferrer">The new mock system — dataset packs</a>.)</p>
-</li>
-<li><p class="dsub"><strong>Improved — Your shared data is now protected by real re-encryption, the default everywhere — and it builds clean.</strong> For months the re-encryption path was a placeholder with no real crypto. The genuine <strong>proxy re-encryption</strong> backend (the post-quantum lattice library) first landed <strong>2026-06-06</strong> and became the default <strong>2026-06-08</strong> — <em>this</em> week — replacing the April placeholder. One honest caveat: the real backend is <strong>not yet audited</strong>. <strong>[PARTIAL — real backend landed + became default this week, replacing an April placeholder; not yet audited.]</strong> (<a href="2026-06-11-recrypt-quietly-when-it-just-builds-is-the-feature.html" rel="noopener noreferrer">Recrypt — when it just builds is the feature</a>.)</p>
-</li>
-</ul>
-<h2 id="partial--real-progress-not-finished-each-labeled-each-sourced"><a class="anchor" aria-hidden="true" tabindex="-1" href="#partial--real-progress-not-finished-each-labeled-each-sourced"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Partial — real progress, not finished (each labeled, each sourced)</h2>
-<ul>
-<li><p class="dsub"><strong><a href="2026-06-09-a-promise-two-keys-must-sign.html" rel="noopener noreferrer">Token &amp; wallet — PARTIAL, with a fraud retraction.</a></strong> On a single device, the
-token operations (define, mint, pay) write <em>real</em> commits to the chain (the
-pay-path integration test passes on one host), and the wallet UI is styled to
-the mock. But the headline — <strong>cross-device, peer-to-peer value transfer — is
-NOT done</strong>. <strong>[PARTIAL — UI + single-device ops real; p2p transfer NOT
-shipped.]</strong></p>
-</li>
-<li><p class="dsub"><strong>The LLM finally drives the workflow — PARTIAL WIN, root-caused.</strong> The owner
-named this one specifically. For weeks our tests said the model "never called
-the tool" — zero, every run. This week we proved the zero was a lie told by our
-own broken test telescope (the daemon <em>was</em> dispatching the call end-to-end
-with a real commit id), fixed the prompt we'd been garbling, and made the
-model's thinking mode the default for our Qwen lineage. The tool-call rate
-moved <strong>~38% → ~80%</strong>. Not "solved" — the broader observability work is still
-open — but the model can drive the workflow and we can finally <em>see</em> it.
-<strong>[PARTIAL — 38%→80%, root-caused, not 100%.]</strong></p>
-</li>
-<li><p class="dsub"><strong><a href="2026-06-08-what-a-finder-is-and-isnt.html" rel="noopener noreferrer">The Finder / filesystem UI — IN-PROGRESS rebuild.</a></strong> The <strong>first</strong> Finder UI
-was rejected by the owner as fake — "not a Finder" — and its sign-off was
-withdrawn. This week was a genuine rebuild against the locked redesign: inline
-rename, Quick Look maximize/nav, an inspector that shows the <em>total</em> of a
-multi-selection, shift-range selection that follows visual order, New Folder
-created inline (no pop-up prompt). <strong>[IN-PROGRESS — real interactions, not
-signed off.]</strong></p>
-</li>
-<li><p class="dsub"><strong><a href="2026-06-07-photos-redesigned-shell-river-stories-studio.html" rel="noopener noreferrer">The photos redesign — PARTIAL, in verification.</a></strong> The new surfaces — River,
-Threads, Stories, Memories, Shared-with-me — were wired and tested
-failing-first; the memories and shared-with-me views landed 06-11. <strong>[PARTIAL —
-still being verified, not celebrated.]</strong> This week's screenshot is from here.</p>
-</li>
-<li><p class="dsub"><strong>A live hive-invite authorization bypass was found and fixed</strong>, caught by a
-new static-analysis rule. <strong>[FIXED.]</strong></p>
-</li>
-</ul>
-<h2 id="broke--fixed-honest"><a class="anchor" aria-hidden="true" tabindex="-1" href="#broke--fixed-honest"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Broke &amp; fixed (honest)</h2>
-<ul>
-<li><strong>The blob-access gate had shipped fail-OPEN.</strong> A security gate that should
-have defaulted to <em>deny</em> was defaulting to <em>allow</em>; the fix landed this week. A
-gate's default must be the safe direction.</li>
-</ul>
-<aside class="closer"><h2 class="closer-t">What's next</h2><div class="closer-b">
-<ul>
-<li><strong>Rebuild the wallet for real</strong> — cross-device peer-to-peer value transfer,
-with tests that prove the mechanism, not just that bytes arrived.</li>
-<li><strong>Push the LLM tool-call rate past 80%</strong> and close the rest of the
-observability work.</li>
-<li><strong>Get the Finder and photos surfaces to a signed-off, end-to-end state.</strong></li>
-</ul>
-<p><img src="img/15-group3-fullpage-v7.png" alt="NAOMS photos redesign — the full-page &quot;River&quot; view. The redesign is still being verified, not yet signed off." /></p>
-<aside class="fieldnote"><div class="fn-eyebrow">From the workshop</div><h4 class="fn-title">The Map Is Not the Territory</h4><div class="fn-body markdown-body"><p>There is a difference between surveying a space and being in it. A top-down view gives you oversight of where things are; presence gives you somewhere to stand. The design NAOMS reaches for is the second — a character in the screen who walks where you point, a companion in a room, rather than a pin on a chart. The rooms are a metaphor for the context you are in. The same instinct shows up smaller: you don't want to read a friend's long cryptographic key, you want your friend. More screen is not more presence.</p>
+<aside class="fieldnote"><div class="fn-eyebrow">From the workshop</div><h4 class="fn-title">The Map Is Not the Territory</h4><div class="fn-body markdown-body"><p>There is a difference between surveying a space and being in it. A top-down view gives you oversight of where things are; presence gives you somewhere to stand. The design NAOMS reaches for is the second — a character in the screen who walks where you point, a companion in a room, rather than a pin on a chart.</p>
+<p>The rooms are a metaphor for the context you are in. The same instinct shows up smaller: you don't want to read a friend's long cryptographic key, you want your friend. More screen is not more presence.</p>
 </div></aside>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
 <hr />
 <p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
 </div></aside></div></div></article>

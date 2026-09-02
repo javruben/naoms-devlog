@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
 <script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-<title>Week 1 · Talking to your memory, on your own machine — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<title>Week 1 — NAOMS Engineering Update — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
 <header class="site"><div class="wrap">
 <h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
 <p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
@@ -11,29 +11,252 @@
 <div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">119</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">19</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
 <div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">28</span></a></div>
 <div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 2</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
-<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update · Week 1</div><h1 class="dhero-dek">Talk to your memory — speak a question and hear a spoken answer, all on your own machine.</h1><p class="dhero-lede">Here's what shipped for you this week: you can now speak a question and get a spoken answer entirely on your own machine, define a process once and have NAOMS run it for you, and sort your own notes with a model that never leaves your computer. Plus the honest numbers — 1,014 commits.</p></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>March 22, 2026</span><span>·</span><span>2 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><p><img src="assets/week-01-commits.svg" alt="Commits per day — Week 1" /></p>
-<p>The headline of week one: you can now talk to your memory — speak a question and hear a spoken answer back, all running on your own machine, no cloud in the middle.</p>
-<h2 id="by-the-numbers"><a class="anchor" aria-hidden="true" tabindex="-1" href="#by-the-numbers"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>By the numbers</h2>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update · Week 1</div><h1 class="dhero-dek">Your memory learned to listen and answer out loud, with nothing leaving the machine</h1><p class="dhero-lede">Two changes worth your time this week: talking to your own memory out loud with nothing leaving the machine, and describing a process once so the system carries it out and resumes it after an interruption. Everything else that moved is listed at the end, including the honest caveat that most of this week's half-million lines are writing rather than code.</p><div class="dstats dstats-hero"><div class="dstat"><div class="dstat-k">Commits</div><div class="dstat-n">1,014</div><div class="dstat-q">(1,006 authored, 8 merges)</div></div><div class="dstat"><div class="dstat-k">Busiest day</div><div class="dstat-n long">2026-03-19</div><div class="dstat-q">301 commits</div></div><div class="dstat"><div class="dstat-k">Lines added</div><div class="dstat-n">~494,000</div></div><div class="dstat"><div class="dstat-k">Lines deleted</div><div class="dstat-n">~31,000</div></div><div class="dstat"><div class="dstat-k">Net line movement</div><div class="dstat-n long">≈+463,000</div><div class="dstat-q">writing and design, not code</div></div></div></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>March 22, 2026</span><span>·</span><span>14 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><p><img src="assets/week-01-commits.svg" alt="Commits per day — Week 1" /></p>
+
+<h2 id="four-things-changed-this-week"><a class="anchor" aria-hidden="true" tabindex="-1" href="#four-things-changed-this-week"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Four things changed this week</h2>
+<p class="dintro">One per major area, none touching the same code. This is the first window in
+the series, so each of them is a beginning rather than an improvement on
+something described before.</p>
+<div class="fourgrid"><div class="fcard"><div class="fcard-n">1</div><h3 class="fcard-t">You can speak a question and hear the answer</h3><div class="fcard-b"><p>Speech goes in at the microphone and comes back out of the speakers. The whole
+path — listening, answering, speaking — runs on the machine in front of you,
+with no cloud service in the middle.</p></div></div><div class="fcard"><div class="fcard-n">2</div><h3 class="fcard-t">A process you describe once now runs itself</h3><div class="fcard-b"><p>NAOMS can carry a defined process forward on its own. It pauses, resumes, and
+picks the work back up where it stopped, including on a different machine than
+the one that started it.</p></div></div><div class="fcard"><div class="fcard-n">3</div><h3 class="fcard-t">Sorting your own notes stopped needing an outside service</h3><div class="fcard-b"><p>Classification moved to a model that stays on your computer, and that local
+model became the default rather than the fallback. A from-scratch local runner
+came with it.</p></div></div><div class="fcard"><div class="fcard-n">4</div><h3 class="fcard-t">Work can be scheduled to run on its own</h3><div class="fcard-b"><p>A job scheduler and task orchestrator landed, named Kronos this week. Both are
+still in the product today.</p></div></div></div><h2 id="speaking-to-a-memory-that-never-leaves-the-machine"><a class="anchor" aria-hidden="true" tabindex="-1" href="#speaking-to-a-memory-that-never-leaves-the-machine"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Speaking to a memory that never leaves the machine</h2>
+<p class="dsub"><strong>The feature:</strong> asking your own memory a question out loud, and hearing the
+answer spoken back.</p>
+<p class="dsub"><strong>Before:</strong> nothing was spoken. Every question was typed and every answer read.
+<strong>Now:</strong> you talk, and it talks back. The audio never leaves the computer at
+any point in the exchange.</p>
+<p class="dsub"><strong>A voice interface that sends audio away is a different product from one that
+does not.</strong> The two look identical in a demo. They differ in what a person is
+willing to say in front of the machine, which is the only property of a voice
+interface that finally matters. Someone weighing where their sentence is going
+has already stopped talking naturally.</p>
+<p class="dsub"><strong>What was built.</strong> The path has four stages and each one runs locally: the
+microphone captures, a speech-recognition model turns the sound into words,
+NAOMS answers the question, and a speech-synthesis stage turns the answer back
+into sound for the speakers.</p>
+<p>The recognition stage is the one that usually goes to a server, because good
+transcription used to be something only a large machine could do well. Running
+it locally is the choice this week made, and it is the choice the rest of the
+path depends on — the other three stages are cheap by comparison.</p>
+<p>Nothing in that chain reaches out. That is the whole claim of the week, and it
+is worth stating exactly as narrowly as it is true: the path runs locally, on a
+machine that has the models installed.</p>
+<p>Each stage is also replaceable on its own. Recognition, answering and synthesis
+are separate components rather than one bundled service, which is what makes a
+local swap possible at all — a hosted equivalent arrives as a single thing you
+either use or do not.</p>
+<p>"No cloud in the middle" means the audio and the text of your question are
+handled by processes on your own machine. It does not mean the machine is
+offline, and it makes no claim about what other, unrelated software on that
+computer is doing. A narrow claim stated narrowly is the only kind worth
+publishing.</p>
+<h3 id="why-the-boundary-is-the-feature-not-the-voice"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-the-boundary-is-the-feature-not-the-voice"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why the boundary is the feature, not the voice</h3>
+<p>Speaking to a computer is old. Speaking to a computer that holds your own
+memories is not, and the difference is entirely about where the recording of
+your voice ends up.</p>
+<p>A question asked out loud carries more than its words. It carries who else is
+in the room, what you sound like, and often the thing you would not have
+bothered to type. That is precisely the material a memory system accumulates,
+and precisely the material people are right to be careful with.</p>
+<p>There is a second reason, less about privacy than about honesty. A system that
+claims to be your memory should not need a third party present in order to hear
+you. If it does, the memory is a shared arrangement whatever the marketing says.</p>
+<p>Keeping recognition local means the sentence exists as sound in one place and
+as text in one place, both of them yours. There is no third copy on someone
+else's disk to reason about later, because there is no third copy.</p>
+<p>That also changes what an outage means. A local path degrades when your machine
+is busy; a hosted one disappears when a company changes its terms, its prices,
+or its mind. Only one of those two failures is yours to fix.</p>
+<p>The cost is real and worth naming. Models have to be present on the machine,
+which means disk, a download, and a setup step that a hosted service would have
+absorbed. This week bought privacy and independence by spending installation.</p>
+<h3 id="what-survives-and-what-did-not"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-survives-and-what-did-not"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What survives, and what did not</h3>
+<p>The capability survives to today. You can still speak to your memory and hear
+it answer, and the local-only stance born this week held rather than being
+quietly traded away later.</p>
+<p>The command surface from March did not survive. The specific commands typed to
+reach the voice path have since changed, so this week's instructions describe a
+shape that has moved on. That is ordinary for a first week, and better said
+than left to imply the March interface is the current one.</p>
+<p>One honest gap sits around all of it. No screenshots exist for this window,
+because the only surface was a terminal dashboard nobody captured. Every claim
+here rests on the record of the work rather than on a picture of it.</p>
+<p><em><a href="2026-03-21-talking-to-your-memory-the-local-voice-path.html" rel="noopener noreferrer">Talking to your memory</a>
+walks the whole path.</em></p>
+<h2 id="a-process-you-describe-once-and-a-machine-that-keeps-its-place"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-process-you-describe-once-and-a-machine-that-keeps-its-place"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A process you describe once, and a machine that keeps its place</h2>
+<p class="dsub"><strong>The feature:</strong> defining a process — a sequence of steps with rules about what
+may follow what — and having NAOMS carry it out for you.</p>
+<p class="dsub"><strong>Before:</strong> a process was something a person drove, step by step, holding the
+place in their own head. <strong>Now:</strong> it is described once and executed by the
+system, which pauses when it must and resumes where it stopped.</p>
+<p class="dsub"><strong>Resuming is the hard half, and it is the half that gets skipped.</strong> Running a
+sequence of steps is easy while nothing interrupts it. The interesting question
+is what happens when the machine is closed halfway, and the answer is what
+separates a script from a runtime.</p>
+<p class="dsub"><strong>What was built.</strong> Five pieces, each doing one job: a runtime that executes
+states and transitions, a compiler that turns a written agreement into the rules
+that runtime enforces, persistence into the graph database so a run's position
+outlives the process that made it, enforcement that understands where in a
+workflow a request arrives, and federation so a run is not confined to one
+machine.</p>
+<p>The compiler is the least obvious of the five and does the most for a reader.
+It means the rules a process obeys are written in the same document a person
+would read to understand the process, rather than translated by hand into code
+that then drifts from it.</p>
+<p>Hand translation is where process systems usually rot. The document says one
+thing, the implementation says another, and the gap is discovered by someone
+who followed the document and got refused. Compiling the rules from the text
+removes the gap by removing the second copy.</p>
+<h3 id="why-the-position-has-to-live-outside-the-runner"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-the-position-has-to-live-outside-the-runner"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why the position has to live outside the runner</h3>
+<p>A defined process here means something narrower than a to-do list and wider
+than a script: a set of steps, plus rules about which step may follow which,
+plus the conditions under which the whole thing is allowed to proceed. Written
+down that way, it can be checked as well as run.</p>
+<p>A process holding its own place is fine right up to the moment it stops
+existing. Then the place goes with it, and the only recovery is to start over
+and hope the earlier steps were safe to repeat.</p>
+<p>Writing the position into the database instead makes resumption a read rather
+than a reconstruction. It also makes a paused run inspectable, which is the
+difference between a process you can trust and one you have to watch.</p>
+<p>Federation extends the same idea across machines. If the position is a record
+rather than a memory, the machine that continues a run does not have to be the
+machine that began it — the run is a thing in storage, not a thing in a
+process.</p>
+<p>Enforcement is the fifth piece and the one that keeps the other four honest.
+Rules that do not know where they are get applied uniformly, which means they
+get applied wrongly: a step in the middle of an approved sequence is not the
+same request as that step arriving cold.</p>
+<p>Workflow-aware enforcement gives the policy layer that context, so a rule can
+say "this is allowed here" rather than only "this is allowed." It is a short
+sentence and a large share of the reason the engine is usable.</p>
+<p>What the engine does not yet do is the interesting half of its future. Nothing
+this week demonstrates a run recovering from an unplanned failure rather than a
+clean pause, and nothing demonstrates two machines disagreeing about where a
+federated run had reached. Both are ordinary conditions and both are unproven.</p>
+<p><em><a href="2026-03-20-the-river-remembers-a-workflow-engine.html" rel="noopener noreferrer">The river remembers</a>
+is the longer account.</em></p>
+<h2 id="what-this-means-in-plain-terms"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-this-means-in-plain-terms"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What this means, in plain terms</h2>
+<p class="dintro">Most of what lands in a week belongs to the thing it landed in. A few things
+generalise past it. These five are the ones this week actually paid for, each
+learned by building the thing rather than by reasoning about it.</p>
+<h3 id="a-capability-that-needs-someone-elses-server-is-a-capability-you-rent"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-capability-that-needs-someone-elses-server-is-a-capability-you-rent"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A capability that needs someone else's server is a capability you rent</h3>
+<p>The voice path runs entirely on the machine: microphone, recognition, answer,
+speech. The same feature built against a hosted recognition service would demo
+identically and behave differently the first time the network is gone or the
+terms change. <strong>Where a capability runs is part of what the capability is.</strong></p>
+<h3 id="the-position-of-a-running-process-belongs-in-storage-not-in-the-process"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-position-of-a-running-process-belongs-in-storage-not-in-the-process"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The position of a running process belongs in storage, not in the process</h3>
+<p>The workflow engine writes each run's place into the graph database rather than
+holding it in memory. That single choice is why a run survives a restart, why a
+paused run can be inspected, and why another machine can continue it. <strong>Anything
+that must outlive a crash has to be written down before the crash.</strong></p>
+<h3 id="a-default-is-a-stronger-statement-than-an-option"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-default-is-a-stronger-statement-than-an-option"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A default is a stronger statement than an option</h3>
+<p>Local classification did not merely become possible this week; it became what
+happens when nobody chooses. An option is a preference and a default is a
+position, because almost nobody changes a default. <strong>Whatever you make the
+default is the thing you are actually shipping.</strong></p>
+<h3 id="a-number-without-its-counting-rule-is-decoration"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-number-without-its-counting-rule-is-decoration"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A number without its counting rule is decoration</h3>
+<p>This week moved about 463,000 lines net, and reading that as half a million
+lines of code would be wrong — documents, research and seed data dominate the
+diff. The figure is honest only with the rule attached to it. <strong>State what a
+number counts in the same breath as the number.</strong></p>
+<h3 id="adopting-a-protocol-and-adopting-its-global-state-are-two-decisions"><a class="anchor" aria-hidden="true" tabindex="-1" href="#adopting-a-protocol-and-adopting-its-global-state-are-two-decisions"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Adopting a protocol and adopting its global state are two decisions</h3>
+<p>The ledger ecosystems studied this week were kept for their cryptography and
+identity work and rejected for their global consensus, because a shared world
+state is a standing dependency on everyone else. <strong>Take the primitive without
+taking the architecture it shipped inside.</strong></p>
+<h2 id="how-much-healthier-is-it-than-a-week-ago"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-much-healthier-is-it-than-a-week-ago"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How much healthier is it than a week ago?</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+<th>What it counts</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Commits</td>
+<td>1,014</td>
+<td>Every commit in the window: 1,006 authored plus 8 merges</td>
+</tr>
+<tr>
+<td>Busiest day</td>
+<td>301</td>
+<td>Commits dated 2026-03-19, the highest of the seven days</td>
+</tr>
+<tr>
+<td>Lines added</td>
+<td>~494,000</td>
+<td>Added lines across the window's diff, dominated by documents and seed data</td>
+</tr>
+<tr>
+<td>Lines deleted</td>
+<td>~31,000</td>
+<td>Deleted lines across the same diff</td>
+</tr>
+<tr>
+<td>Net line movement</td>
+<td>≈ +463,000</td>
+<td>Added minus deleted, under the same rule</td>
+</tr>
+</tbody></table>
+<p>This is the first window in the series, so every figure stands alone. There is
+no previous value to set beside it, and publishing the value by itself is the
+honest way to say so rather than inventing a baseline.</p>
+<p>Every later dispatch compares against the window before it under one stated
+rule. That rule starts here: a figure is quoted with what it counts, and a
+figure that cannot be reproduced from the record is not quoted at all.</p>
+<p>The line figures are approximate and are published as approximate. They are
+dominated by writing rather than by code, so they measure how much material
+moved, not how much product was built.</p>
+<p>A commit count is a weak measure of a week and is published here because it is
+the one figure that can be reproduced exactly. It says how often work was
+recorded, not how much of it mattered, and this window's own line totals are the
+clearest demonstration of the gap between the two.</p>
+<p>The per-day shape: 85 on 03-16, 152 on 03-17, 227 on 03-18, <strong>301 on 03-19</strong>,
+173 on 03-20, 25 on 03-21, 43 on 03-22. It climbs through the working week and
+falls away across the weekend.</p>
+<p><img src="assets/week-01-commit-bars.svg" alt="Week-1 commits per day, drawn from the per-day counts above. This is a chart made from the numbers, not a captured screenshot of any product surface — no screenshots exist for this week, because the only surface was a terminal dashboard with no saved images. The 03-19 peak of 301 is highlighted." /></p>
+<div class="doneline"><div class="dol-k">In one line</div><p>a spoken path to your own memory now runs end to end on your
+own machine, a defined process can be handed to the system and resumed after an
+interruption, classification stopped needing an outside service, and most of
+this week's half-million lines are writing rather than code.</p></div>
+<p class="dsub"><strong>Three honest notes.</strong></p>
+<p>The line count is not a code count. Documents, research and seed data dominate
+the diff, so reading +463,000 as product code would overstate the week by a
+wide margin.</p>
+<p>Nothing here was verified by looking at it. No images exist for this window's
+surfaces, so every claim rests on the record of the work rather than on a
+capture of the running product.</p>
+<p>The busiest-day figure counts every commit dated that day, merges included. It
+describes the shape of the week — a mid-week climb and a weekend fall — and
+should not be read as a measure of how much was finished on any of them.</p>
+<h2 id="what-changed-area-by-area"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-changed-area-by-area"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What changed, area by area</h2>
+<p class="dintro">Everything that moved this week, in plain terms and in rough order of how much
+of it moved. Per-area file counts are not available for this window, so each
+area is named without one rather than with a figure that cannot be reproduced.</p>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">Voice.</span></div><p class="acard-sum">Speaking a question and hearing the answer now works end to end on one machine.</p><p class="acard-d">The path runs microphone, speech recognition, NAOMS, speech synthesis, speakers — every stage local, with the capability surviving to today and the March command surface since replaced. Recognition is the stage that would normally be hosted, and keeping it local is what the week's claim rests on.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Workflows.</span></div><p class="acard-sum">A process described once is now executed, paused and resumed by the system.</p><p class="acard-d">Five parts landed together: a statechart runtime, a compiler that turns a written agreement into enforceable rules, persistence and resume through the graph database, workflow-aware enforcement, and federation so a run is not tied to the machine that started it. Recovery from an unplanned failure, as opposed to a clean pause, is not yet demonstrated.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Classification.</span></div><p class="acard-sum">Sorting your own notes moved to a local model, and that model became the default.</p><p class="acard-d">A from-scratch local runner landed with it, so the path needs no outside AI service at any point — this is the week the local-only stance began, and it began by being made the default rather than offered as a setting.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Scheduling.</span></div><p class="acard-sum">Work can now be scheduled and orchestrated without a person triggering it.</p><p class="acard-d">The job scheduler and task orchestrator were renamed Kronos this week, and both are still in the product today.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Protocol and ledger study.</span></div><p class="acard-sum">The heavy ledger and identity ecosystems were read and a deliberate line drawn: keep the cryptographic and identity primitives, reject global consensus.</p><p class="acard-d">Hyperledger and GNU Taler are both named in the analysis. The reasoning is the Wholeness axiom — a system whose core function depends on a shared world state is not complete in itself. ( Why we adopt protocols and skip blockchains .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Local model runner.</span></div><p class="acard-sum">A runner built from scratch executes models on the machine without an outside AI service, which is what both the voice path and the classification default stand on.</p><p class="acard-d">It is not a feature anyone opens; it is the reason two features on this list can make the claim they make.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Design writing.</span></div><p class="acard-sum">Thousands of lines of philosophy, projections and ontology landed, which is most of what this week's line count measures.</p><p class="acard-d">None of it is a feature, and all of it is what the following weeks are built against. The scale is why the net-lines figure needs its caveat: the largest single thing this week produced was writing.</p></div></div>
+<aside class="closer"><h2 class="closer-t">What would prove the local-only claim wrong</h2><div class="closer-b">
+<p class="dintro">Four things this report claims are only half-proven. Each is stated as a
+commitment rather than a caveat, and each names the evidence that would settle
+it one way or the other.</p>
 <ul>
-<li><strong>1,014 commits</strong> total — 1,006 authored + 8 merges.</li>
-<li><strong>Busiest day: 2026-03-19 — 301 commits.</strong> Per-day: 03-16 → 85, 03-17 → 152, 03-18 → 227, <strong>03-19 → 301</strong>, 03-20 → 173, 03-21 → 25, 03-22 → 43.</li>
-<li><strong>Net ≈ +463,000 lines</strong> (about 494,000 added / 31,000 deleted). Important: this is <strong>docs / research / seed-data dominated, NOT code</strong> — a week that shipped thousands of lines of philosophy, projections, and ontology. Read it as "a half-million lines of <em>writing and design</em>," not half a million lines of code.</li>
-</ul>
-<p><img src="assets/week-01-commit-bars.svg" alt="Week-1 commits per day — generated bar chart, not a UI screenshot" /></p>
-<p><em>↑ Generated from the per-day commit counts for the window. This is a chart we drew from the numbers, <strong>not</strong> a captured screenshot of any product UI — no screenshots exist for this week (the surface was a terminal dashboard with no saved images). The 03-19 peak (301) is highlighted.</em></p>
-<h2 id="shipped"><a class="anchor" aria-hidden="true" tabindex="-1" href="#shipped"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Shipped</h2>
-<ul>
-<li><strong>New — Define a process once, and NAOMS runs it for you.</strong> It pauses, resumes, and picks the journey back up where it left off, even across machines. (Under the hood: statechart runtime + agreement compiler + graph-database persistence/resume + workflow-aware enforcement + federation. See <a href="2026-03-20-the-river-remembers-a-workflow-engine.html" rel="noopener noreferrer">the river remembers</a>.)</li>
-<li><strong>New — Sort your own notes with a model that never leaves your computer.</strong> Classification moved to a local model, promoted to the default, with a from-scratch local runner that needs no outside AI service. The "run it locally, no cloud" stance is <strong>born this week</strong>.</li>
-<li><strong>New — Schedule work to run on its own.</strong> A full job scheduler and task orchestrator (renamed to Kronos this week). <strong>Survives to today.</strong></li>
-<li><strong>New — Talk to your memory.</strong> Speak a question and get a spoken answer, all on your machine. The voice <strong>capability survives to today</strong>; the March command surface has since changed. (Path: mic → whisper → NAOMS → text-to-speech → speakers. See <a href="2026-03-21-talking-to-your-memory-the-local-voice-path.html" rel="noopener noreferrer">talking to your memory</a>.)</li>
-</ul>
-<h2 id="concept-of-the-week-200-words"><a class="anchor" aria-hidden="true" tabindex="-1" href="#concept-of-the-week-200-words"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Concept of the week (≤200 words)</h2>
-<p class="dsub"><strong><a href="2026-03-17-why-we-adopt-protocols-and-skip-blockchains.html" rel="noopener noreferrer">"Adopt protocols, skip blockchains."</a></strong> Late in the week NAOMS studied the heavy ledger/identity ecosystems and made a deliberate call — take the good <em>protocol</em> ideas, reject global consensus. You can read the decision in the commit titles themselves: <em>"Hyperledger inspiration — adopt protocols, skip blockchains"</em> and <em>"blockchain sovereignty analysis + GNU Taler inspiration."</em> The reasoning: a global blockchain buys you trustless agreement <em>at the cost of</em> every participant depending on a shared global state — which is exactly the dependency a local-first, sovereign system refuses (the Wholeness axiom). So NAOMS takes the cryptographic and identity primitives these projects pioneered, and leaves the global ledger behind. Honoring the work, choosing a different trade.</p>
-<aside class="closer"><h2 class="closer-t">What's next</h2><div class="closer-b">
-<ul>
-<li>More sovereignty: local classification was step one. Expect the "no cloud dependency" line to keep getting pushed into more of the stack.</li>
-<li>The philosophy corpus that bulked up this week starts turning into actual architecture.</li>
+<li><strong>The voice path is proven on one machine, not on many.</strong> It ran end to end
+where the models were installed. Nothing here establishes what it does on a
+machine that lacks them, which is the ordinary starting condition.</li>
+<li><strong>Local classification is step one, not the stance.</strong> One capability moved off
+outside services this week. The claim is about the whole stack, and most of
+the stack has not been asked the question yet.</li>
+<li><strong>A resumed workflow has not been shown surviving a real failure.</strong> The
+position is written to storage and federation exists. Continuing after a
+deliberate stop is weaker evidence than continuing after an unplanned one.</li>
+<li><strong>The design corpus is writing, not architecture.</strong> Half a million lines of
+reasoning commit nobody to anything. It counts when a later week can point at
+code and name the paragraph it came from.</li>
 </ul>
 <hr />
 <p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>

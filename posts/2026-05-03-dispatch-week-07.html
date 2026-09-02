@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
 <script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
-<title>Week 7 · Deciding access for each thing you share — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<title>Week 7 — NAOMS Engineering Update — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
 <header class="site"><div class="wrap">
 <h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
 <p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
@@ -11,52 +11,174 @@
 <div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">119</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">26</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">19</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
 <div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">28</span></a></div>
 <div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 2</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
-<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update · Week 7</div><h1 class="dhero-dek">Decide access for each specific thing being shared — not all-or-nothing.</h1><p class="dhero-lede">Here's what shipped for you this week: you can now decide access per specific item being shared, with pending approvals you can see and an audit trail — and your data stays in sync even after going offline.</p></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>May 3, 2026</span><span>·</span><span>3 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><p><img src="assets/week-07-commits.svg" alt="Commits per day — Week 7" /></p>
-<p>This was the week the plumbing showed. Less a parade of features, more a couple
-of genuine landings. Here is the real status, partial wins labeled as partial.</p>
-<h2 id="shipped-verified"><a class="anchor" aria-hidden="true" tabindex="-1" href="#shipped-verified"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Shipped (verified)</h2>
-<ul>
-<li><strong>New — Decide access for each specific thing being shared, not all-or-nothing.</strong> Permission is granted per item, with approvals you can see waiting and a trail you can audit. Signed off and shipped on the 30th — the bright spot of the week. (<a href="2026-04-30-consent-per-subject-the-approval-model-that-shipped-today.html" rel="noopener noreferrer">Consent &amp; approvals, per subject</a>; SHIPPED 2026-04-30.)</li>
-<li><strong>Improved — Your data stays consistent even after your devices go offline</strong> <em>(partial)</em>. The offline-divergence sync work passed its close checks and reached sign-off on 2026-05-03, with a follow-on fix verifying it at the real production path the same night. Code complete and verified — the final celebration ceremony was finishing as the week closed, so "reached sign-off," not "fully celebrated."</li>
-</ul>
-<h2 id="broke--fixed-honest"><a class="anchor" aria-hidden="true" tabindex="-1" href="#broke--fixed-honest"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Broke &amp; fixed (honest)</h2>
-<ul>
-<li><strong>A model-download offer regressed after onboarding.</strong> A missing feature is harder to catch than a broken one — nothing
-was red, the offer just didn't surface.</li>
-</ul>
-<h2 id="honest-not-done-yet"><a class="anchor" aria-hidden="true" tabindex="-1" href="#honest-not-done-yet"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Honest "not done yet"</h2>
-<ul>
-<li><strong>Video &amp; voice calls are NOT shipped.</strong> Real progress, but the bar was set
-explicitly and not yet met: there is no celebration until a real call has been
-made between two <em>different machines</em> over our peer-to-peer transport. In
-flight, hot, and deliberately uncelebrated.</li>
-<li><strong>The calendar verification is NOT shipped.</strong> Heavy commit volume and real
-screenshots this week, but the work is still in progress only.</li>
-</ul>
-<h2 id="concept-of-the-week-why-gossip-is-the-wrong-pipe-for-big-files"><a class="anchor" aria-hidden="true" tabindex="-1" href="#concept-of-the-week-why-gossip-is-the-wrong-pipe-for-big-files"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Concept of the week: <a href="2026-04-27-why-gossip-must-never-move-your-big-files.html" rel="noopener noreferrer">why gossip is the wrong pipe for big files</a></h2>
-<p class="dintro">Gossip protocols are for <em>small, fan-out control messages</em> — "here's a new event,
-pass it on" — spreading tiny payloads across a mesh by having every peer relay to
-its neighbors. That redundancy is the feature: it's how a message reaches
-everyone even when links are flaky. But the same redundancy is a disaster for
-<em>large</em> data. Push a big file through gossip and every peer re-relays every chunk
-to every neighbor, and the bandwidth multiplies until the mesh melts under its
-own echo. Big files belong on a <strong>direct, content-addressed transfer</strong>: you fetch
-the bytes once, from a peer that has them, identified by their hash. Gossip says
-"tell everyone." Bulk transfer says "give me exactly this, once." Confusing the
-two is how you take down your own network. (This came up directly in the week's
-decisions — gossip must not be used for large file transfer, full stop.)</p>
-<aside class="closer"><h2 class="closer-t">What's next</h2><div class="closer-b">
-<ul>
-<li><strong>A real cross-machine call</strong> — the single bar calling must clear before it
-earns a celebration: audio and video over the line between two actual
-computers, no shortcuts.</li>
-<li><strong>A multi-axis graph foundation</strong> that reuses the existing contact and place
-infrastructure instead of standing up a parallel one — the "find a red car on
-a sunny day in Seattle" search vision.</li>
-</ul>
-<p><img src="img/18-peer-conversation.png" alt="Two peers in a live conversation — the kind of real, witnessed multi-peer UI this week's connection work was driving toward." /></p>
-<aside class="fieldnote"><div class="fn-eyebrow">From the workshop</div><h4 class="fn-title">We Are Not in Production Yet — And That's a Feature</h4><div class="fn-body markdown-body"><p>This week Mujo wrote a line we keep returning to: <em>we don't have a canonical anchor yet. We are not in production. You will be creating the first one.</em> It reads like a status update; it's really a permission slip. Before the genesis point of identity and history exists — with real people's data rooted in it — every structural decision is still cheap to change. After, changing it isn't a refactor; it's relocating an entire population, carefully, forever. So "not in production yet" isn't an apology — it names where the leverage is: the one moment when the most important decisions are also the most reversible. The discipline the window demands is to spend it deliberately — not rush it, and not pretend it's already closed.</p>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update · Week 7</div><h1 class="dhero-dek">Sharing became a decision per item, and big files were given a pipe of their own</h1><p class="dhero-lede">Two changes worth your time this week: access is now granted to one specific thing at a time rather than to everything at once, and large files were given a transfer path separate from the one that carries small events. Everything else that moved is listed at the end.</p><div class="dhero-scope">📅 Apr 27 – May 3 · Process</div></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>May 3, 2026</span><span>·</span><span>10 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><p><img src="assets/week-07-commits.svg" alt="Commits per day — Week 7" /></p>
+<h2 id="four-things-changed-this-week"><a class="anchor" aria-hidden="true" tabindex="-1" href="#four-things-changed-this-week"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Four things changed this week</h2>
+<p class="dintro">Two landings, one design ruling, and one defect found by its silence.</p>
+<div class="fourgrid"><div class="fcard"><div class="fcard-n">1</div><h3 class="fcard-t">Access is now decided one item at a time</h3><div class="fcard-b"><p>Sharing grants access to a specific thing rather than to everything at once,
+with the approvals still waiting visible to you and a record you can audit
+afterwards. Signed off and shipped on 30 April.</p></div></div><div class="fcard"><div class="fcard-n">2</div><h3 class="fcard-t">Your devices agree again after one of them goes offline</h3><div class="fcard-b"><p>Two devices that drifted apart while one was disconnected now converge on the
+same history. Verified on the path the product actually uses, on the night of
+3 May.</p></div></div><div class="fcard"><div class="fcard-n">3</div><h3 class="fcard-t">Large files were given a transfer path of their own</h3><div class="fcard-b"><p>Bulk data must not travel the gossip path that carries small events. That is
+now a stated rule rather than an unwritten habit, and the reasoning behind it
+is below.</p></div></div><div class="fcard"><div class="fcard-n">4</div><h3 class="fcard-t">A model-download offer stopped appearing after onboarding</h3><div class="fcard-b"><p>The offer to install a model went missing once onboarding finished. Nothing
+went red — the step simply did not appear, and an absence is the harder thing
+to catch.</p></div></div></div><h2 id="granting-access-to-one-thing-not-to-everything"><a class="anchor" aria-hidden="true" tabindex="-1" href="#granting-access-to-one-thing-not-to-everything"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Granting access to one thing, not to everything</h2>
+<p class="dsub"><strong>The feature:</strong> letting someone else read something of yours — a
+conversation, a file, a slice of your history.</p>
+<p class="dsub"><strong>Before:</strong> access was a single decision covering everything in scope. <strong>Now:</strong>
+it is a decision per item. You grant the one thing, the requests still waiting
+are visible while they wait, and what you granted stays on a record you can
+read back later.
+(<a href="2026-04-30-consent-per-subject-the-approval-model-that-shipped-today.html" rel="noopener noreferrer">Consent and approvals, per subject</a>)</p>
+<p class="dsub"><strong>A permission whose object you cannot name is not really a permission.</strong> The
+question a person is actually answering is not "do you trust this peer" but
+"may they see <em>this</em>". An all-or-nothing grant forces the second question to be
+answered as the first, and the honest answer to the first is almost always no —
+so the safe setting becomes the useless one, and people work around it.</p>
+<p class="dsub"><strong>What was built.</strong> Three parts had to arrive together for the grant to mean
+anything: the grant itself, scoped to one subject; a queue of pending requests
+that is visible rather than silent; and a trail that survives the decision, so
+"who did I let in, and when" is answerable a month later rather than
+reconstructed from memory.</p>
+<p>The pending queue is the part that is easy to leave out. A request that is
+neither granted nor refused is a real state, and a system that hides it leaves
+the asker unable to tell patience from rejection.</p>
+<p>Making the wait visible costs one screen and removes an entire class of
+misunderstanding.</p>
+<p class="dsub"><strong>What it cost.</strong> Per-item grants multiply the number of decisions a person
+makes, and that is the honest trade. The answer is not to collapse them back
+into one switch but to make each decision small, legible and reversible — the
+record exists so that a grant made quickly can still be reviewed slowly.</p>
+<p>The trail matters most at the moment nobody is around to explain. Access
+granted six weeks ago, to a person whose reason for asking has been forgotten,
+is exactly the case where memory is worthless and a written record is the only
+thing that answers.</p>
+<h2 id="big-files-must-never-travel-the-way-small-messages-do"><a class="anchor" aria-hidden="true" tabindex="-1" href="#big-files-must-never-travel-the-way-small-messages-do"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Big files must never travel the way small messages do</h2>
+<p class="dsub"><strong>The feature:</strong> moving a large file — a video, a dataset — from one peer to
+another across the mesh.</p>
+<p class="dsub"><strong>Before:</strong> two transports existed and no written rule said which one a large
+file belonged on. <strong>Now:</strong> bulk data goes over a direct, content-addressed
+transfer, and gossip is reserved for what it is good at. The rule is explicit:
+gossip must not be used for large file transfer, full stop.
+(<a href="2026-04-27-why-gossip-must-never-move-your-big-files.html" rel="noopener noreferrer">Why gossip is the wrong pipe for big files</a>)</p>
+<p class="dsub"><strong>Redundancy that rescues a small message destroys a large one.</strong> Gossip
+spreads a tiny payload by having every peer relay it to its neighbours. The
+duplication is the whole point: a message reaches everyone even when individual
+links are flaky.</p>
+<p>Push a large file through that same machinery and the duplication turns on you.
+Every peer re-relays every chunk to every neighbour, the bandwidth multiplies
+with each hop, and the mesh melts under its own echo. The property that made
+gossip reliable is the property that makes it fatal here.</p>
+<p>A direct, content-addressed transfer asks the opposite question. You fetch the
+bytes once, from a peer that already has them, identified by their hash rather
+than by who is holding them. Gossip says <em>tell everyone</em>. Bulk transfer says
+<em>give me exactly this, once</em>.</p>
+<p>Addressing bytes by their hash rather than by their holder is what makes the
+"once" possible. Any peer with the content can serve it, the fetcher can prove
+it received the right bytes, and no coordination decides who answers.</p>
+<p>That is the property gossip cannot offer, because gossip has no idea what it is
+carrying.</p>
+<p>Confusing the two transports is how a network takes itself down, and it happens
+by default rather than by decision: the small-message path is the one already
+built, already reliable, and already wired to everything. Writing the rule down
+this week is cheaper than discovering it under load.</p>
+<p><img src="img/18-peer-conversation.png" alt="Two peers in a live conversation — the kind of real, witnessed multi-peer exchange this week's connection work was driving toward." /></p>
+<h2 id="what-this-means-in-plain-terms"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-this-means-in-plain-terms"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What this means, in plain terms</h2>
+<p class="dintro">Five general lessons this week paid for, each learned by getting something
+wrong first.</p>
+<h3 id="a-pipe-is-chosen-by-the-shape-of-the-payload-not-by-convenience"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-pipe-is-chosen-by-the-shape-of-the-payload-not-by-convenience"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A pipe is chosen by the shape of the payload, not by convenience</h3>
+<p>Moving a large file by gossip makes every peer re-relay every chunk to every
+neighbour until the mesh saturates. The same duplication delivers a small
+control message through flaky links. Neither transport is better; they answer
+different questions. <strong>A mechanism's best property and its worst are usually
+the same property, seen at a different scale.</strong></p>
+<h3 id="absence-is-the-failure-mode-no-red-light-reports"><a class="anchor" aria-hidden="true" tabindex="-1" href="#absence-is-the-failure-mode-no-red-light-reports"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Absence is the failure mode no red light reports</h3>
+<p>A model-download offer stopped appearing after onboarding. Nothing failed, no
+check went red, and no error was recorded — the step was simply not there. A
+test suite watches what happened and has almost nothing to say about what did
+not. <strong>Assert that a thing appears, or you have only tested the version of it
+that did.</strong></p>
+<h3 id="name-the-object-or-the-permission-means-nothing"><a class="anchor" aria-hidden="true" tabindex="-1" href="#name-the-object-or-the-permission-means-nothing"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Name the object, or the permission means nothing</h3>
+<p>Access used to be one decision covering everything in scope; it is now a
+decision about one specific item, with the waiting requests visible and the
+outcome auditable. The narrower question is the one a person can actually
+answer. <strong>A control that cannot be pointed at a subject will be set to "no" and
+then worked around.</strong></p>
+<h3 id="a-stand-in-that-passes-has-told-you-about-the-stand-in"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-stand-in-that-passes-has-told-you-about-the-stand-in"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A stand-in that passes has told you about the stand-in</h3>
+<p>The offline-sync work cleared its checks and was then re-proven the same night
+on the path the product actually runs, not on a substitute. That second run is
+the one that counts, because a substitute is written by the same people, with
+the same assumptions, as the code it stands in for. <strong>A green result is only as
+trustworthy as the thing it ran against.</strong></p>
+<h3 id="a-bar-written-as-an-event-either-happened-or-it-did-not"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-bar-written-as-an-event-either-happened-or-it-did-not"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A bar written as an event either happened or it did not</h3>
+<p>Calling made real progress this week and is still not claimed as shipped,
+because the bar was fixed in advance: a real call, audio and video, between two different
+machines over our peer-to-peer transport. Nothing else counts. <strong>Write the
+finish line as an event with a witness, before the work starts, or it moves
+every time you approach it.</strong></p>
+<aside class="fieldnote"><div class="fn-eyebrow">From the workshop</div><h4 class="fn-title">We Are Not in Production Yet — And That's a Feature</h4><div class="fn-body markdown-body"><p>This week Mujo wrote a line we keep returning to: <em>we don't have a canonical anchor yet. We are not in production. You will be creating the first one.</em> It reads like a status update; it's really a permission slip.</p>
+<p>Before the genesis point of identity and history exists — with real people's data rooted in it — every structural decision is still cheap to change. After, changing it isn't a refactor; it's relocating an entire population, carefully, forever.</p>
+<p>So "not in production yet" isn't an apology — it names where the leverage is: the one moment when the most important decisions are also the most reversible. The discipline the window demands is to spend it deliberately — not rush it, and not pretend it's already closed.</p>
 </div></aside>
+<h2 id="how-much-healthier-is-it-than-a-week-ago"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-much-healthier-is-it-than-a-week-ago"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How much healthier is it than a week ago?</h2>
+<p class="dintro">This week is counted in landings rather than in volume. Two pieces of work
+reached a verified state, two were held short of one by a bar they have not
+met, and one defect was found.</p>
+<p>No figure for lines of code appears here. At this stage the diff is dominated
+by fixtures and generated material, so a net line count would mislead rather
+than inform.</p>
+<section class="dnotes"><h4 class="dn-t">Two honest notes</h4><ol class="dn-l">
+<li><p class="dsub"><strong>The offline-sync work is verified, not finished.</strong> It cleared its checks
+on 3 May, and a follow-on fix that same night proved it on the path the
+product actually uses. The last review was still running as the week closed,
+which is why this says "verified" and not "done".</p>
+</li>
+<li><p class="dsub"><strong>Calling and calendar verification did not ship.</strong> Calling has real
+progress and no cross-machine call to show for it. Calendar verification
+drew heavy commit volume and real screenshots this week and is still work in
+progress only. Both are named here rather than rounded up.</p>
+</li>
+</ol></section>
+<div class="doneline"><div class="dol-k">In one line</div><p>access became a decision about one specific thing, two devices
+that drifted apart now reconcile, large files were given their own transport by
+rule, and a model-download offer went missing quietly enough that nothing
+noticed.</p></div>
+<h2 id="what-changed-area-by-area"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-changed-area-by-area"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What changed, area by area</h2>
+<p class="dintro">Every area that moved this week, with what moved in it. Per-area file counts
+are not available for this window; the areas are listed by what landed rather
+than ranked by traffic.</p>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">Sharing and consent.</span></div><p class="acard-sum">Access is granted per item rather than all at once, signed off and shipped on 30 April.</p><p class="acard-d">Pending approvals are visible while they wait, and every grant leaves a record that can be audited afterwards.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Device sync.</span></div><p class="acard-sum">Two devices that diverged while one was offline now converge on the same history.</p><p class="acard-d">The work cleared its checks on 3 May and a follow-on fix the same night proved it on the production path rather than a stand-in; its final review was still running when the week closed.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Large-file transfer.</span></div><p class="acard-sum">Bulk data is now explicitly barred from the gossip path and belongs on a direct, content-addressed transfer.</p><p class="acard-d">This is a design ruling made this week, not a shipped mechanism — the rule exists so the wrong implementation does not get built.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Onboarding.</span></div><p class="acard-sum">A model-download offer regressed and stopped surfacing after onboarding completed.</p><p class="acard-d">Nothing reported a failure, which is what makes a missing offer expensive to find.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Calling.</span></div><p class="acard-sum">Real progress, no landing.</p><p class="acard-d">The work is in flight and deliberately unclaimed until audio and video have crossed between two actual machines over the peer-to-peer transport.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Calendar.</span></div><p class="acard-sum">Heavy commit volume and real screenshots this week, with the verification still in progress.</p><p class="acard-d">Nothing here is claimed as shipped.</p></div></div>
+<aside class="closer"><h2 class="closer-t">Five claims here that next week could overturn</h2><div class="closer-b">
+<p class="dintro">Each of these is something this report has only half-proven, stated as a
+commitment rather than as a task.</p>
+<ul>
+<li><p class="dsub"><strong>Calling has never been proven between two machines.</strong> Everything measured
+so far ran on one. Until audio and video cross a real link between two
+computers, the progress is real and the feature is not.</p>
+</li>
+<li><p class="dsub"><strong>The offline-sync landing is verified but not closed.</strong> It was proven on the
+production path on the night of 3 May, with its final review still running.
+Verified on one night is not the same as stable across a week.</p>
+</li>
+<li><p class="dsub"><strong>A missing feature can still pass every check we have.</strong> The model-download
+regression showed nothing red. Until something asserts that the offer
+appears, the same class of defect can land again unseen.</p>
+</li>
+<li><p class="dsub"><strong>Calendar verification is unproven.</strong> Commit volume and screenshots are
+evidence of effort, not of a working feature, and this report does not treat
+them as such.</p>
+</li>
+<li><p class="dsub"><strong>Search cannot yet answer "a red car on a sunny day in Seattle".</strong> The
+multi-axis graph that would answer it is planned to reuse the contact and
+place structures already in the product rather than stand up a parallel set —
+a commitment worth naming now, because a second copy is the easy mistake.</p>
+</li>
+</ul>
+<p><em>Window: 2026-04-27 → 2026-05-03. This week is reported in landings, not in
+volume: no line-count or commit figure appears, because at this stage the diff
+is dominated by fixtures and generated material. Work that landed after the
+window is not counted here.</em></p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
 <hr />
 <p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
 </div></aside></div></div></article>
