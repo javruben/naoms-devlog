@@ -67,23 +67,15 @@ exactly. Only the thing holding the leash changed.</p>
 <p>That discipline is the point rather than a detail. A desktop edition with its
 own subtle behaviour is a second house behind a second front door, and the bugs
 that live in it are invisible from the first.</p>
-<h3 id="the-bug-that-proves-packaging-is-real-work"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-bug-that-proves-packaging-is-real-work"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The bug that proves packaging is real work</h3>
-<p>Loading the interface from a private internal address inside the application
-looked clean and silently broke everything. The screens rendered, every request
-to the daemon beside them failed, the interface fell back to a polite
-disconnected state, and first-run setup could never finish.</p>
-<p>The cause was a browser-security rule with no useful error message. That private
-address counts as a secure origin, the daemon next door answers over plain local
-http, and a secure page is forbidden from talking to a plain one. The
-application could see its own daemon and was not allowed to speak to it.</p>
-<p>The fix was to load the interface straight from the daemon's own local address —
-the one the browser version always used, which the engine treats as secure for
-exactly this loopback case. One origin, nothing blocked. Packaging is a hundred
-decisions of that size, none of them visible in the finished double-click.</p>
-<p>None of this is visible in the finished double-click, which is the honest
-description of packaging work: it is judged entirely by whether anyone notices
-it, and the only available grades are "invisible" and "the application opens
-onto nothing."</p>
+<h3 id="a-window-that-rendered-onto-nothing"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-window-that-rendered-onto-nothing"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A window that rendered onto nothing</h3>
+<p>One arrangement inside the application rendered every screen perfectly and let
+none of them reach the daemon sitting beside them. The interface fell back to a
+polite disconnected state, and first-run setup could never finish — a failure
+that looks, to the person holding the mouse, exactly like a product that does
+not work.</p>
+<p>That is the honest description of this whole class of work: it is judged
+entirely by whether anyone notices it, and the only two available grades are
+"invisible" and "the application opens onto nothing."</p>
 <h3 id="two-ceremonies-not-one"><a class="anchor" aria-hidden="true" tabindex="-1" href="#two-ceremonies-not-one"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Two ceremonies, not one</h3>
 <p>Signing and notarizing sound like one chore and are two independent operations,
 which is why so many builds ship broken.
@@ -96,55 +88,25 @@ corrupted download or a tampered binary voids it.</p>
 notary service, which scans it and, on a pass, issues a ticket that gets stapled
 onto the bundle. A build can be signed and not notarized; a fresh Mac still
 distrusts it. What a stranger's machine wants is both.</p>
-<h3 id="the-tool-that-reports-success-without-signing-anything"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-tool-that-reports-success-without-signing-anything"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The tool that reports success without signing anything</h3>
-<p>The obvious way to sign a Mac application walks the bundle and signs everything
-inside it, and it does not. Apple's tooling treats anything under the bundle's
-resources folder as data to be hashed rather than code to be signed — and the
-entire runtime payload lives there: the JavaScript runtime, the signer, the
-compiled core library, the native add-ons.</p>
-<p>Every one of those was walked past and reported as a success, leaving the
-executables that actually run unsigned. The notary service is not fooled and
-rejects the bundle, so you are left debugging a green-looking build that Apple
-quietly refuses.</p>
-<p>The replacement signs inside-out by hand: collect every nested binary, sign each
-explicitly with a hardened runtime and a secure timestamp, then sign the outer
-application. Finding them is the catch, because native add-ons ship with no file
-extension and cannot be recognised by name.</p>
-<p>They are detected the way the operating system does it, by reading the first
-four bytes and matching the magic numbers that mark an executable. One of those
-numbers is also the magic number for a compiled Java class, decided decades
-apart by unrelated formats, so class files are skipped explicitly.</p>
-<h3 id="a-sealed-application-still-has-to-run"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-sealed-application-still-has-to-run"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A sealed application still has to run</h3>
-<p>Apple's hardened runtime is mandatory for notarization and blocks exactly what a
-JavaScript engine does on purpose: writing memory and then executing it. A
-signed daemon with no further care would pass the seal and crash on its first
-line of real work.</p>
-<p>The answer is a narrow set of entitlements granted only to the bundled runtime,
-each a deliberate hole punched for a known reason. Signing was never the hard
-part; keeping a signed, sandboxed runtime able to run was.</p>
-<p>Sealing has a second-order cost. The daemon used to write a small file next to
-its own library at boot and reconcile its module folder — both writes into a
-bundle that is now read-only and cryptographically sealed. One would break the
-signature, the other fails outright, so both habits had to be found and switched
-off.</p>
+<h3 id="a-tool-that-reported-success-having-sealed-nothing"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-tool-that-reported-success-having-sealed-nothing"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A tool that reported success having sealed nothing</h3>
+<p>The standard way to seal the application reported success on every pass and left
+most of what actually runs inside it unsealed. Apple's own service is not
+fooled, so the rejection arrives from a stranger's machine rather than from the
+tool that told you it was done.</p>
+<p class="dsub"><strong>A tool's exit status is a claim about the tool, not about the artefact.</strong> It
+is the same trap as a green test suite over a stub, and it is the one worth
+carrying out of this section: whenever a step reports success, ask what it would
+have said had it done nothing at all.</p>
 <h3 id="it-boots-fine-can-be-the-build-machine-talking"><a class="anchor" aria-hidden="true" tabindex="-1" href="#it-boots-fine-can-be-the-build-machine-talking"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>"It boots fine" can be the build machine talking</h3>
-<p>The first notarized build installed, launched, and then the daemon died on boot.
-The compiled core links against a maths library pulled in by the on-device
-speech feature, and it linked it by absolute path into a package manager's
-directory. That path exists on the build machine, so everything worked there.</p>
-<p>On a clean Mac that never installed that package manager, the path is empty, the
-library never loads, the cryptography self-test fails behind it, and the daemon
-exits before serving a page. The earlier "boots fine" was the build host quietly
-lending the application a dependency it did not carry.</p>
-<p>The bundle is now genuinely self-contained. Its actual dependency list is read
-at build time, every non-system library it names is copied in, and the link is
-rewritten to a relative reference meaning "next to me" wherever the application
-lands. That rewrite voids the signature, so it happens before signing rather
-than after.</p>
-<p>Then the part that matters most: a check re-reads the staged library and throws
-if any absolute non-system path survives. A bundle that is not self-contained
-does not produce a warning — it does not produce a build. The proof is
-mechanical rather than a promise.</p>
+<p>The first sealed build installed, launched, and then died on boot on a clean
+Mac. It had been quietly borrowing a mathematics library from software the build
+host happened to have installed, so it worked in the one place nobody needed it
+to.</p>
+<p>The bundle now carries its own copies. The part that matters most is not the
+copying but the check beside it: if anything in the staged bundle still points
+outside itself, the build does not warn — it does not produce a build at all.
+The proof is mechanical rather than a promise, which is the only form a
+self-containment claim can honestly take.</p>
 <h3 id="stapling-for-a-mac-with-no-network"><a class="anchor" aria-hidden="true" tabindex="-1" href="#stapling-for-a-mac-with-no-network"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Stapling for a Mac with no network</h3>
 <p>macOS can check a notarization verdict by asking Apple at open time, which
 quietly reintroduces a first-launch failure for anyone offline — the exact thing
@@ -263,6 +225,28 @@ the on-device approval path, and the graph pipeline behind them.</p>
 that floor. We are marking the floor because it is the part that had to be true
 first — you can add screens and shine to a daemon that genuinely governs on your
 device, and you cannot bolt "the real thing runs here" onto a viewer afterwards.</p>
+<h3 id="a-voice-that-is-made-in-the-room-with-you"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-voice-that-is-made-in-the-room-with-you"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A voice that is made in the room with you</h3>
+<p>The week's third thread needs no phone at all. NAOMS can now speak to you out
+loud, in a warm voice rather than the flat robotic one, set up with a single
+command. The interesting part is a question almost nobody asks about a talking
+computer: where does the voice actually get made?</p>
+<p>Usually, elsewhere. Your sentence is packed up, sent to a company's servers,
+turned into audio there and sent back. It works beautifully, which is why nearly
+everyone does it — and it means the reminder about your appointment, and the
+name of the person you are meeting, left your machine to be read aloud.</p>
+<p>Here the model runs on your own hardware, on its graphics chip or its processor
+if there is none to spare. No account, no round trip, no sentence of yours
+touching a stranger's computer. The listening side already worked this way, so
+the spoken loop is now closed on your side of the wall.</p>
+<p>The cost that had to be paid for that is the one a hosted service hides by
+keeping an expensive machine awake for everybody. A model on your laptop has to
+be loaded before it can say a word, and that load is about seventeen of the
+twenty-seven seconds a completely cold sentence used to take. Twenty-seven
+seconds is not a voice; it is a punishment.</p>
+<p>So a small helper keeps the model loaded and waiting, on your machine only,
+which brings the same sentence back in about ten seconds. Speaking then degrades
+down three rungs rather than failing: the warm helper, then the cold model, then
+the plain system voice.</p>
 <p>One further thing separates this week's chat milestone from a passing test. A
 test asserts that a known input produced a known output; a conversation asserts
 that someone who never read the code typed a thought and trusted the system to
@@ -422,7 +406,7 @@ rather than given an invented one.</p>
 is a repair to the interface the other five stand on. That ordering is the week
 in one sentence: the doors were built, and the hinge they all hang from was
 tightened in the same seven days.</p>
-<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">The desktop application.</span></div><p class="acard-sum">The whole memory system, daemon included, now runs inside a single native Mac window, so the browser tab and the terminal startup are gone.</p><p class="acard-d">The application starts the daemon, restarts it if it dies unexpectedly, and takes down the entire process family from the leaves inward when you quit, so no orphan is left holding the port the next launch needs.</p><p class="acard-d">It starts the same daemon a non-application install starts, byte for byte, rather than a desktop edition with its own behaviour. ( NAOMS is now an app you double-click .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Signing and distribution.</span></div><p class="acard-sum">The disk image and the application both carry a Developer-ID signature and Apple notarization, so macOS vouches for the bundle on sight instead of warning about an unidentified developer, and the signature proves the bits were not altered in transit.</p><p class="acard-d">Every nested binary is now signed explicitly, inside-out, because the tool that promises to walk the bundle skips everything filed as a resource — which is where the whole runtime lives.</p><p class="acard-d">The ticket is stapled into both artifacts so a machine with no network can still validate it, and a fail-closed check refuses to produce a build at all if any absolute non-system library path survives in the bundle. ( A Mac that trusts the app before it opens .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The phone.</span></div><p class="acard-sum">The governed daemon itself now runs on an Android phone, in production governance mode, with memory unlocked by a genuine fingerprint rather than a stubbed approval — the vault key wrapped under a hardware key that authorises exactly one unwrap per authentication.</p><p class="acard-d">Three walls fell on the way: an elliptic-curve key design the hardware refused outright, an authentication prompt discarded when raised before the screen finished resuming, and an approval node no on-device package existed to write, which made the gate fail closed before the fingerprint was ever requested.</p><p class="acard-d">A delivery path that reported success into a dead connection now prunes it. ( Your whole memory system, in your pocket .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The interface every agent runs on.</span></div><p class="acard-sum">Four frayed seams were closed in the open protocol that carries every action an AI agent takes — starting a session, checking a permission, calling a tool.</p><p class="acard-d">The entitlement gate had learned to always say no: its check ran a blocking query that a guard forbids on the serving thread, and the resulting exception was caught and rendered as a flat denial, so entitlement was never evaluated.</p><p class="acard-d">An approval flow's trust tier was announced live but never written to the record, so a reconnect read nothing, defaulted lower, and turned a quiet banner into a dialog. Approving anywhere other than one particular popup left the client waiting forever, because only that surface minted the signed receipt the exchange requires.</p><p class="acard-d">And the boot vocabulary handed to an agent named a procedure that had been renamed. ( The governance socket is back .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Voice.</span></div><p class="acard-sum">NAOMS can speak aloud in a warm, natural voice, generated by a text-to-speech model running on your own machine — on its graphics chip, or its processor if there is none to spare — and installed by one command.</p><p class="acard-d">A small helper keeps that model loaded, which is the whole trick: the load alone costs about seventeen seconds, a cold sentence about twenty-seven, and a warm one about ten. Speaking degrades down three rungs rather than failing: warm helper, then cold model, then the plain system voice.</p><p class="acard-d">The spoken audio carries a courteous honorific that the written log deliberately does not, so the record keeps the literal message. ( Giving the system a voice that stays home .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Chat.</span></div><p class="acard-sum">Two people held a real conversation through NAOMS chat, end to end, on their own devices, with no server in the middle reading along.</p><p class="acard-d">The sentence was signed and appended to the sender's own record before it was anyone's job to deliver, encrypted to the recipient's own identifier rather than to an account on a host, and rendered readable and correctly attributed on the far device — so the plaintext existed exactly twice and never in between.</p><p class="acard-d">A relay moves an opaque blob, and a dark device is not a failure: the message waits in an outbox until that device is reachable. A real-person walk of the surface produced twenty recorded defects, six fixed and fourteen open. ( The first two people talked .)</p></div></div>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">The desktop application.</span></div><p class="acard-sum">The whole memory system, daemon included, now runs inside a single native Mac window, so the browser tab and the terminal startup are gone.</p><p class="acard-d">The application starts the daemon, restarts it if it dies unexpectedly, and takes down the entire process family from the leaves inward when you quit, so no orphan is left holding the port the next launch needs.</p><p class="acard-d">It starts the same daemon a non-application install starts, byte for byte, rather than a desktop edition with its own behaviour. ( NAOMS is now an app you double-click .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Signing and distribution.</span></div><p class="acard-sum">The disk image and the application both carry a Developer-ID signature and Apple notarization, so macOS vouches for the bundle on sight instead of warning about an unidentified developer, and the signature proves the bits were not altered in transit.</p><p class="acard-d">Every nested binary is now signed explicitly, inside-out, because the tool that promises to walk the bundle skips everything filed as a resource — which is where the whole runtime lives.</p><p class="acard-d">The ticket is stapled into both artifacts so a machine with no network can still validate it, and a fail-closed check refuses to produce a build at all if any absolute non-system library path survives in the bundle. ( A Mac that trusts the app before it opens .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The phone.</span></div><p class="acard-sum">The governed daemon itself now runs on an Android phone, in production governance mode, with memory unlocked by a genuine fingerprint rather than a stubbed approval — the vault key wrapped under a hardware key that authorises exactly one unwrap per authentication.</p><p class="acard-d">Three walls fell on the way: an elliptic-curve key design the hardware refused outright, an authentication prompt discarded when raised before the screen finished resuming, and an approval node no on-device package existed to write, which made the gate fail closed before the fingerprint was ever requested.</p><p class="acard-d">A delivery path that reported success into a dead connection now prunes it. ( Your whole memory system, in your pocket .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The interface every agent runs on.</span></div><p class="acard-sum">Four frayed seams were closed in the open, published protocol that carries every action an AI agent takes inside the system — starting a session, checking a permission, calling a tool.</p><p class="acard-d">Using a standard wire rather than a private one is a deliberate choice with a standing bill attached: it is the single route every agent action travels, so it has to keep working on the merits, every day. Four things ride it, and each is worth naming.</p><p class="acard-d">Every attempt to run a tool passes an entitlement check that asks whether this caller actually holds that capability — merely listing the tools does not, because naming a tool is not using one.</p><p class="acard-d">An approval is classified by how much interruption it deserves, so deep trust earns a quiet banner instead of a dialog across your work. Consent produces a signed receipt proving the owner genuinely said yes, and the exchange will not complete without one.</p><p class="acard-d">And a starting agent is handed a vocabulary of named operations, every name on it a promise that something answers to it.</p><p class="acard-d">What had rotted: the entitlement gate had learned to always say no, because its own internal failure was being caught and rendered as a flat denial, so entitlement was never evaluated at all — a gate denying everything looks, from outside, like a strict gate.</p><p class="acard-d">An approval's trust tier was announced live but never written down, so a reconnect read the record, found nothing, defaulted lower, and turned that quiet banner into a dialog.</p><p class="acard-d">Approving on any surface other than one particular popup left the agent waiting forever, because only that widget minted the receipt — the daemon now mints and delivers it whichever surface you pressed, because which button a human used is cosmetic and the proof is load-bearing.</p><p class="acard-d">And the vocabulary handed to a booting agent named a procedure that had been renamed, so the menu advertised something that no longer answered. ( The governance socket is back .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Voice.</span></div><p class="acard-sum">NAOMS can speak aloud in a warm, natural voice, generated by a text-to-speech model running on your own machine — on its graphics chip, or its processor if there is none to spare — and installed by one command.</p><p class="acard-d">A small helper keeps that model loaded, which is the whole trick: the load alone costs about seventeen seconds, a cold sentence about twenty-seven, and a warm one about ten. Speaking degrades down three rungs rather than failing: warm helper, then cold model, then the plain system voice.</p><p class="acard-d">The spoken audio carries a courteous honorific that the written log deliberately does not, so the record keeps the literal message. ( Giving the system a voice that stays home .)</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Chat.</span></div><p class="acard-sum">Two people held a real conversation through NAOMS chat, end to end, on their own devices, with no server in the middle reading along.</p><p class="acard-d">The sentence was signed and appended to the sender's own record before it was anyone's job to deliver, encrypted to the recipient's own identifier rather than to an account on a host, and rendered readable and correctly attributed on the far device — so the plaintext existed exactly twice and never in between.</p><p class="acard-d">A relay moves an opaque blob, and a dark device is not a failure: the message waits in an outbox until that device is reachable. A real-person walk of the surface produced twenty recorded defects, six fixed and fourteen open. ( The first two people talked .)</p></div></div>
 <h3 id="named-not-claimed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#named-not-claimed"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Named, not claimed</h3>
 <div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">Linux and Windows desktop bundles</span></div><p class="acard-sum">NOT CLAIMED — the Mac path went first and stands alone.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Bridged messengers unified in one place</span></div><p class="acard-sum">NOT CLAIMED — one peer-to-peer conversation is what exists; the unified list is designed and mocked.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">An external audit of the macOS signing and notarization</span></div><p class="acard-sum">NOT CLAIMED — Apple's notary service is not an audit of our packaging.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">A phone surface above the daemon</span></div><p class="acard-sum">NOT CLAIMED — the floor runs; the rooms on top of it are unbuilt.</p></div></div>
 <aside class="closer"><h2 class="closer-t">Five claims here that rest on a single instance</h2><div class="closer-b">
