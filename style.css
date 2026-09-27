@@ -123,11 +123,19 @@ main{padding:30px 0 70px}
 h2.section{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:34px 0 6px;border-bottom:1px solid var(--line);padding-bottom:8px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:14px 0;box-shadow:0 10px 30px rgba(0,0,0,.18);display:flex;gap:16px;align-items:flex-start}
 .card-body{flex:1 1 auto;min-width:0}
-.card-thumb{flex:0 0 116px;width:116px;aspect-ratio:1/1;border-radius:10px;overflow:hidden;background:var(--bg-2);border:1px solid var(--line-soft)}
-.card-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+/* Landscape box, consistent for every card, and object-fit:contain (never
+   cover) -- owner, 2026-09-27: a 640x240 thumbnail center-cropped under
+   object-fit:cover cut its own title text mid-word ("ello-world"). contain
+   letterboxes on --bg-2 instead of ever slicing content, for any image
+   shape, with no per-image special-casing needed. */
+.card-thumb{flex:0 0 160px;width:160px;height:100px;border-radius:10px;overflow:hidden;background:var(--bg-2);border:1px solid var(--line-soft);display:flex;align-items:center;justify-content:center}
+.card-thumb img{width:100%;height:100%;object-fit:contain;display:block}
 .card h3{margin:.1em 0 .3em;font-size:20px;line-height:1.25}
-.card .sum{color:var(--ink-2);font-size:15px;margin:.4em 0 0}
-@media(max-width:480px){.card{flex-direction:column}.card-thumb{width:100%;flex-basis:auto;aspect-ratio:12/5}}
+/* Clamped to 3 lines -- owner, 2026-09-27: "so that it stays relatively
+   small"; one full paragraph was still 5-8 lines for a long summary. The
+   article page itself is untouched; only the list-card excerpt is clamped. */
+.card .sum{color:var(--ink-2);font-size:15px;margin:.4em 0 0;display:-webkit-box;-webkit-line-clamp:3;line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+@media(max-width:480px){.card{flex-direction:column}.card-thumb{width:100%;height:auto;aspect-ratio:12/5}}
 .meta{font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 /* Voice (architect/confession/journal/…) is a facet, not a status — one
    neutral outline chip for all seven, so colour stays reserved for things
