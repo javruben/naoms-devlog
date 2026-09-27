@@ -1,0 +1,339 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>Week 9 — NAOMS Engineering Update — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a>
+<button type="button" id="themebtn" class="themebtn" aria-label="Theme: System. Click to change."><span class="ti">🖥</span><span class="tt">System</span></button></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:var(--accent-warm)"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:var(--ok)"></span>Product<span class="n">60</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:var(--accent)"></span>Technology<span class="n">100</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:var(--accent-3)"></span>Process<span class="n">50</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">132</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">28</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">21</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">33</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="28" data-label="Wk 28" href="../archive.html#week=28">Wk 28<span class="n">Sep 21 – Sep 27</span></a><a class="facet" data-ft="week" data-fv="27" data-label="Wk 27" href="../archive.html#week=27">Wk 27<span class="n">Sep 14 – Sep 20</span></a><a class="facet" data-ft="week" data-fv="26" data-label="Wk 26" href="../archive.html#week=26">Wk 26<span class="n">Sep 7 – Sep 13</span></a><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 6</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update</div><h1 class="dhero-dek">Week 9</h1><p class="dhero-lede">2,509 commits, including a migration of 142 governing rules. Everything the week touched is below, the largest threads first and every area at the end.</p><div class="dhero-scope">📅 May 11 – May 17 · Process</div><div class="dstats dstats-hero"><div class="dstat"><div class="dstat-k">Commits</div><div class="dstat-n">2,509</div></div><div class="dstat"><div class="dstat-k">Policy rules migrated</div><div class="dstat-n">142</div></div><div class="dstat"><div class="dstat-k">Peers in a green call</div><div class="dstat-n">3</div></div><div class="dstat"><div class="dstat-k">Verification screenshots</div><div class="dstat-n">181</div></div><div class="dstat"><div class="dstat-k">Busiest day</div><div class="dstat-n long">2026-05-13</div></div></div></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>May 17, 2026</span><span>·</span><span>22 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><p><img src="assets/week-09-commits.svg" alt="Commits per day — Week 9" /></p>
+
+<h2 id="four-things-changed-this-week"><a class="anchor" aria-hidden="true" tabindex="-1" href="#four-things-changed-this-week"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Four things changed this week</h2>
+<p class="dintro">One per major area, and the week's shape was front-loaded: busiest on 13 May,
+tapering toward the weekend.</p>
+<div class="fourgrid"><div class="fcard"><div class="fcard-n">1</div><h3 class="fcard-t">Every operator role now lives on one screen</h3><div class="fcard-b"><p>Finding a role, taking it and handing it back happen in one place, replacing
+the per-feature screens they used to be scattered across.</p></div></div><div class="fcard"><div class="fcard-n">2</div><h3 class="fcard-t">The rules that govern NAOMS became readable data</h3><div class="fcard-b"><p>142 rules moved from hand-written code into plain declarative phrases a single
+engine reads, and a comparator proved each rule still matched exactly what it
+had matched before.</p></div></div><div class="fcard"><div class="fcard-n">3</div><h3 class="fcard-t">A three-peer call carried audio, video and live transcription</h3><div class="fcard-b"><p>Three participants, real media in both directions, speech turning into text as
+they spoke — passing, with all three peers running on one machine.</p></div></div><div class="fcard"><div class="fcard-n">4</div><h3 class="fcard-t">Adding a contact became a ceremony both sides sign</h3><div class="fcard-b"><p>Turning a stranger into a contact runs as a mutual exchange now, signed into
+both people's own permanent records rather than asserted by a server.</p></div></div></div><h2 id="finding-a-role-should-not-require-knowing-where-it-lives"><a class="anchor" aria-hidden="true" tabindex="-1" href="#finding-a-role-should-not-require-knowing-where-it-lives"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Finding a role should not require knowing where it lives</h2>
+<p class="dsub"><strong>The feature:</strong> operator roles — the jobs a person or a machine can take on
+inside NAOMS — and the act of finding one, taking it, and handing it back.</p>
+<p class="dsub"><strong>Before:</strong> each kind of role was administered from the screen belonging to the
+feature that minted it, so holding two roles meant knowing two places and
+learning two layouts. <strong>Now:</strong> one surface answers all three questions, with
+the same actions available on every row.
+(<a href="2026-05-15-one-screen-to-find-and-enroll-every-role.html" rel="noopener noreferrer">One screen to find and enrol in every role</a>)</p>
+<p class="dsub"><strong>A directory is worth more than the sum of the things it lists.</strong> Scattering
+role management across the features that use it is locally sensible every
+single time — the role belongs to the feature, so the screen does too. What it
+costs is the one question a person actually has, which is not "how do I join
+this role" but "what roles are there at all".</p>
+<h3 id="what-a-role-is-here-and-why-that-decides-the-screen"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-a-role-is-here-and-why-that-decides-the-screen"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What a role is here, and why that decides the screen</h3>
+<p>A role in NAOMS is not a row in a permissions table. It is a signed claim,
+recorded on a chain, saying that this identity holds this role in this scope,
+granted by that authority, until revoked.</p>
+<p>That difference is not a technicality. It decides the shape of the whole
+surface.</p>
+<p>Because a role is a credential rather than a flag, the set of roles you could
+take is a live question rather than a fixed menu.</p>
+<p>It is whatever is being offered in the scopes visible to you, so finding them
+means asking the graph of who belongs to what, rather than reading a list
+somebody typed out in advance.</p>
+<p>Revocation follows the same logic. You do not remove a role by deleting the
+record of it; you append a revocation that supersedes the grant, and the
+history stays intact.</p>
+<p>So the surface has to render a roster with a timeline behind it, rather than a
+list you quietly edit in place.</p>
+<p>Once both of those are true, the old arrangement stops making sense. Every
+bolted-on per-feature screen was re-implementing discovery against its own
+corner of the same graph, and not one of them could show a person the whole
+picture of what they held.</p>
+<h3 id="three-panes-for-three-questions"><a class="anchor" aria-hidden="true" tabindex="-1" href="#three-panes-for-three-questions"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Three panes for three questions</h3>
+<p class="dsub"><strong>Available</strong> lists the roles you could take, found by asking which are being
+offered in the scopes visible to you. <strong>My Roles</strong> lists what you currently
+hold, with the history of where each grant came from. <strong>Roster</strong> lists, for
+roles you steward, who else holds them.</p>
+<p>Keeping discovery and enrolment on one surface is about the loop a person
+actually runs, not about saving a screen. That loop — see what is available,
+take one, later check what you hold, hand something back — crosses the
+discovery boundary on every single pass.</p>
+<p>Splitting them across screens forces a context switch in the middle of one
+mental task, and duplicates the underlying read: what you could take and what
+you do hold are the same query with different filters.</p>
+<p>The bulk hand-back flow that landed on 14 May is the clearest payoff. Select
+several rows, revoke once, give a reason, confirm, and watch the grants leave
+the graph — one gesture, because the roster, the action and the record of it
+share a surface.</p>
+<h3 id="visibility-and-authority-are-two-axes-not-one"><a class="anchor" aria-hidden="true" tabindex="-1" href="#visibility-and-authority-are-two-axes-not-one"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Visibility and authority are two axes, not one</h3>
+<p>A late change on 17 May turned the surface green, and it is the most
+transferable decision in the whole feature. The roster is now visible to every
+member; only the actions on it require steward authority.</p>
+<p>Before that, the entire roster pane sat behind a steward check, so an ordinary
+member could not see who else held a role they themselves held.</p>
+<p>That is the wrong cut. Seeing who is in your group and being allowed to change
+who is in your group are different permissions, and collapsing them denies
+people information they have every right to.</p>
+<p>Most access bugs turn out to be one of those two axes leaking into the other.
+Drawing the line explicitly, on the surface itself, is most of the design work.</p>
+<h3 id="a-surface-you-can-point-at"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-surface-you-can-point-at"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A surface you can point at</h3>
+<p>Following a link straight into a specific role now lands you on that role
+inside the roster, rather than at the top of a list you then have to search
+through. A configuration address with a fragment routes directly to the right
+pane.</p>
+<p>That matters more than it sounds. When something happens to a role — its
+signing keys change, say — the notification about it can carry a link dropping
+a steward exactly onto the roster for that role.</p>
+<p>A deep link that silently lands you on the wrong pane is worse than no deep
+link at all, so the malformed-address fallback was captured and checked
+alongside the working one.</p>
+<h3 id="what-it-cost-to-prove"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-it-cost-to-prove"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What it cost to prove</h3>
+<p>181 screenshots dated 15 May stand behind this, walking the surface state by
+state rather than sampling it: browser loaded, tab activated, roster rendered,
+two rows checked, the bulk bar visible, the modal open, a reason typed, submit
+done, grants gone from the graph.</p>
+<p>Roughly half of those captures are of the feature failing on purpose. A roster
+that is empty because there is genuinely nothing to show. The bulk-action bar
+correctly absent when nothing is selected. A malformed link landing on the
+configuration fallback instead of guessing.
+(<a href="2026-05-15-181-screenshots-before-we-called-it-done.html" rel="noopener noreferrer">181 screenshots before we called it done</a>)</p>
+<p>Those are the frames that carry the argument. The passing frames prove the
+happy path is wired; the failing frames prove the edges are.</p>
+<p>A surface that knows the difference between "nothing here" and "broken"
+degrades the way it was designed to, rather than however the runtime felt that
+day.</p>
+<p>One capture from that day recorded a test asserting a slide-out detail panel
+the design never had.</p>
+<p>The honest fix was to recognise that the row already is the detail — it carries
+the member, the grant and the history inline — and correct the test, rather than
+grow a panel nobody wanted in order to satisfy it.</p>
+<p class="dsub"><strong>What is still open.</strong> The work is close to finished rather than finished. The
+roster is in and verified, and its last hard defect — the steward-authorisation
+edge above — closed on 17 May. The final review had not completed as the week
+ended, and this report says nearly done rather than rounding it up.</p>
+<h2 id="rules-you-can-read-beat-rules-you-have-to-run"><a class="anchor" aria-hidden="true" tabindex="-1" href="#rules-you-can-read-beat-rules-you-have-to-run"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Rules you can read beat rules you have to run</h2>
+<p class="dsub"><strong>The feature:</strong> the rules that govern how NAOMS behaves — what is allowed,
+what must happen first, what is refused outright.</p>
+<p class="dsub"><strong>Before:</strong> each rule was its own small piece of hand-written code, so the only
+way to know what a rule said was to read the program enforcing it. <strong>Now:</strong> 142
+of them are plain declarative phrases that a single shared engine reads, and the
+hand-written machinery that used to interpret them is gone.
+(<a href="2026-05-17-deleting-8300-lines-agents-md-becomes-policy.html" rel="noopener noreferrer">When the rules became readable policy</a>)</p>
+<p class="dsub"><strong>A rule expressed as code can only be audited by someone who can read code.</strong>
+That is the whole argument. A governing rule has an audience wider than the
+people who implement it, and every step that widens the audience without
+weakening the rule is worth taking.</p>
+<h3 id="the-rule-is-the-gate-not-a-description-of-one"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-rule-is-the-gate-not-a-description-of-one"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The rule is the gate, not a description of one</h3>
+<p>The rules here are not advice an actor is trusted to remember. Before the AI
+facilitator changes anything, it announces what it intends to do; that
+announcement is what unlocks the tools that change things. Skip it, and its
+hands stay locked.
+(<a href="2026-05-12-asking-permission-before-every-move.html" rel="noopener noreferrer">The agent can't skip the rules</a>)</p>
+<p>There are two beats, and the distinction is worth holding. Announcing the
+intent up front is cooperative — it records that the consultation happened. The
+judgement of whether the specific action is allowed happens later, at the moment
+the action actually lands, and that beat is enforced no matter what.</p>
+<p>Each standing rule is defined <em>as</em> its gate rather than described alongside
+one, and that is what makes the arrangement hold over years.</p>
+<p>In most systems the written rules and the enforced behaviour drift apart until
+the document is archaeology. Here a rule that stopped being enforced would stop
+being a rule, because the gate is the rule's body rather than a second copy of
+it that can rot.</p>
+<p>Some rules cannot wait for the next natural checkpoint. When the engine returns
+what applies to an intended action, a few carry an instruction to do something
+before continuing, and following those is strict rather than advisory.</p>
+<p>The rules are also protected from the actor they govern. A fast, capable
+facilitator that finds them slowing it down might reasonably wonder about
+editing the rules.</p>
+<p>Changes to the governing set must themselves pass governance. A rule can be
+changed — just never quietly, and never unilaterally, by the thing trying to
+escape it.</p>
+<h3 id="why-deleting-the-old-machinery-is-the-evidence"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-deleting-the-old-machinery-is-the-evidence"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why deleting the old machinery is the evidence</h3>
+<p>A declarative rule set replaces the evaluators or it has not replaced anything.
+Adding a readable layer on top of the code it was meant to supersede leaves two
+places for the truth to live, and the two will disagree inside a month.</p>
+<p>The migration landed in two halves on the same day. One half was the engine
+side: a single evaluator handling every declarative rule, plus a comparator
+diffing what the new phrases match against what the old code matched.</p>
+<p>The other half was the migration itself, rule by rule, with the old machinery
+removed as it went.</p>
+<p>The comparator is the part that makes this an engineering claim rather than a
+hope. It lets you prove the move was behaviour-preserving one rule at a time,
+instead of shipping 142 rewrites and trusting that nothing shifted meaning on
+the way across.</p>
+<h3 id="one-rule-turned-out-to-be-two"><a class="anchor" aria-hidden="true" tabindex="-1" href="#one-rule-turned-out-to-be-two"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>One rule turned out to be two</h3>
+<p>One rule split into two on the way across, taking 142 rules to 143. "Do not
+capitulate under pressure" and "do not endlessly ask for confirmation" had been
+living in one tangled evaluator.</p>
+<p>They are genuinely different failures. One is giving up when pushed; the other
+is refusing to act on a path that was never ambiguous. In code form the seam
+between them was invisible. In declarative form it was obvious, and each can now
+be matched, reported and argued about on its own.</p>
+<p>That is the quiet argument for the whole exercise. The declarative form also
+changes who can object to a rule: a phrase can be read aloud in a discussion and
+disagreed with by somebody who will never open the codebase, which is the point
+of writing rules down at all.</p>
+<p>There is a cost, and it deserves naming. Declarative rules are only as
+expressive as the vocabulary they are written in, so a rule that vocabulary
+cannot say has to either stretch it or stay as code.</p>
+<p>That pressure is real, and it points the right way — toward a small, stated set
+of things a rule is allowed to talk about.</p>
+<p>The unified operator roles surface, captured 2026-05-15 — one of 181 verification screenshots taken before the feature was called done. This is a real interface capture, not a generated chart.</p>
+
+
+<h2 id="what-this-means-in-plain-terms"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-this-means-in-plain-terms"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What this means, in plain terms</h2>
+<p class="dintro">Five general lessons this week's work paid for, each learned by getting
+something wrong somewhere first.</p>
+<h3 id="seeing-who-is-in-the-room-is-not-permission-to-change-who-is-in-it"><a class="anchor" aria-hidden="true" tabindex="-1" href="#seeing-who-is-in-the-room-is-not-permission-to-change-who-is-in-it"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Seeing who is in the room is not permission to change who is in it</h3>
+<p>The operator roster sat entirely behind a steward check, so an ordinary member
+could not see who else held a role they themselves held. It now renders for
+everyone while the revoke actions stay steward-gated. <strong>Visibility and authority
+feel like one question and are two; most access bugs are one leaking into the
+other.</strong></p>
+<h3 id="a-feature-you-have-only-watched-succeed-is-one-you-do-not-understand"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-feature-you-have-only-watched-succeed-is-one-you-do-not-understand"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A feature you have only watched succeed is one you do not understand</h3>
+<p>Half of the 181 captures behind the roles surface are of it failing on purpose —
+an empty roster, an absent bulk bar, a malformed link hitting its fallback. The
+passing frames prove the path; the failing frames prove the edges. <strong>Evidence
+that contains no failures is a demonstration, not a test.</strong></p>
+<h3 id="deleting-the-old-path-is-what-proves-the-new-one"><a class="anchor" aria-hidden="true" tabindex="-1" href="#deleting-the-old-path-is-what-proves-the-new-one"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Deleting the old path is what proves the new one</h3>
+<p>142 rules became declarative phrases, and the hand-written machinery that used
+to interpret them was removed in the same landing. Had both survived,
+there would now be two answers to every question about what a rule says. <strong>A
+migration that leaves the old mechanism running is an addition, not a
+migration.</strong></p>
+<h3 id="descend-the-ladder-you-already-have"><a class="anchor" aria-hidden="true" tabindex="-1" href="#descend-the-ladder-you-already-have"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Descend the ladder you already have</h3>
+<p>An overnight failure that spanned several processes was root-caused by running
+the existing tests from the lowest level upward until one went red, then reading
+what it printed — two real bugs surfaced in output already on the screen.
+<strong>Do not build a new instrument in the dark; pick up the one already on the
+bench.</strong></p>
+<h3 id="name-the-part-of-the-path-your-test-did-not-cross"><a class="anchor" aria-hidden="true" tabindex="-1" href="#name-the-part-of-the-path-your-test-did-not-cross"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Name the part of the path your test did not cross</h3>
+<p>A three-peer call with audio, video and live transcription passed this week with
+all three peers on one machine. That is a real milestone and it is not the
+feature, which is a call between machines. <strong>State the boundary your evidence
+stopped at in the same sentence as the result, or the result will be read as
+covering it.</strong></p>
+<h2 id="how-much-healthier-is-it-than-a-week-ago"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-much-healthier-is-it-than-a-week-ago"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How much healthier is it than a week ago?</h2>
+<div class="dmetrics"><div class="dmetric"><div class="dm-l"><span class="dm-name">Commits</span><span class="dm-gloss">Landings on the shared codebase's main line of history inside the window, counted once each along the first-parent path</span></div><div class="dm-v"><span class="dm-b">2,509</span></div><div class="dm-d flat"></div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Policy rules migrated</span><span class="dm-gloss">Rules converted from hand-written evaluators to declarative phrases</span></div><div class="dm-v"><span class="dm-b">142</span></div><div class="dm-d flat"></div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Peers in a green call</span><span class="dm-gloss">Participants in the call that carried audio, video and live transcription, all three on one machine</span></div><div class="dm-v"><span class="dm-b">3</span></div><div class="dm-d flat"></div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Verification screenshots</span><span class="dm-gloss">Captures dated 2026-05-15 taken across the operator-roles surface before it was called done</span></div><div class="dm-v"><span class="dm-b">181</span></div><div class="dm-d flat"></div></div></div>
+<p>The week was front-loaded: 13 May was its busiest day, and volume tapered
+toward the weekend. No net line-count figure appears, because a week of this
+shape is dominated by generated material and fixtures, and a net figure would
+describe those rather than the work.</p>
+<section class="dnotes"><h4 class="dn-t">Three honest notes</h4><ol class="dn-l">
+<li><p class="dsub"><strong>The operator-roles screen is nearly done, not done.</strong> It is in and
+verified against 181 screenshots, with its last hard defect closed on 17
+May. Its final review had not completed when the week ended.</p>
+</li>
+<li><p class="dsub"><strong>Voice and video are partial.</strong> The three-peer call that went green ran
+with every peer on the same machine. The cross-machine, live-frame path was
+not closed this week, and the same-day verification says so plainly.</p>
+</li>
+<li><p class="dsub"><strong>The daemon conversion is mid-flight.</strong> Several waves of the blocking-to-
+concurrent conversion landed this week; the remaining waves have not.</p>
+</li>
+</ol></section>
+<div class="doneline"><div class="dol-k">In one line</div><p>every operator role moved onto one verified screen, 142
+governing rules became readable data with each one proved to still mean what it
+meant before, the daemon's ceiling became your hardware instead of one thread,
+and a three-peer call went green on a single machine.</p></div>
+<h2 id="what-changed-area-by-area"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-changed-area-by-area"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What changed, area by area</h2>
+<p class="dintro">Every area that moved this week. Per-area file counts are not available for
+this window, so the areas are listed by what landed rather than ranked by
+traffic.</p>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">Operator roles.</span></div><p class="acard-sum">One screen now finds, takes and hands back every role, replacing the scattered per-feature screens.</p><p class="acard-d">Deep-link routing into a specific role landed 15 May with its malformed-address fallback captured too, the bulk hand-back round trip landed 14 May, and the last hard defect — an edge in steward authorisation that hid the whole roster from ordinary members — closed on 17 May.</p><p class="acard-d">A stray test asserting a slide-out detail panel the design never had was corrected rather than satisfied, on the reasoning that the roster row already carries the member, the grant and the history inline.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Policies and rules.</span></div><p class="acard-sum">142 governing rules became plain declarative phrases instead of hand-written code.</p><p class="acard-d">The legacy machinery that interpreted them was deleted in the same work, a comparator proved the move behaviour-preserving rule by rule, and one conflated rule split into two, taking the count to 143.</p><p class="acard-d">The split separated giving up under pressure from refusing to act on an unambiguous path — two different failures that had been sharing one evaluator, and whose seam only became visible once the rules stopped being programs.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The permission gate.</span></div><p class="acard-sum">The AI facilitator must announce an intended action before the tools that change anything will unlock, and the action itself is judged again when it lands.</p><p class="acard-d">Rules that cannot wait carry an act-before-continuing instruction, and any change to the governing rule set must itself pass governance — so a rule can be changed, just never quietly and never unilaterally by the actor it constrains. ( The agent can't skip the rules )</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Voice and video.</span></div><p class="acard-sum">A three-peer call carrying audio, video and live transcription went green with all peers on one machine, and the race behind an earlier failure was root-caused rather than papered over: when a call lives on a channel and a third peer joins, the peers could briefly disagree about who may write to the shared call state.</p><p class="acard-d">Seeding the joined-member record at the moment the channel is created closes that window. Three is where a call stops being a pipe and becomes a group — two peers never meet that race, and three do, which is why three is the honest threshold for saying this works.</p><p class="acard-d">( Three peers, audio + video + transcription — green, but not done )</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Contacts.</span></div><p class="acard-sum">Turning a stranger into a contact is now a mutual ceremony rather than a one-sided tap.</p><p class="acard-d">One side generates an invitation, the other initiates, the first responds, and the two exchange relationship cards each authored for the other — then sign an agreement anchored into both of their own permanent records, after which scoped sharing opens and nothing wider.</p><p class="acard-d">A unilateral declaration of trust produces nothing here by design, because a relationship only one side agreed to is a claim about somebody else rather than a relationship. Ambient nearby-discovery was removed deliberately: you should enter someone's graph because one of you offered, not because you happened to share a network.</p><p class="acard-d">( The ceremony that turns a stranger into a contact )</p></div><div class="acard"><div class="acard-h"><span class="acard-name">What a relationship card is.</span></div><p class="acard-sum">The card each side hands over is not a profile.</p><p class="acard-d">A profile is one-sided and says the same thing to everybody; a card is the face of yourself you chose to show this particular relationship, so a close friend and an acquaintance can hold different ones without you keeping a single global profile that leaks the same data to all of them.</p><p class="acard-d">The card also carries the keys that let each side verify the other's later updates.</p><p class="acard-d">The parts that would keep a card alive over time — recording which card a given peer was shown, and pushing a changed field out to everyone holding it — are designed and partly built rather than shipped, so a card can still go stale.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Verifiable honesty.</span></div><p class="acard-sum">A test-mode shortcut that silently installed an automatic yes in the approval path was removed from the shipped code entirely, so the automatic answer now has to be handed in explicitly by the tests that want it.</p><p class="acard-d">The behaviour is identical from outside; what changed is that a consequential decision is visible at the place it is made. The standard applied was not &quot;is this dangerous&quot; — it plainly was not — but &quot;can you see it happening where it happens&quot;. ( You don't have to take our word for it )</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Two kinds of lie, two defences.</span></div><p class="acard-sum">A system can rewrite what happened, or it can state a guess in the same flat voice it uses for a fact.</p><p class="acard-d">The first is answered by the append-only signed record, where an edit breaks the chain visibly for anyone holding it — including a stranger who trusts nobody here — and a correction is appended rather than swapped in.</p><p class="acard-d">The second is answered by vocabulary: pieces of knowledge carry how they were come by, and the system describes an activation pattern rather than claiming to know an emotion it cannot see.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Delivery routing.</span></div><p class="acard-sum">A device that received an entry was queuing a delivery addressed to itself, then failing loudly to reach itself.</p><p class="acard-d">Four separate passes build the list of who needs a copy — the membership graph, the chain's owner, anyone named in the entry, and the founding member set — and every one of them excluded the author while none excluded the reader.</p><p class="acard-d">A single guard at the point all four funnel through now returns early when the recipient resolves to the local identity, and a regression test drives the real queue from both directions, so it fails if the guard disappears and fails again if the guard ever starts swallowing entries meant for somebody else.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">What the delivery queue declines to carry.</span></div><p class="acard-sum">Some lanes hold the machinery of a single person's identity — which devices are approved, which keys are trusted, which delegations exist — and a copy of that landing outside the circle is the thing the boundary exists to stop.</p><p class="acard-d">The refusal needs three conditions at once: a private lane, a private kind of entry, and a recipient the identity has not already vouched for.</p><p class="acard-d">If the check itself cannot answer, it fails closed for the private kinds and open for everything else, on the reasoning that a transient blip is no reason to relax a privacy boundary and every reason not to strand ordinary traffic.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">How a change reaches the right devices.</span></div><p class="acard-sum">What is written for a recipient is a row addressed to that one device, holding the record, the lane, the entry, an urgency and an expiry thirty days out.</p><p class="acard-d">A flush a fraction of a second later delivers those rows directly, device to device; rows for a machine that is not reachable wait for it to come back, and rows that expire undelivered are swept.</p><p class="acard-d">A member whose role is to cache rather than participate is queued but deliberately left to the next batch, so the timing leaks less about who is actually in a conversation.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Asking to pull instead of being pushed.</span></div><p class="acard-sum">A recipient can record, lane by lane, that it would rather fetch a lane on demand than have it streamed at it — useful for a bulk content lane.</p><p class="acard-d">When that preference is set, no row is queued at all, so a device reconnecting later does not receive a backlog of the lane it opted out of.</p><p class="acard-d">Two lanes sit outside this entirely: the rules of a group and its metadata are pushed regardless, because members who cannot read the rules cannot check each other's authority to do anything.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Enumerate generously, then narrow once.</span></div><p class="acard-sum">The four recipient passes overlap on purpose, because each returns the right answer at a moment when the others return nothing — the membership index is still being built out of the very entry being delivered when a group is formed.</p><p class="acard-d">The price of that generosity is candidates arriving from several directions, and the discipline that makes it safe is doing all the narrowing at one point, where the context to narrow correctly is already in hand.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Benchmarks.</span></div><p class="acard-sum">The performance suite now wraps every result in a signed record over a canonical form, so a claim that something got faster carries a signature rather than a recollection.</p><p class="acard-d">A three-peer call datapoint recorded 300 of 300 frames with a median frame time of six to ten milliseconds, alongside a warm-boot timing and a large-file throughput measurement. ( Benchmarking when the answer isn't a number )</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Scoring what has no number.</span></div><p class="acard-sum">Questions like &quot;did it recall the right thing?&quot; have no stopwatch answer, so the suite scores them with a second model as judge — constrained to a one-word verdict so the harness can read it with plain code rather than needing a third model to interpret the second.</p><p class="acard-d">Exact string matching rejects a right answer phrased differently; a keyword check accepts &quot;not Thursday&quot; as a match for Thursday. Everything a counter can answer is still answered by a counter, and a judge's error rate is something to measure against hand-grading rather than assume away.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Calibrating a judge before trusting it.</span></div><p class="acard-sum">A model grading a model is not free of error, and its mistakes are correlated — it will misjudge a particular phrasing the same way every time.</p><p class="acard-d">So a sample is hand-graded and checked against the judge before the judge is trusted at scale, and the model and its settings are written into the stored record beside the verdict. The aim is not a perfect judge but a known error rate, so a pass figure carries an honest margin.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Debugging practice.</span></div><p class="acard-sum">A cross-process failure is now root-caused by descending the tests that already exist until one goes red, rather than by building a fresh probe under pressure.</p><p class="acard-d">Two real bugs that night came out of output a running ceremony was already printing.</p><p class="acard-d">The instinct being corrected runs both ways: re-running the whole end-to-end test tells you that something broke and almost never where, while stopping to author a new test in the middle of a fire produces a reproduction rather than a diagnosis. ( Don't write an integration test — use one )</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The daemon.</span></div><p class="acard-sum">The native bridge's conversion from blocking to concurrent continued through several waves, so the daemon is bounded by your machine's resources rather than by a single thread.</p><p class="acard-d">The conversion is not finished.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Model installation.</span></div><p class="acard-sum">Installing a model from the marketplace now carries through to device assignment without a second step, and an invited member's devices bind end to end.</p><p class="acard-d">That binding landed at the close of the week.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Storage classification.</span></div><p class="acard-sum">Every write is now routed through one classification before it reaches storage: a durable commitment that bears on governance is anchored, ephemeral high-volume state is not, and anything that fits neither is surfaced as ambiguous instead of being guessed at.</p><p class="acard-d">The third bucket is the load-bearing one — a guess made at storage time is unrecoverable later, because nothing records that a guess occurred.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The terminal interface.</span></div><p class="acard-sum">In progress, and not claimed as landed here.</p></div></div>
+<aside class="closer"><h2 class="closer-t">What would prove this week's biggest claims wrong</h2><div class="closer-b">
+<p class="dintro">Four things this report has only half-proven, each stated as a commitment
+rather than as a task.</p>
+<ul>
+<li><p class="dsub"><strong>The three-peer call has never crossed a machine boundary.</strong> Audio, video
+and live transcription went green with all three peers on one host. Until
+frames cross a real link between two computers, this is a milestone and not
+a call.</p>
+</li>
+<li><p class="dsub"><strong>The operator-roles screen is verified but not closed.</strong> 181 screenshots
+and a defect closed on 17 May are strong evidence; the final review was still
+outstanding when the week ended.</p>
+</li>
+<li><p class="dsub"><strong>A declarative rule is only as good as the vocabulary it is written in.</strong>
+142 rules now read as phrases. Nothing here shows what happens to a rule the
+vocabulary cannot express, and that rule is the one that will decide whether
+the migration holds.</p>
+</li>
+<li><p class="dsub"><strong>A relationship card can go stale and nobody is told.</strong> The ceremony that
+creates one works. Recording which card a peer was shown, and pushing a
+changed field to the people holding it, is designed and partly built rather
+than shipped.</p>
+</li>
+</ul>
+<p><em>Window: 2026-05-11 → 2026-05-17. Commits are counted once per landing along
+the first-parent path of the shared codebase inside the window; no net
+line-count figure is quoted, because at this volume the diff is dominated by
+generated material and fixtures. Screenshot counts are captures taken on
+2026-05-15. Work that landed after the window is not counted here.</em></p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></aside></div></div></article>
+<a class="backlink" href="../stream-process.html">← more in Process</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 260 posts (2026-03-16 → 2026-09-26) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+<script>(function(){
+  var KEY='naoms-theme', root=document.documentElement, btn=document.getElementById('themebtn');
+  if(!btn)return;
+  function stored(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
+  function label(v){return v==='light'?{i:'\u2600',t:'Light'}:v==='dark'?{i:'\u{1F319}',t:'Dark'}:{i:'\u{1F5A5}',t:'System'};}
+  function render(){
+    var v=stored(); var l=label(v);
+    btn.querySelector('.ti').textContent=l.i; btn.querySelector('.tt').textContent=l.t;
+    btn.setAttribute('aria-label','Theme: '+l.t+'. Click to change.');
+  }
+  btn.addEventListener('click',function(){
+    var v=stored(), next = v==='light' ? 'dark' : v==='dark' ? 'system' : 'light';
+    try{ if(next==='system')localStorage.removeItem(KEY); else localStorage.setItem(KEY,next); }catch(e){}
+    if(next==='system')root.removeAttribute('data-theme'); else root.setAttribute('data-theme',next);
+    render();
+  });
+  render();
+})();</script><script>(function(){
+  var imgs=[].slice.call(document.querySelectorAll('.markdown-body img'));
+  if(!imgs.length)return;
+  var backdrop=document.createElement('div');
+  backdrop.className='lbox-backdrop'; backdrop.hidden=true;
+  backdrop.innerHTML='<button type="button" class="lbox-close" aria-label="Close image">\u2715</button><img alt=""><div class="lbox-cap"></div>';
+  document.body.appendChild(backdrop);
+  var bImg=backdrop.querySelector('img'), bCap=backdrop.querySelector('.lbox-cap'), bClose=backdrop.querySelector('.lbox-close');
+  var trigger=null;
+  function focusables(){return [].slice.call(backdrop.querySelectorAll('button,[tabindex]'));}
+  function onKey(e){
+    if(e.key==='Escape'){e.preventDefault();close();return;}
+    if(e.key==='Tab'){
+      var f=focusables(); if(!f.length)return;
+      var first=f[0], last=f[f.length-1];
+      if(e.shiftKey && document.activeElement===first){e.preventDefault();last.focus();}
+      else if(!e.shiftKey && document.activeElement===last){e.preventDefault();first.focus();}
+    }
+  }
+  function open(img){
+    trigger=img; bImg.src=img.currentSrc||img.src; bImg.alt=img.alt||'';
+    bCap.textContent=img.alt||''; backdrop.hidden=false; document.body.style.overflow='hidden';
+    bClose.focus(); document.addEventListener('keydown',onKey,true);
+  }
+  function close(){
+    backdrop.hidden=true; document.body.style.overflow=''; bImg.src='';
+    document.removeEventListener('keydown',onKey,true);
+    if(trigger)trigger.focus(); trigger=null;
+  }
+  backdrop.addEventListener('click',function(e){ if(e.target===backdrop||e.target===bImg)close(); });
+  bClose.addEventListener('click',close);
+  imgs.forEach(function(img){
+    img.setAttribute('role','button'); img.setAttribute('tabindex','0');
+    if(!img.getAttribute('aria-label'))img.setAttribute('aria-label',img.alt?('Open image: '+img.alt):'Open image');
+    img.addEventListener('click',function(){open(img);});
+    img.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();open(img);} });
+  });
+})();</script>
+</body></html>

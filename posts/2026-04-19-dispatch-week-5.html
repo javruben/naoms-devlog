@@ -1,0 +1,461 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>Week 5 — NAOMS Engineering Update — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a>
+<button type="button" id="themebtn" class="themebtn" aria-label="Theme: System. Click to change."><span class="ti">🖥</span><span class="tt">System</span></button></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:var(--accent-warm)"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:var(--ok)"></span>Product<span class="n">60</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:var(--accent)"></span>Technology<span class="n">100</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:var(--accent-3)"></span>Process<span class="n">50</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">132</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">28</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">21</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">33</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="28" data-label="Wk 28" href="../archive.html#week=28">Wk 28<span class="n">Sep 21 – Sep 27</span></a><a class="facet" data-ft="week" data-fv="27" data-label="Wk 27" href="../archive.html#week=27">Wk 27<span class="n">Sep 14 – Sep 20</span></a><a class="facet" data-ft="week" data-fv="26" data-label="Wk 26" href="../archive.html#week=26">Wk 26<span class="n">Sep 7 – Sep 13</span></a><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 6</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update</div><h1 class="dhero-dek">Week 5</h1><p class="dhero-lede">877 commits landed on the shared line, with roughly 6,400 authored across parallel work that merged later — the gap is explained in the numbers section. Everything the week touched is below, the largest threads first and every area at the end.</p><div class="dstats dstats-hero"><div class="dstat"><div class="dstat-k">Commits landed</div><div class="dstat-n">877</div><div class="dstat-q">on the main line (~880)</div></div><div class="dstat"><div class="dstat-k">Commits authored</div><div class="dstat-n">~6,400</div><div class="dstat-q">across the parallel work that later merged</div></div><div class="dstat"><div class="dstat-k">Busiest day</div><div class="dstat-n">1,347</div><div class="dstat-q">(Saturday 2026-04-18)</div></div><div class="dstat"><div class="dstat-k">Lightest day</div><div class="dstat-n">502</div><div class="dstat-q">(Wednesday 2026-04-15)</div></div><div class="dstat"><div class="dstat-k">Surfaces captured</div><div class="dstat-n">35,</div><div class="dstat-q">dated 2026-04-19</div></div></div></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>April 19, 2026</span><span>·</span><span>22 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch"><p><img src="assets/week-05-commits.svg" alt="Commits per day — Week 5" /></p>
+
+<h2 id="four-things-changed-this-week"><a class="anchor" aria-hidden="true" tabindex="-1" href="#four-things-changed-this-week"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Four things changed this week</h2>
+<p class="dintro">One per major area. There is no marquee demo this time — the week's real work
+was hardening the things that hold identity and memory, and refusing to let
+green tests stand in for finished ones. Two of the four below are design
+positions published with their honest status attached, which is the shape most
+of this window took.</p>
+<div class="fourgrid"><div class="fcard"><div class="fcard-n">1</div><h3 class="fcard-t">No stolen device can sign as you</h3><div class="fcard-b"><p>Threshold signing splits the identity key so a quorum of your own devices must
+cooperate. The in-memory split is shipped; the cross-device ceremony is in
+test.</p></div></div><div class="fcard"><div class="fcard-n">2</div><h3 class="fcard-t">Search understands what you meant and never leaves the device</h3><div class="fcard-b"><p>Meaning-based matching runs beside keyword matching, blended, entirely on your
+own hardware. The query is never a network request, so no remote index logs
+it.</p></div></div><div class="fcard"><div class="fcard-n">3</div><h3 class="fcard-t">A feature was un-shipped on purpose</h3><div class="fcard-b"><p>The terminal cockpit was marked finished on the 18th and had that marker taken
+back on the 19th, when a final review found drift behind green tests.</p></div></div><div class="fcard"><div class="fcard-n">4</div><h3 class="fcard-t">Nothing gets to invent a name any more</h3><div class="fcard-b"><p>All 617 event types now declare exactly what they become in the queryable
+graph, and a rule fails a run when a conversion step settles a name on its own.</p></div></div></div><h2 id="the-quorum-signs-or-nothing-does"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-quorum-signs-or-nothing-does"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The quorum signs, or nothing does</h2>
+<p class="dintro"><img src="assets/devices-authority-dark.webp" alt="The Devices pane. Each device you own is listed with what it is allowed to do — this one reads &quot;Authority: can sign as you&quot; — and the list filters by Active, Revoked or All, so a device can be taken out of that set without touching the others. Below it, biometric unlock and the security tier for this machine. Dark theme, real capture." /></p>
+<p class="dsub"><strong>The feature:</strong> the signing key that acts as you — the one object which, if
+stolen, lets somebody rotate your identity, add a trusted device, or speak in
+your name.</p>
+<p class="dsub"><strong>Before:</strong> at the instant of signing, the whole private key had to exist
+somewhere in one piece, and at that instant a single compromise was total.</p>
+<p class="dsub"><strong>Now:</strong> the key is split into shares that are never put back together. Each
+device signs partially with its own share, and enough partials combine into one
+ordinary signature.</p>
+<h3 id="why-one-key-is-the-wrong-unit"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-one-key-is-the-wrong-unit"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why one key is the wrong unit</h3>
+<p>A private key is a perfect proxy for a person: whoever holds it can sign as
+you, spend as you, and rotate your identity as you.</p>
+<p>Encrypting the disk and sandboxing the process do not change that, because the
+key still has to exist whole at the moment it signs.</p>
+<p>So the answer was not to hide the key better. It was to stop letting any one
+key be enough, which is a different problem with a different shape and a
+well-studied name.</p>
+<h3 id="splitting-a-signature-not-a-secret"><a class="anchor" aria-hidden="true" tabindex="-1" href="#splitting-a-signature-not-a-secret"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Splitting a signature, not a secret</h3>
+<p>The obvious move — copy the key to a second device — is strictly worse, because
+now there are two things to steal.</p>
+<p>Splitting a secret into shares you later reassemble is closer, and still wrong:
+at the instant of reassembly the whole key exists in one place again, which is
+exactly the moment you were trying to eliminate.</p>
+<p>The scheme used here splits the key into shares that are never reassembled.
+Each shareholder computes a partial signature from its own share alone, and a
+coordinator combines a threshold of those partials into one final signature.</p>
+<p>What comes out is an ordinary signature that any standard verifier accepts,
+with no idea it was produced by a committee. Fewer devices than the threshold,
+however many of them are stolen, can do nothing at all.</p>
+<h3 id="two-distances-two-attackers"><a class="anchor" aria-hidden="true" tabindex="-1" href="#two-distances-two-attackers"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Two distances, two attackers</h3>
+<p>The idea is applied at two distances, and it is worth keeping them apart
+because they defend against different people. On a single machine, the signing
+key never sits in process memory as a usable whole.</p>
+<p>It lives in a separate sandboxed process, split in two, masked against a random
+pad that is re-randomised on a timer, locked out of swap, and marked unreadable
+until the instant of use. That layer is shipped.</p>
+<p>It defends against malware scraping your memory and against a careless crash
+dump leaking your identity. The usable whole exists for microseconds during a
+signature, and the pages holding it are excluded from crash dumps.</p>
+<p>The second distance is across your own devices. Shares live on different
+physical machines, and an identity-critical action requires them to cooperate
+in real time: each co-signer prompts you, you approve, and only when enough
+partials come back does the action go through.</p>
+<p>The scoping is deliberate. A cross-device quorum guards the rare and dangerous
+actions — rotating your identity, adding or revoking a trusted key, changing
+the threshold itself. Everyday signing uses a fast per-device key, because a
+quorum ceremony for every routine event would be unusable.</p>
+<h3 id="handing-a-share-to-a-new-device"><a class="anchor" aria-hidden="true" tabindex="-1" href="#handing-a-share-to-a-new-device"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Handing a share to a new device</h3>
+<p>Enrolling a second device means getting it a share without that share ever
+being readable in transit. Each one is sealed into an envelope using an
+ephemeral key agreement, a derivation step and authenticated encryption, and
+the receiving device opens it inside its own sandbox.</p>
+<p>The master key has no birthplace either. A distributed generation step produces
+each device's share directly, so the whole private key is never assembled — not
+during setup, not once.</p>
+<p>Redistribution to a fresh set of devices, and cleanly forgetting a share during
+recovery, sit beside it as real operations.</p>
+<p>The plaintext share bytes never cross the boundary between the two machines.
+That is worth stating plainly, because a scheme that protects a key everywhere
+except during enrolment protects it nowhere — the weakest moment in a key's
+life is the one an attacker will wait for.</p>
+<h3 id="signing-what-you-were-actually-shown"><a class="anchor" aria-hidden="true" tabindex="-1" href="#signing-what-you-were-actually-shown"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Signing what you were actually shown</h3>
+<p>A nasty class of attack shows you <em>approve rotating your phone in</em> on screen
+while the bytes you are asked to sign mean <em>add the attacker's key as trusted.</em>
+Threshold signing does not prevent this on its own, because it signs whatever
+message it is handed.</p>
+<p>The closure is to bind the human-readable purpose into the signed material with
+a canonical, deterministic encoding, so the signature is over the purpose you
+were shown. Sign for a rotation, and those bytes cannot be reused to mean
+something else.</p>
+<p class="dsub"><strong>A signature that does not bind which purpose, which session and which moment
+is a signature waiting to be replayed.</strong> A review during this work caught
+cross-device handshake signatures that were static and replayable — one
+observed handshake could be replayed in a fresh session to inject unauthorised
+trust. It was fixed by binding a fresh per-handshake value into the signed
+material, then hardened with short-lived staples and a proactive revocation
+notice.</p>
+<p>The same discipline shows up a layer down, where the terminal client proves
+itself to the local node with a one-time challenge and no shared password on
+the connection
+(<a href="2026-04-16-auth-between-a-rust-tui-and-a-deno-daemon.html" rel="noopener noreferrer">Proving who you are to a program on your own machine</a>).</p>
+<h3 id="the-rule-underneath-the-scoping"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-rule-underneath-the-scoping"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The rule underneath the scoping</h3>
+<p>The governing rule is simple to state: the rarer and more dangerous the action,
+the more keys must agree. Rotating an identity is rare and catastrophic if
+forged. Appending an ordinary event to your own chain is constant, and a
+ceremony around each one would be unusable.</p>
+<p>Treating both the same way produces either a system nobody can use or a
+guarantee that protects nothing. Grading the ceremony by the stakes is what
+lets the strongest protection exist at all, because it is only ever asked for
+when it is worth asking for.</p>
+<h3 id="when-a-co-signer-goes-dark"><a class="anchor" aria-hidden="true" tabindex="-1" href="#when-a-co-signer-goes-dark"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>When a co-signer goes dark</h3>
+<p>Devices fall asleep, lose signal and wander out of range mid-ceremony. Plain
+threshold signing is unforgiving here: commit to a round with a chosen set of
+participants, lose one, and the round aborts even when the remaining devices
+were perfectly capable of finishing it.</p>
+<p>A robustness wrapper from the literature fixes exactly that, by letting a
+ceremony adapt to whoever is still answering. It is scoped, understood and
+deliberately deferred until real usage shows ceremonies failing often enough to
+matter, because building robustness against an unmeasured problem is its own
+kind of waste.</p>
+<h3 id="what-is-shipped-and-what-is-not"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-is-shipped-and-what-is-not"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What is shipped, and what is not</h3>
+<p>The in-memory split is shipped. The cross-device quorum is in test: the
+cryptographic core, distributed generation, sealed share delivery,
+redistribution and purpose binding are built and passing their unit and
+integration tests.</p>
+<p>What remains is the long tail — migrating every last verifier and signing
+call-site onto the purpose-bound path, and driving the full multi-device flow
+through the real pairing interface. It is not yet a button a user presses
+across two phones, and the write-up says so rather than rounding up
+(<a href="2026-04-16-no-single-key-threshold-signing-with-frost.html" rel="noopener noreferrer">No single key</a>).</p>
+<h2 id="your-search-never-becomes-a-fact-about-you"><a class="anchor" aria-hidden="true" tabindex="-1" href="#your-search-never-becomes-a-fact-about-you"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Your search never becomes a fact about you</h2>
+<p class="dsub"><strong>The feature:</strong> searching your own notes, files, messages and conversations,
+and getting back what you meant rather than only what you literally typed.</p>
+<p class="dsub"><strong>Before:</strong> exact-letter matching. Search for <em>garden</em> and a note that said
+<em>backyard</em> or <em>growing space</em> sat there invisible, because the letters did not
+match and nothing knew the words were about the same thing.</p>
+<p class="dsub"><strong>Now:</strong> meaning-based matching runs alongside keyword matching, the two are
+blended, and results follow the connections between your memories. All of it
+happens on your device.</p>
+<h3 id="the-query-is-the-sensitive-part"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-query-is-the-sensitive-part"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The query is the sensitive part</h3>
+<p>Here is a habit worth noticing: almost every time you search, the query leaves
+the building. The words travel to a server to be matched, logged, ranked and
+often remembered, and the thing you were looking for becomes a fact about you
+on somebody else's computer.</p>
+<p>That is obviously true of web search, and increasingly true of searching your
+own notes, files and messages.</p>
+<p>The premise here is the opposite — not a promise to be careful with your query,
+but a design in which the query has no opportunity to be careless, because it
+never goes anywhere.</p>
+<p>It is worth being precise about what is being claimed. Not that the query is
+encrypted in transit, and not that a retention policy governs what happens to
+it afterwards. There is no transit and no retention, because the search does
+its work and leaves no trace anywhere but on your own machine.</p>
+<h3 id="two-ways-of-matching-blended"><a class="anchor" aria-hidden="true" tabindex="-1" href="#two-ways-of-matching-blended"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Two ways of matching, blended</h3>
+<p>Keyword search is fast, exact and a little bit dumb. It finds documents that
+literally contain the letters you typed, so a note that used a different word
+for the same thing sits there invisible.</p>
+<p>Meaning-based search converts text into a mathematical representation that
+captures the concept behind the words rather than the words themselves, so
+<em>garden</em>, <em>backyard</em> and <em>growing space</em> land near each other because they mean
+something similar.</p>
+<p>Neither approach wins alone. Keyword matching gives precision when you know the
+exact term; meaning-based matching gives reach when you do not. The system runs
+both and blends the results, taking the sharpness of one and the coverage of
+the other.</p>
+<p>The part that carries the premise is where the understanding happens. The model
+that captures meaning lives on your device, so there is no remote step in which
+the query is sent away to be interpreted before an answer comes back.</p>
+<h3 id="a-map-of-your-own-connections"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-map-of-your-own-connections"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A map of your own connections</h3>
+<p>Matching documents is only half of what makes this useful. As the system is
+used it quietly builds a map of how your memories connect — people, projects,
+files, conversations and ideas, linked to each other.</p>
+<p>A search then follows those links rather than stopping at the hit.</p>
+<p>Search for a person and you can surface not only their contact entry but the
+project you worked on together, the group you both belong to, and the
+conversation where they mentioned the thing you are half-remembering.</p>
+<p>The match is a starting point; the connections turn a hit into an answer.</p>
+<p>That map gets richer the longer the system is used. After months you are not
+searching a flat pile of files but a connected picture of your own digital
+life — one nobody else can see, because it was assembled on your device from
+your data and never copied anywhere.</p>
+<h3 id="what-a-map-like-that-is-owed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-a-map-like-that-is-owed"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What a map like that is owed</h3>
+<p>A connected picture of everything a person touches is exactly the artefact that
+most deserves protection, and the identity work published the same week draws
+that line from the other direction. The most fragile beliefs a person holds get
+the strongest protection in the system, not the most valuable ones.</p>
+<p>It is the same argument arriving from two sides. Search is allowed to know more
+about you because it never tells anyone, and a belief you would least want
+printed is guarded most fiercely because guarding what is valuable while
+leaving what is broken exposed gets the priority backwards.</p>
+<h3 id="what-it-feels-like"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-it-feels-like"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What it feels like</h3>
+<p>You remember a conversation from months back in which somebody recommended a
+book about forest gardening, and you cannot remember who, or when, or where it
+happened. In a normal tool this is hopeless, because you do not have a keyword
+to type.</p>
+<p>So you ask the question the way you actually remember it: who recommended that
+book about forest gardening? The search finds the conversation without the
+precise phrase, then follows the links to the person who said it, the channel
+it happened in, and the title they named.</p>
+<p>That question is a fairly intimate window into what you are doing and who you
+talk to, and it was never a network request. Nobody got to log it, and no
+remote index learned that you are interested in forest gardening this week.</p>
+<h3 id="why-the-constraint-makes-it-better"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-the-constraint-makes-it-better"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why the constraint makes it better</h3>
+<p>Running locally reads as a privacy tax — capability given up in exchange for
+safety. The opposite is closer to true. An index that lives on a server can
+only ever see the slice of your life you were willing to upload to it.</p>
+<p>A search that runs on your device can draw on everything you have, because all
+of it is already there and none of it had to be risked by sending it away.</p>
+<p>The connections that make a search feel like it understood you are exactly the
+ones you would never want to hand to a remote index in the first place.</p>
+<p>So the constraint is not good search minus privacy. It is search that can
+afford to know more about you precisely because it never tells anyone, and it
+sits inside the same position that says nobody needs to agree with you about
+your own data
+(<a href="2026-04-15-why-there-is-no-global-ledger.html" rel="noopener noreferrer">Why there is no global ledger</a>).</p>
+<p>The account published this week explains how the search behaves and why the
+local constraint was chosen
+(<a href="2026-04-16-search-that-never-phones-home.html" rel="noopener noreferrer">Search that never phones home</a>).
+It describes a design position and the behaviour documented for it, rather than
+reporting a landing inside this window.</p>
+<h2 id="what-this-means-in-plain-terms"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-this-means-in-plain-terms"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What this means, in plain terms</h2>
+<p class="dintro">Most of what lands in a week belongs to the thing it landed in. A few things
+generalise past it. These five are the ones this week actually paid for, and
+they were paid for expensively — three of them come out of something that had
+already gone wrong, which is the only way this section ever earns its place.</p>
+<h3 id="a-completion-you-cannot-take-back-is-not-a-check"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-completion-you-cannot-take-back-is-not-a-check"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A completion you cannot take back is not a check</h3>
+<p>The terminal cockpit was marked finished on the 18th, and the marker was
+downgraded and then withdrawn on the 19th, when the final review stage found
+drift behind green tests and named fourteen open follow-ons
+(<a href="2026-04-18-i-un-shipped-my-own-feature.html" rel="noopener noreferrer">We un-shipped our own feature</a>).
+<strong>A status that can only ever be granted is a label, not a check.</strong></p>
+<h3 id="a-test-written-against-the-code-can-only-agree-with-it"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-test-written-against-the-code-can-only-agree-with-it"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A test written against the code can only agree with it</h3>
+<p>A passing test proves the code does what the test asserts, and says nothing
+about whether the assertion is what the design requires. Anchor it to current
+behaviour and you have built an elaborate machine for confirming that A equals
+A
+(<a href="2026-04-17-any-test-that-passes-over-a-gap-is-a-lie.html" rel="noopener noreferrer">Any test that passes over a gap is a lie</a>).
+<strong>Anchor assertions to intent, not to behaviour.</strong></p>
+<h3 id="declare-the-mapping-or-something-will-choose-it-for-you"><a class="anchor" aria-hidden="true" tabindex="-1" href="#declare-the-mapping-or-something-will-choose-it-for-you"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Declare the mapping, or something will choose it for you</h3>
+<p>A generic conversion step was free to invent the name an event took in the
+queryable graph, so the same mismatch returned after every individual fix. All
+617 event types now declare their own name, and a rule fails the run when a
+conversion settles one silently
+(<a href="2026-04-17-this-has-been-happening-so-many-times-the-kind-alias-trap.html" rel="noopener noreferrer">the kind-alias trap</a>).
+<strong>A choice nothing constrains is made differently every time it is made.</strong></p>
+<h3 id="fix-the-instance-and-you-have-left-the-class-open"><a class="anchor" aria-hidden="true" tabindex="-1" href="#fix-the-instance-and-you-have-left-the-class-open"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Fix the instance and you have left the class open</h3>
+<p>Every mistake that bites gets a rule that detects the whole class of it, so
+that mistake cannot come back silently and the set of things that can go wrong
+only ever shrinks
+(<a href="2026-04-14-what-naoms-check-actually-checks.html" rel="noopener noreferrer">What <code>naoms check</code> actually checks</a>).
+<strong>A lesson recorded in prose is forgotten; a lesson that fails a run is not.</strong></p>
+<h3 id="the-most-fragile-data-deserves-the-strongest-protection"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-most-fragile-data-deserves-the-strongest-protection"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The most fragile data deserves the strongest protection</h3>
+<p>Self-limiting beliefs — the things a person half-believes in the dark — sit
+behind the strongest protection tier in the system, above ordinary sensitive
+data, because exposing one is a trespass on the person rather than a loss they
+can price
+(<a href="2026-04-19-the-data-we-decided-to-treat-as-sacred.html" rel="noopener noreferrer">The data we decided to treat as sacred</a>).
+<strong>Measure protection by dignity, not by damage.</strong></p>
+<h2 id="how-much-healthier-is-it-than-a-week-ago"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-much-healthier-is-it-than-a-week-ago"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How much healthier is it than a week ago?</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+<th>What it counts</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Commits landed</td>
+<td>877 (~880)</td>
+<td>Commits on the main line's first-parent path for the window</td>
+</tr>
+<tr>
+<td>Commits authored</td>
+<td>~6,400</td>
+<td>Every commit authored across the parallel work that later merged</td>
+</tr>
+<tr>
+<td>Busiest day</td>
+<td>1,347</td>
+<td>Commits dated Saturday 2026-04-18, merges and parallel churn included</td>
+</tr>
+<tr>
+<td>Lightest day</td>
+<td>502</td>
+<td>Commits dated Wednesday 2026-04-15, on the same rule</td>
+</tr>
+<tr>
+<td>Surfaces captured</td>
+<td>35</td>
+<td>Redesigned browser surfaces captured on 2026-04-19</td>
+</tr>
+</tbody></table>
+<p class="dsub"><strong>The counting rule changed this week, and the change is stated rather than
+absorbed.</strong> Previous windows quoted a single commit total. This window
+separates what landed on the main line from what was authored across the
+parallel work, because the gap between 877 and 6,400 is large enough that one
+number alone would mislead in either direction.</p>
+<p>Neither figure is comparable to the previous window's single total, and
+pretending otherwise would produce a change figure with no meaning. The
+comparison resumes from here on this window's rule.</p>
+<p>The gap between the two commit figures is itself the interesting number. One
+counts what survived review and landed; the other counts every step taken to
+get there, including the steps later folded, reworked or thrown away. Quoting
+only the larger flatters the week, and quoting only the smaller erases most of
+the effort that produced it.</p>
+<p>Read 6,400 as every micro-commit and 877 as what actually landed. The per-day
+figures follow the wider rule and include merges, so they describe the shape of
+the week — heavy Friday and Saturday, quiet midweek — rather than a rate of
+production.</p>
+<p>Neither total says anything about whether the week's work was good. A count is
+a pulse, not a score. Wednesday was the lightest day of the week and was also a
+consolidation day — an onboarding loop wired up as a test, the first slice of a
+documentation-first search, scaffolding for two-device work, one more guard.
+None of it photographs well and all of it is load-bearing.</p>
+<p class="dsub"><strong>Net lines are not quoted, deliberately.</strong> This window's diff is dominated by
+a 629-file test relocation, which is a move rather than new code, plus a
+fixture-encryption change and coverage artefacts. A net-lines figure here would
+be a dishonest headline, and the honest lead statistic is that roughly 880
+commits landed.</p>
+<p>A bulk edit made by a machine is worth only as much as the proof that it
+changed nothing. This one rewrote 2,091 imports and 2,997 path literals in a
+single pass, and a green suite afterwards proves very little on its own —
+staying green is exactly what a mechanical rewrite is best at.</p>
+<p>What makes the proof mean something is naming the exclusions before the pass
+runs. Files that record what happened in the past were held back, because
+editing a path inside a historical record falsifies it and nothing goes red
+over the lie. Deciding that in advance is the whole safeguard.</p>
+<p>The figures deserve their own note, because the gap is the kind of thing this
+week was about. The plan for the pass described 603 files; the landing records
+629. The landing figure is the one cited here, and the estimate is named rather
+than quietly dropped.</p>
+<div class="doneline"><div class="dol-k">In one line</div><p>the identity key stopped being a single stealable object and
+the honest status of that work was published with it, search by meaning was
+described as something that never leaves your device, a feature that had been
+marked finished had that marker taken back a day later, and the week's texture
+was a steady stream of guards added after being bitten.</p></div>
+<p>The pattern behind each of those guards was identical: something bit us, so add
+a gate that refuses it next time. That is a healthier reflex than resolving to
+be more careful, because a rule does not get tired at two in the morning.</p>
+<p class="dsub"><strong>Three honest notes.</strong></p>
+<p>The code-signing tooling shipped with a broken tier, reported by us, in the
+same change that shipped it. Reporting the limitation alongside the capability
+is the only version of that announcement worth making.</p>
+<p>A performance regression was reopened rather than closed. It is honestly
+reopened, unfinished, and sitting in the backlog rather than quietly marked
+resolved.</p>
+<p>Work in one area destabilised another. A fixture-encryption change unsettled a
+different effort's onboarding tests, and a database passphrase derived from a
+mnemonic was reverted. Both are recorded as cross-effort collateral rather than
+folded into somebody's success.</p>
+<h2 id="what-changed-area-by-area"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-changed-area-by-area"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What changed, area by area</h2>
+<p class="dintro">Everything that moved this week, in rough order of how much of it moved.
+Per-area file counts are not available for this window, so each area is named
+without one rather than with a figure that cannot be reproduced.</p>
+<p>The week's published thinking sits in this list beside its code, because a
+design position argued in the open is part of what moved. Where an area
+describes a design or a written-down mechanism rather than a landing inside
+this window, the card says which it is.</p>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">Type consistency.</span></div><p class="acard-sum">Every chain event type now declares exactly what it becomes in the queryable graph — 617 of them — instead of leaving the choice to a generic conversion step that could label an approved device as something else entirely.</p><p class="acard-d">A new rule fires when a conversion settles a name silently, and six scattered descriptions of the problem, written by six past sessions, were pulled into one page ( the kind-alias trap ).</p></div><div class="acard"><div class="acard-h"><span class="acard-name">A machine-made bulk edit, and the proof it changed nothing.</span></div><p class="acard-sum">One pass rewrote 2,091 imports and 2,997 path literals across 629 files, and the green suite that followed is the weakest evidence available, because staying green is what a mechanical rewrite is good at.</p><p class="acard-d">The safeguard was naming the exclusions first: files that record what happened in the past were held back, since editing a path inside a historical record silently falsifies it and nothing would have gone red over the lie ( Any test that passes over a gap is a lie ).</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Guard rules.</span></div><p class="acard-sum">Four rules were added the same day the cockpit's finished marker was withdrawn, aimed at the drift that caused it, and a batch of others landed in advisory mode — they exist, they report, and they do not yet block.</p><p class="acard-d">Each one exists because something bit us and the fix was a gate rather than a resolution to be careful ( What naoms check actually checks ).</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Threshold signing.</span></div><p class="acard-sum">The identity key is split so no single device can sign alone, with the in-memory split shipped and the cross-device quorum in test.</p><p class="acard-d">Distributed generation, sealed share delivery, redistribution and purpose-bound signing are built; the full multi-device flow through the real pairing interface is not ( No single key ).</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Daemon signing.</span></div><p class="acard-sum">Tooling to sign and verify the daemon you are running shipped, with a finding that its first tier is broken filed in the same change.</p><p class="acard-d">The capability exists and its limit is published beside it.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Identity and memory.</span></div><p class="acard-sum">Recording an identity fact now creates the node it is meant to create, so the fact becomes a memory you can find later rather than an event that vanished into the record.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Local search.</span></div><p class="acard-sum">Meaning-based matching runs beside keyword matching and both stay on your device, with results following a map of how your memories connect that grows the longer the system is used ( Search that never phones home ).</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The terminal client.</span></div><p class="acard-sum">How the terminal client proves itself to the local node was written down in full: the node issues a fresh one-time challenge, the client signs it with the same key that signs your events, and nothing secret crosses the connection.</p><p class="acard-d">Reusing the identity key means there is one answer to who are you , not two ( Proving who you are to a program on your own machine ).</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The model of a self.</span></div><p class="acard-sum">Beliefs are held as first-class things carrying how central they are, where they came from and their own revision history, layered so the deeper a belief sits the more evidence it takes to move.</p><p class="acard-d">A single new fact does not rewrite who you are ( More than an account ).</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Sacred data.</span></div><p class="acard-sum">Self-limiting beliefs are held behind the strongest protection in the system and are never deleted, because deleting part of a self to tidy it is a violation dressed as a kindness.</p><p class="acard-d">The counter-evidence is tracked beside the belief and offered gently rather than argued ( The data we decided to treat as sacred ).</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The no-global-ledger position.</span></div><p class="acard-sum">Each person is the final authority on their own data, so there are no validators, no staking and no global ordering — and the cost of that is named rather than hidden, because global ordering is exactly what adversarial settlement between strangers requires ( Why there is no global ledger ).</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Offline-first kin.</span></div><p class="acard-sum">A study of Secure Scuttlebutt named what it got right — one signed, append-only feed per identity, and gossip that survives long disconnection — and where it hit a wall, since a single feed per identity forces all-or-nothing replication and a slow first sync.</p><p class="acard-d">We carry many chains per identity instead ( Fellow travelers ).</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Cross-effort collateral and hardening.</span></div><p class="acard-sum">A database passphrase derived from a mnemonic was reverted, and a fixture-encryption change destabilised a different effort's onboarding tests, fixed as a follow-on across the two.</p><p class="acard-d">A vault baseline, an audit of suppressions and a round of type-drift fixes landed alongside, in an effort that is not finished.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The browser redesign.</span></div><p class="acard-sum">Thirty-five surfaces of the redesigned browser were captured on 2026-04-19, inside this window.</p><p class="acard-d">The redesign was still in progress that week, so the capture shows the redesign under way rather than a shipped product.</p></div></div>
+<p>Thirty-five surfaces captured in one day is a lot of surface for a redesign
+still in progress, and that is the honest reading of it: coverage of work under
+way, not a portfolio of finished screens.</p>
+<p>Unlike most windows in this series, that image is a genuine in-week capture.
+The sweep is dated inside this dispatch's own window and shows real redesigned
+surfaces. It is captioned as work in progress, which is what it is.</p>
+<aside class="closer"><h2 class="closer-t">What would prove this week's honesty claims wrong</h2><div class="closer-b">
+<p class="dintro">Five things this report claims are only half-proven. Each is stated as a
+commitment, and each names the evidence that would settle it.</p>
+<ul>
+<li><p class="dsub"><strong>Cross-device threshold signing is in test, not in anybody's hands.</strong> The
+cryptographic core and the share delivery pass their tests. The full
+multi-device flow through the real pairing interface, and every last signing
+call-site moved onto the purpose-bound path, are unfinished.</p>
+</li>
+<li><p class="dsub"><strong>The withdrawn completion marker has not been re-earned.</strong> Fourteen pieces
+of follow-on work were open when it was taken back. Re-granting it before
+those close would make the withdrawal a gesture rather than a check.</p>
+</li>
+<li><p class="dsub"><strong>The new guard rules are advisory, and advisory is not a gate.</strong> They report
+and they do not block. Until they fail a run, they measure the drift they
+were written for rather than preventing it.</p>
+</li>
+<li><p class="dsub"><strong>The first tier of daemon signing is broken and known to be.</strong> Publishing
+the finding alongside the capability is the right disclosure, and it is not a
+fix.</p>
+</li>
+<li><p class="dsub"><strong>The two ends of the terminal handshake agree on paper.</strong> The evidence is
+the documented contract and the tests that exercise it — not a byte-for-byte
+comparison of the verifier against the client that signs for it.</p>
+</li>
+</ul>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></aside></div></div></article>
+<a class="backlink" href="../stream-process.html">← more in Process</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 260 posts (2026-03-16 → 2026-09-26) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+<script>(function(){
+  var KEY='naoms-theme', root=document.documentElement, btn=document.getElementById('themebtn');
+  if(!btn)return;
+  function stored(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
+  function label(v){return v==='light'?{i:'\u2600',t:'Light'}:v==='dark'?{i:'\u{1F319}',t:'Dark'}:{i:'\u{1F5A5}',t:'System'};}
+  function render(){
+    var v=stored(); var l=label(v);
+    btn.querySelector('.ti').textContent=l.i; btn.querySelector('.tt').textContent=l.t;
+    btn.setAttribute('aria-label','Theme: '+l.t+'. Click to change.');
+  }
+  btn.addEventListener('click',function(){
+    var v=stored(), next = v==='light' ? 'dark' : v==='dark' ? 'system' : 'light';
+    try{ if(next==='system')localStorage.removeItem(KEY); else localStorage.setItem(KEY,next); }catch(e){}
+    if(next==='system')root.removeAttribute('data-theme'); else root.setAttribute('data-theme',next);
+    render();
+  });
+  render();
+})();</script><script>(function(){
+  var imgs=[].slice.call(document.querySelectorAll('.markdown-body img'));
+  if(!imgs.length)return;
+  var backdrop=document.createElement('div');
+  backdrop.className='lbox-backdrop'; backdrop.hidden=true;
+  backdrop.innerHTML='<button type="button" class="lbox-close" aria-label="Close image">\u2715</button><img alt=""><div class="lbox-cap"></div>';
+  document.body.appendChild(backdrop);
+  var bImg=backdrop.querySelector('img'), bCap=backdrop.querySelector('.lbox-cap'), bClose=backdrop.querySelector('.lbox-close');
+  var trigger=null;
+  function focusables(){return [].slice.call(backdrop.querySelectorAll('button,[tabindex]'));}
+  function onKey(e){
+    if(e.key==='Escape'){e.preventDefault();close();return;}
+    if(e.key==='Tab'){
+      var f=focusables(); if(!f.length)return;
+      var first=f[0], last=f[f.length-1];
+      if(e.shiftKey && document.activeElement===first){e.preventDefault();last.focus();}
+      else if(!e.shiftKey && document.activeElement===last){e.preventDefault();first.focus();}
+    }
+  }
+  function open(img){
+    trigger=img; bImg.src=img.currentSrc||img.src; bImg.alt=img.alt||'';
+    bCap.textContent=img.alt||''; backdrop.hidden=false; document.body.style.overflow='hidden';
+    bClose.focus(); document.addEventListener('keydown',onKey,true);
+  }
+  function close(){
+    backdrop.hidden=true; document.body.style.overflow=''; bImg.src='';
+    document.removeEventListener('keydown',onKey,true);
+    if(trigger)trigger.focus(); trigger=null;
+  }
+  backdrop.addEventListener('click',function(e){ if(e.target===backdrop||e.target===bImg)close(); });
+  bClose.addEventListener('click',close);
+  imgs.forEach(function(img){
+    img.setAttribute('role','button'); img.setAttribute('tabindex','0');
+    if(!img.getAttribute('aria-label'))img.setAttribute('aria-label',img.alt?('Open image: '+img.alt):'Open image');
+    img.addEventListener('click',function(){open(img);});
+    img.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();open(img);} });
+  });
+})();</script>
+</body></html>

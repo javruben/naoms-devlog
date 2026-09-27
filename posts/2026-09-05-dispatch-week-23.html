@@ -1,0 +1,270 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>Week 23 — NAOMS Engineering Update — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a>
+<button type="button" id="themebtn" class="themebtn" aria-label="Theme: System. Click to change."><span class="ti">🖥</span><span class="tt">System</span></button></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:var(--accent-warm)"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:var(--ok)"></span>Product<span class="n">60</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:var(--accent)"></span>Technology<span class="n">100</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:var(--accent-3)"></span>Process<span class="n">50</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">132</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">28</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">21</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">33</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="28" data-label="Wk 28" href="../archive.html#week=28">Wk 28<span class="n">Sep 21 – Sep 27</span></a><a class="facet" data-ft="week" data-fv="27" data-label="Wk 27" href="../archive.html#week=27">Wk 27<span class="n">Sep 14 – Sep 20</span></a><a class="facet" data-ft="week" data-fv="26" data-label="Wk 26" href="../archive.html#week=26">Wk 26<span class="n">Sep 7 – Sep 13</span></a><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 6</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post post-dispatch"><div class="dhero"><div class="dhero-in"><div class="dhero-eyebrow">NAOMS engineering update</div><h1 class="dhero-dek">Week 23</h1><p class="dhero-lede">3,939 commits across 5,726 files, against 4,548 the week before, Most of it reached the shared main line two to three weeks later, and the figures below say which clock they use.</p><div class="dhero-scope">📅 Aug 30 – Sep 5 · Process</div><div class="dstats dstats-hero"><div class="dstat"><div class="dstat-k">Commits (made this week)</div><div class="dstat-n">3,939</div><div class="dstat-d neg">▼ −609 (1,156 merges)</div><div class="dstat-f">from 4,548</div></div><div class="dstat"><div class="dstat-k">Files changed</div><div class="dstat-n">5,726</div><div class="dstat-d neg">▼ −352</div><div class="dstat-f">from 6,078</div></div><div class="dstat"><div class="dstat-k">Test files</div><div class="dstat-n">14,138</div><div class="dstat-d pos">▲ +383 (+2.8%)</div><div class="dstat-f">from 13,755</div></div><div class="dstat"><div class="dstat-k">Declared test cases</div><div class="dstat-n">78,923</div><div class="dstat-d pos">▲ +1,797 (+2.3%)</div><div class="dstat-f">from 77,126</div></div><div class="dstat"><div class="dstat-k">Skip markers (lower is better)</div><div class="dstat-n">17,382</div><div class="dstat-d neg">▲ +48</div><div class="dstat-f">from 17,334</div></div></div></div></div><div class="post-body"><div class="meta"><span class="badge str-process">Process</span> <span class="badge b-dispatch">Dispatch</span> <span class="badge free">free</span> <span>September 5, 2026</span><span>·</span><span>15 min read</span><span>·</span><span>meta</span></div><div class="markdown-body dispatch">
+<p><img src="assets/week-23-commits.svg" alt="Commits per day — Week 23" /></p>
+<h2 id="four-things-changed-this-week"><a class="anchor" aria-hidden="true" tabindex="-1" href="#four-things-changed-this-week"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Four things changed this week</h2>
+<p class="dintro">One per area; the first three have their own article or section below.</p>
+<div class="fourgrid"><div class="fcard"><div class="fcard-n">1</div><h3 class="fcard-t">A group belongs to its members, not its creator</h3><div class="fcard-b"><p>Creating a shared space now makes you its first steward, not its owner.
+Belonging and governing became two separate credentials, so a founder can be
+stepped down to an ordinary member instead of only removed.</p></div></div><div class="fcard"><div class="fcard-n">2</div><h3 class="fcard-t">Photo search reads the whole sentence</h3><div class="fcard-b"><p>"Next to" is measured from where two faces sit, "his friend" must be the
+friend you named, and a vision model on your own machine writes a sentence
+about each photo, rather than a cloud service.</p></div></div><div class="fcard"><div class="fcard-n">3</div><h3 class="fcard-t">Rules on imported data now follow it</h3><div class="fcard-b"><p>Shared content can say "no model may read this" or "local models only". That
+rule now follows imported content and holds at search and at group queries,
+and a rule that cannot be read means <em>withhold</em>. Content with no rule stays
+readable by any model.</p></div></div><div class="fcard"><div class="fcard-n">4</div><h3 class="fcard-t">You decide how much of your machine the build system gets</h3><div class="fcard-b"><p>Lending a computer to your group's build system now comes with a declared
+share of its processors and memory. It is signed, stored on your own device,
+and the default is the whole machine.</p></div></div></div><h2 id="groups-belong-to-their-members"><a class="anchor" aria-hidden="true" tabindex="-1" href="#groups-belong-to-their-members"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Groups belong to their members</h2>
+<p class="dsub"><strong>The feature:</strong> who is allowed to act in a shared space — a <em>hive</em>, or a
+channel inside one. Each keeps its history on a <em>chain</em>: an append-only record
+where every entry is signed by its author, so anyone holding a copy can check
+who did what.</p>
+<p class="dsub"><strong>Before:</strong> many chains carried an owner identity, and a great deal of code
+asked "is this the owner?" before anything else. <strong>Now:</strong> creating a space
+issues you a steward credential and a membership credential, and the design is
+that you are then an ordinary steward like anyone else who holds one. Writes to
+a group's rules and content are now decided by the steward credential, not by
+who created the group; other checks across the codebase still read the owner
+field and are being moved over.</p>
+<p>A credential here is a signed record naming a person and a role, issued under
+the space's own rules and revocable by them. That is the whole difference from
+an owner field. A field is a fact about the past. A credential is a claim the
+group keeps standing, or withdraws.</p>
+<pre class="mermaid">flowchart LR
+  P[A person] -->|holds| M[Membership credential]
+  P -->|may also hold| S[Steward credential]
+  M --> A[Takes part in the space]
+  S --> G[Takes part in governing it]
+  S -. revoked .-> D[Still a member: stepped down<br/>shown for the founder so far]
+  M -. revoked .-> R[Leaves the space]</pre>
+<h3 id="two-credentials-because-two-acts"><a class="anchor" aria-hidden="true" tabindex="-1" href="#two-credentials-because-two-acts"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Two credentials, because two acts</h3>
+<p>The owner's ruling on 2 September was short: members hold a membership
+credential, and only stewards govern. Someone can go from steward to plain
+member and stay, or leave altogether, and both moves must be possible from the
+app and from the command line.</p>
+<p>Until that day, founding a space issued only the steward credential. Revoke it
+and the founder held nothing, so a founder could be expelled but never
+demoted. Founding now issues both, with fixed identifiers, so replaying the
+space's history lands on the same records rather than minting a second pair.</p>
+<p>The same issuing step now runs in one place for every kind of chain. A channel
+created on its own gets the same two credentials as a hive. Your personal
+record does not, because one person's key already decides everything there.</p>
+<h3 id="measure-before-you-enforce"><a class="anchor" aria-hidden="true" tabindex="-1" href="#measure-before-you-enforce"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Measure before you enforce</h3>
+<p>Switching every "is this the owner?" check at once would lock people out of
+spaces they rightly belong to. So the first step, ninety minutes before the
+first check was switched, was a comparison: at the point a write is checked,
+the system also works out the old owner-based answer and logs every
+disagreement, in both directions.</p>
+<p>It also refuses to round off doubt: a failed lookup is recorded as "could not
+check", never as "not a steward". One earlier measurement had found 81 of 81
+membership records on a machine carrying no credential reference at all. A
+rule that demanded one on day one would have refused all of them.</p>
+<p>Details in <a href="2026-09-02-nobody-owns-a-group.html" rel="noopener noreferrer">A group belongs to its members</a>.
+The companion piece, <a href="2026-09-04-taking-a-role-away-has-to-take-it-away.html" rel="noopener noreferrer">Authority is what you hold now</a>,
+covers the harder half: a revoked steward loses the power to act at once, but
+revoking one does not lower the number of stewards who must agree. That final
+form reached the main line on 24 September. The week's earlier article on how
+a new member is actually given the ability to sign,
+<a href="2026-09-01-adding-someone-is-not-a-row-in-a-table.html" rel="noopener noreferrer">Adding someone is not a row in a table</a>,
+is the groundwork for all of this.</p>
+<p class="dsub"><strong>Shared spaces — 145 changes.</strong></p>
+<h2 id="photo-search-that-checks-each-part-of-the-question"><a class="anchor" aria-hidden="true" tabindex="-1" href="#photo-search-that-checks-each-part-of-the-question"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Photo search that checks each part of the question</h2>
+<p class="dsub"><strong>The feature:</strong> asking your own photo library a plain-language question —
+"show me Maya sitting next to Tom in a red car" — and getting only photos for
+which every part is true.</p>
+<p class="dsub"><strong>Before:</strong> every word was matched as text, and the filler words matched too.
+<strong>Now:</strong> each part of the sentence is its own claim about the picture, checked
+in its own way, and the filler words count for nothing.</p>
+<h3 id="what-each-word-has-to-prove"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-each-word-has-to-prove"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What each word has to prove</h3>
+<p>The owner's test sentence, run against a library holding only a photo that
+satisfied none of its parts, used to return that photo. Ten of its 21 words
+were connectives, and "a" alone matched "Marrakech". Connectives are now
+dropped before matching.</p>
+<ul>
+<li><strong>"His friend Tom"</strong> used to accept any friend. The relation still decides
+who can match; the name now picks among the people who passed it. Name
+someone who is not a friend, and nothing matches.</li>
+<li><strong>"Sitting next to"</strong> is measured from the two face boxes — their distance
+and relative size. Left and right are deliberately not offered, because a
+rotated photo keeps its old face boxes and would get them wrong.</li>
+<li><strong>"In Seattle"</strong> now finds a photo filed under one of its neighbourhoods;
+on the week's own test set, recall went from 4 of 10 to 9 of 10.</li>
+</ul>
+<h3 id="a-sentence-written-on-your-own-machine"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-sentence-written-on-your-own-machine"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A sentence written on your own machine</h3>
+<p>Before this week, the only model providers that could look at an image were
+two cloud services, so "describe this photo" could only mean uploading it. A
+local vision model can now write the description instead. A text-only model is
+refused rather than handed a photo, and a photo marked local-only cannot be
+routed to a cloud model. With no vision model installed, there is simply no
+description.</p>
+<p>That description can also start a follow-on plan. When it mentions a bird, a
+bird plan runs; categories are plain data a package adds. Inside, a species
+step names a species only when it is sure, and otherwise says "bird".</p>
+<p>That last rule came from a measurement. On real photos, a first version called
+an office building and a solid red square the same ladybird, both at 93%. A
+specialist trained on species names cannot also be the judge of whether any
+animal is there, so that question moved to the general description.</p>
+<p class="dsub"><strong>Status:</strong> built and tested on 3 and 4 September. The species plans reached
+the main line on 18 September, and the photo-search changes on 23 September.
+The full stories: <a href="2026-09-03-show-me-the-photo-where.html" rel="noopener noreferrer">Show me the photo where…</a>
+and <a href="2026-09-04-when-a-bird-walks-into-the-photo.html" rel="noopener noreferrer">When a bird walks into the photo</a>.</p>
+<p class="dsub"><strong>Photos — 90 changes. Photo flow plans and execution — 55.</strong></p>
+<h2 id="what-this-means-in-plain-terms"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-this-means-in-plain-terms"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What this means, in plain terms</h2>
+<p class="dintro">Five general lessons the week paid for, each first learned by getting it
+wrong somewhere.</p>
+<h3 id="i-could-not-read-the-rule-is-not-the-rule-allows-it"><a class="anchor" aria-hidden="true" tabindex="-1" href="#i-could-not-read-the-rule-is-not-the-rule-allows-it"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>"I could not read the rule" is not "the rule allows it"</h3>
+<p>When a group query met contract terms it could not parse, it logged a note and
+passed the content to a model. It now withholds that content and counts the
+withholding. Damaged or hostile metadata is exactly when a gate matters most.
+<strong>When a permission check cannot read its input, the answer is no — and
+counted.</strong></p>
+<h3 id="store-authority-as-something-that-can-be-withdrawn"><a class="anchor" aria-hidden="true" tabindex="-1" href="#store-authority-as-something-that-can-be-withdrawn"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Store authority as something that can be withdrawn</h3>
+<p>A creator field recorded who pressed <em>create</em>, forever. A steward credential is
+issued, held and revocable, and the founder is simply its first holder. For a
+founder, that turned "demote" from impossible into one revocation. <strong>Record authority as a
+present-tense claim, not as a fact about the past.</strong></p>
+<h3 id="a-default-nobody-chose-is-not-a-setting"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-default-nobody-chose-is-not-a-setting"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A default nobody chose is not a setting</h3>
+<p>One machine's build containers got 4 of its 16 cores; another's got all 32 of
+32. One came from a container tool's default size, the other from the absence
+of a limit. Neither was a decision. The share is now declared, and undeclared
+means the whole machine. <strong>If a number governs behaviour, someone should have
+picked it.</strong></p>
+<h3 id="a-classifier-that-must-answer-will-invent-one"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-classifier-that-must-answer-will-invent-one"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A classifier that must answer will invent one</h3>
+<p>A species model must spread its confidence across the species it knows, so a
+photo with no animal still gets a confident species. Two fixes: a species is
+named only when it clearly beats the background labels, and whether any animal
+is present at all is decided by the general vision step.
+<strong>Give every classifier a way to say less.</strong></p>
+<h3 id="grant-the-one-exception-not-the-subscription"><a class="anchor" aria-hidden="true" tabindex="-1" href="#grant-the-one-exception-not-the-subscription"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Grant the one exception, not the subscription</h3>
+<p>The person who reported a bug could not install the test build that fixed it,
+because their device follows stable releases. Moving them to every test build
+would work once and be wrong forever. Instead, exactly one build is exempted,
+under six conditions, still countersigned. <strong>Scope an exception to the case
+that justified it.</strong></p>
+<h2 id="how-much-healthier-is-it-than-a-week-ago"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-much-healthier-is-it-than-a-week-ago"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How much healthier is it than a week ago?</h2>
+<div class="dmetrics"><div class="dmetric"><div class="dm-l"><span class="dm-name">Test files</span><span class="dm-gloss">Test files under the shared source tree, on the main line</span></div><div class="dm-v"><span class="dm-a">13,755</span><span class="dm-arr">→</span><span class="dm-b">14,138</span></div><div class="dm-d pos">▲ +383 (+2.8%)</div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Declared test cases</span><span class="dm-gloss">Lines carrying the test-declaration keyword, summed</span></div><div class="dm-v"><span class="dm-a">77,126</span><span class="dm-arr">→</span><span class="dm-b">78,923</span></div><div class="dm-d pos">▲ +1,797 (+2.3%)</div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Skip markers</span><span class="dm-gloss">Lines telling the automated checker to pass over them</span></div><div class="dm-v"><span class="dm-a">17,334</span><span class="dm-arr">→</span><span class="dm-b">17,382</span></div><div class="dm-d neg">▲ +48 — wrong way</div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Files changed</span><span class="dm-gloss">Distinct files touched by this week's commits, bulk renames and sweeps excluded</span></div><div class="dm-v"><span class="dm-b">5,726</span></div><div class="dm-d flat"></div></div><div class="dmetric"><div class="dm-l"><span class="dm-name">Commits made this week</span><span class="dm-gloss">By commit date; 1,156 are merges</span></div><div class="dm-v"><span class="dm-b">3,939</span></div><div class="dm-d flat"></div></div></div>
+<p class="dsub"><strong>The previous window, measured the same way:</strong> 4,548 commits (1,904 merges)
+and 6,078 files. The first three rows are read from the main line as it stood
+at midnight on each boundary; the last two count work by the day it was
+committed. This week the two clocks disagree by weeks, and the notes below say
+where.</p>
+<div class="doneline"><div class="dol-k">In one line</div><p>shared spaces began trading owners for credentials, photo search started
+checking each claim in a question, rules attached to data began to follow
+it through search, and the checker's skip list grew again.</p></div>
+<section class="dnotes"><h4 class="dn-t">Five honest notes</h4><ol class="dn-l">
+<li><strong>Most of this work reached the main line later</strong>, mostly between 18 and 24
+September.</li>
+<li><strong>The credential rule covers some checks, not all.</strong> Group writes are
+decided by the steward credential; many other checks still read the owner
+field. Stepping down or removing someone other than the founder does not yet
+work, and the commands refuse rather than pretend.</li>
+<li><strong>Photo descriptions need a local vision model installed.</strong> Without one
+there is no description; there is no cloud fallback by design.</li>
+<li><strong>The skip markers moved the wrong way again</strong>, by 48, to 17,382.</li>
+<li><strong>There is no dispatch for the three weeks before this one</strong>, so these
+opening figures are not the last dispatch's closing ones.</li>
+</ol></section>
+<h2 id="what-changed-area-by-area"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-changed-area-by-area"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What changed, area by area</h2>
+<p class="dintro">Files touched by the week's commits under each area's own folder, largest
+first. Commits that each touched more than 150 files — renames, a formatting
+sweep, re-applied branches — are left out so they cannot swamp the counts.</p>
+<h3 id="the-largest-areas--986-down-to-224-changes"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-largest-areas--986-down-to-224-changes"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The largest areas — 986 down to 224 changes</h3>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">The engine core</span><span class="acard-n">986</span></div><p class="acard-sum">Part of it is the credential work above; the largest single changes were test-file renames.</p><p class="acard-d">A newly accepted member's read access now rests on the acceptance already recorded on their own device, not on a sync from the other side, and a race during onboarding while the vault re-keys got a bounded retry.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The developer kit</span><span class="acard-n">470</span></div><p class="acard-sum">The command-line tool now resolves its request timeout on every call, where the setting had been read once and then ignored.</p><p class="acard-d">The graph query command gained a group-by census, and a refusal on the command line now exits with an error instead of success.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Build and release scripts</span><span class="acard-n">431</span></div><p class="acard-sum">Build stages now stream real progress instead of buffering it, test selection was unified into one path, and a read that returns nothing is told apart from one that failed.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The review pipeline</span><span class="acard-n">374</span></div><p class="acard-sum">A stage's silence budget now measures processor progress as a rate; as a tick count it could never fire.</p><p class="acard-d">A read that exits cleanly and prints nothing is treated as truncated, not as an answer, and the pool size can change without a restart.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Package installer</span><span class="acard-n">244</span></div><p class="acard-sum">The person who reported a bug may install the one test build that names their report, still countersigned, without moving onto every test build.</p><p class="acard-d">Emergency revocation of a developer key began checking the live steward credential.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The browser app</span><span class="acard-n">233</span></div><p class="acard-sum">Channels got their own settings panel, separate from the hive's.</p><p class="acard-d">Inheriting the hive's membership is now the default for every channel created inside a hive, and the panel says so.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Build checks</span><span class="acard-n">224</span></div><p class="acard-sum">A newly joined build machine could not enrol: the signing share it makes for itself was queued, and the queue only ran when that machine sent a chat message or started a call.</p><p class="acard-d">It now runs before enrolment. The machine picker now weighs cores and memory, not only how busy a machine is.</p></div></div>
+<h3 id="the-next-tier--145-down-to-100-changes"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-next-tier--145-down-to-100-changes"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The next tier — 145 down to 100 changes</h3>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">Shared spaces</span><span class="acard-n">145</span></div><p class="acard-sum">Founding a space issues both a membership and a steward credential, and one issuing step serves every kind of chain.</p><p class="acard-d">A revocation whose target cannot be found now fails loudly instead of doing nothing.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Chat</span><span class="acard-n">133</span></div><p class="acard-sum">The channel settings panel, and channel votes reading the credential alongside the older role field.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Agents</span><span class="acard-n">131</span></div><p class="acard-sum">A role's tools now come from that role's own file and nothing else.</p><p class="acard-d">By owner ruling, the chat picker may select only the chat, growth-communications and coding roles, enforced at one server check.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Packs</span><span class="acard-n">120</span></div><p class="acard-sum">An imported pack's rule about which models may read it now follows its contents after import, not only the import itself.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Plugins</span><span class="acard-n">105</span></div><p class="acard-sum">The seam a pixel classifier needs to receive an image, and packages may now contribute their own default flow plans.</p></div></div>
+<h3 id="smaller-areas--90-down-to-32-changes"><a class="anchor" aria-hidden="true" tabindex="-1" href="#smaller-areas--90-down-to-32-changes"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Smaller areas — 90 down to 32 changes</h3>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">Photos</span><span class="acard-n">90</span></div><p class="acard-sum">Photo questions are checked part by part, and a local vision model can describe each picture.</p><p class="acard-d">EXIF orientation is now read, so stored face positions can be reconciled with the way a photo is displayed.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Bug-report plumbing</span><span class="acard-n">85</span></div><p class="acard-sum">A cold report — one no session has ever worked on — now starts a triage agent.</p><p class="acard-d">The report's title is scanned like its body before any agent reads it. The week's article on the report itself: The bug report you read before you send it .</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The iOS and Android apps — 82 changes each.</span><span class="acard-n">82</span></div><p class="acard-sum">Their copies of the browser app were regenerated to match it, and carry the new channel panel.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Build coordination</span><span class="acard-n">77</span></div><p class="acard-sum">The cold-report triage now starts as a direct agent call with a pinned model, instead of waiting on a session to wake.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Memory and recall</span><span class="acard-n">70</span></div><p class="acard-sum">The search engine can now report that nothing mentions a word, with the nearest matches beneath.</p><p class="acard-d">A topic a model inferred from a document stopped counting as a mention.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Repository tooling</span><span class="acard-n">68</span></div><p class="acard-sum">The change list now says when a finished change ended and why it ended.</p><p class="acard-d">Background from earlier in the week: A pipeline with no approval step .</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Pipeline monitor</span><span class="acard-n">56</span></div><p class="acard-sum">Charts gained numbered axes, the status strip names which check failed, and one slow probe that had used two-thirds of the sampling slots got its own cadence.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Models</span><span class="acard-n">56</span></div><p class="acard-sum">Both checks of whether a model runs locally now fail closed, in both directions.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Flow execution</span><span class="acard-n">55</span></div><p class="acard-sum">A plan step placed on this machine names the machine's own device identity, or says it could not, and queue-wait time reaches the run detail.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Devices</span><span class="acard-n">55</span></div><p class="acard-sum">The declared build-system share, and a refusal from the machine now shows in the devices screen instead of a success message.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Contacts</span><span class="acard-n">47</span></div><p class="acard-sum">An invited person must prove control of the identity they claim.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Calendar</span><span class="acard-n">35</span></div><p class="acard-sum">An attendee's raw identifier no longer shows in the calendar view.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Vault</span><span class="acard-n">32</span></div><p class="acard-sum">A new founder's signing shares were copied into the vault only after the first restart.</p><p class="acard-d">They are now copied right after onboarding, so a backup taken before any restart still carries them.</p></div></div>
+<p>Every other area moved by fewer than 70 files, mostly through test renames and
+codebase-wide checks: plans (64), AI chat (57), calling (56), and a long tail.
+Two exceptions: the messaging bridges (66) moved into their own package, and
+the workloads package (53) was retired. The week's local-model article,
+<a href="2026-09-01-more-live-conversations-than-memory-holds.html" rel="noopener noreferrer">Coding with more context than the machine has memory for</a>,
+describes work from before this window.</p>
+<h3 id="the-areas-that-did-not-move"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-areas-that-did-not-move"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The areas that did not move</h3>
+<div class="areagrid"><div class="acard"><div class="acard-h"><span class="acard-name">Notes</span></div><p class="acard-sum">QUIET · 4 WEEKS — one file, touched by a codebase-wide configuration change.</p><p class="acard-d">No feature work since 5 August.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">The book library</span></div><p class="acard-sum">QUIET · 3 WEEKS — the same single configuration file.</p><p class="acard-d">No feature work since 14 August.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Image annotation</span></div><p class="acard-sum">QUIET · 6 WEEKS — nothing since 20 July.</p></div><div class="acard"><div class="acard-h"><span class="acard-name">Datasets</span></div><p class="acard-sum">QUIET · 11 WEEKS — nothing since 19 June.</p></div></div>
+<aside class="closer"><h2 class="closer-t">What would prove this week wrong</h2><div class="closer-b">
+<ul>
+<li><strong>Only some checks read the credential.</strong> The comparison has to show
+near-zero disagreement before the rest are switched, and stepping down
+anyone other than a founder still has to work.</li>
+<li><strong>The species step has been checked on a handful of real photos.</strong> Five real
+images exposed the ladybird; a real library will expose more. The abstain
+path needs measuring at that scale.</li>
+<li><strong>The one-build exemption has not run for a real reporter.</strong> The rule is
+written and tested; the full loop from report to installed fix has not been
+shown end to end.</li>
+<li><strong>A declared machine share is two mechanisms.</strong> One operating system caps
+the container machine, the other caps each container. Both read one number,
+and both need showing to hold it.</li>
+</ul>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></aside></div></div></article>
+<a class="backlink" href="../stream-process.html">← more in Process</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'dark',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 260 posts (2026-03-16 → 2026-09-26) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+<script>(function(){
+  var KEY='naoms-theme', root=document.documentElement, btn=document.getElementById('themebtn');
+  if(!btn)return;
+  function stored(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
+  function label(v){return v==='light'?{i:'\u2600',t:'Light'}:v==='dark'?{i:'\u{1F319}',t:'Dark'}:{i:'\u{1F5A5}',t:'System'};}
+  function render(){
+    var v=stored(); var l=label(v);
+    btn.querySelector('.ti').textContent=l.i; btn.querySelector('.tt').textContent=l.t;
+    btn.setAttribute('aria-label','Theme: '+l.t+'. Click to change.');
+  }
+  btn.addEventListener('click',function(){
+    var v=stored(), next = v==='light' ? 'dark' : v==='dark' ? 'system' : 'light';
+    try{ if(next==='system')localStorage.removeItem(KEY); else localStorage.setItem(KEY,next); }catch(e){}
+    if(next==='system')root.removeAttribute('data-theme'); else root.setAttribute('data-theme',next);
+    render();
+  });
+  render();
+})();</script><script>(function(){
+  var imgs=[].slice.call(document.querySelectorAll('.markdown-body img'));
+  if(!imgs.length)return;
+  var backdrop=document.createElement('div');
+  backdrop.className='lbox-backdrop'; backdrop.hidden=true;
+  backdrop.innerHTML='<button type="button" class="lbox-close" aria-label="Close image">\u2715</button><img alt=""><div class="lbox-cap"></div>';
+  document.body.appendChild(backdrop);
+  var bImg=backdrop.querySelector('img'), bCap=backdrop.querySelector('.lbox-cap'), bClose=backdrop.querySelector('.lbox-close');
+  var trigger=null;
+  function focusables(){return [].slice.call(backdrop.querySelectorAll('button,[tabindex]'));}
+  function onKey(e){
+    if(e.key==='Escape'){e.preventDefault();close();return;}
+    if(e.key==='Tab'){
+      var f=focusables(); if(!f.length)return;
+      var first=f[0], last=f[f.length-1];
+      if(e.shiftKey && document.activeElement===first){e.preventDefault();last.focus();}
+      else if(!e.shiftKey && document.activeElement===last){e.preventDefault();first.focus();}
+    }
+  }
+  function open(img){
+    trigger=img; bImg.src=img.currentSrc||img.src; bImg.alt=img.alt||'';
+    bCap.textContent=img.alt||''; backdrop.hidden=false; document.body.style.overflow='hidden';
+    bClose.focus(); document.addEventListener('keydown',onKey,true);
+  }
+  function close(){
+    backdrop.hidden=true; document.body.style.overflow=''; bImg.src='';
+    document.removeEventListener('keydown',onKey,true);
+    if(trigger)trigger.focus(); trigger=null;
+  }
+  backdrop.addEventListener('click',function(e){ if(e.target===backdrop||e.target===bImg)close(); });
+  bClose.addEventListener('click',close);
+  imgs.forEach(function(img){
+    img.setAttribute('role','button'); img.setAttribute('tabindex','0');
+    if(!img.getAttribute('aria-label'))img.setAttribute('aria-label',img.alt?('Open image: '+img.alt):'Open image');
+    img.addEventListener('click',function(){open(img);});
+    img.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();open(img);} });
+  });
+})();</script>
+</body></html>

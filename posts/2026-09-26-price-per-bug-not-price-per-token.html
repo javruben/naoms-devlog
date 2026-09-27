@@ -1,0 +1,376 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>Price per bug, not price per token — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a>
+<button type="button" id="themebtn" class="themebtn" aria-label="Theme: System. Click to change."><span class="ti">🖥</span><span class="tt">System</span></button></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:var(--accent-warm)"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:var(--ok)"></span>Product<span class="n">60</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:var(--accent)"></span>Technology<span class="n">100</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:var(--accent-3)"></span>Process<span class="n">50</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">132</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">28</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">21</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">33</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="28" data-label="Wk 28" href="../archive.html#week=28">Wk 28<span class="n">Sep 21 – Sep 27</span></a><a class="facet" data-ft="week" data-fv="27" data-label="Wk 27" href="../archive.html#week=27">Wk 27<span class="n">Sep 14 – Sep 20</span></a><a class="facet" data-ft="week" data-fv="26" data-label="Wk 26" href="../archive.html#week=26">Wk 26<span class="n">Sep 7 – Sep 13</span></a><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 6</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Price per bug, not price per token</h1><p class="subtitle">We gave six models the same already-fixed bugs, first with no way to check their own work, then — the right test — with a tool to reproduce the bug as a failing test, fix it, and prove the fix green. Requiring that real test run cost one cheap model 60% more per job and erased every failure it had produced without one. A local model on our own GPU got a bug right, but far too slowly to use.</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-teacher">Teacher</span> <span class="badge free">free</span> <span>September 26, 2026</span><span>·</span><span>14 min read</span><span>·</span><span>craft</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> If you are choosing a model to fix bugs automatically, compare what one finished job costs, not the price per token. We first measured six models with no way to run code at all; that measured the wrong thing, because a model that cannot run a test cannot follow our own bug-fixing procedure, and the owner ruled that round invalid. We redid the fixing question properly on the two cheapest candidates: give each a tool to reproduce the bug as a failing test, fix it, and prove the fix green. DeepSeek V4 Flash fixed all five bugs correctly for $0.042 a job; MiMo V2.6 Flash fixed three outright for $0.053. Requiring the real test run cost DeepSeek about 60% more per job than skipping it, and removed every failure on this small set. We also priced the same work on a Claude Max subscription instead of the API, and tried a bug fix on a local model on our own GPU: correct, but far too slow to call a candidate yet.</div><div class="markdown-body"><p>We are building a pipeline in which a bug report filed from inside NAOMS is
+picked up and worked by an AI coding session on its own. A person describes what
+went wrong
+(<a href="2026-08-31-the-bug-report-you-read-before-you-send-it.html" rel="noopener noreferrer">a report you get to read before it leaves your
+machine</a>), and a
+session investigates the code and proposes a fix, with no one having to route it
+by hand.</p>
+<p>Work that runs on every report is metered work: every job has a price. So before
+settling on which model does it, we asked a narrow question and measured the
+answer. <strong>Can a model cheaper than Claude's Sonnet 5 or Opus 5.5 do this job,
+and what does one job cost, in tokens and in money, on bugs from our own
+history?</strong></p>
+<h2 id="how-to-test-a-bug-fixer-when-you-already-know-the-answers"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-to-test-a-bug-fixer-when-you-already-know-the-answers"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How to test a bug-fixer when you already know the answers</h2>
+<p>The trick is to use bugs that are already fixed. For each one, version control
+keeps the code as it stood <em>just before</em> the fix landed. Put a model in that
+older copy, hand it the original complaint, and see whether it finds and repairs
+what the real fix repaired. The real fix is the answer key.</p>
+<p>Two precautions make this honest. We deleted the project's internal notes from
+the test copy, because bug write-ups there often name the fix outright. And we
+checked each prompt so that no file or function name from the real fix leaked
+into it — though in 4 of the 13 cause-finding cases the symptom text itself is
+found only in the file at fault, so a text search can point to it.</p>
+<p>Every model ran inside the same <strong>harness</strong> — the program that wraps a model,
+gives it tools such as "read this file" or "search for this word", and loops
+until it is done. Here that was Claude Code run non-interactively, with only the
+model swapped. Each round of that loop — the model thinks, asks for a tool,
+reads the result — is one <strong>turn</strong>. We capped each job at 60 turns. In the
+fixing rounds the models could read, search and edit files, but could not run
+anything: no shell, no tests of their own. In the cause-finding round they could
+only read and search.</p>
+<p>We ran three rounds:</p>
+<ol>
+<li><strong>Find the cause.</strong> Thirteen fixed bugs, in Rust, TypeScript and JavaScript.
+The model had only the symptom and had to name, in ranked order, the file and
+function at fault. We counted how often the right file came first.</li>
+<li><strong>Fix it, with the tests handed over.</strong> Five of those bugs, all TypeScript or
+JavaScript. Along with the report, the model got the regression tests that
+shipped with the real fix — tests written to fail while the bug exists and
+pass once it is gone — and was told not to edit them.</li>
+<li><strong>Fix it from the report alone.</strong> The same five bugs, no tests. This is what
+the real pipeline faces.</li>
+</ol>
+<p>Rounds 2 and 3, run this way, turned out to test the wrong thing, and we later
+redid the fixing question properly — see "The wrong test, and the right one"
+below.</p>
+<pre class="mermaid">flowchart LR
+  R["an already-fixed bug:<br/>the original report"] --> T["the code as it was<br/>just before the fix"]
+  T --> M["model reads, searches, edits<br/>(up to 60 turns, no shell)"]
+  M --> P["the model's patch"]
+  P --> G1["run the real fix's tests"]
+  P --> G2["two blinded AI reviewers"]
+  P --> G3["does the code still load?"]</pre>
+<figcaption>The two fixing rounds. The cause-finding round stops earlier: the
+model names a file and function instead of writing a patch.</figcaption>
+
+<p>The six models were Opus 5.5 and Sonnet 5 from Anthropic, DeepSeek V4 Pro and
+DeepSeek V4.1 Flash, and Xiaomi's MiMo V2.6 Pro and MiMo V2.6 Flash. "Pro" and
+"Flash" are each vendor's larger and smaller tiers.</p>
+<h2 id="what-came-back-finding-the-cause"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-came-back-finding-the-cause"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What came back, finding the cause</h2>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Cause found (of 13)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Opus 5.5</td>
+<td>11</td>
+</tr>
+<tr>
+<td>Sonnet 5</td>
+<td>11</td>
+</tr>
+<tr>
+<td>DeepSeek V4 Pro</td>
+<td>12</td>
+</tr>
+<tr>
+<td>MiMo V2.6 Pro</td>
+<td>12</td>
+</tr>
+<tr>
+<td>DeepSeek V4.1 Flash</td>
+<td>10</td>
+</tr>
+<tr>
+<td>MiMo V2.6 Flash</td>
+<td>8</td>
+</tr>
+</tbody></table>
+<p>How to read it:</p>
+<ul>
+<li><strong>"Cause found"</strong> counts the right file ranked first. The two Flash models
+gave <em>no wrong answers</em> in that round; their misses were jobs that ran out of
+turns without answering (three for DeepSeek Flash, four or five for MiMo
+Flash, which also gave one correct answer in prose instead of the required
+format).</li>
+<li><strong>Every figure is one run per model, thirteen bugs.</strong> A one-case difference in
+this table is not a ranking.</li>
+</ul>
+<p>The fixing rounds are a separate story, and the one worth trusting is the one
+further down this page — the numbers for those first two fixing rounds are
+superseded and are not repeated here.</p>
+<h2 id="price-per-token-is-not-price-per-bug"><a class="anchor" aria-hidden="true" tabindex="-1" href="#price-per-token-is-not-price-per-bug"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Price per token is not price per bug</h2>
+<p>The cause-finding round already shows this on its own: DeepSeek V4.1 Flash
+answered 5 of 13 cases within 30 turns and 10 of 13 within 60, all at a few
+cents a job, and it never gave a wrong answer — its misses were turns running
+out, not wrong guesses. A cheap model that needs more turns is not necessarily a
+worse deal; what matters is the price times the turns a model needs to <em>finish</em>,
+not the list price per token in isolation.</p>
+<p>The fixing round, redone properly (see below), sharpens the same point. DeepSeek
+V4 Flash needed up to 80 tool-use steps and 6.5 to 12 minutes of wall time per
+job under our real bug-fixing procedure, and still finished at $0.042. MiMo V2.6
+Flash took longer still — 26 to 30 minutes per job — and cost more, $0.053,
+while also fixing fewer of the five bugs correctly. Slower and cheaper is not
+the same claim as slower and better; on this set, DeepSeek beat MiMo on both
+cost and correctness.</p>
+<p>Each turn resends the whole conversation so far, so a model that needs many
+turns pays to re-read its own accumulating context every time, discounted by
+caching. On an earlier run of our triage job with Sonnet, a typical report
+involved about 747,000 tokens re-read from the conversation cache — a discounted
+store of text the model has already seen — against 5,600 tokens of actual
+output. Most of what you pay for in an agentic job is the model re-reading its
+own context, not producing new text. (See "Cutting the fixed prompt" below for
+one way we cut that re-read cost.)</p>
+<h2 id="what-this-job-costs-on-a-claude-subscription-instead"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-this-job-costs-on-a-claude-subscription-instead"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What this job costs on a Claude subscription instead</h2>
+<p>Everything above prices Claude at the API's pay-as-you-go rate. Plenty of teams
+instead pay Anthropic a flat monthly fee, so we measured what that changes.</p>
+<p>Anthropic's Claude Max 20x plan lists at $200 a month plus tax. It buys a
+five-hour session limit and a weekly limit shared across every model and across
+the Claude app and Claude Code, with no published token or dollar figure
+attached to that weekly limit — so we measured it ourselves, the same way we
+measured everything else here: we priced the work done in a week at API list
+price and divided by how much of the weekly limit that work used. By that
+measure <strong>a job on Max costs about 1.75% of the same job's API list price</strong> (our
+measurements ranged 1.4%–3.1%). Applied to a Sonnet-sized job like our own
+report-triage job — $0.53 at API list with the one-hour cache — that is roughly
+<strong>$0.009 per job</strong>, cheaper than the cheapest candidate models measured here
+(MiMo Flash and DeepSeek Flash, estimated at $0.015 to $0.036).</p>
+<p>That number has real limits. It does not carry over to the bug-fixing job above
+without re-measuring it, which we have not done. It assumes Max weighs every
+model's usage in proportion to its API price, which Anthropic has not published;
+its help center says only that Opus costs several times more per turn than
+Sonnet. It is one week of measurements, not a guarantee for any other week. And
+a subscription is a different product from pay-as-you-go: its five-hour and
+weekly caps put a hard ceiling on how much work one seat can push through,
+however cheap each job looks by this arithmetic. Anthropic's own usage terms
+also describe the advertised Pro and Max limits as assuming ordinary, individual
+use of Claude Code, and say that teams building an automated product or service
+on it should use metered API access instead.</p>
+<h2 id="the-wrong-test-and-the-right-one"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-wrong-test-and-the-right-one"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The wrong test, and the right one</h2>
+<p>We first measured fix quality by giving each model only the report, with no
+shell and no way to run its own patch or any test — not even the real fix's own
+regression tests, in the round where those were withheld. Under that setup,
+hidden tests mostly graded whether a model happened to choose the same variable
+and field names as the original author, and two blinded AI reviewers who agreed
+on every one of thirty grades still both missed the same two patches crashing
+the moment the code loaded. That taught us something about grading, but nothing
+trustworthy about which model fixes bugs best.</p>
+<p>The owner ruled that round invalid. NAOMS's own procedure for fixing a bug,
+<strong>PROC-BUG</strong>, requires reproducing the reported failure as a failing test
+<em>before</em> touching production code, then fixing it, then proving the fix green. A
+model with no way to run a test cannot do that step, so it cannot be said to
+have followed our own procedure — it can only be said to have guessed and gotten
+lucky or unlucky. We redid the fixing question with that gap closed.</p>
+<h2 id="fixing-it-under-proc-bug"><a class="anchor" aria-hidden="true" tabindex="-1" href="#fixing-it-under-proc-bug"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Fixing it under PROC-BUG</h2>
+<p>This time, DeepSeek V4 Flash and MiMo V2.6 Flash each got a tool to run tests
+alongside the usual read/search/edit tools, and a prompt that mirrors NAOMS's
+own seeded PROC-BUG steps: reproduce the reported failure as a red test, fix the
+minimal root cause, then prove the reproducer and the affected tests green. We
+did not run Claude under this protocol — we stopped the Claude runs to save the
+shared Claude account's usage — so nothing in this table compares directly to
+Opus or Sonnet. (The model names are the providers' own: the earlier rounds
+called DeepSeek through its <code>deepseek-flash</code> alias, recorded as V4.1 Flash; this
+round used the model id <code>deepseek-v4-flash</code>. We have not confirmed whether those
+are the same model, so read the two DeepSeek Flash results as separate.)</p>
+<table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Correct fixes (of 5)</th>
+<th>Good reproducer tests (of 5)</th>
+<th>New crashes</th>
+<th>$/job</th>
+<th>Wall time/job</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>DeepSeek V4 Flash</td>
+<td>5</td>
+<td>5</td>
+<td>0</td>
+<td>$0.042</td>
+<td>6.5–12 min</td>
+</tr>
+<tr>
+<td>MiMo V2.6 Flash</td>
+<td>3 correct, 1 partial, 1 no fix</td>
+<td>5</td>
+<td>0</td>
+<td>$0.053 ($0.066 counting a job lost to timeouts)</td>
+<td>26–30 min</td>
+</tr>
+<tr>
+<td>DeepSeek V4 Flash, same model, no test tool</td>
+<td>3–4</td>
+<td>—</td>
+<td>1</td>
+<td>$0.026</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<p>Giving DeepSeek a real test tool cost about 60% more per job than letting it
+guess without one — and it removed every failure the same model had produced
+without one, on this small set. That is the owner's point, measured: without the
+ability to run a test, "fixed" is just a guess dressed up as a patch.</p>
+<p>On one MiMo case, the model changed a key's name in its output, and the reviewer
+failed it because a downstream test consumer expects a different name. We
+overruled that grade on the historical record: the test consumer the reviewer
+relied on was added to the codebase a month after the real fix shipped, and the
+model's patch actually matched an existing precedent elsewhere in the project.
+We keep that grade marked with an asterisk in our own notes — a reviewer relying
+on evidence from the wrong point in the project's history is itself worth
+remembering.</p>
+<p>A few honest limits. This is five bugs, one run each, per model. The reviewer
+this time was a Sonnet model that had already seen the real fix before grading,
+so it was not a blind judge — it is a check against a known answer key. MiMo's
+dollar figure is computed from its reported token counts times its published
+rates, not read from a bill; DeepSeek's uses NAOMS's own pricing table.</p>
+<h2 id="a-local-model-on-our-own-hardware"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-local-model-on-our-own-hardware"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A local model, on our own hardware</h2>
+<p>We also tried a bug fix on a model running entirely on our own GPU, instead of
+any cloud API: Qwen3.8-27B on a single RTX 5090. There is no full test set here
+— this is one bug, one run, and the model ran without a test tool. It got the
+fix right (the real fix's hidden tests passed 5/5), but it took 57 minutes,
+against 6.5 to 12 minutes for the cloud jobs — which were also running tests, so
+the local model was slower while doing less. It ran at a GPU clock capped to
+keep the card stable — about 67 tokens a second. The owner stopped further local
+runs as too slow to pursue right now, and we never put it through PROC-BUG.
+Running the model locally removes the per-token bill (electricity remains), but
+on this one data point, the wall-clock cost was far too high to call it a
+candidate yet.</p>
+<h2 id="cutting-the-fixed-prompt"><a class="anchor" aria-hidden="true" tabindex="-1" href="#cutting-the-fixed-prompt"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Cutting the fixed prompt</h2>
+<p>Separately, we measured what Claude Code's own harness costs before a model does
+any work at all. Its fixed per-call prompt — the tool schemas, instructions and
+project files sent on every single turn — measured 24,759 tokens by default.
+Restricting which tools are advertised to the model and dropping the auto-loaded
+CLAUDE.md/AGENTS.md context cut that to 3,543 tokens, with no change in which
+tools the model could actually use to fix a bug. Separately, prompt caching was
+already serving 96 to 97% of a job's input tokens from a steep, discounted cache
+rate rather than full price — a leaner fixed prompt shrinks what that cache has
+to serve on every turn, starting from the first one. This applies to work run
+through Claude Code's own harness specifically; the PROC-BUG numbers above use
+NAOMS's own harness and are unaffected by it.</p>
+<h2 id="a-failed-experiment"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-failed-experiment"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A failed experiment</h2>
+<p>We also tried a second job: routing. Given a report, which of the project's
+roughly 1,600 work items does it belong to? For each of 68 cases with known
+answers, a model saw the report and a list of every item's short name, with no
+tools, and picked one.</p>
+<p>All six models scored at or below 8.8% — the score you get by always answering
+the most common item. Random guessing across the 36 possible answers gives 2.8%,
+and the models hovered around that. We stopped the runs early.</p>
+<p>The cause was the test set, not the models. When the set was assembled, every
+report containing a word from its own item's name had been removed, so that a
+model could not win by simple word-matching. The set's own notes said so. A list
+made of nothing but those names therefore carried almost no information about
+the right answer, by construction. Six very different models all near zero meant
+the experiment was measuring itself. Routing well likely needs what the fixing
+job had: the ability to search the code.</p>
+<h2 id="what-we-can-and-cannot-claim"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-we-can-and-cannot-claim"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What we can and cannot claim</h2>
+<p>On the cause-finding round, the two Pro models matched or beat Sonnet and Opus
+at naming the right file, at a fraction of the cost order Claude has shown
+elsewhere in this project. On the fixing round, redone under PROC-BUG, DeepSeek
+V4 Flash fixed every one of five bugs correctly and cheaply; MiMo V2.6 Flash
+fixed three outright and still cost more per job, despite also being a "Flash"
+tier model. We have not run Opus or Sonnet under PROC-BUG, so we cannot say
+where Claude would land on this exact protocol — only that, between these two,
+DeepSeek was both more accurate and cheaper; and for DeepSeek itself, adding the
+test run turned three or four correct fixes into five, and raised the price by
+under two cents a job.</p>
+<p>That is five bugs and thirteen bugs, mostly one run each, fixes in TypeScript
+and JavaScript, and — for the PROC-BUG round — two models out of six, with a
+reviewer that had already seen the answer. It does not show that any of these
+models is as good as Claude in general, and none of it extends past this small
+sample. It also leaves out questions a price table cannot answer, such as where
+each provider processes your code and what it may keep. (NAOMS's own rules for
+which model is allowed to receive data are a separate system, described in
+<a href="2026-08-28-there-is-no-ungoverned-route-to-a-model.html" rel="noopener noreferrer">there is no ungoverned route to a model</a>.)</p>
+<p>The method, though, carries over to any team picking a model for agentic work:</p>
+<ul>
+<li><strong>Measure the cost of a finished job</strong>, because token counts vary several-fold
+between models.</li>
+<li><strong>Grade with an answer key from your own history</strong>, and test the grader with a
+patch that should pass and one that should fail.</li>
+<li><strong>Require the model to run its own tests before calling anything fixed.</strong> A
+model with no way to check its own work will occasionally call a broken patch
+done; ours did, until we gave it a way to prove otherwise, and that
+requirement more than paid for itself in removed failures.</li>
+<li><strong>Read a uniform score as a warning about the test</strong>, not a verdict on the
+models.</li>
+</ul>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'dark',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 260 posts (2026-03-16 → 2026-09-26) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+<script>(function(){
+  var KEY='naoms-theme', root=document.documentElement, btn=document.getElementById('themebtn');
+  if(!btn)return;
+  function stored(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
+  function label(v){return v==='light'?{i:'\u2600',t:'Light'}:v==='dark'?{i:'\u{1F319}',t:'Dark'}:{i:'\u{1F5A5}',t:'System'};}
+  function render(){
+    var v=stored(); var l=label(v);
+    btn.querySelector('.ti').textContent=l.i; btn.querySelector('.tt').textContent=l.t;
+    btn.setAttribute('aria-label','Theme: '+l.t+'. Click to change.');
+  }
+  btn.addEventListener('click',function(){
+    var v=stored(), next = v==='light' ? 'dark' : v==='dark' ? 'system' : 'light';
+    try{ if(next==='system')localStorage.removeItem(KEY); else localStorage.setItem(KEY,next); }catch(e){}
+    if(next==='system')root.removeAttribute('data-theme'); else root.setAttribute('data-theme',next);
+    render();
+  });
+  render();
+})();</script><script>(function(){
+  var imgs=[].slice.call(document.querySelectorAll('.markdown-body img'));
+  if(!imgs.length)return;
+  var backdrop=document.createElement('div');
+  backdrop.className='lbox-backdrop'; backdrop.hidden=true;
+  backdrop.innerHTML='<button type="button" class="lbox-close" aria-label="Close image">\u2715</button><img alt=""><div class="lbox-cap"></div>';
+  document.body.appendChild(backdrop);
+  var bImg=backdrop.querySelector('img'), bCap=backdrop.querySelector('.lbox-cap'), bClose=backdrop.querySelector('.lbox-close');
+  var trigger=null;
+  function focusables(){return [].slice.call(backdrop.querySelectorAll('button,[tabindex]'));}
+  function onKey(e){
+    if(e.key==='Escape'){e.preventDefault();close();return;}
+    if(e.key==='Tab'){
+      var f=focusables(); if(!f.length)return;
+      var first=f[0], last=f[f.length-1];
+      if(e.shiftKey && document.activeElement===first){e.preventDefault();last.focus();}
+      else if(!e.shiftKey && document.activeElement===last){e.preventDefault();first.focus();}
+    }
+  }
+  function open(img){
+    trigger=img; bImg.src=img.currentSrc||img.src; bImg.alt=img.alt||'';
+    bCap.textContent=img.alt||''; backdrop.hidden=false; document.body.style.overflow='hidden';
+    bClose.focus(); document.addEventListener('keydown',onKey,true);
+  }
+  function close(){
+    backdrop.hidden=true; document.body.style.overflow=''; bImg.src='';
+    document.removeEventListener('keydown',onKey,true);
+    if(trigger)trigger.focus(); trigger=null;
+  }
+  backdrop.addEventListener('click',function(e){ if(e.target===backdrop||e.target===bImg)close(); });
+  bClose.addEventListener('click',close);
+  imgs.forEach(function(img){
+    img.setAttribute('role','button'); img.setAttribute('tabindex','0');
+    if(!img.getAttribute('aria-label'))img.setAttribute('aria-label',img.alt?('Open image: '+img.alt):'Open image');
+    img.addEventListener('click',function(){open(img);});
+    img.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();open(img);} });
+  });
+})();</script>
+</body></html>

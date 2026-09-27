@@ -1,0 +1,239 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>A group belongs to its members — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a>
+<button type="button" id="themebtn" class="themebtn" aria-label="Theme: System. Click to change."><span class="ti">🖥</span><span class="tt">System</span></button></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:var(--accent-warm)"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:var(--ok)"></span>Product<span class="n">60</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:var(--accent)"></span>Technology<span class="n">100</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:var(--accent-3)"></span>Process<span class="n">50</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">132</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">28</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">21</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">33</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="28" data-label="Wk 28" href="../archive.html#week=28">Wk 28<span class="n">Sep 21 – Sep 27</span></a><a class="facet" data-ft="week" data-fv="27" data-label="Wk 27" href="../archive.html#week=27">Wk 27<span class="n">Sep 14 – Sep 20</span></a><a class="facet" data-ft="week" data-fv="26" data-label="Wk 26" href="../archive.html#week=26">Wk 26<span class="n">Sep 7 – Sep 13</span></a><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 6</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>A group belongs to its members</h1><p class="subtitle">Outside your own personal record, no shared space in NAOMS is meant to belong to the person who created it. Authority is to come from two separate credentials: one says you are a member, the other says you help govern. Because they are separate, stepping someone down and showing them the door are two different acts. This week set that direction and started building it.</p><div class="meta"><span class="badge str-product">Product</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>September 2, 2026</span><span>·</span><span>8 min read</span><span>·</span><span>governance</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> We're changing how authority works in shared spaces: the creator is just the first steward, not an owner. Membership and stewardship become two separate credentials, so that a group will be able to take away someone's governing role without removing them from the group. This is a direction plus work in progress; it is not finished.</div><div class="markdown-body"><p>A lot of software answers "who is in charge of this group?" with a single field:
+the owner. Whoever pressed <em>create</em> holds it. They can delete the group, hand it
+over, or lose their password and strand everyone else. Admins, if there are any,
+hold power the owner lent them.</p>
+<p>This week the direction for NAOMS went the other way. Shared spaces are not
+going to have owners.</p>
+<h2 id="what-a-group-is-made-of"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-a-group-is-made-of"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What a group is made of</h2>
+<p>In NAOMS a group (a <em>hive</em>) and each channel inside it keep their history on a
+<em>chain</em>: an append-only record where every entry is signed by whoever wrote it,
+so anyone holding a copy can check who did what. The question this work is
+about is simple to state. When a new entry arrives, what makes its author
+<em>allowed</em> to write it?</p>
+<p>Until now, for many kinds of chain, part of the answer was "they created it".
+Each chain carried an owner identity, and a lot of code quietly asked "is this
+the owner?" before asking anything else.</p>
+<p>The owner's instruction, given on 31 August, was blunt: <em>"there is not supposed
+to be a chain owner"</em>, <em>"there are only members"</em>, and a member <em>"has a steward
+VRC or not"</em> (VRC, short for <em>verifiable relationship credential</em>, is the
+project's name for a credential that records a role someone holds). The next
+day came the boundary. The idea of an owner stays only where a single person
+is the whole story: the owner of the machine, and your own personal record
+(along with the other one-person record types that sit beside it). For every
+other chain, <em>"membership is to be done by VRC. the first one
+is just the first one to hold the steward VRC."</em></p>
+<p>That last sentence carries most of the design. Creating a group does not make
+you its owner. It makes you the first steward, and after that you are an
+ordinary steward like anyone else who holds the same credential.</p>
+<h2 id="two-credentials-not-one"><a class="anchor" aria-hidden="true" tabindex="-1" href="#two-credentials-not-one"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Two credentials, not one</h2>
+<p>On 2 September the owner corrected a working assumption and gave the model its
+final shape: <em>"members have a membership VRC. only stewards can govern."</em></p>
+<p>So there are two credentials, and they mean different things:</p>
+<ul>
+<li><strong>Membership</strong> says you belong. It is what the group's rules look for when
+you take part as a member.</li>
+<li><strong>Stewardship</strong> says you take part in governing. Holding it enrols you in the
+group's decisions, under whatever method that group uses: a single steward, a
+majority, everyone agreeing. The credential does not set the method. The group
+does.</li>
+</ul>
+<p>A credential is a record that names who it is about and which role it
+confers. It is issued under the group's own rules (the founder's first pair is
+derived from the group's signed creation entry), and it can be revoked. That is the
+important difference from an owner field. A field is a fact about the past: this
+person pressed create. A credential is a present-tense claim the group keeps
+standing, or withdraws.</p>
+<pre class="mermaid">flowchart LR
+  P[A person] -->|holds| M[Membership credential]
+  P -->|may also hold| S[Steward credential]
+  M --> A[Takes part in the group]
+  S --> G[Takes part in governing it<br/>under the group's own method]
+  S -. revoked .-> D[Still a member:<br/>stepped down]
+  M -. revoked .-> R[Leaves the group]</pre>
+<h2 id="stepping-down-is-not-being-shown-the-door"><a class="anchor" aria-hidden="true" tabindex="-1" href="#stepping-down-is-not-being-shown-the-door"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Stepping down is not being shown the door</h2>
+<p>The owner's second ruling that day is the one that makes two credentials worth
+having: <em>"somebody can go from steward to non-steward while still staying a
+member, or they can be move to not being a member, these are all possible
+changes."</em></p>
+<p>These are two separate acts:</p>
+<ul>
+<li><strong>Demotion.</strong> Revoke someone's steward credential and keep their membership.
+They stop governing and stay in the group.</li>
+<li><strong>Removal.</strong> Revoke their membership. They leave.</li>
+</ul>
+<p>If you merge them, one of two bad things happens. Either stepping someone down
+from a governing role throws them out, or throwing someone out first requires
+stripping their role as a separate ceremony. Real groups need both moves, and
+they need them to be different.</p>
+<p>This had a concrete consequence for the person who founds a group. Until 2
+September, creating a group gave the founder a steward credential and nothing
+else. The team's own ruling notes put the result plainly: revoke that one
+credential and the founder holds nothing at all, so <em>"a founder can only be
+expelled, never demoted."</em> The same day, creating a group started issuing both
+credentials to the founder, each with a fixed, predictable identifier, so
+replaying the group's history lands on the same records instead of minting a
+second pair.</p>
+<p>A third ruling, <em>"and must all be allowed in the GUI and CLI"</em>, turned this from
+plumbing into a promise. Stepping someone down and removing them both need a
+real button in the app and a real command in the terminal. That was added to the
+plan as its own milestone.</p>
+<h2 id="channels-too"><a class="anchor" aria-hidden="true" tabindex="-1" href="#channels-too"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Channels too</h2>
+<p>A channel that runs its own affairs is, underneath, the same kind of thing as a
+group: a chain with members. Also on 2 September, the credential step at
+creation was moved into one shared place used for every chain type, with
+nothing in it that asks whether the chain is a group or a channel. A channel
+created on its own, outside any group, now gets the same two credentials for
+its creator that a group does. (How a channel then uses them to decide its own
+votes is its own story, told on 7 September.)</p>
+<p>Two kinds of chain are deliberately left out:</p>
+<ul>
+<li><strong>Your personal record, and the other single-person chain types.</strong> One
+person's key controls these, and a membership credential there would be
+ceremony with no meaning.</li>
+<li><strong>Channels that inherit their parent group's membership</strong>, like a group's
+general channel. Issuing credentials there would create a second, competing
+answer to "who belongs?". On 2 September the code treated every channel
+created inside a group this way; which channels inside a group should
+inherit, and which should keep their own members, was settled the next day
+(see below).</li>
+</ul>
+<p>The failure mode was chosen on purpose. If issuing the credentials fails, the
+error is loud, but the chain is still created, because the credentials can be
+issued again later at the same identifiers. The one outcome ruled out is
+silence. A chain without its founding credentials would look ownerless when it
+is actually broken.</p>
+<h2 id="measure-first-enforce-later"><a class="anchor" aria-hidden="true" tabindex="-1" href="#measure-first-enforce-later"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Measure first, enforce later</h2>
+<p>There are many places in the code that currently ask the old question, and
+switching them all to the new answer at once would lock people out of groups
+they rightly belong to. So on the morning of 2 September the first step was
+not to enforce anything. It was a <em>shadow probe</em>: at the point where a write to
+a group is checked, the system also worked out what the credential-based answer
+would have been, and logged every case where the two disagreed, in both
+directions, because each direction is a different risk:</p>
+<ul>
+<li>An owner the old rule lets through, who holds no steward credential, is a
+write that would break the day enforcement is switched on.</li>
+<li>A credentialed steward the old rule does not recognise is someone the new rule
+would rightly let in, and the old one is shutting out.</li>
+</ul>
+<p>The probe also refuses to round off uncertainty. If the credential lookup
+fails, it records "could not check", never "not credentialed". Treating an error
+as a <em>no</em> would make enforcement look safer than it is, and that is the one
+direction a measurement must not lean.</p>
+<p>The code already held one warning about why this care matters. In one earlier
+measurement, 81 of 81 membership records on a machine carried no credential
+reference at all. A rule that simply required a credential on day one would
+have denied every membership on that machine.</p>
+<p>Later the same day the check itself was rewritten in code. The old line said,
+in effect, "if the writer is the group's owner of record, allow". The new one
+says "if the writer holds an active steward credential, allow"; an owner of
+record without the credential is logged and judged like any other member, and
+a lookup that fails is never read as an allow but falls through to the older,
+narrower role checks. The probe's second direction was retired with it, since
+the rewritten check makes that case impossible. Making the credential lookup
+actually answer on the path that judges real writes took much longer: it was
+finished in stages and reached the main line on 26 September. So during this
+week the new check was not yet deciding anyone's writes.</p>
+<h2 id="where-this-stands"><a class="anchor" aria-hidden="true" tabindex="-1" href="#where-this-stands"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Where this stands</h2>
+<p>Say it plainly: this is a direction and work in progress, not a finished
+feature. By the end of 2 September the direction had been approved, the rulings
+were written down, founders were being issued both credentials, channels
+created outside a group were getting them too, and a group's write check had
+been rewritten in code to ask for a steward credential instead of an owner.
+Terminal commands for the two acts, one to demote a steward and one to remove a
+member, were written that evening but had not yet been proven against a
+running system. None of this was on the project's
+main line until 3 September, when the work was merged. Moving every other
+authority check onto credentials, and a proven button for each act in the app,
+were still ahead.</p>
+<p>One piece was settled the very next day. On 3 September the owner made
+inheriting the group's membership the default for <em>every</em> channel inside a
+group, not only the general one: <em>"you must default to passthrough for every
+channel."</em> A channel inside a group can still opt out and keep its own
+members; since then, only a channel that keeps its own membership, inside a
+group or outside one, is issued its own credentials at creation.</p>
+<p>As of 25 September the work is still in its implementation phase.</p>
+<p>What we find worth keeping from the week is the shape of the rule rather than
+any single change: authority is something a group <em>grants and can withdraw</em>,
+held by people as credentials, and the person who happened to press <em>create</em> is
+simply the first to hold it.</p>
+<p><em>Related: <a href="2026-09-01-adding-someone-is-not-a-row-in-a-table.html" rel="noopener noreferrer">Adding someone is not a row in a table</a> ·
+<a href="2026-08-12-a-group-that-knows-youre-real-without-learning-your-name.html" rel="noopener noreferrer">A group that knows you're real without learning your name</a> ·
+<a href="2026-09-04-taking-a-role-away-has-to-take-it-away.html" rel="noopener noreferrer">Taking a role away has to take it away</a></em></p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+
+
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-product.html">← more in Product</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'dark',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 260 posts (2026-03-16 → 2026-09-26) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+<script>(function(){
+  var KEY='naoms-theme', root=document.documentElement, btn=document.getElementById('themebtn');
+  if(!btn)return;
+  function stored(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
+  function label(v){return v==='light'?{i:'\u2600',t:'Light'}:v==='dark'?{i:'\u{1F319}',t:'Dark'}:{i:'\u{1F5A5}',t:'System'};}
+  function render(){
+    var v=stored(); var l=label(v);
+    btn.querySelector('.ti').textContent=l.i; btn.querySelector('.tt').textContent=l.t;
+    btn.setAttribute('aria-label','Theme: '+l.t+'. Click to change.');
+  }
+  btn.addEventListener('click',function(){
+    var v=stored(), next = v==='light' ? 'dark' : v==='dark' ? 'system' : 'light';
+    try{ if(next==='system')localStorage.removeItem(KEY); else localStorage.setItem(KEY,next); }catch(e){}
+    if(next==='system')root.removeAttribute('data-theme'); else root.setAttribute('data-theme',next);
+    render();
+  });
+  render();
+})();</script><script>(function(){
+  var imgs=[].slice.call(document.querySelectorAll('.markdown-body img'));
+  if(!imgs.length)return;
+  var backdrop=document.createElement('div');
+  backdrop.className='lbox-backdrop'; backdrop.hidden=true;
+  backdrop.innerHTML='<button type="button" class="lbox-close" aria-label="Close image">\u2715</button><img alt=""><div class="lbox-cap"></div>';
+  document.body.appendChild(backdrop);
+  var bImg=backdrop.querySelector('img'), bCap=backdrop.querySelector('.lbox-cap'), bClose=backdrop.querySelector('.lbox-close');
+  var trigger=null;
+  function focusables(){return [].slice.call(backdrop.querySelectorAll('button,[tabindex]'));}
+  function onKey(e){
+    if(e.key==='Escape'){e.preventDefault();close();return;}
+    if(e.key==='Tab'){
+      var f=focusables(); if(!f.length)return;
+      var first=f[0], last=f[f.length-1];
+      if(e.shiftKey && document.activeElement===first){e.preventDefault();last.focus();}
+      else if(!e.shiftKey && document.activeElement===last){e.preventDefault();first.focus();}
+    }
+  }
+  function open(img){
+    trigger=img; bImg.src=img.currentSrc||img.src; bImg.alt=img.alt||'';
+    bCap.textContent=img.alt||''; backdrop.hidden=false; document.body.style.overflow='hidden';
+    bClose.focus(); document.addEventListener('keydown',onKey,true);
+  }
+  function close(){
+    backdrop.hidden=true; document.body.style.overflow=''; bImg.src='';
+    document.removeEventListener('keydown',onKey,true);
+    if(trigger)trigger.focus(); trigger=null;
+  }
+  backdrop.addEventListener('click',function(e){ if(e.target===backdrop||e.target===bImg)close(); });
+  bClose.addEventListener('click',close);
+  imgs.forEach(function(img){
+    img.setAttribute('role','button'); img.setAttribute('tabindex','0');
+    if(!img.getAttribute('aria-label'))img.setAttribute('aria-label',img.alt?('Open image: '+img.alt):'Open image');
+    img.addEventListener('click',function(){open(img);});
+    img.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();open(img);} });
+  });
+})();</script>
+</body></html>

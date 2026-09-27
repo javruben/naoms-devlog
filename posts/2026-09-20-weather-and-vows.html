@@ -1,0 +1,246 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>Weather and vows — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a>
+<button type="button" id="themebtn" class="themebtn" aria-label="Theme: System. Click to change."><span class="ti">🖥</span><span class="tt">System</span></button></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:var(--accent-warm)"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:var(--ok)"></span>Product<span class="n">60</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:var(--accent)"></span>Technology<span class="n">100</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:var(--accent-3)"></span>Process<span class="n">50</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">132</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">28</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">21</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">33</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="28" data-label="Wk 28" href="../archive.html#week=28">Wk 28<span class="n">Sep 21 – Sep 27</span></a><a class="facet" data-ft="week" data-fv="27" data-label="Wk 27" href="../archive.html#week=27">Wk 27<span class="n">Sep 14 – Sep 20</span></a><a class="facet" data-ft="week" data-fv="26" data-label="Wk 26" href="../archive.html#week=26">Wk 26<span class="n">Sep 7 – Sep 13</span></a><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 6</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Weather and vows</h1><p class="subtitle">Each kind of event you define in NAOMS is declared a vow or weather. A vow is signed and kept, and can reach people who were away. Weather is held in memory, meant for whoever is online right now, and allowed to vanish. Weather has to be fast-changing, but speed alone does not settle the question.</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-teacher">Teacher</span> <span class="badge free">free</span> <span>September 20, 2026</span><span>·</span><span>8 min read</span><span>·</span><span>storage-sync</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> If you build on NAOMS, each kind of event you define is declared as a vow or as weather. Vows are signed and stored, and can reach devices that were offline. Weather lives in memory and blows through. This week the owner wrote down exactly what weather is, as four conditions that must all hold. When 16 existing weather declarations were checked against them, 12 turned out to be vows. This piece is the test, with the examples that failed it.</div><div class="markdown-body"><p>When you build something on NAOMS, whether a package, an app or a new kind of
+event, each event type you define declares one thing: <strong>is this a vow,
+or is it weather?</strong></p>
+<p>The names are deliberate. A <strong>vow</strong> is something that was said and has to stay
+said. The design standard's own test for one reads: <em>does the event represent
+a promise the originator makes — something a future reader must be able to
+prove was said, by whom, and when?</em> A vow is signed by whoever made it,
+appended to a <strong>chain</strong> (the signed, append-only log that belongs to a person,
+a friendship or a group), and, on the parts of the chain that sync to other
+people, replayed to members who were offline when it happened.</p>
+<p><strong>Weather</strong> is what blows through: where someone's cursor is on a shared
+canvas, or the dot on a live map. It matters
+intensely for a few seconds and then not at all.</p>
+<p>It is tempting to treat this as a performance setting, with fast things as
+weather and slow things as vows. That is the mistake this week's work turned
+up again and again. This piece is about the real test.</p>
+<h2 id="what-weather-is-exactly"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-weather-is-exactly"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What weather is, exactly</h2>
+<p>On 20 September the owner wrote the definition down in four messages. The key
+lines:</p>
+<blockquote>
+<p>"weather are graph nodes that transfer only to those that are online, are not
+stored in the chain, only in memory" … "so they are not writes to the
+database" … "it is meant to be fast updating things that dont require a
+historic log"</p>
+</blockquote>
+<p>and the example he gave:</p>
+<blockquote>
+<p>"weather are things such as the cursor position of the others in the canvas
+(not yet implemented), and other ephemeral state like that"</p>
+</blockquote>
+<p>From that comes the rule. <strong>A piece of state is weather only if all four of
+these hold:</strong></p>
+<ol>
+<li><strong>It updates fast.</strong> Each new value replaces the last, and only the latest
+one means anything.</li>
+<li><strong>Nobody needs its history.</strong> No one will ever ask what it was before.</li>
+<li><strong>Reaching only the people online is fine.</strong> A person who was offline never
+learns it, and that is acceptable. Nothing is queued for them, and nothing
+catches them up later.</li>
+<li><strong>Losing it on restart is fine.</strong> It lives in memory and never in the
+database.</li>
+</ol>
+<p><strong>It is a vow if any one of these holds:</strong> someone who was offline must
+eventually learn it; it must survive a restart; someone will later ask when it
+happened or what it was before; or it carries weight for security, audit or
+correctness.</p>
+<p>The asymmetry is the point. Weather has to pass four tests, and a vow only has
+to fail one of them.</p>
+<h2 id="what-weather-still-gets"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-weather-still-gets"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What weather still gets</h2>
+<p>A second ruling the same day made clear that "not stored" does not mean
+"local" or "invisible":</p>
+<blockquote>
+<p>"weather is by design and purpose cross device and depending on the chain
+context they are in cross peer. so the weather happens in the context of a
+chain, but not recorded to a chain. and they must go over the wire in their
+own syncing format that is not the normal chain sync."</p>
+</blockquote>
+<p>The definition and this ruling separate three things that are easy to run
+together:</p>
+<ul>
+<li><strong>Scope comes from the chain.</strong> A cursor on a group's canvas belongs to that
+group's chain. That decides who is allowed to see it and whose name is on
+it.</li>
+<li><strong>Storage is memory.</strong> Nothing is written to the chain or to the database.</li>
+<li><strong>Transport is its own.</strong> Weather is to travel in a format of its own to
+your other devices and, depending on the chain, to the other members. It
+doesn't ride the chain's sync.</li>
+</ul>
+<p>Weather is also meant to show up when an app queries the graph, the searchable view
+NAOMS builds for apps to read. It would be attributed like everything else,
+served from memory instead of from the stored tables. To an app reading it, a cursor
+looks like any other piece of data. The difference is in how long it lasts,
+not in whether it can be seen.</p>
+<h2 id="twelve-out-of-sixteen"><a class="anchor" aria-hidden="true" tabindex="-1" href="#twelve-out-of-sixteen"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Twelve out of sixteen</h2>
+<p>The rule was tested straight away. Every event type that had been declared as
+weather, sixteen in all, was checked against the same four conditions.</p>
+<p><strong>Twelve of the sixteen were vows.</strong> One was confirmed as weather: live
+location sharing, the dot on the map. Three were handed back to the owner to
+decide.</p>
+<p>The failures teach more than the pass. Two examples, with our reading of which
+condition each one failed:</p>
+<ul>
+<li><strong>Transcription.</strong> Transcribed speech arrives in rapid chunks, so it looks
+like weather. But the whole point of a transcript is that someone asks later
+<em>what was said</em>. That fails condition 2.</li>
+<li><strong>The read-receipt setting.</strong> Whether you share read receipts is a switch
+you flip rarely, so it isn't fast-changing (condition 1). And a setting you
+choose has to still be set tomorrow (condition 4).</li>
+</ul>
+<p>One of the deferrals shows the same trap. A device's periodic "I'm alive"
+signal sounds like weather, but a view of long-term uptime is built from its
+history, and that fails condition 2, even though every single signal is
+trivial. An earlier owner ruling keeps the signal weather, so the question
+went back to him. A durable uptime record would be a separate rollup, such as a vow or a
+metric.</p>
+<p>Some of the twelve, like transcript chunks, arrive fast. Others, like the
+read-receipt switch, change rarely. Speed didn't separate them. <strong>Speed is
+necessary for weather, but never enough.</strong> What decides it is whether anyone
+needs the state after the moment has passed.</p>
+<h2 id="a-requirement-decides-the-class"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-requirement-decides-the-class"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A requirement decides the class</h2>
+<p>Work committed on 21 September, the day after this definition, added a lesson
+that is easy to miss.</p>
+<p>One event type records which messages <em>you</em> have seen, and it drives your own
+unread counts. Weeks earlier the owner had looked at it and said <em>"it
+certainly seems to be weather."</em> At that time, though, weather was still
+quietly written to disk. The week's triage flagged it and handed it back to
+the owner. On the morning of 21 September it was sent to memory-only weather
+along with the rest. On the development branch, for a few hours, a message
+marked unread stopped surviving a restart and unread counts stopped clearing.</p>
+<p>What settled it was a requirement the owner stated that day, in words that
+map straight onto the rubric: <em>"the personal unread state is kept and can be
+manipulated by the user."</em> "Kept" means it survives a restart, so it is a vow.
+That afternoon it was moved, before it reached the main line.</p>
+<p><strong>When the definition of a class changes, every member of that class has to be
+checked again.</strong> A classification is a claim about properties. Here,
+re-checking the label against the new definition wasn't enough. It took a
+plainly stated requirement to expose the mismatch.</p>
+<p>The fix also shows a pattern worth copying. "Read" turned out to be two
+different things:</p>
+<ul>
+<li><strong>The receipt</strong>, meaning the sender getting to see who has read their
+message. It is disclosed to someone else, it only exists if the reader has
+read receipts switched on, and it only moves forward, because you cannot
+un-read something.</li>
+<li><strong>Your own unread flag</strong>: what <em>you</em> still have to look at. It is private,
+and it can go backwards, because "mark as unread" is the whole point.</li>
+</ul>
+<p>In the shipped one-to-one path, both are vows, each for its own reason. The
+receipt reaches a sender who was
+offline when you read their message, through the chain's ordinary catch-up. Your own flag has to survive a restart
+and reach your other devices. Either reason alone is enough. They live on
+different chains: the receipt on the conversation's chain, which goes to the
+other person, and your own flag on your personal chain, which only you hold.</p>
+<p>On 21 September the receipt was moved from weather to a vow on the
+conversation's chain. Later that day, a sender in a one-to-one conversation
+became able to see who had read their message, using those records. Your
+unread flag moved to your personal chain. Both reached the main line on 22
+September. Group conversations native to NAOMS do not have read receipts yet.</p>
+<p>Putting them in one record would have made every "you can't go backwards" rule
+right for one and wrong for the other.</p>
+<h2 id="if-you-are-building-on-naoms"><a class="anchor" aria-hidden="true" tabindex="-1" href="#if-you-are-building-on-naoms"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>If you are building on NAOMS</h2>
+<p>Before you choose, ask these questions in this order:</p>
+<ol>
+<li><strong>Would anyone who was offline need to learn this?</strong> If yes, it's a vow.</li>
+<li><strong>Should it still be true after a restart?</strong> If yes, it's a vow.</li>
+<li><strong>Will anyone ever ask what it was before, or when it changed?</strong> If yes,
+it's a vow.</li>
+<li><strong>Does it grant, revoke or record anything that someone else must rely
+on?</strong> If yes, it's a vow.</li>
+<li><strong>Only if every answer so far was no:</strong> does it update fast, with only the
+latest value mattering? Then it's weather.</li>
+</ol>
+<p>The design standard's tie-breaker still applies: <strong>if you can't decide, choose
+vow.</strong> Getting it wrong in that direction costs storage. Getting it wrong the
+other way loses the record, sometimes without anyone noticing.
+<a href="2026-09-15-weather-should-not-be-written-down.html" rel="noopener noreferrer">Weather should not be written down</a>
+shows what storing too much costs. The examples above show what storing too
+little costs.</p>
+<h2 id="status"><a class="anchor" aria-hidden="true" tabindex="-1" href="#status"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Status</h2>
+<p>On 20 September this was a definition and a completed classification. The
+memory-only store for weather and its separate carrier were committed on 21
+September and reached the main line on the 22nd. The code that sends a local
+weather update to other devices reached it on the 24th. We have not seen weather
+delivered from one device to another outside of tests, and have not measured
+it ourselves. The canvas cursor, the owner's example of weather, was not built yet when he used it.
+The older design standard quoted above still describes weather as state that
+is stored and merged, not as memory-only; the owner's definition of 20
+September replaces that description, and the standard had not been updated
+to match by the time of writing.</p>
+<p>Related reading: <a href="2026-04-26-three-kinds-of-sync-one-engine-underneath.html" rel="noopener noreferrer">Three kinds of sync, one engine underneath</a>
+and Where durability actually gets paid.</p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 260 posts (2026-03-16 → 2026-09-26) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+<script>(function(){
+  var KEY='naoms-theme', root=document.documentElement, btn=document.getElementById('themebtn');
+  if(!btn)return;
+  function stored(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
+  function label(v){return v==='light'?{i:'\u2600',t:'Light'}:v==='dark'?{i:'\u{1F319}',t:'Dark'}:{i:'\u{1F5A5}',t:'System'};}
+  function render(){
+    var v=stored(); var l=label(v);
+    btn.querySelector('.ti').textContent=l.i; btn.querySelector('.tt').textContent=l.t;
+    btn.setAttribute('aria-label','Theme: '+l.t+'. Click to change.');
+  }
+  btn.addEventListener('click',function(){
+    var v=stored(), next = v==='light' ? 'dark' : v==='dark' ? 'system' : 'light';
+    try{ if(next==='system')localStorage.removeItem(KEY); else localStorage.setItem(KEY,next); }catch(e){}
+    if(next==='system')root.removeAttribute('data-theme'); else root.setAttribute('data-theme',next);
+    render();
+  });
+  render();
+})();</script><script>(function(){
+  var imgs=[].slice.call(document.querySelectorAll('.markdown-body img'));
+  if(!imgs.length)return;
+  var backdrop=document.createElement('div');
+  backdrop.className='lbox-backdrop'; backdrop.hidden=true;
+  backdrop.innerHTML='<button type="button" class="lbox-close" aria-label="Close image">\u2715</button><img alt=""><div class="lbox-cap"></div>';
+  document.body.appendChild(backdrop);
+  var bImg=backdrop.querySelector('img'), bCap=backdrop.querySelector('.lbox-cap'), bClose=backdrop.querySelector('.lbox-close');
+  var trigger=null;
+  function focusables(){return [].slice.call(backdrop.querySelectorAll('button,[tabindex]'));}
+  function onKey(e){
+    if(e.key==='Escape'){e.preventDefault();close();return;}
+    if(e.key==='Tab'){
+      var f=focusables(); if(!f.length)return;
+      var first=f[0], last=f[f.length-1];
+      if(e.shiftKey && document.activeElement===first){e.preventDefault();last.focus();}
+      else if(!e.shiftKey && document.activeElement===last){e.preventDefault();first.focus();}
+    }
+  }
+  function open(img){
+    trigger=img; bImg.src=img.currentSrc||img.src; bImg.alt=img.alt||'';
+    bCap.textContent=img.alt||''; backdrop.hidden=false; document.body.style.overflow='hidden';
+    bClose.focus(); document.addEventListener('keydown',onKey,true);
+  }
+  function close(){
+    backdrop.hidden=true; document.body.style.overflow=''; bImg.src='';
+    document.removeEventListener('keydown',onKey,true);
+    if(trigger)trigger.focus(); trigger=null;
+  }
+  backdrop.addEventListener('click',function(e){ if(e.target===backdrop||e.target===bImg)close(); });
+  bClose.addEventListener('click',close);
+  imgs.forEach(function(img){
+    img.setAttribute('role','button'); img.setAttribute('tabindex','0');
+    if(!img.getAttribute('aria-label'))img.setAttribute('aria-label',img.alt?('Open image: '+img.alt):'Open image');
+    img.addEventListener('click',function(){open(img);});
+    img.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();open(img);} });
+  });
+})();</script>
+</body></html>

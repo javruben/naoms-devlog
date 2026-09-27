@@ -1,0 +1,186 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>Double-click, and it opens — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a>
+<button type="button" id="themebtn" class="themebtn" aria-label="Theme: System. Click to change."><span class="ti">🖥</span><span class="tt">System</span></button></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:var(--accent-warm)"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:var(--ok)"></span>Product<span class="n">60</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:var(--accent)"></span>Technology<span class="n">100</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:var(--accent-3)"></span>Process<span class="n">50</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">132</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">28</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">21</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">33</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="28" data-label="Wk 28" href="../archive.html#week=28">Wk 28<span class="n">Sep 21 – Sep 27</span></a><a class="facet" data-ft="week" data-fv="27" data-label="Wk 27" href="../archive.html#week=27">Wk 27<span class="n">Sep 14 – Sep 20</span></a><a class="facet" data-ft="week" data-fv="26" data-label="Wk 26" href="../archive.html#week=26">Wk 26<span class="n">Sep 7 – Sep 13</span></a><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 6</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Double-click, and it opens</h1><p class="subtitle">An app that keeps your data on your own machine has to start its own engine, come up locked, show you something honest while it starts, and hand the window over at the right moment. On macOS, two things stood between a double-click and the unlock screen: a file the bundle forgot to carry, and a holding page waiting for the wrong kind of ready.</p><div class="meta"><span class="badge str-product">Product</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>September 8, 2026</span><span>·</span><span>6 min read</span><span>·</span><span>distribution</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> When you open the NAOMS desktop app on a Mac, it starts its own local engine, which comes up locked because your data is encrypted, and then shows you the screen where you unlock it. Two defects kept installed copies on a blank window. Both are fixed, and the second fix was checked in the same web engine the Mac app uses.</div><div class="markdown-body"><p>For most apps, "it opens" means a window appears and talks to a server
+somewhere else. NAOMS keeps your data on your own machine, so there is no
+server somewhere else. The app has to bring its own, start it, and keep it
+locked until you prove it is you. A double-click has to do all of that
+before you see anything useful.</p>
+<p><img src="assets/unlock-screen-dark.webp" alt="The NAOMS unlock screen: a centred card reading &quot;Welcome back — Unlock NAO&quot;, a password field labelled &quot;NAOMS password&quot;, a &quot;Use mnemonic instead&quot; link, and an Unlock button, on a dark background. Captured in a browser during a July test run, not inside the desktop app; it is the same page the app's window loads from the local engine." /></p>
+<p>This is the bar for the alpha: a person who installs the app on a Mac,
+double-clicks it, and lands on the screen that asks for their password.
+Nothing more should be required of them. (The desktop app targets macOS and
+Linux; Windows is out of scope by the owner's decision.)</p>
+<h2 id="what-opening-a-local-first-app-actually-has-to-do"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-opening-a-local-first-app-actually-has-to-do"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What opening a local-first app actually has to do</h2>
+<p><strong>It starts its own engine.</strong> Everything NAOMS does — storing your records,
+signing, syncing between your devices — runs in a background process on
+your machine. We call it the engine here. The desktop app is a thin native
+window around a web page, and the page is served by that engine at a
+<code>localhost</code> address, the name your computer uses for itself. So the window
+cannot show the real app until the engine is up. When the window opens,
+the app starts the engine, or attaches to one that is already running from
+an earlier launch.</p>
+<p><strong>The engine comes up locked.</strong> Your data is encrypted at rest, and the
+desktop app does not hand the engine a password when it starts it. That
+means every cold start begins locked. A locked
+engine is not idle. It is fully running, but it accepts only a short list
+of commands: unlock, set up a new identity, report its status, and pair a
+new device. Everything else is refused until you unlock. So the app you
+first see is small on purpose. It can open the door and do nothing else.</p>
+<p><strong>It shows something honest while it starts.</strong> Starting takes a while. On
+the Mac we measured, the holding page showed for about 24 seconds. During
+that time the engine claims its address early and serves a plain page that
+says <em>Starting NAO…</em>. That page checks the engine's health every 700
+milliseconds. When the engine says the app is ready to serve, the page
+reloads itself into the real app. If the window loads before the engine is
+listening at all, the native shell keeps retrying the address for up to
+three minutes and loads the page once something answers.</p>
+<p><strong>It hands over at the right kind of ready.</strong> This is the subtle part.
+"Ready" means two different things here:</p>
+<ul>
+<li><strong>Fully booted</strong> — unlocked, identity loaded, every subsystem started.</li>
+<li><strong>Ready for you</strong> — running and serving the unlock screen, waiting for a
+password.</li>
+</ul>
+<p>A locked engine is ready in the second sense and can never be ready in the
+first until you type your password. So the holding page has to hand over at
+<em>ready for you</em>. The engine's health check already reported exactly that
+state as healthy, calling a locked or not-yet-set-up engine "a terminal
+ready-but-unconfigured state", not something still booting. While the
+holding page is up, the placeholder health answer it polls does not include
+that state at all, so the page keeps waiting until the real engine answers.</p>
+<p><strong>Everything the engine reads at startup has to be inside the app.</strong> A
+self-contained app cannot fetch a missing piece at launch. That is the
+point of it. So every file the engine needs before it can serve its first
+page has to be copied into the app bundle when the app is built. Among
+those files are the definitions of the built-in AI roles, the documents
+that say what each assistant role may do. The engine reads them as it
+loads.</p>
+<p>That is the whole sequence. Start the engine. Come up locked. Show a
+holding page. Hand over when the engine is ready for you. Carry everything
+it needs.</p>
+<h2 id="what-went-wrong"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-went-wrong"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What went wrong</h2>
+<p>Installed copies of the app opened to a blank window. Two separate defects
+caused this, found and fixed a day apart.</p>
+<ul>
+<li><strong>The bundle was missing the role definitions.</strong> A recent change had
+made the role files the only source of those definitions, and the build
+step that copies files into the app was never updated to include them.
+The engine failed while loading, before it claimed its address. It was
+restarted into the same failure over and over, and the window waited
+three minutes for an address nobody would ever answer.</li>
+<li><strong>The holding page waited for the wrong kind of ready.</strong> It reloaded
+only when the engine reported itself <em>fully booted</em>. A locked engine can
+never report that. So the unlock screen was live behind the holding page,
+and the page never stepped aside for it. You could not unlock because you
+could not reach the unlock screen. This happened on every launch that
+started the engine locked, not only the first. The install we measured
+had been set up long before.</li>
+</ul>
+<p>The second defect is the one worth learning from. The holding page and the
+health check were each correct about their own question. The mistake was
+in the handover between them: the page asked "have you finished booting?"
+when it should have asked "can the person use you yet?"</p>
+<h2 id="how-it-was-fixed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-it-was-fixed"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How it was fixed</h2>
+<p><strong>The bundle now carries the role definitions.</strong> Copying them is its own
+named build step. Its check does not settle for the folder existing. It
+counts the role definitions in the bundle and compares that number with
+the source, because copying an empty folder would pass an "it exists"
+check and still leave the engine unable to start. Before writing the fix,
+we confirmed the diagnosis. A clone of the shipped app, with only that one
+folder added, started cleanly against a real existing install. The missing
+folder was the whole difference.</p>
+<p><strong>The holding page now hands over at <em>ready for you</em>.</strong> It reloads when
+the engine is fully booted <em>or</em> is serving the locked, waiting-for-you
+state, which is the same condition the health check already treated as
+healthy. The test for this reads the page's condition straight out of the
+HTML the engine actually serves, so it tests the real page, not a copy of
+it written for the test.</p>
+<p>The fix was checked on an installed copy, not only in a test. The corrected
+condition was found in the shipped app's own files. It was then run in
+WebKit, the browser engine the Mac app's window uses. The window showed
+<em>Starting NAO…</em> for about 22 seconds and then handed over to the app on its
+own.</p>
+<h2 id="why-this-is-the-alpha-bar"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-this-is-the-alpha-bar"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why this is the alpha bar</h2>
+<p>An app like this makes a promise that has to be kept within the first few
+seconds. Your data is on your machine, it is locked, and only you open it.
+If the first thing a person sees is a blank window, that promise is broken
+before they have read a word. They cannot tell a locked vault from a broken
+install, and they shouldn't have to.</p>
+<p>So "it opens" is not a cosmetic milestone. Behind it the engine really is
+running inside the app, it really is locked, and it hands you the key the
+moment it can.</p>
+<p><em>Related: <a href="2026-06-23-naoms-is-now-an-app-you-double-click.md" rel="noopener noreferrer">NAOMS Is Now an App You Double-Click</a>
+· <a href="2026-06-24-a-mac-that-trusts-the-app-before-it-opens.md" rel="noopener noreferrer">A Mac That Trusts the App Before It Opens</a>
+· <a href="2026-08-20-the-same-app-on-two-operating-systems-is-two-different-browsers.md" rel="noopener noreferrer">The same app on two operating systems is two different browsers</a></em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-product.html">← more in Product</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 260 posts (2026-03-16 → 2026-09-26) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+<script>(function(){
+  var KEY='naoms-theme', root=document.documentElement, btn=document.getElementById('themebtn');
+  if(!btn)return;
+  function stored(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
+  function label(v){return v==='light'?{i:'\u2600',t:'Light'}:v==='dark'?{i:'\u{1F319}',t:'Dark'}:{i:'\u{1F5A5}',t:'System'};}
+  function render(){
+    var v=stored(); var l=label(v);
+    btn.querySelector('.ti').textContent=l.i; btn.querySelector('.tt').textContent=l.t;
+    btn.setAttribute('aria-label','Theme: '+l.t+'. Click to change.');
+  }
+  btn.addEventListener('click',function(){
+    var v=stored(), next = v==='light' ? 'dark' : v==='dark' ? 'system' : 'light';
+    try{ if(next==='system')localStorage.removeItem(KEY); else localStorage.setItem(KEY,next); }catch(e){}
+    if(next==='system')root.removeAttribute('data-theme'); else root.setAttribute('data-theme',next);
+    render();
+  });
+  render();
+})();</script><script>(function(){
+  var imgs=[].slice.call(document.querySelectorAll('.markdown-body img'));
+  if(!imgs.length)return;
+  var backdrop=document.createElement('div');
+  backdrop.className='lbox-backdrop'; backdrop.hidden=true;
+  backdrop.innerHTML='<button type="button" class="lbox-close" aria-label="Close image">\u2715</button><img alt=""><div class="lbox-cap"></div>';
+  document.body.appendChild(backdrop);
+  var bImg=backdrop.querySelector('img'), bCap=backdrop.querySelector('.lbox-cap'), bClose=backdrop.querySelector('.lbox-close');
+  var trigger=null;
+  function focusables(){return [].slice.call(backdrop.querySelectorAll('button,[tabindex]'));}
+  function onKey(e){
+    if(e.key==='Escape'){e.preventDefault();close();return;}
+    if(e.key==='Tab'){
+      var f=focusables(); if(!f.length)return;
+      var first=f[0], last=f[f.length-1];
+      if(e.shiftKey && document.activeElement===first){e.preventDefault();last.focus();}
+      else if(!e.shiftKey && document.activeElement===last){e.preventDefault();first.focus();}
+    }
+  }
+  function open(img){
+    trigger=img; bImg.src=img.currentSrc||img.src; bImg.alt=img.alt||'';
+    bCap.textContent=img.alt||''; backdrop.hidden=false; document.body.style.overflow='hidden';
+    bClose.focus(); document.addEventListener('keydown',onKey,true);
+  }
+  function close(){
+    backdrop.hidden=true; document.body.style.overflow=''; bImg.src='';
+    document.removeEventListener('keydown',onKey,true);
+    if(trigger)trigger.focus(); trigger=null;
+  }
+  backdrop.addEventListener('click',function(e){ if(e.target===backdrop||e.target===bImg)close(); });
+  bClose.addEventListener('click',close);
+  imgs.forEach(function(img){
+    img.setAttribute('role','button'); img.setAttribute('tabindex','0');
+    if(!img.getAttribute('aria-label'))img.setAttribute('aria-label',img.alt?('Open image: '+img.alt):'Open image');
+    img.addEventListener('click',function(){open(img);});
+    img.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();open(img);} });
+  });
+})();</script>
+</body></html>

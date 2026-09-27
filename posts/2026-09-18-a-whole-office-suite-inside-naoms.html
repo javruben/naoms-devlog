@@ -1,0 +1,344 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>A whole office suite inside NAOMS — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a>
+<button type="button" id="themebtn" class="themebtn" aria-label="Theme: System. Click to change."><span class="ti">🖥</span><span class="tt">System</span></button></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:var(--accent-warm)"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:var(--ok)"></span>Product<span class="n">60</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:var(--accent)"></span>Technology<span class="n">100</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:var(--accent-3)"></span>Process<span class="n">50</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">132</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">28</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">21</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">33</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="28" data-label="Wk 28" href="../archive.html#week=28">Wk 28<span class="n">Sep 21 – Sep 27</span></a><a class="facet" data-ft="week" data-fv="27" data-label="Wk 27" href="../archive.html#week=27">Wk 27<span class="n">Sep 14 – Sep 20</span></a><a class="facet" data-ft="week" data-fv="26" data-label="Wk 26" href="../archive.html#week=26">Wk 26<span class="n">Sep 7 – Sep 13</span></a><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 6</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>A whole office suite inside NAOMS</h1><p class="subtitle">Docs, Spreadsheet and Presentations, plus a PDF viewer, now run on your own machine. Live co-editing between two machines is built in: one of the participants' own computers keeps the changes in order, so there is no document server in the picture.</p><div class="meta"><span class="badge str-product">Product</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>September 18, 2026</span><span>·</span><span>14 min read</span><span>·</span><span>office-suite</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> You can now create and open Word, Excel and PowerPoint files inside NAOMS, edit them in the full ONLYOFFICE editors, and have your work saved as you type, with the editors served from your own machine. When a document is shared, the people working on it can edit it together live from their own machines. One of those machines keeps the changes in order, and a machine that drops out catches up when it comes back.</div><div class="markdown-body"><p>Open the app drawer in NAOMS and there are three new tiles: <strong>Docs</strong>,
+<strong>Spreadsheet</strong> and <strong>Presentations</strong>. Click one and you get a real office
+editor, with the ribbon, fonts, tables, formulas and slide layouts you
+already know from desktop office software, inside a window on your NAOMS canvas.
+There is a PDF viewer as well.</p>
+<p><img src="assets/2026-09-27-office-docs-window-saved.png" alt="A Docs window open on the NAOMS canvas, editing a document titled &quot;Maple Street Garden Club — September Meeting Notes&quot;. The NAOMS strip above the ONLYOFFICE ribbon reads &quot;Saved · 06:46:45&quot;. Captured 27 Sep 2026." /></p>
+<p>It does not depend on a company's computer. The editors run on your
+machine. Your files stay in your NAOMS files. When two people work on the same
+document, the job a cloud document server would normally do is done by one of
+their own machines.</p>
+<p>The office suite first shipped inside NAOMS on 18 September. Since then it has
+moved into its own dedicated repository — the arrangement NAOMS uses for a
+handful of pieces it builds but does not keep in its main codebase — and NAOMS
+now loads it as an add-on package instead. Using it does not change: open a
+tile, and NAOMS fetches and runs the office suite the same way it always did.
+This piece covers what you can do with it, how live co-editing works when
+there is no server, and where it still falls short.</p>
+<figure>
+
+
+
+<pre class="mermaid">flowchart LR
+  EA["Editor window<br/>(person A)"] <-->|"local socket"| NA["NAOMS on A's machine<br/>coordinator:<br/>keeps the ordered<br/>list of changes"]
+  EB["Editor window<br/>(person B)"] <-->|"local socket"| NB["NAOMS on B's machine<br/>relay"]
+  NB <-->|"iroh, between the machines"| NA
+  NA -.->|"presence: 'A has this<br/>document open'"| NB</pre>
+<figcaption>Each editor talks only to the NAOMS program on its own machine. One
+machine is elected to keep the changes in order. The other passes its editor's
+traffic along to it over the network.</figcaption>
+</figure>
+
+<h2 id="what-you-can-do-with-it"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-you-can-do-with-it"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What you can do with it</h2>
+<p><img src="assets/2026-09-27-office-spreadsheet-supply-list.png" alt="A Spreadsheet window on the NAOMS canvas with a small supply-cost list (tomato seedlings, compost bags, garden gloves) and a Total row of 178. The NAOMS strip reads &quot;Saved · 08:10:21&quot;. Captured 27 Sep 2026." /></p>
+<p><img src="assets/2026-09-27-office-presentation-title-slide.png" alt="A Presentations window on the NAOMS canvas showing a title slide, &quot;Maple Street Garden Club — September meeting notes — autumn planting and bulb orders&quot;. The NAOMS strip reads &quot;Saved&quot; with a timestamp of eight eighteen and two seconds. Captured 27 Sep 2026." /></p>
+<p><strong>Create a document.</strong> Each tile opens a window for its own kind of file, with a
+button that starts a blank one. There is no "new PDF" button, on purpose: the
+converter underneath can read PDFs but cannot write them, so offering that
+button would give you an editor whose saves could never work.</p>
+<p><strong>Open what you already have.</strong> "Choose a file…" opens anything in your NAOMS
+files, and Word (<code>.docx</code>), Excel (<code>.xlsx</code>), PowerPoint (<code>.pptx</code>) and PDF files
+are registered with the office suite, so they open there from the Files app.
+The editors could handle more formats (OpenDocument, older Office files, CSV),
+but those are not offered yet because none of them has been tested all the way
+from opening a file to saving it again.</p>
+<p><strong>Edit it properly.</strong> These are the complete ONLYOFFICE editors, not a
+lightweight imitation. Documents get headings, styles, tables and images.
+Spreadsheets get formulas. Presentations get slides and layouts.</p>
+<p><strong>Stop thinking about saving.</strong> There is no save button. The owner's
+instruction was: <em>"just like on Apple, you just edit and it's saved."</em> Your work
+is saved two seconds after you stop typing. If you type without stopping, it is
+saved at least every fifteen seconds anyway. A small status line tells you
+where you stand: "Unsaved changes…", "Saving…", "Saved" with the time, or
+"NOT SAVED" followed by the actual reason. The reason is shown as it is,
+because with no save button to press again, an honest message is the only
+protection against losing work without knowing it. Saving updates the file in
+place; it does not leave a trail of copies. PDFs are for reading, and trying to
+save one tells you so.</p>
+<p>A brand-new document — one you have just created, before you have shared it
+with anyone — now saves correctly from your very first keystroke. Until this
+week, a document that had never been given a place to save to could fail its
+first save outright, and ONLYOFFICE would try to open a live connection to a
+collaborator that did not exist yet, which could throw up an error dialog that
+swallowed your next few keystrokes. Both are fixed: a brand-new document now
+saves under your own personal record straight away, and stays off the
+collaboration wire entirely until you actually share it with someone.</p>
+<p><strong>Use it on a phone.</strong> On a phone-sized screen, the window loads ONLYOFFICE's
+own touch editors for documents, spreadsheets and presentations, instead of
+squeezing the desktop ribbon onto a small screen.</p>
+<p><strong>Pick up where you left off.</strong> Reload the canvas and each office window comes
+back as the same kind of document it was.</p>
+<p><strong>Work with someone else, live.</strong> This is the big one, and the rest of this
+piece is about it.</p>
+<h2 id="two-editors-one-document-and-no-server"><a class="anchor" aria-hidden="true" tabindex="-1" href="#two-editors-one-document-and-no-server"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Two editors, one document, and no server</h2>
+<p>If you have used an online office suite, you have used a document server
+without noticing it. Every keystroke goes to a machine the provider runs. That
+machine decides the order of everyone's changes and sends the result back to
+each person.</p>
+<p>NAOMS has no such machine, by design. NAOMS runs as a program on each of your
+devices. The shared things in it, such as a <strong>hive</strong> (a group space with its own
+members and channels) or a <strong>friendship chain</strong> (the signed record two people
+keep together), live on the members' own machines. So the question was how to
+give ONLYOFFICE's editors what they expect without handing the job back to a
+server.</p>
+<h3 id="what-the-editors-actually-need"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-the-editors-actually-need"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What the editors actually need</h3>
+<p>There are two broad ways to let several people edit one document.</p>
+<p>The first is a <strong>CRDT</strong> (conflict-free replicated data type). Each copy of the
+document can take edits independently, and the edits are designed so that
+every copy ends up the same whatever order they arrive in. It suits
+local-first software well.</p>
+<p>The second is older and is what most office editors use: <strong>ordered changes with
+locks</strong>. Before you edit a paragraph or a cell, your editor asks for a lock on
+it. When you make a change, the change is sent somewhere that gives it a
+position in one list, and every editor applies the list in the same order. If
+two people reach for the same paragraph, the first one gets it, and the other
+editor is told who holds it.</p>
+<p>ONLYOFFICE is the second kind. We checked the editor code we ship instead of
+assuming: its lock checks appear 426 times and its change-queue calls 769
+times, and we found no CRDT machinery in it. In their product, the
+<strong>Document Server</strong> does the ordering, and it never has to understand the
+document. It gives each batch of changes its place, grants the right to save to
+one editor at a time, settles who holds which lock, and passes the changes on.</p>
+<p>That meant NAOMS did not need to rebuild an editor. It needed to supply the
+ordering.</p>
+<h3 id="naomss-own-sequencer"><a class="anchor" aria-hidden="true" tabindex="-1" href="#naomss-own-sequencer"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>NAOMS's own sequencer</h3>
+<p>So NAOMS includes a <strong>sequencer</strong>: a small component in the NAOMS program that
+answers the editors in the same terms a Document Server would. The editor in
+your window connects to NAOMS on your own machine and gets the replies it
+expects.</p>
+<p>The format was not guessed. We ran ONLYOFFICE's own server, at exactly the
+version we ship, with two real editors connected, and recorded 113 of the
+messages they exchanged. The sequencer is built to match that recording and
+the editor's own code for reading those messages. On 13 August the first real
+check passed: text typed in one editor showed up, character for character, in
+the other. The check also confirmed the text was ours, had been typed only on
+one side, and did not already exist in the blank template.</p>
+<h3 id="across-machines-one-coordinator-the-others-relay"><a class="anchor" aria-hidden="true" tabindex="-1" href="#across-machines-one-coordinator-the-others-relay"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Across machines: one coordinator, the others relay</h3>
+<p>With two machines, the tempting shortcut is to let each machine's NAOMS order
+changes for its own editor and send them across. We rejected it. If you type
+change <em>a</em> while your colleague types change <em>b</em>, one machine can record
+<em>a</em> then <em>b</em> and the other <em>b</em> then <em>a</em>. Each copy looks fine by itself, and
+neither machine can tell the two have drifted apart.</p>
+<p>What NAOMS does instead:</p>
+<ul>
+<li><strong>One machine is elected coordinator</strong> for each open document, and only that
+machine runs the sequencer for it. The election uses the same rule NAOMS
+already uses to decide which participant orders a group call. There was no
+reason to write a second version of something that subtle.</li>
+<li><strong>Every other machine relays.</strong> It keeps the connection with its own editor
+and passes that editor's messages to the coordinator over <strong>iroh</strong>, the
+peer-to-peer networking layer NAOMS uses to connect machines to each other,
+directly where the network allows it. Replies come back the same way.</li>
+<li><strong>A remote editor is a full participant</strong> in the coordinator's session, just
+like a second window on the coordinator's own machine. There is one list of
+changes, not two that could drift apart.</li>
+<li><strong>Machines check before claiming the role.</strong> When you open a document, your
+machine listens briefly (up to four seconds) for word that another machine is
+already coordinating it, and only takes the role if nobody is.</li>
+</ul>
+<p>That word comes from <strong>presence</strong>. When you open a shared document, your
+machine sends a short notice, "this person has it open", to the other members'
+machines. The notice is renewed every 30 seconds and treated as stale after 90
+seconds. The editor shows everyone on the document as small chips in the status
+bar. When someone drops off, their chip stays, dimmed and struck through and marked
+"Offline"; it does not quietly disappear. A name that vanishes tells you nothing, while one marked
+"offline" tells you exactly what happened.</p>
+<h3 id="losing-the-connection-and-coming-back"><a class="anchor" aria-hidden="true" tabindex="-1" href="#losing-the-connection-and-coming-back"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Losing the connection, and coming back</h3>
+<p>Ordered editing needs someone to do the ordering, so the editor has to handle
+losing its connection. If an editor window loses its link to NAOMS, it switches
+to read-only until the link returns and then switches back. The alternative is
+letting you keep typing changes that nothing is ordering, which is how
+documents quietly split in two. The switch only undoes a read-only state it set
+itself, so a document that was read-only for some other reason stays that way.</p>
+<p>When a whole machine drops out and comes back, it rejoins the document and the
+coordinator sends it the complete list of changes made in that session. Its
+editor replays the list and ends up where everyone else is. The owner asked for
+exactly this: <em>"when the daemon goes online again, it fetches everything that
+I've missed."</em> (The daemon is the NAOMS program running on a machine.)</p>
+<h3 id="why-this-fits-a-system-with-no-server"><a class="anchor" aria-hidden="true" tabindex="-1" href="#why-this-fits-a-system-with-no-server"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Why this fits a system with no server</h3>
+<p>This is not a stopgap until a "real" server exists. An ordered editor needs one
+point of order for each document, but that point does not have to be a data
+centre. NAOMS makes it one of the participants' own machines, chosen when the
+document is opened. The document stays with the people working on it. There is
+no document service to run, and nobody else's server deciding the order of your edits. A CRDT would have let us
+drop even that single coordinator, but only by replacing a mature, full office
+editor with a less mature one. We decided the better trade was to keep the
+editor and let NAOMS provide the coordinator.</p>
+<h3 id="whose-edit-is-whose"><a class="anchor" aria-hidden="true" tabindex="-1" href="#whose-edit-is-whose"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Whose edit is whose</h3>
+<p>Each person's live edits are tagged with their personal NAOMS identity. That
+means your laptop and your desktop count as one writer, you, while two people
+count as two. When someone else saves a shared document, the save is signed
+with their own key, so the file's history records who made it. The presence
+chips currently show a shortened identifier rather than a name. Putting real
+names there is designed but not yet built.</p>
+<h2 id="sharing-is-handing-over-a-copy"><a class="anchor" aria-hidden="true" tabindex="-1" href="#sharing-is-handing-over-a-copy"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Sharing is handing over a copy</h2>
+<p>The owner defined sharing briefly: <em>"sharing is essentially a copy to a channel
+or friendship chain."</em> So a shared document is a copy of it placed on a hive
+channel or a friendship chain. It becomes a document several people can write
+to, and each of them can open it and save back to it. The file's contents
+follow separately, from whichever member's machine has them.</p>
+<p>Today the way a document gets there from the screen is by where you put it: a
+file you add in the Files app while you are working inside a hive's space on
+the canvas is filed on that space's channel, not in your private files. (That
+upload path is checked in code and by a unit test; no test has yet driven it
+from the Files app all the way to a second person's editor.) A Share command that copies a document you already have onto a channel or a
+friendship is built underneath, but it has no button yet.</p>
+<p>The receiving side handles timing carefully. When a shared document has been
+announced but its contents have not arrived yet, the window waits for them
+instead of showing a dead error. If the answer is "you are not allowed to see
+this", it does not retry.</p>
+<h2 id="standing-on-generous-shoulders"><a class="anchor" aria-hidden="true" tabindex="-1" href="#standing-on-generous-shoulders"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Standing on generous shoulders</h2>
+<p>None of this would exist without <strong>ONLYOFFICE</strong>. Ascensio System SIA and the
+ONLYOFFICE contributors built an office suite of real depth and released it as
+open source, including the editors, the converter that turns <code>.docx</code>, <code>.xlsx</code>
+and <code>.pptx</code> files into the editors' own format and back, and the mobile
+editors. NAOMS runs ONLYOFFICE Document Server 9.4.0 with a small, documented
+set of changes so it can work with no document server at all. Most of what you
+see in those windows is their work, and the credit panel inside the editor says
+so.</p>
+<p><strong>CryptPad</strong> deserves thanks twice. They had already shown that ONLYOFFICE's
+editors can run without ONLYOFFICE's server, by putting their own coordinator in
+its place, and that was an early sign our approach could work. They also
+compiled ONLYOFFICE's converter to WebAssembly, a form that runs inside
+ordinary software on any operating system. NAOMS uses their build exactly as
+published, so documents can be converted on machines where the original
+converter, which only runs on Linux, is not available.</p>
+<h2 id="the-evidence-and-where-it-came-from"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-evidence-and-where-it-came-from"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The evidence, and where it came from</h2>
+<p>All of this was tested in August, on development branches, on our build
+machines:</p>
+<ul>
+<li><strong>13 August:</strong> text typed in one editor appeared in the other.</li>
+<li><strong>14 August:</strong> co-editing worked between two separate NAOMS instances
+connected over iroh, tested at the message level without a browser.</li>
+<li><strong>20 August:</strong> two browsers connected to two NAOMS instances. Docs passed 4
+runs out of 4, with both people's text visible in both windows. Spreadsheet
+passed 4 out of 4. Presentations passed only half the time. The cause was
+that both machines sometimes elected themselves coordinator before hearing
+from each other. The four-second check described above was the fix, and a
+full run afterwards showed one coordinator and one relay for each document,
+with both spreadsheet and presentation changes arriving.</li>
+<li><strong>20 August:</strong> the read-only switch was tested with and without the guard.
+With it, the test passed; with it removed, the test failed.</li>
+<li><strong>21 August:</strong> the rejoin test, where one NAOMS instance is shut down
+mid-session and restarted, passed in one run. That was on a busy shared test
+machine where results varied from run to run, so we count it as early
+evidence, not settled proof.</li>
+</ul>
+<p>To be clear about the limits: we found no record of these tests passing since
+the office suite moved into its own repository, and no record of the owner
+walking through the office suite himself.</p>
+<h2 id="status"><a class="anchor" aria-hidden="true" tabindex="-1" href="#status"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Status</h2>
+<p>The office suite shipped inside NAOMS on 18 September, then moved into its own
+repository and is now loaded as an add-on package. It is still being built and
+has not been signed off. The known issues a user would notice:</p>
+<ul>
+<li><strong>Loading it as a separate package briefly broke it, and that is now fixed.</strong>
+When the office suite moved out, none of its web addresses were being
+switched on when NAOMS started, so every office window failed outright — and
+a small scheduling component the office suite shares with NAOMS's calling
+feature was not available to it either. Both were restored this week, and
+opening a document works again.</li>
+<li><strong>A brand-new document used to be able to fail its first save, and that is
+now fixed too.</strong> See "Stop thinking about saving" above.</li>
+<li><strong>Two save indicators can disagree.</strong> NAOMS's own status line reports failed
+saves correctly. ONLYOFFICE's status bar can still say "All changes saved"
+based on its own records when NAOMS did not save. Trust the NAOMS line.</li>
+<li><strong>One stuck participant can block saving for everyone.</strong> If one editor's list
+of changes falls out of step, it can keep the right to save and hold up
+everyone else in the session. This is logged, but not fixed yet.</li>
+<li><strong>Dropped photos don't show on the page yet.</strong> Dragging a photo from Photos
+into a document puts it into the file, but it does not appear on the page
+yet.</li>
+<li><strong>Two coordinators are still possible in rare cases.</strong> If presence does not
+arrive within the four-second window, two machines can still both take the
+coordinator role. When that happens it is now logged loudly.</li>
+<li><strong>No Share button yet.</strong> Copying an existing document onto a channel or a
+friendship is built and has been tested between two machines, but we found
+no button that does it. For now a document is shared by adding it inside a
+hive's space, a path not yet tested end to end.</li>
+<li><strong>Setup:</strong> the office suite runs on Mac, Linux, iPhone and Android. The
+editors (about 128 MB) are downloaded and checked during setup instead of
+being stored in the source code; today the script that fetches them runs on a
+Linux machine, and the result is copied to the other platforms.</li>
+</ul>
+<p>Later: on 24 September, a fix let the converter work on its own,
+without the full editor download present.</p>
+<p>For the alpha these issues are what stands between "it works in our tests" and
+"use it for your quarterly report". The ordering design, the editors and the
+autosave are already there.</p>
+<p><em>Related: <a href="2026-07-15-your-whole-world-on-one-infinite-canvas.html" rel="noopener noreferrer">Your Whole World on One Infinite Canvas</a> · <a href="2026-07-15-your-files-stay-on-your-own-machines.html" rel="noopener noreferrer">Your Files Stay on Your Own Machines</a> · <a href="2026-03-24-a-crowd-that-is-also-a-person.html" rel="noopener noreferrer">A Crowd That Is Also a Person: Hives as Beings</a>.</em></p>
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-product.html">← more in Product</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'dark',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 260 posts (2026-03-16 → 2026-09-26) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+<script>(function(){
+  var KEY='naoms-theme', root=document.documentElement, btn=document.getElementById('themebtn');
+  if(!btn)return;
+  function stored(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
+  function label(v){return v==='light'?{i:'\u2600',t:'Light'}:v==='dark'?{i:'\u{1F319}',t:'Dark'}:{i:'\u{1F5A5}',t:'System'};}
+  function render(){
+    var v=stored(); var l=label(v);
+    btn.querySelector('.ti').textContent=l.i; btn.querySelector('.tt').textContent=l.t;
+    btn.setAttribute('aria-label','Theme: '+l.t+'. Click to change.');
+  }
+  btn.addEventListener('click',function(){
+    var v=stored(), next = v==='light' ? 'dark' : v==='dark' ? 'system' : 'light';
+    try{ if(next==='system')localStorage.removeItem(KEY); else localStorage.setItem(KEY,next); }catch(e){}
+    if(next==='system')root.removeAttribute('data-theme'); else root.setAttribute('data-theme',next);
+    render();
+  });
+  render();
+})();</script><script>(function(){
+  var imgs=[].slice.call(document.querySelectorAll('.markdown-body img'));
+  if(!imgs.length)return;
+  var backdrop=document.createElement('div');
+  backdrop.className='lbox-backdrop'; backdrop.hidden=true;
+  backdrop.innerHTML='<button type="button" class="lbox-close" aria-label="Close image">\u2715</button><img alt=""><div class="lbox-cap"></div>';
+  document.body.appendChild(backdrop);
+  var bImg=backdrop.querySelector('img'), bCap=backdrop.querySelector('.lbox-cap'), bClose=backdrop.querySelector('.lbox-close');
+  var trigger=null;
+  function focusables(){return [].slice.call(backdrop.querySelectorAll('button,[tabindex]'));}
+  function onKey(e){
+    if(e.key==='Escape'){e.preventDefault();close();return;}
+    if(e.key==='Tab'){
+      var f=focusables(); if(!f.length)return;
+      var first=f[0], last=f[f.length-1];
+      if(e.shiftKey && document.activeElement===first){e.preventDefault();last.focus();}
+      else if(!e.shiftKey && document.activeElement===last){e.preventDefault();first.focus();}
+    }
+  }
+  function open(img){
+    trigger=img; bImg.src=img.currentSrc||img.src; bImg.alt=img.alt||'';
+    bCap.textContent=img.alt||''; backdrop.hidden=false; document.body.style.overflow='hidden';
+    bClose.focus(); document.addEventListener('keydown',onKey,true);
+  }
+  function close(){
+    backdrop.hidden=true; document.body.style.overflow=''; bImg.src='';
+    document.removeEventListener('keydown',onKey,true);
+    if(trigger)trigger.focus(); trigger=null;
+  }
+  backdrop.addEventListener('click',function(e){ if(e.target===backdrop||e.target===bImg)close(); });
+  bClose.addEventListener('click',close);
+  imgs.forEach(function(img){
+    img.setAttribute('role','button'); img.setAttribute('tabindex','0');
+    if(!img.getAttribute('aria-label'))img.setAttribute('aria-label',img.alt?('Open image: '+img.alt):'Open image');
+    img.addEventListener('click',function(){open(img);});
+    img.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();open(img);} });
+  });
+})();</script>
+</body></html>

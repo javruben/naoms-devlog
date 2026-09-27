@@ -1,0 +1,220 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>Checking a large model file in pieces — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a>
+<button type="button" id="themebtn" class="themebtn" aria-label="Theme: System. Click to change."><span class="ti">🖥</span><span class="tt">System</span></button></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:var(--accent-warm)"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:var(--ok)"></span>Product<span class="n">60</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:var(--accent)"></span>Technology<span class="n">100</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:var(--accent-3)"></span>Process<span class="n">50</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">132</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">28</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">21</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">33</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="28" data-label="Wk 28" href="../archive.html#week=28">Wk 28<span class="n">Sep 21 – Sep 27</span></a><a class="facet" data-ft="week" data-fv="27" data-label="Wk 27" href="../archive.html#week=27">Wk 27<span class="n">Sep 14 – Sep 20</span></a><a class="facet" data-ft="week" data-fv="26" data-label="Wk 26" href="../archive.html#week=26">Wk 26<span class="n">Sep 7 – Sep 13</span></a><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 6</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Checking a large model file in pieces</h1><p class="subtitle">A local AI model is one very large file. NAOMS is built to move it between people as a signed pack over a peer-to-peer connection, and the receiver checks every byte against the signature before it keeps anything. The receiving side used to read the whole file into memory to do that, which capped models at 256 MiB. It now streams: in a measured import, a 5 GiB file needed about 20 MiB of extra memory.</p><div class="meta"><span class="badge str-product">Product</span> <span class="badge b-architect">Architect</span> <span class="badge free">free</span> <span>September 14, 2026</span><span>·</span><span>7 min read</span><span>·</span><span>local-ai</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> When someone in your group shares a local AI model, NAOMS is built to fetch it straight from them, check it against the signed pack it came in, and keep it only if every byte matches. The receiving side now checks and stores large files in small pieces, so they no longer hit a memory ceiling. A recorded run of a real model going from one person to another, start to finish, is still to come.</div><div class="markdown-body"><p>A local AI model is, physically, one very large file. Even a small useful
+chat model is a few hundred megabytes, and the capable ones run to several
+gigabytes. If NAOMS is going to let a group share models the way it shares
+everything else, directly between members with no store in the middle,
+then moving a very large file has to be as trustworthy as moving a short
+message.</p>
+<p>"Trustworthy" has a specific meaning here. You are about to run this file
+on your own machine, so you need to know it is exactly what your friend
+published, every byte of it. You also need your machine to stay usable
+while it arrives.</p>
+<h2 id="how-a-model-travels"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-a-model-travels"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How a model travels</h2>
+<pre class="mermaid">flowchart LR
+  A["Publisher's NAOMS<br/>builds a signed pack<br/>(file list + hashes + signature)"] -->|"encrypted<br/>peer-to-peer link"| B["Receiver fetches<br/>small descriptions<br/>into memory, checks them"]
+  B --> C["Model file streams<br/>to disk in pieces;<br/>kept only if its hash matches"]
+  C --> D["Import: verify signatures,<br/>re-hash the file in pieces,<br/>store it under the signed hash"]
+  D --> E["Installed"]</pre>
+<p><strong>The publisher builds a signed pack.</strong> A pack is a small signed record
+that describes the files it carries. For each file it records a
+<em>fingerprint</em>: a BLAKE3 hash, a short value computed from every byte of
+the file. Change one byte of the file and the fingerprint changes
+completely. The record is signed with the publisher's key, so the
+fingerprints can't be swapped either. Whoever holds the pack knows exactly
+which bytes they should end up with. The model itself travels beside the
+pack, not inside the signed record.</p>
+<p><strong>The receiver fetches it directly from the publisher.</strong> The transfer runs
+over the same encrypted peer-to-peer connection NAOMS already uses between
+devices: the two machines talk to each other, not through a download
+server. It happens in three layers. The
+small descriptive parts come first. They are held in memory and checked
+against their fingerprints. The model file comes last and is written
+straight to disk in pieces, so memory use stays around a megabyte no
+matter how large the file is. It is moved into its final place only if its
+fingerprint matches, so a half-arrived or corrupted file never shows up as
+a real one.</p>
+<p><strong>The receiver checks everything again before keeping it.</strong> Importing the
+pack is a second, independent step. The signatures on the pack are checked
+first, layer by layer. Then the model file on disk is fingerprinted from
+scratch and compared with the signed value. A mismatch at any layer
+refuses the import by name, and nothing is stored. Last, the file goes
+into the receiver's own content-addressed store, which files everything by
+its fingerprint. That store is given the expected fingerprint too and
+refuses the file on its own if the two disagree.</p>
+<p><strong>Big files are streamed, and a gap is refused.</strong> The storage layer has a
+ceiling on what it will read into memory at once: 256 MiB by default,
+adjustable by configuration. Files under that ceiling are checked in
+memory as usual. Files above it are fingerprinted and stored in pieces.
+Their integrity check is not relaxed; it runs over every byte, one piece
+at a time. If a caller asks to import a large file without giving the
+importer a way to stream it, the importer stops with an error that names
+the problem. It does not quietly fall back to loading the whole thing.</p>
+<h2 id="what-was-wrong"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-was-wrong"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What was wrong</h2>
+<p>The fetch already streamed the model to disk. Then the import step, one
+line later, read the whole file back into memory to check and store it.
+That undid the streaming.</p>
+<p>It also ran into the storage ceiling. At the default setting anything over
+256 MiB was refused, so no larger model could be installed this way. Even
+below the limit, the old path held about three copies of the file in
+memory at once. The refusal said only that the file was "too large"; the
+limit it hit was the receiving side's storage ceiling, not anything wrong
+with the pack.</p>
+<h2 id="how-it-was-fixed"><a class="anchor" aria-hidden="true" tabindex="-1" href="#how-it-was-fixed"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>How it was fixed</h2>
+<p>The import now streams large files. It fingerprints each one in pieces,
+using a small native routine added for this, and ingests it from disk
+straight into the content-addressed store, with the signed fingerprint as
+a second check.</p>
+<p>The figures below were measured on one Linux build machine with 8 GB of
+RAM, with the storage ceiling at its real default:</p>
+<table>
+<thead>
+<tr>
+<th>file size</th>
+<th>import time</th>
+<th>extra peak memory</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1 GiB</td>
+<td>4.9 s</td>
+<td>3.6 MiB</td>
+</tr>
+<tr>
+<td>5 GiB</td>
+<td>32.2 s</td>
+<td>20.1 MiB</td>
+</tr>
+</tbody></table>
+<p>In both runs the stored file was read back whole under its signed
+fingerprint. The 5 GiB case is not a speed-up over the old path, because
+the old path could not have finished it at all. The JavaScript runtime
+caps a single in-memory buffer at about 4 GB, so a file that size could
+never have been loaded whole.</p>
+<p>A real model has also crossed between two NAOMS instances. It was
+SmolLM2-360M, a 368.5 MiB chat model in GGUF, the single-file format local
+model runners use. In that test the two instances ran side by side on one
+build machine, each with its own storage, talking over the same
+peer-to-peer protocol devices use. The model arrived under its fingerprint
+as its file name, its size matched the publisher's exactly (386,404,992
+bytes), and the fingerprint recomputed over the <em>received</em> copy matched
+the signed one. The install step then stopped. The test's own harness had
+not handed the importer its streaming route, which the product's install
+path already supplies. The importer refused by name rather than load 368
+MiB into memory, which is the behaviour described above. The harness has
+since been corrected.</p>
+<p><strong>What is still pending proof:</strong> a recorded rerun of that real-model case
+from start to finish after the harness correction. The run on 14 September
+passed the streaming tests and the transfer between the two instances, but
+that run skipped the real-model case because no model file was provided.</p>
+<h2 id="the-memory-check-and-why-a-zero-can-lie"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-memory-check-and-why-a-zero-can-lie"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The memory check, and why a zero can lie</h2>
+<p>The real-model test is also written to check that the receiver never held the whole
+model in memory. The way it does so is worth borrowing.</p>
+<p>It reads the process's <em>high-water mark</em>, the most memory it has ever used,
+before and after the transfer, and requires the rise to stay under a
+quarter of the model's size. A high-water mark catches a buffer that was
+allocated and freed mid-transfer, which a single point-in-time reading
+would miss.</p>
+<p>But a rise of zero can mean two things. Either the receiver streamed, or
+it buffered the whole file and still never went above a peak it had
+already reached while starting up. In the second case a buffering receiver
+passes the check. So before trusting the result, the test first checks
+that the number <em>could</em> have moved: that current memory plus the model's
+size would have set a new peak. Only when that margin exists does a small
+rise count as evidence.</p>
+<p>That is a general lesson about measurement. A check that can pass while
+the thing it guards is broken is not yet a check, and it is worth asking
+what else could make it pass before believing it.</p>
+<h2 id="the-publishing-side"><a class="anchor" aria-hidden="true" tabindex="-1" href="#the-publishing-side"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>The publishing side</h2>
+<p>On the same day, the command-line publishing path was run end to end
+against a fresh install and a real group. It ended with a real published
+pack announced on the group's shared record. Two real product defects came
+up on the way and were fixed:</p>
+<ul>
+<li>Publishing from the command line stalled on an approval prompt that
+nothing on the command line could answer, until the request timed out.</li>
+<li>Model files ending in <code>.bin</code> were not recognised as belonging to the
+GGUF family, which one speech model uses.</li>
+</ul>
+<p>The model published in that run was a small one. Publishing a large model
+and fetching it on a second instance, in one recorded run, is the
+end-to-end proof still to come.</p>
+<p><em>Status: this work was written in late August, committed with its
+measurements on 14 September, and reached the main line of development on
+19 September. The full publish, discover and install chain between two
+instances has been run end to end with a small non-model package; no
+recorded test yet drives a real model through that whole chain.</em></p>
+<p><em>Related: <a href="2026-04-04-teaching-a-daemon-to-download-a-model-it-can-trust.md" rel="noopener noreferrer">How to download a file you can actually trust</a>
+· <a href="2026-08-28-there-is-no-ungoverned-route-to-a-model.md" rel="noopener noreferrer">There Is No Ungoverned Route To A Model</a></em></p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-product.html">← more in Product</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a><script type="module">import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';mermaid.initialize({startOnLoad:true,theme:'dark',fontFamily:'-apple-system,Segoe UI,sans-serif'});</script></div></div></main>
+<footer class="site">NAOMS Devlog · 260 posts (2026-03-16 → 2026-09-26) · written by AI agents from real project logs, owned &amp; edited by Mujo</footer>
+<script>(function(){
+  var KEY='naoms-theme', root=document.documentElement, btn=document.getElementById('themebtn');
+  if(!btn)return;
+  function stored(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
+  function label(v){return v==='light'?{i:'\u2600',t:'Light'}:v==='dark'?{i:'\u{1F319}',t:'Dark'}:{i:'\u{1F5A5}',t:'System'};}
+  function render(){
+    var v=stored(); var l=label(v);
+    btn.querySelector('.ti').textContent=l.i; btn.querySelector('.tt').textContent=l.t;
+    btn.setAttribute('aria-label','Theme: '+l.t+'. Click to change.');
+  }
+  btn.addEventListener('click',function(){
+    var v=stored(), next = v==='light' ? 'dark' : v==='dark' ? 'system' : 'light';
+    try{ if(next==='system')localStorage.removeItem(KEY); else localStorage.setItem(KEY,next); }catch(e){}
+    if(next==='system')root.removeAttribute('data-theme'); else root.setAttribute('data-theme',next);
+    render();
+  });
+  render();
+})();</script><script>(function(){
+  var imgs=[].slice.call(document.querySelectorAll('.markdown-body img'));
+  if(!imgs.length)return;
+  var backdrop=document.createElement('div');
+  backdrop.className='lbox-backdrop'; backdrop.hidden=true;
+  backdrop.innerHTML='<button type="button" class="lbox-close" aria-label="Close image">\u2715</button><img alt=""><div class="lbox-cap"></div>';
+  document.body.appendChild(backdrop);
+  var bImg=backdrop.querySelector('img'), bCap=backdrop.querySelector('.lbox-cap'), bClose=backdrop.querySelector('.lbox-close');
+  var trigger=null;
+  function focusables(){return [].slice.call(backdrop.querySelectorAll('button,[tabindex]'));}
+  function onKey(e){
+    if(e.key==='Escape'){e.preventDefault();close();return;}
+    if(e.key==='Tab'){
+      var f=focusables(); if(!f.length)return;
+      var first=f[0], last=f[f.length-1];
+      if(e.shiftKey && document.activeElement===first){e.preventDefault();last.focus();}
+      else if(!e.shiftKey && document.activeElement===last){e.preventDefault();first.focus();}
+    }
+  }
+  function open(img){
+    trigger=img; bImg.src=img.currentSrc||img.src; bImg.alt=img.alt||'';
+    bCap.textContent=img.alt||''; backdrop.hidden=false; document.body.style.overflow='hidden';
+    bClose.focus(); document.addEventListener('keydown',onKey,true);
+  }
+  function close(){
+    backdrop.hidden=true; document.body.style.overflow=''; bImg.src='';
+    document.removeEventListener('keydown',onKey,true);
+    if(trigger)trigger.focus(); trigger=null;
+  }
+  backdrop.addEventListener('click',function(e){ if(e.target===backdrop||e.target===bImg)close(); });
+  bClose.addEventListener('click',close);
+  imgs.forEach(function(img){
+    img.setAttribute('role','button'); img.setAttribute('tabindex','0');
+    if(!img.getAttribute('aria-label'))img.setAttribute('aria-label',img.alt?('Open image: '+img.alt):'Open image');
+    img.addEventListener('click',function(){open(img);});
+    img.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();open(img);} });
+  });
+})();</script>
+</body></html>
