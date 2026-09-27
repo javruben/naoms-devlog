@@ -121,9 +121,13 @@ nav{margin-top:14px;display:flex;flex-wrap:wrap;gap:9px 18px;font-size:14px;font
 nav a{color:var(--ink)}
 main{padding:30px 0 70px}
 h2.section{font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:34px 0 6px;border-bottom:1px solid var(--line);padding-bottom:8px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:14px 0;box-shadow:0 10px 30px rgba(0,0,0,.18)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin:14px 0;box-shadow:0 10px 30px rgba(0,0,0,.18);display:flex;gap:16px;align-items:flex-start}
+.card-body{flex:1 1 auto;min-width:0}
+.card-thumb{flex:0 0 116px;width:116px;aspect-ratio:1/1;border-radius:10px;overflow:hidden;background:var(--bg-2);border:1px solid var(--line-soft)}
+.card-thumb img{width:100%;height:100%;object-fit:cover;display:block}
 .card h3{margin:.1em 0 .3em;font-size:20px;line-height:1.25}
 .card .sum{color:var(--ink-2);font-size:15px;margin:.4em 0 0}
+@media(max-width:480px){.card{flex-direction:column}.card-thumb{width:100%;flex-basis:auto;aspect-ratio:12/5}}
 .meta{font-size:12.5px;color:var(--muted);display:flex;flex-wrap:wrap;gap:10px;align-items:center}
 /* Voice (architect/confession/journal/…) is a facet, not a status — one
    neutral outline chip for all seven, so colour stays reserved for things
@@ -239,10 +243,17 @@ footer.site{border-top:1px solid var(--line);color:var(--muted);font-size:13px;t
 .markdown-body .anchor{display:none}
 .markdown-body.dispatch p.dintro{color:var(--ink-1);font-size:16.5px;line-height:1.65}
 .markdown-body.dispatch p.dsub{margin-top:1.5em}
-/* Wide content scrolls inside its own box; the page body never does. */
-.markdown-body.dispatch table{display:block;width:max-content;max-width:100%;overflow-x:auto;border-collapse:collapse;font-size:15px;font-variant-numeric:tabular-nums}
-.markdown-body.dispatch th,.markdown-body.dispatch td{border:1px solid var(--line);padding:7px 11px;text-align:left;vertical-align:top}
-.markdown-body.dispatch th{background:var(--panel);font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+/* ── Tables, every voice — owner, 2026-09-27 voice: "the tables render really
+   ugly... render the table beautifully with a smaller font and the headings
+   [with] a different background and borders around it in our styling."
+   Wrapped by wrapTables() in a .table-wrap so wide content scrolls inside its
+   own box at phone width instead of breaking the page; the table itself keeps
+   its natural width rather than being squeezed to 100%. ───────────────────── */
+.table-wrap{overflow-x:auto;margin:1.2em 0;-webkit-overflow-scrolling:touch}
+.table-wrap table{border-collapse:collapse;font-size:.9em;font-variant-numeric:tabular-nums}
+.table-wrap th,.table-wrap td{border:1px solid var(--line);padding:7px 11px;text-align:left;vertical-align:top}
+.table-wrap th{background:var(--panel);font-weight:700;font-size:.85em;letter-spacing:.04em;text-transform:uppercase;color:var(--muted)}
+.table-wrap tbody tr:nth-child(even){background:var(--bg-2)}
 /* Headline figures — read before any prose. */
 .dstats{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));gap:12px;margin:26px 0 30px}
 .dstat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:15px 16px 16px}

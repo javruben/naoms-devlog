@@ -78,7 +78,7 @@ straight into the content-addressed store, with the signed fingerprint as
 a second check.</p>
 <p>The figures below were measured on one Linux build machine with 8 GB of
 RAM, with the storage ceiling at its real default:</p>
-<table>
+<div class="table-wrap"><table>
 <thead>
 <tr>
 <th>file size</th>
@@ -96,7 +96,7 @@ RAM, with the storage ceiling at its real default:</p>
 <td>32.2 s</td>
 <td>20.1 MiB</td>
 </tr>
-</tbody></table>
+</tbody></table></div>
 <p>In both runs the stored file was read back whole under its signed
 fingerprint. The 5 GiB case is not a speed-up over the old path, because
 the old path could not have finished it at all. The JavaScript runtime
