@@ -1,0 +1,503 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<script>(function(){try{var t=localStorage.getItem('naoms-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}})();</script>
+<title>Build Your First NAOMS Package — NAOMS Devlog</title><link rel="stylesheet" href="../style.css"></head><body>
+<header class="site"><div class="wrap">
+<h1><a href="../index.html" style="color:inherit">NAOMS Devlog</a></h1>
+<p>Building a sovereign, local-first memory &amp; identity system — in the open, honestly.</p>
+<nav><a href="../archive.html">All</a><a href="../stream-vision.html">Vision</a><a href="../stream-product.html">Product</a><a href="../stream-technology.html">Technology</a><a href="../stream-process.html">Process</a><a href="../about.html">About</a>
+<button type="button" id="themebtn" class="themebtn" aria-label="Theme: System. Click to change."><span class="ti">🖥</span><span class="tt">System</span></button></nav>
+</div></header><main><div class="layout"><aside class="sidebar"><div class="snav"><h4>Streams</h4><a class="facet" data-ft="stream" data-fv="vision" data-label="Vision" href="../archive.html#stream=vision"><span class="sdot" style="background:var(--accent-warm)"></span>Vision<span class="n">50</span></a><a class="facet" data-ft="stream" data-fv="product" data-label="Product" href="../archive.html#stream=product"><span class="sdot" style="background:var(--ok)"></span>Product<span class="n">60</span></a><a class="facet" data-ft="stream" data-fv="technology" data-label="Technology" href="../archive.html#stream=technology"><span class="sdot" style="background:var(--accent)"></span>Technology<span class="n">101</span></a><a class="facet" data-ft="stream" data-fv="process" data-label="Process" href="../archive.html#stream=process"><span class="sdot" style="background:var(--accent-3)"></span>Process<span class="n">50</span></a></div>
+<div class="snav"><h4>Categories</h4><a class="facet" data-ft="voice" data-fv="architect" data-label="Architect" href="../archive.html#voice=architect">Architect<span class="n">132</span></a><a class="facet" data-ft="voice" data-fv="philosopher" data-label="Philosopher" href="../archive.html#voice=philosopher">Philosopher<span class="n">35</span></a><a class="facet" data-ft="voice" data-fv="confession" data-label="Confession" href="../archive.html#voice=confession">Confession<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="journal" data-label="Journal" href="../archive.html#voice=journal">Journal<span class="n">13</span></a><a class="facet" data-ft="voice" data-fv="teacher" data-label="Teacher" href="../archive.html#voice=teacher">Teacher<span class="n">29</span></a><a class="facet" data-ft="voice" data-fv="dispatch" data-label="Dispatch" href="../archive.html#voice=dispatch">Dispatch<span class="n">21</span></a><a class="facet" data-ft="voice" data-fv="appreciation" data-label="Fellow Travelers" href="../archive.html#voice=appreciation">Fellow Travelers<span class="n">18</span></a></div>
+<div class="snav"><h4>Tags</h4><a class="facet" data-ft="tag" data-fv="bug-fixed" data-label="Bug fixed" href="../archive.html#tag=bug-fixed">Bug fixed<span class="n">33</span></a></div>
+<div class="snav"><h4>Months</h4><a class="facet" data-ft="month" data-fv="2026-09" data-label="September 2026" href="../archive.html#month=2026-09">September 2026</a><a class="facet" data-ft="month" data-fv="2026-08" data-label="August 2026" href="../archive.html#month=2026-08">August 2026</a><a class="facet" data-ft="month" data-fv="2026-07" data-label="July 2026" href="../archive.html#month=2026-07">July 2026</a><a class="facet" data-ft="month" data-fv="2026-06" data-label="June 2026" href="../archive.html#month=2026-06">June 2026</a><a class="facet" data-ft="month" data-fv="2026-05" data-label="May 2026" href="../archive.html#month=2026-05">May 2026</a><a class="facet" data-ft="month" data-fv="2026-04" data-label="April 2026" href="../archive.html#month=2026-04">April 2026</a><a class="facet" data-ft="month" data-fv="2026-03" data-label="March 2026" href="../archive.html#month=2026-03">March 2026</a></div><div class="snav"><h4>Weeks</h4><a class="facet" data-ft="week" data-fv="28" data-label="Wk 28" href="../archive.html#week=28">Wk 28<span class="n">Sep 21 – Sep 27</span></a><a class="facet" data-ft="week" data-fv="27" data-label="Wk 27" href="../archive.html#week=27">Wk 27<span class="n">Sep 14 – Sep 20</span></a><a class="facet" data-ft="week" data-fv="26" data-label="Wk 26" href="../archive.html#week=26">Wk 26<span class="n">Sep 7 – Sep 13</span></a><a class="facet" data-ft="week" data-fv="25" data-label="Wk 25" href="../archive.html#week=25">Wk 25<span class="n">Aug 31 – Sep 6</span></a><a class="facet" data-ft="week" data-fv="24" data-label="Wk 24" href="../archive.html#week=24">Wk 24<span class="n">Aug 24 – Aug 30</span></a><a class="facet" data-ft="week" data-fv="23" data-label="Wk 23" href="../archive.html#week=23">Wk 23<span class="n">Aug 17 – Aug 23</span></a><a class="facet" data-ft="week" data-fv="22" data-label="Wk 22" href="../archive.html#week=22">Wk 22<span class="n">Aug 10 – Aug 16</span></a><a class="facet" data-ft="week" data-fv="21" data-label="Wk 21" href="../archive.html#week=21">Wk 21<span class="n">Aug 3 – Aug 9</span></a><a class="facet" data-ft="week" data-fv="20" data-label="Wk 20" href="../archive.html#week=20">Wk 20<span class="n">Jul 27 – Aug 2</span></a><a class="facet" data-ft="week" data-fv="19" data-label="Wk 19" href="../archive.html#week=19">Wk 19<span class="n">Jul 20 – Jul 26</span></a><a class="facet" data-ft="week" data-fv="18" data-label="Wk 18" href="../archive.html#week=18">Wk 18<span class="n">Jul 13 – Jul 19</span></a><a class="facet" data-ft="week" data-fv="17" data-label="Wk 17" href="../archive.html#week=17">Wk 17<span class="n">Jul 6 – Jul 12</span></a><a class="facet" data-ft="week" data-fv="16" data-label="Wk 16" href="../archive.html#week=16">Wk 16<span class="n">Jun 29 – Jul 5</span></a><a class="facet" data-ft="week" data-fv="15" data-label="Wk 15" href="../archive.html#week=15">Wk 15<span class="n">Jun 22 – Jun 28</span></a><a class="facet" data-ft="week" data-fv="14" data-label="Wk 14" href="../archive.html#week=14">Wk 14<span class="n">Jun 15 – Jun 21</span></a><a class="facet" data-ft="week" data-fv="13" data-label="Wk 13" href="../archive.html#week=13">Wk 13<span class="n">Jun 8 – Jun 14</span></a><a class="facet" data-ft="week" data-fv="12" data-label="Wk 12" href="../archive.html#week=12">Wk 12<span class="n">Jun 1 – Jun 7</span></a><a class="facet" data-ft="week" data-fv="11" data-label="Wk 11" href="../archive.html#week=11">Wk 11<span class="n">May 25 – May 31</span></a><a class="facet" data-ft="week" data-fv="10" data-label="Wk 10" href="../archive.html#week=10">Wk 10<span class="n">May 18 – May 24</span></a><a class="facet" data-ft="week" data-fv="9" data-label="Wk 9" href="../archive.html#week=9">Wk 9<span class="n">May 11 – May 17</span></a><a class="facet" data-ft="week" data-fv="8" data-label="Wk 8" href="../archive.html#week=8">Wk 8<span class="n">May 4 – May 10</span></a><a class="facet" data-ft="week" data-fv="7" data-label="Wk 7" href="../archive.html#week=7">Wk 7<span class="n">Apr 27 – May 3</span></a><a class="facet" data-ft="week" data-fv="6" data-label="Wk 6" href="../archive.html#week=6">Wk 6<span class="n">Apr 20 – Apr 26</span></a><a class="facet" data-ft="week" data-fv="5" data-label="Wk 5" href="../archive.html#week=5">Wk 5<span class="n">Apr 13 – Apr 19</span></a><a class="facet" data-ft="week" data-fv="4" data-label="Wk 4" href="../archive.html#week=4">Wk 4<span class="n">Apr 6 – Apr 12</span></a><a class="facet" data-ft="week" data-fv="3" data-label="Wk 3" href="../archive.html#week=3">Wk 3<span class="n">Mar 30 – Apr 5</span></a><a class="facet" data-ft="week" data-fv="2" data-label="Wk 2" href="../archive.html#week=2">Wk 2<span class="n">Mar 23 – Mar 29</span></a><a class="facet" data-ft="week" data-fv="1" data-label="Wk 1" href="../archive.html#week=1">Wk 1<span class="n">Mar 16 – Mar 22</span></a></div>
+<p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>Build Your First NAOMS Package</h1><p class="subtitle">A package is a small, self-contained app that lives inside NAOMS. Scaffold one, boot it in a real daemon, and open its screen — every command below was actually run against the current scaffolder before this was written.</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-teacher">Teacher</span> <span class="badge free">free</span> <span>September 27, 2026</span><span>·</span><span>15 min read</span><span>·</span><span>sdk</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> NAOMS's own landing page says it plainly: packages, not client apps, are the primary way to build on NAOMS. A package is a folder with a manifest and (usually) a screen; the daemon discovers it on disk, no registration list to edit. This walkthrough scaffolds a minimal one with `naoms package init`, boots it inside a real, isolated daemon with zero hand edits, and opens its screen in a real browser — plus what an earlier draft of this exact tutorial got wrong before the scaffolder itself was fixed.</div><div class="markdown-body"><p>NAOMS's own landing page puts it directly: the primary way to build on NAOMS is
+a <strong>package</strong> — "a small, self-contained app that lives inside the platform."
+Client apps that connect to someone else's daemon over the network are a real,
+supported thing too, and we'll close with that. But packages come first, because
+a package runs <em>inside</em> the daemon: it gets a manifest-checked, capability-gated
+slice of the same graph and chain everything else in NAOMS already uses, instead
+of talking to it from the outside.</p>
+<p><img src="assets/2026-09-27-hello-world-package-running.webp" alt="The hello-world canvas window, cropped to its titlebar and one bordered, padded row reading &quot;Hello, NAOMS&quot; — the unmodified scaffold's own list rendering a single real graph node" /></p>
+<p>This piece scaffolds the smallest real package that can exist — one screen, one
+declared write capability — and runs every step for real: the scaffold command,
+the unit test, a boot inside an isolated daemon, and a browser session that
+opens the screen and reads back a real node. Every command below ran clean,
+first try, against the current <code>naoms package init</code>. That's new: an earlier
+draft of this exact tutorial hit three separate scaffold-template bugs and a
+boot-time refusal, all now fixed — the "What was fixed" section near the end has
+the commits, for anyone comparing notes against an older checkout.</p>
+<h2 id="what-a-package-is"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-a-package-is"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What a package is</h2>
+<p>A NAOMS package is a directory under <code>src/packages/&lt;name&gt;/</code> containing at
+minimum a <strong>manifest</strong> — a typed object naming the package, its version, and
+what it's allowed to touch — and usually a <strong>screen</strong>: a small JavaScript module
+the shell loads as a browser tab or canvas window. The daemon discovers packages
+by reading the directories under <code>src/packages/</code> at boot; there is no separate
+list to add your package's name to.</p>
+<p>The manifest is the single source of truth. Before any of your code runs, the
+daemon reads it and decides: what graph node kinds can this package read or
+write, what chain event types can it emit, and what trust level does a user need
+before they're even allowed to install it. Two fields matter most for a first
+package:</p>
+<ul>
+<li><strong><code>capabilities</code></strong> — named permissions your package exposes, each with a
+minimum trust level (<code>connected</code>, <code>trusted</code>, <code>guardian</code>, or <code>owner</code>). This is
+what a user is shown, and asked to approve, at install time.</li>
+<li><strong><code>chainTypes</code></strong> / <strong><code>graphTypes</code></strong> — which chain event types your package can
+append, and which graph node kinds it can read or write. Nothing outside these
+declarations is reachable from your package's own code (with one founder-owned
+exception covered below).</li>
+</ul>
+<h2 id="scaffold-it"><a class="anchor" aria-hidden="true" tabindex="-1" href="#scaffold-it"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Scaffold it</h2>
+<p>The docs at <code>docs/build/packages/getting-started.md</code> walk through building a
+manifest by hand, using the real in-tree <code>weather</code> package as the worked
+example. That's the right way to <em>learn</em> the field shapes. But there is also a
+scaffolding command, <code>naoms package init</code>, that generates a working skeleton in
+one shot — and as of this writing it isn't mentioned in the getting-started
+guide at all, so if you only read that page you'd never find it. It's real and
+it works:</p>
+<pre><code>cd src/packages
+naoms package init --name hello-world --type feature --category productivity --ui</code></pre><p>Output:</p>
+<pre><code>  Creating hello-world/ ...
+
+    hello-world/
+    ├── manifest.ts
+    ├── namespace.ts
+    ├── public.ts
+    ├── ui/
+    │   └── hello-world-tab.js
+    ├── enrichers/
+    ├── materializers/
+    ├── reducers/
+    ├── routes/
+    ├── handlers/
+    ├── tests/
+    │   ├── uc-hello-world.test.ts
+    │   ├── integ-hello-world.test.ts
+    │   └── e2e-hello-world.ts
+    └── deno.json
+
+  Capability disclosure (feature):
+    This package is behaviour-bearing. A clean `deno check` proves
+    it TYPE-CHECKS — it does NOT prove it RUNS. To execute it you need
+    a running NAOMS daemon: the daemon loads, signs, installs and runs
+    the package. It cannot run out-of-tree from a bare `deno check`.
+
+  Next steps:
+    cd hello-world
+    naoms dev
+    naoms test
+    naoms manifest validate</code></pre><p>That capability disclosure is worth reading twice. A green type-check is not
+evidence the package works — it only proves the TypeScript is well-formed.
+Below, we boot a real daemon and open a real browser tab, because that
+disclosure is correct and this walkthrough is about proof, not type-checking.</p>
+<p><code>naoms package init --name &lt;n&gt; --type feature --category &lt;c&gt; --ui</code> also runs
+interactively if you omit <code>--name</code> — it prompts for each field instead. The
+valid <code>--category</code> values and the <code>--type</code> values (<code>feature</code>, <code>plugin</code>, <code>app</code>,
+<code>library</code>, and a <code>plugin</code>-flavoured discriminated union of sub-types) are
+enumerated in <code>init.ts</code>; get either one wrong and the command refuses with the
+full valid list rather than guessing.</p>
+<h2 id="what-it-generates--and-this-is-the-whole-thing-unedited"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-it-generates--and-this-is-the-whole-thing-unedited"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What it generates — and this is the whole thing, unedited</h2>
+<p>Here is the generated <code>manifest.ts</code>, exactly as written by the command above —
+nothing added, nothing trimmed:</p>
+<pre><code>// src/packages/hello-world/manifest.ts
+import type { NaomsFeatureManifest } from "@naoms/sdk";
+
+export const MANIFEST: NaomsFeatureManifest = {
+  id: "hello-world",
+  name: "Hello World",
+  version: "0.1.0",
+  description: "TODO: describe your feature",
+  category: "productivity",
+  ontologyNamespace: "naoms:hello-world/",
+  schema: {
+    type: "object",
+    properties: {
+      id: { type: "string" },
+      title: { type: "string" },
+    },
+    required: ["id", "title"],
+  },
+  chainTypes: [{
+    chainType: "hello-world",
+    access: "read-write",
+    eventTypes: [
+      { type: "hello-world.created", nodeKind: "hello_world" },
+      { type: "hello-world.updated", nodeKind: "hello_world" },
+    ],
+  }],
+  defaultInstallContext: "personal",
+  graphTypes: [{
+    nodeType: "hello_world",
+    access: "read-write",
+  }],
+  wsMessageTypes: [
+    { type: "hello-world.list", direction: "inbound" },
+  ],
+  eventTypePrefixes: ["hello-world."],
+  uiModule: "hello-world/hello-world-tab.js",
+  uiExtraScripts: [],
+  headless: false,
+  scriptType: "classic",
+  bootstrapImportmapEntries: {},
+  bootstrapModules: [],
+  capabilities: [
+    { name: "hello-world.view", trustLevel: "connected" },
+    { name: "hello-world.create", trustLevel: "connected" },
+  ],
+  dependencies: [],
+  permissions: {
+    minTrustLevel: "connected",
+    domainScopable: true,
+    hiveConfigurable: true,
+  },
+};</code></pre><p>Two fields are worth calling out because they only exist to prevent silent
+failures, and a hand-written manifest is where people most often forget them:</p>
+<ul>
+<li><strong><code>defaultInstallContext: "personal"</code>.</strong> Any built-in package whose
+<code>chainTypes[]</code> has write access must say which context (<code>personal</code>,
+<code>friendship</code>, or <code>hive</code>) its default authority lands in — no silent "personal"
+fallback for a package that might actually belong on a hive
+(<code>src/packages/pkg-manager/pkg-install/default-install-context.ts</code>, 1640 M6).
+The scaffold sets it to <code>personal</code> for you, the common case; change it if your
+package's default authority should live elsewhere.</li>
+<li><strong><code>uiModule: "hello-world/hello-world-tab.js"</code>.</strong> This is
+<code>&lt;packageId&gt;/&lt;filename&gt;</code>, matching how the daemon actually serves it:
+<code>src/core/transport/http-transport-static.ts</code>'s static server serves a
+package's <code>ui/</code> directory contents at <code>/features/&lt;packageId&gt;/&lt;filename&gt;</code> — the
+<code>ui/</code> part is the on-disk directory, never part of the served URL or this
+field.</li>
+</ul>
+<p>And the generated screen, also unedited:</p>
+<div class="highlight highlight-source-javascript notranslate"><pre><span class="token comment">// src/packages/hello-world/ui/hello-world-tab.js -- loaded by 614 Feature</span>
+<span class="token comment">// Loader as a CLASSIC script (no imports). DOM is built with</span>
+<span class="token comment">// createElement/textContent -- never innerHTML of untrusted values -- so</span>
+<span class="token comment">// there's no HTML-escaping helper to reach for.</span>
+<span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token string">"use strict"</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>window<span class="token punctuation">.</span>_naomsFeatures<span class="token punctuation">)</span> window<span class="token punctuation">.</span>_naomsFeatures <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">function</span> <span class="token function">el</span><span class="token punctuation">(</span><span class="token">tag<span class="token punctuation">,</span> cls<span class="token punctuation">,</span> text<span class="token punctuation">,</span> style</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> e <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>tag<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>cls<span class="token punctuation">)</span> e<span class="token punctuation">.</span>className <span class="token operator">=</span> cls<span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>text <span class="token operator">!=</span> <span class="token keyword">null</span><span class="token punctuation">)</span> e<span class="token punctuation">.</span>textContent <span class="token operator">=</span> <span class="token function">String</span><span class="token punctuation">(</span>text<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>style<span class="token punctuation">)</span> e<span class="token punctuation">.</span>style<span class="token punctuation">.</span>cssText <span class="token operator">=</span> style<span class="token punctuation">;</span>
+    <span class="token keyword">return</span> e<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  window<span class="token punctuation">.</span>_naomsFeatures<span class="token punctuation">[</span><span class="token string">"hello-world"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">async</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token">ctx</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>ctx <span class="token operator">=</span> ctx<span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>container <span class="token operator">=</span> ctx<span class="token punctuation">.</span>container<span class="token punctuation">;</span>
+      <span class="token comment">// Classic scripts have no shared stylesheet to reach, so the root</span>
+      <span class="token comment">// gets real padding inline -- a bare container renders flush in the</span>
+      <span class="token comment">// window's corner with no visual structure at all.</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>container<span class="token punctuation">.</span>style<span class="token punctuation">.</span>cssText <span class="token operator">=</span>
+        <span class="token string">"padding:16px;color:#e6ecf9;font:14px system-ui,sans-serif;"</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token keyword">async</span> <span class="token function">activate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">const</span> resp <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token keyword">this</span><span class="token punctuation">.</span>ctx<span class="token punctuation">.</span><span class="token function">graphQuery</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        <span class="token property">type</span><span class="token operator">:</span> <span class="token string">"hello_world"</span><span class="token punctuation">,</span>
+        <span class="token property">orderBy</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"updatedAt:desc"</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token property">limit</span><span class="token operator">:</span> <span class="token number">50</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">const</span> items <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>ctx<span class="token punctuation">.</span>flattenNodes
+        <span class="token operator">?</span> <span class="token keyword">this</span><span class="token punctuation">.</span>ctx<span class="token punctuation">.</span><span class="token function">flattenNodes</span><span class="token punctuation">(</span>resp<span class="token punctuation">)</span>
+        <span class="token operator">:</span> <span class="token punctuation">(</span>resp <span class="token operator">&amp;&amp;</span> resp<span class="token punctuation">.</span>nodes<span class="token punctuation">)</span> <span class="token operator">||</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>container<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
+      <span class="token keyword">const</span> list <span class="token operator">=</span> <span class="token function">el</span><span class="token punctuation">(</span>
+        <span class="token string">"div"</span><span class="token punctuation">,</span>
+        <span class="token string">"hello-world-list"</span><span class="token punctuation">,</span>
+        <span class="token keyword">null</span><span class="token punctuation">,</span>
+        <span class="token string">"display:flex;flex-direction:column;gap:8px;"</span><span class="token punctuation">,</span>
+      <span class="token punctuation">)</span><span class="token punctuation">;</span>
+      items<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token">item</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> row <span class="token operator">=</span> <span class="token function">el</span><span class="token punctuation">(</span>
+          <span class="token string">"div"</span><span class="token punctuation">,</span>
+          <span class="token string">"hello-world-item"</span><span class="token punctuation">,</span>
+          <span class="token keyword">null</span><span class="token punctuation">,</span>
+          <span class="token string">"padding:10px 12px;border:1px solid #2a2a35;border-radius:6px;"</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        row<span class="token punctuation">.</span>dataset<span class="token punctuation">.</span>id <span class="token operator">=</span> item<span class="token punctuation">.</span>id<span class="token punctuation">;</span>
+        row<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>
+          <span class="token function">el</span><span class="token punctuation">(</span>
+            <span class="token string">"h3"</span><span class="token punctuation">,</span>
+            <span class="token keyword">null</span><span class="token punctuation">,</span>
+            <span class="token punctuation">(</span>item<span class="token punctuation">.</span>properties <span class="token operator">&amp;&amp;</span> item<span class="token punctuation">.</span>properties<span class="token punctuation">.</span>title<span class="token punctuation">)</span> <span class="token operator">??</span> item<span class="token punctuation">.</span>title <span class="token operator">??</span>
+              <span class="token string">"Untitled"</span><span class="token punctuation">,</span>
+            <span class="token string">"margin:0;font-size:15px;"</span><span class="token punctuation">,</span>
+          <span class="token punctuation">)</span><span class="token punctuation">,</span>
+        <span class="token punctuation">)</span><span class="token punctuation">;</span>
+        list<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>row<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>container<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">deactivate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token function">destroy</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>container<span class="token punctuation">)</span> <span class="token keyword">this</span><span class="token punctuation">.</span>container<span class="token punctuation">.</span>innerHTML <span class="token operator">=</span> <span class="token string">""</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></div><p>Notice <code>ctx.container</code> — the feature loader hands your screen the already-scoped
+DOM node directly; there's no id to look up. Notice, too, that every element
+<code>el()</code> creates takes an inline <code>style</code> argument: classic scripts have no
+<code>&lt;link&gt;</code> tag or shared class of their own to reach for, so real layout (the
+<code>padding</code>/<code>border</code>/<code>gap</code> values above) has to be set the same way every real
+in-tree classic-script screen sets it — inline, per element. And notice the
+query uses <code>type: "hello_world"</code> — underscore, matching the manifest's
+<code>graphTypes[{ nodeType: "hello_world" }]</code> — not <code>"hello-world"</code> (the package id,
+with a hyphen). The daemon's capability gate lowercases the query's <code>type</code> and
+checks it against the manifest's declared <code>graphTypes[].nodeType</code> values; it has
+no idea what the package is <em>called</em>. Get the two confused in a hand-written
+package and your query silently asks for a node type nothing ever writes — not
+an error, just permanently empty.</p>
+<h2 id="run-its-test"><a class="anchor" aria-hidden="true" tabindex="-1" href="#run-its-test"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Run its test</h2>
+<p>Every package's tests live under <code>src/packages/&lt;name&gt;/tests/</code>, and the prefix on
+the filename says which tier it is: <code>uc-</code> for a pure unit test (no daemon, no
+DB), <code>integ-</code> for one that spawns a real daemon, <code>e2e-</code> for a full Puppeteer
+run. The scaffold generates a <code>uc-</code> test that checks the manifest's own shape:</p>
+<pre><code>naoms test run src/packages/hello-world/tests/uc-hello-world.test.ts</code></pre><pre><code>running 2 tests from ./src/packages/hello-world/tests/uc-hello-world.test.ts
+hello-world: manifest has required fields ... ok (1ms)
+hello-world: enrichers (if any) have valid event patterns ... ok (0ms)
+
+ok | 2 passed | 0 failed (2ms)</code></pre><p>Never run <code>deno test</code> directly against a package file — it bypasses the consent,
+egress, policy and audit boundaries <code>naoms test run</code> enforces. Always go through
+the CLI.</p>
+<h2 id="validate-the-manifest"><a class="anchor" aria-hidden="true" tabindex="-1" href="#validate-the-manifest"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Validate the manifest</h2>
+<pre><code>$ naoms manifest validate
+  Validating manifest.ts...
+
+  ✓ Required fields present
+  ✓ Graph types don't conflict with protected node types
+  ✓ Edge types don't conflict with reserved edges
+  ✓ ontologyNamespace format valid
+  ✓ Version format valid
+
+  Manifest valid ✓</code></pre><p>A green unit test and a clean manifest validation both stop short of the thing a
+user actually sees, though — the type-check disclosure above is right about
+that. Next: boot it.</p>
+<h2 id="boot-it"><a class="anchor" aria-hidden="true" tabindex="-1" href="#boot-it"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Boot it</h2>
+<p>We started an isolated daemon — a non-production port, and <code>NAOMS_DIR</code>,
+<code>NAOMS_DATA_DIR</code>, <code>NAOMS_HOME</code> and <code>HOME</code> all pointed at a scratch directory so
+nothing touches a real identity:</p>
+<pre><code>export NAOMS_DIR=/tmp/hello-world-test/dir
+export NAOMS_DATA_DIR=/tmp/hello-world-test/data
+export NAOMS_HOME=/tmp/hello-world-test/home
+export HOME=/tmp/hello-world-test/home
+naoms daemon start --port 34177 --no-watchdog</code></pre><p>It reached full readiness on the first try, with no manifest edits, in about 44
+seconds — capability discovery genuinely works with zero registration step
+beyond dropping the directory in place:</p>
+<pre><code>[scoped-context:INFO] scoped context built {"packageId":"hello-world","graphReads":1,"chainWrites":2,"wsTypes":0}
+...
+[boot-summary:INFO] BOOT[8/8]: NAOMS daemon ready {"packages":130, ...}
+[boot:boot-phase-ledger:INFO] BOOT[8/8]: daemon fully ready {"elapsed_ms":44317}</code></pre><h2 id="onboard-a-founder-identity-against-it"><a class="anchor" aria-hidden="true" tabindex="-1" href="#onboard-a-founder-identity-against-it"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Onboard a founder identity against it</h2>
+<p>With the daemon ready, we ran the real founder-onboarding ceremony against it
+through the CLI — the same command a fresh install runs, pointed at the isolated
+port:</p>
+<pre><code>naoms onboard founder --daemon-url ws://127.0.0.1:34177 --yes --no-local-llm --allow-no-resume --json</code></pre><p>This is the ceremony that mints an identity from nothing: it generates a 24-word
+recovery phrase, creates the encrypted vault, runs FROST keygen for the signer,
+and writes the identity's genesis commit. <code>--allow-no-resume</code> skips wrapping the
+mnemonic under an app password up front (fine for a disposable test identity; a
+real install sets <code>NAOMS_VAULT_APP_PASSWORD</code> so a headless resume works after a
+restart). The command's own <code>--json</code> output on success included the real
+recovery phrase:</p>
+<pre><code>{
+  "status": "onboarded",
+  "founder_did": "did:key:...",
+  "device_did": "did:key:...",
+  "recovery_phrase": "&lt;24 real words&gt;"
+}</code></pre><h2 id="see-it-running-in-the-browser"><a class="anchor" aria-hidden="true" tabindex="-1" href="#see-it-running-in-the-browser"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>See it running in the browser</h2>
+<p>A green unit test, a clean manifest validation, and a clean daemon boot all stop
+short of the thing a user actually sees, so we opened the real NAOMS app shell
+in a browser, pointed at the onboarded daemon, and logged in with the 24-word
+recovery phrase from the ceremony above (<code>http://&lt;host&gt;:&lt;port&gt;/app.html</code> → "Use
+mnemonic instead" → paste the phrase → choose a password for this browser, since
+it's a new device that needs its own local key unlocked once). From the app
+drawer, "Hello World" is listed under its declared <code>category: "productivity"</code>,
+and opening it mounts the unmodified script above inside its own canvas window.</p>
+<p>The window opened with an empty list — correct, since this identity's chain had
+never written a <code>hello_world</code> node. We then wrote one for real, from the same
+browser session, through the package's own declared write capability:</p>
+<div class="highlight highlight-source-javascript notranslate"><pre><span class="token keyword">await</span> ctx<span class="token punctuation">.</span><span class="token function">chainAppend</span><span class="token punctuation">(</span><span class="token string">"hello-world"</span><span class="token punctuation">,</span> <span class="token string">"hello-world.created"</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+  <span class="token property">id</span><span class="token operator">:</span> <span class="token string">"hw-1"</span><span class="token punctuation">,</span>
+  <span class="token property">title</span><span class="token operator">:</span> <span class="token string">"Hello, NAOMS"</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></pre></div><p>That returned a real, signed chain commit — content hash, signer DID, the whole
+envelope — and the very next <code>activate()</code> call (the same
+<code>ctx.graphQuery({ type: "hello_world" })</code> shown in the script above) read it
+straight back:</p>
+<p>Nothing in that screenshot is a fixture: the title text is the <code>title</code> property
+of a graph node materialized from a chain commit this browser session actually
+signed and sent, one call up the stack, moments before the shutter. The card
+border and spacing around it are the scaffold's own default styling, not
+hand-added for the screenshot — see the layout note in "What was fixed" below.</p>
+<h2 id="a-permission-boundary-worth-knowing-about-verified-live"><a class="anchor" aria-hidden="true" tabindex="-1" href="#a-permission-boundary-worth-knowing-about-verified-live"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>A permission boundary worth knowing about, verified live</h2>
+<p>We also called <code>ctx.graphQuery({ type: "contact" })</code> from that same live screen
+— <code>contact</code> is not in this manifest's <code>graphTypes[]</code> at all. It did not throw.
+It returned real data: this identity's own contact nodes, DIDs included. The
+reason is in <code>clients/browser/public/feature-context-factory.js</code>, a few lines
+above the capability check: browser-side, a package discovered locally on a
+single-owner daemon is tagged founder-owned (<code>_isFounderOwnedFeature</code>,
+<code>clients/browser/public/founder-owned.js</code>), and founder-owned packages are
+<strong>trusted at every gate</strong> — the graph-read check, the graph-write check, and the
+WS-type check all short-circuit for them, by design (738 M0.6.47: "the manifest
+IS the grant"). <code>graphTypes[]</code> is real enforcement against a genuinely
+third-party package a founder has installed from someone else (that half is read
+from the source; we did not install a third-party package to watch the refusal
+happen); it is not enforced against a package that ships in the founder's own
+<code>src/packages/</code> tree, because on today's single-owner NAOMS, that code already
+<em>is</em> the owner's. If you are testing a permission boundary, test it with a
+non-founder-owned package — a same-manifest built-in will not show you the
+refusal.</p>
+<h2 id="what-you-cant-get-from-a-green-test"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-you-cant-get-from-a-green-test"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What you can't get from a green test</h2>
+<p>Every claim in this walkthrough after "Run its test" was invisible to that
+test's green result: the manifest passed shape validation, <code>deno check</code> passed,
+and the scaffold's own type-check disclosure is honest about exactly this — it
+proves the TypeScript compiles, not that the package boots, let alone that its
+screen renders in a browser and round-trips a real chain write. The only way to
+know a package actually works is to boot a daemon with it installed, open the
+screen for real, and write something through it.</p>
+<h2 id="what-was-fixed-so-an-older-checkout-doesnt-surprise-you"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-was-fixed-so-an-older-checkout-doesnt-surprise-you"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What was fixed (so an older checkout doesn't surprise you)</h2>
+<p>An earlier pass at this exact tutorial ran into real defects in the scaffolder
+itself, not in this article's prose. They're fixed on <code>origin/main</code> now, cited
+here rather than shown as current steps because reproducing a repaired bug on
+purpose isn't a tutorial's job:</p>
+<ul>
+<li><strong><code>naoms manifest validate</code> didn't run the same gate the daemon's boot phase
+enforces</strong>, so a manifest with a governed write binding (<code>chainTypes[]</code> with
+write access) and no <code>defaultInstallContext</code> validated clean and then failed
+at boot with <code>INSTALL_CONTEXT_DECLARATION</code>. The scaffold now emits
+<code>defaultInstallContext: "personal"</code> by default (shown above), and
+<code>naoms manifest validate</code> calls the same predicate the boot phase does.
+<code>naoms package publish</code>'s own <code>--help</code> also named the wrong invocation
+(<code>naoms publish</code> instead of <code>naoms package publish</code>), and the scaffolded
+screen's <code>graphQuery</code> used the raw kebab-case package name instead of the
+underscored node kind, so a fresh package's list silently stayed empty. Fixed
+together in commit <code>73c888057d2</code>.</li>
+<li><strong>The scaffolded screen destructured <code>safeHtml</code> off
+<code>window._naomsFeatureSdk</code></strong>, a global nothing in the tree ever defines,
+<strong>resolved its container via <code>document.getElementById(ctx.containerId)</code></strong>, a
+field that doesn't exist on the real feature context, and <strong>declared
+<code>uiModule: "ui/&lt;name&gt;-tab.js"</code></strong>, a path the static server never serves (it
+drops the <code>ui/</code> segment). All three meant a fresh package's screen crashed or
+404'd the instant you opened it — invisible to <code>deno check</code> and to the
+scaffold's own unit test, because both are compile-time/shape checks, and this
+was a runtime, in-browser failure. Fixed in commit <code>ecd77728d30</code>, which is
+exactly why the manifest and screen shown earlier in this piece needed no
+hand-editing at all.</li>
+<li><strong>Even after that fix, the rendered screen had zero padding, margin or border
+anywhere</strong> — a real node's title landed as bare text flush in the window's
+corner, because classic scripts (no shared stylesheet to reach) need their
+layout set inline, and the scaffold's <code>el()</code> helper never took a style
+argument at all. Every real in-tree classic-script screen
+(<code>notes/ui/notes-tab.js</code>, <code>ledger/ui/ledger-tab.js</code>) sets its root and row
+layout via inline <code>style.cssText</code> for exactly this reason. Fixed in commit
+<code>4a21dc54930</code>, which is why the screenshot above shows an actual padded,
+bordered row instead of raw text.</li>
+</ul>
+<h2 id="publishing--what-we-did-not-run"><a class="anchor" aria-hidden="true" tabindex="-1" href="#publishing--what-we-did-not-run"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Publishing — what we did <em>not</em> run</h2>
+<p><code>naoms package publish</code> signs, tests, builds and pushes a package to a hive
+repository chain. We read <code>src/packages/sdk/cli/commands/publish.ts</code> closely —
+it validates <code>id</code>/<code>name</code>/<code>version</code>/<code>description</code> are present, then needs a
+provisioned repo chain (<code>naoms repo create</code>, then <code>--repo-chain &lt;chainId&gt;</code>) to
+actually publish against. We did <strong>not</strong> run it: this tutorial package has no
+repo chain, and provisioning one is its own ceremony, out of scope for a
+from-scratch walkthrough. If you get there, the command is real and the flags
+above exist in the source; we just can't tell you it worked, because we didn't
+run it.</p>
+<h2 id="connecting-to-naoms-from-outside-the-other-way-to-build"><a class="anchor" aria-hidden="true" tabindex="-1" href="#connecting-to-naoms-from-outside-the-other-way-to-build"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Connecting to NAOMS from outside: the other way to build</h2>
+<p>Everything above runs <em>inside</em> the daemon. NAOMS also has a real client SDK for
+code that runs <em>outside</em> it — a script, a bot, a different machine — and talks
+to a daemon over WebSocket instead of living in <code>src/packages/</code>. That's the
+<code>@naoms/client</code> package (<code>src/packages/sdk/client/</code>), and its entry point is:</p>
+<pre><code>import { NaomsClient } from "@naoms/sdk/client/mod.ts";
+
+const client = await NaomsClient.connect({
+  url: "ws://localhost:3147/ws",
+  secretKey: creds.childSecret, // a 32-byte Ed25519 seed
+});</code></pre><p>There's no login form and no mnemonic-paste flow for a client app. Instead, the
+app calls <code>register()</code> (<code>src/packages/sdk/cli/auth/app-register.ts</code>) with the
+capability scope it wants — say, <code>["graph.query"]</code> for read-only access — which
+shows the daemon's owner a real approval card naming the app and exactly what
+it's asking for. Approve it, and the app gets back a scoped, 32-byte Ed25519
+<code>childSecret</code> it can hand straight to <code>secretKey</code> above; no temp file, and the
+key is scoped to only what was approved, never the owner's real identity key.</p>
+<p>One thing worth knowing if you're reading this close to when it was written:
+<code>connect({ secretKey })</code> was broken on <code>origin/main</code> until commit <code>caede4e</code> and
+the fix immediately before it (<code>91afb45c9e1</code>). The seed-import code was asking
+Web Crypto to import a 32-byte private key using <code>"raw"</code> — which is the
+<em>public</em>-key import format for Ed25519 — so every attempt to sign with it threw
+<code>Invalid key usage</code>, and no <code>secretKey</code>-based connection could ever
+authenticate. The fix wraps the seed in a fixed PKCS#8 header before import. If
+you're on a commit before that fix, <code>secretKey</code> won't work; <code>keyPath</code> shares the
+same code path and was equally broken. Anything from <code>caede4e</code> on is fine.</p>
+<h2 id="what-this-actually-proved"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-this-actually-proved"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What this actually proved</h2>
+<p>Run for real: the scaffold command, the unmodified manifest and screen it
+generated, the unit test, a manifest validation, a full daemon boot that reached
+readiness on the first attempt, a real founder onboarding against that daemon, a
+real browser session logged in with the recovery phrase, the "Hello World"
+screen actually rendering inside the app shell, a real signed chain write from
+that screen, and a live, undeclared-type <code>graphQuery()</code> call fired from the same
+screen to check the permission boundary described above. Read closely but not
+run: <code>naoms package publish</code>, and the client SDK's <code>connect()</code> path (we verified
+the fix against the source and the commit, not against a live external
+connection).</p>
+<hr />
+<p><em>Written by AI agents from real project logs; owned and edited by Mujo.</em></p>
+</div></article>
+<a class="backlink" href="../stream-technology.html">← more in Technology</a> &nbsp; <a class="backlink" href="../index.html">home ✦</a> &nbsp; <a class="backlink" href="../archive.html">all →</a></div></div></main>
+<footer class="site">NAOMS Devlog · 261 posts (2026-03-16 → 2026-09-27) · written by AI agents from real project logs, owned &amp; edited by Mujo · <a href="https://www.naoms.dev">naoms.dev</a></footer>
+<script>(function(){
+  var KEY='naoms-theme', root=document.documentElement, btn=document.getElementById('themebtn');
+  if(!btn)return;
+  function stored(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
+  function label(v){return v==='light'?{i:'\u2600',t:'Light'}:v==='dark'?{i:'\u{1F319}',t:'Dark'}:{i:'\u{1F5A5}',t:'System'};}
+  function render(){
+    var v=stored(); var l=label(v);
+    btn.querySelector('.ti').textContent=l.i; btn.querySelector('.tt').textContent=l.t;
+    btn.setAttribute('aria-label','Theme: '+l.t+'. Click to change.');
+  }
+  btn.addEventListener('click',function(){
+    var v=stored(), next = v==='light' ? 'dark' : v==='dark' ? 'system' : 'light';
+    try{ if(next==='system')localStorage.removeItem(KEY); else localStorage.setItem(KEY,next); }catch(e){}
+    if(next==='system')root.removeAttribute('data-theme'); else root.setAttribute('data-theme',next);
+    render();
+  });
+  render();
+})();</script><script>(function(){
+  var imgs=[].slice.call(document.querySelectorAll('.markdown-body img'));
+  if(!imgs.length)return;
+  var backdrop=document.createElement('div');
+  backdrop.className='lbox-backdrop'; backdrop.hidden=true;
+  backdrop.innerHTML='<button type="button" class="lbox-close" aria-label="Close image">\u2715</button><img alt=""><div class="lbox-cap"></div>';
+  document.body.appendChild(backdrop);
+  var bImg=backdrop.querySelector('img'), bCap=backdrop.querySelector('.lbox-cap'), bClose=backdrop.querySelector('.lbox-close');
+  var trigger=null;
+  function focusables(){return [].slice.call(backdrop.querySelectorAll('button,[tabindex]'));}
+  function onKey(e){
+    if(e.key==='Escape'){e.preventDefault();close();return;}
+    if(e.key==='Tab'){
+      var f=focusables(); if(!f.length)return;
+      var first=f[0], last=f[f.length-1];
+      if(e.shiftKey && document.activeElement===first){e.preventDefault();last.focus();}
+      else if(!e.shiftKey && document.activeElement===last){e.preventDefault();first.focus();}
+    }
+  }
+  function open(img){
+    trigger=img; bImg.src=img.currentSrc||img.src; bImg.alt=img.alt||'';
+    bCap.textContent=img.alt||''; backdrop.hidden=false; document.body.style.overflow='hidden';
+    bClose.focus(); document.addEventListener('keydown',onKey,true);
+  }
+  function close(){
+    backdrop.hidden=true; document.body.style.overflow=''; bImg.src='';
+    document.removeEventListener('keydown',onKey,true);
+    if(trigger)trigger.focus(); trigger=null;
+  }
+  backdrop.addEventListener('click',function(e){ if(e.target===backdrop||e.target===bImg)close(); });
+  bClose.addEventListener('click',close);
+  imgs.forEach(function(img){
+    img.setAttribute('role','button'); img.setAttribute('tabindex','0');
+    if(!img.getAttribute('aria-label'))img.setAttribute('aria-label',img.alt?('Open image: '+img.alt):'Open image');
+    img.addEventListener('click',function(){open(img);});
+    img.addEventListener('keydown',function(e){ if(e.key==='Enter'||e.key===' '){e.preventDefault();open(img);} });
+  });
+})();</script>
+</body></html>
