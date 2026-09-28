@@ -48,20 +48,18 @@ root cause: a triage row naming a file and a symptom is a claim about that
 file, not about every listener reacting to the same message.</p>
 <h2 id="four-html-paths-not-one"><a class="anchor" aria-hidden="true" tabindex="-1" href="#four-html-paths-not-one"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Four HTML paths, not one</h2>
 <p>The clickjacking fix followed the identical shape. The original finding — a
-row in what the commits call the ALPHA-100 triage list — said the HTML CSP
-builder (<code>_buildHtmlCsp()</code> in <code>http-transport-static.ts</code>) sent no
-<code>frame-ancestors</code> directive, and neither the static-file serve path nor the
-signed-package path (how the vault iframe's own HTML is served) sent
-<code>X-Frame-Options</code>. Any foreign site could iframe the daemon's UI. The first
-commit fixed that path: <code>frame-ancestors 'self'</code> plus
-<code>X-Frame-Options: SAMEORIGIN</code> for pages that legitimately get framed inside
-the app — canvas app windows are iframes (<code>app-host.html?appId=...</code>), and
-some nest a further sandboxed iframe for things like the approval modal
-(<code>a620f94ee22</code>).</p>
+row in the triage list — said the HTML CSP builder (<code>_buildHtmlCsp()</code> in
+<code>http-transport-static.ts</code>) sent no <code>frame-ancestors</code> directive, and neither
+the static-file serve path nor the signed-package path (how the vault
+iframe's own HTML is served) sent <code>X-Frame-Options</code>. Any foreign site could
+iframe the daemon's UI. The first commit fixed that path: <code>frame-ancestors 'self'</code> plus <code>X-Frame-Options: SAMEORIGIN</code> for pages that legitimately get
+framed inside the app — canvas app windows are iframes
+(<code>app-host.html?appId=...</code>), and some nest a further sandboxed iframe for
+things like the approval modal (<code>a620f94ee22</code>).</p>
 <p>A follow-up commit, credited in its own message to a second engineer's
-correction ("dd correction to ALPHA-100 row #82... the row itself was
-INCOMPLETE"), describes grepping the whole tree for every place that
-constructs a <code>text/html</code> <code>Response</code> and finding three more sites the original
+correction ("the row itself was INCOMPLETE"), describes grepping the whole
+tree for every place that constructs a <code>text/html</code> <code>Response</code> and finding
+three more sites the original
 row hadn't named: the <code>/naoms/docs/&lt;path&gt;</code> docs-viewer alias (same
 <code>'self'</code>/<code>SAMEORIGIN</code> policy, since it's a UI-shell page like the one already
 fixed); the signer-abandoned <code>unlock-required.html</code> interstitial, which is
