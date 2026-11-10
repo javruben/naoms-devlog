@@ -232,7 +232,15 @@ footer.site{border-top:1px solid var(--line);color:var(--muted);font-size:13px;t
 .dcard .dcimg{aspect-ratio:12/5;overflow:hidden;background:var(--dcimgbg);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center}
 .dcard .dcimg img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
 /* A chart is information, not a photo: show it whole rather than cropping it. */
-.dcard .dcimg img[src$="-commits.svg"]{object-fit:contain;padding:6px 8px;background:var(--dcimgbg)}
+.dcard .dcimg img[src$="-commits-light.svg"],.dcard .dcimg img[src$="-commits-dark.svg"]{object-fit:contain;padding:6px 8px;background:var(--dcimgbg)}
+/* Commit-chart theme switch: an <img>-embedded SVG can't read the page's
+   [data-theme], so two baked variants are shipped and the page shows the right
+   one — matching prefers-color-scheme by default, and the explicit toggle when set. */
+.dchart{display:block}.dchart img{display:block;max-width:100%;height:auto}
+.dchart .dchart-d{display:none}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .dchart .dchart-l{display:none}:root:not([data-theme="light"]) .dchart .dchart-d{display:block}}
+:root[data-theme="dark"] .dchart .dchart-l{display:none}:root[data-theme="dark"] .dchart .dchart-d{display:block}
+:root[data-theme="light"] .dchart .dchart-l{display:block}:root[data-theme="light"] .dchart .dchart-d{display:none}
 .dcard .dcnoimg{aspect-ratio:12/5}
 .dcard .dcbody{padding:16px 18px 20px}
 .dcard .dcdate{color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-variant-numeric:tabular-nums}
