@@ -19,15 +19,15 @@
    Nothing below has its only definition inside a media/attribute block. ── */
 :root{
   /* ---- light (default) ---- */
-  --bg-0:#eef1f6;--bg-1:#ffffff;--bg-2:#f2f4f9;--bg-3:#e6eaf2;--bg-hov:#eef2f8;
-  --ink-0:#12151c;--ink-1:#333949;--ink-2:#5b6376;--ink-3:#8891a1;
-  --line:#d9dee7;--line-soft:#e8ebf1;
-  --accent:#1c5aad;--accent-warm:#8a5b00;--accent-3:#6a4fc2;--accent-ink:#ffffff;
-  --ok:#0f8a52;--err:#c53030;
-  --accent-bg:rgba(28,90,173,.10);--accent-warm-bg:rgba(138,91,0,.10);
-  --accent-3-bg:rgba(106,79,194,.10);--ok-bg:rgba(15,138,82,.10);--err-bg:rgba(197,48,48,.10);
-  --backdrop:rgba(18,21,28,.84);
-  --focus-ring:#1c5aad;
+  --bg-0:#F4EFE4;--bg-1:#FBF8F0;--bg-2:#EFE9DB;--bg-3:#E7DFCD;--bg-hov:#EDE7D8;
+  --ink-0:#2E2A24;--ink-1:#4A443A;--ink-2:#6B6457;--ink-3:#938A78;
+  --line:#D8CFBB;--line-soft:#E6DECB;
+  --accent:#B5694B;--accent-warm:#9A6B2F;--accent-3:#7A7458;--accent-ink:#FBF8F0;
+  --ok:#5E7D4F;--err:#B5493B;
+  --accent-bg:rgba(181,105,75,.12);--accent-warm-bg:rgba(154,107,47,.12);
+  --accent-3-bg:rgba(122,116,88,.12);--ok-bg:rgba(94,125,79,.12);--err-bg:rgba(181,73,59,.12);
+  --backdrop:rgba(46,42,36,.84);
+  --focus-ring:#B5694B;
   /* Hero is a deliberate brand-constant surface — a dark, colour-carrying
      panel that stays the same in both themes (like a masthead), so "the top
      third is a designed hero" reads identically whether the reader is in
@@ -35,9 +35,9 @@
      it's its own three-stop navy/indigo gradient, built from the product's
      own --accent/--accent-3 hues at low lightness, never the reference's
      indigo/purple/teal. */
-  --hero-a:#0c2a4d;--hero-b:#161b3a;--hero-c:#241a3f;
-  --hero-ink-0:#f5f6f8;--hero-ink-1:rgba(245,246,248,.82);
-  --hero-eyebrow:#8fc4ff;
+  --hero-a:#5C3A2A;--hero-b:#7A4632;--hero-c:#3D342A;
+  --hero-ink-0:#F7F1E6;--hero-ink-1:rgba(247,241,230,.82);
+  --hero-eyebrow:#E0A579;
   --hero-card-bg:rgba(255,255,255,.09);--hero-card-line:rgba(255,255,255,.18);
   --hero-line:rgba(255,255,255,.14);
   --ink:var(--ink-0);--muted:var(--ink-2);--bg:var(--bg-0);--card:var(--bg-1);
@@ -46,28 +46,28 @@
 /* OS default: dark, only when no explicit choice is stamped on the root. */
 @media(prefers-color-scheme:dark){
   :root:not([data-theme="light"]){
-    --bg-0:#0b0c10;--bg-1:#101319;--bg-2:#1b2230;--bg-3:#26303f;--bg-hov:#161b24;
-    --ink-0:#f5f6f8;--ink-1:#d5dae3;--ink-2:#9aa3b2;--ink-3:#5b6373;
-    --line:#36404f;--line-soft:#262d39;
-    --accent:#7ab8ff;--accent-warm:#ffd166;--accent-3:#b69cff;--accent-ink:#06223f;
-    --ok:#6bd49d;--err:#ff7a7a;
-    --accent-bg:rgba(122,184,255,.12);--accent-warm-bg:rgba(255,209,102,.12);
-    --accent-3-bg:rgba(182,156,255,.12);--ok-bg:rgba(107,212,157,.12);--err-bg:rgba(255,122,122,.12);
-    --backdrop:rgba(4,5,8,.82);
-    --focus-ring:#7ab8ff;
+    --bg-0:#211E19;--bg-1:#2A2620;--bg-2:#322D25;--bg-3:#3A352D;--bg-hov:#2E2A22;
+    --ink-0:#ECE5D6;--ink-1:#C8C0AE;--ink-2:#A99F8C;--ink-3:#7E7664;
+    --line:#3A352D;--line-soft:#2C2820;
+    --accent:#D4906C;--accent-warm:#D9A95E;--accent-3:#A8A07E;--accent-ink:#211E19;
+    --ok:#8FB87A;--err:#E08A7A;
+    --accent-bg:rgba(212,144,108,.14);--accent-warm-bg:rgba(217,169,94,.14);
+    --accent-3-bg:rgba(168,160,126,.14);--ok-bg:rgba(143,184,122,.14);--err-bg:rgba(224,138,122,.14);
+    --backdrop:rgba(20,18,15,.82);
+    --focus-ring:#D4906C;
   }
 }
 /* Explicit toggle: [data-theme="dark"] wins regardless of OS. */
 :root[data-theme="dark"]{
-  --bg-0:#0b0c10;--bg-1:#101319;--bg-2:#1b2230;--bg-3:#26303f;--bg-hov:#161b24;
-  --ink-0:#f5f6f8;--ink-1:#d5dae3;--ink-2:#9aa3b2;--ink-3:#5b6373;
-  --line:#36404f;--line-soft:#262d39;
-  --accent:#7ab8ff;--accent-warm:#ffd166;--accent-3:#b69cff;--accent-ink:#06223f;
-  --ok:#6bd49d;--err:#ff7a7a;
-  --accent-bg:rgba(122,184,255,.12);--accent-warm-bg:rgba(255,209,102,.12);
-  --accent-3-bg:rgba(182,156,255,.12);--ok-bg:rgba(107,212,157,.12);--err-bg:rgba(255,122,122,.12);
-  --backdrop:rgba(4,5,8,.82);
-  --focus-ring:#7ab8ff;
+  --bg-0:#211E19;--bg-1:#2A2620;--bg-2:#322D25;--bg-3:#3A352D;--bg-hov:#2E2A22;
+  --ink-0:#ECE5D6;--ink-1:#C8C0AE;--ink-2:#A99F8C;--ink-3:#7E7664;
+  --line:#3A352D;--line-soft:#2C2820;
+  --accent:#D4906C;--accent-warm:#D9A95E;--accent-3:#A8A07E;--accent-ink:#211E19;
+  --ok:#8FB87A;--err:#E08A7A;
+  --accent-bg:rgba(212,144,108,.14);--accent-warm-bg:rgba(217,169,94,.14);
+  --accent-3-bg:rgba(168,160,126,.14);--ok-bg:rgba(143,184,122,.14);--err-bg:rgba(224,138,122,.14);
+  --backdrop:rgba(20,18,15,.82);
+  --focus-ring:#D4906C;
 }
 /* Explicit [data-theme="light"] needs no re-declaration — it IS the :root
    default above; its only job is to out-rank the dark media query, which
@@ -79,13 +79,14 @@
 .sec-h{font-size:clamp(20px,3vw,28px);font-weight:800;letter-spacing:-.01em;margin:6px 0 6px;color:var(--ink-0)}
 .sec-sub{color:var(--ink-2);max-width:780px;font-size:15px;margin:0 0 4px}
 *{box-sizing:border-box}
-body{margin:0;font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg)}
+body{margin:0;font:17px/1.62 "Iowan Old Style","Palatino Linotype",Georgia,serif;color:var(--ink);background:var(--bg)}
 a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
 .wrap{max-width:1180px;margin:0 auto;padding:0 22px}
-html{scroll-behavior:smooth}[id]{scroll-margin-top:16px}
+html{scroll-behavior:smooth}[id]{scroll-margin-top:76px}
 .layout{display:flex;gap:34px;max-width:1180px;margin:0 auto;padding:0 22px}
+.navedge{display:none}
 .content{flex:1 1 auto;min-width:0;max-width:880px}
-.sidebar{flex:0 0 192px;position:sticky;top:18px;align-self:flex-start;font-size:13px;max-height:calc(100vh - 36px);overflow-y:auto;overflow-x:hidden;scrollbar-width:none;-ms-overflow-style:none;padding-bottom:20px}
+.sidebar{flex:0 0 192px;position:sticky;top:78px;align-self:flex-start;font-size:13px;max-height:calc(100vh - 36px);overflow-y:auto;overflow-x:hidden;scrollbar-width:none;-ms-overflow-style:none;padding-bottom:20px}
 .sidebar::-webkit-scrollbar{width:0;height:0;background:transparent}.sidebar::-webkit-scrollbar-thumb{background:transparent;border-radius:8px}.sidebar:hover,.sidebar:focus-within{scrollbar-width:thin;scrollbar-color:var(--line) transparent}.sidebar:hover::-webkit-scrollbar,.sidebar:focus-within::-webkit-scrollbar{width:8px}.sidebar:hover::-webkit-scrollbar-thumb,.sidebar:focus-within::-webkit-scrollbar-thumb{background:var(--line)}@media (hover:none){.sidebar{scrollbar-width:none}.sidebar::-webkit-scrollbar{width:0}}
 .snav{margin-bottom:18px}
 .snav h4{margin:0 0 7px;font-size:11px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted)}
@@ -112,11 +113,26 @@ a.clearf{color:var(--accent);cursor:pointer}
 .badge.b-tag{background:rgba(107,212,157,.12);color:var(--ok);border:1px solid rgba(107,212,157,.4)}
 .fnone{color:var(--muted);padding:26px 2px;display:none}
 .weekhead{font-size:13px;color:var(--muted);font-weight:700;margin:20px 0 2px;letter-spacing:.02em}
-@media(max-width:840px){.sidebar{display:none}.layout{display:block}.content{max-width:880px;margin:0 auto}}
-header.site{border-bottom:1px solid var(--line);background:var(--card)}
-header.site .wrap{padding:22px}
-header.site h1{margin:0;font-size:22px;letter-spacing:-.01em}
-header.site p{margin:4px 0 0;color:var(--muted);font-size:14px}
+@media(max-width:840px){.layout{display:block}.content{max-width:880px;margin:0 auto}.navedge{display:block;width:100%;text-align:left;margin:0 0 14px;padding:11px 14px;background:var(--bg-1);border:1px solid var(--line);border-radius:10px;color:var(--ink-0);font:600 15px/1.3 "Iowan Old Style","Palatino Linotype",Georgia,serif;cursor:pointer}.navedge:hover{border-color:var(--accent)}.sidebar{display:none;position:static;max-height:none;top:auto;flex-basis:auto;margin:0 0 20px;padding:0 0 16px;border-bottom:1px solid var(--line)}.sidebar.open{display:block}}
+header.site{border-bottom:1px solid var(--line);background:var(--card);position:sticky;top:0;z-index:50}
+header.site .site-rail{display:flex;align-items:center;gap:22px;max-width:1180px;margin:0 auto;padding:0 22px;min-height:60px}
+header.site .mark{font-weight:700;font-size:20px;letter-spacing:-.01em;color:var(--ink-0);font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif}
+header.site .mark:hover{text-decoration:none}
+header.site .mark span{color:var(--accent)}
+header.site .site-nav{display:flex;align-items:center;gap:22px;margin-left:auto;flex-wrap:wrap}
+header.site .site-nav a{font-size:16px;color:var(--ink-1)}
+header.site .site-nav a:hover{color:var(--accent);text-decoration:none}
+header.site .site-nav a[aria-current]{color:var(--accent);font-weight:700}
+header.site .themebtn{margin-left:4px}
+.navtoggle{display:none;background:var(--card);border:1px solid var(--line);color:var(--ink-1);border-radius:10px;padding:5px 7px;cursor:pointer;line-height:0}
+.navtoggle:hover{border-color:var(--accent)}
+@media(max-width:720px){
+  header.site .site-nav{display:none;order:3;flex-basis:100%;flex-direction:column;align-items:flex-start;gap:12px;margin:0;padding:10px 0 4px}
+  header.site .site-nav.open{display:flex}
+  header.site .site-rail{flex-wrap:wrap;min-height:56px}
+  .navtoggle{display:inline-flex;margin-left:auto}
+  header.site .themebtn{margin-left:0}
+}
 nav{margin-top:14px;display:flex;flex-wrap:wrap;gap:9px 18px;font-size:14px;font-weight:600}
 nav a{color:var(--ink)}
 main{padding:30px 0 70px}
@@ -216,7 +232,15 @@ footer.site{border-top:1px solid var(--line);color:var(--muted);font-size:13px;t
 .dcard .dcimg{aspect-ratio:12/5;overflow:hidden;background:var(--dcimgbg);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:center}
 .dcard .dcimg img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
 /* A chart is information, not a photo: show it whole rather than cropping it. */
-.dcard .dcimg img[src$="-commits.svg"]{object-fit:contain;padding:6px 8px;background:var(--dcimgbg)}
+.dcard .dcimg img[src$="-commits-light.svg"],.dcard .dcimg img[src$="-commits-dark.svg"]{object-fit:contain;padding:6px 8px;background:var(--dcimgbg)}
+/* Commit-chart theme switch: an <img>-embedded SVG can't read the page's
+   [data-theme], so two baked variants are shipped and the page shows the right
+   one — matching prefers-color-scheme by default, and the explicit toggle when set. */
+.dchart{display:block}.dchart img{display:block;max-width:100%;height:auto}
+.dchart .dchart-d{display:none}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]) .dchart .dchart-l{display:none}:root:not([data-theme="light"]) .dchart .dchart-d{display:block}}
+:root[data-theme="dark"] .dchart .dchart-l{display:none}:root[data-theme="dark"] .dchart .dchart-d{display:block}
+:root[data-theme="light"] .dchart .dchart-l{display:block}:root[data-theme="light"] .dchart .dchart-d{display:none}
 .dcard .dcnoimg{aspect-ratio:12/5}
 .dcard .dcbody{padding:16px 18px 20px}
 .dcard .dcdate{color:var(--muted);font-size:12px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;font-variant-numeric:tabular-nums}
@@ -353,8 +377,9 @@ footer.site{border-top:1px solid var(--line);color:var(--muted);font-size:13px;t
    page still open. */
 .themebtn{display:inline-flex;align-items:center;gap:7px;background:var(--card);
   border:1px solid var(--line);color:var(--ink-1);border-radius:999px;
-  padding:6px 13px 6px 11px;font-size:12.5px;font-weight:700;cursor:pointer;
-  line-height:1.3}
+  padding:6px 13px 6px 11px;font-size:11px;font-weight:700;cursor:pointer;
+  line-height:1.3;font-family:"SF Mono","SFMono-Regular",ui-monospace,"Courier New",monospace;
+  text-transform:uppercase;letter-spacing:.07em}
 .themebtn:hover{border-color:var(--accent)}
 .themebtn .ti{font-size:14px;line-height:1}
 
