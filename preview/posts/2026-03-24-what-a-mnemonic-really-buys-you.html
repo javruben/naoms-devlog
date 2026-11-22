@@ -112,21 +112,21 @@ nobody can take it from you, and nobody can give it back to you either.</strong>
 <p>If you've onboarded a NAOMS identity, you've already generated a tree — the
 recovery phrase you wrote down <em>is</em> the trunk. The command that created it is the
 genesis-account path:</p>
-<pre><code>naoms onboard founder</code></pre><p>(Here "founder" is NAOMS's term for the <strong>genesis account</strong> — the very first
+<pre><code>naoms onboard ...    # first-steward setup</code></pre><p>(Here the "first steward" is the person behind the <strong>genesis account</strong> — the very first
 identity on a fresh daemon — not a job title. The CLI refuses a bare
 <code>naoms onboard</code> on purpose, because there are several onboarding ceremonies and
 the wrong one is unpleasant to recover from.)</p>
 <p>And the thing the tree makes possible — restoring your <em>entire</em> identity on a new
-machine from just the phrase — is the same <code>founder</code> path, this time with your
+machine from just the phrase — is the same first-steward path, this time with your
 saved words fed in over standard input rather than typed on the command line:</p>
-<pre><code>naoms onboard founder --mnemonic-stdin</code></pre><p>Your recovery words are read from standard input — never passed as a command-line
+<pre><code>naoms onboard ... --mnemonic-stdin    # first-steward setup</code></pre><p>Your recovery words are read from standard input — never passed as a command-line
 argument, where they would be visible in your shell history and process list.
 Same twenty-four words, same seed, same tree, same keys. That round trip — phrase
 out on one machine, phrase in on another, and <em>everything</em> comes back — is the
 whole promise of a mnemonic, made real.</p>
 <blockquote>
-<p><em>As of March 2026, the commands above (<code>naoms onboard founder</code>, and restore via
-<code>naoms onboard founder --mnemonic-stdin</code>) are the verified onboarding/restore
+<p><em>As of March 2026, the commands above (<code>naoms onboard</code>, and restore via
+<code>naoms onboard ... --mnemonic-stdin</code>) are the verified onboarding/restore
 paths. As with
 any tutorial, check <code>naoms onboard --help</code> for the current flags if you're
 reading this much later — the concepts (BIP-39 → seed → SLIP-10 tree) are

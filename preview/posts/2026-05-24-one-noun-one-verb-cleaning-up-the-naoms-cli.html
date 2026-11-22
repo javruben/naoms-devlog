@@ -15,7 +15,7 @@
 <p style="font-size:11px;color:var(--muted);line-height:1.45;margin-top:-2px">Pick one per group on the <a href="../archive.html">All</a> page; choices from different groups narrow together (e.g. Technology&nbsp;+&nbsp;Teacher).</p></aside><div class="content"><article class="post"><h1>One Noun, One Verb: Cleaning Up the naoms CLI</h1><p class="subtitle">Turn ~75 commands you have to look up into a handful of nouns whose verbs you can guess — a pattern for your own CLI</p><div class="meta"><span class="badge str-technology">Technology</span> <span class="badge b-teacher">Teacher</span> <span class="badge free">free</span> <span>May 24, 2026</span><span>·</span><span>5 min read</span><span>·</span><span>clients</span></div><div class="tldr"><span class="tldr-k">TL;DR</span> When a CLI grows to ~75 flat commands, every one you can't predict is one you have to look up. Here's how we collapsed ours into 44 noun-verb families — so you learn a handful of nouns and guess the verbs — kept every old command working, and proved it with a 508-entry sweep. The three moves transfer to any tool you maintain.</div><div class="markdown-body"><blockquote>
 <p><strong>Freshness note (please read).</strong> This tutorial describes the command line as
 it was reorganized on 2026-05-23, and we've re-checked the key commands against
-the code as of June 2026 — <code>naoms onboard founder</code> and the noun-verb structure
+the code as of June 2026 — <code>naoms onboard</code> and the noun-verb structure
 below still exist. Command surfaces move, though. If you're reading this much
 later, treat the <em>shape</em> of the idea as durable and verify the exact verbs with
 <code>naoms --help</code> before copying them.</p>
@@ -98,8 +98,8 @@ making the machine confirm every command still resolves.</p>
 <h2 id="try-it-yourself"><a class="anchor" aria-hidden="true" tabindex="-1" href="#try-it-yourself"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Try it yourself</h2>
 <p>The single best command to feel the new shape is the genesis-account onboarding —
 creating the very first identity on a fresh NAOMS install:</p>
-<pre><code>naoms onboard founder</code></pre><p>(<code>founder</code> here is the NAOMS term for the <em>genesis account</em> — the first identity
-on a brand-new install — not a person's role.) Run <code>naoms --help</code> and you'll see
+<pre><code>naoms onboard ...    # first-steward setup</code></pre><p>(The first-steward setup creates the <em>genesis account</em> — the first identity
+on a brand-new install — not a special role.) Run <code>naoms --help</code> and you'll see
 the top-level nouns; pick one, run <code>naoms &lt;noun&gt; --help</code>, and watch the verbs
 appear underneath. The whole point of the redesign is that this exploration <em>just
 works</em> — you can discover the tool by walking its nouns, instead of memorizing a

@@ -25,7 +25,7 @@ source and <code>--help</code> output as the final word — they supersede this 
 <h2 id="what-youll-end-up-with"><a class="anchor" aria-hidden="true" tabindex="-1" href="#what-youll-end-up-with"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>What you'll end up with</h2>
 <ul>
 <li>A running NAOMS <strong>daemon</strong> (the background process that does the real work)</li>
-<li>Your <strong>founder identity</strong> — an encrypted vault, an identity chain, and signer keys</li>
+<li>Your <strong>first-steward identity</strong> — an encrypted vault, an identity chain, and signer keys</li>
 <li>A <strong>recovery phrase</strong> you've safely recorded</li>
 </ul>
 <h2 id="before-you-start"><a class="anchor" aria-hidden="true" tabindex="-1" href="#before-you-start"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Before you start</h2>
@@ -59,7 +59,7 @@ machine — trust what your terminal actually prints.</p>
 <p><strong>What could go wrong here?</strong> If the daemon says a port is already in use, you may have an older daemon still running. Check <code>naoms daemon status</code>, and if needed stop the old one before starting fresh — onboarding expects a <em>fresh</em> (not-yet-onboarded) daemon, which we'll cover in Step 4's "what could go wrong."</p>
 <hr />
 <h2 id="step-2--understand-what-onboarding-is-about-to-do"><a class="anchor" aria-hidden="true" tabindex="-1" href="#step-2--understand-what-onboarding-is-about-to-do"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Step 2 — Understand what onboarding is about to do</h2>
-<p>Before you run the command, it's worth knowing what it creates, because some of it is irreversible. Founder onboarding builds three things on your fresh daemon:</p>
+<p>Before you run the command, it's worth knowing what it creates, because some of it is irreversible. First-steward setup builds three things on your fresh daemon:</p>
 <ul>
 <li><strong>An encrypted database + vault</strong> — coupled together, so the vault's key protects the database key. Your data at rest is encrypted.</li>
 <li><strong>Your identity chain genesis + <a href="2026-04-16-no-single-key-threshold-signing-with-frost.html" rel="noopener noreferrer">FROST signer shares</a></strong> — the cryptographic root of "you," plus the signing keys that let you act as yourself.</li>
@@ -67,12 +67,12 @@ machine — trust what your terminal actually prints.</p>
 </ul>
 <p>The command will <em>show you a recovery phrase exactly once</em> and then ask you to confirm before it writes anything. If you don't confirm, nothing is created — the daemon stays fresh, with no half-formed vault. That's deliberate and safe.</p>
 <hr />
-<h2 id="step-3--run-founder-onboarding"><a class="anchor" aria-hidden="true" tabindex="-1" href="#step-3--run-founder-onboarding"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Step 3 — Run founder onboarding</h2>
-<p>Here's the command. The <code>founder</code> subcommand is the path that creates a brand-new identity on a fresh daemon. (NAOMS refuses a bare <code>naoms onboard</code> on purpose — there are several different onboarding ceremonies, and the wrong one is destructive to recover from, so the CLI never guesses which you meant.)</p>
-<pre><code>naoms onboard founder</code></pre><p>The ceremony will print a disclosure that looks like this (this text is taken straight from the source):</p>
-<pre><code>  NAOMS founder onboarding
-  ────────────────────────
-  This creates your founder identity on a FRESH daemon:
+<h2 id="step-3--run-first-steward-setup"><a class="anchor" aria-hidden="true" tabindex="-1" href="#step-3--run-first-steward-setup"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Step 3 — Run first-steward setup</h2>
+<p>Here's the command. Its first-steward path is the one that creates a brand-new identity on a fresh daemon. (NAOMS refuses a bare <code>naoms onboard</code> on purpose — there are several different onboarding ceremonies, and the wrong one is destructive to recover from, so the CLI never guesses which you meant.)</p>
+<pre><code>naoms onboard ...    # first-steward setup</code></pre><p>The ceremony will print a disclosure that looks like this (this text is taken straight from the source):</p>
+<pre><code>  NAOMS first-steward onboarding
+  ──────────────────────────────
+  This creates your first-steward identity on a FRESH daemon:
     • encrypted DB + vault (coupled: the vault DEK wraps the DB key)
     • identity chain genesis + FROST signer shares (domain DKG)
     • governance seed (policies + procedures)
@@ -89,23 +89,23 @@ machine — trust what your terminal actually prints.</p>
 phrase (for example one you generated separately), onboarding accepts it on
 standard input — never inline on the command line, because secrets must never
 appear in your shell history:</p>
-<pre><code>naoms onboard founder --mnemonic-stdin</code></pre><p>Inline <code>--mnemonic &lt;value&gt;</code> is deliberately <strong>refused</strong> for exactly this
+<pre><code>naoms onboard ... --mnemonic-stdin    # first-steward setup</code></pre><p>Inline <code>--mnemonic &lt;value&gt;</code> is deliberately <strong>refused</strong> for exactly this
 reason.</p>
 </blockquote>
 <hr />
 <h2 id="step-4--confirm-your-identity-exists"><a class="anchor" aria-hidden="true" tabindex="-1" href="#step-4--confirm-your-identity-exists"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Step 4 — Confirm your identity exists</h2>
 <p>Want a machine-readable confirmation that the identity landed? Run onboarding's JSON mode (on a fresh daemon) or, more practically, inspect the result your tools report. The <code>--json</code> flag makes the command emit a structured result containing your new identity:</p>
-<pre><code>naoms onboard founder --json</code></pre><p><strong>Expected output (shape):</strong></p>
-<pre><code>{ "status": "onboarded", "founder_did": "did:naoms:…" }</code></pre><p>That <code>founder_did</code> is your identity's <a href="2026-03-24-an-identity-that-resolves-to-nobodys-server.html" rel="noopener noreferrer">decentralized identifier</a> — your "you," named cryptographically. If you see <code>status: "onboarded"</code> and a <code>founder_did</code>, the identity is real and on disk.</p>
+<pre><code>naoms onboard ... --json    # first-steward setup</code></pre><p><strong>Expected output (shape):</strong></p>
+<pre><code>{ "status": "onboarded", "…": "did:naoms:…" }</code></pre><p>The DID in that reply is your identity's <a href="2026-03-24-an-identity-that-resolves-to-nobodys-server.html" rel="noopener noreferrer">decentralized identifier</a> — your "you," named cryptographically. If you see <code>status: "onboarded"</code> and a DID, the identity is real and on disk.</p>
 <blockquote>
-<p><strong>Note.</strong> The <code>--json</code> output <em>shape</em> above (<code>status</code> + <code>founder_did</code>) is real;
-the exact <code>did:naoms:…</code> format string is shown illustratively.</p>
+<p><strong>Note.</strong> The <code>--json</code> output <em>shape</em> above (<code>status</code> plus a DID field) is real;
+the DID field's name and the exact <code>did:naoms:…</code> format are shown illustratively.</p>
 </blockquote>
-<p><strong>What could go wrong here?</strong> The most common stumble is running <code>naoms onboard founder</code> against a daemon that's <strong>already been onboarded</strong>. Onboarding expects a <em>fresh</em> daemon — it's a one-time genesis. If the daemon already has an identity, you'll need a fresh daemon (or to recover the existing identity) rather than onboarding again. Never try to "re-onboard" over an existing identity to fix a problem; that's the destructive path the CLI works hard to prevent.</p>
+<p><strong>What could go wrong here?</strong> The most common stumble is running the first-steward setup step (<code>naoms onboard</code>) against a daemon that's <strong>already been onboarded</strong>. Onboarding expects a <em>fresh</em> daemon — it's a one-time genesis. If the daemon already has an identity, you'll need a fresh daemon (or to recover the existing identity) rather than onboarding again. Never try to "re-onboard" over an existing identity to fix a problem; that's the destructive path the CLI works hard to prevent.</p>
 <hr />
 <h2 id="optional--land-straight-in-the-browser-workspace"><a class="anchor" aria-hidden="true" tabindex="-1" href="#optional--land-straight-in-the-browser-workspace"><svg class="octicon octicon-link" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M7.775 3.275a.75.75 0 001.06 1.06l1.25-1.25a2 2 0 112.83 2.83l-2.5 2.5a2 2 0 01-2.83 0 .75.75 0 00-1.06 1.06 3.5 3.5 0 004.95 0l2.5-2.5a3.5 3.5 0 00-4.95-4.95l-1.25 1.25zm-4.69 9.64a2 2 0 010-2.83l2.5-2.5a2 2 0 012.83 0 .75.75 0 001.06-1.06 3.5 3.5 0 00-4.95 0l-2.5 2.5a3.5 3.5 0 004.95 4.95l1.25-1.25a.75.75 0 00-1.06-1.06l-1.25 1.25a2 2 0 01-2.83 0z"></path></svg></a>Optional — land straight in the browser workspace</h2>
-<p>If you'd like to finish on a logged-in screen instead of just a terminal line, founder onboarding can open a real browser for you and log you in with the phrase you just created:</p>
-<pre><code>naoms onboard founder --open-browser</code></pre><p>This creates the identity exactly as above, then opens a visible browser at the daemon's address and completes first-time login. You'll also be asked to set an <strong>app password</strong> (minimum 8 characters) so that future logins use the password alone rather than retyping the recovery phrase. The recovery phrase remains your ultimate backstop; the app password is just day-to-day convenience.</p>
+<p>If you'd like to finish on a logged-in screen instead of just a terminal line, first-steward setup can open a real browser for you and log you in with the phrase you just created:</p>
+<pre><code>naoms onboard ... --open-browser    # first-steward setup</code></pre><p>This creates the identity exactly as above, then opens a visible browser at the daemon's address and completes first-time login. You'll also be asked to set an <strong>app password</strong> (minimum 8 characters) so that future logins use the password alone rather than retyping the recovery phrase. The recovery phrase remains your ultimate backstop; the app password is just day-to-day convenience.</p>
 <p>There are a few more flags worth knowing exist, even if you don't need them today:</p>
 <ul>
 <li><code>--register-cli</code> — register this identity for use from the command line</li>
